@@ -8,7 +8,7 @@ using Cobit_19.Data.Models;
 
 namespace Cobit_19.Data
 {
-    public class AppDbContext : IdentityDbContext<IdentityUser>
+    public class AppDbContext : IdentityDbContext<ApplicationUser>  
     {
         public AppDbContext(DbContextOptions options) : base(options)
         {
@@ -93,8 +93,38 @@ namespace Cobit_19.Data
 
             // Data seeding
 
+            //Seeding a  'Administrator' role to AspNetRoles table
+            builder.Entity<IdentityRole>().HasData(new IdentityRole { Id = "2c5e174e-3b0e-446f-86af-483d56fd7210", Name = "Administrator", NormalizedName = "ADMINISTRATOR".ToUpper() });
+
+
+            //a hasher to hash the password before seeding the user to the db
+            var hasher = new PasswordHasher<ApplicationUser>();
+
+
+            //Seeding the User to AspNetUsers table
+            builder.Entity<ApplicationUser>().HasData(
+                new ApplicationUser
+                {
+                    Id = "8e445865-a24d-4543-a6c6-9443d048cdb9", // primary key
+                    UserName = "myuser",
+                    NormalizedUserName = "MYUSER",
+                    PasswordHash = hasher.HashPassword(null, "Pa$$w0rd"),
+                    CustomTag = "Custom"
+                }
+            );;
+
+
+            //Seeding the relation between our user and role to AspNetUserRoles table
+            builder.Entity<IdentityUserRole<string>>().HasData(
+                new IdentityUserRole<string>
+                {
+                    RoleId = "2c5e174e-3b0e-446f-86af-483d56fd7210",
+                    UserId = "8e445865-a24d-4543-a6c6-9443d048cdb9"
+                }
+            );
+
             builder.Entity<FocusAreaModel>().HasData(
-                new FocusAreaModel { ID = 1, Name = "Cobit Core Model", Description = "General Core Model", DateCreated = DateTime.Parse("Jan 1, 2009") });
+                new FocusAreaModel { ID = 1, Name = "Cobit Core Model", Description = "General Core Model", DateCreated = DateTime.Parse("Jan 1, 2009"), ApplicationUserID = "8e445865-a24d-4543-a6c6-9443d048cdb9" });
 
             builder.Entity<DesignFactorModel>().HasData(
                 new DesignFactorModel { ID = 1, FocusAreaID = 1, Name = "Cobit Core Model - Design Factor 1", Description = "Enterprise Strategy" },
@@ -197,11 +227,11 @@ namespace Cobit_19.Data
                 );
 
             builder.Entity<AuditModel>().HasData(
-                new AuditModel { ID = 1, FocusAreaID = 1, UserID = 1, Name = "Audit 1", DateCreated = DateTime.Parse("Jan 1, 2009"), Status = AuditStatus.InProgress },
-                new AuditModel { ID = 2, FocusAreaID = 1, UserID = 1, Name = "Audit 2", DateCreated = DateTime.Parse("Jan 2, 2009"), Status = AuditStatus.InProgress },
-                new AuditModel { ID = 3, FocusAreaID = 1, UserID = 1, Name = "Audit 3", DateCreated = DateTime.Parse("Jan 3, 2009"), Status = AuditStatus.InProgress },
-                new AuditModel { ID = 4, FocusAreaID = 1, UserID = 1, Name = "Audit 4", DateCreated = DateTime.Parse("Jan 4, 2009"), Status = AuditStatus.InProgress },
-                new AuditModel { ID = 5, FocusAreaID = 1, UserID = 1, Name = "Audit 5", DateCreated = DateTime.Parse("Jan 5, 2009"), Status = AuditStatus.InProgress }
+                new AuditModel { ID = 1, FocusAreaID = 1, ApplicationUserID = "8e445865-a24d-4543-a6c6-9443d048cdb9", Name = "Audit 1", DateCreated = DateTime.Parse("Jan 1, 2009"), Status = AuditStatus.InProgress },
+                new AuditModel { ID = 2, FocusAreaID = 1, ApplicationUserID = "8e445865-a24d-4543-a6c6-9443d048cdb9", Name = "Audit 2", DateCreated = DateTime.Parse("Jan 2, 2009"), Status = AuditStatus.InProgress },
+                new AuditModel { ID = 3, FocusAreaID = 1, ApplicationUserID = "8e445865-a24d-4543-a6c6-9443d048cdb9", Name = "Audit 3", DateCreated = DateTime.Parse("Jan 3, 2009"), Status = AuditStatus.InProgress },
+                new AuditModel { ID = 4, FocusAreaID = 1, ApplicationUserID = "8e445865-a24d-4543-a6c6-9443d048cdb9", Name = "Audit 4", DateCreated = DateTime.Parse("Jan 4, 2009"), Status = AuditStatus.InProgress },
+                new AuditModel { ID = 5, FocusAreaID = 1, ApplicationUserID = "8e445865-a24d-4543-a6c6-9443d048cdb9", Name = "Audit 5", DateCreated = DateTime.Parse("Jan 5, 2009"), Status = AuditStatus.InProgress }
                 );
             builder.Entity<AnswerModel>().HasData(
                 new AnswerModel { AuditID = 1, QuestionID = 1, Answer = 1 },
@@ -265,29 +295,29 @@ namespace Cobit_19.Data
 
             builder.Entity<AuditScopeModel>().HasData(
                 //Audit ID 1
-                new AuditScopeModel { AuditID = 1, ObjectiveID = 1, UserID = 1 },
-                new AuditScopeModel { AuditID = 1, ObjectiveID = 2, UserID = 1 },
-                new AuditScopeModel { AuditID = 1, ObjectiveID = 3, UserID = 1 },
+                new AuditScopeModel { AuditID = 1, ObjectiveID = 1, UserID = "8e445865-a24d-4543-a6c6-9443d048cdb9" },
+                new AuditScopeModel { AuditID = 1, ObjectiveID = 2, UserID = "8e445865-a24d-4543-a6c6-9443d048cdb9" },
+                new AuditScopeModel { AuditID = 1, ObjectiveID = 3, UserID = "8e445865-a24d-4543-a6c6-9443d048cdb9" },
 
                 //Audit ID 2
-                new AuditScopeModel { AuditID = 2, ObjectiveID = 1, UserID = 1 },
-                new AuditScopeModel { AuditID = 2, ObjectiveID = 2, UserID = 1 },
-                new AuditScopeModel { AuditID = 2, ObjectiveID = 3, UserID = 1 },
+                new AuditScopeModel { AuditID = 2, ObjectiveID = 1, UserID = "8e445865-a24d-4543-a6c6-9443d048cdb9" },
+                new AuditScopeModel { AuditID = 2, ObjectiveID = 2, UserID = "8e445865-a24d-4543-a6c6-9443d048cdb9" },
+                new AuditScopeModel { AuditID = 2, ObjectiveID = 3, UserID = "8e445865-a24d-4543-a6c6-9443d048cdb9" },
 
                 //Audit ID 3
-                new AuditScopeModel { AuditID = 3, ObjectiveID = 1, UserID = 1 },
-                new AuditScopeModel { AuditID = 3, ObjectiveID = 2, UserID = 1 },
-                new AuditScopeModel { AuditID = 3, ObjectiveID = 3, UserID = 1 },
+                new AuditScopeModel { AuditID = 3, ObjectiveID = 1, UserID = "8e445865-a24d-4543-a6c6-9443d048cdb9" },
+                new AuditScopeModel { AuditID = 3, ObjectiveID = 2, UserID = "8e445865-a24d-4543-a6c6-9443d048cdb9" },
+                new AuditScopeModel { AuditID = 3, ObjectiveID = 3, UserID = "8e445865-a24d-4543-a6c6-9443d048cdb9" },
 
                 //Audit ID 4
-                new AuditScopeModel { AuditID = 4, ObjectiveID = 1, UserID = 1 },
-                new AuditScopeModel { AuditID = 4, ObjectiveID = 2, UserID = 1 },
-                new AuditScopeModel { AuditID = 4, ObjectiveID = 3, UserID = 1 },
+                new AuditScopeModel { AuditID = 4, ObjectiveID = 1, UserID = "8e445865-a24d-4543-a6c6-9443d048cdb9" },
+                new AuditScopeModel { AuditID = 4, ObjectiveID = 2, UserID = "8e445865-a24d-4543-a6c6-9443d048cdb9" },
+                new AuditScopeModel { AuditID = 4, ObjectiveID = 3, UserID = "8e445865-a24d-4543-a6c6-9443d048cdb9" },
 
-                //Audit ID 5
-                new AuditScopeModel { AuditID = 5, ObjectiveID = 1, UserID = 1 },
-                new AuditScopeModel { AuditID = 5, ObjectiveID = 2, UserID = 1 },
-                new AuditScopeModel { AuditID = 5, ObjectiveID = 3, UserID = 1 }
+                //audit ID 5
+                new AuditScopeModel { AuditID = 5, ObjectiveID = 1, UserID = "8e445865-a24d-4543-a6c6-9443d048cdb9" },
+                new AuditScopeModel { AuditID = 5, ObjectiveID = 2, UserID = "8e445865-a24d-4543-a6c6-9443d048cdb9" },
+                new AuditScopeModel { AuditID = 5, ObjectiveID = 3, UserID = "8e445865-a24d-4543-a6c6-9443d048cdb9" }
                 );
 
             /// Mapping 4 Questions and 40 Objectives with their weights for design factor 1

@@ -5,10 +5,10 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #pragma warning disable CA1814 // Prefer jagged arrays over multidimensional
 
-namespace Cobit_19.Data.Migrations
+namespace Cobit_19.Migrations
 {
     /// <inheritdoc />
-    public partial class Initial : Migration
+    public partial class InitialCreate : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -32,6 +32,7 @@ namespace Cobit_19.Data.Migrations
                 columns: table => new
                 {
                     Id = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    Discriminator = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     UserName = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
                     NormalizedUserName = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
                     Email = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
@@ -50,22 +51,6 @@ namespace Cobit_19.Data.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_AspNetUsers", x => x.Id);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "FocusAreas",
-                columns: table => new
-                {
-                    ID = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    UserID = table.Column<int>(type: "int", nullable: false),
-                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Description = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    DateCreated = table.Column<DateTime>(type: "datetime2", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_FocusAreas", x => x.ID);
                 });
 
             migrationBuilder.CreateTable(
@@ -190,13 +175,35 @@ namespace Cobit_19.Data.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "FocusAreas",
+                columns: table => new
+                {
+                    ID = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    ApplicationUserID = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Description = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    DateCreated = table.Column<DateTime>(type: "datetime2", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_FocusAreas", x => x.ID);
+                    table.ForeignKey(
+                        name: "FK_FocusAreas_AspNetUsers_ApplicationUserID",
+                        column: x => x.ApplicationUserID,
+                        principalTable: "AspNetUsers",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Audits",
                 columns: table => new
                 {
                     ID = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     FocusAreaID = table.Column<int>(type: "int", nullable: false),
-                    UserID = table.Column<int>(type: "int", nullable: false),
+                    ApplicationUserID = table.Column<string>(type: "nvarchar(450)", nullable: false),
                     Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Status = table.Column<int>(type: "int", nullable: false),
                     DateCreated = table.Column<DateTime>(type: "datetime2", nullable: false),
@@ -206,11 +213,17 @@ namespace Cobit_19.Data.Migrations
                 {
                     table.PrimaryKey("PK_Audits", x => x.ID);
                     table.ForeignKey(
+                        name: "FK_Audits_AspNetUsers_ApplicationUserID",
+                        column: x => x.ApplicationUserID,
+                        principalTable: "AspNetUsers",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
+                    table.ForeignKey(
                         name: "FK_Audits_FocusAreas_FocusAreaID",
                         column: x => x.FocusAreaID,
                         principalTable: "FocusAreas",
                         principalColumn: "ID",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateTable(
@@ -240,7 +253,7 @@ namespace Cobit_19.Data.Migrations
                 {
                     AuditID = table.Column<int>(type: "int", nullable: false),
                     ObjectiveID = table.Column<int>(type: "int", nullable: false),
-                    UserID = table.Column<int>(type: "int", nullable: false)
+                    UserID = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -330,9 +343,14 @@ namespace Cobit_19.Data.Migrations
                 });
 
             migrationBuilder.InsertData(
-                table: "FocusAreas",
-                columns: new[] { "ID", "DateCreated", "Description", "Name", "UserID" },
-                values: new object[] { 1, new DateTime(2009, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "General Core Model", "Cobit Core Model", 0 });
+                table: "AspNetRoles",
+                columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
+                values: new object[] { "2c5e174e-3b0e-446f-86af-483d56fd7210", "f78bc324-2c61-406d-bdd9-124bcc30a877", "Administrator", "ADMINISTRATOR" });
+
+            migrationBuilder.InsertData(
+                table: "AspNetUsers",
+                columns: new[] { "Id", "AccessFailedCount", "ConcurrencyStamp", "Discriminator", "Email", "EmailConfirmed", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "TwoFactorEnabled", "UserName" },
+                values: new object[] { "8e445865-a24d-4543-a6c6-9443d048cdb9", 0, "4e6a781d-9eda-4f0b-852e-5dcf690efe15", "ApplicationUser", null, false, false, null, null, "MYUSER", "AQAAAAEAACcQAAAAECnAd2ZHx0f/4/DaG81GasAYsHlvfPQTmevc2DPoL91QDKRHjtlQOcTpWnItmTk9UQ==", null, false, "24b5019f-29b3-4ee1-8be8-13e16cf231c5", false, "myuser" });
 
             migrationBuilder.InsertData(
                 table: "Objectives",
@@ -382,15 +400,25 @@ namespace Cobit_19.Data.Migrations
                 });
 
             migrationBuilder.InsertData(
+                table: "AspNetUserRoles",
+                columns: new[] { "RoleId", "UserId" },
+                values: new object[] { "2c5e174e-3b0e-446f-86af-483d56fd7210", "8e445865-a24d-4543-a6c6-9443d048cdb9" });
+
+            migrationBuilder.InsertData(
+                table: "FocusAreas",
+                columns: new[] { "ID", "ApplicationUserID", "DateCreated", "Description", "Name" },
+                values: new object[] { 1, "8e445865-a24d-4543-a6c6-9443d048cdb9", new DateTime(2009, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "General Core Model", "Cobit Core Model" });
+
+            migrationBuilder.InsertData(
                 table: "Audits",
-                columns: new[] { "ID", "DateCompleted", "DateCreated", "FocusAreaID", "Name", "Status", "UserID" },
+                columns: new[] { "ID", "ApplicationUserID", "DateCompleted", "DateCreated", "FocusAreaID", "Name", "Status" },
                 values: new object[,]
                 {
-                    { 1, null, new DateTime(2009, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), 1, "Audit 1", 0, 1 },
-                    { 2, null, new DateTime(2009, 1, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 1, "Audit 2", 0, 1 },
-                    { 3, null, new DateTime(2009, 1, 3, 0, 0, 0, 0, DateTimeKind.Unspecified), 1, "Audit 3", 0, 1 },
-                    { 4, null, new DateTime(2009, 1, 4, 0, 0, 0, 0, DateTimeKind.Unspecified), 1, "Audit 4", 0, 1 },
-                    { 5, null, new DateTime(2009, 1, 5, 0, 0, 0, 0, DateTimeKind.Unspecified), 1, "Audit 5", 0, 1 }
+                    { 1, "8e445865-a24d-4543-a6c6-9443d048cdb9", null, new DateTime(2009, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), 1, "Audit 1", 0 },
+                    { 2, "8e445865-a24d-4543-a6c6-9443d048cdb9", null, new DateTime(2009, 1, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), 1, "Audit 2", 0 },
+                    { 3, "8e445865-a24d-4543-a6c6-9443d048cdb9", null, new DateTime(2009, 1, 3, 0, 0, 0, 0, DateTimeKind.Unspecified), 1, "Audit 3", 0 },
+                    { 4, "8e445865-a24d-4543-a6c6-9443d048cdb9", null, new DateTime(2009, 1, 4, 0, 0, 0, 0, DateTimeKind.Unspecified), 1, "Audit 4", 0 },
+                    { 5, "8e445865-a24d-4543-a6c6-9443d048cdb9", null, new DateTime(2009, 1, 5, 0, 0, 0, 0, DateTimeKind.Unspecified), 1, "Audit 5", 0 }
                 });
 
             migrationBuilder.InsertData(
@@ -416,21 +444,21 @@ namespace Cobit_19.Data.Migrations
                 columns: new[] { "AuditID", "ObjectiveID", "UserID" },
                 values: new object[,]
                 {
-                    { 1, 1, 1 },
-                    { 1, 2, 1 },
-                    { 1, 3, 1 },
-                    { 2, 1, 1 },
-                    { 2, 2, 1 },
-                    { 2, 3, 1 },
-                    { 3, 1, 1 },
-                    { 3, 2, 1 },
-                    { 3, 3, 1 },
-                    { 4, 1, 1 },
-                    { 4, 2, 1 },
-                    { 4, 3, 1 },
-                    { 5, 1, 1 },
-                    { 5, 2, 1 },
-                    { 5, 3, 1 }
+                    { 1, 1, "8e445865-a24d-4543-a6c6-9443d048cdb9" },
+                    { 1, 2, "8e445865-a24d-4543-a6c6-9443d048cdb9" },
+                    { 1, 3, "8e445865-a24d-4543-a6c6-9443d048cdb9" },
+                    { 2, 1, "8e445865-a24d-4543-a6c6-9443d048cdb9" },
+                    { 2, 2, "8e445865-a24d-4543-a6c6-9443d048cdb9" },
+                    { 2, 3, "8e445865-a24d-4543-a6c6-9443d048cdb9" },
+                    { 3, 1, "8e445865-a24d-4543-a6c6-9443d048cdb9" },
+                    { 3, 2, "8e445865-a24d-4543-a6c6-9443d048cdb9" },
+                    { 3, 3, "8e445865-a24d-4543-a6c6-9443d048cdb9" },
+                    { 4, 1, "8e445865-a24d-4543-a6c6-9443d048cdb9" },
+                    { 4, 2, "8e445865-a24d-4543-a6c6-9443d048cdb9" },
+                    { 4, 3, "8e445865-a24d-4543-a6c6-9443d048cdb9" },
+                    { 5, 1, "8e445865-a24d-4543-a6c6-9443d048cdb9" },
+                    { 5, 2, "8e445865-a24d-4543-a6c6-9443d048cdb9" },
+                    { 5, 3, "8e445865-a24d-4543-a6c6-9443d048cdb9" }
                 });
 
             migrationBuilder.InsertData(
@@ -3019,6 +3047,11 @@ namespace Cobit_19.Data.Migrations
                 filter: "[NormalizedUserName] IS NOT NULL");
 
             migrationBuilder.CreateIndex(
+                name: "IX_Audits_ApplicationUserID",
+                table: "Audits",
+                column: "ApplicationUserID");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_Audits_FocusAreaID",
                 table: "Audits",
                 column: "FocusAreaID");
@@ -3032,6 +3065,11 @@ namespace Cobit_19.Data.Migrations
                 name: "IX_DesignFactors_FocusAreaID",
                 table: "DesignFactors",
                 column: "FocusAreaID");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_FocusAreas_ApplicationUserID",
+                table: "FocusAreas",
+                column: "ApplicationUserID");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Maps_QuestionID",
@@ -3075,9 +3113,6 @@ namespace Cobit_19.Data.Migrations
                 name: "AspNetRoles");
 
             migrationBuilder.DropTable(
-                name: "AspNetUsers");
-
-            migrationBuilder.DropTable(
                 name: "Audits");
 
             migrationBuilder.DropTable(
@@ -3091,6 +3126,9 @@ namespace Cobit_19.Data.Migrations
 
             migrationBuilder.DropTable(
                 name: "FocusAreas");
+
+            migrationBuilder.DropTable(
+                name: "AspNetUsers");
         }
     }
 }

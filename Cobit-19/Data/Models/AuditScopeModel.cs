@@ -11,7 +11,7 @@ namespace Cobit_19.Data.Models
         [Key]
         [ForeignKey("Objective")]
         public int ObjectiveID { get; set; }
-        public int UserID { get; set; }
+        public string UserID { get; set; }
 
         public AuditModel Audit { get; set; }
         public ObjectiveModel Objective { get; set; }

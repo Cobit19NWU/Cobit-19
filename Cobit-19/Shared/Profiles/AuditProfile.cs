@@ -16,7 +16,7 @@ namespace Cobit_19.Shared.Profiles
                 .ForMember(d => d.ID, opt => opt.MapFrom(s => s.ID))
                 .ForMember(d => d.Name, opt => opt.MapFrom(s => s.Name))
                 .ForMember(d => d.Status, opt => opt.MapFrom(s => s.Status))
-                .ForMember(d => d.UserID, opt => opt.MapFrom(s => s.UserID));
+                .ForMember(d => d.UserID, opt => opt.MapFrom(s => s.ApplicationUserID));
         }
     }
 }

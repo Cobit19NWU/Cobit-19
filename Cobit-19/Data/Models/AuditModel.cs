@@ -12,7 +12,7 @@ namespace Cobit_19.Data.Models
 
         [ForeignKey("FocusAreas")]
         public int FocusAreaID { get; set; }
-        public int UserID { get; set; }
+        public string ApplicationUserID { get; set; }
         [Required]
         public string Name { get; set; } = default!;
         public AuditStatus Status { get; set; }
@@ -26,6 +26,7 @@ namespace Cobit_19.Data.Models
         public virtual FocusAreaModel FocusAreas { get; set; }
         public ICollection<AuditScopeModel> AuditScopes { get; set; }
         public ICollection<AnswerModel> Answers { get; set; }
+        public virtual ApplicationUser ApplicationUser { get; set; }
 
     }
 }
