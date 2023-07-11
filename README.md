@@ -42,15 +42,24 @@ Authentication – Windows Authentication
 
 ### 2022 COBIT solution sample
 
+The COBIT-19 solution as developed by the honors class of 2022 can be found [here](https://assessmentcenterza.azurewebsites.net/) for your reference.
+
+ Use the following credentials to login.
+ 
+ ```Username: Admin@COBIT19.com ```
+
+ ```Password: Modisane12#```
+
 
 ### Tests
 
 
 ### Collaborators
 1. [GerniVisser](https://github.com/GerniVisser)
-2. 
+2. [DanielCoetzee](https://github.com/DeradoZA)
 3. [givenmnisi6](https://github.com/givenmnisi6)
 4. [Bile62](https://github.com/Bile62)
+5. 
 
          
 
