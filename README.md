@@ -27,12 +27,11 @@ The client has commissioned the project team to develop software to address the 
 1.	Clone this repository - https://github.com/GerniVisser/Cobit-19
 2.	Restore Packages - Right-click on the project in the Solution Explorer and select "Restore NuGet Packages" to restore all the required dependencies.
 3.	Apply Database Migrations – Open the Package Manager Console (Tools -> NuGet Package Manager -> Package Manager Console), then run the following command:
-'''
-Update-Database
-'''
+   ```Update-Database ```
 5.	Run the project
 
 ### SQL Server Management Studios
+
 To open database in SSMS, you will need to follow the following steps:
 1.	Open SQL Server Management Studios
 2.	The connection information will be as follows:
@@ -41,10 +40,17 @@ Authentication – Windows Authentication
 3.	Navigate to Databases in the Object Explorer
 4.	You should then see CobitDb listed as one of the databases, you will then be able to view the data stored in this database from here.
 
+### 2022 COBIT solution sample
+
+
+### Tests
+
 
 ### Collaborators
-1. [givenmnisi6](https://github.com/givenmnisi6)
-2. [Bile62](https://github.com/Bile62)
+1. [GerniVisser](https://github.com/GerniVisser)
+2. 
+3. [givenmnisi6](https://github.com/givenmnisi6)
+4. [Bile62](https://github.com/Bile62)
 
          
 
