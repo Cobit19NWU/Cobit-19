@@ -14,28 +14,33 @@ The scale at which digital transformation takes place within organizations drivi
  
 The client has commissioned the project team to develop software to address the mentioned factors, to simplify and automate audits with the objective of improving the performance of an organization. The COBIT19 framework will provide organizations with the opportunity to improve their IT governance and management practices, to give an organization an overview perspective of its efficiency and areas that need improvement.  The comprehensive documentation for the project can be found [here](https://github.com/Bile62/Cobit-19/tree/12be29b02e43e135c7a07eabcff0cfca2ee449ce/Documentation)
 
-## Types of Cryptography
+## Installation
 
-Symmetric Cryptography: Uses the same key for encryption and decryption.
-Asymmetric Cryptography: Uses two keys, one for encryption and one for decryption.
+### Prerequisites
+*	[Download](https://www.microsoft.com/en-us/sql-server/sql-server-downloads) SQL Server(Developer Option)
+*	[Download](https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16) SQL Server Management Studios 
+* [Download](https://dotnet.microsoft.com/en-us/download) .NET 6.0 
+* To [access](https://lucid.app/lucidchart/3e0403bd-b21a-4e15-9941-fc89a6feb698/edit?viewport_loc=-486%2C-103%2C2626%2C1245%2Cux54lk_FbWo4&invitationId=inv_feeea902-9a12-442e-b3a9-afd7e395ecde) the  ERD diagram for the project
 
-## Uses of Cryptography:
+### Steps
 
-Secure Communication: Protects communication channels like emails, instant messaging, and online transactions.
-Password Protection: Protects sensitive information stored on devices and servers.
-Digital Signatures: Verifies the authenticity and integrity of digital documents and transactions.
+1.	Clone this repository - https://github.com/GerniVisser/Cobit-19
+2.	Restore Packages - Right-click on the project in the Solution Explorer and select "Restore NuGet Packages" to restore all the required dependencies.
+3.	Apply Database Migrations – Open the Package Manager Console (Tools -> NuGet Package Manager -> Package Manager Console), then run the following command:
+'''
+Update-Database
+'''
+5.	Run the project
 
-## To Do
-This project should handle the encryption and decryption of messages and files.
+### SQL Server Management Studios
+To open database in SSMS, you will need to follow the following steps:
+1.	Open SQL Server Management Studios
+2.	The connection information will be as follows:
+Server Name – localhost
+Authentication – Windows Authentication
+3.	Navigate to Databases in the Object Explorer
+4.	You should then see CobitDb listed as one of the databases, you will then be able to view the data stored in this database from here.
 
-The following algorithms will be implemented
-- Vigenère
-- Vernam
-- Transposition
-- Own algorithm (BnG In-House)
-
-## Documentation
-The Comprehensive Documentation for this project can be found [here](https://github.com/givenmnisi6/Cryptography-Project/blob/main/Documentation/Project%20document.pdf)
 
 ### Collaborators
 1. [givenmnisi6](https://github.com/givenmnisi6)
