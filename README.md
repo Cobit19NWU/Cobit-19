@@ -59,7 +59,7 @@ The COBIT-19 solution as developed by the honors class of 2022 can be found [her
 2. [DanielCoetzee](https://github.com/DeradoZA)
 3. [givenmnisi6](https://github.com/givenmnisi6)
 4. [Bile62](https://github.com/Bile62)
-5. 
+5. [Keagan Badenhorst](https://github.com/keagan420)
 
          
 
