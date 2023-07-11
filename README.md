@@ -44,7 +44,7 @@ Authentication – Windows Authentication
 
 The COBIT-19 solution as developed by the honors class of 2022 can be found [here](https://assessmentcenterza.azurewebsites.net/) for your reference.
 
- Use the following credentials to login.
+ Use the following credentials to login:
  
  ```Username: Admin@COBIT19.com ```
 
