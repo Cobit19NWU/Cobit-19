@@ -6,6 +6,16 @@
 
 The COBIT-19 project is based on the COBIT-19 FRAMEWORK. It is software developed as part of the Information Systems Engineering curriculum by North West University honors students 2023 hereby known as the COBIT Consultants. The software is a solution by Mr Phenyo Modisane (the client). It is based on the simplification and automation of audits within organizations. 
 
+### Project Description
+
+The COBIT 19 framework software solution idea is based on the simplification and automation of audits within organizations. Information Technology (IT) audits are essential in the governance and management of an organization, they make it possible to manage and allocate tasks, resources and people within the organization. The overall effectiveness of an IT audit determines the productivity and functioning of an organization. At the end of the day an effective organization is equal to a productive organization which in turn equals to profitability. However, organizations are still using the legacy system; which can be time consuming, error prone and costly. Moreover, they may lead to inconsistencies and inefficiencies in the audit process.  
+ 
+The scale at which digital transformation takes place within organizations driving them to transform their business models and processes, which requires new approaches to governance and management of information technology; the mitigation and management of cyber security threats and the growing number of regulatory requirements related to information technology i.e. ISO and ITIL, all of these aforementioned factors are important when  auditing an organization but the auditing task becomes daunting and prone to errors and inefficiencies when using the traditional manual auditing processes. Thankfully, these issues are addressed by the COBIT19 Framework software proposed by the client.
+ 
+The client has commissioned the project team to develop software to address the mentioned factors, to simplify and automate audits with the objective of improving the performance of an organization. The COBIT19 framework will provide organizations with the opportunity to improve their IT governance and management practices, to give an organization an overview perspective of its efficiency and areas that need improvement.  The comprehensive documentation for the project can be found here.
+
+
+
 
 Cryptography is the practice of securing information by converting it into a code. This can be achieved by using various algorithms and keys. Cryptography is used to protect information, including communication, sensitive data, and passwords. It is also used to create digital signatures for verifying the authenticity of digital documents and transactions.
 
