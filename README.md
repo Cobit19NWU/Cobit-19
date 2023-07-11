@@ -14,11 +14,6 @@ The scale at which digital transformation takes place within organizations drivi
  
 The client has commissioned the project team to develop software to address the mentioned factors, to simplify and automate audits with the objective of improving the performance of an organization. The COBIT19 framework will provide organizations with the opportunity to improve their IT governance and management practices, to give an organization an overview perspective of its efficiency and areas that need improvement.  The comprehensive documentation for the project can be found here.
 
-
-
-
-Cryptography is the practice of securing information by converting it into a code. This can be achieved by using various algorithms and keys. Cryptography is used to protect information, including communication, sensitive data, and passwords. It is also used to create digital signatures for verifying the authenticity of digital documents and transactions.
-
 ## Types of Cryptography
 
 Symmetric Cryptography: Uses the same key for encryption and decryption.
