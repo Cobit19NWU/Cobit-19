@@ -1,7 +1,9 @@
 # Cobit-19
 
 ## More about the Project
-##Project Title
+
+### Project Title
+
 The COBIT-19 project is based on the COBIT-19 FRAMEWORK. It is software developed as part of the Information Systems Engineering curriculum by North West University honors students 2023 hereby known as the COBIT Consultants. The software is a solution by Mr Phenyo Modisane (the client). It is based on the simplification and automation of audits within organizations. 
 
 
