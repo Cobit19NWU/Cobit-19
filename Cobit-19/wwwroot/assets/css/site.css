@@ -1,0 +1,108 @@
+@import url('open-iconic/font/css/open-iconic-bootstrap.min.css');
+
+ 
+ 
+
+.progress {
+    margin: 0px;
+    padding: 1px;
+    width: 100%;
+    max-width: 500px;
+    border: 3px solid #7d7d7d;
+    height: 40px;
+    text-align: center;
+}
+
+.posBar {
+    background-color: lawngreen;
+    color: transparent;
+}
+
+.negBarRed {
+    background-color: red;
+    width: 100%;
+}
+
+.negBarWhite {
+    background-color: floralwhite;
+    color: transparent;
+}
+
+.selectYes {
+    background-color: #a0a0a0;
+}
+
+.selectNo {
+    background-color: transparent;
+}
+
+.selectPurple {
+    background-color: mediumpurple;
+}
+
+.groot {
+    width: 100%;
+    background-color: yellow;
+}
+
+.groen {
+    background-color: lawngreen;
+}
+
+.rooi {
+    background-color: red;
+    width: 50%;
+}
+
+.klein {
+    background-color: white;
+}
+
+
+
+.progress .toets {
+    height: 100%;
+    background-color: #FFBF00;
+}
+
+
+.progress .inProgress {
+    height: 100%;
+    width: 0%;
+    background-color: #FFBF00;
+    animation: fill-bar 3s infinite;
+}
+
+.progress .notStarted {
+    height: 100%;
+    width: 100%;
+    background-color: red;
+}
+
+.progress .completed {
+    height: 100%;
+    width: 100%;
+    background-color: lime;
+}
+
+.progress_text {
+    font-weight: 500;
+    text-align: center;
+    padding-top: 6px;
+}
+
+@keyframes fill-bar {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+.textContent {
+    text-align: center;
+}
+ 
+ 

@@ -1,32 +1,39 @@
-﻿<div class="top-row ps-3 navbar navbar-dark">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="">Cobit-19</a>
-        <button title="Navigation menu" class="navbar-toggler" @onclick="ToggleNavMenu">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-    </div>
-</div>
+﻿@using Microsoft.AspNetCore.Authorization;
+@using Microsoft.AspNetCore.Identity;
+@using Cobit_19.Areas.Identity.Pages.Account
+
+
+@inject Microsoft.AspNetCore.Components.NavigationManager navigationManager
+
 
 <div class="@NavMenuCssClass" @onclick="ToggleNavMenu">
     <nav class="flex-column">
         <div class="nav-item px-3">
+            <li class="nav-header">
+                <div class="dropdown profile-element text-center">
+                    <img alt="image" class="rounded-circle text-center" src="assets/img/Final.jpg" />
+                </div>
+                <div class="logo-element">
+                    COBIT
+                </div>
+            </li>
             <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
                 <span class="oi oi-home" aria-hidden="true"></span> Home
             </NavLink>
         </div>
         <div class="nav-item px-3">
-            <NavLink class="nav-link" href="counter">
-                <span class="oi oi-plus" aria-hidden="true"></span> Counter
-            </NavLink>
-        </div>
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="fetchdata">
-                <span class="oi oi-list-rich" aria-hidden="true"></span> Fetch data
-            </NavLink>
-        </div>
-        <div class="nav-item px-3">
             <NavLink class="nav-link" href="/Identity/Account/Login">
                 <span class="oi oi-lock-locked" aria-hidden="true"></span> Login
+            </NavLink>
+        </div>
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="/administration">
+                <span class="oi oi-pencil" aria-hidden="true"></span> Manage users
+            </NavLink>
+        </div>
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="/Guide">
+                <span class="oi oi-target" aria-hidden="true"></span> Assessment Guide
             </NavLink>
         </div>
     </nav>

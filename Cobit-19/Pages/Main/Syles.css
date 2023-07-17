@@ -1,0 +1,48 @@
+﻿/* styles.css */
+
+.file-box {
+    background-color: #f3f3f4;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+    .file-box .file {
+        position: relative;
+        display: block;
+        margin-bottom: 10px;
+    }
+
+        .file-box .file .image {
+            position: relative;
+            height: 150px;
+            overflow: hidden;
+        }
+
+            .file-box .file .image img {
+                max-width: 100%;
+                max-height: 100%;
+            }
+
+        .file-box .file .file-name {
+            font-size: 14px;
+            color: #636b6f;
+        }
+
+            .file-box .file .file-name small {
+                font-size: 12px;
+                color: #999;
+            }
+
+        .file-box .file .corner {
+            position: absolute;
+            top: 0;
+            right: 0;
+            border-top-right-radius: 5px;
+            background-color: #1ab394;
+            color: #fff;
+            padding: 5px 8px;
+            font-weight: 600;
+            font-size: 12px;
+        }

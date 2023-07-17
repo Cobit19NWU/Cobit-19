@@ -1,0 +1,208 @@
+﻿@page "/Guide"
+@layout MainLayout
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+<style>
+    .file-box {
+        background-color: #f3f3f4;
+        border-radius: 5px;
+        padding: 10px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+        .file-box .file {
+            position: relative;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+            .file-box .file .image {
+                position: relative;
+                height: 150px;
+                overflow: hidden;
+            }
+
+                .file-box .file .image img {
+                    max-width: 100%;
+                    max-height: 100%;
+                }
+
+            .file-box .file .file-name {
+                font-size: 14px;
+            }
+
+                .file-box .file .file-name small {
+                    font-size: 12px;
+                    color: #999;
+                }
+
+            .file-box .file .corner {
+                position: absolute;
+                top: 0;
+                right: 0;
+                border-top-right-radius: 5px;
+                background-color: #1ab394;
+                color: #fff;
+                padding: 5px 8px;
+                font-weight: 600;
+                font-size: 12px;
+            }
+</style>
+
+
+
+<div class="row">
+    <div class="col-lg-3">
+        <div class="ibox">
+            <div class="ibox-content">
+                <div class="file-manager">
+                    <h5>Show:</h5>
+                    <a href="/Guide" class="file-control active">All</a>
+                    <a href="/Guide" class="file-control">Documents</a>
+                    <a href="/Guide" class="file-control">Audio</a>
+                    <a href="/Guide" class="file-control">Images</a>
+                    <div class="hr-line-dashed"></div>
+                    <button class="btn btn-primary btn-block">Upload Files</button>
+                    <div class="hr-line-dashed"></div>
+                    <h5>Folders</h5>
+                    <ul class="folder-list" style="padding: 0">
+                        <li><a href="/Guide"><i class="fa fa-folder"></i> Files</a></li>
+                        <li><a href="/Guide"><i class="fa fa-folder"></i> Pictures</a></li>
+                        <li><a href="/Guide"><i class="fa fa-folder"></i> Web pages</a></li>
+                        <li><a href="/Guide"><i class="fa fa-folder"></i> Illustrations</a></li>
+                    </ul>
+                    <h5 class="tag-title">Tags</h5>
+                    <ul class="tag-list" style="padding: 0">
+                        <li><a href="/Guide">COBIT 2019</a></li>
+                        <li><a href="/Guide">COBIT 5</a></li>
+                    </ul>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-9 animated fadeInRight">
+        <div class="row">
+            <div class="col-lg-12">
+                <h3>Core Model</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="file-box">
+                    <div class="file">
+                        <a href="PDFs/1 - COBIT 2019 - FRAMEWORK INTRODUCTION AND METHODOLOGY.pdf">
+                            <span class="corner"><i class="fas fa-file-pdf"></i></span>
+                            <div class="image">
+                                <img alt="image" class="img-fluid" src="PDFs/img/1.PNG" height="200">
+                            </div>
+                            <div class="file-name">
+                                COBIT 2019 - FRAMEWORK INTRODUCTION AND METHODOLOGY.pdf
+                                <br>
+                                <small>Added: Jan 6, 2023</small>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="file-box">
+                    <div class="file">
+                        <a href="PDFs/2 - COBIT 2019 - FRAMEWORK GOVERNANCE AND MANAGEMENT OBJECTIVES.pdf">
+                            <span class="corner"><i class="fas fa-file-pdf"></i></span>
+                            <div class="image">
+                                <img alt="image" class="img-fluid" src="PDFs/img/2.PNG" height="200">
+                            </div>
+                            <div class="file-name">
+                                COBIT 2019 - FRAMEWORK GOVERNANCE AND MANAGEMENT OBJECTIVES.pdf
+                                <br>
+                                <small>Added: Jan 6, 2023</small>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="file-box">
+                    <div class="file">
+                        <a href="PDFs/3 - COBIT 2019 - DESIGN GUIDE DESIGNING AN INFORMATION AND TECHNOLOGY GOVERNANCE SOLUTION.pdf">
+                            <span class="corner"><i class="fas fa-file-pdf"></i></span>
+                            <div class="image">
+                                <img alt="image" class="img-fluid" src="PDFs/img/3.PNG" height="200">
+                            </div>
+                            <div class="file-name">
+                                COBIT 2019 - DESIGN GUIDE DESIGNING AN INFORMATION AND TECHNOLOGY GOVERNANCE SOLUTION.pdf
+                                <br>
+                                <small>Added: Jan 6, 2023</small>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="file-box">
+                    <div class="file">
+                        <a href="PDFs/4 - COBIT 2019 - Implementation guide.pdf">
+                            <span class="corner"><i class="fas fa-file-pdf"></i></span>
+                            <div class="image">
+                                <img alt="image" class="img-fluid" src="PDFs/img/4.PNG" height="200">
+                            </div>
+                            <div class="file-name">
+                                COBIT 2019 - Implementation guide.pdf
+                                <br>
+                                <small>Added: Jan 6, 2023</small>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <h3>Focus Areas</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="file-box">
+                    <div class="file">
+                        <a href="PDFs/COBIT-Focus-Area-Information-Security.pdf">
+                            <span class="corner"><i class="fas fa-file-pdf"></i></span>
+                            <div class="image">
+                                <img alt="image" class="img-fluid" src="PDFs/img/5.PNG" height="200">
+                            </div>
+                            <div class="file-name">
+                                COBIT 2019 Focus Area - Information Security.pdf
+                                <br>
+                                <small>Added: Jan 6, 2023</small>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="file-box">
+                    <div class="file">
+                        <a href="PDFs/555000491-1.pdf">
+                            <span class="corner"><i class="fas fa-file-pdf"></i></span>
+                            <div class="image">
+                                <img alt="image" class="img-fluid" src="PDFs/img/6.PNG" height="200">
+                            </div>
+                            <div class="file-name">
+                                COBIT 2019 Focus Area - Information & Technology Risk.pdf
+                                <br>
+                                <small>Added: Jan 6, 2023</small>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+
+}
