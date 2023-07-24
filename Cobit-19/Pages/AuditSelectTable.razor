@@ -2,6 +2,7 @@
 @using Cobit_19.Shared.Dtos;
 @using Cobit_19.Shared.Enums;
 @inject FocusAreaProvider focusAreaProvider
+@inject NavigationManager navigationManager
 
 @code {
     [Parameter]
@@ -41,26 +42,35 @@
             return null;
         }
     }
+
+    private void AuditSelectionClick(int auditID)
+    {
+        navigationManager.NavigateTo($"/Audit?AuditId={auditID}");
+    }
 }
 
-<table class="table border-3 table-bordered">
-    <tr>
-        <th>#</th>
-        <th>Status</th>
-        <th>Name</th>
-        <th>Date Created</th>
-    </tr>
-
-    @foreach(var audit in audits)
-    {
+<table class="table table-hover table-striped">
+    <thead>
         <tr>
-            <td>@(rowCounter++)</td>
-            <td>@FormatAuditStatus(audit.Status)</td>
-            <td>@audit.Name</td>
-            <td>@audit.DateCreated</td>
-            <td><button>Select</button></td>
+            <th>#</th>
+            <th>Status</th>
+            <th>Name</th>
+            <th>Date Created</th>
+            <th></th>
         </tr>
-    }
+    </thead>
+    <tbody>
+        @foreach (var audit in audits)
+        {
+            <tr>
+                <td>@(rowCounter++)</td>
+                <td>@FormatAuditStatus(audit.Status)</td>
+                <td>@audit.Name</td>
+                <td>@audit.DateCreated</td>
+                <td><button type="button" class="btn btn-success btn-sm" @onclick='() => AuditSelectionClick(audit.ID)'>Select</button></td>
+            </tr>
+        }
+    </tbody>
 </table>
 
 

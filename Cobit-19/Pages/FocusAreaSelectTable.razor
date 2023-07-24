@@ -20,23 +20,33 @@
     }
 }
 
-<table class="table border-3 table-bordered">
-
-    <tr>
-        <th>Activity</th>
-        <th>Name</th>
-        <th>Description</th>
-        <th>Completion</th>
-    </tr>
-
-@foreach (var focusArea in focusAreaList)
+@if (!string.IsNullOrEmpty(userID))
 {
-    <tr>
-        <td>@focusAreaProvider.GetFocusAreaActivityStatus(userID, focusArea.ID)</td>
-        <td>@focusArea.Name</td>
-        <td>@focusArea.Description</td>
-        <td>@focusAreaProvider.GetFocusAreaCompletionStatus(userID, focusArea.ID)</td>
-        <td><button @onclick="(e) => FocusAreaSelectionClick(focusArea.ID)">Begin Assesment</button></td>
-    </tr>   
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>Activity</th>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Completion</th>
+                <th>Show Audits</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var focusArea in focusAreaList)
+            {
+                <tr>
+                    <td>@focusAreaProvider.GetFocusAreaActivityStatus(userID, focusArea.ID)</td>
+                    <td>@focusArea.Name</td>
+                    <td>@focusArea.Description</td>
+                    <td>@focusAreaProvider.GetFocusAreaCompletionStatus(userID, focusArea.ID)</td>
+                    <td>
+                        <button @onclick="(e) => FocusAreaSelectionClick(focusArea.ID)" type="button" class="btn btn-primary">
+                            Show Audits
+                        </button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
 }
-</table>
