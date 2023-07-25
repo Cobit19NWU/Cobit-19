@@ -8,15 +8,10 @@ using Cobit_19.Data.Models;
 
 namespace Cobit_19.Data
 {
-    public class AppDbContext : IdentityDbContext<ApplicationUser>  
+    public class AppDbContext : IdentityDbContext<ApplicationUser>
     {
-
-        private readonly UserManager<ApplicationUser> _userManager;
-        private readonly RoleManager<IdentityRole> _roleManager;
-        public AppDbContext(DbContextOptions options, RoleManager<IdentityRole> roleManager, UserManager<ApplicationUser> userManager) : base(options)
+        public AppDbContext(DbContextOptions options) : base(options)
         {
-            _userManager = userManager;
-            _roleManager = roleManager;
         }
 
         public DbSet<FocusAreaModel> FocusAreas { get; set; }
@@ -29,7 +24,7 @@ namespace Cobit_19.Data
         public DbSet<MapModel> Maps { get; set; }
         public DbSet<SubscriptionModel> Subscriptions { get; set; }
 
-        protected override async void OnModelCreating(ModelBuilder builder)
+        protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
 
@@ -114,37 +109,41 @@ namespace Cobit_19.Data
 
             // Data seeding
 
-            List<string> roleList = new List<string>(new string[] {"Administrator", "Head Auditor", "Auditor", "Client"});
-            
-            foreach (var role in roleList)
-            {
-                if (!await _roleManager.RoleExistsAsync(role))
-                {
-                    var roleEntry = new IdentityRole(role);
-                    await _roleManager.CreateAsync(roleEntry);
-                }
-            }
+            //Seeding roles to AspNetRoles table
+            builder.Entity<IdentityRole>().HasData(new IdentityRole { Id = "2c5e174e-3b0e-446f-86af-483d56fd7210", Name = "Administrator", NormalizedName = "ADMINISTRATOR".ToUpper() });
+            builder.Entity<IdentityRole>().HasData(new IdentityRole { Id = "36c9f3b8-42e6-4ab1-a50d-e89986c5d1f7", Name = "Head Auditor", NormalizedName = "HEAD AUDITOR".ToUpper() });
+            builder.Entity<IdentityRole>().HasData(new IdentityRole { Id = "5e70cf29-1b64-4f58-85dd-07b3c46015a3", Name = "Auditor", NormalizedName = "AUDITOR".ToUpper() });
+            builder.Entity<IdentityRole>().HasData(new IdentityRole { Id = "d3ae1c6e-1c8a-43e7-9a2a-971fc7fbb295", Name = "Client", NormalizedName = "CLIENT".ToUpper() });
+
 
             //a hasher to hash the password before seeding the user to the db
             var hasher = new PasswordHasher<ApplicationUser>();
-            var adminUser = new ApplicationUser
-            {
-                FirstName = "Daniel",
-                LastName = "Coetzee",
-                Email = "test@gmail.com",
-                Id = "8e445865-a24d-4543-a6c6-9443d048cdb9", // primary key
-                UserName = "test@gmail.com",
-                NormalizedUserName = "TEST@GMAIL.COM",
-                EmailConfirmed = true,
-                PasswordHash = hasher.HashPassword(null, "Pa$$w0rd"),
-            };
+
 
             //Seeding the User to AspNetUsers table
-            builder.Entity<ApplicationUser>().HasData(adminUser);
+            builder.Entity<ApplicationUser>().HasData(
+                new ApplicationUser
+                {
+                    FirstName = "Daniel",
+                    LastName = "Coetzee",
+                    Email = "test@gmail.com",
+                    Id = "8e445865-a24d-4543-a6c6-9443d048cdb9", // primary key
+                    UserName = "test@gmail.com",
+                    NormalizedUserName = "TEST@GMAIL.COM",
+                    EmailConfirmed = true,
+                    PasswordHash = hasher.HashPassword(null, "Pa$$w0rd"),
+                }
+            ); ;
 
 
             //Seeding the relation between our user and role to AspNetUserRoles table
-            await _userManager.AddToRoleAsync(adminUser, "Administrator");
+            builder.Entity<IdentityUserRole<string>>().HasData(
+                new IdentityUserRole<string>
+                {
+                    RoleId = "2c5e174e-3b0e-446f-86af-483d56fd7210",
+                    UserId = "8e445865-a24d-4543-a6c6-9443d048cdb9"
+                }
+            );
 
             builder.Entity<SubscriptionModel>().HasData(
                 new SubscriptionModel { ApplicationUserID = "8e445865-a24d-4543-a6c6-9443d048cdb9", FocusAreaID = 1 });
@@ -279,7 +278,7 @@ namespace Cobit_19.Data
                 new AnswerModel { AuditID = 1, QuestionID = 17, Answer = 1, AnswerRange = 5 },
                 new AnswerModel { AuditID = 1, QuestionID = 18, Answer = 1, AnswerRange = 5, Odds = 5 },
                 new AnswerModel { AuditID = 1, QuestionID = 19, Answer = 1, AnswerRange = 5, Odds = 5 },
-                new AnswerModel { AuditID = 1, QuestionID = 20, Answer = 1, AnswerRange = 5, Odds = 5 }, 
+                new AnswerModel { AuditID = 1, QuestionID = 20, Answer = 1, AnswerRange = 5, Odds = 5 },
                 new AnswerModel { AuditID = 1, QuestionID = 21, Answer = 1, AnswerRange = 5, Odds = 5 },
                 new AnswerModel { AuditID = 1, QuestionID = 22, Answer = 1, AnswerRange = 5, Odds = 5 },
                 new AnswerModel { AuditID = 1, QuestionID = 23, Answer = 1, AnswerRange = 5, Odds = 5 },

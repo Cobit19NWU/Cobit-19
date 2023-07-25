@@ -6,7 +6,7 @@
 
 @code {
     private string userID;
-    private string selectedDiv;
+    private string selectedDiv = "tab1";
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
@@ -37,22 +37,22 @@
         <div class="col">
             <ul class="nav nav-tabs">
                 <li class="nav-item">
-                    <a class="nav-link active link-dark" @onclick='() => ShowDiv("tab1")'>Introduction</a>
+                    <a class="nav-link active link-dark" role='button' @onclick='() => ShowDiv("tab1")'>Introduction</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link link-dark" @onclick='() => ShowDiv("tab2")'>Design Workflow</a>
+                    <a class="nav-link link-dark" role='button' @onclick='() => ShowDiv("tab2")'>Design Workflow</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link link-dark" @onclick='() => ShowDiv("tab3")'>Core Model</a>
+                    <a class="nav-link link-dark" role='button' @onclick='() => ShowDiv("tab3")'>Core Model</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link link-dark" @onclick='() => ShowDiv("tab4")'>Components</a>
+                    <a class="nav-link link-dark" role='button' @onclick='() => ShowDiv("tab4")'>Components</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link link-dark" @onclick='() => ShowDiv("tab5")'>Performance Management</a>
+                    <a class="nav-link link-dark" role='button' @onclick='() => ShowDiv("tab5")'>Performance Management</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link link-dark" @onclick='() => ShowDiv("tab6")'>Design Factors</a>
+                    <a class="nav-link link-dark" role='button' @onclick='() => ShowDiv("tab6")'>Design Factors</a>
                 </li>
             </ul>
 
