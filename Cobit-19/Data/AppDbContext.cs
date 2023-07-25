@@ -10,8 +10,13 @@ namespace Cobit_19.Data
 {
     public class AppDbContext : IdentityDbContext<ApplicationUser>  
     {
-        public AppDbContext(DbContextOptions options) : base(options)
+
+        private readonly UserManager<ApplicationUser> _userManager;
+        private readonly RoleManager<IdentityRole> _roleManager;
+        public AppDbContext(DbContextOptions options, RoleManager<IdentityRole> roleManager, UserManager<ApplicationUser> userManager) : base(options)
         {
+            _userManager = userManager;
+            _roleManager = roleManager;
         }
 
         public DbSet<FocusAreaModel> FocusAreas { get; set; }
@@ -24,7 +29,7 @@ namespace Cobit_19.Data
         public DbSet<MapModel> Maps { get; set; }
         public DbSet<SubscriptionModel> Subscriptions { get; set; }
 
-        protected override void OnModelCreating(ModelBuilder builder)
+        protected override async void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
 
@@ -109,38 +114,37 @@ namespace Cobit_19.Data
 
             // Data seeding
 
-            //Seeding a  'Administrator' role to AspNetRoles table
-            builder.Entity<IdentityRole>().HasData(new IdentityRole { Id = "2c5e174e-3b0e-446f-86af-483d56fd7210", Name = "Administrator", NormalizedName = "ADMINISTRATOR".ToUpper() });
-
+            List<string> roleList = new List<string>(new string[] {"Administrator", "Head Auditor", "Auditor", "Client"});
+            
+            foreach (var role in roleList)
+            {
+                if (!await _roleManager.RoleExistsAsync(role))
+                {
+                    var roleEntry = new IdentityRole(role);
+                    await _roleManager.CreateAsync(roleEntry);
+                }
+            }
 
             //a hasher to hash the password before seeding the user to the db
             var hasher = new PasswordHasher<ApplicationUser>();
-
+            var adminUser = new ApplicationUser
+            {
+                FirstName = "Daniel",
+                LastName = "Coetzee",
+                Email = "test@gmail.com",
+                Id = "8e445865-a24d-4543-a6c6-9443d048cdb9", // primary key
+                UserName = "test@gmail.com",
+                NormalizedUserName = "TEST@GMAIL.COM",
+                EmailConfirmed = true,
+                PasswordHash = hasher.HashPassword(null, "Pa$$w0rd"),
+            };
 
             //Seeding the User to AspNetUsers table
-            builder.Entity<ApplicationUser>().HasData(
-                new ApplicationUser
-                {
-                    FirstName = "Daniel",
-                    LastName = "Coetzee",
-                    Email = "test@gmail.com",
-                    Id = "8e445865-a24d-4543-a6c6-9443d048cdb9", // primary key
-                    UserName = "test@gmail.com",
-                    NormalizedUserName = "TEST@GMAIL.COM",
-                    EmailConfirmed = true,
-                    PasswordHash = hasher.HashPassword(null, "Pa$$w0rd"),
-                }
-            );;
+            builder.Entity<ApplicationUser>().HasData(adminUser);
 
 
             //Seeding the relation between our user and role to AspNetUserRoles table
-            builder.Entity<IdentityUserRole<string>>().HasData(
-                new IdentityUserRole<string>
-                {
-                    RoleId = "2c5e174e-3b0e-446f-86af-483d56fd7210",
-                    UserId = "8e445865-a24d-4543-a6c6-9443d048cdb9"
-                }
-            );
+            await _userManager.AddToRoleAsync(adminUser, "Administrator");
 
             builder.Entity<SubscriptionModel>().HasData(
                 new SubscriptionModel { ApplicationUserID = "8e445865-a24d-4543-a6c6-9443d048cdb9", FocusAreaID = 1 });
