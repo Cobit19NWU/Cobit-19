@@ -124,75 +124,85 @@
     }
 }
 
-<div class="container-md bg-light mt-4">
-    <div class="row">
-        <div class="">
-            @if (_designFactorDto is null)
-            {
-                <p><em>Loading...</em></p>
-            }
-            else
-            {
-                <div>
-                    <h3> Design Factor : @_designFactorDto.Description</h3>
-                </div>
-                @if (_designFactorDto.Questions.Count == 0)
+<AuthorizeView>
+    <div class="container-md bg-light mt-4">
+        <div class="row">
+            <div class="">
+                @if (_designFactorDto is null)
                 {
-                    <tr>
-                        <td colspan="4">No questions found.</td>
-                    </tr>
+                    <p><em>Loading...</em></p>
                 }
                 else
                 {
-                    <table class="table border-3 table-bordered" >
-                        <thead class="table-primary">
-                            <tr>
-                                <th scope="col">Description</th>
-                                @if (_designFactorDto.Questions.First().Answers.First().Odds == 0)
-                                {
-                                    @if (_designFactorDto.Questions.First().Answers.First().AnswerRange <= 8)
+                    <div>
+                        <h3> Design Factor : @_designFactorDto.Description</h3>
+                    </div>
+                    @if (_designFactorDto.Questions.Count == 0)
+                    {
+                        <tr>
+                            <td colspan="4">No questions found.</td>
+                        </tr>
+                    }
+                    else
+                    {
+                        <table class="table border-3 table-bordered" >
+                            <thead class="table-primary">
+                                <tr>
+                                    <th scope="col">Description</th>
+                                    @if (_designFactorDto.Questions.First().Answers.First().Odds == 0)
                                     {
-                                        @for (int i = 1; i <= _designFactorDto.Questions.First().Answers.First().AnswerRange; i++)
+                                        @if (_designFactorDto.Questions.First().Answers.First().AnswerRange <= 8)
                                         {
-                                            <th scope="col">@i</th>
+                                            @for (int i = 1; i <= _designFactorDto.Questions.First().Answers.First().AnswerRange; i++)
+                                            {
+                                                <th scope="col">@i</th>
+                                            }
                                         }
-                                    }
-                                    else if (_designFactorDto.Questions.First().Answers.First().AnswerRange == 100)
-                                    {
-                                        <th scope="col">Value(%)</th>
+                                        else if (_designFactorDto.Questions.First().Answers.First().AnswerRange == 100)
+                                        {
+                                            <th scope="col">Value(%)</th>
+                                        }
+                                        else
+                                        {
+                                            <th scope="col">Value(1 - @_designFactorDto.Questions.First().Answers.First().AnswerRange)</th>
+                                        }
                                     }
                                     else
                                     {
                                         <th scope="col">Value(1 - @_designFactorDto.Questions.First().Answers.First().AnswerRange)</th>
+                                        <th scope="col">Value(1 - @_designFactorDto.Questions.First().Answers.First().AnswerRange)</th>
                                     }
-                                }
-                                else
+                                    <th scope="col">Baseline</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var q in _designFactorDto.Questions)
                                 {
-                                    <th scope="col">Value(1 - @_designFactorDto.Questions.First().Answers.First().AnswerRange)</th>
-                                    <th scope="col">Value(1 - @_designFactorDto.Questions.First().Answers.First().AnswerRange)</th>
-                                }
-                                <th scope="col">Baseline</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            @foreach (var q in _designFactorDto.Questions)
-                            {
-                                <tr>
-                                    <td>
-                                        @q.Question
-                                    </td>
-                                    @if (_designFactorDto.Questions.First().Answers.First().Odds == 0)
-                                    {
-
-                                        @if (q.Answers.First().AnswerRange <= 8)
+                                    <tr>
+                                        <td>
+                                            @q.Question
+                                        </td>
+                                        @if (_designFactorDto.Questions.First().Answers.First().Odds == 0)
                                         {
-                                            @for (int i = 1; i <= q.Answers.First().AnswerRange; i++)
+
+                                            @if (q.Answers.First().AnswerRange <= 8)
+                                            {
+                                                @for (int i = 1; i <= q.Answers.First().AnswerRange; i++)
+                                                {
+                                                    <td>
+                                                        <input type="radio" name="@q.ID" id="@q.ID" value="@i"
+                                                        class="form-check-input"
+                                                        @onchange="((e) => SubmitAnswer(q.ID, e))"
+                                                        checked="@IsAnswerSelected(q.Answers.First().Answer, i)" />
+                                                    </td>
+                                                }
+                                            }
+                                            else
                                             {
                                                 <td>
-                                                    <input type="radio" name="@q.ID" id="@q.ID" value="@i"
-                                                    class="form-check-input"
-                                                    @onchange="((e) => SubmitAnswer(q.ID, e))"
-                                                    checked="@IsAnswerSelected(q.Answers.First().Answer, i)" />
+                                                    <input type="number" name="@q.ID" id="@q.ID" min="0" max="@q.Answers.First().AnswerRange" value="@q.Answers.First().Answer"
+                                                    class="form-control"
+                                                    @onchange="((e) => SubmitAnswer(q.ID, e))" />
                                                 </td>
                                             }
                                         }
@@ -203,82 +213,74 @@
                                                 class="form-control"
                                                 @onchange="((e) => SubmitAnswer(q.ID, e))" />
                                             </td>
+                                            <td>
+                                                <input type="number" name="@q.ID" id="@q.ID" min="0" max="@q.Answers.First().AnswerRange" value="@q.Answers.First().Odds"
+                                                class="form-control"
+                                                @onchange="((e) => SubmitOdds(q.ID, e))" />
+                                            </td>
                                         }
-                                    }
-                                    else
-                                    {
                                         <td>
-                                            <input type="number" name="@q.ID" id="@q.ID" min="0" max="@q.Answers.First().AnswerRange" value="@q.Answers.First().Answer"
-                                            class="form-control"
-                                            @onchange="((e) => SubmitAnswer(q.ID, e))" />
+                                            @q.BaseAnswer
                                         </td>
-                                        <td>
-                                            <input type="number" name="@q.ID" id="@q.ID" min="0" max="@q.Answers.First().AnswerRange" value="@q.Answers.First().Odds"
-                                            class="form-control"
-                                            @onchange="((e) => SubmitOdds(q.ID, e))" />
-                                        </td>
-                                    }
-                                    <td>
-                                        @q.BaseAnswer
-                                    </td>
-                                </tr>
-                            }
-                        </tbody>
-                    </table>
-                    @if (_mappedObjectives != null)
-                    {
-                        <div class="col-lg-12">
-                            <div class="panel panel-info">
-                                <div class="panel-heading">
-                                    <i class="fa fa-info-circle"></i> Info Panel - Technology adoption strategy
-                                </div>
-                                <div class="panel-body">
-                                    <p>
-                                        The output section of this tab contains the calculated relative importance of each of the 40 COBIT
-                                        2019 governance and management objectives. The results are represented as a bar chart and as a spider diagram.
-                                    </p>
-                                </div>
-                                <figure class="figure flex-lg-fill">
-                                    <div class="figure img-fluid rounded">
-                                        <SfChart @ref="sfChart">
-                                            <ChartPrimaryXAxis ValueType="Syncfusion.Blazor.Charts.ValueType.Category">
-                                            </ChartPrimaryXAxis>
-
-                                            <ChartSeriesCollection>
-                                                <ChartSeries DataSource="@_mappedObjectives" XName="Objective" YName="RelativeInportance"
-                                                             Type="ChartSeriesType.Radar" DrawType="ChartDrawType.Line">
-                                                </ChartSeries>
-                                            </ChartSeriesCollection>
-                                        </SfChart>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                        @if (_mappedObjectives != null)
+                        {
+                            <div class="col-lg-12">
+                                <div class="panel panel-info">
+                                    <div class="panel-heading">
+                                        <i class="fa fa-info-circle"></i> Info Panel - Technology adoption strategy
                                     </div>
-                                </figure>
+                                    <div class="panel-body">
+                                        <p>
+                                            The output section of this tab contains the calculated relative importance of each of the 40 COBIT
+                                            2019 governance and management objectives. The results are represented as a bar chart and as a spider diagram.
+                                        </p>
+                                    </div>
+                                    <figure class="figure flex-lg-fill">
+                                        <div class="figure img-fluid rounded">
+                                            <SfChart @ref="sfChart">
+                                                <ChartPrimaryXAxis ValueType="Syncfusion.Blazor.Charts.ValueType.Category">
+                                                </ChartPrimaryXAxis>
+
+                                                <ChartSeriesCollection>
+                                                    <ChartSeries DataSource="@_mappedObjectives" XName="Objective" YName="RelativeInportance"
+                                                                 Type="ChartSeriesType.Radar" DrawType="ChartDrawType.Line">
+                                                    </ChartSeries>
+                                                </ChartSeriesCollection>
+                                            </SfChart>
+                                        </div>
+                                    </figure>
+                                </div>
+                            </div>
+
+                            <div class="align-items-center justify-content-center">\
+                                <h3> Radial Chart</h3>
+                            
+                            </div>
+                        }
+                    }
+                    <div class="row">
+                        <div class="col">
+                            @if (_isPreviousButtonDFId != -1)
+                            {
+                                <button type="button" onclick="@(() => PreviousButtonPress())" class="btn btn-primary">Back</button>
+                            }
+                        </div>
+                        <div class="col">
+                            <div class="float-end">
+                                @if (_isNextButtonDFId != -1)
+                                {
+                                    <button type="button" onclick="@(() => NextButtonPress())" class="btn btn-primary">Next</button>
+                                }
                             </div>
                         </div>
-
-                        <div class="align-items-center justify-content-center">\
-                            <h3> Radial Chart</h3>
-                            
-                        </div>
-                    }
+                    </div>
                 }
-                <div class="row">
-                    <div class="col">
-                        @if (_isPreviousButtonDFId != -1)
-                        {
-                            <button type="button" onclick="@(() => PreviousButtonPress())" class="btn btn-primary">Back</button>
-                        }
-                    </div>
-                    <div class="col">
-                        <div class="float-end">
-                            @if (_isNextButtonDFId != -1)
-                            {
-                                <button type="button" onclick="@(() => NextButtonPress())" class="btn btn-primary">Next</button>
-                            }
-                        </div>
-                    </div>
-                </div>
-            }
+            </div>
         </div>
     </div>
-</div>
+</AuthorizeView>
 

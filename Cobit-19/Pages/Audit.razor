@@ -53,126 +53,184 @@
     }
 }
 
-<div class="container">
-    <div class="row">
-        <div class="col-md-12">
-            @if (_auditDto is null || _designFactorDtos is null)
-            {
-                <p><em>Loading...</em></p>
-            }
-            else
-            {
-                <table class="table table-hover">
-                    <tbody>
-                        <tr style="cursor:pointer" @onclick="() => ToggleSubRows(0)">
-                            <td>
-                                <span class="badge bg-success">Completed</span>
-                            </td>
-                            <td>
-                                <div>
-                                    <h5>Design Factors</h5>
-                                </div>
-                            </td>
-                            <td>
-                                <button class="btn-sm btn-primary" @onclick="() => DFButtonPress(_designFactorDtos.First())">
-                                    <i class="fa fa-sliders"></i> 
-                                    Begin Assesment
-                                </button>
-                            </td>
-                        </tr>
-                        <tr class="@($"{(expandedRows.Contains(0) ? "show" : "collapse")} sub-rows")">
-                            <td colspan="3">
-                                <table class="table table-bordered">
-                                    <tbody>
-                                        @foreach (var item in _designFactorDtos.ToList())
-                                        {
-                                            <tr>
-                                                <td>@item.Name</td>
-                                                <td>@item.Description</td>
-                                                <td>
-                                                    <button class="btn-sm btn-primary" @onclick="() => DFButtonPress(item)">
-                                                        <i class="fa fa-sliders"></i>
-                                                        Open
-                                                    </button>
-                                                </td>
-                                            </tr>
-                                        }
-                                        <!-- Add more sub-rows as needed -->
-                                    </tbody>
-                                </table>
-                            </td>
-                        </tr>
-                        <tr style="cursor:pointer" @onclick="() => ToggleSubRows(1)">
-                            <td>
-                                <span class="badge bg-success">Completed</span>
-                            </td>
-                            <td>
-                                <div>
-                                    <h5>Canvas Report</h5>
-                                </div>
-                            </td>
-                            <td>
-                                <button class="btn-sm btn-primary">
-                                    <i class="fa fa-sliders"></i>
-                                    Begin Assesment
-                                </button>
-                            </td>
-                        </tr>
-                        <tr class="@($"{(expandedRows.Contains(1) ? "show" : "collapse")} sub-rows")">
-                            <td colspan="3">
-                                <table class="table table-bordered">
-                                    <tbody>
-                                        <tr>
-                                            <td>Sub-Row 1</td>
-                                            <td>Content for Sub-Row 1 of Title 0</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Sub-Row 2</td>
-                                            <td>Content for Sub-Row 2 of Title 0</td>
-                                        </tr>
-                                        <!-- Add more sub-rows as needed -->
-                                    </tbody>
-                                </table>
-                            </td>
-                        </tr>
-                        <tr style="cursor:pointer" @onclick="() => ToggleSubRows(2)">
-                            <td>
-                                <span class="badge bg-success">Completed</span>
-                            </td>
-                            <td>
-                                <div>
-                                    <h5>Scope Selection</h5>
-                                </div>
-                            </td>
-                            <td>
-                                <button class="btn-sm btn-primary">
-                                    <i class="fa fa-sliders"></i>
-                                    Begin Assesment
-                                </button>
-                            </td>
-                        </tr>
-                        <tr class="@($"{(expandedRows.Contains(2) ? "show" : "collapse")} sub-rows")">
-                            <td colspan="3">
-                                <table class="table table-bordered">
-                                    <tbody>
-                                        <tr>
-                                            <td>Sub-Row 1</td>
-                                            <td>Content for Sub-Row 1 of Title 0</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Sub-Row 2</td>
-                                            <td>Content for Sub-Row 2 of Title 0</td>
-                                        </tr>
-                                        <!-- Add more sub-rows as needed -->
-                                    </tbody>
-                                </table>
-                            </td>
-                        </tr>
-                    </tbody>
 
-            </table>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                @if (_auditDto is null || _designFactorDtos is null)
+                {
+                    <p><em>Loading...</em></p>
+                }
+                else
+                {
+                    <table class="table table-hover">
+                        <tbody>
+                        <AuthorizeView Roles="Administrator, Head Auditor, Client">
+                            <tr style="cursor:pointer" @onclick="() => ToggleSubRows(0)">
+                                <td>
+                                    <span class="badge bg-success">Completed</span>
+                                </td>
+                                <td>
+                                    <div>
+                                        <h5>Design Factors</h5>
+                                    </div>
+                                </td>
+                                <td>
+                                    <button class="btn-sm btn-primary" @onclick="() => DFButtonPress(_designFactorDtos.First())">
+                                        <i class="fa fa-sliders"></i> 
+                                        Begin Assesment
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr class="@($"{(expandedRows.Contains(0) ? "show" : "collapse")} sub-rows")">
+                                <td colspan="3">
+                                    <table class="table table-bordered">
+                                        <tbody>
+                                            @foreach (var item in _designFactorDtos.ToList())
+                                            {
+                                                <tr>
+                                                    <td>@item.Name</td>
+                                                    <td>@item.Description</td>
+                                                    <td>
+                                                        <button class="btn-sm btn-primary" @onclick="() => DFButtonPress(item)">
+                                                            <i class="fa fa-sliders"></i>
+                                                            Open
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                            }
+                                            <!-- Add more sub-rows as needed -->
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </AuthorizeView>
+                        <AuthorizeView Roles="Administrator, Head Auditor, Client">
+                            <tr style="cursor:pointer" @onclick="() => ToggleSubRows(1)">
+                                <td>
+                                    <span class="badge bg-success">Completed</span>
+                                </td>
+                                <td>
+                                    <div>
+                                        <h5>Canvas Report</h5>
+                                    </div>
+                                </td>
+                                <td>
+                                    <button class="btn-sm btn-primary">
+                                        <i class="fa fa-sliders"></i>
+                                        View Canvas
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr class="@($"{(expandedRows.Contains(1) ? "show" : "collapse")} sub-rows")">
+                                <td colspan="3">
+                                    <table class="table table-bordered">
+                                        <tbody>
+                                            <tr>
+                                                <td>Sub-Row 1</td>
+                                                <td>Content for Sub-Row 1 of Title 0</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Sub-Row 2</td>
+                                                <td>Content for Sub-Row 2 of Title 0</td>
+                                            </tr>
+                                            <!-- Add more sub-rows as needed -->
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </AuthorizeView>
+                        <AuthorizeView Roles="Administrator, Head Auditor, Client">
+                            <tr style="cursor:pointer" @onclick="() => ToggleSubRows(2)">
+                                <td>
+                                    <span class="badge bg-success">Completed</span>
+                                </td>
+                                <td>
+                                    <div>
+                                        <h5>Scope Selection</h5>
+                                    </div>
+                                </td>
+                                <td>
+                                    <button class="btn-sm btn-primary">
+                                        <i class="fa fa-sliders"></i>
+                                        Modify Scope
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr class="@($"{(expandedRows.Contains(2) ? "show" : "collapse")} sub-rows")">
+                                <td colspan="3">
+                                    <table class="table table-bordered">
+                                        <tbody>
+                                            <tr>
+                                                <td>Sub-Row 1</td>
+                                                <td>Content for Sub-Row 1 of Title 0</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Sub-Row 2</td>
+                                                <td>Content for Sub-Row 2 of Title 0</td>
+                                            </tr>
+                                            <!-- Add more sub-rows as needed -->
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </AuthorizeView>
+                        <AuthorizeView Roles="Administrator, Head Auditor, Client">
+                            <tr>
+                                <td>
+                                    <span class="badge bg-success">Completed</span>
+                                </td>
+                                <td>
+                                    <div>
+                                        <h5>Add Auditors</h5>
+                                    </div>
+                                </td>
+                                <td>
+                                    <button class="btn-sm btn-primary">
+                                        Edit Auditors
+                                    </button>
+                                </td>
+                            </tr>
+                        </AuthorizeView>
+                        <AuthorizeView>
+                            <tr>
+                                <td>
+                                    <span class="badge bg-success">Completed</span>
+                                </td>
+                                <td>
+                                    <div>
+                                        <h5>Audit</h5>
+                                    </div>
+                                </td>
+                                <td>
+                                    <button class="btn-sm btn-primary">
+                                        View Audits
+                                    </button>
+                                </td>
+                            </tr>
+                        </AuthorizeView>
+                        <AuthorizeView Roles="Administrator, Head Auditor, Client">
+                            <tr>
+                                <td>
+                                    <span class="badge bg-success">Completed</span>
+                                </td>
+                                <td>
+                                    <div>
+                                        <h5>Reports</h5>
+                                    </div>
+                                </td>
+                                <td>
+                                    <button class="btn-sm btn-primary">
+                                        View Reports
+                                    </button>
+                                </td>
+                            </tr>
+                        </AuthorizeView>
+                        </tbody>
+
+                </table>
                 
-            }
+                }
+            </div>
         </div>
     </div>
-</div>

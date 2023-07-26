@@ -31,152 +31,153 @@
         selectedDiv = divID;
     }
 }
+<AuthorizeView>
+    <div class="container">
+        <div class="row pb-4">
+            <div class="col">
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link active link-dark" role='button' @onclick='() => ShowDiv("tab1")'>Introduction</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-dark" role='button' @onclick='() => ShowDiv("tab2")'>Design Workflow</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-dark" role='button' @onclick='() => ShowDiv("tab3")'>Core Model</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-dark" role='button' @onclick='() => ShowDiv("tab4")'>Components</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-dark" role='button' @onclick='() => ShowDiv("tab5")'>Performance Management</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-dark" role='button' @onclick='() => ShowDiv("tab6")'>Design Factors</a>
+                    </li>
+                </ul>
 
-<div class="container">
-    <div class="row pb-4">
-        <div class="col">
-            <ul class="nav nav-tabs">
-                <li class="nav-item">
-                    <a class="nav-link active link-dark" role='button' @onclick='() => ShowDiv("tab1")'>Introduction</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link link-dark" role='button' @onclick='() => ShowDiv("tab2")'>Design Workflow</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link link-dark" role='button' @onclick='() => ShowDiv("tab3")'>Core Model</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link link-dark" role='button' @onclick='() => ShowDiv("tab4")'>Components</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link link-dark" role='button' @onclick='() => ShowDiv("tab5")'>Performance Management</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link link-dark" role='button' @onclick='() => ShowDiv("tab6")'>Design Factors</a>
-                </li>
-            </ul>
-
-            <div id="tab1" style="@(selectedDiv == "tab1" ? "display: block;" : "display: none;")" class="container border">
-                <img src="Images/Cobit process.jpg" class="img-fluid" style="float: left; margin-right: 20px; margin-bottom: 10px;margin-top: 15px;">
-                <p class="text-justify">
-                    <strong>Dashboard - COBIT 2019</strong>
-                    <br />
-                    The primary purpose of this guide is to give guidance and enable assessors to perform a COBIT 2019 assessment. It is designed to provide organisations with an understandable, logical, repeatable, reliable and robust methodology for assessing the maturity of their I&T processes based on the COBIT 2019 COBIT Core Model. Such an assessment can then be used to report internally to an organisation's executive management or board of directors on its I&T processes capability/maturity and establish a target for improvement based on business requirements, as appropriate. The goals cascade supports enterprise goals, which is one of the critical design factors for a governance system. It supports the prioritisation of management objectives based on the prioritisation of enterprise goals. The goals cascade further supports the translation of enterprise goals into priorities for alignment goals. These emphasise the alignment of all I&T efforts with business objectives.
-                    <br />
-                    <br />
-                    The assessment starts with analysing ten design factors that can influence the design of an organisation's governance system and position it for success in the use of I&T. Differences in scoring are highlighted and cascaded to the achievement (or not) of business and I&T goals and what I&T processes should support them. This cascading of goals sets the stage for identifying (and prioritising) relevant I&T processes (and components) that can mitigate and address I&T problems and enable opportunities.
-                    <br />
-                    <br />
-                    Thus, the assessment can help you plan all your future I&T work efficiently and cost-effectively and sets the stage for all future I&T strategies, planning and assessments in line with "best practices" such as COBIT, ITIL and TOGAF.
-                </p>
-            </div>
-
-            <div id="tab1" style="@(selectedDiv == "tab2" ? "display: block;" : "display: none;")" class="container border">
-                <strong>COBIT 2019 - Governance System Design Workflow</strong>
-
-                <p>
-                    The COBIT 2019 Framework provides a governance system design workflow to be used for developing a tailored system. This workflow has several stages. The first stage is understanding the enterprise context and strategy. Understand the company's strategy, goals, and risk profile. Furthermore, company must be aware of current I&T-related issues. The next stage is determining the initial scope of the governance system. In this stage, consider enterprise strategy, goals, and apply the COBIT goals cascade. Take into account the company's risk profile as well as existing I&T-related issues.
-                </p>
-                <p>
-                    After that is refining the scope of the governance system. To refine the scope of the governance system, consider the threat landscape, compliance needs, IT's function, and the sourcing model. Consider IT implementation methods, IT adoption strategy, and the size of the company as well. The last stage is concluding the governance system design. Finalize the governance system design by resolving any inherent priority conflicts.
-                </p>
-                <div style="text-align: center;">
-                    <img src="images/design workflow.png" class="img-fluid">
+                <div id="tab1" style="@(selectedDiv == "tab1" ? "display: block;" : "display: none;")" class="container border">
+                    <img src="Images/Cobit process.jpg" class="img-fluid" style="float: left; margin-right: 20px; margin-bottom: 10px;margin-top: 15px;">
+                    <p class="text-justify">
+                        <strong>Dashboard - COBIT 2019</strong>
+                        <br />
+                        The primary purpose of this guide is to give guidance and enable assessors to perform a COBIT 2019 assessment. It is designed to provide organisations with an understandable, logical, repeatable, reliable and robust methodology for assessing the maturity of their I&T processes based on the COBIT 2019 COBIT Core Model. Such an assessment can then be used to report internally to an organisation's executive management or board of directors on its I&T processes capability/maturity and establish a target for improvement based on business requirements, as appropriate. The goals cascade supports enterprise goals, which is one of the critical design factors for a governance system. It supports the prioritisation of management objectives based on the prioritisation of enterprise goals. The goals cascade further supports the translation of enterprise goals into priorities for alignment goals. These emphasise the alignment of all I&T efforts with business objectives.
+                        <br />
+                        <br />
+                        The assessment starts with analysing ten design factors that can influence the design of an organisation's governance system and position it for success in the use of I&T. Differences in scoring are highlighted and cascaded to the achievement (or not) of business and I&T goals and what I&T processes should support them. This cascading of goals sets the stage for identifying (and prioritising) relevant I&T processes (and components) that can mitigate and address I&T problems and enable opportunities.
+                        <br />
+                        <br />
+                        Thus, the assessment can help you plan all your future I&T work efficiently and cost-effectively and sets the stage for all future I&T strategies, planning and assessments in line with "best practices" such as COBIT, ITIL and TOGAF.
+                    </p>
                 </div>
-            </div>
 
-            <div id="tab1" style="@(selectedDiv == "tab3" ? "display: block;" : "display: none;")" class="container border">
-                <strong>COBIT 2019 - Core Model</strong>
+                <div id="tab1" style="@(selectedDiv == "tab2" ? "display: block;" : "display: none;")" class="container border">
+                    <strong>COBIT 2019 - Governance System Design Workflow</strong>
 
-                <p>
-                    The governance and management objectives in COBIT are grouped into five domains. The domains have names with verbs that express the key purpose and areas of activity of the objective contained in them:
-                </p>
-                <ul>
-                    <li>Governance objectives are grouped in the <strong>Evaluate, Direct and Monitor (EDM)</strong> domain. In this domain, the governing body evaluates strategic options, directs senior management on the chosen strategic options and monitors the achievement of the strategy</li>
-                    <li>Management objectives are grouped in four domains:</li>
+                    <p>
+                        The COBIT 2019 Framework provides a governance system design workflow to be used for developing a tailored system. This workflow has several stages. The first stage is understanding the enterprise context and strategy. Understand the company's strategy, goals, and risk profile. Furthermore, company must be aware of current I&T-related issues. The next stage is determining the initial scope of the governance system. In this stage, consider enterprise strategy, goals, and apply the COBIT goals cascade. Take into account the company's risk profile as well as existing I&T-related issues.
+                    </p>
+                    <p>
+                        After that is refining the scope of the governance system. To refine the scope of the governance system, consider the threat landscape, compliance needs, IT's function, and the sourcing model. Consider IT implementation methods, IT adoption strategy, and the size of the company as well. The last stage is concluding the governance system design. Finalize the governance system design by resolving any inherent priority conflicts.
+                    </p>
+                    <div style="text-align: center;">
+                        <img src="images/design workflow.png" class="img-fluid">
+                    </div>
+                </div>
+
+                <div id="tab1" style="@(selectedDiv == "tab3" ? "display: block;" : "display: none;")" class="container border">
+                    <strong>COBIT 2019 - Core Model</strong>
+
+                    <p>
+                        The governance and management objectives in COBIT are grouped into five domains. The domains have names with verbs that express the key purpose and areas of activity of the objective contained in them:
+                    </p>
                     <ul>
+                        <li>Governance objectives are grouped in the <strong>Evaluate, Direct and Monitor (EDM)</strong> domain. In this domain, the governing body evaluates strategic options, directs senior management on the chosen strategic options and monitors the achievement of the strategy</li>
+                        <li>Management objectives are grouped in four domains:</li>
+                        <ul>
 
-                        <li><strong>Align, Plan and Organize (APO)</strong> addresses the overall organization, strategy and supporting activities for I&T.</li>
-                        <li><strong>Build, Acquire and Implement (BAI)</strong> treats the definition, acquisition and implementation of I&T solutions and their integration in business processes.</li>
-                        <li><strong>Deliver, Service and Support (DSS)</strong> addresses the operational delivery and support of I&T services, including security.</li>
-                        <li><strong>Monitor, Evaluate and Assess (MEA)</strong> addresses performance monitoring and conformance of I&T with internal performance targets, internal control objectives and external requirements.</li>
+                            <li><strong>Align, Plan and Organize (APO)</strong> addresses the overall organization, strategy and supporting activities for I&T.</li>
+                            <li><strong>Build, Acquire and Implement (BAI)</strong> treats the definition, acquisition and implementation of I&T solutions and their integration in business processes.</li>
+                            <li><strong>Deliver, Service and Support (DSS)</strong> addresses the operational delivery and support of I&T services, including security.</li>
+                            <li><strong>Monitor, Evaluate and Assess (MEA)</strong> addresses performance monitoring and conformance of I&T with internal performance targets, internal control objectives and external requirements.</li>
+                        </ul>
+
                     </ul>
-
-                </ul>
-                <div style="text-align: center;">
-                    <img src="images/core model.png" class="img-fluid">
+                    <div style="text-align: center;">
+                        <img src="images/core model.png" class="img-fluid">
+                    </div>
                 </div>
-            </div>
 
-            <div id="tab1" style="@(selectedDiv == "tab4" ? "display: block;" : "display: none;")" class="container border">
-                <strong>COBIT 2019 - Components of a Governance System</strong>
+                <div id="tab1" style="@(selectedDiv == "tab4" ? "display: block;" : "display: none;")" class="container border">
+                    <strong>COBIT 2019 - Components of a Governance System</strong>
 
-                <p>
-                    To satisfy governance and management objectives, each enterprise needs to establish, tailor and sustain a governance system built from several components. These components are factors that, individually and collectively, contribute to the sound operations of the enterprise’s governance system over I&T. Components interact with each other, resulting in a holistic governance system for I&T as outlined below:
-                </p>
+                    <p>
+                        To satisfy governance and management objectives, each enterprise needs to establish, tailor and sustain a governance system built from several components. These components are factors that, individually and collectively, contribute to the sound operations of the enterprise’s governance system over I&T. Components interact with each other, resulting in a holistic governance system for I&T as outlined below:
+                    </p>
 
 
-                <ul>
-                    <li><strong>Processes</strong> describe an organized set of practices and activities to achieve certain objectives and produce a set of outputs that support achievement of overall IT-related goals.</li>
-                    <li><strong>Organizational structures</strong> are the key decision-making entities in an enterprise.</li>
-                    <li><strong>Principles, policies and frameworks</strong> translate desired behavior into practical guidance for day-to-day management.</li>
-                    <li><strong>Information</strong> is pervasive throughout any organization and includes all information produced and used by the enterprise. COBIT focuses on information required for the effective functioning of the governance system of the enterprise.</li>
-                    <li><strong>Culture, ethics and behavior</strong> of individuals and of the enterprise are often underestimated as factors in the success of governance and management activities.</li>
-                    <li><strong>People, skills and competencies</strong> are required for good decisions, execution of corrective action and successful completion of all activities.</li>
-                    <li><strong>Services, infrastructure and applications</strong> include the infrastructure, technology and applications that provide the enterprise with the governance system for I&T processing.</li>
-                </ul>
-                <div style="text-align: center;">
-                    <img src="images/components.png" class="img-fluid">
+                    <ul>
+                        <li><strong>Processes</strong> describe an organized set of practices and activities to achieve certain objectives and produce a set of outputs that support achievement of overall IT-related goals.</li>
+                        <li><strong>Organizational structures</strong> are the key decision-making entities in an enterprise.</li>
+                        <li><strong>Principles, policies and frameworks</strong> translate desired behavior into practical guidance for day-to-day management.</li>
+                        <li><strong>Information</strong> is pervasive throughout any organization and includes all information produced and used by the enterprise. COBIT focuses on information required for the effective functioning of the governance system of the enterprise.</li>
+                        <li><strong>Culture, ethics and behavior</strong> of individuals and of the enterprise are often underestimated as factors in the success of governance and management activities.</li>
+                        <li><strong>People, skills and competencies</strong> are required for good decisions, execution of corrective action and successful completion of all activities.</li>
+                        <li><strong>Services, infrastructure and applications</strong> include the infrastructure, technology and applications that provide the enterprise with the governance system for I&T processing.</li>
+                    </ul>
+                    <div style="text-align: center;">
+                        <img src="images/components.png" class="img-fluid">
+                    </div>
                 </div>
-            </div>
 
-            <div id="tab1" style="@(selectedDiv == "tab5" ? "display: block;" : "display: none;")" class="container border">
-                <strong>COBIT 2019 - Performance Management CMMI v2.0</strong>
+                <div id="tab1" style="@(selectedDiv == "tab5" ? "display: block;" : "display: none;")" class="container border">
+                    <strong>COBIT 2019 - Performance Management CMMI v2.0</strong>
 
-                <p>
-                    COBIT 2019 supports a CMMI-based process capability scheme. The process within each governance and management objective can operate at various capability levels, ranging from 0 to 5. The capability level is a measure of how well a process is implemented and performing. The COBIT core model assigns capability levels to all process activities, enabling clear definition of the processes and required activities for achieving the different capability levels.
+                    <p>
+                        COBIT 2019 supports a CMMI-based process capability scheme. The process within each governance and management objective can operate at various capability levels, ranging from 0 to 5. The capability level is a measure of how well a process is implemented and performing. The COBIT core model assigns capability levels to all process activities, enabling clear definition of the processes and required activities for achieving the different capability levels.
 
 
-                </p>
-                <p>
-                    A capability level can be achieved to varying degrees, which can be expressed by a set of ratings. The range of available ratings depends on the context in which the performance assessment is made. Less formal methods (often used in performance-improvement contexts) work better with a larger range of ratings, such as the following set:
-                </p>
-                <ul>
-                    <li><strong>Fully</strong> - The capability level is achieved for more than 85 percent. (This remains a judgment call, but it can be substantiated by the examination or assessment of the components of the enabler, such as process activities, process goals or organizational structure good practices.)</li>
-                    <li><strong>Largely</strong> - The capability level is achieved between 50 percent and 85 percent.</li>
-                    <li><strong>Partially</strong> - The capability level is achieved between 15 percent and 50 percent.</li>
-                    <li><strong>Not</strong> - The capability level is achieved less than 15 percent.</li>
-                </ul>
-                <div style="text-align: center;">
-                    <img src="images/cmmi.png" class="img-fluid">
+                    </p>
+                    <p>
+                        A capability level can be achieved to varying degrees, which can be expressed by a set of ratings. The range of available ratings depends on the context in which the performance assessment is made. Less formal methods (often used in performance-improvement contexts) work better with a larger range of ratings, such as the following set:
+                    </p>
+                    <ul>
+                        <li><strong>Fully</strong> - The capability level is achieved for more than 85 percent. (This remains a judgment call, but it can be substantiated by the examination or assessment of the components of the enabler, such as process activities, process goals or organizational structure good practices.)</li>
+                        <li><strong>Largely</strong> - The capability level is achieved between 50 percent and 85 percent.</li>
+                        <li><strong>Partially</strong> - The capability level is achieved between 15 percent and 50 percent.</li>
+                        <li><strong>Not</strong> - The capability level is achieved less than 15 percent.</li>
+                    </ul>
+                    <div style="text-align: center;">
+                        <img src="images/cmmi.png" class="img-fluid">
+                    </div>
                 </div>
-            </div>
 
-            <div id="tab1" style="@(selectedDiv == "tab6" ? "display: block;" : "display: none;")" class="container border">
-                <strong>COBIT 2019 - Design Factors</strong>
+                <div id="tab1" style="@(selectedDiv == "tab6" ? "display: block;" : "display: none;")" class="container border">
+                    <strong>COBIT 2019 - Design Factors</strong>
 
-                <p>
-                    Design factors influence the design of a company's governance system and position it for success in the use of information and technology. Design factors include the goals cascade of a company and includes additional design factors categorized as: contextual - design factors that are beyond the company's control, strategic - design factors that reflect decisions made by the company, and tactical - design factors that are based on implementation choices regarding resourcing models, IT methods, and technology adoption choices.
-                </p>
+                    <p>
+                        Design factors influence the design of a company's governance system and position it for success in the use of information and technology. Design factors include the goals cascade of a company and includes additional design factors categorized as: contextual - design factors that are beyond the company's control, strategic - design factors that reflect decisions made by the company, and tactical - design factors that are based on implementation choices regarding resourcing models, IT methods, and technology adoption choices.
+                    </p>
 
 
-                <p>
-                    There are three potential impacts of design factors on a governance system in COBIT 2019. First, management objective priority and target capability levels. There are 40 governance and management objectives in the COBIT core model. They are all equal, and there is no hierarchy among them. Some governance and management objectives, however, may be more significant than others due to design factors.
-                </p>
-                <p>
-                    To achieve governance and management objectives, components are required. Some design factors can have an impact on the importance of one or more components, or they can require specific changes. The last impact is specific focus area guidance. Some design factors, such as the threat landscape, specialized risk, target development methods, and infrastructure setup, will drive the adaptation of the core COBIT model material to a particular setting.
-                </p>
-                <div style="text-align: center;">
-                    <img src="images/design factors.png" class="img-fluid">
+                    <p>
+                        There are three potential impacts of design factors on a governance system in COBIT 2019. First, management objective priority and target capability levels. There are 40 governance and management objectives in the COBIT core model. They are all equal, and there is no hierarchy among them. Some governance and management objectives, however, may be more significant than others due to design factors.
+                    </p>
+                    <p>
+                        To achieve governance and management objectives, components are required. Some design factors can have an impact on the importance of one or more components, or they can require specific changes. The last impact is specific focus area guidance. Some design factors, such as the threat landscape, specialized risk, target development methods, and infrastructure setup, will drive the adaptation of the core COBIT model material to a particular setting.
+                    </p>
+                    <div style="text-align: center;">
+                        <img src="images/design factors.png" class="img-fluid">
+                    </div>
                 </div>
-            </div>
 
+            </div>
+        </div>
+        <div class="row border">
+            @if (!string.IsNullOrEmpty(userID))
+            {
+                <FocusAreaSelectTable userID="@userID" />
+            }
         </div>
     </div>
-    <div class="row border">
-        @if (!string.IsNullOrEmpty(userID))
-        {
-            <FocusAreaSelectTable userID="@userID" />
-        }
-    </div>
-</div>
+</AuthorizeView>
