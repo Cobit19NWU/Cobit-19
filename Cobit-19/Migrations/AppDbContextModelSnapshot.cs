@@ -717,18 +717,126 @@ namespace Cobit_19.Migrations
                         {
                             Id = "8e445865-a24d-4543-a6c6-9443d048cdb9",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "902d0782-9d7f-43f2-bed7-db8a072f929b",
+                            ConcurrencyStamp = "bdbf6c62-38ad-4019-a4b5-75ca133cf343",
                             Email = "test@gmail.com",
                             EmailConfirmed = true,
                             FirstName = "Daniel",
                             LastName = "Coetzee",
                             LockoutEnabled = false,
                             NormalizedUserName = "TEST@GMAIL.COM",
-                            PasswordHash = "AQAAAAEAACcQAAAAEKt5zCyrlcOWKGTPJ/+JbaNvCD0z/yEiP8hDpHO7VgETL5zXcNu1CyI4gZ0PaNBTIQ==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEPMHtWoyN8TY3rOYB3Y2KTbmJe8egce48V/qi4Yf/RIIP+GWQEpKrMvtaFWoMj6+1w==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "a049dbda-abee-43af-9daa-80af9cf1a37b",
+                            SecurityStamp = "518d1a9d-a247-4a4e-a48b-05a77fe21417",
                             TwoFactorEnabled = false,
                             UserName = "test@gmail.com"
+                        },
+                        new
+                        {
+                            Id = "fa567c12-5678-4321-bacd-87654321de1f",
+                            AccessFailedCount = 0,
+                            ConcurrencyStamp = "88cd2cf5-ebb2-415e-b398-39ebc5db2f00",
+                            Email = "john.smith@example.com",
+                            EmailConfirmed = true,
+                            FirstName = "John",
+                            LastName = "Smith",
+                            LockoutEnabled = false,
+                            NormalizedUserName = "JOHN.SMITH@EXAMPLE.COM",
+                            PasswordHash = "AQAAAAEAACcQAAAAENQUqeZ8l03uQ/yK65Etn5zw5P7Y4DQQM/DP6eqyuiqCCFhlXq0RRrfZQRtCqAgZrw==",
+                            PhoneNumberConfirmed = false,
+                            SecurityStamp = "3f5ac335-7d9b-46fb-b8b0-25b66c664389",
+                            TwoFactorEnabled = false,
+                            UserName = "john.smith@example.com"
+                        },
+                        new
+                        {
+                            Id = "9b1a0f34-8765-4321-dcba-ba09876543c2",
+                            AccessFailedCount = 0,
+                            ConcurrencyStamp = "d082ecad-9593-4ef8-be9b-70094124d366",
+                            Email = "alice.johnson@example.com",
+                            EmailConfirmed = true,
+                            FirstName = "Alice",
+                            LastName = "Johnson",
+                            LockoutEnabled = false,
+                            NormalizedUserName = "ALICE.JOHNSON@EXAMPLE.COM",
+                            PasswordHash = "AQAAAAEAACcQAAAAELWsIZPlo8Qtrz16m+TZc2CWsyCIG/KBvG9XgTdnBDih3VEyXzQcJcoIINuCxGT76Q==",
+                            PhoneNumberConfirmed = false,
+                            SecurityStamp = "da13443c-35c1-4845-b4b2-b17b456855bf",
+                            TwoFactorEnabled = false,
+                            UserName = "alice.johnson@example.com"
+                        },
+                        new
+                        {
+                            Id = "b2c3d4e5-f6a7-1234-5678-0987654321dc",
+                            AccessFailedCount = 0,
+                            ConcurrencyStamp = "56970834-829b-4c05-ae15-a512e9c1c53d",
+                            Email = "michael.brown@example.com",
+                            EmailConfirmed = true,
+                            FirstName = "Michael",
+                            LastName = "Brown",
+                            LockoutEnabled = false,
+                            NormalizedUserName = "MICHAEL.BROWN@EXAMPLE.COM",
+                            PasswordHash = "AQAAAAEAACcQAAAAEFej4BwpoVKA0QcLT5llFZSHtzu7gcAlSSitHfjFKD/HTpaJAsAii9RlHe5jDLrgvA==",
+                            PhoneNumberConfirmed = false,
+                            SecurityStamp = "06bfccd2-a649-470d-a485-fc03aba1660a",
+                            TwoFactorEnabled = false,
+                            UserName = "michael.brown@example.com"
+                        });
+                });
+
+            modelBuilder.Entity("Cobit_19.Data.Models.AuditMemberModel", b =>
+                {
+                    b.Property<string>("ApplicationUserID")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<int>("AuditID")
+                        .HasColumnType("int");
+
+                    b.HasKey("ApplicationUserID", "AuditID");
+
+                    b.HasIndex("AuditID");
+
+                    b.ToTable("AuditMembers");
+
+                    b.HasData(
+                        new
+                        {
+                            ApplicationUserID = "8e445865-a24d-4543-a6c6-9443d048cdb9",
+                            AuditID = 1
+                        },
+                        new
+                        {
+                            ApplicationUserID = "8e445865-a24d-4543-a6c6-9443d048cdb9",
+                            AuditID = 2
+                        },
+                        new
+                        {
+                            ApplicationUserID = "8e445865-a24d-4543-a6c6-9443d048cdb9",
+                            AuditID = 3
+                        },
+                        new
+                        {
+                            ApplicationUserID = "8e445865-a24d-4543-a6c6-9443d048cdb9",
+                            AuditID = 4
+                        },
+                        new
+                        {
+                            ApplicationUserID = "8e445865-a24d-4543-a6c6-9443d048cdb9",
+                            AuditID = 5
+                        },
+                        new
+                        {
+                            ApplicationUserID = "fa567c12-5678-4321-bacd-87654321de1f",
+                            AuditID = 1
+                        },
+                        new
+                        {
+                            ApplicationUserID = "9b1a0f34-8765-4321-dcba-ba09876543c2",
+                            AuditID = 1
+                        },
+                        new
+                        {
+                            ApplicationUserID = "b2c3d4e5-f6a7-1234-5678-0987654321dc",
+                            AuditID = 1
                         });
                 });
 
@@ -19715,6 +19823,21 @@ namespace Cobit_19.Migrations
                         {
                             ApplicationUserID = "8e445865-a24d-4543-a6c6-9443d048cdb9",
                             FocusAreaID = 1
+                        },
+                        new
+                        {
+                            ApplicationUserID = "fa567c12-5678-4321-bacd-87654321de1f",
+                            FocusAreaID = 1
+                        },
+                        new
+                        {
+                            ApplicationUserID = "9b1a0f34-8765-4321-dcba-ba09876543c2",
+                            FocusAreaID = 1
+                        },
+                        new
+                        {
+                            ApplicationUserID = "b2c3d4e5-f6a7-1234-5678-0987654321dc",
+                            FocusAreaID = 1
                         });
                 });
 
@@ -19748,28 +19871,28 @@ namespace Cobit_19.Migrations
                         new
                         {
                             Id = "2c5e174e-3b0e-446f-86af-483d56fd7210",
-                            ConcurrencyStamp = "eaa2564a-0fc2-4ba2-ac44-43ddc971feed",
+                            ConcurrencyStamp = "3c6719ac-9e4a-4bac-9e67-ca1b65e3da38",
                             Name = "Administrator",
                             NormalizedName = "ADMINISTRATOR"
                         },
                         new
                         {
                             Id = "36c9f3b8-42e6-4ab1-a50d-e89986c5d1f7",
-                            ConcurrencyStamp = "ccde9603-224f-4844-8ab9-3126db7fc0b9",
+                            ConcurrencyStamp = "103f0eef-17f7-4e87-bbb2-fd86619314a5",
                             Name = "Head Auditor",
                             NormalizedName = "HEAD AUDITOR"
                         },
                         new
                         {
                             Id = "5e70cf29-1b64-4f58-85dd-07b3c46015a3",
-                            ConcurrencyStamp = "bfb26c87-3e7a-4c87-a150-fb461eafc65b",
+                            ConcurrencyStamp = "acf8ea35-ca8c-4373-a9c0-cb8b2cf68c43",
                             Name = "Auditor",
                             NormalizedName = "AUDITOR"
                         },
                         new
                         {
                             Id = "d3ae1c6e-1c8a-43e7-9a2a-971fc7fbb295",
-                            ConcurrencyStamp = "599a056e-5da5-4253-bcf7-1068fd3bbf81",
+                            ConcurrencyStamp = "7e141700-c5cb-4405-9a6d-729b94e287de",
                             Name = "Client",
                             NormalizedName = "CLIENT"
                         });
@@ -19868,6 +19991,21 @@ namespace Cobit_19.Migrations
                         {
                             UserId = "8e445865-a24d-4543-a6c6-9443d048cdb9",
                             RoleId = "2c5e174e-3b0e-446f-86af-483d56fd7210"
+                        },
+                        new
+                        {
+                            UserId = "fa567c12-5678-4321-bacd-87654321de1f",
+                            RoleId = "36c9f3b8-42e6-4ab1-a50d-e89986c5d1f7"
+                        },
+                        new
+                        {
+                            UserId = "9b1a0f34-8765-4321-dcba-ba09876543c2",
+                            RoleId = "5e70cf29-1b64-4f58-85dd-07b3c46015a3"
+                        },
+                        new
+                        {
+                            UserId = "b2c3d4e5-f6a7-1234-5678-0987654321dc",
+                            RoleId = "d3ae1c6e-1c8a-43e7-9a2a-971fc7fbb295"
                         });
                 });
 
@@ -19909,6 +20047,25 @@ namespace Cobit_19.Migrations
                     b.Navigation("Audit");
 
                     b.Navigation("Question");
+                });
+
+            modelBuilder.Entity("Cobit_19.Data.Models.AuditMemberModel", b =>
+                {
+                    b.HasOne("Cobit_19.Data.Models.ApplicationUser", "User")
+                        .WithMany("AuditMembers")
+                        .HasForeignKey("ApplicationUserID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Cobit_19.Data.Models.AuditModel", "Audit")
+                        .WithMany("AuditMembers")
+                        .HasForeignKey("AuditID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Audit");
+
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("Cobit_19.Data.Models.AuditModel", b =>
@@ -20081,6 +20238,8 @@ namespace Cobit_19.Migrations
 
             modelBuilder.Entity("Cobit_19.Data.Models.ApplicationUser", b =>
                 {
+                    b.Navigation("AuditMembers");
+
                     b.Navigation("AuditScopes");
 
                     b.Navigation("Audits");
@@ -20093,6 +20252,8 @@ namespace Cobit_19.Migrations
             modelBuilder.Entity("Cobit_19.Data.Models.AuditModel", b =>
                 {
                     b.Navigation("Answers");
+
+                    b.Navigation("AuditMembers");
 
                     b.Navigation("AuditScopes");
                 });

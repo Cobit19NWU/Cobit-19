@@ -23,6 +23,7 @@ namespace Cobit_19.Data
         public DbSet<AuditScopeModel> AuditScopes { get; set; }
         public DbSet<MapModel> Maps { get; set; }
         public DbSet<SubscriptionModel> Subscriptions { get; set; }
+        public DbSet<AuditMemberModel> AuditMembers { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
@@ -122,16 +123,49 @@ namespace Cobit_19.Data
 
             //Seeding the User to AspNetUsers table
             builder.Entity<ApplicationUser>().HasData(
-                new ApplicationUser
+                new ApplicationUser //ADMIN USER
                 {
                     FirstName = "Daniel",
                     LastName = "Coetzee",
                     Email = "test@gmail.com",
-                    Id = "8e445865-a24d-4543-a6c6-9443d048cdb9", // primary key
+                    Id = "8e445865-a24d-4543-a6c6-9443d048cdb9", 
                     UserName = "test@gmail.com",
                     NormalizedUserName = "TEST@GMAIL.COM",
                     EmailConfirmed = true,
                     PasswordHash = hasher.HashPassword(null, "Pa$$w0rd"),
+                },
+                new ApplicationUser //HEAD AUDITOR USER
+                {
+                    FirstName = "John",
+                    LastName = "Smith",
+                    Email = "john.smith@example.com",
+                    Id = "fa567c12-5678-4321-bacd-87654321de1f", 
+                    UserName = "john.smith@example.com",
+                    NormalizedUserName = "JOHN.SMITH@EXAMPLE.COM",
+                    EmailConfirmed = true,
+                    PasswordHash = hasher.HashPassword(null, "RandomPa$$w0rd1"),
+                },
+                new ApplicationUser //AUDITOR USER
+                {
+                    FirstName = "Alice",
+                    LastName = "Johnson",
+                    Email = "alice.johnson@example.com",
+                    Id = "9b1a0f34-8765-4321-dcba-ba09876543c2", 
+                    UserName = "alice.johnson@example.com",
+                    NormalizedUserName = "ALICE.JOHNSON@EXAMPLE.COM",
+                    EmailConfirmed = true,
+                    PasswordHash = hasher.HashPassword(null, "RandomPa$$w0rd2"),
+                },
+                new ApplicationUser //CLIENT USER
+                {
+                    FirstName = "Michael",
+                    LastName = "Brown",
+                    Email = "michael.brown@example.com",
+                    Id = "b2c3d4e5-f6a7-1234-5678-0987654321dc", 
+                    UserName = "michael.brown@example.com",
+                    NormalizedUserName = "MICHAEL.BROWN@EXAMPLE.COM",
+                    EmailConfirmed = true,
+                    PasswordHash = hasher.HashPassword(null, "RandomPa$$w0rd3"),
                 }
             );
 
@@ -142,11 +176,39 @@ namespace Cobit_19.Data
                 {
                     RoleId = "2c5e174e-3b0e-446f-86af-483d56fd7210",
                     UserId = "8e445865-a24d-4543-a6c6-9443d048cdb9"
+                },
+                new IdentityUserRole<string>
+                {
+                    RoleId = "36c9f3b8-42e6-4ab1-a50d-e89986c5d1f7",
+                    UserId = "fa567c12-5678-4321-bacd-87654321de1f"
+                },
+                new IdentityUserRole<string>
+                {
+                    RoleId = "5e70cf29-1b64-4f58-85dd-07b3c46015a3",
+                    UserId = "9b1a0f34-8765-4321-dcba-ba09876543c2"
+                },
+                new IdentityUserRole<string>
+                {
+                    RoleId = "d3ae1c6e-1c8a-43e7-9a2a-971fc7fbb295",
+                    UserId = "b2c3d4e5-f6a7-1234-5678-0987654321dc"
                 }
             );
 
             builder.Entity<SubscriptionModel>().HasData(
-                new SubscriptionModel { ApplicationUserID = "8e445865-a24d-4543-a6c6-9443d048cdb9", FocusAreaID = 1 });
+                new SubscriptionModel { ApplicationUserID = "8e445865-a24d-4543-a6c6-9443d048cdb9", FocusAreaID = 1 },
+                new SubscriptionModel { ApplicationUserID = "fa567c12-5678-4321-bacd-87654321de1f", FocusAreaID = 1 },
+                new SubscriptionModel { ApplicationUserID = "9b1a0f34-8765-4321-dcba-ba09876543c2", FocusAreaID = 1 },
+                new SubscriptionModel { ApplicationUserID = "b2c3d4e5-f6a7-1234-5678-0987654321dc", FocusAreaID = 1 });
+
+            builder.Entity<AuditMemberModel>().HasData(
+                new AuditMemberModel { ApplicationUserID = "8e445865-a24d-4543-a6c6-9443d048cdb9", AuditID = 1 },
+                new AuditMemberModel { ApplicationUserID = "8e445865-a24d-4543-a6c6-9443d048cdb9", AuditID = 2 },
+                new AuditMemberModel { ApplicationUserID = "8e445865-a24d-4543-a6c6-9443d048cdb9", AuditID = 3 },
+                new AuditMemberModel { ApplicationUserID = "8e445865-a24d-4543-a6c6-9443d048cdb9", AuditID = 4 },
+                new AuditMemberModel { ApplicationUserID = "8e445865-a24d-4543-a6c6-9443d048cdb9", AuditID = 5 },
+                new AuditMemberModel { ApplicationUserID = "fa567c12-5678-4321-bacd-87654321de1f", AuditID = 1 },
+                new AuditMemberModel { ApplicationUserID = "9b1a0f34-8765-4321-dcba-ba09876543c2", AuditID = 1 },
+                new AuditMemberModel { ApplicationUserID = "b2c3d4e5-f6a7-1234-5678-0987654321dc", AuditID = 1 });
 
             builder.Entity<FocusAreaModel>().HasData(
                 new FocusAreaModel { ID = 1, Name = "Cobit Core Model", Description = "General Core Model", DateCreated = DateTime.Parse("Jan 1, 2009"), ApplicationUserID = "8e445865-a24d-4543-a6c6-9443d048cdb9" });

@@ -34,11 +34,16 @@ namespace Cobit_19.Business.FocusAreas
 
         public IEnumerable<AuditDto> GetAuditsForFocusAreaByUserID(string userID, int focusAreaID)
         {
-            var query = _dbContext.Audits
-                .Where(audit => audit.ApplicationUserID == userID && audit.FocusAreaID == focusAreaID)
-                .Include(audit => audit.FocusArea);
+            var auditSubs = _dbContext.AuditMembers
+                .Where(auditSub => auditSub.ApplicationUserID == userID)
+                .Select(auditSub => auditSub.AuditID)
+                .ToList();
 
-            return _mapper.Map<IEnumerable<AuditDto>>(query);
+            var audits = _dbContext.Audits
+                .Where(audit => auditSubs.Contains(audit.ID) && audit.FocusAreaID == focusAreaID)
+                .ToList();
+
+            return _mapper.Map<IEnumerable<AuditDto>>(audits);
         }
 
         public IEnumerable<FocusAreaDto> GetAllFocusAreas()
@@ -101,12 +106,17 @@ namespace Cobit_19.Business.FocusAreas
 
         public AuditDto GetLastAuditForFocusAreaByUserID(string userID, int focusAreaID)
         {
-            var query = _dbContext.Audits
-                .Where(audit => audit.FocusAreaID == focusAreaID && audit.ApplicationUserID == userID)
+            var auditSubs = _dbContext.AuditMembers
+                .Where(auditSub => auditSub.ApplicationUserID == userID)
+                .Select(auditSub => auditSub.AuditID)
+                .ToList();
+
+            var audit = _dbContext.Audits
+                .Where(audit => auditSubs.Contains(audit.ID) && audit.FocusAreaID == focusAreaID)
                 .OrderByDescending(audit => audit.DateCreated)
                 .FirstOrDefault();
-                           
-            return _mapper.Map<AuditDto>(query);
+
+            return _mapper.Map<AuditDto>(audit);
         }
 
         public DesignFactorDto GetNextDesignFactor(int focusAreaID, int designFactorID)
