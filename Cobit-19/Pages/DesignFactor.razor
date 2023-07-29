@@ -148,31 +148,31 @@
                         <table class="table border-3 table-bordered" >
                             <thead class="table-primary">
                                 <tr>
-                                    <th scope="col">Description</th>
+                        <th scope="col" style="color: white; background-color : purple; width :stretch ; padding: 10px 15px;  border-bottom: 1px solid transparent;  border-top-left-radius: 3px; border-top-right-radius: 3px; ">Description</th>
                                     @if (_designFactorDto.Questions.First().Answers.First().Odds == 0)
                                     {
                                         @if (_designFactorDto.Questions.First().Answers.First().AnswerRange <= 8)
                                         {
                                             @for (int i = 1; i <= _designFactorDto.Questions.First().Answers.First().AnswerRange; i++)
                                             {
-                                                <th scope="col">@i</th>
+                                    <th scope="col" style="color: white; background-color : purple; width :stretch ; padding: 10px 15px;  border-bottom: 1px solid transparent;  border-top-left-radius: 3px; border-top-right-radius: 3px; ">@i</th>
                                             }
                                         }
                                         else if (_designFactorDto.Questions.First().Answers.First().AnswerRange == 100)
                                         {
-                                            <th scope="col">Value(%)</th>
+                                <th scope="col" style="color: white; background-color : purple; width :stretch ; padding: 10px 15px;  border-bottom: 1px solid transparent;  border-top-left-radius: 3px; border-top-right-radius: 3px; ">Value(%)</th>
                                         }
                                         else
                                         {
-                                            <th scope="col">Value(1 - @_designFactorDto.Questions.First().Answers.First().AnswerRange)</th>
+                                <th scope="col" style="color: white; background-color : purple; width :stretch ; padding: 10px 15px;  border-bottom: 1px solid transparent;  border-top-left-radius: 3px; border-top-right-radius: 3px; ">Value(1 - @_designFactorDto.Questions.First().Answers.First().AnswerRange)</th>
                                         }
                                     }
                                     else
                                     {
-                                        <th scope="col">Value(1 - @_designFactorDto.Questions.First().Answers.First().AnswerRange)</th>
-                                        <th scope="col">Likelihood(1 - @_designFactorDto.Questions.First().Answers.First().AnswerRange)</th>
+                            <th scope="col" style="color: white; background-color : purple; width :stretch ; padding: 10px 15px;  border-bottom: 1px solid transparent;  border-top-left-radius: 3px; border-top-right-radius: 3px; ">Value(1 - @_designFactorDto.Questions.First().Answers.First().AnswerRange)</th>
+                            <th scope="col" style="color: white; background-color : purple; width :stretch ; padding: 10px 15px;  border-bottom: 1px solid transparent;  border-top-left-radius: 3px; border-top-right-radius: 3px; ">Likelihood(1 - @_designFactorDto.Questions.First().Answers.First().AnswerRange)</th>
                                     }
-                                    <th scope="col">Baseline</th>
+                        <th scope="col" style="color: white; background-color : purple; width :stretch ; padding: 10px 15px;  border-bottom: 1px solid transparent;  border-top-left-radius: 3px; border-top-right-radius: 3px; ">Baseline</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -226,20 +226,41 @@
                                 }
                             </tbody>
                         </table>
+
+                        <div class="align-items-center justify-content-center">
+                            <h3>Chart:</h3>
+                         </div>
+                                           
+                        <div class="col-lg-12">
+                            <div class="panel panel-primary">
+
+                                 <div class="panel-heading" style="color: white; background-color : purple; width :stretch ; padding: 10px 15px;  border-bottom: 1px solid transparent;  border-top-left-radius: 3px; border-top-right-radius: 3px; ">
+                                        <i class="fa fa-info-circle"></i> Info Panel - @_designFactorDto.Description
+                                 </div>   
+                                 
+                                <div class="panel-body">
+                                    <p>
+                                        The output section of this tab contains the calculated relative importance of each of the 40 COBIT
+                                        2019 governance and management objectives. The results are represented as a bar chart and as a spider diagram.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
                         <DesignFactorChart Values="@_mappedObjectives"></DesignFactorChart>
                     }
                     <div class="row">
-                        <div class="col">
+                        <div class="col" >
                             @if (_isPreviousButtonDFId != -1)
                             {
-                                <button type="button" onclick="@(() => NavButtonPress(_isPreviousButtonDFId))" class="btn btn-primary">Back</button>
+                    <button type="button" onclick="@(() => NavButtonPress(_isPreviousButtonDFId))" class="btn btn-primary" style="background-color : purple">Back</button>
                             }
                         </div>
                         <div class="col">
                             <div class="float-end">
                                 @if (_isNextButtonDFId != -1)
                                 {
-                                    <button type="button" onclick="@(() => NavButtonPress(_isNextButtonDFId))" class="btn btn-primary">Next</button>
+                        <button type="button" onclick="@(() => NavButtonPress(_isNextButtonDFId))" class="btn btn-primary" style="background-color : purple">Next</button>
                                 }
                             </div>
                         </div>
