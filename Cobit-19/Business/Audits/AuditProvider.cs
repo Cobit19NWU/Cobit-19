@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Cobit_19.Business.ObjectiveAudits;
 using Cobit_19.Data;
 using Cobit_19.Data.Models;
 using Cobit_19.Shared.Dtos;
@@ -12,10 +13,12 @@ namespace Cobit_19.Business.Audits
         private readonly IMapper _mapper;
         private readonly AppDbContext _dbContext;
         private static readonly object _lock = new object();
-        public AuditProvider(IMapper mapper, AppDbContext dbContext)
+        private readonly ObjectiveAuditProvider _objectiveAuditProvider;
+        public AuditProvider(IMapper mapper, AppDbContext dbContext, ObjectiveAuditProvider objectiveAuditProvider)
         {
             _dbContext = dbContext;
             _mapper = mapper;
+            _objectiveAuditProvider = objectiveAuditProvider;
         }
 
         // Get audit by id with focus area and design factors
@@ -91,6 +94,7 @@ namespace Cobit_19.Business.Audits
 
             await _dbContext.Audits.AddAsync(audit);
 
+
             // Create Answers
             var DesignFactors = await getDesignFactorsAsync(audit.ID);
             foreach (var DF in DesignFactors)
@@ -107,20 +111,23 @@ namespace Cobit_19.Business.Audits
             }
 
             //Create ObjectiveAudits
-            var objectives = await getObjectivesAsync();
-            foreach (var obj in objectives)
+            /*var objectives = await getObjectivesAsync();
+            var objectiveTemplates = await _objectiveAuditProvider.getAllObjectiveTemplatesAsync();
+            foreach (var objTemplate in objectiveTemplates)
             {
+
                 var objAudit = new ObjectiveAuditModel
                 {
                     AuditID = audit.ID,
-                    ObjectiveID = obj.ID,
+                    ObjectiveID = objTemplate.ObjectiveID,
                     ApplicationUserID = audit.ApplicationUserID,
                     DateCreated = DateTime.Now,
                     Selected = false,
-                    Status = AuditStatus.NotStarted
+                    Status = AuditStatus.NotStarted,
+                    UserAuditObject = objTemplate.AuditObject
                 };
                 _dbContext.ObjectiveAudits.Add(objAudit);
-            }
+            }*/
 
             await _dbContext.SaveChangesAsync();
 
