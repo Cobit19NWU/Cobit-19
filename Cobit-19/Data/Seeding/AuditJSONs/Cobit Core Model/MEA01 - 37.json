@@ -1,7 +1,8 @@
-{  
+{
   "objectiveName": "MEA01",
   "objectiveDescription": "Define and maintain appropriate business process controls to ensure that information related to and processed by in-house or outsourced business processes satisfies all relevant information control requirements. Identify the relevant information control requirements. Manage and operate adequate input, throughput and output controls (application controls) to ensure that information and information processing satisfy these requirements.",
   "objectivePurpose": "Maintain information integrity and the security of information assets handled within business processes in the enterprise or its outsourced operation.",
+  "typeOfObjective": "Management",
   "maturityLevel": 0,
   "maturityLevel0PercFinal": 0,
   "maturityLevel1PercFinal": 0,
@@ -48,92 +49,92 @@
               "questionComment": "comment"
             }
           ]
-            },
-              {
-                "subComponentCode": "EG04",
-                "subComponentName": "Quality of financial information",
-                "subComponentQuestions": [
-                  {
-                    "questionType": "Enterprise goal",
-                    "questionDescription": "Satisfaction survey of key stakeholders regarding the transparency, understanding and accuracy of enterprise financial information",
-                    "questionAnswer": 0,
-                    "questionScore": 0,
-                    "questionComment": "comment"
-                  },
-                  {
-                    "questionType": "Enterprise goal",
-                    "questionDescription": "Cost of noncompliance with finance-related regulations",
-                    "questionAnswer": 0,
-                    "questionScore": 0,
-                    "questionComment": "comment"
-                  }
-
-                ]
-              },
+        },
+        {
+          "subComponentCode": "EG04",
+          "subComponentName": "Quality of financial information",
+          "subComponentQuestions": [
             {
-              "subComponentCode": "EG07",
-              "subComponentName": "Quality of management information",
-              "subComponentQuestions": [
-                {
-                  "questionType": "Enterprise goal",
-                  "questionDescription": "Degree of board and executive management satisfaction with decision-making information",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Enterprise goal",
-                  "questionDescription": "Number of incidents caused by incorrect business decisions based on inaccurate information",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Enterprise goal",
-                  "questionDescription": "Time to provide information supporting effective business decisions",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Enterprise goal",
-                  "questionDescription": "Timeliness of management information",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                }
-
-              ]
+              "questionType": "Enterprise goal",
+              "questionDescription": "Satisfaction survey of key stakeholders regarding the transparency, understanding and accuracy of enterprise financial information",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
             },
-              {
-                "subComponentCode": "EG08",
-                "subComponentName": "Optimization of internal business process functionality",
-                "subComponentQuestions": [
-                  {
-                    "questionType": "Enterprise goal",
-                    "questionDescription": "Satisfaction levels of board and executive management with business process capabilities",
-                    "questionAnswer": 0,
-                    "questionScore": 0,
-                    "questionComment": "comment"
-                  },
-                  {
-                    "questionType": "Enterprise goal",
-                    "questionDescription": "Satisfaction levels of customers with service delivery capabilities",
-                    "questionAnswer": 0,
-                    "questionScore": 0,
-                    "questionComment": "comment"
-                  },
-                  {
-                    "questionType": "Enterprise goal",
-                    "questionDescription": "Satisfaction levels of suppliers with supply chain capabilities",
-                    "questionAnswer": 0,
-                    "questionScore": 0,
-                    "questionComment": "comment"
-                  }
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Cost of noncompliance with finance-related regulations",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
 
-                ]
-              }
-            ]  
+          ]
+        },
+        {
+          "subComponentCode": "EG07",
+          "subComponentName": "Quality of management information",
+          "subComponentQuestions": [
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Degree of board and executive management satisfaction with decision-making information",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Number of incidents caused by incorrect business decisions based on inaccurate information",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Time to provide information supporting effective business decisions",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Timeliness of management information",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+
+          ]
+        },
+        {
+          "subComponentCode": "EG08",
+          "subComponentName": "Optimization of internal business process functionality",
+          "subComponentQuestions": [
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Satisfaction levels of board and executive management with business process capabilities",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Satisfaction levels of customers with service delivery capabilities",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Satisfaction levels of suppliers with supply chain capabilities",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+
+          ]
+        }
+      ]
     },
 
     {
@@ -203,864 +204,167 @@
           ]
         }
       ]
-        },
+    },
+    {
+      "componentName": "A",
+      "componentDescription": "Processes",
+      "componentPercFinal": 0,
+      "subComponents": [
         {
-          "componentName": "A",
-          "componentDescription": "Processes",
-          "componentPercFinal": 0,
-          "subComponents": [
+          "subComponentCode": "MEA01.01",
+          "subComponentName": "Establish a monitoring approach.",
+          "subComponentDescription": "Engage with stakeholders to establish and maintain a monitoring approach to define the objectives, scope and method for measuring business solution and service delivery and contribution to enterprise objectives. Integrate this approach with the corporate performance management system.",
+          "subComponentQuestions": [
             {
-              "subComponentCode": "MEA01.01",
-              "subComponentName": "Establish a monitoring approach.",
-              "subComponentDescription": "Engage with stakeholders to establish and maintain a monitoring approach to define the objectives, scope and method for measuring business solution and service delivery and contribution to enterprise objectives. Integrate this approach with the corporate performance management system.",
-              "subComponentQuestions": [
-                {
-                  "questionType": "Maturity Level 2",
-                  "questionDescription": "Identify stakeholders (e.g., management, process owners and users).",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 2",
-                  "questionDescription": "Engage with stakeholders and communicate the enterprise requirements and objectives for monitoring, aggregating and reporting, using common definitions (e.g., business glossary, metadata and taxonomy), baselining and benchmarking",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 2",
-                  "questionDescription": "Align and continually maintain the monitoring and evaluation approach with the enterprise approach and the tools to be used for data gathering and enterprise reporting (e.g., business intelligence applications).",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 2",
-                  "questionDescription": "Agree on the types of goals and metrics (e.g., conformance, performance, value, risk), taxonomy (classification and relationships between goals and metrics) and data (evidence) retention.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 2",
-                  "questionDescription": "Request, prioritize and allocate resources for monitoring, consider appropriateness, efficiency, effectiveness and confidentiality",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 3",
-                  "questionDescription": "Periodically validate the approach used and identify new or changed stakeholders, requirements and resources.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 3",
-                  "questionDescription": "Agree on a life cycle management and change control process for monitoring and reporting. Include improvement opportunities for reporting, metrics, approach, baselining and benchmarking.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Related Guidance",
-                  "questionDescription": "string",
-                  "relatedGuidance": "CMMI Data Management Maturity Model, 2014",
-                  "detailedReference": "Supporting Processes - Measurement and Analysis",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Related Guidance",
-                  "questionDescription": "string",
-                  "relatedGuidance": "SF, The Standard of Good Practice for Information Security 2016",
-                  "detailedReference": "SI2 Security Performance",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Related Guidance",
-                  "questionDescription": "string",
-                  "relatedGuidance": "SO/IEC 27001:2013/Cor.2:2015(E)",
-                  "detailedReference": "9.1 Monitoring, measurement, analysis and evaluation",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Related Guidance",
-                  "questionDescription": "string",
-                  "relatedGuidance": "ISO/IEC 27004:2016(E)",
-                  "detailedReference": "6. Characteristics; 7. Types of measures; 8. Processes",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Related Guidance",
-                  "questionDescription": "string",
-                  "relatedGuidance": "SO/IEC 38500:2015(E)",
-                  "detailedReference": "5.5 Principle 4: Performance; 5.6 Principle 5: Conformance",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Related Guidance",
-                  "questionDescription": "string",
-                  "relatedGuidance": "National Institute of Standards and Technology Special Publication 800-37, Revision 2 (Draft), May 2018",
-                  "detailedReference": "3.1 Preparation (Task 13); 3.3 Selection (Task 2); 3.7 Monitoring (Task 1)",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Related Guidance",
-                  "questionDescription": "string",
-                  "relatedGuidance": "National Institute of Standards and Technology Special Publication 800-53, Revision 5 (Draft), August 2017",
-                  "detailedReference": "3.4 Assessment, authorization and monitoring (CA-2, CA-7); 3.20 System and information integrity (SI-4)",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                }
-              ]
-            },
-            {
-              "subComponentCode": "MEA01.02",
-              "subComponentName": "Set performance and conformance targets.",
-              "subComponentDescription": "Work with stakeholders to define, periodically review, update and approve performance and conformance targets within the performance measurement system",
-              "subComponentQuestions": [
-                {
-                  "questionType": "Maturity Level 2",
-                  "questionDescription": "Define the goals and metrics. Periodically review them with stakeholders to identify any significant missing items and define reasonableness of targets and tolerances.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 2",
-                  "questionDescription": "Evaluate whether the goals and metrics are adequate, that is, specific, measurable, achievable, relevant and time-bound (SMART).",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 2",
-                  "questionDescription": "Communicate proposed changes to performance and conformance targets and tolerances (relating to metrics) with key due diligence stakeholders (e.g., legal, audit, HR, ethics, compliance, finance).",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 2",
-                  "questionDescription": "Publish changed targets and tolerances to users of this information.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Related Guidance",
-                  "questionDescription": "string",
-                  "relatedGuidance": "CMMI Data Management Maturity Model, 2014",
-                  "detailedReference": "Supporting Processes - Process Management",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Related Guidance",
-                  "questionDescription": "string",
-                  "relatedGuidance": "National Institute of Standards and Technology Special Publication 800-53, Revisionv5 (Draft), August 2017",
-                  "detailedReference": "3.4 Assessment, authorization and monitoring (CA-5)",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                }
-              ]
-            },
-            {
-              "subComponentCode": "MEA03.03",
-              "subComponentName": "Collect and process performance and conformance data.",
-              "subComponentDescription": "Collect and process timely and accurate data aligned with enterprise approaches.",
-              "subComponentQuestions": [
-                {
-                  "questionType": "Maturity Level 2",
-                  "questionDescription": "Collect data from defined processes (automated, where possible).",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 2",
-                  "questionDescription": "Assess efficiency (effort in relation to insight provided) and appropriateness (usefulness and meaning) of collected data and validate the data’s integrity (accuracy and completeness).",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 2",
-                  "questionDescription": "Aggregate data to support measurement of agreed metrics.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 3",
-                  "questionDescription": "Align aggregated data to the enterprise reporting approach and objectives.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 4",
-                  "questionDescription": "Use suitable tools and systems for the processing and analysis of data.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Related Guidance",
-                  "questionDescription": "string",
-                  "relatedGuidance": "National Institute of Standards and Technology Special Publication 800-53, Revision 5 (Draft), August 2017",
-                  "detailedReference": "3.20 System and information integrity (SI-2)",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                }
-              ]
-            },
-            {
-              "subComponentCode": "MEA01.04",
-              "subComponentName": "Analyze and report performance.",
-              "subComponentDescription": "Periodically review and report performance against targets. Use a method that provides a succinct all-around view of I&T performance and fits within the enterprise monitoring system.",
-              "subComponentQuestions": [
-                {
-                  "questionType": "Maturity Level 3",
-                  "questionDescription": "Design process performance reports that are concise, easy to understand, and tailored to various management needs and audiences. Facilitate effective, timely decision making (e.g., scorecards, traffic light reports). Ensure that the cause and effect between goals and metrics are communicated in an understandable manner.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 3",
-                  "questionDescription": "Distribute reports to the relevant stakeholders.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 4",
-                  "questionDescription": "Analyze the cause of deviations against targets, initiate remedial actions, assign responsibilities for remediation, and follow up. At appropriate times, review all deviations and search for root causes, where necessary. Document the issues for further guidance if the problem recurs. Document results.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 4",
-                  "questionDescription": "Where feasible, integrate performance and compliance into individual staff members’ performance objectives and link achievement of performance targets to the organizational reward compensation system.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 4",
-                  "questionDescription": "Compare the performance values to internal targets and benchmarks and, where possible, to external benchmarks (industry and key competitors).",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 4",
-                  "questionDescription": "Analyze trends in performance and compliance and take appropriate action.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 5",
-                  "questionDescription": "Recommend changes to the goals and metrics, where appropriate.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Related Guidance",
-                  "questionDescription": "string",
-                  "relatedGuidance": "CMMI Data Management Maturity Model, 2014",
-                  "detailedReference": "Supporting Processes - Measurement and Analysis",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Related Guidance",
-                  "questionDescription": "string",
-                  "relatedGuidance": "National Institute of Standards and Technology Special Publication 800-53, Revision 5 (Draft), August 2017",
-                  "detailedReference": "3.3 Audit and accountability (AU-6)",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                }
-              ]
-            },
-            {
-              "subComponentCode": "MEA01.05",
-              "subComponentName": "Ensure the implementation of corrective actions.",
-              "subComponentDescription": "Assist stakeholders in identifying, initiating and tracking corrective actions to address anomalies.",
-              "subComponentQuestions": [
-                {
-                  "questionType": "Maturity Level 2",
-                  "questionDescription": "Review management responses, options and recommendations to address issues and major deviations.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 2",
-                  "questionDescription": "Ensure that the assignment of responsibility for corrective action is maintained.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 2",
-                  "questionDescription": "Track the results of actions committed.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 2",
-                  "questionDescription": "Report the results to the stakeholders.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Related Guidance",
-                  "questionDescription": "string",
-                  "relatedGuidance": "ITIL V3, 2011",
-                  "detailedReference": "Continual Service Improvement, 4.1 The 7-Step Improvement Process",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Related Guidance",
-                  "questionDescription": "string",
-                  "relatedGuidance": "National Institute of Standards and Technology Special Publication 800-53, Revision 5 (Draft), August 2018",
-                  "detailedReference": "3.7 Monitoring (Task 3)",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Related Guidance",
-                  "questionDescription": "string",
-                  "relatedGuidance": "National Institute of Standards and Technology Special Publication 800-53, Revision 5 (Draft), August 2017",
-                  "detailedReference": "3.3 Audit and accountability (AU-5)",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "componentName": "B",
-          "componentDescription": "Organizational Structures",
-          "componentPercFinal": 0,
-          "componentQuestions": [
-            {
-              "questionType": "MEA01.01",
-              "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
-              "questionAnswer": 0,
-              "questionScore": 0,
-              "questionComment": "comment"
-            },
-            {
-              "questionType": "MEA01.02",
-              "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
-              "questionAnswer": 0,
-              "questionScore": 0,
-              "questionComment": "comment"
-            },
-            {
-              "questionType": "MEA01.03",
-              "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
-              "questionAnswer": 0,
-              "questionScore": 0,
-              "questionComment": "comment"
-            },
-            {
-              "questionType": "MEA01.04",
-              "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
-              "questionAnswer": 0,
-              "questionScore": 0,
-              "questionComment": "comment"
-            },
-            {
-              "questionType": "MEA01.05",
-              "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
-              "questionAnswer": 0,
-              "questionScore": 0,
-              "questionComment": "comment"
-            }
-          ]
-        },
-        {
-          "componentCode": "C",
-          "componentDescription": "Information Flows and Items",
-          "componentPercFinal": 0,
-          "subComponents": [
-            {
-              "subComponentCode": "MEA01.01",
-              "subComponentName": "Establish a monitoring approach.",
-              "subComponentDescription": "Engage with stakeholders to establish and maintain a monitoring approach to define the objectives, scope and method for measuring business solution and service delivery and contribution to enterprise objectives. Integrate this approach with the corporate performanceA management system.",
-              "subComponentQuestions": [
-                {
-                  "questionType": "Input",
-                  "questionDescription": "Evaluation of enterprise reporting requirements, Reporting and communications principles",
-                  "inputFrom": "EDM05.01",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Input",
-                  "questionDescription": "Rules for validating and approving mandatory reports",
-                  "inputFrom": "EDM05.02",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Input",
-                  "questionDescription": "Assessment of reporting effectiveness",
-                  "inputFrom": "EDM05.03",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Output",
-                  "questionDescription": "Approved monitoring goals and metrics",
-                  "inputFrom": "string",
-                  "outputTo": "Internal,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Output",
-                  "questionDescription": "Monitoring requirements",
-                  "inputFrom": "string",
-                  "outputTo": "Internal",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                }
-              ]
-            },
-            {
-              "subComponentCode": "MEA01.02",
-              "subComponentName": "Set performance and conformance targets.",
-              "subComponentDescription": "Work with stakeholders to define, periodically review, update and approve performance and conformance targets within the performance measurement system.",
-              "subComponentQuestions": [
-                {
-                  "questionType": "Input",
-                  "questionDescription": "Performance goals and metrics for process improvement tracking",
-                  "inputFrom": "APO01.11",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Output",
-                  "questionDescription": "Monitoring targets",
-                  "inputFrom": "string",
-                  "outputTo": "All APO; All BAI; All DSS; All MEA",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                }
-              ]
-            },
-            {
-              "subComponentCode": "MEA01.03",
-              "subComponentName": "Collect and process performance and conformance data.",
-              "subComponentDescription": "Collect and process timely and accurate data aligned with enterprise approaches.",
-              "subComponentQuestions": [
-                {
-                  "questionType": "Input",
-                  "questionDescription": "Process capability assessments",
-                  "inputFrom": "APO01.11",
-                  "outputTo": "string",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Input",
-                  "questionDescription": "Investment portfolio performance reports",
-                  "inputFrom": "APO05.03",
-                  "outputTo": "string",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Input",
-                  "questionDescription": "Service level performance reports",
-                  "inputFrom": "APO09.04",
-                  "outputTo": "string",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Input",
-                  "questionDescription": "Results of vendor-compliance monitoring review",
-                  "inputFrom": "APO10.05",
-                  "outputTo": "string",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Input",
-                  "questionDescription": "Results of program performance reviews",
-                  "inputFrom": "BAI01.06",
-                  "outputTo": "string",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Input",
-                  "questionDescription": "Availability, performance and capacity-monitoring review reports",
-                  "inputFrom": "BAI04.04",
-                  "outputTo": "string",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Input",
-                  "questionDescription": "Success measures and results",
-                  "inputFrom": "BAI05.05",
-                  "outputTo": "string",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Input",
-                  "questionDescription": "Facilities assessment reports",
-                  "inputFrom": "DSS01.05",
-                  "outputTo": "string",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Input",
-                  "questionDescription": "Incident status and trends report, Request fulfilment status and trends report",
-                  "inputFrom": "DSS02.07",
-                  "outputTo": "string",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Output",
-                  "questionDescription": "Processed monitoring data",
-                  "inputFrom": "string",
-                  "outputTo": "Internal",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                }
-              ]
-            },
-            {
-              "subComponentCode": "MEA01.04",
-              "subComponentName": "Analyze and report performance.",
-              "subComponentDescription": "Periodically review and report performance against targets. Use a method that provides a succinct all-around view of I&T performance and fits within the enterprise monitoring system.",
-              "subComponentQuestions": [
-                {
-                  "questionType": "Output",
-                  "questionDescription": "Performance reports",
-                  "inputFrom": "string",
-                  "outputTo": "All APO; All BAI; All DSS; All MEA;  EDM01.03",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                }
-              ]
-            },
-            {
-              "subComponentCode": "MEA01.05",
-              "subComponentName": "Ensure the implementation of corrective actions.",
-              "subComponentDescription": "Assist stakeholders in identifying, initiating and tracking corrective actions to address anomalies.",
-              "subComponentQuestions": [
-                {
-                  "questionType": "Input",
-                  "questionDescription": "Noncompliance remedial actions",
-                  "inputFrom": "string",
-                  "outputTo": "APO01.09",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Input",
-                  "questionDescription": "Escalation guidelines",
-                  "inputFrom": "string",
-                  "outputTo": "EDM05.02",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Output",
-                  "questionDescription": "Remedial actions and assignments",
-                  "inputFrom": "string",
-                  "outputTo": "All APO; All BAI;All DSS; All MEA",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Output",
-                  "questionDescription": "Status and results of actions",
-                  "inputFrom": "string",
-                  "outputTo": "EDM01.03",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "componentName": "D",
-          "componentDescription": "Peoples, Skills and Competencies",
-          "componentPercFinal": 0,
-          "componentQuestions": [
-            {
-              "questionType": "Component question",
-              "questionSkill": "Conformance review",
-              "relatedGuidance": "Skills Framework for the Information Age V6, 2015",
-              "detailedReference": "CORE",
-              "questionAnswer": 0,
-              "questionScore": 0,
-              "questionComment": "comment"
-            },
-            {
-              "questionType": "Component question",
-              "questionSkill": "ICT quality management",
-              "relatedGuidance": "e-Competence Framework (e-CF)—A common European Framework for ICT Professionals in all industry sectors—Part 1: Framework, 2016",
-              "detailedReference": "E. Manage—E.6. ICT Quality Management",
-              "questionAnswer": 0,
-              "questionScore": 0,
-              "questionComment": "comment"
-            },
-            {
-              "questionType": "Component question",
-              "questionSkill": "Quality assurance",
-              "relatedGuidance": "Skills Framework for the Information Age V6, 2015",
-              "detailedReference": "QUAS",
-              "questionAnswer": 0,
-              "questionScore": 0,
-              "questionComment": "comment"
-            }
-          ]
-        },
-        {
-          "componentName": "E",
-          "componentDescription": "Principles Policies and Procedures",
-          "componentPercFinal": 0,
-          "componentQuestions": [
-            {
-              "questionType": "Component question",
-              "relevantPolicy": "Self-assessment policy",
-              "policyDescription": "Provides guidance for management’s responsibilities in assessing operations as part of the continuous improvement program. Often used to report internally to executives or board on current capabilities, progress and improvement, based on business requirements. Assessments may be used during or after a process improvement program (i.e., to assess progress after completing an improvement).",
-              "detailedGuidance": "string",
-              "detailedReference": "string",
-              "questionAnswer": 0,
-              "questionScore": 0,
-              "questionComment": "comment"
-            },
-            {
-              "questionType": "Component question",
-              "relevantPolicy": "Whistle-blower policy",
-              "policyDescription": "Encourages employees to raise concerns and questions in full confidence. Ensures employees that they will receive a response and be able to escalate concerns if they are not satisfied with the response. Assures that employees are protected when they raise issues and should not fear reprisal.",
-              "detailedGuidance": "string",
-              "detailedReference": "string",
-              "questionAnswer": 0,
-              "questionScore": 0,
-              "questionComment": "comment"
-            }
-          ]
-        },
-        {
-          "componentName": "F",
-          "componentDescription": "Culture, Ethics and Behavior",
-          "componentPercFinal": 0,
-          "componentQuestions": [
-            {
-              "questionType": "Component question",
-              "keyCultureElement": "To achieve the organization’s goals and optimize performance, promote a culture of continuous improvement of business and I&T processes.",
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Identify stakeholders (e.g., management, process owners and users).",
               "relatedGuidance": "string",
               "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Engage with stakeholders and communicate the enterprise requirements and objectives for monitoring, aggregating and reporting, using common definitions (e.g., business glossary, metadata and taxonomy), baselining and benchmarking",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Align and continually maintain the monitoring and evaluation approach with the enterprise approach and the tools to be used for data gathering and enterprise reporting (e.g., business intelligence applications).",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Agree on the types of goals and metrics (e.g., conformance, performance, value, risk), taxonomy (classification and relationships between goals and metrics) and data (evidence) retention.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Request, prioritize and allocate resources for monitoring, consider appropriateness, efficiency, effectiveness and confidentiality",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Periodically validate the approach used and identify new or changed stakeholders, requirements and resources.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Agree on a life cycle management and change control process for monitoring and reporting. Include improvement opportunities for reporting, metrics, approach, baselining and benchmarking.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "string",
+              "relatedGuidance": "CMMI Data Management Maturity Model, 2014",
+              "detailedReference": "Supporting Processes - Measurement and Analysis",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "string",
+              "relatedGuidance": "SF, The Standard of Good Practice for Information Security 2016",
+              "detailedReference": "SI2 Security Performance",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "string",
+              "relatedGuidance": "SO/IEC 27001:2013/Cor.2:2015(E)",
+              "detailedReference": "9.1 Monitoring, measurement, analysis and evaluation",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "string",
+              "relatedGuidance": "ISO/IEC 27004:2016(E)",
+              "detailedReference": "6. Characteristics; 7. Types of measures; 8. Processes",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "string",
+              "relatedGuidance": "SO/IEC 38500:2015(E)",
+              "detailedReference": "5.5 Principle 4: Performance; 5.6 Principle 5: Conformance",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "string",
+              "relatedGuidance": "National Institute of Standards and Technology Special Publication 800-37, Revision 2 (Draft), May 2018",
+              "detailedReference": "3.1 Preparation (Task 13); 3.3 Selection (Task 2); 3.7 Monitoring (Task 1)",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "string",
+              "relatedGuidance": "National Institute of Standards and Technology Special Publication 800-53, Revision 5 (Draft), August 2017",
+              "detailedReference": "3.4 Assessment, authorization and monitoring (CA-2, CA-7); 3.20 System and information integrity (SI-4)",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": "comment"
@@ -1068,13 +372,335 @@
           ]
         },
         {
-          "componentName": "G",
-          "componentDescription": "Services, Infrastructure and Applications",
-          "componentPercFinal": 0,
-          "componentQuestions": [
+          "subComponentCode": "MEA01.02",
+          "subComponentName": "Set performance and conformance targets.",
+          "subComponentDescription": "Work with stakeholders to define, periodically review, update and approve performance and conformance targets within the performance measurement system",
+          "subComponentQuestions": [
             {
-              "questionType": "Component question",
-              "questionDescription": "Performance measurement system (e.g., balanced scorecard, skills management tools), Self-assessment tools",
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Define the goals and metrics. Periodically review them with stakeholders to identify any significant missing items and define reasonableness of targets and tolerances.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Evaluate whether the goals and metrics are adequate, that is, specific, measurable, achievable, relevant and time-bound (SMART).",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Communicate proposed changes to performance and conformance targets and tolerances (relating to metrics) with key due diligence stakeholders (e.g., legal, audit, HR, ethics, compliance, finance).",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Publish changed targets and tolerances to users of this information.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "string",
+              "relatedGuidance": "CMMI Data Management Maturity Model, 2014",
+              "detailedReference": "Supporting Processes - Process Management",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "string",
+              "relatedGuidance": "National Institute of Standards and Technology Special Publication 800-53, Revisionv5 (Draft), August 2017",
+              "detailedReference": "3.4 Assessment, authorization and monitoring (CA-5)",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "MEA03.03",
+          "subComponentName": "Collect and process performance and conformance data.",
+          "subComponentDescription": "Collect and process timely and accurate data aligned with enterprise approaches.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Collect data from defined processes (automated, where possible).",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Assess efficiency (effort in relation to insight provided) and appropriateness (usefulness and meaning) of collected data and validate the data’s integrity (accuracy and completeness).",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Aggregate data to support measurement of agreed metrics.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Align aggregated data to the enterprise reporting approach and objectives.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": "Use suitable tools and systems for the processing and analysis of data.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "string",
+              "relatedGuidance": "National Institute of Standards and Technology Special Publication 800-53, Revision 5 (Draft), August 2017",
+              "detailedReference": "3.20 System and information integrity (SI-2)",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "MEA01.04",
+          "subComponentName": "Analyze and report performance.",
+          "subComponentDescription": "Periodically review and report performance against targets. Use a method that provides a succinct all-around view of I&T performance and fits within the enterprise monitoring system.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Design process performance reports that are concise, easy to understand, and tailored to various management needs and audiences. Facilitate effective, timely decision making (e.g., scorecards, traffic light reports). Ensure that the cause and effect between goals and metrics are communicated in an understandable manner.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Distribute reports to the relevant stakeholders.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": "Analyze the cause of deviations against targets, initiate remedial actions, assign responsibilities for remediation, and follow up. At appropriate times, review all deviations and search for root causes, where necessary. Document the issues for further guidance if the problem recurs. Document results.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": "Where feasible, integrate performance and compliance into individual staff members’ performance objectives and link achievement of performance targets to the organizational reward compensation system.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": "Compare the performance values to internal targets and benchmarks and, where possible, to external benchmarks (industry and key competitors).",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": "Analyze trends in performance and compliance and take appropriate action.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 5",
+              "questionDescription": "Recommend changes to the goals and metrics, where appropriate.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "string",
+              "relatedGuidance": "CMMI Data Management Maturity Model, 2014",
+              "detailedReference": "Supporting Processes - Measurement and Analysis",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "string",
+              "relatedGuidance": "National Institute of Standards and Technology Special Publication 800-53, Revision 5 (Draft), August 2017",
+              "detailedReference": "3.3 Audit and accountability (AU-6)",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "MEA01.05",
+          "subComponentName": "Ensure the implementation of corrective actions.",
+          "subComponentDescription": "Assist stakeholders in identifying, initiating and tracking corrective actions to address anomalies.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Review management responses, options and recommendations to address issues and major deviations.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Ensure that the assignment of responsibility for corrective action is maintained.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Track the results of actions committed.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Report the results to the stakeholders.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "string",
+              "relatedGuidance": "ITIL V3, 2011",
+              "detailedReference": "Continual Service Improvement, 4.1 The 7-Step Improvement Process",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "string",
+              "relatedGuidance": "National Institute of Standards and Technology Special Publication 800-53, Revision 5 (Draft), August 2018",
+              "detailedReference": "3.7 Monitoring (Task 3)",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "string",
+              "relatedGuidance": "National Institute of Standards and Technology Special Publication 800-53, Revision 5 (Draft), August 2017",
+              "detailedReference": "3.3 Audit and accountability (AU-5)",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": "comment"
@@ -1082,5 +708,380 @@
           ]
         }
       ]
+    },
+    {
+      "componentName": "B",
+      "componentDescription": "Organizational Structures",
+      "componentPercFinal": 0,
+      "componentQuestions": [
+        {
+          "questionType": "MEA01.01",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "MEA01.02",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "MEA01.03",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "MEA01.04",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "MEA01.05",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        }
+      ]
+    },
+    {
+      "componentCode": "C",
+      "componentDescription": "Information Flows and Items",
+      "componentPercFinal": 0,
+      "subComponents": [
+        {
+          "subComponentCode": "MEA01.01",
+          "subComponentName": "Establish a monitoring approach.",
+          "subComponentDescription": "Engage with stakeholders to establish and maintain a monitoring approach to define the objectives, scope and method for measuring business solution and service delivery and contribution to enterprise objectives. Integrate this approach with the corporate performanceA management system.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Input",
+              "questionDescription": "Evaluation of enterprise reporting requirements, Reporting and communications principles",
+              "inputFrom": "EDM05.01",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Rules for validating and approving mandatory reports",
+              "inputFrom": "EDM05.02",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Assessment of reporting effectiveness",
+              "inputFrom": "EDM05.03",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Approved monitoring goals and metrics",
+              "inputFrom": "string",
+              "outputTo": "Internal,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Monitoring requirements",
+              "inputFrom": "string",
+              "outputTo": "Internal",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "MEA01.02",
+          "subComponentName": "Set performance and conformance targets.",
+          "subComponentDescription": "Work with stakeholders to define, periodically review, update and approve performance and conformance targets within the performance measurement system.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Input",
+              "questionDescription": "Performance goals and metrics for process improvement tracking",
+              "inputFrom": "APO01.11",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Monitoring targets",
+              "inputFrom": "string",
+              "outputTo": "All APO; All BAI; All DSS; All MEA",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "MEA01.03",
+          "subComponentName": "Collect and process performance and conformance data.",
+          "subComponentDescription": "Collect and process timely and accurate data aligned with enterprise approaches.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Input",
+              "questionDescription": "Process capability assessments",
+              "inputFrom": "APO01.11",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Investment portfolio performance reports",
+              "inputFrom": "APO05.03",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Service level performance reports",
+              "inputFrom": "APO09.04",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Results of vendor-compliance monitoring review",
+              "inputFrom": "APO10.05",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Results of program performance reviews",
+              "inputFrom": "BAI01.06",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Availability, performance and capacity-monitoring review reports",
+              "inputFrom": "BAI04.04",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Success measures and results",
+              "inputFrom": "BAI05.05",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Facilities assessment reports",
+              "inputFrom": "DSS01.05",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Incident status and trends report, Request fulfilment status and trends report",
+              "inputFrom": "DSS02.07",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Processed monitoring data",
+              "inputFrom": "string",
+              "outputTo": "Internal",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "MEA01.04",
+          "subComponentName": "Analyze and report performance.",
+          "subComponentDescription": "Periodically review and report performance against targets. Use a method that provides a succinct all-around view of I&T performance and fits within the enterprise monitoring system.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Output",
+              "questionDescription": "Performance reports",
+              "inputFrom": "string",
+              "outputTo": "All APO; All BAI; All DSS; All MEA;  EDM01.03",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "MEA01.05",
+          "subComponentName": "Ensure the implementation of corrective actions.",
+          "subComponentDescription": "Assist stakeholders in identifying, initiating and tracking corrective actions to address anomalies.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Input",
+              "questionDescription": "Noncompliance remedial actions",
+              "inputFrom": "string",
+              "outputTo": "APO01.09",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Escalation guidelines",
+              "inputFrom": "string",
+              "outputTo": "EDM05.02",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Remedial actions and assignments",
+              "inputFrom": "string",
+              "outputTo": "All APO; All BAI;All DSS; All MEA",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Status and results of actions",
+              "inputFrom": "string",
+              "outputTo": "EDM01.03",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "componentName": "D",
+      "componentDescription": "Peoples, Skills and Competencies",
+      "componentPercFinal": 0,
+      "componentQuestions": [
+        {
+          "questionType": "Component question",
+          "questionSkill": "Conformance review",
+          "relatedGuidance": "Skills Framework for the Information Age V6, 2015",
+          "detailedReference": "CORE",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "Component question",
+          "questionSkill": "ICT quality management",
+          "relatedGuidance": "e-Competence Framework (e-CF)—A common European Framework for ICT Professionals in all industry sectors—Part 1: Framework, 2016",
+          "detailedReference": "E. Manage—E.6. ICT Quality Management",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "Component question",
+          "questionSkill": "Quality assurance",
+          "relatedGuidance": "Skills Framework for the Information Age V6, 2015",
+          "detailedReference": "QUAS",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        }
+      ]
+    },
+    {
+      "componentName": "E",
+      "componentDescription": "Principles Policies and Procedures",
+      "componentPercFinal": 0,
+      "componentQuestions": [
+        {
+          "questionType": "Component question",
+          "relevantPolicy": "Self-assessment policy",
+          "policyDescription": "Provides guidance for management’s responsibilities in assessing operations as part of the continuous improvement program. Often used to report internally to executives or board on current capabilities, progress and improvement, based on business requirements. Assessments may be used during or after a process improvement program (i.e., to assess progress after completing an improvement).",
+          "detailedGuidance": "string",
+          "detailedReference": "string",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "Component question",
+          "relevantPolicy": "Whistle-blower policy",
+          "policyDescription": "Encourages employees to raise concerns and questions in full confidence. Ensures employees that they will receive a response and be able to escalate concerns if they are not satisfied with the response. Assures that employees are protected when they raise issues and should not fear reprisal.",
+          "detailedGuidance": "string",
+          "detailedReference": "string",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        }
+      ]
+    },
+    {
+      "componentName": "F",
+      "componentDescription": "Culture, Ethics and Behavior",
+      "componentPercFinal": 0,
+      "componentQuestions": [
+        {
+          "questionType": "Component question",
+          "keyCultureElement": "To achieve the organization’s goals and optimize performance, promote a culture of continuous improvement of business and I&T processes.",
+          "relatedGuidance": "string",
+          "detailedReference": "string",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        }
+      ]
+    },
+    {
+      "componentName": "G",
+      "componentDescription": "Services, Infrastructure and Applications",
+      "componentPercFinal": 0,
+      "componentQuestions": [
+        {
+          "questionType": "Component question",
+          "questionDescription": "Performance measurement system (e.g., balanced scorecard, skills management tools), Self-assessment tools",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        }
+      ]
     }
+  ]
+}
   

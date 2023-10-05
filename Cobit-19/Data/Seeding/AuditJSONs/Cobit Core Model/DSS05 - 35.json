@@ -1,7 +1,8 @@
-{  
+{
   "objectiveName": "DSS05",
   "objectiveDescription": "Protect enterprise information to maintain the level of information security risk acceptable to the enterprise in accordance with the security policy. Establish and maintain information security roles and access privileges. Perform security monitoring.",
   "objectivePurpose": "Minimize the business impact of operational information security vulnerabilities and incidents.",
+  "typeOfObjective": "Management",
   "maturityLevel": 0,
   "maturityLevel0PercFinal": 0,
   "maturityLevel1PercFinal": 0,
@@ -78,7 +79,7 @@
 
           ]
         }
-            ]
+      ]
     },
 
     {
@@ -115,36 +116,36 @@
 
           ]
         },
-        
-          {
-            "subComponentCode": "AG07",
-            "subComponentName": "Security of information, processing infrastructure and applications, and privacy",
-            "subComponentQuestions": [
-              {
-                "questionType": "Alignment goal",
-                "questionDescription": "Number of confidentiality incidents causing financial loss, business disruption or public embarrassment",
-                "questionAnswer": 0,
-                "questionScore": 0,
-                "questionComment": "comment"
-              },
-              {
-                "questionType": "Alignment goal",
-                "questionDescription": "Number of availability incidents causing financial loss, business disruption or public embarrassment",
-                "questionAnswer": 0,
-                "questionScore": 0,
-                "questionComment": "comment"
-              },
-              {
-                "questionType": "Alignment goal",
-                "questionDescription": "Number of integrity incidents causing financial loss, business disruption or public embarrassment",
-                "questionAnswer": 0,
-                "questionScore": 0,
-                "questionComment": "comment"
-              }
-            ]
-          }
-        ]
-      
+
+        {
+          "subComponentCode": "AG07",
+          "subComponentName": "Security of information, processing infrastructure and applications, and privacy",
+          "subComponentQuestions": [
+            {
+              "questionType": "Alignment goal",
+              "questionDescription": "Number of confidentiality incidents causing financial loss, business disruption or public embarrassment",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Alignment goal",
+              "questionDescription": "Number of availability incidents causing financial loss, business disruption or public embarrassment",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Alignment goal",
+              "questionDescription": "Number of integrity incidents causing financial loss, business disruption or public embarrassment",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        }
+      ]
+
     },
     {
       "componentName": "A",

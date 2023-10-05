@@ -2,6 +2,7 @@
   "objectiveName": "APO08",
   "objectiveDescription": "Manage relationships with business stakeholders in a formalized and transparent way that ensures mutual trust and a combined focus on achieving the strategic goals within the constraints of budgets and risk tolerance. Base relationships on open and transparent communication, a common language, and the willingness to take ownership and accountability for key decisions on both sides. Business and IT must work together to create successful enterprise outcomes in support of the enterprise objectives.",
   "objectivePurpose": "Enable the right knowledge, skills and behaviors to create improved outcomes, increased confidence, mutual trust and effective use of resources that stimulate a productive relationship with business stakeholders.",
+  "typeOfObjective": "Management",
   "maturityLevel": 0,
   "maturityLevel0PercFinal": 0,
   "maturityLevel1PercFinal": 0,
@@ -48,137 +49,137 @@
               "questionComment": "comment"
             }
           ]
+        },
+        {
+          "subComponentCode": "EG08",
+          "subComponentName": "Optimization of internal business process functionality",
+          "subComponentQuestions": [
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Satisfaction levels of board and executive management with business process capabilities",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
             },
-              {
-                "subComponentCode": "EG08",
-                "subComponentName": "Optimization of internal business process functionality",
-                "subComponentQuestions": [
-                  {
-                    "questionType": "Enterprise goal",
-                    "questionDescription": "Satisfaction levels of board and executive management with business process capabilities",
-                    "questionAnswer": 0,
-                    "questionScore": 0,
-                    "questionComment": "comment"
-                  },
-                  {
-                    "questionType": "Enterprise goal",
-                    "questionDescription": "Satisfaction levels of customers with service delivery capabilities",
-                    "questionAnswer": 0,
-                    "questionScore": 0,
-                    "questionComment": "comment"
-                  },
-                  {
-                    "questionType": "Enterprise goal",
-                    "questionDescription": "Satisfaction levels of suppliers with supply chain capabilities",
-                    "questionAnswer": 0,
-                    "questionScore": 0,
-                    "questionComment": "comment"
-                  }
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Satisfaction levels of customers with service delivery capabilities",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Satisfaction levels of suppliers with supply chain capabilities",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
 
-                ]
-              },
-            
+          ]
+        },
 
-              {
-                "subComponentCode": "EG10",
-                "subComponentName": "Staff skills, motivation and productivity",
-                "subComponentQuestions": [
-                  {
-                    "questionType": "Enterprise goal",
-                    "questionDescription": "Staff productivity compared to benchmarks",
-                    "questionAnswer": 0,
-                    "questionScore": 0,
-                    "questionComment": "comment"
-                  },
-                  {
-                    "questionType": "Enterprise goal",
-                    "questionDescription": "Level of stakeholder satisfaction with staff expertise and skills",
-                    "questionAnswer": 0,
-                    "questionScore": 0,
-                    "questionComment": "comment"
-                  },
-                  {
-                    "questionType": "Enterprise goal",
-                    "questionDescription": "Percent of staff whose skills are insufficient for competency in their role",
-                    "questionAnswer": 0,
-                    "questionScore": 0,
-                    "questionComment": "comment"
-                  },
-                  {
-                    "questionType": "Enterprise goal",
-                    "questionDescription": "Percent of satisfied staff",
-                    "questionAnswer": 0,
-                    "questionScore": 0,
-                    "questionComment": "comment"
-                  }
 
-                ]
-              },
-              {
-                "subComponentCode": "EG12",
-                "subComponentName": "Managed digital transformation programs",
-                "subComponentQuestions": [
-                  {
-                    "questionType": "Enterprise goal",
-                    "questionDescription": "Number of programs on time and within budget",
-                    "questionAnswer": 0,
-                    "questionScore": 0,
-                    "questionComment": "comment"
-                  },
-                  {
-                    "questionType": "Enterprise goal",
-                    "questionDescription": "Percent of stakeholders satisfied with program delivery",
-                    "questionAnswer": 0,
-                    "questionScore": 0,
-                    "questionComment": "comment"
-                  },
-                  {
-                    "questionType": "Enterprise goal",
-                    "questionDescription": "Percent of business transformation programs stopped",
-                    "questionAnswer": 0,
-                    "questionScore": 0,
-                    "questionComment": "comment"
-                  },
-                  {
-                    "questionType": "Enterprise goal",
-                    "questionDescription": "Percent of business transformation programs with regular reported status updates",
-                    "questionAnswer": 0,
-                    "questionScore": 0,
-                    "questionComment": "comment"
-                  }
+        {
+          "subComponentCode": "EG10",
+          "subComponentName": "Staff skills, motivation and productivity",
+          "subComponentQuestions": [
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Staff productivity compared to benchmarks",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Level of stakeholder satisfaction with staff expertise and skills",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Percent of staff whose skills are insufficient for competency in their role",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Percent of satisfied staff",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
 
-                ]
-              },
+          ]
+        },
+        {
+          "subComponentCode": "EG12",
+          "subComponentName": "Managed digital transformation programs",
+          "subComponentQuestions": [
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Number of programs on time and within budget",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Percent of stakeholders satisfied with program delivery",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Percent of business transformation programs stopped",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Percent of business transformation programs with regular reported status updates",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
 
-              {
-                "subComponentCode": "EG13",
-                "subComponentName": "Product and business innovation",
-                "subComponentQuestions": [
-                  {
-                    "questionType": "Enterprise goal",
-                    "questionDescription": "Level of awareness and understanding of business innovation opportunities",
-                    "questionAnswer": 0,
-                    "questionScore": 0,
-                    "questionComment": "comment"
-                  },
-                  {
-                    "questionType": "Enterprise goal",
-                    "questionDescription": "Stakeholder satisfaction with levels of product and innovation expertise and ideas",
-                    "questionAnswer": 0,
-                    "questionScore": 0,
-                    "questionComment": "comment"
-                  },
-                  {
-                    "questionType": "Enterprise goal",
-                    "questionDescription": "Number of approved product and service initiatives resulting from innovative ideas",
-                    "questionAnswer": 0,
-                    "questionScore": 0,
-                    "questionComment": "comment"
-                  }
+          ]
+        },
 
-                ]
-              }
-            ]
+        {
+          "subComponentCode": "EG13",
+          "subComponentName": "Product and business innovation",
+          "subComponentQuestions": [
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Level of awareness and understanding of business innovation opportunities",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Stakeholder satisfaction with levels of product and innovation expertise and ideas",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Number of approved product and service initiatives resulting from innovative ideas",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+
+          ]
+        }
+      ]
 
     },
 
@@ -213,897 +214,897 @@
               "questionComment": "comment"
             }
           ]
+        },
+        {
+          "subComponentCode": "AG12",
+          "subComponentName": "Competent and motivated staff with mutual understanding of technology and business",
+          "subComponentQuestions": [
+            {
+              "questionType": "Alignment goal",
+              "questionDescription": "Percent of I&T-savvy business people (i.e., those having the required knowledge and understanding of I&T to guide, direct, innovate and see I&T opportunities in their domain of business expertise)",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
             },
             {
-              "subComponentCode": "AG12",
-              "subComponentName": "Competent and motivated staff with mutual understanding of technology and business",
-              "subComponentQuestions": [
-                {
-                  "questionType": "Alignment goal",
-                  "questionDescription": "Percent of I&T-savvy business people (i.e., those having the required knowledge and understanding of I&T to guide, direct, innovate and see I&T opportunities in their domain of business expertise)",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Alignment goal",
-                  "questionDescription": "Percent of business-savvy I&T people (i.e., those having the required knowledge and understanding of relevant business domains to guide, direct, innovate and see I&T opportunities for the business domain)",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Alignment goal",
-                  "questionDescription": "Number or percentage of business people with technology management experience",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                }
-              ]
-                },
-                
-                  {
-                    "subComponentCode": "AG13",
-                    "subComponentName": "Knowledge, expertise and initiatives for business innovation",
-                    "subComponentQuestions": [
-                      {
-                        "questionType": "Alignment goal",
-                        "questionDescription": "Level of business executive awareness and understanding of I&T innovation possibilities",
-                        "questionAnswer": 0,
-                        "questionScore": 0,
-                        "questionComment": "comment"
-                      },
-                      {
-                        "questionType": "Alignment goal",
-                        "questionDescription": "Number of approved initiatives resulting from innovative I&T ideas",
-                        "questionAnswer": 0,
-                        "questionScore": 0,
-                        "questionComment": "comment"
-                      },
-                      {
-                        "questionType": "Alignment goal",
-                        "questionDescription": "Number of innovation champions recognized/awarded",
-                        "questionAnswer": 0,
-                        "questionScore": 0,
-                        "questionComment": "comment"
-                      }
-                    ]
-                  },
-                
-                  {
-                    "subComponentCode": "AG06",
-                    "subComponentName": "Agility to turn business requirements into operational solutions",
-                    "subComponentQuestions": [ 
-                      {
-                        "questionType": "Alignment goal",
-                        "questionDescription": "Level of satisfaction of business executives with I&T responsiveness to new requirements",
-                        "questionAnswer": 0,
-                        "questionScore": 0,
-                        "questionComment": "comment"
-                      },
-                      {
-                        "questionType": "Alignment goal",
-                        "questionDescription": "Average time to market for new I&T-related services and applications",
-                        "questionAnswer": 0,
-                        "questionScore": 0,
-                        "questionComment": "comment"
-                      },
-                      {
-                        "questionType": "Alignment goal",
-                        "questionDescription": "Average time to turn strategic I&T objectives into agreed and approved initiatives",
-                        "questionAnswer": 0,
-                        "questionScore": 0,
-                        "questionComment": "comment"
-                      },
-                      {
-                        "questionType": "Alignment goal",
-                        "questionDescription": "Number of critical business processes supported by up-todate infrastructure and applications",
-                        "questionAnswer": 0,
-                        "questionScore": 0,
-                        "questionComment": "comment"
-                      }
-                    ]
-                  }
-                ]
+              "questionType": "Alignment goal",
+              "questionDescription": "Percent of business-savvy I&T people (i.e., those having the required knowledge and understanding of relevant business domains to guide, direct, innovate and see I&T opportunities for the business domain)",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
             },
             {
-              "componentName": "A",
-              "componentDescription": "Processes",
-              "componentPercFinal": 0,
-              "subComponents": [
-                {
-                  "subComponentCode": "APO08.01",
-                  "subComponentName": "Understand business expectations.",
-                  "subComponentDescription": "Understand current business issues, objectives and expectations for I&T. Ensure that requirements are understood, managed and communicated, and their status agreed and approved.",
-                  "subComponentQuestions": [
-                    {
-                      "questionType": "Maturity Level 2",
-                      "questionDescription": "Identify business stakeholders, their interests and their areas of responsibilities.",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Maturity Level 2",
-                      "questionDescription": "Review current enterprise direction, issues, strategic objectives, and alignment with enterprise architecture.",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Maturity Level 2",
-                      "questionDescription": "Understand the current business environment, process constraints or issues, geographical expansion or contraction, and industry/regulatory drivers.",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Maturity Level 2",
-                      "questionDescription": " Maintain an awareness of business processes and associated activities. Understand demand patterns that relate to service volumes and use.",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Maturity Level 3",
-                      "questionDescription": "Manage expectations by ensuring that business units understand priorities, dependencies, financial constraints and the need to schedule requests.",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Maturity Level 4",
-                      "questionDescription": "Clarify business expectations for I&T-enabled services and solutions. Ensure that requirements are defined with associated business acceptance criteria and metrics",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Maturity Level 4",
-                      "questionDescription": "Confirm that there is agreement between IT and all business departments on expectations and how they will be measured. Ensure that this agreement is confirmed by all stakeholders",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    }
-                  ]
-                },
-                {
-                  "subComponentCode": "APO08.02",
-                  "subComponentName": "Align I&T strategy with business expectations and identify opportunities for IT to enhance the business",
-                  "subComponentDescription": "Align I&T strategies with current business objectives and expectations to enable IT to be a value-add partner for the business and a governance component for enhanced enterprise performance",
-                  "subComponentQuestions": [
-                    {
-                      "questionType": "Maturity Level 3",
-                      "questionDescription": " Position IT as a partner to the business. Play a proactive role in identifying and communicating with key stakeholders on opportunities, risk and constraints. This includes current and emerging technologies, services and business process models",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Maturity Level 3",
-                      "questionDescription": "Collaborate on major new initiatives with portfolio, program and project management. Ensure the involvement of the IT organization from the start of a new initiative by providing value-add advice and recommendations (e.g., for business case development, requirements definition, solution design) and by taking ownership for I&T work streams.",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Related Guidance",
-                      "questionDescription": "",
-                      "relatedGuidance": "ITIL V3, 2011",
-                      "detailedReference": "Service Strategy, 4.4 Demand management",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    }
-                  ]
-                },
-                {
-                  "subComponentCode": "APO08.03",
-                  "subComponentName": "Manage the business relationship.",
-                  "subComponentDescription": "Manage the relationship between the IT service organization and its business partners. Ensure that relationship roles and responsibilities are defined and assigned, and communication is facilitated.",
-                  "subComponentQuestions": [
-                    {
-                      "questionType": "Maturity Level 3",
-                      "questionDescription": "Assign a relationship manager as a single point of contact for each significant business unit. Ensure that a single counterpart is identified in the business organization and the counterpart has business understanding, sufficient technology awareness and the appropriate level of authority.",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Maturity Level 3",
-                      "questionDescription": ". Manage the relationship in a formalized and transparent way that ensures a focus on achieving a common and shared goal of successful enterprise outcomes in support of strategic goals and within the constraint of budgets and risk tolerance",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Maturity Level 3",
-                      "questionDescription": "Define and communicate a complaints and escalation procedure to resolve any relationship issues.",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Maturity Level 3",
-                      "questionDescription": "Ensure that key decisions are agreed and approved by relevant accountable stakeholders.",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Maturity Level 4",
-                      "questionDescription": "Plan specific interactions and schedules based on mutually agreed objectives and common language (service and performance review meetings, review of new strategies or plans, etc.).",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Related Guidance",
-                      "questionDescription": "",
-                      "relatedGuidance": "ISO/IEC 20000-1:2011(E)",
-                      "detailedReference": "7.1 Business relationship management",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Related Guidance",
-                      "questionDescription": "",
-                      "relatedGuidance": "ITIL V3, 2011",
-                      "detailedReference": "Service Strategy, 4.5 Business relationship management",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    }
-                  ]
-                },
-                {
-                  "subComponentCode": "APO08.03",
-                  "subComponentName": "Coordinate and communicate",
-                  "subComponentDescription": "Work with all relevant stakeholders and coordinate the end-to-end delivery of I&T services and solutions provided to the business.",
-                  "subComponentQuestions": [
-                    {
-                      "questionType": "Maturity Level 2",
-                      "questionDescription": "Coordinate and communicate changes and transition activities such as project or change plans, schedules, release policies,release known errors, and training awareness.",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Maturity Level 2",
-                      "questionDescription": "Coordinate and communicate operational activities, roles and responsibilities, including the definition of request types, hierarchical escalation, major outages (planned and unplanned), and content and frequency of service reports.",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Maturity Level 2",
-                      "questionDescription": "Take ownership of the response to the business for major events that may influence the relationship with the business. Provide direct support if required.",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Maturity Level 3",
-                      "questionDescription": "Maintain an end-to-end communication plan that defines the content, frequency and recipients of service delivery information, including status of value delivered and any risk identified.",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    }
-                  ]
-                },
-                {
-                  "subComponentCode": "APO08.05",
-                  "subComponentName": " Provide input to the continual improvement of services",
-                  "subComponentDescription": "Continually improve and evolve I&T-enabled services and service delivery to the enterprise to align with changing enterprise objectives and technology ",
-                  "subComponentQuestions": [
-                    {
-                      "questionType": "Maturity Level 4",
-                      "questionDescription": ". Perform customer and provider satisfaction analysis. Ensure that issues are addressed; report results and status.",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Maturity Level 5",
-                      "questionDescription": ". Work together to identify, communicate and implement improvement initiatives. ",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Maturity Level 5",
-                      "questionDescription": "Work with service management and process owners to ensure that I&T-enabled services and service management processes are continually improved and the root causes of any issues are identified and resolved.",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    }
+              "questionType": "Alignment goal",
+              "questionDescription": "Number or percentage of business people with technology management experience",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
 
-                  ]
-                }
-
-              ]
+        {
+          "subComponentCode": "AG13",
+          "subComponentName": "Knowledge, expertise and initiatives for business innovation",
+          "subComponentQuestions": [
+            {
+              "questionType": "Alignment goal",
+              "questionDescription": "Level of business executive awareness and understanding of I&T innovation possibilities",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
             },
             {
-              "componentName": "B",
-              "componentDescription": "Organizational Structures",
-              "componentPercFinal": 0,
-              "componentQuestions": [
-                {
-                  "questionType": "Sub Process 1",
-                  "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Sub Process 2",
-                  "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Sub Process 3",
-                  "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Sub Process 4",
-                  "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Sub Process 5",
-                  "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                }
-              ]
-
+              "questionType": "Alignment goal",
+              "questionDescription": "Number of approved initiatives resulting from innovative I&T ideas",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
             },
             {
-              "componentName": "C",
-              "componentDescription": "Information Flows and Items",
-              "componentPercFinal": 0,
-              "subComponents": [
-                {
-                  "subComponentCode": "APO08.01",
-                  "subComponentName": "Understand business expectations.",
-                  "subComponentDescription": "Understand current business issues, objectives and expectations for I&T. Ensure that requirements are understood, managed and communicated, and their status agreed and approved.",
-                  "subComponentQuestions": [
+              "questionType": "Alignment goal",
+              "questionDescription": "Number of innovation champions recognized/awarded",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
 
-                    {
-                      "questionType": "Input",
-                      "questionDescription": "Strategic road map",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "APO02.05",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Output",
-                      "questionDescription": "Clarified and agreed business expectations",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "Internal",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    }
-                  ]
-                },
-                {
-                  "subComponentCode": "APO08.02",
-                  "subComponentName": "Align I&T strategy with business expectations and identify opportunities for IT to enhance the business",
-                  "subComponentDescription": "Align I&T strategies with current business objectives and expectations to enable IT to be a value-add partner for the business and a governance component for enhanced enterprise performance",
-                  "subComponentQuestions": [
-
-                    {
-                      "questionType": "Input",
-                      "questionDescription": "Identified gaps in IT services to the business",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "APO09.01",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Input",
-                      "questionDescription": "Service level performance reports • Improvement action plans and remediations",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "APO09.04 ",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Input",
-                      "questionDescription": "Root causes of failure to deliver quality",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "APO11.03",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Output",
-                      "questionDescription": "Agreed next steps and action plans",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "Internal",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    }
-                  ]
-                },
-                {
-                  "subComponentCode": "APO08.03",
-                  "subComponentName": "Manage the business relationship.",
-                  "subComponentDescription": "Manage the relationship between the IT service organization and its business partners. Ensure that relationship roles and responsibilities are defined and assigned, and communication is facilitated.",
-                  "subComponentQuestions": [
-
-                    {
-                      "questionType": "Input",
-                      "questionDescription": "Classified and prioritized incidents and service requests",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "DSS02.02",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Input",
-                      "questionDescription": " Closed service requests and incidents • User confirmation of satisfactory fulfilment or resolution ",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "DSS02.06",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Input",
-                      "questionDescription": "Incident status and trends report • Request fulfilment status and trends report",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "DSS02.07",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Output",
-                      "questionDescription": "Complaint and escalation status",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "Internal",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Output",
-                      "questionDescription": "Agreed key decisions",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "Internal",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    }
-                  ]
-                },
-                {
-                  "subComponentCode": "APO08.03",
-                  "subComponentName": "Coordinate and communicate",
-                  "subComponentDescription": "Work with all relevant stakeholders and coordinate the end-to-end delivery of I&T services and solutions provided to the business.",
-                  "subComponentQuestions": [
-
-                    {
-                      "questionType": "Input",
-                      "questionDescription": "Service level agreements (SLAs) ",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "APO09.03",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Input",
-                      "questionDescription": "Risk impact communication",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "APO12.06",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Input",
-                      "questionDescription": "Operation and use plan",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "BAI05.05",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Input",
-                      "questionDescription": "Supplemental support plan",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "BAI07.07",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Input",
-                      "questionDescription": "Communications of planned maintenance downtime",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "BAI09.02",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Input",
-                      "questionDescription": "Communication of knowledge learned",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "DSS03.04",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Output",
-                      "questionDescription": "Customer responses ",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "Internal",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Output",
-                      "questionDescription": "Communication packages",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "Internal",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Output",
-                      "questionDescription": "Communication plan",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "Internal",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    }
-                  ]
-                },
-                {
-                  "subComponentCode": "APO08.05",
-                  "subComponentName": " Provide input to the continual improvement of services",
-                  "subComponentDescription": "Continually improve and evolve I&T-enabled services and service delivery to the enterprise to align with changing enterprise objectives and technology ",
-                  "subComponentQuestions": [
-
-                    {
-                      "questionType": "Input",
-                      "questionDescription": "Service catalogs",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "APO09.02",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Input",
-                      "questionDescription": "Customer requirements for quality management • Results of quality of service, including customer feedback",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "APO11.02",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Input",
-                      "questionDescription": "Results of quality monitoring for solution and service delivery",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "APO11.03",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Input",
-                      "questionDescription": "Results of quality reviews and audits",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "APO11.04",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Input",
-                      "questionDescription": "Maintenance plan",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "BAI03.10",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Input",
-                      "questionDescription": "Success measures and results",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "BAI05.05",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Input",
-                      "questionDescription": "Supplemental support plan",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "BAI07.07",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Output",
-                      "questionDescription": "Definition of potential improvement projects",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "APO02.02, BAI03.11",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Output",
-                      "questionDescription": "Satisfaction analyses",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "APO09.04",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    }
-
-                  ]
-                }
-
-              ]
+        {
+          "subComponentCode": "AG06",
+          "subComponentName": "Agility to turn business requirements into operational solutions",
+          "subComponentQuestions": [
+            {
+              "questionType": "Alignment goal",
+              "questionDescription": "Level of satisfaction of business executives with I&T responsiveness to new requirements",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
             },
             {
-              "componentName": "D",
-              "componentDescription": "Peoples, Skills and Competencies",
-              "componentPercFinal": 0,
-              "componentQuestions": [
-                {
-                  "questionType": "Component question",
-                  "questionSkill": "Relationship management ",
-                  "relatedGuidance": "e-Competence Framework (e-CF)—A common European Framework for ICT Professionals in all industry sectors—Part 1: Framework, 2016",
-                  "detailedReference": "E. Manage—E.4. Relationship Management",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Component question",
-                  "questionSkill": "Relationship management ",
-                  "relatedGuidance": "Skills Framework for the Information Age V6, 2015",
-                  "detailedReference": "RLMT",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                }
-              ]
+              "questionType": "Alignment goal",
+              "questionDescription": "Average time to market for new I&T-related services and applications",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
             },
             {
-              "componentName": "E",
-              "componentDescription": "Principles Policies and Procedures",
-              "componentPercFinal": 0,
-              "componentQuestions": [
-                {
-                  "questionType": "Component question",
-                  "relevantPolicy": "Business—IT relationship management policy",
-                  "policyDescription": "Provides guidelines to establish and maintain relations between the business and IT. Fosters transparency, mutual trust and a common focus on achieving strategic goals within the context of budget and risk tolerance.",
-                  "detailedGuidance": "",
-                  "detailedReference": "",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                }
-              ]
+              "questionType": "Alignment goal",
+              "questionDescription": "Average time to turn strategic I&T objectives into agreed and approved initiatives",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
             },
             {
-              "componentName": "F",
-              "componentDescription": "Culture, Ethics and Behavior",
-              "componentPercFinal": 0,
-              "componentQuestions": [
-                {
-                  "questionType": "Component question",
-                  "keyCultureElement": "Establish a culture based on mutual trust, transparent communication, open and understandable terms, a common language, ownership, and accountability. Good relationships must exist between the business and IT within the enterprise to achieve a shared goal. ",
-                  "relatedGuidance": "",
-                  "detailedReference": "",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                }
-              ]
-            },
-            {
-              "componentName": "G",
-              "componentDescription": "Services, Infrastructure and Applications",
-              "componentPercFinal": 0,
-              "componentQuestions": [
-                {
-                  "questionType": "Component question",
-                  "questionDescription": "Collaboration platforms",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Component question",
-                  "questionDescription": "Internal training and awareness building services",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                }
-              ]
+              "questionType": "Alignment goal",
+              "questionDescription": "Number of critical business processes supported by up-todate infrastructure and applications",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
             }
           ]
         }
+      ]
+    },
+    {
+      "componentName": "A",
+      "componentDescription": "Processes",
+      "componentPercFinal": 0,
+      "subComponents": [
+        {
+          "subComponentCode": "APO08.01",
+          "subComponentName": "Understand business expectations.",
+          "subComponentDescription": "Understand current business issues, objectives and expectations for I&T. Ensure that requirements are understood, managed and communicated, and their status agreed and approved.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Identify business stakeholders, their interests and their areas of responsibilities.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Review current enterprise direction, issues, strategic objectives, and alignment with enterprise architecture.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Understand the current business environment, process constraints or issues, geographical expansion or contraction, and industry/regulatory drivers.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": " Maintain an awareness of business processes and associated activities. Understand demand patterns that relate to service volumes and use.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Manage expectations by ensuring that business units understand priorities, dependencies, financial constraints and the need to schedule requests.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": "Clarify business expectations for I&T-enabled services and solutions. Ensure that requirements are defined with associated business acceptance criteria and metrics",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": "Confirm that there is agreement between IT and all business departments on expectations and how they will be measured. Ensure that this agreement is confirmed by all stakeholders",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "APO08.02",
+          "subComponentName": "Align I&T strategy with business expectations and identify opportunities for IT to enhance the business",
+          "subComponentDescription": "Align I&T strategies with current business objectives and expectations to enable IT to be a value-add partner for the business and a governance component for enhanced enterprise performance",
+          "subComponentQuestions": [
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": " Position IT as a partner to the business. Play a proactive role in identifying and communicating with key stakeholders on opportunities, risk and constraints. This includes current and emerging technologies, services and business process models",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Collaborate on major new initiatives with portfolio, program and project management. Ensure the involvement of the IT organization from the start of a new initiative by providing value-add advice and recommendations (e.g., for business case development, requirements definition, solution design) and by taking ownership for I&T work streams.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "",
+              "relatedGuidance": "ITIL V3, 2011",
+              "detailedReference": "Service Strategy, 4.4 Demand management",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "APO08.03",
+          "subComponentName": "Manage the business relationship.",
+          "subComponentDescription": "Manage the relationship between the IT service organization and its business partners. Ensure that relationship roles and responsibilities are defined and assigned, and communication is facilitated.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Assign a relationship manager as a single point of contact for each significant business unit. Ensure that a single counterpart is identified in the business organization and the counterpart has business understanding, sufficient technology awareness and the appropriate level of authority.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": ". Manage the relationship in a formalized and transparent way that ensures a focus on achieving a common and shared goal of successful enterprise outcomes in support of strategic goals and within the constraint of budgets and risk tolerance",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Define and communicate a complaints and escalation procedure to resolve any relationship issues.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Ensure that key decisions are agreed and approved by relevant accountable stakeholders.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": "Plan specific interactions and schedules based on mutually agreed objectives and common language (service and performance review meetings, review of new strategies or plans, etc.).",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "",
+              "relatedGuidance": "ISO/IEC 20000-1:2011(E)",
+              "detailedReference": "7.1 Business relationship management",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "",
+              "relatedGuidance": "ITIL V3, 2011",
+              "detailedReference": "Service Strategy, 4.5 Business relationship management",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "APO08.03",
+          "subComponentName": "Coordinate and communicate",
+          "subComponentDescription": "Work with all relevant stakeholders and coordinate the end-to-end delivery of I&T services and solutions provided to the business.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Coordinate and communicate changes and transition activities such as project or change plans, schedules, release policies,release known errors, and training awareness.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Coordinate and communicate operational activities, roles and responsibilities, including the definition of request types, hierarchical escalation, major outages (planned and unplanned), and content and frequency of service reports.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Take ownership of the response to the business for major events that may influence the relationship with the business. Provide direct support if required.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Maintain an end-to-end communication plan that defines the content, frequency and recipients of service delivery information, including status of value delivered and any risk identified.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "APO08.05",
+          "subComponentName": " Provide input to the continual improvement of services",
+          "subComponentDescription": "Continually improve and evolve I&T-enabled services and service delivery to the enterprise to align with changing enterprise objectives and technology ",
+          "subComponentQuestions": [
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": ". Perform customer and provider satisfaction analysis. Ensure that issues are addressed; report results and status.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 5",
+              "questionDescription": ". Work together to identify, communicate and implement improvement initiatives. ",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 5",
+              "questionDescription": "Work with service management and process owners to ensure that I&T-enabled services and service management processes are continually improved and the root causes of any issues are identified and resolved.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+
+          ]
+        }
+
+      ]
+    },
+    {
+      "componentName": "B",
+      "componentDescription": "Organizational Structures",
+      "componentPercFinal": 0,
+      "componentQuestions": [
+        {
+          "questionType": "Sub Process 1",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "Sub Process 2",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "Sub Process 3",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "Sub Process 4",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "Sub Process 5",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        }
+      ]
+
+    },
+    {
+      "componentName": "C",
+      "componentDescription": "Information Flows and Items",
+      "componentPercFinal": 0,
+      "subComponents": [
+        {
+          "subComponentCode": "APO08.01",
+          "subComponentName": "Understand business expectations.",
+          "subComponentDescription": "Understand current business issues, objectives and expectations for I&T. Ensure that requirements are understood, managed and communicated, and their status agreed and approved.",
+          "subComponentQuestions": [
+
+            {
+              "questionType": "Input",
+              "questionDescription": "Strategic road map",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "APO02.05",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Clarified and agreed business expectations",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "Internal",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "APO08.02",
+          "subComponentName": "Align I&T strategy with business expectations and identify opportunities for IT to enhance the business",
+          "subComponentDescription": "Align I&T strategies with current business objectives and expectations to enable IT to be a value-add partner for the business and a governance component for enhanced enterprise performance",
+          "subComponentQuestions": [
+
+            {
+              "questionType": "Input",
+              "questionDescription": "Identified gaps in IT services to the business",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "APO09.01",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Service level performance reports • Improvement action plans and remediations",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "APO09.04 ",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Root causes of failure to deliver quality",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "APO11.03",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Agreed next steps and action plans",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "Internal",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "APO08.03",
+          "subComponentName": "Manage the business relationship.",
+          "subComponentDescription": "Manage the relationship between the IT service organization and its business partners. Ensure that relationship roles and responsibilities are defined and assigned, and communication is facilitated.",
+          "subComponentQuestions": [
+
+            {
+              "questionType": "Input",
+              "questionDescription": "Classified and prioritized incidents and service requests",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "DSS02.02",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": " Closed service requests and incidents • User confirmation of satisfactory fulfilment or resolution ",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "DSS02.06",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Incident status and trends report • Request fulfilment status and trends report",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "DSS02.07",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Complaint and escalation status",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "Internal",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Agreed key decisions",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "Internal",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "APO08.03",
+          "subComponentName": "Coordinate and communicate",
+          "subComponentDescription": "Work with all relevant stakeholders and coordinate the end-to-end delivery of I&T services and solutions provided to the business.",
+          "subComponentQuestions": [
+
+            {
+              "questionType": "Input",
+              "questionDescription": "Service level agreements (SLAs) ",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "APO09.03",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Risk impact communication",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "APO12.06",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Operation and use plan",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "BAI05.05",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Supplemental support plan",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "BAI07.07",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Communications of planned maintenance downtime",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "BAI09.02",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Communication of knowledge learned",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "DSS03.04",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Customer responses ",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "Internal",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Communication packages",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "Internal",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Communication plan",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "Internal",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "APO08.05",
+          "subComponentName": " Provide input to the continual improvement of services",
+          "subComponentDescription": "Continually improve and evolve I&T-enabled services and service delivery to the enterprise to align with changing enterprise objectives and technology ",
+          "subComponentQuestions": [
+
+            {
+              "questionType": "Input",
+              "questionDescription": "Service catalogs",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "APO09.02",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Customer requirements for quality management • Results of quality of service, including customer feedback",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "APO11.02",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Results of quality monitoring for solution and service delivery",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "APO11.03",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Results of quality reviews and audits",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "APO11.04",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Maintenance plan",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "BAI03.10",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Success measures and results",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "BAI05.05",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Supplemental support plan",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "BAI07.07",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Definition of potential improvement projects",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "APO02.02, BAI03.11",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Satisfaction analyses",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "APO09.04",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+
+          ]
+        }
+
+      ]
+    },
+    {
+      "componentName": "D",
+      "componentDescription": "Peoples, Skills and Competencies",
+      "componentPercFinal": 0,
+      "componentQuestions": [
+        {
+          "questionType": "Component question",
+          "questionSkill": "Relationship management ",
+          "relatedGuidance": "e-Competence Framework (e-CF)—A common European Framework for ICT Professionals in all industry sectors—Part 1: Framework, 2016",
+          "detailedReference": "E. Manage—E.4. Relationship Management",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "Component question",
+          "questionSkill": "Relationship management ",
+          "relatedGuidance": "Skills Framework for the Information Age V6, 2015",
+          "detailedReference": "RLMT",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        }
+      ]
+    },
+    {
+      "componentName": "E",
+      "componentDescription": "Principles Policies and Procedures",
+      "componentPercFinal": 0,
+      "componentQuestions": [
+        {
+          "questionType": "Component question",
+          "relevantPolicy": "Business—IT relationship management policy",
+          "policyDescription": "Provides guidelines to establish and maintain relations between the business and IT. Fosters transparency, mutual trust and a common focus on achieving strategic goals within the context of budget and risk tolerance.",
+          "detailedGuidance": "",
+          "detailedReference": "",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        }
+      ]
+    },
+    {
+      "componentName": "F",
+      "componentDescription": "Culture, Ethics and Behavior",
+      "componentPercFinal": 0,
+      "componentQuestions": [
+        {
+          "questionType": "Component question",
+          "keyCultureElement": "Establish a culture based on mutual trust, transparent communication, open and understandable terms, a common language, ownership, and accountability. Good relationships must exist between the business and IT within the enterprise to achieve a shared goal. ",
+          "relatedGuidance": "",
+          "detailedReference": "",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        }
+      ]
+    },
+    {
+      "componentName": "G",
+      "componentDescription": "Services, Infrastructure and Applications",
+      "componentPercFinal": 0,
+      "componentQuestions": [
+        {
+          "questionType": "Component question",
+          "questionDescription": "Collaboration platforms",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "Component question",
+          "questionDescription": "Internal training and awareness building services",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        }
+      ]
+    }
+  ]
+}
      

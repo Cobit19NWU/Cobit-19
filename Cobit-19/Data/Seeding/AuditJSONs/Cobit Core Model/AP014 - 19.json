@@ -2,6 +2,7 @@
   "objectiveName": "APO14",
   "objectiveDescription": "Achieve and sustain effective management of the enterprise data assets across the data life cycle, from creation through delivery, maintenance and archiving.",
   "objectivePurpose": "Ensure effective utilization of the critical data assets to achieve enterprise goals and objectives.",
+  "typeOfObjective": "Management",
   "maturityLevel": 0,
   "maturityLevel0PercFinal": 0,
   "maturityLevel1PercFinal": 0,
@@ -364,1372 +365,925 @@
               "questionComment": "comment"
             }
           ]
-            },
-
-            {
-              "subComponentCode": "APO14.03 ",
-              "subComponentName": " Establish the processes and infrastructure for metadata management.",
-              "subComponentDescription": "Establish the processes and infrastructure for specifying and extending metadata about the organization’s data assets, fostering and supporting data sharing, ensuring compliant use of data, improving responsiveness to business changes and reducing data-related risk",
-              "subComponentQuestions": [
-                {
-                  "questionType": "Maturity Level 2",
-                  "questionDescription": "Establish and follow a metadata management process.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 2",
-                  "questionDescription": "Ensure that metadata documentation captures data interdependencies.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string, ",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 2",
-                  "questionDescription": "Establish and follow metadata categories, properties and standards",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string, ",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 3",
-                  "questionDescription": "Develop and use metadata to perform impact analysis on potential data changes.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string, ",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 3",
-                  "questionDescription": "Populate the organization’s metadata repository with additional categories and classifications of metadata according to a phased implementation plan. Link it to architecture layers.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string, ",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 3",
-                  "questionDescription": "Validate metadata and any changes to metadata against the existing architecture.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string, ",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 3",
-                  "questionDescription": "Ensure that the organization has developed an integrated metamodel deployed across all platforms.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string, ",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 3",
-                  "questionDescription": "Ensure that metadata types and data definitions support consistent import, subscription and consumption practices.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string, ",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 4",
-                  "questionDescription": "Use measures and metrics to evaluate the accuracy and adoption of metadata.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string, ",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 5",
-                  "questionDescription": "Evaluate planned data changes for impact on the metadata repository. Continuously improve metadata capture, change and refinement processes.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string, ",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Related Guidance",
-                  "questionDescription": "string",
-                  "relatedGuidance": "CMMI Data Management Maturity Model, 2014",
-                  "detailedReference": "Data Governance—Metadata Management",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Related Guidance",
-                  "questionDescription": "string",
-                  "relatedGuidance": "ISO/IEC 27002:2013/Cor.2:2015(E)",
-                  "detailedReference": "8.2 Information classification",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                }
-              ]
-            },
-
-
-            {
-              "subComponentCode": "APO14.04 ",
-              "subComponentName": " Define a data quality strategy.",
-              "subComponentDescription": "Define an integrated, organizationwide strategy to achieve and maintain the level of data quality (such as complexity, integrity, accuracy, completeness, validity, traceability and timeliness) required to support the business goals and objectives. ",
-              "subComponentQuestions": [
-                {
-                  "questionType": "Maturity Level 3",
-                  "questionDescription": "Define a data quality strategy in collaboration with business and technology stakeholders, approved by executive management, and managed. The strategy should facilitate moving from the current to the target state. It should also explicitly align with business objectives and the organization’s data management strategy.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 3",
-                  "questionDescription": "Ensure that the data quality strategy is followed across the organization and is accompanied by corresponding policies, processes and guidelines.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string, ",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 3",
-                  "questionDescription": "Anchor the policies, processes and governance contained in the data quality strategy across the data life cycle. Mandate corresponding processes in the system development life cycle methodology.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string, ",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 3",
-                  "questionDescription": "Develop and use metadata to perform impact analysis on potential data changes.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string, ",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 3",
-                  "questionDescription": "Develop, monitor and maintain a sequence plan for data quality improvement efforts across the organization.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string, ",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 4",
-                  "questionDescription": "To evaluate progress, monitor plans to meet the goals and objectives of the data quality strategy..",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string, ",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 4",
-                  "questionDescription": "Systematically collect stakeholder reports of data quality issues. Include their expectations for improving data quality in the data quality strategy. Measure and monitor them.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string, ",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Related Guidance",
-                  "questionDescription": "string",
-                  "relatedGuidance": "CMMI Cybermaturity Platform, 2018",
-                  "detailedReference": "DP.DR Safeguard Data at Rest; DP.DT Safeguard Data in Transit; DP.IP Integrity and Data Leak Prevention",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Related Guidance",
-                  "questionDescription": "string",
-                  "relatedGuidance": "CMMI Data Management Maturity Model, 2014",
-                  "detailedReference": "Data Quality - Data Quality Strategy",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                }
-              ]
-            },
-
-
-
-            {
-              "subComponentCode": "APO14.05",
-              "subComponentName": " Establish data profiling methodologies, processes and tools.",
-              "subComponentDescription": "Implement standardized data profiling methodologies, processes, practices, tools and templates that can be applied across multiple data repositories and data stores. ",
-              "subComponentQuestions": [
-                {
-                  "questionType": "Maturity Level 3",
-                  "questionDescription": "Define and standardize data profiling methodologies, processes, practices, tools and results templates. Ensure that profiling processes are reusable and leveraged across multiple data stores and shared data repositories.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 4",
-                  "questionDescription": "Engage data management to identify core shared data sets that are regularly profiled and monitored..",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string, ",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 4",
-                  "questionDescription": "In data profiling efforts, include evaluation of the conformity of data content with its approved metadata and standards.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string, ",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 4",
-                  "questionDescription": "During a data profiling activity, compare actual issues to the statistically predicted issues, based on historical profiling results.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string, ",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 4",
-                  "questionDescription": "DEnsure that results are centrally stored, systematically monitored and analyzed with respect to statistics and metrics. Provide the resulting insight to data quality improvements over time.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string, ",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 5",
-                  "questionDescription": "Create real-time or near real-time automated profiling reports for all critical data feeds and repositories.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string, ",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Related Guidance",
-                  "questionDescription": "string",
-                  "relatedGuidance": "CMMI Data Management Maturity Model, 2014",
-                  "detailedReference": "Data Quality—Data Profiling",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Related Guidance",
-                  "questionDescription": "string",
-                  "relatedGuidance": "National Institute of Standards and Technology Special Publication 800-53, Revision 5, August 2017",
-                  "detailedReference": "3.20 System and information integrity (SI-1)",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                }
-              ]
-            },
-
-            {
-              "subComponentCode": "APO14.06 ",
-              "subComponentName": " Ensure a data quality assessment approach.",
-              "subComponentDescription": "Provide a systematic approach to measure and evaluate data quality according to processes and techniques, and against data quality rules. ",
-              "subComponentQuestions": [
-                {
-                  "questionType": "Maturity Level 4",
-                  "questionDescription": "Periodically conduct data quality assessments, according to an approved frequency per the data quality assessment policy. Ensure that data governance determines the key set of attributes by subject area for data quality assessments.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 4",
-                  "questionDescription": "Include recommendations for remediation, with supporting rationale, in data quality assessment results.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string, ",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 4",
-                  "questionDescription": "Assess data quality, using established thresholds and targets for each selected quality dimension.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string, ",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 4",
-                  "questionDescription": "Systematically generate data quality measurement reports, based on criticality of attributes and data volatility.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string, ",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 5",
-                  "questionDescription": "Continuously review and improve data quality assessment and reporting processes.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string, ",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Related Guidance",
-                  "questionDescription": "string",
-                  "relatedGuidance": "CMMI Data Management Maturity Model, 2014",
-                  "detailedReference": "Data Quality—Data Quality Assessment",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                }
-              ]
-            },
-
-
-            {
-              "subComponentCode": "APO14.07 ",
-              "subComponentName": " Define the data cleansing approach.",
-              "subComponentDescription": "Define the mechanisms, rules, processes, and methods to validate and correct data according to predefined business rules. ",
-              "subComponentQuestions": [
-                {
-                  "questionType": "Maturity Level 2",
-                  "questionDescription": "Establish and maintain a data cleansing policy.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 3",
-                  "questionDescription": "Maintain data change history through cleansing activities.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string, ",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 4",
-                  "questionDescription": "Establish methods for correcting the data and define those methods within a plan. Methods may include multiple repository comparison, verification against a valid source, logic checks, referential integrity or range tolerance.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string, ",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 4",
-                  "questionDescription": "In service level agreements, include data quality criteria to hold data providers accountable for cleansed data.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string, ",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-
-                {
-                  "questionType": "Related Guidance",
-                  "questionDescription": "string",
-                  "relatedGuidance": "CMMI Data Management Maturity Model, 2014",
-                  "detailedReference": "Data Quality—Data Cleansing",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                }
-              ]
-            },
-
-            {
-              "subComponentCode": "APO14.08 ",
-              "subComponentName": "Manage the life cycle of data assets.",
-              "subComponentDescription": "Ensure that the organization understands, maps, inventories and controls its data flows through business processes over the data life cycle, from creation or acquisition to retirement. ",
-              "subComponentQuestions": [
-                {
-                  "questionType": "Maturity Level 2",
-                  "questionDescription": "Map and align the requirements of data consumers and producers.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 3",
-                  "questionDescription": "Define business process-to-data mappings. Maintain them and periodically review them for compliance..",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string, ",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 3",
-                  "questionDescription": "Follow a defined process for collaborative agreements with respect to shared data and data usage within business processes.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string, ",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 3",
-                  "questionDescription": "Implement data flows and full data-to-process life cycle maps for shared data for each major business process at the organizational level.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string, ",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 3",
-                  "questionDescription": "Ensure that changes to shared data sets or target data sets for a specific business purpose are managed by data governance structures, with relevant stakeholder engagement..",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string, ",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 4",
-                  "questionDescription": "Use metrics to expand approved shared data reuse and eliminate process redundancy..",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string, ",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-
-
-                {
-                  "questionType": "Related Guidance",
-                  "questionDescription": "string",
-                  "relatedGuidance": "CMMI Data Management Maturity Model, 2014",
-                  "detailedReference": "Data Operations—Data Lifecycle Management",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                }
-              ]
-            },
-
-
-            {
-              "subComponentCode": "APO14.09 ",
-              "subComponentName": "Support data archiving and retention.",
-              "subComponentDescription": "Ensure that data maintenance satisfies organizational and regulatory requirements for availability of historical data. Ensure that legal and regulatory requirements for data archiving and retention are met.",
-              "subComponentQuestions": [
-                {
-                  "questionType": "Maturity Level 2",
-                  "questionDescription": "Ensure that policies mandate management of data history, including retention, destruction and audit trail requirements.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 2",
-                  "questionDescription": "Ensure the existence of a defined method that guarantees accessibility to the historical data necessary to support business needs.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string, ",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 2",
-                  "questionDescription": "Use policy and processes to control access, transmittal and modifications to historical and archived data.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string, ",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 3",
-                  "questionDescription": "Ensure that the organization has a prescribed data warehouse repository that provides access to historical data for meeting analytics needs supporting business processes.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string, ",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-
-
-                {
-                  "questionType": "Related Guidance",
-                  "questionDescription": "string",
-                  "relatedGuidance": "CMMI Data Management Maturity Model, 2014",
-                  "detailedReference": "Platform and Architecture—Historical Data, Retention and Archiving",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                }
-              ]
-            },
-
-            {
-              "subComponentCode": "APO14.10 ",
-              "subComponentName": "Manage data backup and restore arrangements.",
-              "subComponentDescription": "Manage availability of critical data to ensure operational continuity.",
-              "subComponentQuestions": [
-
-                {
-                  "questionType": "Maturity Level 2",
-                  "questionDescription": "Define a schedule to ensure correct backup of all critical data.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string, ",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 2",
-                  "questionDescription": "Define requirements for on-site and off-site storage of backup data, taking into account volume, capacity and retention period, in alignment with the business requirements.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string, ",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 2",
-                  "questionDescription": "Establish a testing schedule for backup data. Ensure that the data can be restored correctly without drastically impacting business.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string, ",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Related Guidance",
-                  "questionDescription": "string",
-                  "relatedGuidance": "The CIS Critical Security Controls for Effective Cyber Defense Version 6.1, August 2016",
-                  "detailedReference": "CSC 10: Data Recovery Capability",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Output",
-                  "questionDescription": "Backup test plan",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "DSS04.07",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Output",
-                  "questionDescription": "Backup plan",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "DSS04.07",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Input",
-                  "questionDescription": "Data security and control guidelines",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "APO01.07",
-                  "outputTo": "string",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Input",
-                  "questionDescription": "Data management strategy",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "APO14.01",
-                  "outputTo": "string",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                }
-
-
-
-              ]
-            }
-
-          ]
         },
+
         {
-          "componentName": "B",
-          "componentDescription": "Organizational Structures",
-          "componentPercFinal": 0,
-          "componentQuestions": [
-
+          "subComponentCode": "APO14.03 ",
+          "subComponentName": " Establish the processes and infrastructure for metadata management.",
+          "subComponentDescription": "Establish the processes and infrastructure for specifying and extending metadata about the organization’s data assets, fostering and supporting data sharing, ensuring compliant use of data, improving responsiveness to business changes and reducing data-related risk",
+          "subComponentQuestions": [
             {
-              "questionType": "APO14.01",
-              "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
-              "questionAnswer": 0,
-              "questionScore": 0,
-              "questionComment": "comment"
-            },
-            {
-              "questionType": "APO14.02",
-              "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
-              "questionAnswer": 0,
-              "questionScore": 0,
-              "questionComment": "comment"
-            },
-            {
-              "questionType": "APO14.03",
-              "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
-              "questionAnswer": 0,
-              "questionScore": 0,
-              "questionComment": "comment"
-            },
-            {
-              "questionType": "APO14.04",
-              "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
-              "questionAnswer": 0,
-              "questionScore": 0,
-              "questionComment": "comment"
-            },
-            {
-              "questionType": "APO14.05",
-              "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
-              "questionAnswer": 0,
-              "questionScore": 0,
-              "questionComment": "comment"
-            },
-            {
-              "questionType": "APO14.06",
-              "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
-              "questionAnswer": 0,
-              "questionScore": 0,
-              "questionComment": "comment"
-            },
-            {
-              "questionType": "APO14.07",
-              "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
-              "questionAnswer": 0,
-              "questionScore": 0,
-              "questionComment": "comment"
-            },
-            {
-              "questionType": "APO14.08",
-              "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
-              "questionAnswer": 0,
-              "questionScore": 0,
-              "questionComment": "comment"
-            },
-            {
-              "questionType": "APO14.09",
-              "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
-              "questionAnswer": 0,
-              "questionScore": 0,
-              "questionComment": "comment"
-            },
-            {
-              "questionType": "APO14.10",
-              "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
-              "questionAnswer": 0,
-              "questionScore": 0,
-              "questionComment": "comment"
-            }
-          ]
-        },
-        {
-          "componentCode": "C",
-          "componentDescription": "Information Flows and Items",
-          "componentPercFinal": 0,
-          "subComponents": [
-            {
-              "subComponentCode": "APO14.01",
-              "subComponentName": "Define and communicate the organization’s data management strategy and roles and responsibilities.",
-              "subComponentDescription": "Define how to manage and improve the organization’s data assets, in line with enterprise strategy and objectives. Communicate the data management strategy to all stakeholders. Assign roles and responsibilities to ensure that corporate data are managed as critical assets and the data management strategy is implemented and maintained in an effective and sustainable manner.",
-              "subComponentQuestions": [
-                {
-                  "questionType": "Input",
-                  "questionDescription": "Data classification guidelines",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "APO01.06",
-                  "outputTo": "string",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Input",
-                  "questionDescription": "Skills and competencies matrix",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "APO07.03",
-                  "outputTo": "string",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Input",
-                  "questionDescription": "• Enterprise strategy • Data management policies and regulation",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "Outside COBIT",
-                  "outputTo": "string",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Output",
-                  "questionDescription": "Data management strategy",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "outputTo": "APO03.02; APO14.10",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Output",
-                  "questionDescription": "Agreed roles and responsibilities for data management and data governance",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "outputTo": "Internal",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-
-                {
-                  "questionType": "Output",
-                  "questionDescription": "External publications and presentations about best practices at industry conferences",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "outputTo": "Internal",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-
-                {
-                  "questionType": "Output",
-                  "questionDescription": "Implementation plan for data management strategy",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "outputTo": "Internal",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                }
-              ]
-            },
-            {
-              "subComponentCode": "APO14.02 ",
-              "subComponentName": " Define and maintain a consistent business glossary",
-              "subComponentDescription": "Create, approve, update and promote consistent business terms and definitions to foster shared data usage across the organization.",
-              "subComponentQuestions": [
-                {
-                  "questionType": "Output",
-                  "questionDescription": "Business glossary",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "APO14.03; BAI02.01",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                }
-
-              ]
-            },
-            {
-              "subComponentCode": "APO14.03 ",
-              "subComponentName": " Establish the processes and infrastructure for metadata management.",
-              "subComponentDescription": "Establish the processes and infrastructure for specifying and extending metadata about the organization’s data assets, fostering and supporting data sharing, ensuring compliant use of data, improving responsiveness to business changes and reducing data-related risk",
-              "subComponentQuestions": [
-                {
-                  "questionType": "Input",
-                  "questionDescription": "Information architecture model",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "APO03.02",
-                  "outputTo": "string",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Input",
-                  "questionDescription": "Business glossary",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "APO14.02",
-                  "outputTo": "string",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-
-                {
-                  "questionType": "Output",
-                  "questionDescription": "Metadata documentation",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "APO03.02",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                }
-              ]
-            },
-            {
-              "subComponentCode": "APO14.04 ",
-              "subComponentName": " Define a data quality strategy.",
-              "subComponentDescription": "Define an integrated, organizationwide strategy to achieve and maintain the level of data quality (such as complexity, integrity, accuracy, completeness, validity, traceability and timeliness) required to support the business goals and objectives. ",
-              "subComponentQuestions": [
-                {
-                  "questionType": "Input",
-                  "questionDescription": "Data integrity procedures",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "APO01.06",
-                  "outputTo": "string",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Input",
-                  "questionDescription": "Data security and control guidelines",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "APO01.07",
-                  "outputTo": "string",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Input",
-                  "questionDescription": "Quality management plans",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "APO11.01",
-                  "outputTo": "string",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Output",
-                  "questionDescription": "Data quality strategy",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "APO14.05;APO14.06;APO14.07",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Output",
-                  "questionDescription": "Data quality issue reports",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "Internal",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Output",
-                  "questionDescription": " Data quality improvement plan",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "Internal",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                }
-
-              ]
-
-
-
-            },
-            {
-              "subComponentCode": "APO14.05",
-              "subComponentName": " Establish data profiling methodologies, processes and tools.",
-              "subComponentDescription": "Implement standardized data profiling methodologies, processes, practices, tools and templates that can be applied across multiple data repositories and data stores. ",
-              "subComponentQuestions": [
-                {
-                  "questionType": "Input",
-                  "questionDescription": "Data quality strategy",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "APO14.04",
-                  "outputTo": "string",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-
-                {
-                  "questionType": "Output",
-                  "questionDescription": "Data profiling methodologies, processes, practices, tools and results templates",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "Internal",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                }
-              ]
-            },
-            {
-              "subComponentCode": "APO14.06 ",
-              "subComponentName": " Ensure a data quality assessment approach.",
-              "subComponentDescription": "Provide a systematic approach to measure and evaluate data quality according to processes and techniques, and against data quality rules. ",
-              "subComponentQuestions": [
-                {
-                  "questionType": "Input",
-                  "questionDescription": "Quality management plans",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "APO11.01",
-                  "outputTo": "string",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Input",
-                  "questionDescription": "Data quality strategy",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "APO14.04",
-                  "outputTo": "string",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Output",
-                  "questionDescription": "Data quality assessment results",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "Internal",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Output",
-                  "questionDescription": "Risk-related root causes",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "DSS02.03;DSS03.01; DSS03.02;DSS03.03; DSS03.05; DSS04.02; MEA02.04; MEA04.04; MEA04.06",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Output",
-                  "questionDescription": "Risk-related incident response plans",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "DSS02.05",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                }
-              ]
-            },
-            {
-              "subComponentCode": "APO14.07 ",
-              "subComponentName": " Define the data cleansing approach.",
-              "subComponentDescription": "Define the mechanisms, rules, processes, and methods to validate and correct data according to predefined business rules. ",
-              "subComponentQuestions": [
-                {
-                  "questionType": "Input",
-                  "questionDescription": "Data quality strategy",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "APO14.04",
-                  "outputTo": "string",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-
-                {
-                  "questionType": "Output",
-                  "questionDescription": "Data quality requirements",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "APO09.03",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                }
-              ]
-            },
-            {
-              "subComponentCode": "APO14.08 ",
-              "subComponentName": "Manage the life cycle of data assets.",
-              "subComponentDescription": "Ensure that the organization understands, maps, inventories and controls its data flows through business processes over the data life cycle, from creation or acquisition to retirement. ",
-              "subComponentQuestions": [
-                {
-                  "questionType": "Input",
-                  "questionDescription": "Data security and control guidelines",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "APO01.07",
-                  "outputTo": "string",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-
-                {
-                  "questionType": "Input",
-                  "questionDescription": "Backup data",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "DSS04.07",
-                  "outputTo": "string",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                }
-              ]
-            },
-            {
-              "subComponentCode": "APO14.09 ",
-              "subComponentName": "Support data archiving and retention.",
-              "subComponentDescription": "Ensure that data maintenance satisfies organizational and regulatory requirements for availability of historical data. Ensure that legal and regulatory requirements for data archiving and retention are met.",
-              "subComponentQuestions": [
-                {
-                  "questionType": "Output",
-                  "questionDescription": "Data archive",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "Internal",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-
-                {
-                  "questionType": "Input",
-                  "questionDescription": "Retention requirements",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "DSS06.05",
-                  "outputTo": "string",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                }
-              ]
-            },
-            {
-              "subComponentCode": "APO14.10 ",
-              "subComponentName": "Manage data backup and restore arrangements.",
-              "subComponentDescription": "Manage availability of critical data to ensure operational continuity.",
-              "subComponentQuestions": [
-                {
-                  "questionType": "Output",
-                  "questionDescription": "Backup test plan",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "DSS04.07",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Output",
-                  "questionDescription": "Backup plan",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "DSS04.07",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Input",
-                  "questionDescription": "Data security and control guidelines",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "APO01.07",
-                  "outputTo": "string",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Input",
-                  "questionDescription": "Data management strategy",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "APO14.01",
-                  "outputTo": "string",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "componentName": "D",
-          "componentDescription": "Peoples, Skills and Competencies",
-          "componentPercFinal": 0,
-          "componentQuestions": [
-
-            {
-              "questionType": "Component question",
-              "questionSkill": "Data analysis",
-              "relatedGuidance": "Skills Framework for the Information Age V6, 2015 ",
-              "detailedReference": "DTAN",
-              "questionAnswer": 0,
-              "questionScore": 0,
-              "questionComment": "comment"
-            },
-            {
-              "questionType": "Component question",
-              "questionSkill": "Data management",
-              "relatedGuidance": "Skills Framework for the Information Age V6, 2015 ",
-              "detailedReference": "DATM",
-              "questionAnswer": 0,
-              "questionScore": 0,
-              "questionComment": "comment"
-            },
-            {
-              "questionType": "Component question",
-              "questionSkill": "Information assurance",
-              "relatedGuidance": "Skills Framework for the Information Age V6, 2015 ",
-              "detailedReference": "INAS",
-              "questionAnswer": 0,
-              "questionScore": 0,
-              "questionComment": "comment"
-            },
-            {
-              "questionType": "Component question",
-              "questionSkill": "Information management",
-              "relatedGuidance": "Skills Framework for the Information Age V6, 2015 ",
-              "detailedReference": "IRMG",
-              "questionAnswer": 0,
-              "questionScore": 0,
-              "questionComment": "comment"
-            }
-
-
-          ]
-        },
-        {
-          "componentName": "E",
-          "componentDescription": "Principles Policies and Procedures",
-          "componentPercFinal": 0,
-          "componentQuestions": [
-            {
-              "questionType": "Component question",
-              "relevantPolicy": "Data cleansing policy",
-              "policyDescription": "Outlines management’s commitment to data cleansing. Prescribes frequency, guidelines and accountability; documents available methods, solutions and tools.",
-              "detailedGuidance": "CMMI Data Management Maturity, Model,2014 ",
-              "detailedReference": "Data Cleansing",
-              "questionAnswer": 0,
-              "questionScore": 0,
-              "questionComment": "comment"
-            },
-            {
-              "questionType": "Component question",
-              "relevantPolicy": "Data quality assessment policy",
-              "policyDescription": "Describes the organization’s data quality assurance assessment philosophy for ensuring the integrity of the data being used to make decisions that impact the organization. Assigns the frequency, guidelines and accountability for data quality assessment. Outlines available methods, solutions and tools.",
-              "detailedGuidance": "(1) CMMI Data Management Maturity Model, 2014; (2) National Institute of Standards and Technology Special Publication 800- 53, Revision 5 (Draft), August 2017 ",
-              "detailedReference": "(1) Data Quality Assessment; (2) 3.20 System and information integrity (SI-1)",
-              "questionAnswer": 0,
-              "questionScore": 0,
-              "questionComment": "comment"
-            },
-            {
-              "questionType": "Component question",
-              "relevantPolicy": "Data management policy",
-              "policyDescription": "Describes the organization’s commitment to manage data assets across the data life cycle, from creation through delivery, maintenance and archiving.",
-              "detailedGuidance": "string ",
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Establish and follow a metadata management process.",
+              "relatedGuidance": "string",
               "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": "comment"
             },
             {
-              "questionType": "Component question",
-              "relevantPolicy": "Privacy policy",
-              "policyDescription": "Documents the collection, use, disclosure and management of personal data. Personal data can be any data that may be used to identify an individual, including, but not limited to, name, address, date of birth, marital status, contact information, ID issue and expiry date, financial records, credit information, medical history, travel destination, and intent to acquire goods or services. The privacy policy defines how an enterprise collects, stores and releases personal information; how and when the client is informed of specific information that is collected and whether it is kept confidential, shared with partners, or sold to other firms or enterprises. The policy mandates compliance with relevant legislation related to data protection.",
-              "detailedGuidance": "string ",
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Ensure that metadata documentation captures data interdependencies.",
+              "relatedGuidance": "string",
               "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Establish and follow metadata categories, properties and standards",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Develop and use metadata to perform impact analysis on potential data changes.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Populate the organization’s metadata repository with additional categories and classifications of metadata according to a phased implementation plan. Link it to architecture layers.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Validate metadata and any changes to metadata against the existing architecture.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Ensure that the organization has developed an integrated metamodel deployed across all platforms.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Ensure that metadata types and data definitions support consistent import, subscription and consumption practices.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": "Use measures and metrics to evaluate the accuracy and adoption of metadata.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 5",
+              "questionDescription": "Evaluate planned data changes for impact on the metadata repository. Continuously improve metadata capture, change and refinement processes.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "string",
+              "relatedGuidance": "CMMI Data Management Maturity Model, 2014",
+              "detailedReference": "Data Governance—Metadata Management",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "string",
+              "relatedGuidance": "ISO/IEC 27002:2013/Cor.2:2015(E)",
+              "detailedReference": "8.2 Information classification",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+
+
+        {
+          "subComponentCode": "APO14.04 ",
+          "subComponentName": " Define a data quality strategy.",
+          "subComponentDescription": "Define an integrated, organizationwide strategy to achieve and maintain the level of data quality (such as complexity, integrity, accuracy, completeness, validity, traceability and timeliness) required to support the business goals and objectives. ",
+          "subComponentQuestions": [
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Define a data quality strategy in collaboration with business and technology stakeholders, approved by executive management, and managed. The strategy should facilitate moving from the current to the target state. It should also explicitly align with business objectives and the organization’s data management strategy.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Ensure that the data quality strategy is followed across the organization and is accompanied by corresponding policies, processes and guidelines.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Anchor the policies, processes and governance contained in the data quality strategy across the data life cycle. Mandate corresponding processes in the system development life cycle methodology.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Develop and use metadata to perform impact analysis on potential data changes.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Develop, monitor and maintain a sequence plan for data quality improvement efforts across the organization.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": "To evaluate progress, monitor plans to meet the goals and objectives of the data quality strategy..",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": "Systematically collect stakeholder reports of data quality issues. Include their expectations for improving data quality in the data quality strategy. Measure and monitor them.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "string",
+              "relatedGuidance": "CMMI Cybermaturity Platform, 2018",
+              "detailedReference": "DP.DR Safeguard Data at Rest; DP.DT Safeguard Data in Transit; DP.IP Integrity and Data Leak Prevention",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "string",
+              "relatedGuidance": "CMMI Data Management Maturity Model, 2014",
+              "detailedReference": "Data Quality - Data Quality Strategy",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+
+
+
+        {
+          "subComponentCode": "APO14.05",
+          "subComponentName": " Establish data profiling methodologies, processes and tools.",
+          "subComponentDescription": "Implement standardized data profiling methodologies, processes, practices, tools and templates that can be applied across multiple data repositories and data stores. ",
+          "subComponentQuestions": [
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Define and standardize data profiling methodologies, processes, practices, tools and results templates. Ensure that profiling processes are reusable and leveraged across multiple data stores and shared data repositories.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": "Engage data management to identify core shared data sets that are regularly profiled and monitored..",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": "In data profiling efforts, include evaluation of the conformity of data content with its approved metadata and standards.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": "During a data profiling activity, compare actual issues to the statistically predicted issues, based on historical profiling results.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": "DEnsure that results are centrally stored, systematically monitored and analyzed with respect to statistics and metrics. Provide the resulting insight to data quality improvements over time.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 5",
+              "questionDescription": "Create real-time or near real-time automated profiling reports for all critical data feeds and repositories.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "string",
+              "relatedGuidance": "CMMI Data Management Maturity Model, 2014",
+              "detailedReference": "Data Quality—Data Profiling",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "string",
+              "relatedGuidance": "National Institute of Standards and Technology Special Publication 800-53, Revision 5, August 2017",
+              "detailedReference": "3.20 System and information integrity (SI-1)",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+
+        {
+          "subComponentCode": "APO14.06 ",
+          "subComponentName": " Ensure a data quality assessment approach.",
+          "subComponentDescription": "Provide a systematic approach to measure and evaluate data quality according to processes and techniques, and against data quality rules. ",
+          "subComponentQuestions": [
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": "Periodically conduct data quality assessments, according to an approved frequency per the data quality assessment policy. Ensure that data governance determines the key set of attributes by subject area for data quality assessments.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": "Include recommendations for remediation, with supporting rationale, in data quality assessment results.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": "Assess data quality, using established thresholds and targets for each selected quality dimension.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": "Systematically generate data quality measurement reports, based on criticality of attributes and data volatility.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 5",
+              "questionDescription": "Continuously review and improve data quality assessment and reporting processes.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "string",
+              "relatedGuidance": "CMMI Data Management Maturity Model, 2014",
+              "detailedReference": "Data Quality—Data Quality Assessment",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+
+
+        {
+          "subComponentCode": "APO14.07 ",
+          "subComponentName": " Define the data cleansing approach.",
+          "subComponentDescription": "Define the mechanisms, rules, processes, and methods to validate and correct data according to predefined business rules. ",
+          "subComponentQuestions": [
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Establish and maintain a data cleansing policy.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Maintain data change history through cleansing activities.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": "Establish methods for correcting the data and define those methods within a plan. Methods may include multiple repository comparison, verification against a valid source, logic checks, referential integrity or range tolerance.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": "In service level agreements, include data quality criteria to hold data providers accountable for cleansed data.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "string",
+              "relatedGuidance": "CMMI Data Management Maturity Model, 2014",
+              "detailedReference": "Data Quality—Data Cleansing",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+
+        {
+          "subComponentCode": "APO14.08 ",
+          "subComponentName": "Manage the life cycle of data assets.",
+          "subComponentDescription": "Ensure that the organization understands, maps, inventories and controls its data flows through business processes over the data life cycle, from creation or acquisition to retirement. ",
+          "subComponentQuestions": [
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Map and align the requirements of data consumers and producers.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Define business process-to-data mappings. Maintain them and periodically review them for compliance..",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Follow a defined process for collaborative agreements with respect to shared data and data usage within business processes.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Implement data flows and full data-to-process life cycle maps for shared data for each major business process at the organizational level.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Ensure that changes to shared data sets or target data sets for a specific business purpose are managed by data governance structures, with relevant stakeholder engagement..",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": "Use metrics to expand approved shared data reuse and eliminate process redundancy..",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+
+
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "string",
+              "relatedGuidance": "CMMI Data Management Maturity Model, 2014",
+              "detailedReference": "Data Operations—Data Lifecycle Management",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+
+
+        {
+          "subComponentCode": "APO14.09 ",
+          "subComponentName": "Support data archiving and retention.",
+          "subComponentDescription": "Ensure that data maintenance satisfies organizational and regulatory requirements for availability of historical data. Ensure that legal and regulatory requirements for data archiving and retention are met.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Ensure that policies mandate management of data history, including retention, destruction and audit trail requirements.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Ensure the existence of a defined method that guarantees accessibility to the historical data necessary to support business needs.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Use policy and processes to control access, transmittal and modifications to historical and archived data.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Ensure that the organization has a prescribed data warehouse repository that provides access to historical data for meeting analytics needs supporting business processes.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+
+
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "string",
+              "relatedGuidance": "CMMI Data Management Maturity Model, 2014",
+              "detailedReference": "Platform and Architecture—Historical Data, Retention and Archiving",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+
+        {
+          "subComponentCode": "APO14.10 ",
+          "subComponentName": "Manage data backup and restore arrangements.",
+          "subComponentDescription": "Manage availability of critical data to ensure operational continuity.",
+          "subComponentQuestions": [
+
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Define a schedule to ensure correct backup of all critical data.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Define requirements for on-site and off-site storage of backup data, taking into account volume, capacity and retention period, in alignment with the business requirements.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Establish a testing schedule for backup data. Ensure that the data can be restored correctly without drastically impacting business.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "string",
+              "relatedGuidance": "The CIS Critical Security Controls for Effective Cyber Defense Version 6.1, August 2016",
+              "detailedReference": "CSC 10: Data Recovery Capability",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Backup test plan",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "DSS04.07",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Backup plan",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "DSS04.07",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Data security and control guidelines",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "APO01.07",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Data management strategy",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "APO14.01",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+
+
+
+          ]
+        }
+
+      ]
+    },
+    {
+      "componentName": "B",
+      "componentDescription": "Organizational Structures",
+      "componentPercFinal": 0,
+      "componentQuestions": [
+
+        {
+          "questionType": "APO14.01",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "APO14.02",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "APO14.03",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "APO14.04",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "APO14.05",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "APO14.06",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "APO14.07",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "APO14.08",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "APO14.09",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "APO14.10",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        }
+      ]
+    },
+    {
+      "componentCode": "C",
+      "componentDescription": "Information Flows and Items",
+      "componentPercFinal": 0,
+      "subComponents": [
+        {
+          "subComponentCode": "APO14.01",
+          "subComponentName": "Define and communicate the organization’s data management strategy and roles and responsibilities.",
+          "subComponentDescription": "Define how to manage and improve the organization’s data assets, in line with enterprise strategy and objectives. Communicate the data management strategy to all stakeholders. Assign roles and responsibilities to ensure that corporate data are managed as critical assets and the data management strategy is implemented and maintained in an effective and sustainable manner.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Input",
+              "questionDescription": "Data classification guidelines",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "APO01.06",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Skills and competencies matrix",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "APO07.03",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "• Enterprise strategy • Data management policies and regulation",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "Outside COBIT",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Data management strategy",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "outputTo": "APO03.02; APO14.10",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Agreed roles and responsibilities for data management and data governance",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "outputTo": "Internal",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+
+            {
+              "questionType": "Output",
+              "questionDescription": "External publications and presentations about best practices at industry conferences",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "outputTo": "Internal",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+
+            {
+              "questionType": "Output",
+              "questionDescription": "Implementation plan for data management strategy",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "outputTo": "Internal",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "APO14.02 ",
+          "subComponentName": " Define and maintain a consistent business glossary",
+          "subComponentDescription": "Create, approve, update and promote consistent business terms and definitions to foster shared data usage across the organization.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Output",
+              "questionDescription": "Business glossary",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "APO14.03; BAI02.01",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": "comment"
@@ -1738,47 +1292,350 @@
           ]
         },
         {
-          "componentName": "F",
-          "componentDescription": "Culture, Ethics and Behavior",
-          "componentPercFinal": 0,
-          "componentQuestions": [
+          "subComponentCode": "APO14.03 ",
+          "subComponentName": " Establish the processes and infrastructure for metadata management.",
+          "subComponentDescription": "Establish the processes and infrastructure for specifying and extending metadata about the organization’s data assets, fostering and supporting data sharing, ensuring compliant use of data, improving responsiveness to business changes and reducing data-related risk",
+          "subComponentQuestions": [
             {
-              "questionType": "Component question",
-              "keyCultureElement": "Create a culture of shared responsibility for the organization’s data assets;acknowledge the potential value of data assets and ensure that roles and responsibilities are clear for governance and management of data assets.",
-              "relatedGuidance": "CMMI Data Management Maturity Model, 2014 ",
-              "detailedReference": "Data Governance",
+              "questionType": "Input",
+              "questionDescription": "Information architecture model",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "APO03.02",
+              "outputTo": "string",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": "comment"
             },
             {
-              "questionType": "Component question",
-              "keyCultureElement": "Create awareness around data integrity, accuracy, completeness and protection to establish a culture of data quality. Relate data quality to the enterprise’s core values. Continuously communicate the impact and risk of data loss. Ensure that employees understand the  true cost of failing to implement a data quality culture.",
-              "relatedGuidance": "CMMI Data Management Maturity Model, 2014 ",
-              "detailedReference": "Data Quality",
+              "questionType": "Input",
+              "questionDescription": "Business glossary",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "APO14.02",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+
+            {
+              "questionType": "Output",
+              "questionDescription": "Metadata documentation",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "APO03.02",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "APO14.04 ",
+          "subComponentName": " Define a data quality strategy.",
+          "subComponentDescription": "Define an integrated, organizationwide strategy to achieve and maintain the level of data quality (such as complexity, integrity, accuracy, completeness, validity, traceability and timeliness) required to support the business goals and objectives. ",
+          "subComponentQuestions": [
+            {
+              "questionType": "Input",
+              "questionDescription": "Data integrity procedures",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "APO01.06",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Data security and control guidelines",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "APO01.07",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Quality management plans",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "APO11.01",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Data quality strategy",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "APO14.05;APO14.06;APO14.07",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Data quality issue reports",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "Internal",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": " Data quality improvement plan",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "Internal",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": "comment"
             }
 
           ]
+
+
+
         },
         {
-          "componentName": "G",
-          "componentDescription": "Services, Infrastructure and Applications",
-          "componentPercFinal": 0,
-          "componentQuestions": [
+          "subComponentCode": "APO14.05",
+          "subComponentName": " Establish data profiling methodologies, processes and tools.",
+          "subComponentDescription": "Implement standardized data profiling methodologies, processes, practices, tools and templates that can be applied across multiple data repositories and data stores. ",
+          "subComponentQuestions": [
+            {
+              "questionType": "Input",
+              "questionDescription": "Data quality strategy",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "APO14.04",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
 
             {
-              "questionType": "Component question",
-              "questionDescription": "Data modeling tools",
+              "questionType": "Output",
+              "questionDescription": "Data profiling methodologies, processes, practices, tools and results templates",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "Internal",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "APO14.06 ",
+          "subComponentName": " Ensure a data quality assessment approach.",
+          "subComponentDescription": "Provide a systematic approach to measure and evaluate data quality according to processes and techniques, and against data quality rules. ",
+          "subComponentQuestions": [
+            {
+              "questionType": "Input",
+              "questionDescription": "Quality management plans",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "APO11.01",
+              "outputTo": "string",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": "comment"
             },
             {
-              "questionType": "Component question",
-              "questionDescription": "Data repositories",
+              "questionType": "Input",
+              "questionDescription": "Data quality strategy",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "APO14.04",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Data quality assessment results",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "Internal",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Risk-related root causes",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "DSS02.03;DSS03.01; DSS03.02;DSS03.03; DSS03.05; DSS04.02; MEA02.04; MEA04.04; MEA04.06",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Risk-related incident response plans",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "DSS02.05",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "APO14.07 ",
+          "subComponentName": " Define the data cleansing approach.",
+          "subComponentDescription": "Define the mechanisms, rules, processes, and methods to validate and correct data according to predefined business rules. ",
+          "subComponentQuestions": [
+            {
+              "questionType": "Input",
+              "questionDescription": "Data quality strategy",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "APO14.04",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+
+            {
+              "questionType": "Output",
+              "questionDescription": "Data quality requirements",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "APO09.03",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "APO14.08 ",
+          "subComponentName": "Manage the life cycle of data assets.",
+          "subComponentDescription": "Ensure that the organization understands, maps, inventories and controls its data flows through business processes over the data life cycle, from creation or acquisition to retirement. ",
+          "subComponentQuestions": [
+            {
+              "questionType": "Input",
+              "questionDescription": "Data security and control guidelines",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "APO01.07",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+
+            {
+              "questionType": "Input",
+              "questionDescription": "Backup data",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "DSS04.07",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "APO14.09 ",
+          "subComponentName": "Support data archiving and retention.",
+          "subComponentDescription": "Ensure that data maintenance satisfies organizational and regulatory requirements for availability of historical data. Ensure that legal and regulatory requirements for data archiving and retention are met.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Output",
+              "questionDescription": "Data archive",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "Internal",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+
+            {
+              "questionType": "Input",
+              "questionDescription": "Retention requirements",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "DSS06.05",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "APO14.10 ",
+          "subComponentName": "Manage data backup and restore arrangements.",
+          "subComponentDescription": "Manage availability of critical data to ensure operational continuity.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Output",
+              "questionDescription": "Backup test plan",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "DSS04.07",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Backup plan",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "DSS04.07",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Data security and control guidelines",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "APO01.07",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Data management strategy",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "APO14.01",
+              "outputTo": "string",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": "comment"
@@ -1786,5 +1643,149 @@
           ]
         }
       ]
+    },
+    {
+      "componentName": "D",
+      "componentDescription": "Peoples, Skills and Competencies",
+      "componentPercFinal": 0,
+      "componentQuestions": [
+
+        {
+          "questionType": "Component question",
+          "questionSkill": "Data analysis",
+          "relatedGuidance": "Skills Framework for the Information Age V6, 2015 ",
+          "detailedReference": "DTAN",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "Component question",
+          "questionSkill": "Data management",
+          "relatedGuidance": "Skills Framework for the Information Age V6, 2015 ",
+          "detailedReference": "DATM",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "Component question",
+          "questionSkill": "Information assurance",
+          "relatedGuidance": "Skills Framework for the Information Age V6, 2015 ",
+          "detailedReference": "INAS",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "Component question",
+          "questionSkill": "Information management",
+          "relatedGuidance": "Skills Framework for the Information Age V6, 2015 ",
+          "detailedReference": "IRMG",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        }
+
+
+      ]
+    },
+    {
+      "componentName": "E",
+      "componentDescription": "Principles Policies and Procedures",
+      "componentPercFinal": 0,
+      "componentQuestions": [
+        {
+          "questionType": "Component question",
+          "relevantPolicy": "Data cleansing policy",
+          "policyDescription": "Outlines management’s commitment to data cleansing. Prescribes frequency, guidelines and accountability; documents available methods, solutions and tools.",
+          "detailedGuidance": "CMMI Data Management Maturity, Model,2014 ",
+          "detailedReference": "Data Cleansing",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "Component question",
+          "relevantPolicy": "Data quality assessment policy",
+          "policyDescription": "Describes the organization’s data quality assurance assessment philosophy for ensuring the integrity of the data being used to make decisions that impact the organization. Assigns the frequency, guidelines and accountability for data quality assessment. Outlines available methods, solutions and tools.",
+          "detailedGuidance": "(1) CMMI Data Management Maturity Model, 2014; (2) National Institute of Standards and Technology Special Publication 800- 53, Revision 5 (Draft), August 2017 ",
+          "detailedReference": "(1) Data Quality Assessment; (2) 3.20 System and information integrity (SI-1)",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "Component question",
+          "relevantPolicy": "Data management policy",
+          "policyDescription": "Describes the organization’s commitment to manage data assets across the data life cycle, from creation through delivery, maintenance and archiving.",
+          "detailedGuidance": "string ",
+          "detailedReference": "string",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "Component question",
+          "relevantPolicy": "Privacy policy",
+          "policyDescription": "Documents the collection, use, disclosure and management of personal data. Personal data can be any data that may be used to identify an individual, including, but not limited to, name, address, date of birth, marital status, contact information, ID issue and expiry date, financial records, credit information, medical history, travel destination, and intent to acquire goods or services. The privacy policy defines how an enterprise collects, stores and releases personal information; how and when the client is informed of specific information that is collected and whether it is kept confidential, shared with partners, or sold to other firms or enterprises. The policy mandates compliance with relevant legislation related to data protection.",
+          "detailedGuidance": "string ",
+          "detailedReference": "string",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        }
+
+      ]
+    },
+    {
+      "componentName": "F",
+      "componentDescription": "Culture, Ethics and Behavior",
+      "componentPercFinal": 0,
+      "componentQuestions": [
+        {
+          "questionType": "Component question",
+          "keyCultureElement": "Create a culture of shared responsibility for the organization’s data assets;acknowledge the potential value of data assets and ensure that roles and responsibilities are clear for governance and management of data assets.",
+          "relatedGuidance": "CMMI Data Management Maturity Model, 2014 ",
+          "detailedReference": "Data Governance",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "Component question",
+          "keyCultureElement": "Create awareness around data integrity, accuracy, completeness and protection to establish a culture of data quality. Relate data quality to the enterprise’s core values. Continuously communicate the impact and risk of data loss. Ensure that employees understand the  true cost of failing to implement a data quality culture.",
+          "relatedGuidance": "CMMI Data Management Maturity Model, 2014 ",
+          "detailedReference": "Data Quality",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        }
+
+      ]
+    },
+    {
+      "componentName": "G",
+      "componentDescription": "Services, Infrastructure and Applications",
+      "componentPercFinal": 0,
+      "componentQuestions": [
+
+        {
+          "questionType": "Component question",
+          "questionDescription": "Data modeling tools",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "Component question",
+          "questionDescription": "Data repositories",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        }
+      ]
     }
+  ]
+}
   

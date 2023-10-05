@@ -2,6 +2,7 @@
   "objectiveName": "DSS02",
   "objectiveDescription": "Provide timely and effective response to user requests and resolution of all types of incidents. Restore normal service; record and fulfil user requests; and record, investigate, diagnose, escalate and resolve incidents.",
   "objectivePurpose": "Achieve increased productivity and minimize disruptions through quick resolution of user queries and incidents. Assess the impact of changes and deal with service incidents. Resolve user requests and restore service in response to incidents.",
+  "typeOfObjective": "Management",
   "maturityLevel": 0,
   "maturityLevel0PercFinal": 0,
   "maturityLevel1PercFinal": 0,
@@ -112,922 +113,122 @@
         }
       ]
     },
+    {
+      "componentName": "A",
+      "componentDescription": "Processes",
+      "componentPercFinal": 0,
+      "subComponents": [
         {
-          "componentName": "A",
-          "componentDescription": "Processes",
-          "componentPercFinal": 0,
-          "subComponents": [
+          "subComponentCode": "DSS02.01",
+          "subComponentName": "Define classification schemes for incidents and service requests.",
+          "subComponentDescription": "Define classification schemes and models for incidents and service requests.",
+          "subComponentQuestions": [
             {
-              "subComponentCode": "DSS02.01",
-              "subComponentName": "Define classification schemes for incidents and service requests.",
-              "subComponentDescription": "Define classification schemes and models for incidents and service requests.",
-              "subComponentQuestions": [
-                {
-                  "questionType": "Maturity Level 3",
-                  "questionDescription": "Define incident and service request classification and prioritization schemes, and criteria for problem registration. Use this information to ensure consistent approaches for handling and informing users about problems and conducting trend analysis.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 3",
-                  "questionDescription": "Define incident models for known errors to enable efficient and effective resolution.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 3",
-                  "questionDescription": "Define service request models according to service request type to enable self-help and efficient service for standard requests.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 3",
-                  "questionDescription": "Define incident escalation rules and procedures, especially for major incidents and security incidents",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 3",
-                  "questionDescription": "Define knowledge sources on incidents and requests and describe how to use them.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Related Guidance",
-                  "questionDescription": "string",
-                  "relatedGuidance": "CMMI Cybermaturity Platform, 2018",
-                  "detailedReference": "IA.IP Implement Incident Investigation Processes",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Related Guidance",
-                  "questionDescription": "string",
-                  "relatedGuidance": "HITRUST CSF version 9, September 2017",
-                  "detailedReference": "11.01 Reporting Information Security Incidents and Weaknesses",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Related Guidance",
-                  "questionDescription": "string",
-                  "relatedGuidance": "ISF, The Standard of Good Practice for Information Security 2016",
-                  "detailedReference": "TM2 Security Incident Management",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Related Guidance",
-                  "questionDescription": "string",
-                  "relatedGuidance": "ISO/IEC 20000-1:2011(E)",
-                  "detailedReference": "8.1 Incident and service request management",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Related Guidance",
-                  "questionDescription": "string",
-                  "relatedGuidance": "ISO/IEC 27002:2013/Cor.2:2015(E)",
-                  "detailedReference": "16. Information security incident management",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                }
-              ]
-            },
-            {
-              "subComponentCode": "DSS02.02",
-              "subComponentName": "Record, classify and prioritize requests and incidents.",
-              "subComponentDescription": "Identify, record and classify service requests and incidents and assign a priority according to business criticality and service agreements.",
-              "subComponentQuestions": [
-                {
-                  "questionType": "Maturity Level 2",
-                  "questionDescription": "Log all service requests and incidents, recording all relevant information, so they can be handled effectively and a full historical record can be maintained.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 2",
-                  "questionDescription": "To enable trend analysis, classify service requests and incidents by identifying type and category",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 2",
-                  "questionDescription": "Prioritize service requests and incidents based on the SLA service definition of business impact and urgency.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                }
-              ]
-            },
-            {
-              "subComponentCode": "DSS02.03",
-              "subComponentName": "Verify, approve and fulfill service requests.",
-              "subComponentDescription": "Select the appropriate request procedures and verify that the service requests fulfill defined request criteria. Obtain approval, if required, and fulfill the requests.",
-              "subComponentQuestions": [
-                {
-                  "questionType": "Maturity Level 2",
-                  "questionDescription": "Verify entitlement for service requests using, where possible, a predefined process flow and standard changes.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 2",
-                  "questionDescription": "Obtain financial and functional approval or sign-off, if required, or predefined approvals for agreed standard changes.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 3",
-                  "questionDescription": "Fulfill the requests by performing the selected request procedure. Where possible, use self-help automated menus and predefined request models for frequently requested items.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Related Guidance",
-                  "questionDescription": "string",
-                  "relatedGuidance": "ITIL V3, 2011",
-                  "detailedReference": "Service Operation, 4.3 Request Fulfilment",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                }
-              ]
-            },
-            {
-              "subComponentCode": "DSS02.04",
-              "subComponentName": "Investigate, diagnose and allocate incidents.",
-              "subComponentDescription": "Identify and record incident symptoms, determine possible causes, and allocate for resolution.",
-              "subComponentQuestions": [
-                {
-                  "questionType": "Maturity Level 2",
-                  "questionDescription": "Identify and describe relevant symptoms to establish the most probable causes of the incidents. Reference available knowledge resources (including known errors and problems) to identify possible incident resolutions (temporary workarounds and/or permanent solutions).",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 2",
-                  "questionDescription": "If a related problem or known error does not already exist and if the incident satisfies agreed criteria for problem registration, log a new problem.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 2",
-                  "questionDescription": "Assign incidents to specialist functions if deeper expertise is needed. Engage the appropriate level of management, where and if needed.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                }
-              ]
-            },
-            {
-              "subComponentCode": "DSS02.05",
-              "subComponentName": "Resolve and recover from incidents.",
-              "subComponentDescription": "Document, apply and test the identified solutions or workarounds. Perform recovery actions to restore the I&T-related service.",
-              "subComponentQuestions": [
-                {
-                  "questionType": "Maturity Level 2",
-                  "questionDescription": "Select and apply the most appropriate incident resolutions (temporary workaround and/or permanent solution).",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 2",
-                  "questionDescription": " Record whether workarounds were used for incident resolution.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 2",
-                  "questionDescription": "Perform recovery actions, if required.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 2",
-                  "questionDescription": "Document incident resolution and assess if the resolution can be used as a future knowledge source",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                }
-              ]
-            },
-            {
-              "subComponentCode": "DSS02.06",
-              "subComponentName": "Close service requests and incidents.",
-              "subComponentDescription": "Verify satisfactory incident resolution and/or fulfilment of requests, and close.",
-              "subComponentQuestions": [
-                {
-                  "questionType": "Maturity Level 2",
-                  "questionDescription": "Verify with the affected users that the service request has been fulfilled satisfactorily or the incident has been resolved satisfactorily and within an agreed/acceptable period of time.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 2",
-                  "questionDescription": " Close service requests and incidents.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                }
-              ]
-            },
-            {
-              "subComponentCode": "DSS02.07",
-              "subComponentName": "Track status and produce reports.",
-              "subComponentDescription": "Regularly track, analyze and report incidents and fulfilment of requests. Examine trends to provide information for continual improvement.",
-              "subComponentQuestions": [
-                {
-                  "questionType": "Maturity Level 2",
-                  "questionDescription": " Monitor and track incident escalations and resolutions and request handling procedures to progress toward resolution or completion.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 3",
-                  "questionDescription": "2 Identify information stakeholders and their needs for data or reports. Identify reporting frequency and medium.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 4",
-                  "questionDescription": " Produce and distribute timely reports or provide controlled access to online data.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 4",
-                  "questionDescription": "Analyze incidents and service requests by category and type. Establish trends and identify patterns of recurring issues, SLA breaches or inefficiencies.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 5",
-                  "questionDescription": " Use the information as input to continual improvement planning.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Related Guidance",
-                  "questionDescription": "string",
-                  "relatedGuidance": "CMMI Cybermaturity Platform, 2018",
-                  "detailedReference": "MI.IM Ensure Incident Mitigation; IR.IR Incident Reporting",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Related Guidance",
-                  "questionDescription": "string",
-                  "relatedGuidance": "National Institute of Standards and Technology Special Publication 800-53, Revision 5 (Draft), August 2017",
-                  "detailedReference": "3.9 Incident response (IR-7, IR-8)",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "componentName": "B",
-          "componentDescription": "Organizational Structures",
-          "componentPercFinal": 0,
-          "componentQuestions": [
-            {
-              "questionType": "DSS02.01",
-              "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
-              "questionAnswer": 0,
-              "questionScore": 0,
-              "questionComment": "comment"
-            },
-            {
-              "questionType": "DSS02.02",
-              "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
-              "questionAnswer": 0,
-              "questionScore": 0,
-              "questionComment": "comment"
-            },
-            {
-              "questionType": "DSS02.03",
-              "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
-              "questionAnswer": 0,
-              "questionScore": 0,
-              "questionComment": "comment"
-            },
-            {
-              "questionType": "DSS02.04",
-              "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
-              "questionAnswer": 0,
-              "questionScore": 0,
-              "questionComment": "comment"
-            },
-            {
-              "questionType": "DSS02.05",
-              "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
-              "questionAnswer": 0,
-              "questionScore": 0,
-              "questionComment": "comment"
-            },
-            {
-              "questionType": "DSS02.06",
-              "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
-              "questionAnswer": 0,
-              "questionScore": 0,
-              "questionComment": "comment"
-            },
-            {
-              "questionType": "DSS02.07",
-              "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
-              "questionAnswer": 0,
-              "questionScore": 0,
-              "questionComment": "comment"
-            }
-          ]
-        },
-        {
-          "componentCode": "C",
-          "componentDescription": "Information Flows and Items",
-          "componentPercFinal": 0,
-          "subComponents": [
-            {
-              "subComponentCode": "DSS02.01",
-              "subComponentName": "Define classification schemes for incidents and service requests.",
-              "subComponentDescription": "Define classification schemes and models for incidents and service requests.",
-              "subComponentQuestions": [
-                {
-                  "questionType": "Input",
-                  "questionDescription": "SLAs",
-                  "inputFrom": "APO09.03",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Input",
-                  "questionDescription": "Configuration repository",
-                  "inputFrom": "BAI10.02",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Input",
-                  "questionDescription": "Updated repository with configuration items",
-                  "inputFrom": "BAI10.03",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Input",
-                  "questionDescription": "Configuration status reports",
-                  "inputFrom": "BAI10.04",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Input",
-                  "questionDescription": "Asset monitoring rules and event conditions",
-                  "inputFrom": "DSS01.03",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Input",
-                  "questionDescription": "Problem classification scheme",
-                  "inputFrom": "DSS03.01",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Input",
-                  "questionDescription": "Incident response actions and communications",
-                  "inputFrom": "DSS04.03",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Output",
-                  "questionDescription": "Criteria for problem registration",
-                  "inputFrom": "string",
-                  "outputTo": "DSS03.01",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Output",
-                  "questionDescription": "Rules for incident escalation",
-                  "inputFrom": "string",
-                  "outputTo": "Internal",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Output",
-                  "questionDescription": "Incident and service request classification schemes and models",
-                  "inputFrom": "string",
-                  "outputTo": "Internal",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                }
-              ]
-            },
-            {
-              "subComponentCode": "DSS02.02",
-              "subComponentName": "Record, classify and prioritize requests and incidents.",
-              "subComponentDescription": "Identify, record and classify service requests and incidents and assign a priority according to business criticality and service agreements.",
-              "subComponentQuestions": [
-                {
-                  "questionType": "Input",
-                  "questionDescription": "SLAs",
-                  "inputFrom": "APO09.03",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Input",
-                  "questionDescription": "Emergency escalation procedure",
-                  "inputFrom": "BAI04.05",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Input",
-                  "questionDescription": "• Asset monitoring rules and event conditions, Incident tickets",
-                  "inputFrom": "DSS01.03",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Input",
-                  "questionDescription": "Security-related incident tickets",
-                  "inputFrom": "DSS05.07",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Output",
-                  "questionDescription": "Classified and prioritized incidents and service requests",
-                  "inputFrom": "string",
-                  "outputTo": "APO08.03; APO09.04; APO13.03; DSS03.05",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Output",
-                  "questionDescription": "Incident and service request log",
-                  "inputFrom": "string",
-                  "outputTo": "Internal; MEA04.07",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                }
-              ]
-            },
-            {
-              "subComponentCode": "DSS02.03",
-              "subComponentName": "Verify, approve and fulfill service requests.",
-              "subComponentDescription": "Select the appropriate request procedures and verify that the service requests fulfill defined request criteria. Obtain approval, if required, and fulfill the requests.",
-              "subComponentQuestions": [
-                {
-                  "questionType": "Input",
-                  "questionDescription": "Risk-related root causes",
-                  "inputFrom": "APO12.06",
-                  "outputTo": "string",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Output",
-                  "questionDescription": "Approved service requests",
-                  "inputFrom": "string",
-                  "outputTo": "BAI06.01",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Output",
-                  "questionDescription": "Fulfilled service requests",
-                  "inputFrom": "string",
-                  "outputTo": "Internal",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                }
-              ]
-            },
-            {
-              "subComponentCode": "DSS02.04",
-              "subComponentName": "Investigate, diagnose and allocate incidents.",
-              "subComponentDescription": "Identify and record incident symptoms, determine possible causes, and allocate for resolution.",
-              "subComponentQuestions": [
-                {
-                  "questionType": "Input",
-                  "questionDescription": "Supplemental support plan",
-                  "inputFrom": "string",
-                  "outputTo": "BAI07.07",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Output",
-                  "questionDescription": "Problem log",
-                  "inputFrom": "string",
-                  "outputTo": "DSS03.01",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Output",
-                  "questionDescription": "Incident symptoms",
-                  "inputFrom": "string",
-                  "outputTo": "Internal",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                }
-              ]
-            },
-            {
-              "subComponentCode": "DSS02.05",
-              "subComponentName": "Resolve and recover from incidents.",
-              "subComponentDescription": "Document, apply and test the identified solutions or workarounds. Perform recovery actions to restore the I&T-related service.",
-              "subComponentQuestions": [
-                {
-                  "questionType": "Input",
-                  "questionDescription": "Risk-related incident response plans",
-                  "inputFrom": "APO12.06",
-                  "outputTo": "string",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Input",
-                  "questionDescription": "Known error records",
-                  "inputFrom": "DSS03.03",
-                  "outputTo": "string",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Input",
-                  "questionDescription": "Communication of knowledge learned",
-                  "inputFrom": "DSS03.04",
-                  "outputTo": "string",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Output",
-                  "questionDescription": "Incident resolutions",
-                  "inputFrom": "string",
-                  "outputTo": "DSS03.03; DSS03.04; DSS03.05; MEA04.07",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                }
-              ]
-            },
-            {
-              "subComponentCode": "DSS02.06",
-              "subComponentName": "Close service requests and incidents.",
-              "subComponentDescription": "Verify satisfactory incident resolution and/or fulfilment of requests, and close.",
-              "subComponentQuestions": [
-                {
-                  "questionType": "Input",
-                  "questionDescription": "Closed problem records",
-                  "inputFrom": "DSS03.04",
-                  "outputTo": "string",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Output",
-                  "questionDescription": "User confirmation of satisfactory fulfilment or resolution",
-                  "inputFrom": "string",
-                  "outputTo": "APO08.03",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Output",
-                  "questionDescription": "Closed service requests and incidents",
-                  "inputFrom": "string",
-                  "outputTo": "APO08.03; APO09.04; DSS03.04",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                }
-              ]
-            },
-            {
-              "subComponentCode": "DSS02.07",
-              "subComponentName": "Track status and produce reports.",
-              "subComponentDescription": "Regularly track, analyze and report incidents and fulfilment of requests. Examine trends to provide information for continual improvement.",
-              "subComponentQuestions": [
-                {
-                  "questionType": "Input",
-                  "questionDescription": "OLAs",
-                  "inputFrom": "APO09.03",
-                  "outputTo": "string",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Input",
-                  "questionDescription": "Problem status reports",
-                  "inputFrom": "DSS03.02",
-                  "outputTo": "string",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Input",
-                  "questionDescription": "Problem resolution reports",
-                  "inputFrom": "DSS03.05",
-                  "outputTo": "string",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Output",
-                  "questionDescription": "Incident status and trends report",
-                  "inputFrom": "string",
-                  "outputTo": "APO08.03; APO09.04; APO11.04; APO12.01;MEA01.03",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Output",
-                  "questionDescription": "Request fulfilment status and trends report",
-                  "inputFrom": "string",
-                  "outputTo": "APO08.03; APO09.04; APO11.04; MEA01.03",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "componentName": "D",
-          "componentDescription": "Peoples, Skills and Competencies",
-          "componentPercFinal": 0,
-          "componentQuestions": [
-            {
-              "questionType": "Component question",
-              "questionSkill": "Application support",
-              "relatedGuidance": "Skills Framework for the Information Age V6, 2015",
-              "detailedReference": "ASUP",
-              "questionAnswer": 0,
-              "questionScore": 0,
-              "questionComment": "comment"
-            },
-            {
-              "questionType": "Component question",
-              "questionSkill": "Customer service support",
-              "relatedGuidance": "Skills Framework for the Information Age V6, 2015",
-              "detailedReference": "CSMG",
-              "questionAnswer": 0,
-              "questionScore": 0,
-              "questionComment": "comment"
-            },
-            {
-              "questionType": "Component question",
-              "questionSkill": "Incident management",
-              "relatedGuidance": "Skills Framework for the Information Age V6, 2015",
-              "detailedReference": "USUP",
-              "questionAnswer": 0,
-              "questionScore": 0,
-              "questionComment": "comment"
-            },
-            {
-              "questionType": "Component question",
-              "questionSkill": "Network support",
-              "relatedGuidance": "Skills Framework for the Information Age V6, 2015",
-              "detailedReference": "NTAS",
-              "questionAnswer": 0,
-              "questionScore": 0,
-              "questionComment": "comment"
-            },
-            {
-              "questionType": "Component question",
-              "questionSkill": "User support",
-              "relatedGuidance": "e-Competence Framework (e-CF)—A common European Framework for ICT Professionals in all industry sectors—Part 1: Framework, 2016",
-              "detailedReference": "C. Run—C.1. User Support",
-              "questionAnswer": 0,
-              "questionScore": 0,
-              "questionComment": "comment"
-            }
-          ]
-        },
-        {
-          "componentName": "E",
-          "componentDescription": "Principles Policies and Procedures",
-          "componentPercFinal": 0,
-          "componentQuestions": [
-            {
-              "questionType": "Component question",
-              "relevantPolicy": "Service management policy",
-              "policyDescription": "States rationale and provides guidance for service and incident requests and their documentation.",
-              "detailedGuidance": "ITIL V3, 2011",
-              "detailedReference": "Service Operation, 3. Service operation principles",
-              "questionAnswer": 0,
-              "questionScore": 0,
-              "questionComment": "comment"
-            }
-          ]
-        },
-        {
-          "componentName": "F",
-          "componentDescription": "Culture, Ethics and Behavior",
-          "componentPercFinal": 0,
-          "componentQuestions": [
-            {
-              "questionType": "Component question",
-              "keyCultureElement": "Enable employees to identify incidents on a correct and timely basis and implement appropriate escalation paths. Encourage prevention. Respond to and resolve incidents immediately. Avoid a hero culture.",
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Define incident and service request classification and prioritization schemes, and criteria for problem registration. Use this information to ensure consistent approaches for handling and informing users about problems and conducting trend analysis.",
               "relatedGuidance": "string",
               "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Define incident models for known errors to enable efficient and effective resolution.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Define service request models according to service request type to enable self-help and efficient service for standard requests.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Define incident escalation rules and procedures, especially for major incidents and security incidents",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Define knowledge sources on incidents and requests and describe how to use them.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "string",
+              "relatedGuidance": "CMMI Cybermaturity Platform, 2018",
+              "detailedReference": "IA.IP Implement Incident Investigation Processes",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "string",
+              "relatedGuidance": "HITRUST CSF version 9, September 2017",
+              "detailedReference": "11.01 Reporting Information Security Incidents and Weaknesses",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "string",
+              "relatedGuidance": "ISF, The Standard of Good Practice for Information Security 2016",
+              "detailedReference": "TM2 Security Incident Management",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "string",
+              "relatedGuidance": "ISO/IEC 20000-1:2011(E)",
+              "detailedReference": "8.1 Incident and service request management",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "string",
+              "relatedGuidance": "ISO/IEC 27002:2013/Cor.2:2015(E)",
+              "detailedReference": "16. Information security incident management",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": "comment"
@@ -1035,13 +236,294 @@
           ]
         },
         {
-          "componentName": "G",
-          "componentDescription": "Services, Infrastructure and Applications",
-          "componentPercFinal": 0,
-          "componentQuestions": [
+          "subComponentCode": "DSS02.02",
+          "subComponentName": "Record, classify and prioritize requests and incidents.",
+          "subComponentDescription": "Identify, record and classify service requests and incidents and assign a priority according to business criticality and service agreements.",
+          "subComponentQuestions": [
             {
-              "questionType": "Component question",
-              "questionDescription": "Incident tracking tools and system",
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Log all service requests and incidents, recording all relevant information, so they can be handled effectively and a full historical record can be maintained.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "To enable trend analysis, classify service requests and incidents by identifying type and category",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Prioritize service requests and incidents based on the SLA service definition of business impact and urgency.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "DSS02.03",
+          "subComponentName": "Verify, approve and fulfill service requests.",
+          "subComponentDescription": "Select the appropriate request procedures and verify that the service requests fulfill defined request criteria. Obtain approval, if required, and fulfill the requests.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Verify entitlement for service requests using, where possible, a predefined process flow and standard changes.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Obtain financial and functional approval or sign-off, if required, or predefined approvals for agreed standard changes.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Fulfill the requests by performing the selected request procedure. Where possible, use self-help automated menus and predefined request models for frequently requested items.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "string",
+              "relatedGuidance": "ITIL V3, 2011",
+              "detailedReference": "Service Operation, 4.3 Request Fulfilment",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "DSS02.04",
+          "subComponentName": "Investigate, diagnose and allocate incidents.",
+          "subComponentDescription": "Identify and record incident symptoms, determine possible causes, and allocate for resolution.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Identify and describe relevant symptoms to establish the most probable causes of the incidents. Reference available knowledge resources (including known errors and problems) to identify possible incident resolutions (temporary workarounds and/or permanent solutions).",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "If a related problem or known error does not already exist and if the incident satisfies agreed criteria for problem registration, log a new problem.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Assign incidents to specialist functions if deeper expertise is needed. Engage the appropriate level of management, where and if needed.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "DSS02.05",
+          "subComponentName": "Resolve and recover from incidents.",
+          "subComponentDescription": "Document, apply and test the identified solutions or workarounds. Perform recovery actions to restore the I&T-related service.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Select and apply the most appropriate incident resolutions (temporary workaround and/or permanent solution).",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": " Record whether workarounds were used for incident resolution.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Perform recovery actions, if required.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Document incident resolution and assess if the resolution can be used as a future knowledge source",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "DSS02.06",
+          "subComponentName": "Close service requests and incidents.",
+          "subComponentDescription": "Verify satisfactory incident resolution and/or fulfilment of requests, and close.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Verify with the affected users that the service request has been fulfilled satisfactorily or the incident has been resolved satisfactorily and within an agreed/acceptable period of time.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": " Close service requests and incidents.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "DSS02.07",
+          "subComponentName": "Track status and produce reports.",
+          "subComponentDescription": "Regularly track, analyze and report incidents and fulfilment of requests. Examine trends to provide information for continual improvement.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": " Monitor and track incident escalations and resolutions and request handling procedures to progress toward resolution or completion.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "2 Identify information stakeholders and their needs for data or reports. Identify reporting frequency and medium.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": " Produce and distribute timely reports or provide controlled access to online data.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": "Analyze incidents and service requests by category and type. Establish trends and identify patterns of recurring issues, SLA breaches or inefficiencies.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 5",
+              "questionDescription": " Use the information as input to continual improvement planning.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "string",
+              "relatedGuidance": "CMMI Cybermaturity Platform, 2018",
+              "detailedReference": "MI.IM Ensure Incident Mitigation; IR.IR Incident Reporting",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "string",
+              "relatedGuidance": "National Institute of Standards and Technology Special Publication 800-53, Revision 5 (Draft), August 2017",
+              "detailedReference": "3.9 Incident response (IR-7, IR-8)",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": "comment"
@@ -1049,5 +531,524 @@
           ]
         }
       ]
+    },
+    {
+      "componentName": "B",
+      "componentDescription": "Organizational Structures",
+      "componentPercFinal": 0,
+      "componentQuestions": [
+        {
+          "questionType": "DSS02.01",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "DSS02.02",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "DSS02.03",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "DSS02.04",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "DSS02.05",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "DSS02.06",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "DSS02.07",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        }
+      ]
+    },
+    {
+      "componentCode": "C",
+      "componentDescription": "Information Flows and Items",
+      "componentPercFinal": 0,
+      "subComponents": [
+        {
+          "subComponentCode": "DSS02.01",
+          "subComponentName": "Define classification schemes for incidents and service requests.",
+          "subComponentDescription": "Define classification schemes and models for incidents and service requests.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Input",
+              "questionDescription": "SLAs",
+              "inputFrom": "APO09.03",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Configuration repository",
+              "inputFrom": "BAI10.02",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Updated repository with configuration items",
+              "inputFrom": "BAI10.03",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Configuration status reports",
+              "inputFrom": "BAI10.04",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Asset monitoring rules and event conditions",
+              "inputFrom": "DSS01.03",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Problem classification scheme",
+              "inputFrom": "DSS03.01",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Incident response actions and communications",
+              "inputFrom": "DSS04.03",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Criteria for problem registration",
+              "inputFrom": "string",
+              "outputTo": "DSS03.01",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Rules for incident escalation",
+              "inputFrom": "string",
+              "outputTo": "Internal",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Incident and service request classification schemes and models",
+              "inputFrom": "string",
+              "outputTo": "Internal",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "DSS02.02",
+          "subComponentName": "Record, classify and prioritize requests and incidents.",
+          "subComponentDescription": "Identify, record and classify service requests and incidents and assign a priority according to business criticality and service agreements.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Input",
+              "questionDescription": "SLAs",
+              "inputFrom": "APO09.03",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Emergency escalation procedure",
+              "inputFrom": "BAI04.05",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "• Asset monitoring rules and event conditions, Incident tickets",
+              "inputFrom": "DSS01.03",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Security-related incident tickets",
+              "inputFrom": "DSS05.07",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Classified and prioritized incidents and service requests",
+              "inputFrom": "string",
+              "outputTo": "APO08.03; APO09.04; APO13.03; DSS03.05",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Incident and service request log",
+              "inputFrom": "string",
+              "outputTo": "Internal; MEA04.07",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "DSS02.03",
+          "subComponentName": "Verify, approve and fulfill service requests.",
+          "subComponentDescription": "Select the appropriate request procedures and verify that the service requests fulfill defined request criteria. Obtain approval, if required, and fulfill the requests.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Input",
+              "questionDescription": "Risk-related root causes",
+              "inputFrom": "APO12.06",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Approved service requests",
+              "inputFrom": "string",
+              "outputTo": "BAI06.01",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Fulfilled service requests",
+              "inputFrom": "string",
+              "outputTo": "Internal",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "DSS02.04",
+          "subComponentName": "Investigate, diagnose and allocate incidents.",
+          "subComponentDescription": "Identify and record incident symptoms, determine possible causes, and allocate for resolution.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Input",
+              "questionDescription": "Supplemental support plan",
+              "inputFrom": "string",
+              "outputTo": "BAI07.07",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Problem log",
+              "inputFrom": "string",
+              "outputTo": "DSS03.01",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Incident symptoms",
+              "inputFrom": "string",
+              "outputTo": "Internal",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "DSS02.05",
+          "subComponentName": "Resolve and recover from incidents.",
+          "subComponentDescription": "Document, apply and test the identified solutions or workarounds. Perform recovery actions to restore the I&T-related service.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Input",
+              "questionDescription": "Risk-related incident response plans",
+              "inputFrom": "APO12.06",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Known error records",
+              "inputFrom": "DSS03.03",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Communication of knowledge learned",
+              "inputFrom": "DSS03.04",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Incident resolutions",
+              "inputFrom": "string",
+              "outputTo": "DSS03.03; DSS03.04; DSS03.05; MEA04.07",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "DSS02.06",
+          "subComponentName": "Close service requests and incidents.",
+          "subComponentDescription": "Verify satisfactory incident resolution and/or fulfilment of requests, and close.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Input",
+              "questionDescription": "Closed problem records",
+              "inputFrom": "DSS03.04",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "User confirmation of satisfactory fulfilment or resolution",
+              "inputFrom": "string",
+              "outputTo": "APO08.03",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Closed service requests and incidents",
+              "inputFrom": "string",
+              "outputTo": "APO08.03; APO09.04; DSS03.04",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "DSS02.07",
+          "subComponentName": "Track status and produce reports.",
+          "subComponentDescription": "Regularly track, analyze and report incidents and fulfilment of requests. Examine trends to provide information for continual improvement.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Input",
+              "questionDescription": "OLAs",
+              "inputFrom": "APO09.03",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Problem status reports",
+              "inputFrom": "DSS03.02",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Problem resolution reports",
+              "inputFrom": "DSS03.05",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Incident status and trends report",
+              "inputFrom": "string",
+              "outputTo": "APO08.03; APO09.04; APO11.04; APO12.01;MEA01.03",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Request fulfilment status and trends report",
+              "inputFrom": "string",
+              "outputTo": "APO08.03; APO09.04; APO11.04; MEA01.03",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "componentName": "D",
+      "componentDescription": "Peoples, Skills and Competencies",
+      "componentPercFinal": 0,
+      "componentQuestions": [
+        {
+          "questionType": "Component question",
+          "questionSkill": "Application support",
+          "relatedGuidance": "Skills Framework for the Information Age V6, 2015",
+          "detailedReference": "ASUP",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "Component question",
+          "questionSkill": "Customer service support",
+          "relatedGuidance": "Skills Framework for the Information Age V6, 2015",
+          "detailedReference": "CSMG",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "Component question",
+          "questionSkill": "Incident management",
+          "relatedGuidance": "Skills Framework for the Information Age V6, 2015",
+          "detailedReference": "USUP",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "Component question",
+          "questionSkill": "Network support",
+          "relatedGuidance": "Skills Framework for the Information Age V6, 2015",
+          "detailedReference": "NTAS",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "Component question",
+          "questionSkill": "User support",
+          "relatedGuidance": "e-Competence Framework (e-CF)—A common European Framework for ICT Professionals in all industry sectors—Part 1: Framework, 2016",
+          "detailedReference": "C. Run—C.1. User Support",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        }
+      ]
+    },
+    {
+      "componentName": "E",
+      "componentDescription": "Principles Policies and Procedures",
+      "componentPercFinal": 0,
+      "componentQuestions": [
+        {
+          "questionType": "Component question",
+          "relevantPolicy": "Service management policy",
+          "policyDescription": "States rationale and provides guidance for service and incident requests and their documentation.",
+          "detailedGuidance": "ITIL V3, 2011",
+          "detailedReference": "Service Operation, 3. Service operation principles",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        }
+      ]
+    },
+    {
+      "componentName": "F",
+      "componentDescription": "Culture, Ethics and Behavior",
+      "componentPercFinal": 0,
+      "componentQuestions": [
+        {
+          "questionType": "Component question",
+          "keyCultureElement": "Enable employees to identify incidents on a correct and timely basis and implement appropriate escalation paths. Encourage prevention. Respond to and resolve incidents immediately. Avoid a hero culture.",
+          "relatedGuidance": "string",
+          "detailedReference": "string",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        }
+      ]
+    },
+    {
+      "componentName": "G",
+      "componentDescription": "Services, Infrastructure and Applications",
+      "componentPercFinal": 0,
+      "componentQuestions": [
+        {
+          "questionType": "Component question",
+          "questionDescription": "Incident tracking tools and system",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        }
+      ]
     }
+  ]
+}
   

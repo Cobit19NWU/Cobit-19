@@ -2,6 +2,7 @@
   "objectiveName": "BAI09",
   "objectiveDescription": "Manage I&T assets through their life cycle to make sure that their use delivers value at optimal cost, they remain operational (fit for purpose), and they are accounted for and physically protected. Ensure that those assets that are critical to support service capability are reliable and available. Manage software licenses to ensure that the optimal number are acquired, retained and deployed in relation to required business usage, and the software installed is in compliance with license agreements.",
   "objectivePurpose": "Account for all I&T assets and optimize the value provided by their use.",
+  "typeOfObjective": "Management",
   "maturityLevel": 0,
   "maturityLevel0PercFinal": 0,
   "maturityLevel1PercFinal": 0,
@@ -118,846 +119,133 @@
         }
       ]
     },
+    {
+      "componentName": "A",
+      "componentDescription": "Processes",
+      "componentPercFinal": 0,
+      "subComponents": [
         {
-          "componentName": "A",
-          "componentDescription": "Processes",
-          "componentPercFinal": 0,
-          "subComponents": [
+          "subComponentCode": "BAI09.01",
+          "subComponentName": "Identify and record current assets",
+          "subComponentDescription": "Maintain an up-to-date, accurate record of all I&T assets that are required to deliver services and that are owned or controlled by the organization with an expectation of future benefit (including resources with economic value, such as hardware or software). Ensure alignment with configuration management and financial management.",
+          "subComponentQuestions": [
             {
-              "subComponentCode": "BAI09.01",
-              "subComponentName": "Identify and record current assets",
-              "subComponentDescription": "Maintain an up-to-date, accurate record of all I&T assets that are required to deliver services and that are owned or controlled by the organization with an expectation of future benefit (including resources with economic value, such as hardware or software). Ensure alignment with configuration management and financial management.",
-              "subComponentQuestions": [
-                {
-                  "questionType": "Maturity Level 2",
-                  "questionDescription": "Identify all owned assets in an asset register that records current status. Assets are reported on the balance sheet; they are bought or created to increase the value of a firm or benefit the enterprise’s operations (e.g., hardware and software). Identify all owned assets and maintain alignment with the change management and configuration management processes, the configuration management system, and the financial accounting records.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 2",
-                  "questionDescription": "Identify legal, regulatory or contractual requirements that need to be addressed when managing the asset",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 2",
-                  "questionDescription": "Verify that the assets are fit for purpose (i.e., in a useful condition).",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 3",
-                  "questionDescription": "Verify that the assets are fit for purpose (i.e., in a useful condition).",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 4",
-                  "questionDescription": "Verify the existence of all owned assets by performing regular physical and logical inventory checks and reconciliation. Include the use of software discovery tools.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 4",
-                  "questionDescription": "Determine on a regular basis whether each asset continues to provide value. If so, estimate the expected useful life for delivering value.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Related Guidance",
-                  "questionDescription": "string",
-                  "relatedGuidance": "CMMI Cybermaturity Platform, 2018",
-                  "detailedReference": "RI.AD Asset Discovery & Identification",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Related Guidance",
-                  "questionDescription": "string",
-                  "relatedGuidance": "ISF, The Standard of Good Practice for Information Security 2016",
-                  "detailedReference": "BA1.1 Business Application Register",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Related Guidance",
-                  "questionDescription": "string",
-                  "relatedGuidance": "ISO/IEC 27002:2013/Cor.2:2015(E)",
-                  "detailedReference": "8.1 Responsibility for assets",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Related Guidance",
-                  "questionDescription": "string",
-                  "relatedGuidance": "National Institute of Standards and Technology Special Publication 800-53, Revision 5 (Draft), August 2017",
-                  "detailedReference": "3.13 Physical and environmental protection (PE-9)",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Related Guidance",
-                  "questionDescription": "string",
-                  "relatedGuidance": "The CIS Critical Security Controls for Effective Cyber Defense Version 6.1, August 2016",
-                  "detailedReference": "CSC 1: Inventory of Authorized and Unauthorized Devices; CSC 2: Inventory of Authorized and Unauthorized Software",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                }
-              ]
-            },
-            {
-              "subComponentCode": "BAI09.02",
-              "subComponentName": "Manage critical assets.",
-              "subComponentDescription": "Identify assets that are critical in providing service capability. Maximize their reliability and availability to support business needs.",
-              "subComponentQuestions": [
-                {
-                  "questionType": "Maturity Level 2",
-                  "questionDescription": "Identify assets that are critical in providing service capability by referencing requirements in service definitions, SLAs and the configuration management system.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 2",
-                  "questionDescription": "On a regular basis, consider the risk of failure or need for replacement of each critical asset",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 2",
-                  "questionDescription": "Communicate to affected customers and users the expected impact (e.g., performance restrictions) of maintenance activities.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 3",
-                  "questionDescription": "Incorporate planned downtime in an overall production schedule. Schedule the maintenance activities to minimize the adverse impact on business processes.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 3",
-                  "questionDescription": "Maintain the resilience of critical assets by applying regular preventive maintenance. Monitor performance and, if required, provide alternative and/or additional assets to minimize the likelihood of failure.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 3",
-                  "questionDescription": "Establish a preventive maintenance plan for all hardware, considering cost/benefit analysis, vendor recommendations, risk of outage, qualified personnel and other relevant factors.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 3",
-                  "questionDescription": "Establish maintenance agreements involving third-party access to organizational I&T facilities for on-site and off-site activities (e.g., outsourcing). Establish formal service contracts containing or referring to all necessary security and privacy conditions, including access authorization procedures, to ensure compliance with the organizational security/privacy policies and standards.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 3",
-                  "questionDescription": " Ensure that remote access services and user profiles (or other means used for maintenance or diagnosis) are active only when required.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 4",
-                  "questionDescription": "Monitor performance of critical assets by examining incident trends. Where necessary, take action to repair or replace.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Related Guidance",
-                  "questionDescription": "string",
-                  "relatedGuidance": "National Institute of Standards and Technology Framework for Improving Critical Infrastructure Cybersecurity v1.1, April 2018",
-                  "detailedReference": "ID.AM Asset Management",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Related Guidance",
-                  "questionDescription": "string",
-                  "relatedGuidance": "National Institute of Standards and Technology Special Publication 800-53, Revision 5 (Draft), August 2017",
-                  "detailedReference": "3.13 Physical and environmental protection (PE-20)",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                }
-              ]
-            },
-            {
-              "subComponentCode": "BAI09.03",
-              "subComponentName": "Optimize asset value.",
-              "subComponentDescription": "Manage assets from procurement to disposal. Ensure that assets are utilized as effectively and efficiently as possible and are accounted for and physically protected until appropriately retired.",
-              "subComponentQuestions": [
-                {
-                  "questionType": "Maturity Level 2",
-                  "questionDescription": "Procure all assets based on approved requests and in accordance with the enterprise procurement policies and practices.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 2",
-                  "questionDescription": "Source, receive, verify, test and record all assets in a controlled manner, including physical labeling as required.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 2",
-                  "questionDescription": "Approve payments and complete the process with suppliers according to agreed contract conditions.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 3",
-                  "questionDescription": "Deploy assets following the standard implementation life cycle, including change management and acceptance testing.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 3",
-                  "questionDescription": "Allocate assets to users, with acceptance of responsibilities and sign-off, as appropriate.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 3",
-                  "questionDescription": "Whenever possible, reallocate assets when they are no longer required due to a change of user role, redundancy within a service, or retirement of a service.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 3",
-                  "questionDescription": "Plan, authorize and implement retirement-related activities, retaining appropriate records to meet ongoing business and regulatory needs.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 3",
-                  "questionDescription": "Dispose of assets securely, considering, for example, the permanent deletion of any recorded data on media devices and potential damage to the environment.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 4",
-                  "questionDescription": "Dispose of assets responsibly when they serve no useful purpose due to retirement of all related services, obsolete technology or lack of users with regard to environmental impact.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Related Guidance",
-                  "questionDescription": "string",
-                  "relatedGuidance": "CMMI Cybermaturity Platform, 2018",
-                  "detailedReference": "DP.ML Manage Asset Lifecycle",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Related Guidance",
-                  "questionDescription": "string",
-                  "relatedGuidance": "ISF, The Standard of Good Practice for Information Security 2016",
-                  "detailedReference": "IM2.1 Document Management; PA1.1 Hardware Life Cycle Management",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Related Guidance",
-                  "questionDescription": "string",
-                  "relatedGuidance": "ITIL V3, 2011",
-                  "detailedReference": "Service Transition, 4.3 Service Asset and Configuration Management",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Related Guidance",
-                  "questionDescription": "string",
-                  "relatedGuidance": "National Institute of Standards and Technology Framework for Improving Critical Infrastructure Cybersecurity v1.1, April 2018",
-                  "detailedReference": "PR.MA Maintenance",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                }
-              ]
-            },
-            {
-              "subComponentCode": "BAI09.04",
-              "subComponentName": "Optimize asset value.",
-              "subComponentDescription": "Regularly review the overall asset base to identify ways to optimize value in alignment with business needs.",
-              "subComponentQuestions": [
-                {
-                  "questionType": "Maturity Level 3",
-                  "questionDescription": "On a regular basis, review the overall asset base, considering whether it is aligned with business requirements.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 4",
-                  "questionDescription": "Assess maintenance costs, consider reasonableness, and identify lower-cost options. Include, where necessary, replacement with new alternatives.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 5",
-                  "questionDescription": "Review warranties and consider value-for-money and replacement strategies to determine lowest-cost options.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 5",
-                  "questionDescription": "Use capacity and utilization statistics to identify underutilized or redundant assets that could be considered for disposal or replacement to reduce costs.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 5",
-                  "questionDescription": "Review the overall base to identify opportunities for standardization, single sourcing, and other strategies that may lower procurement, support and maintenance costs..",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 5",
-                  "questionDescription": "Review the overall state to identify opportunities to leverage emerging technologies or alternative sourcing strategies to reduce costs or increase value-for-money",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                }
-              ]
-            },
-            {
-              "subComponentCode": "BAI09.05",
-              "subComponentName": "Manage licenses.",
-              "subComponentDescription": "Manage software licenses to maintain the optimal number of licenses and support business requirements. Ensure that the number of licenses owned is sufficient to cover the installed software in use.",
-              "subComponentQuestions": [
-                {
-                  "questionType": "Maturity Level 2",
-                  "questionDescription": "Maintain a register of all purchased software licenses and associated license agreements.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 3",
-                  "questionDescription": "On a regular basis, conduct an audit to identify all instances of installed licensed software.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 4",
-                  "questionDescription": "Compare the number of installed software instances with the number of licenses owned. Ensure that the license compliance measurement method is compliant with the license and contractual requirements.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 4",
-                  "questionDescription": "When instances are lower than the number owned, decide whether there is a need to retain or terminate licenses, considering the potential to save on unnecessary maintenance, training and other costs.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 4",
-                  "questionDescription": "When instances are higher than the number owned, consider first the opportunity to uninstall instances that are no longer required or justified, and then, if necessary, purchase additional licenses to comply with the license agreement.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 5",
-                  "questionDescription": "On a regular basis, consider whether better value can be obtained by upgrading products and associated licenses.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "componentName": "B",
-          "componentDescription": "Organizational Structures",
-          "componentPercFinal": 0,
-          "componentQuestions": [
-            {
-              "questionType": "BAI09.01",
-              "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
-              "questionAnswer": 0,
-              "questionScore": 0,
-              "questionComment": "comment"
-            },
-            {
-              "questionType": "BAI09.02",
-              "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
-              "questionAnswer": 0,
-              "questionScore": 0,
-              "questionComment": "comment"
-            },
-            {
-              "questionType": "BAI09.03",
-              "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
-              "questionAnswer": 0,
-              "questionScore": 0,
-              "questionComment": "comment"
-            },
-            {
-              "questionType": "BAI09.04",
-              "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
-              "questionAnswer": 0,
-              "questionScore": 0,
-              "questionComment": "comment"
-            },
-            {
-              "questionType": "BAI09.05",
-              "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
-              "questionAnswer": 0,
-              "questionScore": 0,
-              "questionComment": "comment"
-            }
-          ]
-        },
-        {
-          "componentCode": "C",
-          "componentDescription": "Information Flows and Items",
-          "componentPercFinal": 0,
-          "subComponents": [
-            {
-              "subComponentCode": "BAI09.01",
-              "subComponentName": "Identify and record current assets.",
-              "subComponentDescription": "Maintain an up-to-date, accurate record of all I&T assets that are required to deliver services and that are owned or controlled by the organization with an expectation of future benefit (including resources with economic value, such as hardware or software). Ensure alignment with configuration management and financial management.",
-              "subComponentQuestions": [
-                {
-                  "questionType": "Input",
-                  "questionDescription": "Updates to asset inventory",
-                  "inputFrom": "BAI03.04",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Input",
-                  "questionDescription": "Configuration repository",
-                  "inputFrom": "BAI10.02",
-                  "outputTo": "string",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Output",
-                  "questionDescription": "Results of fit-for-purpose reviews",
-                  "inputFrom": "string",
-                  "outputTo": "APO02.02",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Output",
-                  "questionDescription": "Asset register",
-                  "inputFrom": "",
-                  "outputTo": "APO06.01;BAI10.03",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Output",
-                  "questionDescription": "Results of physical inventory checks",
-                  "inputFrom": "",
-                  "outputTo": "BAI10.03;BAI10.04;DSS05.03",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                }
-              ]
-            },
-            {
-              "subComponentCode": "BAI09.02",
-              "subComponentName": "Manage critical assets.",
-              "subComponentDescription": "Identify assets that are critical in providing service capability. Maximize their reliability and availability to support business needs.",
-              "subComponentQuestions": [
-                {
-                  "questionType": "Output",
-                  "questionDescription": "Communications of planned maintenance downtime",
-                  "inputFrom": "string",
-                  "outputTo": "APO08.04",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Output",
-                  "questionDescription": "Maintenance agreements",
-                  "inputFrom": "",
-                  "outputTo": "Internal",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                }
-              ]
-            },
-            {
-              "subComponentCode": "BAI09.03",
-              "subComponentName": "Manage the asset life cycle.",
-              "subComponentDescription": "Manage assets from procurement to disposal. Ensure that assets are utilized as effectively and efficiently as possible and are accounted for and physically protected until appropriately retired.",
-              "subComponentQuestions": [
-                {
-                  "questionType": "Output",
-                  "questionDescription": "Authorized asset retirements",
-                  "inputFrom": "string",
-                  "outputTo": "BAI10.03",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Output",
-                  "questionDescription": "Updated asset register,",
-                  "inputFrom": "string",
-                  "outputTo": "BAI10.03",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Output",
-                  "questionDescription": "Approved asset procurement requests",
-                  "inputFrom": "",
-                  "outputTo": "Internal",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                }
-              ]
-            },
-            {
-              "subComponentCode": "BAI09.04",
-              "subComponentName": "Optimize asset value.",
-              "subComponentDescription": "Regularly review the overall asset base to identify ways to optimize value in alignment with business needs",
-              "subComponentQuestions": [
-                {
-                  "questionType": "Output",
-                  "questionDescription": "Opportunities to reduce asset costs or increase value",
-                  "inputFrom": "string",
-                  "outputTo": "APO02.02",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Output",
-                  "questionDescription": "Results of cost-optimization reviews",
-                  "inputFrom": "string",
-                  "outputTo": "APO02.02",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                }
-              ]
-            },
-            {
-              "subComponentCode": "BAI09.05",
-              "subComponentName": "Manage licenses.",
-              "subComponentDescription": "Manage software licenses to maintain the optimal number of licenses and support business requirements. Ensure that the number of licenses owned is sufficient to cover the installed software in use.",
-              "subComponentQuestions": [
-                {
-                  "questionType": "Output",
-                  "questionDescription": "Action plan to adjust license numbers and allocations",
-                  "inputFrom": "string",
-                  "outputTo": "APO02.05",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Output",
-                  "questionDescription": "Register of software licenses",
-                  "inputFrom": "string",
-                  "outputTo": "BAI10.02",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Output",
-                  "questionDescription": "Results of installed license audits",
-                  "inputFrom": "string",
-                  "outputTo": "MEA03.03",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "componentName": "D",
-          "componentDescription": "Peoples, Skills and Competencies",
-          "componentPercFinal": 0,
-          "componentQuestions": [
-            {
-              "questionType": "Component question",
-              "questionSkill": "Asset management",
-              "relatedGuidance": "Skills Framework for the Information Age V6, 2015",
-              "detailedReference": "ASMG",
-              "questionAnswer": 0,
-              "questionScore": 0,
-              "questionComment": "comment"
-            },
-            {
-              "questionType": "Component question",
-              "questionSkill": "Systems installation/decommissioning",
-              "relatedGuidance": "Skills Framework for the Information Age V6, 2015",
-              "detailedReference": "HSIN",
-              "questionAnswer": 0,
-              "questionScore": 0,
-              "questionComment": "comment"
-            }
-          ]
-        },
-        {
-          "componentName": "E",
-          "componentDescription": "Principles Policies and Procedures",
-          "componentPercFinal": 0,
-          "componentQuestions": [
-            {
-              "questionType": "Component question",
-              "relevantPolicy": "Asset management policy",
-              "policyDescription": "Provides guidelines for asset life cycle management, asset protection measures, system classification and ownership, data ownership, and data classification",
-              "detailedGuidance": "string",
-              "detailedReference": "string",
-              "questionAnswer": 0,
-              "questionScore": 0,
-              "questionComment": "comment"
-            },
-            {
-              "questionType": "Component question",
-              "relevantPolicy": "Intellectual property (IP) policy ",
-              "policyDescription": "Addresses risk related to use, ownership, sale and distribution of the outputs of I&T-related creative endeavors by employees (e.g., software development). Mandates appropriate documentation, level of detail, etc., from inception of work.",
-              "detailedGuidance": "string",
-              "detailedReference": "string",
-              "questionAnswer": 0,
-              "questionScore": 0,
-              "questionComment": "comment"
-            }
-          ]
-        },
-        {
-          "componentName": "F",
-          "componentDescription": "Culture, Ethics and Behavior",
-          "componentPercFinal": 0,
-          "componentQuestions": [
-            {
-              "questionType": "Component question",
-              "keyCultureElement": "Establish a culture that identifies, assesses, and reports the relative economic and strategic value of each asset to the enterprise in an open, consistent and transparent manner.",
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Identify all owned assets in an asset register that records current status. Assets are reported on the balance sheet; they are bought or created to increase the value of a firm or benefit the enterprise’s operations (e.g., hardware and software). Identify all owned assets and maintain alignment with the change management and configuration management processes, the configuration management system, and the financial accounting records.",
               "relatedGuidance": "string",
               "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Identify legal, regulatory or contractual requirements that need to be addressed when managing the asset",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Verify that the assets are fit for purpose (i.e., in a useful condition).",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Verify that the assets are fit for purpose (i.e., in a useful condition).",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": "Verify the existence of all owned assets by performing regular physical and logical inventory checks and reconciliation. Include the use of software discovery tools.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": "Determine on a regular basis whether each asset continues to provide value. If so, estimate the expected useful life for delivering value.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "string",
+              "relatedGuidance": "CMMI Cybermaturity Platform, 2018",
+              "detailedReference": "RI.AD Asset Discovery & Identification",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "string",
+              "relatedGuidance": "ISF, The Standard of Good Practice for Information Security 2016",
+              "detailedReference": "BA1.1 Business Application Register",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "string",
+              "relatedGuidance": "ISO/IEC 27002:2013/Cor.2:2015(E)",
+              "detailedReference": "8.1 Responsibility for assets",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "string",
+              "relatedGuidance": "National Institute of Standards and Technology Special Publication 800-53, Revision 5 (Draft), August 2017",
+              "detailedReference": "3.13 Physical and environmental protection (PE-9)",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "string",
+              "relatedGuidance": "The CIS Critical Security Controls for Effective Cyber Defense Version 6.1, August 2016",
+              "detailedReference": "CSC 1: Inventory of Authorized and Unauthorized Devices; CSC 2: Inventory of Authorized and Unauthorized Software",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": "comment"
@@ -965,13 +253,423 @@
           ]
         },
         {
-          "componentName": "G",
-          "componentDescription": "Services, Infrastructure and Applications",
-          "componentPercFinal": 0,
-          "componentQuestions": [
+          "subComponentCode": "BAI09.02",
+          "subComponentName": "Manage critical assets.",
+          "subComponentDescription": "Identify assets that are critical in providing service capability. Maximize their reliability and availability to support business needs.",
+          "subComponentQuestions": [
             {
-              "questionType": "Component question",
-              "questionDescription": "Asset management tools",
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Identify assets that are critical in providing service capability by referencing requirements in service definitions, SLAs and the configuration management system.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "On a regular basis, consider the risk of failure or need for replacement of each critical asset",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Communicate to affected customers and users the expected impact (e.g., performance restrictions) of maintenance activities.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Incorporate planned downtime in an overall production schedule. Schedule the maintenance activities to minimize the adverse impact on business processes.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Maintain the resilience of critical assets by applying regular preventive maintenance. Monitor performance and, if required, provide alternative and/or additional assets to minimize the likelihood of failure.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Establish a preventive maintenance plan for all hardware, considering cost/benefit analysis, vendor recommendations, risk of outage, qualified personnel and other relevant factors.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Establish maintenance agreements involving third-party access to organizational I&T facilities for on-site and off-site activities (e.g., outsourcing). Establish formal service contracts containing or referring to all necessary security and privacy conditions, including access authorization procedures, to ensure compliance with the organizational security/privacy policies and standards.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": " Ensure that remote access services and user profiles (or other means used for maintenance or diagnosis) are active only when required.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": "Monitor performance of critical assets by examining incident trends. Where necessary, take action to repair or replace.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "string",
+              "relatedGuidance": "National Institute of Standards and Technology Framework for Improving Critical Infrastructure Cybersecurity v1.1, April 2018",
+              "detailedReference": "ID.AM Asset Management",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "string",
+              "relatedGuidance": "National Institute of Standards and Technology Special Publication 800-53, Revision 5 (Draft), August 2017",
+              "detailedReference": "3.13 Physical and environmental protection (PE-20)",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "BAI09.03",
+          "subComponentName": "Optimize asset value.",
+          "subComponentDescription": "Manage assets from procurement to disposal. Ensure that assets are utilized as effectively and efficiently as possible and are accounted for and physically protected until appropriately retired.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Procure all assets based on approved requests and in accordance with the enterprise procurement policies and practices.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Source, receive, verify, test and record all assets in a controlled manner, including physical labeling as required.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Approve payments and complete the process with suppliers according to agreed contract conditions.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Deploy assets following the standard implementation life cycle, including change management and acceptance testing.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Allocate assets to users, with acceptance of responsibilities and sign-off, as appropriate.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Whenever possible, reallocate assets when they are no longer required due to a change of user role, redundancy within a service, or retirement of a service.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Plan, authorize and implement retirement-related activities, retaining appropriate records to meet ongoing business and regulatory needs.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Dispose of assets securely, considering, for example, the permanent deletion of any recorded data on media devices and potential damage to the environment.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": "Dispose of assets responsibly when they serve no useful purpose due to retirement of all related services, obsolete technology or lack of users with regard to environmental impact.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "string",
+              "relatedGuidance": "CMMI Cybermaturity Platform, 2018",
+              "detailedReference": "DP.ML Manage Asset Lifecycle",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "string",
+              "relatedGuidance": "ISF, The Standard of Good Practice for Information Security 2016",
+              "detailedReference": "IM2.1 Document Management; PA1.1 Hardware Life Cycle Management",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "string",
+              "relatedGuidance": "ITIL V3, 2011",
+              "detailedReference": "Service Transition, 4.3 Service Asset and Configuration Management",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "string",
+              "relatedGuidance": "National Institute of Standards and Technology Framework for Improving Critical Infrastructure Cybersecurity v1.1, April 2018",
+              "detailedReference": "PR.MA Maintenance",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "BAI09.04",
+          "subComponentName": "Optimize asset value.",
+          "subComponentDescription": "Regularly review the overall asset base to identify ways to optimize value in alignment with business needs.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "On a regular basis, review the overall asset base, considering whether it is aligned with business requirements.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": "Assess maintenance costs, consider reasonableness, and identify lower-cost options. Include, where necessary, replacement with new alternatives.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 5",
+              "questionDescription": "Review warranties and consider value-for-money and replacement strategies to determine lowest-cost options.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 5",
+              "questionDescription": "Use capacity and utilization statistics to identify underutilized or redundant assets that could be considered for disposal or replacement to reduce costs.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 5",
+              "questionDescription": "Review the overall base to identify opportunities for standardization, single sourcing, and other strategies that may lower procurement, support and maintenance costs..",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 5",
+              "questionDescription": "Review the overall state to identify opportunities to leverage emerging technologies or alternative sourcing strategies to reduce costs or increase value-for-money",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "BAI09.05",
+          "subComponentName": "Manage licenses.",
+          "subComponentDescription": "Manage software licenses to maintain the optimal number of licenses and support business requirements. Ensure that the number of licenses owned is sufficient to cover the installed software in use.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Maintain a register of all purchased software licenses and associated license agreements.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "On a regular basis, conduct an audit to identify all instances of installed licensed software.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": "Compare the number of installed software instances with the number of licenses owned. Ensure that the license compliance measurement method is compliant with the license and contractual requirements.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": "When instances are lower than the number owned, decide whether there is a need to retain or terminate licenses, considering the potential to save on unnecessary maintenance, training and other costs.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": "When instances are higher than the number owned, consider first the opportunity to uninstall instances that are no longer required or justified, and then, if necessary, purchase additional licenses to comply with the license agreement.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 5",
+              "questionDescription": "On a regular basis, consider whether better value can be obtained by upgrading products and associated licenses.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": "comment"
@@ -979,7 +677,310 @@
           ]
         }
       ]
+    },
+    {
+      "componentName": "B",
+      "componentDescription": "Organizational Structures",
+      "componentPercFinal": 0,
+      "componentQuestions": [
+        {
+          "questionType": "BAI09.01",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "BAI09.02",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "BAI09.03",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "BAI09.04",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "BAI09.05",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        }
+      ]
+    },
+    {
+      "componentCode": "C",
+      "componentDescription": "Information Flows and Items",
+      "componentPercFinal": 0,
+      "subComponents": [
+        {
+          "subComponentCode": "BAI09.01",
+          "subComponentName": "Identify and record current assets.",
+          "subComponentDescription": "Maintain an up-to-date, accurate record of all I&T assets that are required to deliver services and that are owned or controlled by the organization with an expectation of future benefit (including resources with economic value, such as hardware or software). Ensure alignment with configuration management and financial management.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Input",
+              "questionDescription": "Updates to asset inventory",
+              "inputFrom": "BAI03.04",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Configuration repository",
+              "inputFrom": "BAI10.02",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Results of fit-for-purpose reviews",
+              "inputFrom": "string",
+              "outputTo": "APO02.02",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Asset register",
+              "inputFrom": "",
+              "outputTo": "APO06.01;BAI10.03",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Results of physical inventory checks",
+              "inputFrom": "",
+              "outputTo": "BAI10.03;BAI10.04;DSS05.03",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "BAI09.02",
+          "subComponentName": "Manage critical assets.",
+          "subComponentDescription": "Identify assets that are critical in providing service capability. Maximize their reliability and availability to support business needs.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Output",
+              "questionDescription": "Communications of planned maintenance downtime",
+              "inputFrom": "string",
+              "outputTo": "APO08.04",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Maintenance agreements",
+              "inputFrom": "",
+              "outputTo": "Internal",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "BAI09.03",
+          "subComponentName": "Manage the asset life cycle.",
+          "subComponentDescription": "Manage assets from procurement to disposal. Ensure that assets are utilized as effectively and efficiently as possible and are accounted for and physically protected until appropriately retired.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Output",
+              "questionDescription": "Authorized asset retirements",
+              "inputFrom": "string",
+              "outputTo": "BAI10.03",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Updated asset register,",
+              "inputFrom": "string",
+              "outputTo": "BAI10.03",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Approved asset procurement requests",
+              "inputFrom": "",
+              "outputTo": "Internal",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "BAI09.04",
+          "subComponentName": "Optimize asset value.",
+          "subComponentDescription": "Regularly review the overall asset base to identify ways to optimize value in alignment with business needs",
+          "subComponentQuestions": [
+            {
+              "questionType": "Output",
+              "questionDescription": "Opportunities to reduce asset costs or increase value",
+              "inputFrom": "string",
+              "outputTo": "APO02.02",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Results of cost-optimization reviews",
+              "inputFrom": "string",
+              "outputTo": "APO02.02",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "BAI09.05",
+          "subComponentName": "Manage licenses.",
+          "subComponentDescription": "Manage software licenses to maintain the optimal number of licenses and support business requirements. Ensure that the number of licenses owned is sufficient to cover the installed software in use.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Output",
+              "questionDescription": "Action plan to adjust license numbers and allocations",
+              "inputFrom": "string",
+              "outputTo": "APO02.05",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Register of software licenses",
+              "inputFrom": "string",
+              "outputTo": "BAI10.02",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Results of installed license audits",
+              "inputFrom": "string",
+              "outputTo": "MEA03.03",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "componentName": "D",
+      "componentDescription": "Peoples, Skills and Competencies",
+      "componentPercFinal": 0,
+      "componentQuestions": [
+        {
+          "questionType": "Component question",
+          "questionSkill": "Asset management",
+          "relatedGuidance": "Skills Framework for the Information Age V6, 2015",
+          "detailedReference": "ASMG",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "Component question",
+          "questionSkill": "Systems installation/decommissioning",
+          "relatedGuidance": "Skills Framework for the Information Age V6, 2015",
+          "detailedReference": "HSIN",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        }
+      ]
+    },
+    {
+      "componentName": "E",
+      "componentDescription": "Principles Policies and Procedures",
+      "componentPercFinal": 0,
+      "componentQuestions": [
+        {
+          "questionType": "Component question",
+          "relevantPolicy": "Asset management policy",
+          "policyDescription": "Provides guidelines for asset life cycle management, asset protection measures, system classification and ownership, data ownership, and data classification",
+          "detailedGuidance": "string",
+          "detailedReference": "string",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "Component question",
+          "relevantPolicy": "Intellectual property (IP) policy ",
+          "policyDescription": "Addresses risk related to use, ownership, sale and distribution of the outputs of I&T-related creative endeavors by employees (e.g., software development). Mandates appropriate documentation, level of detail, etc., from inception of work.",
+          "detailedGuidance": "string",
+          "detailedReference": "string",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        }
+      ]
+    },
+    {
+      "componentName": "F",
+      "componentDescription": "Culture, Ethics and Behavior",
+      "componentPercFinal": 0,
+      "componentQuestions": [
+        {
+          "questionType": "Component question",
+          "keyCultureElement": "Establish a culture that identifies, assesses, and reports the relative economic and strategic value of each asset to the enterprise in an open, consistent and transparent manner.",
+          "relatedGuidance": "string",
+          "detailedReference": "string",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        }
+      ]
+    },
+    {
+      "componentName": "G",
+      "componentDescription": "Services, Infrastructure and Applications",
+      "componentPercFinal": 0,
+      "componentQuestions": [
+        {
+          "questionType": "Component question",
+          "questionDescription": "Asset management tools",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        }
+      ]
     }
+  ]
+}
   
        
     

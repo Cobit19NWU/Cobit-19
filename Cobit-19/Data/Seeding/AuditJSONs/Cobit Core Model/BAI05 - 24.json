@@ -1,7 +1,8 @@
-{ 
+{
   "objectiveName": "BAI05",
   "objectiveDescription": "Maximize the likelihood of successfully implementing sustainable enterprisewide organizational change quickly and with reduced risk. Cover the complete life cycle of the change and all affected stakeholders in the business and IT.",
   "objectivePurpose": "Prepare and commit stakeholders for business change and reduce the risk of failure.",
+  "typeOfObjective": "Management",
   "maturityLevel": 0,
   "maturityLevel0PercFinal": 0,
   "maturityLevel1PercFinal": 0,
@@ -1071,102 +1072,102 @@
           ]
         }
       ]
-            },
+    },
 
 
-            {
-              "componentName": "D",
-              "componentDescription": "Peoples, Skills and Competencies",
-              "componentPercFinal": 0,
-              "componentQuestions": [
-                {
-                  "questionType": "Component question",
-                  "questionSkill": "Business Change Management",
-                  "relatedGuidance": "e-Competence Framework (e-CF)—A common European Framework for ICT Professionals in all industry sectors—Part 1: Framework, 2016 ",
-                  "detailedReference": "E. Manage—E.7. Business Change Management",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Component question",
-                  "questionSkill": "Change implementation planning and management",
-                  "relatedGuidance": "Skills Framework for the Information Age V6, 2015 ",
-                  "detailedReference": "CIPM",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Component question",
-                  "questionSkill": "Organization design and implementation",
-                  "relatedGuidance": "Skills Framework for the Information Age V6, 2015 ",
-                  "detailedReference": "ORDI",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                }
-
-
-              ]
-            },
-            {
-              "componentName": "E",
-              "componentDescription": "Principles Policies and Procedures",
-              "componentPercFinal": 0,
-              "componentQuestions": [
-                {
-                  "questionType": "Component question",
-                  "relevantPolicy": "Organizational change management policy",
-                  "policyDescription": "Provides framework and outlines principles for managing organizational change. Reflects current legislation and provides good people-management practices; ensures consistent approach to managing change across the organization.",
-                  "detailedGuidance": "string",
-                  "detailedReference": "string",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                }
-
-
-              ]
-            },
-            {
-              "componentName": "F",
-              "componentDescription": "Culture, Ethics and Behavior",
-              "componentPercFinal": 0,
-              "componentQuestions": [
-                {
-                  "questionType": "Component question",
-                  "keyCultureElement": "Realizing value from I&T-enabled investments requires more than delivering I&T solutions and services. It also requires changes to business processes, skills and competencies, culture and behavior, etc., all of which must be included in the business case for the investment. Leadership must create a culture of continuous change through flexibility, openness and confidence and establish appropriate change management support and communication.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                }
-
-              ]
-            },
-            {
-              "componentName": "G",
-              "componentDescription": "Services, Infrastructure and Applications",
-              "componentPercFinal": 0,
-              "componentQuestions": [
-                {
-                  "questionType": "Component question",
-                  "questionDescription": "Communication tools and channels",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Component question",
-                  "questionDescription": "Surveying tools",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                }
-              ]
-            }
-          ]
+    {
+      "componentName": "D",
+      "componentDescription": "Peoples, Skills and Competencies",
+      "componentPercFinal": 0,
+      "componentQuestions": [
+        {
+          "questionType": "Component question",
+          "questionSkill": "Business Change Management",
+          "relatedGuidance": "e-Competence Framework (e-CF)—A common European Framework for ICT Professionals in all industry sectors—Part 1: Framework, 2016 ",
+          "detailedReference": "E. Manage—E.7. Business Change Management",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "Component question",
+          "questionSkill": "Change implementation planning and management",
+          "relatedGuidance": "Skills Framework for the Information Age V6, 2015 ",
+          "detailedReference": "CIPM",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "Component question",
+          "questionSkill": "Organization design and implementation",
+          "relatedGuidance": "Skills Framework for the Information Age V6, 2015 ",
+          "detailedReference": "ORDI",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
         }
+
+
+      ]
+    },
+    {
+      "componentName": "E",
+      "componentDescription": "Principles Policies and Procedures",
+      "componentPercFinal": 0,
+      "componentQuestions": [
+        {
+          "questionType": "Component question",
+          "relevantPolicy": "Organizational change management policy",
+          "policyDescription": "Provides framework and outlines principles for managing organizational change. Reflects current legislation and provides good people-management practices; ensures consistent approach to managing change across the organization.",
+          "detailedGuidance": "string",
+          "detailedReference": "string",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        }
+
+
+      ]
+    },
+    {
+      "componentName": "F",
+      "componentDescription": "Culture, Ethics and Behavior",
+      "componentPercFinal": 0,
+      "componentQuestions": [
+        {
+          "questionType": "Component question",
+          "keyCultureElement": "Realizing value from I&T-enabled investments requires more than delivering I&T solutions and services. It also requires changes to business processes, skills and competencies, culture and behavior, etc., all of which must be included in the business case for the investment. Leadership must create a culture of continuous change through flexibility, openness and confidence and establish appropriate change management support and communication.",
+          "relatedGuidance": "string",
+          "detailedReference": "string",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        }
+
+      ]
+    },
+    {
+      "componentName": "G",
+      "componentDescription": "Services, Infrastructure and Applications",
+      "componentPercFinal": 0,
+      "componentQuestions": [
+        {
+          "questionType": "Component question",
+          "questionDescription": "Communication tools and channels",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "Component question",
+          "questionDescription": "Surveying tools",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        }
+      ]
+    }
+  ]
+}
                                              

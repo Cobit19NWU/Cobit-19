@@ -1,7 +1,8 @@
-{ 
-  "objectiveName": "BAI01", 
+{
+  "objectiveName": "BAI01",
   "objectiveDescription": "Manage all programs from the investment portfolio in alignment with enterprise strategy and in a coordinated way, based on a standard program management approach. Initiate, plan, control, and execute programs, and monitor expected value from the program.",
   "objectivePurpose": "Realize desired business value and reduce the risk of unexpected delays, costs and value erosion. To do so, improve communications to and involvement of business and end users, ensure the value and quality of program deliverables and follow up of projects within the programs, and maximize program contribution to the investment portfolio.",
+  "typeOfObjective": "Management",
   "maturityLevel": 0,
   "maturityLevel0PercFinal": 0,
   "maturityLevel1PercFinal": 0,
@@ -1516,105 +1517,105 @@
       ]
     },
 
+    {
+      "componentName": "D",
+      "componentDescription": "Peoples, Skills and Competencies",
+      "componentPercFinal": 0,
+      "componentQuestions": [
+
         {
-          "componentName": "D",
-          "componentDescription": "Peoples, Skills and Competencies",
-          "componentPercFinal": 0,
-          "componentQuestions": [
-
-            {
-              "questionType": "Component question",
-              "questionSkill": "Benefits management",
-              "relatedGuidance": "Skills Framework for the Information Age V6, 2015 ",
-              "detailedReference": "BENM",
-              "questionAnswer": 0,
-              "questionScore": 0,
-              "questionComment": "comment"
-            },
-            {
-              "questionType": "Component question",
-              "questionSkill": "Business plan development",
-              "relatedGuidance": "e-Competence Framework (e-CF)—A common European Framework for ICT Professionals in all industry sectors—Part 1: Framework, 2016 ",
-              "detailedReference": "A. Plan—A.3. Business Plan Development",
-              "questionAnswer": 0,
-              "questionScore": 0,
-              "questionComment": "comment"
-            },
-            {
-              "questionType": "Component question",
-              "questionSkill": "Program management",
-              "relatedGuidance": "Skills Framework for the Information Age V6, 2015 ",
-              "detailedReference": "PGMG",
-              "questionAnswer": 0,
-              "questionScore": 0,
-              "questionComment": "comment"
-            },
-            {
-              "questionType": "Component question",
-              "questionSkill": "Project and portfolio management",
-              "relatedGuidance": "e-Competence Framework (e-CF)—A common European Framework for ICT Professionals in all industry sectors—Part 1: Framework, 2016 ",
-              "detailedReference": "E. Manage—E.2. Project and Portfolio Management",
-              "questionAnswer": 0,
-              "questionScore": 0,
-              "questionComment": "comment"
-            }
-
-
-          ]
+          "questionType": "Component question",
+          "questionSkill": "Benefits management",
+          "relatedGuidance": "Skills Framework for the Information Age V6, 2015 ",
+          "detailedReference": "BENM",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
         },
         {
-          "componentName": "E",
-          "componentDescription": "Principles Policies and Procedures",
-          "componentPercFinal": 0,
-          "componentQuestions": [
-            {
-              "questionType": "Component question",
-              "relevantPolicy": "Program/project management policy",
-              "policyDescription": "Guides management of risk related to programs and projects. Details management position and expectation regarding program and project management. Treats accountability, goals and objectives regarding performance, budget, risk analysis, reporting and mitigation of adverse events during program/project execution.",
-              "detailedGuidance": "PMBOK Guide Sixth edition, 2017 Part 1: 2.3.1 Processes, policies ",
-              "detailedReference": "Part 1: 2.3.1 Processes, policie and procedures",
-              "questionAnswer": 0,
-              "questionScore": 0,
-              "questionComment": "comment"
-            }
-
-
-          ]
+          "questionType": "Component question",
+          "questionSkill": "Business plan development",
+          "relatedGuidance": "e-Competence Framework (e-CF)—A common European Framework for ICT Professionals in all industry sectors—Part 1: Framework, 2016 ",
+          "detailedReference": "A. Plan—A.3. Business Plan Development",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
         },
         {
-          "componentName": "F",
-          "componentDescription": "Culture, Ethics and Behavior",
-          "componentPercFinal": 0,
-          "componentQuestions": [
-            {
-              "questionType": "Component question",
-              "keyCultureElement": "Ensure the organization understands and supports the value of enterprisewide program management. Establish an enterprisewide culture that supports consistent implementation of program management, taking into account organizational structure and business environment. Ensure the program office has a central view of all programs in the enterprise portfolio.",
-              "relatedGuidance": "CMMI Data Management Maturity Model, 2014 ",
-              "detailedReference": "Data Governance",
-              "questionAnswer": 0,
-              "questionScore": 0,
-              "questionComment": "comment"
-            }
-
-          ]
+          "questionType": "Component question",
+          "questionSkill": "Program management",
+          "relatedGuidance": "Skills Framework for the Information Age V6, 2015 ",
+          "detailedReference": "PGMG",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
         },
         {
-          "componentName": "G",
-          "componentDescription": "Services, Infrastructure and Applications",
-          "componentPercFinal": 0,
-          "componentQuestions": [
+          "questionType": "Component question",
+          "questionSkill": "Project and portfolio management",
+          "relatedGuidance": "e-Competence Framework (e-CF)—A common European Framework for ICT Professionals in all industry sectors—Part 1: Framework, 2016 ",
+          "detailedReference": "E. Manage—E.2. Project and Portfolio Management",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        }
 
-            {
-              "questionType": "Component question",
-              "questionDescription": "Program management tool",
-              "questionAnswer": 0,
-              "questionScore": 0,
-              "questionComment": "comment"
-            }
-          ]
+
+      ]
+    },
+    {
+      "componentName": "E",
+      "componentDescription": "Principles Policies and Procedures",
+      "componentPercFinal": 0,
+      "componentQuestions": [
+        {
+          "questionType": "Component question",
+          "relevantPolicy": "Program/project management policy",
+          "policyDescription": "Guides management of risk related to programs and projects. Details management position and expectation regarding program and project management. Treats accountability, goals and objectives regarding performance, budget, risk analysis, reporting and mitigation of adverse events during program/project execution.",
+          "detailedGuidance": "PMBOK Guide Sixth edition, 2017 Part 1: 2.3.1 Processes, policies ",
+          "detailedReference": "Part 1: 2.3.1 Processes, policie and procedures",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        }
+
+
+      ]
+    },
+    {
+      "componentName": "F",
+      "componentDescription": "Culture, Ethics and Behavior",
+      "componentPercFinal": 0,
+      "componentQuestions": [
+        {
+          "questionType": "Component question",
+          "keyCultureElement": "Ensure the organization understands and supports the value of enterprisewide program management. Establish an enterprisewide culture that supports consistent implementation of program management, taking into account organizational structure and business environment. Ensure the program office has a central view of all programs in the enterprise portfolio.",
+          "relatedGuidance": "CMMI Data Management Maturity Model, 2014 ",
+          "detailedReference": "Data Governance",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        }
+
+      ]
+    },
+    {
+      "componentName": "G",
+      "componentDescription": "Services, Infrastructure and Applications",
+      "componentPercFinal": 0,
+      "componentQuestions": [
+
+        {
+          "questionType": "Component question",
+          "questionDescription": "Program management tool",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
         }
       ]
     }
+  ]
+}
   
           
       

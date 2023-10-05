@@ -2,6 +2,7 @@
 	"objectiveName": "BAI08",
 	"objectiveDescription": "Maintain the availability of relevant, current, validated and reliable knowledge and management information to support all process activities and to facilitate decision making related to the governance and management of enterprise I&T. Plan for the identification, gathering, organizing, maintaining, use and retirement of knowledge.",
 	"objectivePurpose": "Provide the knowledge and information required to support all staff in the governance and management of enterprise I&T and allow for informed decision making.",
+	"typeOfObjective": "Management",
 	"maturityLevel": 0,
 	"maturityLevel0PercFinal": 0,
 	"maturityLevel1PercFinal": 0,
@@ -173,546 +174,546 @@
 				}
 			]
 		},
-	
+
+		{
+			"componentName": "A",
+			"componentDescription": "Processes",
+			"componentPercFinal": 0,
+			"subComponents": [
+
 				{
-					"componentName": "A",
-					"componentDescription": "Processes",
-					"componentPercFinal": 0,
-					"subComponents": [
-
+					"subComponentCode": "BAI08.01",
+					"subComponentName": "Identify and classify sources of information for governance and management of I&T.",
+					"subComponentDescription": "Identify, validate and classify diverse sources of internal and external information required to enable governance and management of I&T, including strategy documents, incident reports and configuration information that progresses from development to operations before going live.",
+					"subComponentQuestions": [
 						{
-							"subComponentCode": "BAI08.01",
-							"subComponentName": "Identify and classify sources of information for governance and management of I&T.",
-							"subComponentDescription": "Identify, validate and classify diverse sources of internal and external information required to enable governance and management of I&T, including strategy documents, incident reports and configuration information that progresses from development to operations before going live.",
-							"subComponentQuestions": [
-								{
-									"questionType": "Maturity Level 2",
-									"questionDescription": "Identify potential knowledge users, including owners of information who may need to contribute and approve knowledge. Obtain knowledge requirements and sources of information from identified users.",
-									"relatedGuidance": "string",
-									"detailedReference": "string",
-									"inputFrom": "string",
-									"outputTo": "string,",
-									"questionAnswer": 0,
-									"questionScore": 0,
-									"questionComment": "comment"
-								},
-								{
-									"questionType": "Maturity Level 2",
-									"questionDescription": "Consider content types (procedures, processes, structures, concepts, policies, rules, facts, classifications), artefacts (documents, records, video, voice), and structured and unstructured information (experts, social media, email, voice mail, Rich Site Summary (RSS) feeds).",
-									"relatedGuidance": "string",
-									"detailedReference": "string",
-									"inputFrom": "string",
-									"outputTo": "string,",
-									"questionAnswer": 0,
-									"questionScore": 0,
-									"questionComment": "comment"
-								},
-								{
-									"questionType": "Maturity Level 3",
-									"questionDescription": "Classify sources of information based on a content classification scheme (e.g., information architecture model). Map sources of information to the classification scheme.",
-									"relatedGuidance": "string",
-									"detailedReference": "string",
-									"inputFrom": "string",
-									"outputTo": "string, ",
-									"questionAnswer": 0,
-									"questionScore": 0,
-									"questionComment": "comment"
-								},
-								{
-									"questionType": "Maturity Level 4",
-									"questionDescription": "Collect, collate and validate information sources based on information validation criteria (e.g., understandability, relevance, importance, integrity, accuracy, consistency, confidentiality, currency and reliability).",
-									"relatedGuidance": "string",
-									"detailedReference": "string",
-									"inputFrom": "string",
-									"outputTo": "string, ",
-									"questionAnswer": 0,
-									"questionScore": 0,
-									"questionComment": "comment"
-								}
-							]
-						},
-
-
-						{
-
-							"subComponentCode": "BAI08.02",
-							"subComponentName": "Organize and contextualize information into knowledge.",
-							"subComponentDescription": "Organize information based on classification criteria. Identify and create meaningful relationships among information elements and enable use of information. Identify owners, and leverage and implement enterprise defined information levels of access to management information and knowledge resources.",
-							"subComponentQuestions": [
-								{
-									"questionType": "Maturity Level 3",
-									"questionDescription": "Identify shared attributes and match sources of information, creating relationships among information sets (information tagging).",
-									"relatedGuidance": "string",
-									"detailedReference": "string",
-									"inputFrom": "string",
-									"outputTo": "string, ",
-									"questionAnswer": 0,
-									"questionScore": 0,
-									"questionComment": "comment"
-								},
-								{
-									"questionType": "Maturity Level 3",
-									"questionDescription": "Create views to related data sets, considering stakeholder and organizational requirements.",
-									"relatedGuidance": "string",
-									"detailedReference": "string",
-									"inputFrom": "string",
-									"outputTo": "string, ",
-									"questionAnswer": 0,
-									"questionScore": 0,
-									"questionComment": "comment"
-								},
-								{
-									"questionType": "Maturity Level 3",
-									"questionDescription": "Devise and implement a scheme to manage unstructured knowledge not available through formal sources (e.g., expert knowledge).",
-									"relatedGuidance": "string",
-									"detailedReference": "string",
-									"inputFrom": "string",
-									"outputTo": "string, ",
-									"questionAnswer": 0,
-									"questionScore": 0,
-									"questionComment": "comment"
-								},
-
-								{
-									"questionType": "Maturity Level 3",
-									"questionDescription": "Publish and make knowledge accessible to relevant stakeholders, based on roles and access mechanisms.",
-									"relatedGuidance": "string",
-									"detailedReference": "string",
-									"inputFrom": "string",
-									"outputTo": "string, ",
-									"questionAnswer": 0,
-									"questionScore": 0,
-									"questionComment": "comment"
-								},
-
-								{
-									"questionType": "Related Guidance",
-									"questionDescription": "string",
-									"relatedGuidance": "COSO Enterprise Risk Management, June 2017",
-									"detailedReference": "10. Information, Communication, and Reporting - Principle 18",
-									"inputFrom": "string",
-									"outputTo": "string,",
-									"questionAnswer": 0,
-									"questionScore": 0,
-									"questionComment": "comment"
-								}
-							]
+							"questionType": "Maturity Level 2",
+							"questionDescription": "Identify potential knowledge users, including owners of information who may need to contribute and approve knowledge. Obtain knowledge requirements and sources of information from identified users.",
+							"relatedGuidance": "string",
+							"detailedReference": "string",
+							"inputFrom": "string",
+							"outputTo": "string,",
+							"questionAnswer": 0,
+							"questionScore": 0,
+							"questionComment": "comment"
 						},
 						{
-							"subComponentCode": "BAI08.03",
-							"subComponentName": "Use and share knowledge.",
-							"subComponentDescription": "Propagate available knowledge resources to relevant stakeholders and communicate how these resources can be used to address different needs (e.g., problem solving, learning, strategic planning and decision making).",
-							"subComponentQuestions": [
-								{
-									"questionType": "Maturity Level 2",
-									"questionDescription": "Set management expectations and demonstrate appropriate attitude regarding the usefulness of knowledge and the need to share knowledge related to the governance and management of enterprise I&T.",
-									"relatedGuidance": "string",
-									"detailedReference": "string",
-									"inputFrom": "string",
-									"outputTo": "string, ",
-									"questionAnswer": 0,
-									"questionScore": 0,
-									"questionComment": "comment"
-								},
-								{
-									"questionType": "Maturity Level 2",
-									"questionDescription": "Identify potential knowledge users by knowledge classification.",
-									"relatedGuidance": "string",
-									"detailedReference": "string",
-									"inputFrom": "string",
-									"outputTo": "string, ",
-									"questionAnswer": 0,
-									"questionScore": 0,
-									"questionComment": "comment"
-								},
-								{
-									"questionType": "Maturity Level 3",
-									"questionDescription": "Transfer knowledge to knowledge users, based on a needs gap analysis and effective learning techniques. Create an environment, tools and artifacts that support the sharing and transfer of knowledge. Ensure appropriate access controls are in place, in line with defined knowledge classification.",
-									"relatedGuidance": "string",
-									"detailedReference": "string",
-									"inputFrom": "string",
-									"outputTo": "string, ",
-									"questionAnswer": 0,
-									"questionScore": 0,
-									"questionComment": "comment"
-								},
-								{
-									"questionType": "Maturity Level 4",
-									"questionDescription": "Measure the use of knowledge tools and elements and evaluate the impact on governance processes.",
-									"relatedGuidance": "string",
-									"detailedReference": "string",
-									"inputFrom": "string",
-									"outputTo": "string, ",
-									"questionAnswer": 0,
-									"questionScore": 0,
-									"questionComment": "comment"
-								},
-								{
-									"questionType": "Maturity Level 5",
-									"questionDescription": "Improve information and knowledge for governance processes that show knowledge gaps.",
-									"relatedGuidance": "string",
-									"detailedReference": "string",
-									"inputFrom": "string",
-									"outputTo": "string, ",
-									"questionAnswer": 0,
-									"questionScore": 0,
-									"questionComment": "comment"
-								},
-								{
-									"questionType": "Related Guidance",
-									"questionDescription": "string",
-									"relatedGuidance": "CMMI Cybermaturity Platform, 2018",
-									"detailedReference": "PP.IS Apply Information Sharing; IR.ES Ensure Information sharing",
-									"inputFrom": "string",
-									"outputTo": "string,",
-									"questionAnswer": 0,
-									"questionScore": 0,
-									"questionComment": "comment"
-								},
-								{
-									"questionType": "Related Guidance",
-									"questionDescription": "string",
-									"relatedGuidance": "ITIL V3, 2011",
-									"detailedReference": "Service Transition, 4.7 Knowledge Management",
-									"inputFrom": "string",
-									"outputTo": "string,",
-									"questionAnswer": 0,
-									"questionScore": 0,
-									"questionComment": "comment"
-								},
-								{
-									"questionType": "Related Guidance",
-									"questionDescription": "string",
-									"relatedGuidance": "PMBOK Guide Sixth Edition, 2017",
-									"detailedReference": "Part 1: 4.4 Manage project knowledge",
-									"inputFrom": "string",
-									"outputTo": "string,",
-									"questionAnswer": 0,
-									"questionScore": 0,
-									"questionComment": "comment"
-								}
-							]
+							"questionType": "Maturity Level 2",
+							"questionDescription": "Consider content types (procedures, processes, structures, concepts, policies, rules, facts, classifications), artefacts (documents, records, video, voice), and structured and unstructured information (experts, social media, email, voice mail, Rich Site Summary (RSS) feeds).",
+							"relatedGuidance": "string",
+							"detailedReference": "string",
+							"inputFrom": "string",
+							"outputTo": "string,",
+							"questionAnswer": 0,
+							"questionScore": 0,
+							"questionComment": "comment"
 						},
-
-
 						{
-							"subComponentCode": "BAI08.04 ",
-							"subComponentName": "Evaluate and update or retire information.",
-							"subComponentDescription": "Measure the use and evaluate the currency and relevance of information. Update information or retire obsolete information.",
-							"subComponentQuestions": [
-								{
-									"questionType": "Maturity Level 3",
-									"questionDescription": "Define the controls for knowledge retirement and retire knowledge accordingly.",
-									"relatedGuidance": "string",
-									"detailedReference": "string",
-									"inputFrom": "string",
-									"outputTo": "string, ",
-									"questionAnswer": 0,
-									"questionScore": 0,
-									"questionComment": "comment"
-								},
-								{
-									"questionType": "Maturity Level 4",
-									"questionDescription": "Evaluate the usefulness, relevance and value of knowledge elements. Update outdated information that still has relevance and value to the organization. Identify related information that is no longer relevant to the enterprise’s knowledge requirements and retire or archive according to policy.",
-									"relatedGuidance": "string",
-									"detailedReference": "string",
-									"inputFrom": "string",
-									"outputTo": "string, ",
-									"questionAnswer": 0,
-									"questionScore": 0,
-									"questionComment": "comment"
-								}
-							]
+							"questionType": "Maturity Level 3",
+							"questionDescription": "Classify sources of information based on a content classification scheme (e.g., information architecture model). Map sources of information to the classification scheme.",
+							"relatedGuidance": "string",
+							"detailedReference": "string",
+							"inputFrom": "string",
+							"outputTo": "string, ",
+							"questionAnswer": 0,
+							"questionScore": 0,
+							"questionComment": "comment"
+						},
+						{
+							"questionType": "Maturity Level 4",
+							"questionDescription": "Collect, collate and validate information sources based on information validation criteria (e.g., understandability, relevance, importance, integrity, accuracy, consistency, confidentiality, currency and reliability).",
+							"relatedGuidance": "string",
+							"detailedReference": "string",
+							"inputFrom": "string",
+							"outputTo": "string, ",
+							"questionAnswer": 0,
+							"questionScore": 0,
+							"questionComment": "comment"
 						}
 					]
-														},
+				},
 
 
-														{
-															"componentName": "B",
-															"componentDescription": "Organizational Structures",
-															"componentPercFinal": 0,
-															"componentQuestions": [
+				{
 
-																{
-																	"questionType": "BAI08.01",
-																	"questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
-																	"questionAnswer": 0,
-																	"questionScore": 0,
-																	"questionComment": "comment"
-																},
-																{
-																	"questionType": "BAI08.02",
-																	"questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
-																	"questionAnswer": 0,
-																	"questionScore": 0,
-																	"questionComment": "comment"
-																},
-																{
-																	"questionType": "BAI08.03",
-																	"questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
-																	"questionAnswer": 0,
-																	"questionScore": 0,
-																	"questionComment": "comment"
-																},
-																{
-																	"questionType": "BAI08.04",
-																	"questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
-																	"questionAnswer": 0,
-																	"questionScore": 0,
-																	"questionComment": "comment"
-																}
-															]
-														},
+					"subComponentCode": "BAI08.02",
+					"subComponentName": "Organize and contextualize information into knowledge.",
+					"subComponentDescription": "Organize information based on classification criteria. Identify and create meaningful relationships among information elements and enable use of information. Identify owners, and leverage and implement enterprise defined information levels of access to management information and knowledge resources.",
+					"subComponentQuestions": [
+						{
+							"questionType": "Maturity Level 3",
+							"questionDescription": "Identify shared attributes and match sources of information, creating relationships among information sets (information tagging).",
+							"relatedGuidance": "string",
+							"detailedReference": "string",
+							"inputFrom": "string",
+							"outputTo": "string, ",
+							"questionAnswer": 0,
+							"questionScore": 0,
+							"questionComment": "comment"
+						},
+						{
+							"questionType": "Maturity Level 3",
+							"questionDescription": "Create views to related data sets, considering stakeholder and organizational requirements.",
+							"relatedGuidance": "string",
+							"detailedReference": "string",
+							"inputFrom": "string",
+							"outputTo": "string, ",
+							"questionAnswer": 0,
+							"questionScore": 0,
+							"questionComment": "comment"
+						},
+						{
+							"questionType": "Maturity Level 3",
+							"questionDescription": "Devise and implement a scheme to manage unstructured knowledge not available through formal sources (e.g., expert knowledge).",
+							"relatedGuidance": "string",
+							"detailedReference": "string",
+							"inputFrom": "string",
+							"outputTo": "string, ",
+							"questionAnswer": 0,
+							"questionScore": 0,
+							"questionComment": "comment"
+						},
 
-														{
-															"componentCode": "C",
-															"componentDescription": "Information Flows and Items",
-															"componentPercFinal": 0,
-															"subComponents": [
-																{
-																	"subComponentCode": "BAI08.01",
-																	"subComponentName": "Identify and classify sources of information for governance and management of I&T.",
-																	"subComponentDescription": "Identify, validate and classify diverse sources of internal and external information required to enable governance and management of I&T, including strategy documents, incident reports and configuration information that progresses from development to operations before going live.",
-																	"subComponentQuestions": [
+						{
+							"questionType": "Maturity Level 3",
+							"questionDescription": "Publish and make knowledge accessible to relevant stakeholders, based on roles and access mechanisms.",
+							"relatedGuidance": "string",
+							"detailedReference": "string",
+							"inputFrom": "string",
+							"outputTo": "string, ",
+							"questionAnswer": 0,
+							"questionScore": 0,
+							"questionComment": "comment"
+						},
 
-																		{
-																			"questionType": "Input",
-																			"questionDescription": "Knowledge requirements and sources",
-																			"relatedGuidance": "string",
-																			"detailedReference": "string",
-																			"inputFrom": "Outside COBIT",
-																			"outputTo": "string",
-																			"questionAnswer": 0,
-																			"questionScore": 0,
-																			"questionComment": "comment"
-																		},
-																		{
-																			"questionType": "Output",
-																			"questionDescription": "Classification of information sources",
-																			"relatedGuidance": "string",
-																			"detailedReference": "string",
-																			"inputFrom": "string",
-																			"outputTo": "Internal",
-																			"questionAnswer": 0,
-																			"questionScore": 0,
-																			"questionComment": "comment"
-																		}
-
-																	]
-																},
-																{
-																	"subComponentCode": "BAI08.02",
-																	"subComponentName": "Organize and contextualize information into knowledge.",
-																	"subComponentDescription": "Organize information based on classification criteria. Identify and create meaningful relationships among information elements and enable use of information. Identify owners, and leverage and implement enterprise defined information levels of access to management information and knowledge resources.",
-																	"subComponentQuestions": [
-																		{
-																			"questionType": "Input",
-																			"questionDescription": "Documented solution components",
-																			"relatedGuidance": "string",
-																			"detailedReference": "string",
-																			"inputFrom": "BAI03.03",
-																			"outputTo": "string",
-																			"questionAnswer": 0,
-																			"questionScore": 0,
-																			"questionComment": "comment"
-																		},
-																		{
-																			"questionType": "Input",
-																			"questionDescription": "Knowledge transfer plans",
-																			"relatedGuidance": "string",
-																			"detailedReference": "string",
-																			"inputFrom": "BAI05.07",
-																			"outputTo": "string",
-																			"questionAnswer": 0,
-																			"questionScore": 0,
-																			"questionComment": "comment"
-																		},
-																		{
-																			"questionType": "Output",
-																			"questionDescription": "Published knowledge repositories",
-																			"relatedGuidance": "string",
-																			"detailedReference": "string",
-																			"inputFrom": "string",
-																			"outputTo": "APO07.03",
-																			"questionAnswer": 0,
-																			"questionScore": 0,
-																			"questionComment": "comment"
-																		}
-
-
-																	]
-																},
-																{
-																	"subComponentCode": "BAI08.03",
-																	"subComponentName": "Use and share knowledge.",
-																	"subComponentDescription": "Propagate available knowledge resources to relevant stakeholders and communicate how these resources can be used to address different needs (e.g., problem solving, learning, strategic planning and decision making).",
-																	"subComponentQuestions": [
-
-																		{
-																			"questionType": "Input",
-																			"questionDescription": "Documented solution components",
-																			"relatedGuidance": "string",
-																			"detailedReference": "string",
-																			"inputFrom": "BAI03.03",
-																			"outputTo": "string",
-																			"questionAnswer": 0,
-																			"questionScore": 0,
-																			"questionComment": "comment"
-																		},
-																		{
-																			"questionType": "Input",
-																			"questionDescription": "Operation and use plan",
-																			"relatedGuidance": "string",
-																			"detailedReference": "string",
-																			"inputFrom": "BAI05.05",
-																			"outputTo": "string",
-																			"questionAnswer": 0,
-																			"questionScore": 0,
-																			"questionComment": "comment"
-																		},
-																		{
-																			"questionType": "Input",
-																			"questionDescription": "Knowledge transfer plans",
-																			"relatedGuidance": "string",
-																			"detailedReference": "string",
-																			"inputFrom": "BAI05.07",
-																			"outputTo": "string",
-																			"questionAnswer": 0,
-																			"questionScore": 0,
-																			"questionComment": "comment"
-																		},
-																		{
-																			"questionType": "Output",
-																			"questionDescription": "Knowledge awareness and training schemes",
-																			"relatedGuidance": "string",
-																			"detailedReference": "string",
-																			"inputFrom": "string",
-																			"outputTo": "APO07.03",
-																			"questionAnswer": 0,
-																			"questionScore": 0,
-																			"questionComment": "comment"
-																		},
-																		{
-																			"questionType": "Output",
-																			"questionDescription": "Knowledge user database",
-																			"relatedGuidance": "string",
-																			"detailedReference": "string",
-																			"inputFrom": "string",
-																			"outputTo": "Internal",
-																			"questionAnswer": 0,
-																			"questionScore": 0,
-																			"questionComment": "comment"
-																		}
-
-																	]
-																},
-
-																{
-																	"subComponentCode": "BAI08.04 ",
-																	"subComponentName": "Evaluate and update or retire information.",
-																	"subComponentDescription": "Measure the use and evaluate the currency and relevance of information. Update information or retire obsolete information.",
-																	"subComponentQuestions": [
-																		{
-																			"questionType": "Output",
-																			"questionDescription": "Rules for knowledge retirement",
-																			"relatedGuidance": "string",
-																			"detailedReference": "string",
-																			"inputFrom": "string",
-																			"outputTo": "Internal",
-																			"questionAnswer": 0,
-																			"questionScore": 0,
-																			"questionComment": "comment"
-																		},
-																		{
-																			"questionType": "Output",
-																			"questionDescription": "Knowledge use evaluation results",
-																			"relatedGuidance": "string",
-																			"detailedReference": "string",
-																			"inputFrom": "string",
-																			"outputTo": "Internal",
-																			"questionAnswer": 0,
-																			"questionScore": 0,
-																			"questionComment": "comment"
-																		}
-
-																	]
-																}
-															]
-														},
-														{
-															"componentName": "D",
-															"componentDescription": "Peoples, Skills and Competencies",
-															"componentPercFinal": 0,
-															"componentQuestions": [
-																{
-																	"questionType": "Component question",
-																	"questionSkill": "Information and knowledge management",
-																	"relatedGuidance": "e-Competence Framework (e-CF)—A common European Framework for ICT Professionals in all industry sectors—Part 1: Framework, 2016",
-																	"detailedReference": "D. Enable—D.10. Information and Knowledge Management",
-																	"questionAnswer": 0,
-																	"questionScore": 0,
-																	"questionComment": "comment"
-																}
-															]
-														},
-														{
-															"componentName": "E",
-															"componentDescription": "Principles Policies and Procedures",
-															"componentPercFinal": 0,
-															"componentQuestions": [
-																{
-																	"questionType": "Component question",
-																	"relevantPolicy": "Governance knowledge use policy",
-																	"policyDescription": "Guides creation and use of knowledge assets relating to I&T governance. I&T knowledge assets should be readily accessible for reference.",
-																	"detailedGuidance": "string",
-																	"detailedReference": "string",
-																	"questionAnswer": 0,
-																	"questionScore": 0,
-																	"questionComment": "comment"
-																}
+						{
+							"questionType": "Related Guidance",
+							"questionDescription": "string",
+							"relatedGuidance": "COSO Enterprise Risk Management, June 2017",
+							"detailedReference": "10. Information, Communication, and Reporting - Principle 18",
+							"inputFrom": "string",
+							"outputTo": "string,",
+							"questionAnswer": 0,
+							"questionScore": 0,
+							"questionComment": "comment"
+						}
+					]
+				},
+				{
+					"subComponentCode": "BAI08.03",
+					"subComponentName": "Use and share knowledge.",
+					"subComponentDescription": "Propagate available knowledge resources to relevant stakeholders and communicate how these resources can be used to address different needs (e.g., problem solving, learning, strategic planning and decision making).",
+					"subComponentQuestions": [
+						{
+							"questionType": "Maturity Level 2",
+							"questionDescription": "Set management expectations and demonstrate appropriate attitude regarding the usefulness of knowledge and the need to share knowledge related to the governance and management of enterprise I&T.",
+							"relatedGuidance": "string",
+							"detailedReference": "string",
+							"inputFrom": "string",
+							"outputTo": "string, ",
+							"questionAnswer": 0,
+							"questionScore": 0,
+							"questionComment": "comment"
+						},
+						{
+							"questionType": "Maturity Level 2",
+							"questionDescription": "Identify potential knowledge users by knowledge classification.",
+							"relatedGuidance": "string",
+							"detailedReference": "string",
+							"inputFrom": "string",
+							"outputTo": "string, ",
+							"questionAnswer": 0,
+							"questionScore": 0,
+							"questionComment": "comment"
+						},
+						{
+							"questionType": "Maturity Level 3",
+							"questionDescription": "Transfer knowledge to knowledge users, based on a needs gap analysis and effective learning techniques. Create an environment, tools and artifacts that support the sharing and transfer of knowledge. Ensure appropriate access controls are in place, in line with defined knowledge classification.",
+							"relatedGuidance": "string",
+							"detailedReference": "string",
+							"inputFrom": "string",
+							"outputTo": "string, ",
+							"questionAnswer": 0,
+							"questionScore": 0,
+							"questionComment": "comment"
+						},
+						{
+							"questionType": "Maturity Level 4",
+							"questionDescription": "Measure the use of knowledge tools and elements and evaluate the impact on governance processes.",
+							"relatedGuidance": "string",
+							"detailedReference": "string",
+							"inputFrom": "string",
+							"outputTo": "string, ",
+							"questionAnswer": 0,
+							"questionScore": 0,
+							"questionComment": "comment"
+						},
+						{
+							"questionType": "Maturity Level 5",
+							"questionDescription": "Improve information and knowledge for governance processes that show knowledge gaps.",
+							"relatedGuidance": "string",
+							"detailedReference": "string",
+							"inputFrom": "string",
+							"outputTo": "string, ",
+							"questionAnswer": 0,
+							"questionScore": 0,
+							"questionComment": "comment"
+						},
+						{
+							"questionType": "Related Guidance",
+							"questionDescription": "string",
+							"relatedGuidance": "CMMI Cybermaturity Platform, 2018",
+							"detailedReference": "PP.IS Apply Information Sharing; IR.ES Ensure Information sharing",
+							"inputFrom": "string",
+							"outputTo": "string,",
+							"questionAnswer": 0,
+							"questionScore": 0,
+							"questionComment": "comment"
+						},
+						{
+							"questionType": "Related Guidance",
+							"questionDescription": "string",
+							"relatedGuidance": "ITIL V3, 2011",
+							"detailedReference": "Service Transition, 4.7 Knowledge Management",
+							"inputFrom": "string",
+							"outputTo": "string,",
+							"questionAnswer": 0,
+							"questionScore": 0,
+							"questionComment": "comment"
+						},
+						{
+							"questionType": "Related Guidance",
+							"questionDescription": "string",
+							"relatedGuidance": "PMBOK Guide Sixth Edition, 2017",
+							"detailedReference": "Part 1: 4.4 Manage project knowledge",
+							"inputFrom": "string",
+							"outputTo": "string,",
+							"questionAnswer": 0,
+							"questionScore": 0,
+							"questionComment": "comment"
+						}
+					]
+				},
 
 
-															]
-														},
-														{
-															"componentName": "F",
-															"componentDescription": "Culture, Ethics and Behavior",
-															"componentPercFinal": 0,
-															"componentQuestions": [
-																{
-																	"questionType": "Component question",
-																	"keyCultureElement": "Embed a knowledge-sharing culture in the enterprise. Proactively communicate the value of knowledge to encourage knowledge creation, use, reuse and sharing. Encourage the sharing and transfer of knowledge by identifying and leveraging motivational factors.",
-																	"relatedGuidance": "string",
-																	"detailedReference": "string",
-																	"questionAnswer": 0,
-																	"questionScore": 0,
-																	"questionComment": "comment"
-																}
+				{
+					"subComponentCode": "BAI08.04 ",
+					"subComponentName": "Evaluate and update or retire information.",
+					"subComponentDescription": "Measure the use and evaluate the currency and relevance of information. Update information or retire obsolete information.",
+					"subComponentQuestions": [
+						{
+							"questionType": "Maturity Level 3",
+							"questionDescription": "Define the controls for knowledge retirement and retire knowledge accordingly.",
+							"relatedGuidance": "string",
+							"detailedReference": "string",
+							"inputFrom": "string",
+							"outputTo": "string, ",
+							"questionAnswer": 0,
+							"questionScore": 0,
+							"questionComment": "comment"
+						},
+						{
+							"questionType": "Maturity Level 4",
+							"questionDescription": "Evaluate the usefulness, relevance and value of knowledge elements. Update outdated information that still has relevance and value to the organization. Identify related information that is no longer relevant to the enterprise’s knowledge requirements and retire or archive according to policy.",
+							"relatedGuidance": "string",
+							"detailedReference": "string",
+							"inputFrom": "string",
+							"outputTo": "string, ",
+							"questionAnswer": 0,
+							"questionScore": 0,
+							"questionComment": "comment"
+						}
+					]
+				}
+			]
+		},
 
-															]
-														},
-														{
-															"componentName": "G",
-															"componentDescription": "Services, Infrastructure and Applications",
-															"componentPercFinal": 0,
-															"componentQuestions": [
-																{
-																	"questionType": "Component question",
-																	"questionDescription": "Collaboration platform",
-																	"questionAnswer": 0,
-																	"questionScore": 0,
-																	"questionComment": "comment"
-																},
-																{
-																	"questionType": "Component question",
-																	"questionDescription": "Knowledge repository",
-																	"questionAnswer": 0,
-																	"questionScore": 0,
-																	"questionComment": "comment"
-																}
-															]
-														}
-													]
-												}
+
+		{
+			"componentName": "B",
+			"componentDescription": "Organizational Structures",
+			"componentPercFinal": 0,
+			"componentQuestions": [
+
+				{
+					"questionType": "BAI08.01",
+					"questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+					"questionAnswer": 0,
+					"questionScore": 0,
+					"questionComment": "comment"
+				},
+				{
+					"questionType": "BAI08.02",
+					"questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+					"questionAnswer": 0,
+					"questionScore": 0,
+					"questionComment": "comment"
+				},
+				{
+					"questionType": "BAI08.03",
+					"questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+					"questionAnswer": 0,
+					"questionScore": 0,
+					"questionComment": "comment"
+				},
+				{
+					"questionType": "BAI08.04",
+					"questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+					"questionAnswer": 0,
+					"questionScore": 0,
+					"questionComment": "comment"
+				}
+			]
+		},
+
+		{
+			"componentCode": "C",
+			"componentDescription": "Information Flows and Items",
+			"componentPercFinal": 0,
+			"subComponents": [
+				{
+					"subComponentCode": "BAI08.01",
+					"subComponentName": "Identify and classify sources of information for governance and management of I&T.",
+					"subComponentDescription": "Identify, validate and classify diverse sources of internal and external information required to enable governance and management of I&T, including strategy documents, incident reports and configuration information that progresses from development to operations before going live.",
+					"subComponentQuestions": [
+
+						{
+							"questionType": "Input",
+							"questionDescription": "Knowledge requirements and sources",
+							"relatedGuidance": "string",
+							"detailedReference": "string",
+							"inputFrom": "Outside COBIT",
+							"outputTo": "string",
+							"questionAnswer": 0,
+							"questionScore": 0,
+							"questionComment": "comment"
+						},
+						{
+							"questionType": "Output",
+							"questionDescription": "Classification of information sources",
+							"relatedGuidance": "string",
+							"detailedReference": "string",
+							"inputFrom": "string",
+							"outputTo": "Internal",
+							"questionAnswer": 0,
+							"questionScore": 0,
+							"questionComment": "comment"
+						}
+
+					]
+				},
+				{
+					"subComponentCode": "BAI08.02",
+					"subComponentName": "Organize and contextualize information into knowledge.",
+					"subComponentDescription": "Organize information based on classification criteria. Identify and create meaningful relationships among information elements and enable use of information. Identify owners, and leverage and implement enterprise defined information levels of access to management information and knowledge resources.",
+					"subComponentQuestions": [
+						{
+							"questionType": "Input",
+							"questionDescription": "Documented solution components",
+							"relatedGuidance": "string",
+							"detailedReference": "string",
+							"inputFrom": "BAI03.03",
+							"outputTo": "string",
+							"questionAnswer": 0,
+							"questionScore": 0,
+							"questionComment": "comment"
+						},
+						{
+							"questionType": "Input",
+							"questionDescription": "Knowledge transfer plans",
+							"relatedGuidance": "string",
+							"detailedReference": "string",
+							"inputFrom": "BAI05.07",
+							"outputTo": "string",
+							"questionAnswer": 0,
+							"questionScore": 0,
+							"questionComment": "comment"
+						},
+						{
+							"questionType": "Output",
+							"questionDescription": "Published knowledge repositories",
+							"relatedGuidance": "string",
+							"detailedReference": "string",
+							"inputFrom": "string",
+							"outputTo": "APO07.03",
+							"questionAnswer": 0,
+							"questionScore": 0,
+							"questionComment": "comment"
+						}
+
+
+					]
+				},
+				{
+					"subComponentCode": "BAI08.03",
+					"subComponentName": "Use and share knowledge.",
+					"subComponentDescription": "Propagate available knowledge resources to relevant stakeholders and communicate how these resources can be used to address different needs (e.g., problem solving, learning, strategic planning and decision making).",
+					"subComponentQuestions": [
+
+						{
+							"questionType": "Input",
+							"questionDescription": "Documented solution components",
+							"relatedGuidance": "string",
+							"detailedReference": "string",
+							"inputFrom": "BAI03.03",
+							"outputTo": "string",
+							"questionAnswer": 0,
+							"questionScore": 0,
+							"questionComment": "comment"
+						},
+						{
+							"questionType": "Input",
+							"questionDescription": "Operation and use plan",
+							"relatedGuidance": "string",
+							"detailedReference": "string",
+							"inputFrom": "BAI05.05",
+							"outputTo": "string",
+							"questionAnswer": 0,
+							"questionScore": 0,
+							"questionComment": "comment"
+						},
+						{
+							"questionType": "Input",
+							"questionDescription": "Knowledge transfer plans",
+							"relatedGuidance": "string",
+							"detailedReference": "string",
+							"inputFrom": "BAI05.07",
+							"outputTo": "string",
+							"questionAnswer": 0,
+							"questionScore": 0,
+							"questionComment": "comment"
+						},
+						{
+							"questionType": "Output",
+							"questionDescription": "Knowledge awareness and training schemes",
+							"relatedGuidance": "string",
+							"detailedReference": "string",
+							"inputFrom": "string",
+							"outputTo": "APO07.03",
+							"questionAnswer": 0,
+							"questionScore": 0,
+							"questionComment": "comment"
+						},
+						{
+							"questionType": "Output",
+							"questionDescription": "Knowledge user database",
+							"relatedGuidance": "string",
+							"detailedReference": "string",
+							"inputFrom": "string",
+							"outputTo": "Internal",
+							"questionAnswer": 0,
+							"questionScore": 0,
+							"questionComment": "comment"
+						}
+
+					]
+				},
+
+				{
+					"subComponentCode": "BAI08.04 ",
+					"subComponentName": "Evaluate and update or retire information.",
+					"subComponentDescription": "Measure the use and evaluate the currency and relevance of information. Update information or retire obsolete information.",
+					"subComponentQuestions": [
+						{
+							"questionType": "Output",
+							"questionDescription": "Rules for knowledge retirement",
+							"relatedGuidance": "string",
+							"detailedReference": "string",
+							"inputFrom": "string",
+							"outputTo": "Internal",
+							"questionAnswer": 0,
+							"questionScore": 0,
+							"questionComment": "comment"
+						},
+						{
+							"questionType": "Output",
+							"questionDescription": "Knowledge use evaluation results",
+							"relatedGuidance": "string",
+							"detailedReference": "string",
+							"inputFrom": "string",
+							"outputTo": "Internal",
+							"questionAnswer": 0,
+							"questionScore": 0,
+							"questionComment": "comment"
+						}
+
+					]
+				}
+			]
+		},
+		{
+			"componentName": "D",
+			"componentDescription": "Peoples, Skills and Competencies",
+			"componentPercFinal": 0,
+			"componentQuestions": [
+				{
+					"questionType": "Component question",
+					"questionSkill": "Information and knowledge management",
+					"relatedGuidance": "e-Competence Framework (e-CF)—A common European Framework for ICT Professionals in all industry sectors—Part 1: Framework, 2016",
+					"detailedReference": "D. Enable—D.10. Information and Knowledge Management",
+					"questionAnswer": 0,
+					"questionScore": 0,
+					"questionComment": "comment"
+				}
+			]
+		},
+		{
+			"componentName": "E",
+			"componentDescription": "Principles Policies and Procedures",
+			"componentPercFinal": 0,
+			"componentQuestions": [
+				{
+					"questionType": "Component question",
+					"relevantPolicy": "Governance knowledge use policy",
+					"policyDescription": "Guides creation and use of knowledge assets relating to I&T governance. I&T knowledge assets should be readily accessible for reference.",
+					"detailedGuidance": "string",
+					"detailedReference": "string",
+					"questionAnswer": 0,
+					"questionScore": 0,
+					"questionComment": "comment"
+				}
+
+
+			]
+		},
+		{
+			"componentName": "F",
+			"componentDescription": "Culture, Ethics and Behavior",
+			"componentPercFinal": 0,
+			"componentQuestions": [
+				{
+					"questionType": "Component question",
+					"keyCultureElement": "Embed a knowledge-sharing culture in the enterprise. Proactively communicate the value of knowledge to encourage knowledge creation, use, reuse and sharing. Encourage the sharing and transfer of knowledge by identifying and leveraging motivational factors.",
+					"relatedGuidance": "string",
+					"detailedReference": "string",
+					"questionAnswer": 0,
+					"questionScore": 0,
+					"questionComment": "comment"
+				}
+
+			]
+		},
+		{
+			"componentName": "G",
+			"componentDescription": "Services, Infrastructure and Applications",
+			"componentPercFinal": 0,
+			"componentQuestions": [
+				{
+					"questionType": "Component question",
+					"questionDescription": "Collaboration platform",
+					"questionAnswer": 0,
+					"questionScore": 0,
+					"questionComment": "comment"
+				},
+				{
+					"questionType": "Component question",
+					"questionDescription": "Knowledge repository",
+					"questionAnswer": 0,
+					"questionScore": 0,
+					"questionComment": "comment"
+				}
+			]
+		}
+	]
+}
 											

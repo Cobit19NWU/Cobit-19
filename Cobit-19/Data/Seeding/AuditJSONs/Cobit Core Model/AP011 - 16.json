@@ -1,12 +1,13 @@
-{ 
+{
   "objectiveName": "APO11",
   "objectiveDescription": "Define and communicate quality requirements in all processes, procedures and related enterprise outcomes. Enable controls, ongoing monitoring and the use of proven practices and standards in continuous improvement and efficiency efforts.",
   "objectivePurpose": "Ensure consistent delivery of technology solutions and services to meet the quality requirements of the enterprise and satisfy stakeholder needs.",
+  "typeOfObjective": "Management",
   "maturityLevel": 0,
   "maturityLevel0PercFinal": 0,
   "maturityLevel1PercFinal": 0,
   "maturityLevel2PercFinal": 0,
-  "maturityLevel3PercFinal": 0, 
+  "maturityLevel3PercFinal": 0,
   "maturityLevel4PercFinal": 0,
   "maturityLevel5PercFinal": 0,
   "components": [
@@ -49,127 +50,127 @@
             }
           ]
         },
-              {
-                "subComponentCode": "EG04",
-                "subComponentName": "Quality of financial information",
-                "subComponentQuestions": [
-                  {
-                    "questionType": "Enterprise goal",
-                    "questionDescription": "Satisfaction survey of key stakeholders regarding the transparency, understanding and accuracy of enterprise financial information",
-                    "questionAnswer": 0,
-                    "questionScore": 0,
-                    "questionComment": "comment"
-                  },
-                  {
-                    "questionType": "Enterprise goal",
-                    "questionDescription": "Cost of noncompliance with finance-related regulations",
-                    "questionAnswer": 0,
-                    "questionScore": 0,
-                    "questionComment": "comment"
-                  }
+        {
+          "subComponentCode": "EG04",
+          "subComponentName": "Quality of financial information",
+          "subComponentQuestions": [
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Satisfaction survey of key stakeholders regarding the transparency, understanding and accuracy of enterprise financial information",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Cost of noncompliance with finance-related regulations",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
 
-                ]
-              },
+          ]
+        },
 
-              {
-                "subComponentCode": "EG07",
-                "subComponentName": "Quality of management information",
-                "subComponentQuestions": [
-                  {
-                    "questionType": "Enterprise goal",
-                    "questionDescription": "Degree of board and executive management satisfaction with decision-making information",
-                    "questionAnswer": 0,
-                    "questionScore": 0,
-                    "questionComment": "comment"
-                  },
-                  {
-                    "questionType": "Enterprise goal",
-                    "questionDescription": "Number of incidents caused by incorrect business decisions based on inaccurate information",
-                    "questionAnswer": 0,
-                    "questionScore": 0,
-                    "questionComment": "comment"
-                  },
-                  {
-                    "questionType": "Enterprise goal",
-                    "questionDescription": "Time to provide information supporting effective business decisions",
-                    "questionAnswer": 0,
-                    "questionScore": 0,
-                    "questionComment": "comment"
-                  },
-                  {
-                    "questionType": "Enterprise goal",
-                    "questionDescription": "Timeliness of management information",
-                    "questionAnswer": 0,
-                    "questionScore": 0,
-                    "questionComment": "comment"
-                  }
+        {
+          "subComponentCode": "EG07",
+          "subComponentName": "Quality of management information",
+          "subComponentQuestions": [
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Degree of board and executive management satisfaction with decision-making information",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Number of incidents caused by incorrect business decisions based on inaccurate information",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Time to provide information supporting effective business decisions",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Timeliness of management information",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
 
-                ]
-              },
-              {
-                "subComponentCode": "EG08",
-                "subComponentName": "Optimization of internal business process functionality",
-                "subComponentQuestions": [
-                  {
-                    "questionType": "Enterprise goal",
-                    "questionDescription": "Satisfaction levels of board and executive management with business process capabilities",
-                    "questionAnswer": 0,
-                    "questionScore": 0,
-                    "questionComment": "comment"
-                  },
-                  {
-                    "questionType": "Enterprise goal",
-                    "questionDescription": "Satisfaction levels of customers with service delivery capabilities",
-                    "questionAnswer": 0,
-                    "questionScore": 0,
-                    "questionComment": "comment"
-                  },
-                  {
-                    "questionType": "Enterprise goal",
-                    "questionDescription": "Satisfaction levels of suppliers with supply chain capabilities",
-                    "questionAnswer": 0,
-                    "questionScore": 0,
-                    "questionComment": "comment"
-                  }
+          ]
+        },
+        {
+          "subComponentCode": "EG08",
+          "subComponentName": "Optimization of internal business process functionality",
+          "subComponentQuestions": [
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Satisfaction levels of board and executive management with business process capabilities",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Satisfaction levels of customers with service delivery capabilities",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Satisfaction levels of suppliers with supply chain capabilities",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
 
-                ]
-              },
-              {
-                "subComponentCode": "EG12",
-                "subComponentName": "Managed digital transformation programs",
-                "subComponentQuestions": [
-                  {
-                    "questionType": "Enterprise goal",
-                    "questionDescription": "Number of programs on time and within budget",
-                    "questionAnswer": 0,
-                    "questionScore": 0,
-                    "questionComment": "comment"
-                  },
-                  {
-                    "questionType": "Enterprise goal",
-                    "questionDescription": "Percent of stakeholders satisfied with program delivery",
-                    "questionAnswer": 0,
-                    "questionScore": 0,
-                    "questionComment": "comment"
-                  },
-                  {
-                    "questionType": "Enterprise goal",
-                    "questionDescription": "Percent of business transformation programs stopped",
-                    "questionAnswer": 0,
-                    "questionScore": 0,
-                    "questionComment": "comment"
-                  },
-                  {
-                    "questionType": "Enterprise goal",
-                    "questionDescription": "Percent of business transformation programs with regular reported status updates",
-                    "questionAnswer": 0,
-                    "questionScore": 0,
-                    "questionComment": "comment"
-                  }
+          ]
+        },
+        {
+          "subComponentCode": "EG12",
+          "subComponentName": "Managed digital transformation programs",
+          "subComponentQuestions": [
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Number of programs on time and within budget",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Percent of stakeholders satisfied with program delivery",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Percent of business transformation programs stopped",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Percent of business transformation programs with regular reported status updates",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
 
-                ]
-              }
-            ]
+          ]
+        }
+      ]
     },
 
     {
@@ -203,178 +204,612 @@
               "questionComment": "comment"
             }
           ]
+        },
+
+        {
+          "subComponentCode": "AG09",
+          "subComponentName": "Delivering programs on time, on budget and meeting requirements and quality standards",
+          "subComponentQuestions": [
+            {
+              "questionType": "Alignment goal",
+              "questionDescription": "Number of programs/projects on time and within budget",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
             },
-            
-              {
-                "subComponentCode": "AG09",
-                "subComponentName": "Delivering programs on time, on budget and meeting requirements and quality standards",
-                "subComponentQuestions": [
-                  {
-                    "questionType": "Alignment goal",
-                    "questionDescription": "Number of programs/projects on time and within budget",
-                    "questionAnswer": 0,
-                    "questionScore": 0,
-                    "questionComment": "comment"
-                  },
-                  {
-                    "questionType": "Alignment goal",
-                    "questionDescription": "Number of programs needing significant rework due to quality defects",
-                    "questionAnswer": 0,
-                    "questionScore": 0,
-                    "questionComment": "comment"
-                  },
-                  {
-                    "questionType": "Alignment goal",
-                    "questionDescription": "Percent of stakeholders satisfied with program/project quality",
-                    "questionAnswer": 0,
-                    "questionScore": 0,
-                    "questionComment": "comment"
-                  }
-                ]
-              }
-            ]
-          
+            {
+              "questionType": "Alignment goal",
+              "questionDescription": "Number of programs needing significant rework due to quality defects",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Alignment goal",
+              "questionDescription": "Percent of stakeholders satisfied with program/project quality",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        }
+      ]
+
+    },
+    {
+      "componentName": "A",
+      "componentDescription": "Processes",
+      "componentPercFinal": 0,
+      "subComponents": [
+        {
+          "subComponentCode": "APO11.01",
+          "subComponentName": "Establish a quality management system (QMS).",
+          "subComponentDescription": "Establish and maintain a quality management system (QMS) that provides a standard formal and continuous approach to quality management of information. The QMS should enable technology and business processes to align with business requirements and enterprise quality management.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Ensure that the I&T control framework and the business and IT processes include a standard, formal and continuous approach to quality management that is aligned with enterprise requirements. Within the I&T control framework and the business and IT processes identify quality requirements and criteria (e.g. based on legal requirements and requirements from customers).",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Define roles, tasks, decision rights and responsibilities for quality management in the organizational structure.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Obtain input from management and external and internal stakeholders on the definition of quality requirements and quality management criteria.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": "Regularly monitor and review the QMS against agreed acceptance criteria. Include feedback from customers, users and management.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 5",
+              "questionDescription": "Respond to discrepancies in review results to continuously improve the QMS.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "string",
+              "relatedGuidance": "PMBOK Guide Sixth Edition, 2017",
+              "detailedReference": "Part 1: 8.1 Plan quality management",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+
+          ]
         },
         {
-          "componentName": "A",
-          "componentDescription": "Processes",
-          "componentPercFinal": 0,
-          "subComponents": [
+          "subComponentCode": "APO11.02  ",
+          "subComponentName": "Focus quality management on customers.",
+          "subComponentDescription": "Focus quality management on customers by determining their requirements and ensuring integration in quality management practices.",
+          "subComponentQuestions": [
             {
-              "subComponentCode": "APO11.01",
-              "subComponentName": "Establish a quality management system (QMS).",
-              "subComponentDescription": "Establish and maintain a quality management system (QMS) that provides a standard formal and continuous approach to quality management of information. The QMS should enable technology and business processes to align with business requirements and enterprise quality management.",
-              "subComponentQuestions": [
-                {
-                  "questionType": "Maturity Level 3",
-                  "questionDescription": "Ensure that the I&T control framework and the business and IT processes include a standard, formal and continuous approach to quality management that is aligned with enterprise requirements. Within the I&T control framework and the business and IT processes identify quality requirements and criteria (e.g. based on legal requirements and requirements from customers).",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 3",
-                  "questionDescription": "Define roles, tasks, decision rights and responsibilities for quality management in the organizational structure.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
+              "questionType": "Maturity Level 3",
+              "questionDescription": " Focus quality management on customers by determining internal and external customer requirements and ensuring alignment of the I&T standards and practices. Define and communicate roles and responsibilities concerning conflict resolution between the user/customer and the IT organization",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Manage the business needs and expectations for each business process, IT operational service and new solutions. Maintain their quality acceptance criteria.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Communicate customer requirements and expectations throughout the business and IT organization.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": "Periodically obtain customer views on business process and service provisioning and IT solution delivery. Determine the impact on I&T standards and practices and ensure that customer expectations are met and actioned.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": "Capture quality acceptance criteria for inclusion in SLAs",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Business and customer quality requirements",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "Outside COBIT",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
 
-                {
-                  "questionType": "Maturity Level 3",
-                  "questionDescription": "Obtain input from management and external and internal stakeholders on the definition of quality requirements and quality management criteria.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 4",
-                  "questionDescription": "Regularly monitor and review the QMS against agreed acceptance criteria. Include feedback from customers, users and management.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 5",
-                  "questionDescription": "Respond to discrepancies in review results to continuously improve the QMS.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Related Guidance",
-                  "questionDescription": "string",
-                  "relatedGuidance": "PMBOK Guide Sixth Edition, 2017",
-                  "detailedReference": "Part 1: 8.1 Plan quality management",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                }
+            {
+              "questionType": "Output",
+              "questionDescription": "Customer requirements for quality management",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "outputTo": "APO08.05;APO09.03;BAI01.07;BAI11.06",
+              "inputFrom": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Results of quality of service including customer feedback",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "outputTo": "APO08.05;APO09.05;BAI05.01;BAI07.07",
+              "inputFrom": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Acceptance criteria",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "outputTo": "BAI02.01;BAI02.02",
+              "inputFrom": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
 
-              ]
+          ]
+        },
+        {
+          "subComponentCode": "APO11.03 ",
+          "subComponentName": "Manage quality standards, practices and procedures and integrate quality management into key processes and solutions.",
+          "subComponentDescription": "Identify and maintain standards, procedures and practices for key processes to guide the enterprise in meeting the intent of the agreed quality management standards (QMS). This activity should align with I&T control framework requirements. Consider certification for key processes organizational units products or services.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Define the quality management standards, practices and procedures in line with the I&T control framework’s requirements and enterprise quality management criteria and policies.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Integrate the required quality management practices in key processes and solutions across the organization.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Consider the benefits and costs of quality certifications.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": " Effectively communicate the quality management approach (e.g., through regular, formal quality training programs).",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": "Record and monitor quality data. Use industry good practices for reference when improving and tailoring the enterprise’s quality practices.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": "Regularly review the continued relevance, efficiency and effectiveness of specific quality management processes. Monitor the achievement of quality objectives.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "string",
+              "relatedGuidance": "PMBOK Guide Sixth Edition, 2017",
+              "detailedReference": "Part 1: 8.2 Manage quality",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+
+
+
+          ]
+        },
+        {
+          "subComponentCode": "APO11.04",
+          "subComponentName": " Perform quality monitoring, control and reviews",
+          "subComponentDescription": "Monitor the quality of processes and services on an ongoing basis in line with quality management standards. Define plan and implement measurements to monitor customer satisfaction with quality as well as the value provide by the quality management system (QMS). The information gathered should be used by the process owner to improve quality.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": ". Prepare and conduct quality reviews for key organizational processes and solutions.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": "For these key organizational processes and solutions, monitor goal-driven quality metrics aligned to overall quality objectives.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": " Evaluate performance and provide regular and formal reporting of service agreement performance, including deviations from the agreed values. Distribute this report to business relationship management.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": " Ensure that management and process owners regularly review quality management performance against defined quality metrics.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": " Analyze overall quality management performance results.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 5",
+              "questionDescription": "Report the quality management performance review results and initiate improvements where appropriate.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+
+
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "string",
+              "relatedGuidance": "PMBOK Guide Sixth Edition, 2017",
+              "detailedReference": "Part 1: 8.3 Control quality",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+
+          ]
+        },
+        {
+          "subComponentCode": "APO11.05",
+          "subComponentName": "Maintain continuous improvement",
+          "subComponentDescription": "Maintain and regularly communicate an overall quality plan that promotes continuous improvement. The plan should define the need for and benefits of continuous improvement. Collect and analyze  data about the quality management system (QMS) and improve its effectiveness. Correct non conformities to prevent recurrence.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Establish a platform to share good practices and capture information on defects and mistakes to enable learning from them",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Identify examples of excellent quality delivery processes that can benefit other services or projects. Share these with the service and project deliver teams to encourage improvement.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Identify recurring examples of quality defects. Determine their root cause, evaluate their impact and result, and agree on improvement actions with the service and/or project delivery teams.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Provide employees with training in the methods and tools of continual improvement",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": "Benchmark the results of the quality reviews against internal historical data, industry guidelines, standards and data from similar types  enterprises.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "string",
+              "relatedGuidance": "National Institute of Standards and Technology Framework for Improving Critical Infrastructure Cybersecurity v1.1 April 2018",
+              "detailedReference": "DE.DP Detection Processes",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+
+            {
+              "questionType": "Output",
+              "questionDescription": "Quality review benchmark results",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "outputTo": "All APO;All BAI; All DSS;All MEA",
+              "inputFrom": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Examples of good practice to be shared",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "outputTo": "All APO;All BAI; All DSS;All MEA",
+              "inputFrom": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Communications on continual improvement and best practices",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "outputTo": "All APO;All BAI; All DSS;All MEA",
+              "inputFrom": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "componentName": "B",
+      "componentDescription": "Organizational Structures",
+      "componentPercFinal": 0,
+      "componentQuestions": [
+        {
+          "questionType": "APO11.01",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "APO11.02 ",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "APO11.03 ",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "APO11.04",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "APO11.05",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        }
+      ]
+    },
+    {
+      "componentCode": "C",
+      "componentDescription": "Information Flows and Items",
+      "componentPercFinal": 0,
+      "subComponents": [
+        {
+          "subComponentCode": "APO11.01",
+          "subComponentName": "Establish a quality management system (QMS).",
+          "subComponentDescription": "Establish and maintain a quality management system (QMS) that provides a standard formal and continuous approach to quality management of information. The QMS should enable technology and business processes to align with business requirements and enterprise quality management.",
+          "subComponentQuestions": [
+
+            {
+              "questionType": "Input",
+              "questionDescription": "Enterprisewide quality system",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "Outside COBIT",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Results of QMS effectiveness reviews",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "outputTo": "BAI03.06",
+              "inputFrom": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Quality management plans",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "outputTo": "APO14.04;APO14.06;BAI01.07;BAI11.05",
+              "inputFrom": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Quality management system (QMS) roles responsibilities and decision rights",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "outputTo": "APO01.05;DSS06.03",
+              "inputFrom": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
             },
             {
               "subComponentCode": "APO11.02  ",
               "subComponentName": "Focus quality management on customers.",
               "subComponentDescription": "Focus quality management on customers by determining their requirements and ensuring integration in quality management practices.",
               "subComponentQuestions": [
-                {
-                  "questionType": "Maturity Level 3",
-                  "questionDescription": " Focus quality management on customers by determining internal and external customer requirements and ensuring alignment of the I&T standards and practices. Define and communicate roles and responsibilities concerning conflict resolution between the user/customer and the IT organization",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 3",
-                  "questionDescription": "Manage the business needs and expectations for each business process, IT operational service and new solutions. Maintain their quality acceptance criteria.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 3",
-                  "questionDescription": "Communicate customer requirements and expectations throughout the business and IT organization.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 4",
-                  "questionDescription": "Periodically obtain customer views on business process and service provisioning and IT solution delivery. Determine the impact on I&T standards and practices and ensure that customer expectations are met and actioned.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 4",
-                  "questionDescription": "Capture quality acceptance criteria for inclusion in SLAs",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
                 {
                   "questionType": "Input",
                   "questionDescription": "Business and customer quality requirements",
@@ -429,86 +864,59 @@
               "subComponentDescription": "Identify and maintain standards, procedures and practices for key processes to guide the enterprise in meeting the intent of the agreed quality management standards (QMS). This activity should align with I&T control framework requirements. Consider certification for key processes organizational units products or services.",
               "subComponentQuestions": [
                 {
-                  "questionType": "Maturity Level 2",
-                  "questionDescription": "Define the quality management standards, practices and procedures in line with the I&T control framework’s requirements and enterprise quality management criteria and policies.",
+                  "questionType": "Input",
+                  "questionDescription": "Approved quality reviews",
                   "relatedGuidance": "string",
                   "detailedReference": "string",
-                  "inputFrom": "string",
+                  "inputFrom": "BAI02.04",
                   "outputTo": "string,",
                   "questionAnswer": 0,
                   "questionScore": 0,
                   "questionComment": "comment"
                 },
                 {
-                  "questionType": "Maturity Level 3",
-                  "questionDescription": "Integrate the required quality management practices in key processes and solutions across the organization.",
+                  "questionType": "Input",
+                  "questionDescription": "• Available quality certifications • Industry good practices",
                   "relatedGuidance": "string",
                   "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
+                  "inputFrom": "Outside COBIT",
                   "questionAnswer": 0,
                   "questionScore": 0,
                   "questionComment": "comment"
                 },
                 {
-                  "questionType": "Maturity Level 3",
-                  "questionDescription": "Consider the benefits and costs of quality certifications.",
+                  "questionType": "Output",
+                  "questionDescription": "Quality management standards",
                   "relatedGuidance": "string",
                   "detailedReference": "string",
+                  "outputTo": "All APO;All BAI; All DSS;All MEA",
                   "inputFrom": "string",
-                  "outputTo": "string,",
                   "questionAnswer": 0,
                   "questionScore": 0,
                   "questionComment": "comment"
                 },
                 {
-                  "questionType": "Maturity Level 3",
-                  "questionDescription": " Effectively communicate the quality management approach (e.g., through regular, formal quality training programs).",
+                  "questionType": "Output",
+                  "questionDescription": "Root causes of quality delivery failures",
                   "relatedGuidance": "string",
                   "detailedReference": "string",
+                  "outputTo": "APO08.02;APO09.04;BAI07.08;MEA02.04; MEA04.04",
                   "inputFrom": "string",
-                  "outputTo": "string,",
                   "questionAnswer": 0,
                   "questionScore": 0,
                   "questionComment": "comment"
                 },
                 {
-                  "questionType": "Maturity Level 4",
-                  "questionDescription": "Record and monitor quality data. Use industry good practices for reference when improving and tailoring the enterprise’s quality practices.",
+                  "questionType": "Output",
+                  "questionDescription": "Results of quality monitoring",
                   "relatedGuidance": "string",
                   "detailedReference": "string",
+                  "outputTo": "APO08.05;APO09.04;BAI07.08",
                   "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 4",
-                  "questionDescription": "Regularly review the continued relevance, efficiency and effectiveness of specific quality management processes. Monitor the achievement of quality objectives.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-
-                {
-                  "questionType": "Related Guidance",
-                  "questionDescription": "string",
-                  "relatedGuidance": "PMBOK Guide Sixth Edition, 2017",
-                  "detailedReference": "Part 1: 8.2 Manage quality",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
                   "questionAnswer": 0,
                   "questionScore": 0,
                   "questionComment": "comment"
                 }
-
-
-
               ]
             },
             {
@@ -517,159 +925,59 @@
               "subComponentDescription": "Monitor the quality of processes and services on an ongoing basis in line with quality management standards. Define plan and implement measurements to monitor customer satisfaction with quality as well as the value provide by the quality management system (QMS). The information gathered should be used by the process owner to improve quality.",
               "subComponentQuestions": [
                 {
-                  "questionType": "Maturity Level 3",
-                  "questionDescription": ". Prepare and conduct quality reviews for key organizational processes and solutions.",
+                  "questionType": "Input",
+                  "questionDescription": "• Quality assurance plan •Quality review results exceptions and corrections",
                   "relatedGuidance": "string",
                   "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
+                  "outputFrom": "sring,",
+                  "inputFrom": "BAI03.06",
                   "questionAnswer": 0,
                   "questionScore": 0,
                   "questionComment": "comment"
                 },
                 {
-                  "questionType": "Maturity Level 4",
-                  "questionDescription": "For these key organizational processes and solutions, monitor goal-driven quality metrics aligned to overall quality objectives.",
+                  "questionType": "Input",
+                  "questionDescription": "• Incident status and trends report • Status of request fulfilment and trends report",
                   "relatedGuidance": "string",
                   "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
+                  "inputFrom": "DSS02.07",
                   "questionAnswer": 0,
                   "questionScore": 0,
                   "questionComment": "comment"
                 },
                 {
-                  "questionType": "Maturity Level 4",
-                  "questionDescription": " Evaluate performance and provide regular and formal reporting of service agreement performance, including deviations from the agreed values. Distribute this report to business relationship management.",
+                  "questionType": "Output",
+                  "questionDescription": "Process quality of service goals and metrics",
                   "relatedGuidance": "string",
                   "detailedReference": "string",
+                  "outputTo": "All APO;All BAI; All DSS;All MEA",
                   "inputFrom": "string",
-                  "outputTo": "string,",
                   "questionAnswer": 0,
                   "questionScore": 0,
                   "questionComment": "comment"
                 },
                 {
-                  "questionType": "Maturity Level 4",
-                  "questionDescription": " Ensure that management and process owners regularly review quality management performance against defined quality metrics.",
+                  "questionType": "Output",
+                  "questionDescription": "Results of quality reviews and audits",
                   "relatedGuidance": "string",
                   "detailedReference": "string",
+                  "outputTo": "APO08.05;APO09.04; APO09.05;BAI07.08",
                   "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 4",
-                  "questionDescription": " Analyze overall quality management performance results.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 5",
-                  "questionDescription": "Report the quality management performance review results and initiate improvements where appropriate.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-
-
-                {
-                  "questionType": "Related Guidance",
-                  "questionDescription": "string",
-                  "relatedGuidance": "PMBOK Guide Sixth Edition, 2017",
-                  "detailedReference": "Part 1: 8.3 Control quality",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
                   "questionAnswer": 0,
                   "questionScore": 0,
                   "questionComment": "comment"
                 }
 
               ]
+
+
+
             },
             {
               "subComponentCode": "APO11.05",
               "subComponentName": "Maintain continuous improvement",
               "subComponentDescription": "Maintain and regularly communicate an overall quality plan that promotes continuous improvement. The plan should define the need for and benefits of continuous improvement. Collect and analyze  data about the quality management system (QMS) and improve its effectiveness. Correct non conformities to prevent recurrence.",
               "subComponentQuestions": [
-                {
-                  "questionType": "Maturity Level 2",
-                  "questionDescription": "Establish a platform to share good practices and capture information on defects and mistakes to enable learning from them",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 3",
-                  "questionDescription": "Identify examples of excellent quality delivery processes that can benefit other services or projects. Share these with the service and project deliver teams to encourage improvement.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 3",
-                  "questionDescription": "Identify recurring examples of quality defects. Determine their root cause, evaluate their impact and result, and agree on improvement actions with the service and/or project delivery teams.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 3",
-                  "questionDescription": "Provide employees with training in the methods and tools of continual improvement",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 4",
-                  "questionDescription": "Benchmark the results of the quality reviews against internal historical data, industry guidelines, standards and data from similar types  enterprises.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string, ",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Related Guidance",
-                  "questionDescription": "string",
-                  "relatedGuidance": "National Institute of Standards and Technology Framework for Improving Critical Infrastructure Cybersecurity v1.1 April 2018",
-                  "detailedReference": "DE.DP Detection Processes",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-
                 {
                   "questionType": "Output",
                   "questionDescription": "Quality review benchmark results",
@@ -706,414 +1014,107 @@
               ]
             }
           ]
+        }
+      ]
+    },
+    {
+      "componentName": "D",
+      "componentDescription": "Peoples, Skills and Competencies",
+      "componentPercFinal": 0,
+      "componentQuestions": [
+        {
+          "questionType": "Component question",
+          "questionSkill": "ICT quality strategy development",
+          "relatedGuidance": "e-Competence Framework (e-CF)—A common European Framework for ICT Professionals in all industry sectors—Part 1:Framework 2016 ",
+          "detailedReference": "D. Enable—D.2. ICT Quality Strategy Development",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
         },
         {
-          "componentName": "B",
-          "componentDescription": "Organizational Structures",
-          "componentPercFinal": 0,
-          "componentQuestions": [
-            {
-              "questionType": "APO11.01",
-              "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
-              "questionAnswer": 0,
-              "questionScore": 0,
-              "questionComment": "comment"
-            },
-            {
-              "questionType": "APO11.02 ",
-              "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
-              "questionAnswer": 0,
-              "questionScore": 0,
-              "questionComment": "comment"
-            },
-            {
-              "questionType": "APO11.03 ",
-              "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
-              "questionAnswer": 0,
-              "questionScore": 0,
-              "questionComment": "comment"
-            },
-            {
-              "questionType": "APO11.04",
-              "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
-              "questionAnswer": 0,
-              "questionScore": 0,
-              "questionComment": "comment"
-            },
-            {
-              "questionType": "APO11.05",
-              "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
-              "questionAnswer": 0,
-              "questionScore": 0,
-              "questionComment": "comment"
-            }
-          ]
+          "questionType": "Component question",
+          "questionSkill": "Quality assurance",
+          "relatedGuidance": "Skills Framework for the Information Age V6, 2015",
+          "detailedReference": "QUAS",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
         },
         {
-          "componentCode": "C",
-          "componentDescription": "Information Flows and Items",
-          "componentPercFinal": 0,
-          "subComponents": [
-            {
-              "subComponentCode": "APO11.01",
-              "subComponentName": "Establish a quality management system (QMS).",
-              "subComponentDescription": "Establish and maintain a quality management system (QMS) that provides a standard formal and continuous approach to quality management of information. The QMS should enable technology and business processes to align with business requirements and enterprise quality management.",
-              "subComponentQuestions": [
-
-                {
-                  "questionType": "Input",
-                  "questionDescription": "Enterprisewide quality system",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "Outside COBIT",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Output",
-                  "questionDescription": "Results of QMS effectiveness reviews",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "outputTo": "BAI03.06",
-                  "inputFrom": "string",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Output",
-                  "questionDescription": "Quality management plans",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "outputTo": "APO14.04;APO14.06;BAI01.07;BAI11.05",
-                  "inputFrom": "string",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Output",
-                  "questionDescription": "Quality management system (QMS) roles responsibilities and decision rights",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "outputTo": "APO01.05;DSS06.03",
-                  "inputFrom": "string",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "subComponentCode": "APO11.02  ",
-                  "subComponentName": "Focus quality management on customers.",
-                  "subComponentDescription": "Focus quality management on customers by determining their requirements and ensuring integration in quality management practices.",
-                  "subComponentQuestions": [
-                    {
-                      "questionType": "Input",
-                      "questionDescription": "Business and customer quality requirements",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "Outside COBIT",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-
-                    {
-                      "questionType": "Output",
-                      "questionDescription": "Customer requirements for quality management",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "outputTo": "APO08.05;APO09.03;BAI01.07;BAI11.06",
-                      "inputFrom": "string",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Output",
-                      "questionDescription": "Results of quality of service including customer feedback",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "outputTo": "APO08.05;APO09.05;BAI05.01;BAI07.07",
-                      "inputFrom": "string",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Output",
-                      "questionDescription": "Acceptance criteria",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "outputTo": "BAI02.01;BAI02.02",
-                      "inputFrom": "string",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    }
-
-                  ]
-                },
-                {
-                  "subComponentCode": "APO11.03 ",
-                  "subComponentName": "Manage quality standards, practices and procedures and integrate quality management into key processes and solutions.",
-                  "subComponentDescription": "Identify and maintain standards, procedures and practices for key processes to guide the enterprise in meeting the intent of the agreed quality management standards (QMS). This activity should align with I&T control framework requirements. Consider certification for key processes organizational units products or services.",
-                  "subComponentQuestions": [
-                    {
-                      "questionType": "Input",
-                      "questionDescription": "Approved quality reviews",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "BAI02.04",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Input",
-                      "questionDescription": "• Available quality certifications • Industry good practices",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "Outside COBIT",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Output",
-                      "questionDescription": "Quality management standards",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "outputTo": "All APO;All BAI; All DSS;All MEA",
-                      "inputFrom": "string",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Output",
-                      "questionDescription": "Root causes of quality delivery failures",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "outputTo": "APO08.02;APO09.04;BAI07.08;MEA02.04; MEA04.04",
-                      "inputFrom": "string",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Output",
-                      "questionDescription": "Results of quality monitoring",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "outputTo": "APO08.05;APO09.04;BAI07.08",
-                      "inputFrom": "string",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    }
-                  ]
-                },
-                {
-                  "subComponentCode": "APO11.04",
-                  "subComponentName": " Perform quality monitoring, control and reviews",
-                  "subComponentDescription": "Monitor the quality of processes and services on an ongoing basis in line with quality management standards. Define plan and implement measurements to monitor customer satisfaction with quality as well as the value provide by the quality management system (QMS). The information gathered should be used by the process owner to improve quality.",
-                  "subComponentQuestions": [
-                    {
-                      "questionType": "Input",
-                      "questionDescription": "• Quality assurance plan •Quality review results exceptions and corrections",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "outputFrom": "sring,",
-                      "inputFrom": "BAI03.06",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Input",
-                      "questionDescription": "• Incident status and trends report • Status of request fulfilment and trends report",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "DSS02.07",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Output",
-                      "questionDescription": "Process quality of service goals and metrics",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "outputTo": "All APO;All BAI; All DSS;All MEA",
-                      "inputFrom": "string",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Output",
-                      "questionDescription": "Results of quality reviews and audits",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "outputTo": "APO08.05;APO09.04; APO09.05;BAI07.08",
-                      "inputFrom": "string",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    }
-
-                  ]
-
-
-
-                },
-                {
-                  "subComponentCode": "APO11.05",
-                  "subComponentName": "Maintain continuous improvement",
-                  "subComponentDescription": "Maintain and regularly communicate an overall quality plan that promotes continuous improvement. The plan should define the need for and benefits of continuous improvement. Collect and analyze  data about the quality management system (QMS) and improve its effectiveness. Correct non conformities to prevent recurrence.",
-                  "subComponentQuestions": [
-                    {
-                      "questionType": "Output",
-                      "questionDescription": "Quality review benchmark results",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "outputTo": "All APO;All BAI; All DSS;All MEA",
-                      "inputFrom": "string",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Output",
-                      "questionDescription": "Examples of good practice to be shared",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "outputTo": "All APO;All BAI; All DSS;All MEA",
-                      "inputFrom": "string",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Output",
-                      "questionDescription": "Communications on continual improvement and best practices",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "outputTo": "All APO;All BAI; All DSS;All MEA",
-                      "inputFrom": "string",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
+          "questionType": "Component question",
+          "questionSkill": "Quality assurance",
+          "relatedGuidance": "Skills Framework for the Information Age V6, 2015",
+          "detailedReference": "QUMG",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
         },
         {
-          "componentName": "D",
-          "componentDescription": "Peoples, Skills and Competencies",
-          "componentPercFinal": 0,
-          "componentQuestions": [
-            {
-              "questionType": "Component question",
-              "questionSkill": "ICT quality strategy development",
-              "relatedGuidance": "e-Competence Framework (e-CF)—A common European Framework for ICT Professionals in all industry sectors—Part 1:Framework 2016 ",
-              "detailedReference": "D. Enable—D.2. ICT Quality Strategy Development",
-              "questionAnswer": 0,
-              "questionScore": 0,
-              "questionComment": "comment"
-            },
-            {
-              "questionType": "Component question",
-              "questionSkill": "Quality assurance",
-              "relatedGuidance": "Skills Framework for the Information Age V6, 2015",
-              "detailedReference": "QUAS",
-              "questionAnswer": 0,
-              "questionScore": 0,
-              "questionComment": "comment"
-            },
-            {
-              "questionType": "Component question",
-              "questionSkill": "Quality assurance",
-              "relatedGuidance": "Skills Framework for the Information Age V6, 2015",
-              "detailedReference": "QUMG",
-              "questionAnswer": 0,
-              "questionScore": 0,
-              "questionComment": "comment"
-            },
-            {
-              "questionType": "Component question",
-              "questionSkill": "Quality assurance",
-              "relatedGuidance": "Skills Framework for the Information Age V6, 2015",
-              "detailedReference": "QUST",
-              "questionAnswer": 0,
-              "questionScore": 0,
-              "questionComment": "comment"
-            }
-          ]
-        },
+          "questionType": "Component question",
+          "questionSkill": "Quality assurance",
+          "relatedGuidance": "Skills Framework for the Information Age V6, 2015",
+          "detailedReference": "QUST",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        }
+      ]
+    },
+    {
+      "componentName": "E",
+      "componentDescription": "Principles Policies and Procedures",
+      "componentPercFinal": 0,
+      "componentQuestions": [
         {
-          "componentName": "E",
-          "componentDescription": "Principles Policies and Procedures",
-          "componentPercFinal": 0,
-          "componentQuestions": [
-            {
-              "questionType": "Component question",
-              "relevantPolicy": "Quality management policy",
-              "policyDescription": "Captures management’s vision of enterprise quality objectives acceptable level of quality and duties of specific teams and entities to ensure quality.",
-              "detailedGuidance": "string",
-              "detailedReference": "string",
-              "questionAnswer": 0,
-              "questionScore": 0,
-              "questionComment": "comment"
-            }
+          "questionType": "Component question",
+          "relevantPolicy": "Quality management policy",
+          "policyDescription": "Captures management’s vision of enterprise quality objectives acceptable level of quality and duties of specific teams and entities to ensure quality.",
+          "detailedGuidance": "string",
+          "detailedReference": "string",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        }
 
-          ]
+      ]
+    },
+    {
+      "componentName": "F",
+      "componentDescription": "Culture, Ethics and Behavior",
+      "componentPercFinal": 0,
+      "componentQuestions": [
+        {
+          "questionType": "Component question",
+          "keyCultureElement": "Promote a culture of quality and continual improvement. Maintain, and regularly communicate the need for and benefits of quality and continuous improvement.",
+          "relatedGuidance": "string",
+          "detailedReference": "string",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        }
+      ]
+    },
+    {
+      "componentName": "G",
+      "componentDescription": "Services, Infrastructure and Applications",
+      "componentPercFinal": 0,
+      "componentQuestions": [
+        {
+          "questionType": "Component question",
+          "questionDescription": " QMS",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
         },
         {
-          "componentName": "F",
-          "componentDescription": "Culture, Ethics and Behavior",
-          "componentPercFinal": 0,
-          "componentQuestions": [
-            {
-              "questionType": "Component question",
-              "keyCultureElement": "Promote a culture of quality and continual improvement. Maintain, and regularly communicate the need for and benefits of quality and continuous improvement.",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
-              "questionAnswer": 0,
-              "questionScore": 0,
-              "questionComment": "comment"
-            }
-          ]
-        },
-        {
-          "componentName": "G",
-          "componentDescription": "Services, Infrastructure and Applications",
-          "componentPercFinal": 0,
-          "componentQuestions": [
-            {
-              "questionType": "Component question",
-              "questionDescription": " QMS",
-              "questionAnswer": 0,
-              "questionScore": 0,
-              "questionComment": "comment"
-            },
-            {
-              "questionType": "Component question",
-              "questionDescription": "Third-party quality assurance services",
-              "questionAnswer": 0,
-              "questionScore": 0,
-              "questionComment": "comment"
-            }
-          ]
+          "questionType": "Component question",
+          "questionDescription": "Third-party quality assurance services",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
         }
       ]
     }
+  ]
+}
   

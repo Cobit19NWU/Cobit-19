@@ -1,7 +1,8 @@
-{  
+{
   "objectiveName": "BAI06",
   "objectiveDescription": "Manage all changes in a controlled manner, including standard changes and emergency maintenance relating to business processes, applications and infrastructure. This includes change standards and procedures, impact assessment, prioritization and authorization, emergency changes, tracking, reporting, closure, and documentation.",
   "objectivePurpose": "Enable fast and reliable delivery of change to the business. Mitigate the risk of negatively impacting the stability or integrity of the changed environment.",
+  "typeOfObjective": "Management",
   "maturityLevel": 0,
   "maturityLevel0PercFinal": 0,
   "maturityLevel1PercFinal": 0,
@@ -48,7 +49,7 @@
               "questionComment": "comment"
             }
           ]
-          
+
         }
       ]
     },
@@ -92,610 +93,610 @@
             }
           ]
         }
-                  ]
-                },
-                {
-                  "componentName": "A",
-                  "componentDescription": "Processes",
-                  "componentPercFinal": 0,
-                  "subComponents": [
+      ]
+    },
+    {
+      "componentName": "A",
+      "componentDescription": "Processes",
+      "componentPercFinal": 0,
+      "subComponents": [
 
-                    {
-                      "subComponentCode": "BAI06.01",
-                      "subComponentName": "Evaluate, prioritize and authorize change requests.",
-                      "subComponentDescription": "Evaluate all requests for change to determine the impact on business processes and I&T services, and to assess whether change will adversely affect the operational environment and introduce unacceptable risk. Ensure that changes are logged, prioritized, categorized, assessed, authorized, planned and scheduled.",
-                      "subComponentQuestions": [
-                        {
-                          "questionType": "Maturity Level 2",
-                          "questionDescription": "Use formal change requests to enable business process owners and IT to request changes to business process, infrastructure, systems or applications. Make sure that all such changes arise only through the change request management process.",
-                          "relatedGuidance": "string",
-                          "detailedReference": "string",
-                          "inputFrom": "string",
-                          "outputTo": "string,",
-                          "questionAnswer": 0,
-                          "questionScore": 0,
-                          "questionComment": "comment"
-                        },
-                        {
-                          "questionType": "Maturity Level 2",
-                          "questionDescription": "Categorize all requested changes (e.g., business process, infrastructure, operating systems, networks, application systems, purchased/packaged application software) and relate affected configuration items.",
-                          "relatedGuidance": "string",
-                          "detailedReference": "string",
-                          "inputFrom": "string",
-                          "outputTo": "string,",
-                          "questionAnswer": 0,
-                          "questionScore": 0,
-                          "questionComment": "comment"
-                        },
-                        {
-                          "questionType": "Maturity Level 2",
-                          "questionDescription": "Prioritize all requested changes based on the business and technical requirements; resources required; and the legal, regulatory and contractual reasons for the requested change.",
-                          "relatedGuidance": "string",
-                          "detailedReference": "string",
-                          "inputFrom": "string",
-                          "outputTo": "string, ",
-                          "questionAnswer": 0,
-                          "questionScore": 0,
-                          "questionComment": "comment"
-                        },
-                        {
-                          "questionType": "Maturity Level 2",
-                          "questionDescription": "Formally approve each change by business process owners, service managers and IT technical stakeholders, as appropriate. Changes that are low-risk and relatively frequent should be pre-approved as standard changes.",
-                          "relatedGuidance": "string",
-                          "detailedReference": "string",
-                          "inputFrom": "string",
-                          "outputTo": "string, ",
-                          "questionAnswer": 0,
-                          "questionScore": 0,
-                          "questionComment": "comment"
-                        },
-                        {
-                          "questionType": "Maturity Level 2",
-                          "questionDescription": "Plan and schedule all approved changes.",
-                          "relatedGuidance": "string",
-                          "detailedReference": "string",
-                          "inputFrom": "string",
-                          "outputTo": "string, ",
-                          "questionAnswer": 0,
-                          "questionScore": 0,
-                          "questionComment": "comment"
-                        },
-                        {
-                          "questionType": "Maturity Level 3",
-                          "questionDescription": "Plan and evaluate all requests in a structured fashion. Include an impact analysis on business process, infrastructure, systems and applications, business continuity plans (BCPs) and service providers to ensure that all affected components have been identified. Assess the likelihood of adversely affecting the operational environment and the risk of implementing the change. Consider security, privacy, legal, contractual and compliance implications of the requested change. Consider also interdependencies among changes. Involve business process owners in the assessment process, as appropriate.",
-                          "relatedGuidance": "string",
-                          "detailedReference": "string",
-                          "inputFrom": "string",
-                          "outputTo": "string, ",
-                          "questionAnswer": 0,
-                          "questionScore": 0,
-                          "questionComment": "comment"
-                        },
-                        {
-                          "questionType": "Maturity Level 3",
-                          "questionDescription": "Consider the impact of contracted services providers (e.g., of outsourced business processing, infrastructure, application development and shared services) on the change management process. Include integration of organizational change management processes with change management processes of service providers and the impact on contractual terms and SLAs.",
-                          "relatedGuidance": "string",
-                          "detailedReference": "string",
-                          "inputFrom": "string",
-                          "outputTo": "string, ",
-                          "questionAnswer": 0,
-                          "questionScore": 0,
-                          "questionComment": "comment"
-                        },
-                        {
-                          "questionType": "Related Guidance",
-                          "questionDescription": "string",
-                          "relatedGuidance": "ISF, The Standard of Good Practice for Information Security 2016",
-                          "detailedReference": "SY2.4 Change Management",
-                          "inputFrom": "string",
-                          "outputTo": "string,",
-                          "questionAnswer": 0,
-                          "questionScore": 0,
-                          "questionComment": "comment"
-                        },
-                        {
-                          "questionType": "Related Guidance",
-                          "questionDescription": "string",
-                          "relatedGuidance": "ISO/IEC 20000-1:2011(E)",
-                          "detailedReference": "9.2 Change management",
-                          "inputFrom": "string",
-                          "outputTo": "string,",
-                          "questionAnswer": 0,
-                          "questionScore": 0,
-                          "questionComment": "comment"
-                        },
-                        {
-                          "questionType": "Related Guidance",
-                          "questionDescription": "string",
-                          "relatedGuidance": "ITIL V3, 2011",
-                          "detailedReference": "Service Transition, 4.2 Change Management",
-                          "inputFrom": "string",
-                          "outputTo": "string,",
-                          "questionAnswer": 0,
-                          "questionScore": 0,
-                          "questionComment": "comment"
-                        },
-                        {
-                          "questionType": "Related Guidance",
-                          "questionDescription": "string",
-                          "relatedGuidance": "PMBOK Guide Sixth Edition, 2017",
-                          "detailedReference": "Part 1: 4.6 Perform Integrated Change Control",
-                          "inputFrom": "string",
-                          "outputTo": "string,",
-                          "questionAnswer": 0,
-                          "questionScore": 0,
-                          "questionComment": "comment"
-                        }
-                      ]
-                    },
+        {
+          "subComponentCode": "BAI06.01",
+          "subComponentName": "Evaluate, prioritize and authorize change requests.",
+          "subComponentDescription": "Evaluate all requests for change to determine the impact on business processes and I&T services, and to assess whether change will adversely affect the operational environment and introduce unacceptable risk. Ensure that changes are logged, prioritized, categorized, assessed, authorized, planned and scheduled.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Use formal change requests to enable business process owners and IT to request changes to business process, infrastructure, systems or applications. Make sure that all such changes arise only through the change request management process.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Categorize all requested changes (e.g., business process, infrastructure, operating systems, networks, application systems, purchased/packaged application software) and relate affected configuration items.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Prioritize all requested changes based on the business and technical requirements; resources required; and the legal, regulatory and contractual reasons for the requested change.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Formally approve each change by business process owners, service managers and IT technical stakeholders, as appropriate. Changes that are low-risk and relatively frequent should be pre-approved as standard changes.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Plan and schedule all approved changes.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Plan and evaluate all requests in a structured fashion. Include an impact analysis on business process, infrastructure, systems and applications, business continuity plans (BCPs) and service providers to ensure that all affected components have been identified. Assess the likelihood of adversely affecting the operational environment and the risk of implementing the change. Consider security, privacy, legal, contractual and compliance implications of the requested change. Consider also interdependencies among changes. Involve business process owners in the assessment process, as appropriate.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Consider the impact of contracted services providers (e.g., of outsourced business processing, infrastructure, application development and shared services) on the change management process. Include integration of organizational change management processes with change management processes of service providers and the impact on contractual terms and SLAs.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "string",
+              "relatedGuidance": "ISF, The Standard of Good Practice for Information Security 2016",
+              "detailedReference": "SY2.4 Change Management",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "string",
+              "relatedGuidance": "ISO/IEC 20000-1:2011(E)",
+              "detailedReference": "9.2 Change management",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "string",
+              "relatedGuidance": "ITIL V3, 2011",
+              "detailedReference": "Service Transition, 4.2 Change Management",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "string",
+              "relatedGuidance": "PMBOK Guide Sixth Edition, 2017",
+              "detailedReference": "Part 1: 4.6 Perform Integrated Change Control",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
 
-                    {
+        {
 
-                      "subComponentCode": "BAI06.02",
-                      "subComponentName": "Manage emergency changes.",
-                      "subComponentDescription": "Carefully manage emergency changes to minimize further incidents. Ensure the emergency change is controlled and takes place securely. Verify that emergency changes are appropriately assessed and authorized after the change.",
-                      "subComponentQuestions": [
-                        {
-                          "questionType": "Maturity Level 2",
-                          "questionDescription": " Define what constitutes an emergency change.",
-                          "relatedGuidance": "string",
-                          "detailedReference": "string",
-                          "inputFrom": "string",
-                          "outputTo": "string, ",
-                          "questionAnswer": 0,
-                          "questionScore": 0,
-                          "questionComment": "comment"
-                        },
-                        {
-                          "questionType": "Maturity Level 2",
-                          "questionDescription": "Ensure that a documented procedure exists to declare, assess, approve preliminarily, authorize after the change and record an emergency change.",
-                          "relatedGuidance": "string",
-                          "detailedReference": "string",
-                          "inputFrom": "string",
-                          "outputTo": "string, ",
-                          "questionAnswer": 0,
-                          "questionScore": 0,
-                          "questionComment": "comment"
-                        },
-                        {
-                          "questionType": "Maturity Level 3",
-                          "questionDescription": " Verify that all emergency access arrangements for changes are appropriately authorized, documented and revoked after the change has been applied.",
-                          "relatedGuidance": "string",
-                          "detailedReference": "string",
-                          "inputFrom": "string",
-                          "outputTo": "string, ",
-                          "questionAnswer": 0,
-                          "questionScore": 0,
-                          "questionComment": "comment"
-                        },
-                        {
-                          "questionType": "Maturity Level 4",
-                          "questionDescription": "Monitor all emergency changes and conduct post-implementation reviews involving all concerned parties. The review should consider and initiate corrective actions based on root causes such as problems with business process, application system development and maintenance, development and test environments, documentation and manuals, and data integrity.",
-                          "relatedGuidance": "string",
-                          "detailedReference": "string",
-                          "inputFrom": "string",
-                          "outputTo": "string, ",
-                          "questionAnswer": 0,
-                          "questionScore": 0,
-                          "questionComment": "comment"
-                        }
-                      ]
-                    },
+          "subComponentCode": "BAI06.02",
+          "subComponentName": "Manage emergency changes.",
+          "subComponentDescription": "Carefully manage emergency changes to minimize further incidents. Ensure the emergency change is controlled and takes place securely. Verify that emergency changes are appropriately assessed and authorized after the change.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": " Define what constitutes an emergency change.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Ensure that a documented procedure exists to declare, assess, approve preliminarily, authorize after the change and record an emergency change.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": " Verify that all emergency access arrangements for changes are appropriately authorized, documented and revoked after the change has been applied.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": "Monitor all emergency changes and conduct post-implementation reviews involving all concerned parties. The review should consider and initiate corrective actions based on root causes such as problems with business process, application system development and maintenance, development and test environments, documentation and manuals, and data integrity.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
 
-                    {
-                      "subComponentCode": "BAI06.03",
-                      "subComponentName": "Track and report change status.",
-                      "subComponentDescription": "Maintain a tracking and reporting system to document rejected changes and communicate the status of approved, in-process and complete changes. Make certain that approved changes are implemented as planned.",
-                      "subComponentQuestions": [
-                        {
-                          "questionType": "Maturity Level 4",
-                          "questionDescription": "Categorize change requests in the tracking process (e.g., rejected, approved but not yet initiated, approved and in process, and closed).",
-                          "relatedGuidance": "string",
-                          "detailedReference": "string",
-                          "inputFrom": "string",
-                          "outputTo": "string, ",
-                          "questionAnswer": 0,
-                          "questionScore": 0,
-                          "questionComment": "comment"
-                        },
-                        {
-                          "questionType": "Maturity Level 4",
-                          "questionDescription": "Implement change status reports with performance metrics to enable management review and monitoring of both the detailed status of changes and the overall state (e.g., aged analysis of change requests). Ensure that status reports form an audit trail so changes can subsequently be tracked from inception to eventual disposition.",
-                          "relatedGuidance": "string",
-                          "detailedReference": "string",
-                          "inputFrom": "string",
-                          "outputTo": "string, ",
-                          "questionAnswer": 0,
-                          "questionScore": 0,
-                          "questionComment": "comment"
-                        },
-                        {
-                          "questionType": "Maturity Level 4",
-                          "questionDescription": "Monitor open changes to ensure that all approved changes are closed in a timely fashion, depending on priority.",
-                          "relatedGuidance": "string",
-                          "detailedReference": "string",
-                          "inputFrom": "string",
-                          "outputTo": "string, ",
-                          "questionAnswer": 0,
-                          "questionScore": 0,
-                          "questionComment": "comment"
-                        },
-                        {
-                          "questionType": "Maturity Level 4",
-                          "questionDescription": "Maintain a tracking and reporting system for all change requests.",
-                          "relatedGuidance": "string",
-                          "detailedReference": "string",
-                          "inputFrom": "string",
-                          "outputTo": "string, ",
-                          "questionAnswer": 0,
-                          "questionScore": 0,
-                          "questionComment": "comment"
-                        },
-                        {
-                          "questionType": "Related Guidance",
-                          "questionDescription": "string",
-                          "relatedGuidance": "CMMI Cybermaturity Platform, 2018",
-                          "detailedReference": "IP.CC Apply Change Control",
-                          "inputFrom": "string",
-                          "outputTo": "string,",
-                          "questionAnswer": 0,
-                          "questionScore": 0,
-                          "questionComment": "comment"
-                        }
-                      ]
-                    },
-
-
-                    {
-                      "subComponentCode": "BAI06.04",
-                      "subComponentDescription": "Whenever changes are implemented, update the solution, user documentation and procedures affected by the change.",
-                      "subComponentName": "Close and document the changes.",
-                      "subComponentQuestions": [
-                        {
-                          "questionType": "Maturity Level 2",
-                          "questionDescription": "Include changes in the documentation within the management procedure. Examples of documentation include business and IT operational procedures, business continuity and disaster recovery documentation, configuration information, application documentation, help screens, and training materials.",
-                          "relatedGuidance": "string",
-                          "detailedReference": "string",
-                          "inputFrom": "string",
-                          "outputTo": "string, ",
-                          "questionAnswer": 0,
-                          "questionScore": 0,
-                          "questionComment": "comment"
-                        },
-                        {
-                          "questionType": "Maturity Level 3",
-                          "questionDescription": "Define an appropriate retention period for change documentation and pre- and post-change system and user documentation.",
-                          "relatedGuidance": "string",
-                          "detailedReference": "string",
-                          "inputFrom": "string",
-                          "outputTo": "string, ",
-                          "questionAnswer": 0,
-                          "questionScore": 0,
-                          "questionComment": "comment"
-                        },
-                        {
-                          "questionType": "Maturity Level 3",
-                          "questionDescription": "Subject documentation to the same level of review as the actual change.",
-                          "relatedGuidance": "string",
-                          "detailedReference": "string",
-                          "inputFrom": "string",
-                          "outputTo": "string,",
-                          "questionAnswer": 0,
-                          "questionScore": 0,
-                          "questionComment": "comment"
-                        }
-                      ]
-                    }
-                  ]
-                                    },
-
-                                    {
-                                      "componentName": "B",
-                                      "componentDescription": "Organizational Structures",
-                                      "componentPercFinal": 0,
-                                      "componentQuestions": [
-
-                                        {
-                                          "questionType": "BAI06.01",
-                                          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
-                                          "questionAnswer": 0,
-                                          "questionScore": 0,
-                                          "questionComment": "comment"
-                                        },
-                                        {
-                                          "questionType": "BAI06.02",
-                                          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
-                                          "questionAnswer": 0,
-                                          "questionScore": 0,
-                                          "questionComment": "comment"
-                                        },
-                                        {
-                                          "questionType": "BAI06.03",
-                                          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
-                                          "questionAnswer": 0,
-                                          "questionScore": 0,
-                                          "questionComment": "comment"
-                                        },
-                                        {
-                                          "questionType": "BAI06.04",
-                                          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
-                                          "questionAnswer": 0,
-                                          "questionScore": 0,
-                                          "questionComment": "comment"
-                                        }
-                                      ]
-                                    },
-
-                                    {
-                                      "componentCode": "C",
-                                      "componentDescription": "Information Flows and Items",
-                                      "componentPercFinal": 0,
-                                      "subComponents": [
-
-                                        {
-                                          "subComponentCode": "BAI06.01",
-                                          "subComponentName": "Evaluate, prioritize and authorize change requests.",
-                                          "subComponentDescription": "Evaluate all requests for change to determine the impact on business processes and I&T services, and to assess whether change will adversely affect the operational environment and introduce unacceptable risk. Ensure that changes are logged, prioritized, categorized, assessed, authorized, planned and scheduled.",
-                                          "subComponentQuestions": [
-                                            {
-                                              "questionType": "Input",
-                                              "questionDescription": "Proposed solutions to known errors Integrated and configured solution components",
-                                              "relatedGuidance": "string",
-                                              "detailedReference": "string",
-                                              "inputFrom": "BAI03.05",
-                                              "outputTo": "string",
-                                              "questionAnswer": 0,
-                                              "questionScore": 0,
-                                              "questionComment": "comment"
-                                            },
-                                            {
-                                              "questionType": "Input",
-                                              "questionDescription": "Approved service requests",
-                                              "relatedGuidance": "string",
-                                              "detailedReference": "string",
-                                              "inputFrom": "DSS02.03",
-                                              "outputTo": "string",
-                                              "questionAnswer": 0,
-                                              "questionScore": 0,
-                                              "questionComment": "comment"
-                                            },
-                                            {
-                                              "questionType": "Input",
-                                              "questionDescription": "Proposed solutions to known errors",
-                                              "relatedGuidance": "string",
-                                              "detailedReference": "string",
-                                              "inputFrom": "DSS03.03",
-                                              "outputTo": "string",
-                                              "questionAnswer": 0,
-                                              "questionScore": 0,
-                                              "questionComment": "comment"
-                                            },
-                                            {
-                                              "questionType": "Input",
-                                              "questionDescription": "Identified sustainable solutions",
-                                              "relatedGuidance": "string",
-                                              "detailedReference": "string",
-                                              "inputFrom": "DSS03.05",
-                                              "outputTo": "string",
-                                              "questionAnswer": 0,
-                                              "questionScore": 0,
-                                              "questionComment": "comment"
-                                            },
-                                            {
-                                              "questionType": "Input",
-                                              "questionDescription": "Approved changes to the plans",
-                                              "relatedGuidance": "string",
-                                              "detailedReference": "string",
-                                              "inputFrom": "DSS04.08",
-                                              "outputTo": "string",
-                                              "questionAnswer": 0,
-                                              "questionScore": 0,
-                                              "questionComment": "comment"
-                                            },
-                                            {
-                                              "questionType": "Input",
-                                              "questionDescription": "Root cause analyses and recommendations",
-                                              "relatedGuidance": "string",
-                                              "detailedReference": "string",
-                                              "inputFrom": "DSS06.01",
-                                              "outputTo": "string",
-                                              "questionAnswer": 0,
-                                              "questionScore": 0,
-                                              "questionComment": "comment"
-                                            },
-
-                                            {
-                                              "questionType": "Output",
-                                              "questionDescription": "Change plan and schedule",
-                                              "relatedGuidance": "string",
-                                              "detailedReference": "string",
-                                              "inputFrom": "string",
-                                              "outputTo": "BAI07.01",
-                                              "questionAnswer": 0,
-                                              "questionScore": 0,
-                                              "questionComment": "comment"
-                                            },
-
-                                            {
-                                              "questionType": "Output",
-                                              "questionDescription": "Approved requests for change",
-                                              "relatedGuidance": "string",
-                                              "detailedReference": "string",
-                                              "inputFrom": "string",
-                                              "outputTo": "BAI07.01",
-                                              "questionAnswer": 0,
-                                              "questionScore": 0,
-                                              "questionComment": "comment"
-                                            },
-                                            {
-                                              "questionType": "Output",
-                                              "questionDescription": "Impact assessments",
-                                              "relatedGuidance": "string",
-                                              "detailedReference": "string",
-                                              "inputFrom": "string",
-                                              "outputTo": "Internal",
-                                              "questionAnswer": 0,
-                                              "questionScore": 0,
-                                              "questionComment": "comment"
-                                            }
-                                          ]
-                                        },
-                                        {
-                                          "subComponentCode": "BAI06.02",
-                                          "subComponentName": "Manage emergency changes.",
-                                          "subComponentDescription": "Carefully manage emergency changes to minimize further incidents. Ensure the emergency change is controlled and takes place securely. Verify that emergency changes are appropriately assessed and authorized after the change.",
-                                          "subComponentQuestions": [
-
-                                            {
-                                              "questionType": "Output",
-                                              "questionDescription": "Post-implementation review of emergency changes",
-                                              "relatedGuidance": "string",
-                                              "detailedReference": "string",
-                                              "inputFrom": "string",
-                                              "outputTo": "Internal",
-                                              "questionAnswer": 0,
-                                              "questionScore": 0,
-                                              "questionComment": "comment"
-                                            }
-                                          ]
-                                        },
-                                        {
-                                          "subComponentCode": "BAI06.03",
-                                          "subComponentName": "Track and report change status.",
-                                          "subComponentDescription": "Maintain a tracking and reporting system to document rejected changes and communicate the status of approved, in-process and complete changes. Make certain that approved changes are implemented as planned.",
-                                          "subComponentQuestions": [
-                                            {
-                                              "questionType": "Input",
-                                              "questionDescription": "Record of all approved and applied change requests",
-                                              "relatedGuidance": "string",
-                                              "detailedReference": "string",
-                                              "inputFrom": "BAI03.09",
-                                              "outputTo": "string",
-                                              "questionAnswer": 0,
-                                              "questionScore": 0,
-                                              "questionComment": "comment"
-                                            },
-                                            {
-                                              "questionType": "Output",
-                                              "questionDescription": "Change request status reports",
-                                              "relatedGuidance": "string",
-                                              "detailedReference": "string",
-                                              "inputFrom": "string",
-                                              "outputTo": "BAI01.06; BAI10.03",
-                                              "questionAnswer": 0,
-                                              "questionScore": 0,
-                                              "questionComment": "comment"
-                                            }
-                                          ]
-                                        },
-                                        {
-                                          "subComponentCode": "BAI06.04",
-                                          "subComponentDescription": "Whenever changes are implemented, update the solution, user documentation and procedures affected by the change.",
-                                          "subComponentName": "Close and document the changes.",
-                                          "subComponentQuestions": [
-
-                                            {
-                                              "questionType": "Output",
-                                              "questionDescription": "Change documentation",
-                                              "relatedGuidance": "string",
-                                              "detailedReference": "string",
-                                              "inputFrom": "string",
-                                              "outputTo": "Internal",
-                                              "questionAnswer": 0,
-                                              "questionScore": 0,
-                                              "questionComment": "comment"
-                                            }
+        {
+          "subComponentCode": "BAI06.03",
+          "subComponentName": "Track and report change status.",
+          "subComponentDescription": "Maintain a tracking and reporting system to document rejected changes and communicate the status of approved, in-process and complete changes. Make certain that approved changes are implemented as planned.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": "Categorize change requests in the tracking process (e.g., rejected, approved but not yet initiated, approved and in process, and closed).",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": "Implement change status reports with performance metrics to enable management review and monitoring of both the detailed status of changes and the overall state (e.g., aged analysis of change requests). Ensure that status reports form an audit trail so changes can subsequently be tracked from inception to eventual disposition.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": "Monitor open changes to ensure that all approved changes are closed in a timely fashion, depending on priority.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": "Maintain a tracking and reporting system for all change requests.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "string",
+              "relatedGuidance": "CMMI Cybermaturity Platform, 2018",
+              "detailedReference": "IP.CC Apply Change Control",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
 
 
-                                          ]
-                                        }
-                                      ]
-                                    },
-                                    {
-                                      "componentName": "D",
-                                      "componentDescription": "Peoples, Skills and Competencies",
-                                      "componentPercFinal": 0,
-                                      "componentQuestions": [
-                                        {
-                                          "questionType": "Component question",
-                                          "questionSkill": "Change Support",
-                                          "relatedGuidance": "e-Competence Framework (e-CF)—A common European Framework for ICT Professionals in all industry sectors—Part 1: Framework, 2016 ",
-                                          "detailedReference": "C. Run - C.2. Change Support",
-                                          "questionAnswer": 0,
-                                          "questionScore": 0,
-                                          "questionComment": "comment"
-                                        },
+        {
+          "subComponentCode": "BAI06.04",
+          "subComponentDescription": "Whenever changes are implemented, update the solution, user documentation and procedures affected by the change.",
+          "subComponentName": "Close and document the changes.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Include changes in the documentation within the management procedure. Examples of documentation include business and IT operational procedures, business continuity and disaster recovery documentation, configuration information, application documentation, help screens, and training materials.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Define an appropriate retention period for change documentation and pre- and post-change system and user documentation.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Subject documentation to the same level of review as the actual change.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        }
+      ]
+    },
 
-                                        {
-                                          "questionType": "Component question",
-                                          "questionSkill": "Change management",
-                                          "relatedGuidance": "Skills Framework for the Information Age V6, 2015 ",
-                                          "detailedReference": "CHMG",
-                                          "questionAnswer": 0,
-                                          "questionScore": 0,
-                                          "questionComment": "comment"
-                                        }
+    {
+      "componentName": "B",
+      "componentDescription": "Organizational Structures",
+      "componentPercFinal": 0,
+      "componentQuestions": [
+
+        {
+          "questionType": "BAI06.01",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "BAI06.02",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "BAI06.03",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "BAI06.04",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        }
+      ]
+    },
+
+    {
+      "componentCode": "C",
+      "componentDescription": "Information Flows and Items",
+      "componentPercFinal": 0,
+      "subComponents": [
+
+        {
+          "subComponentCode": "BAI06.01",
+          "subComponentName": "Evaluate, prioritize and authorize change requests.",
+          "subComponentDescription": "Evaluate all requests for change to determine the impact on business processes and I&T services, and to assess whether change will adversely affect the operational environment and introduce unacceptable risk. Ensure that changes are logged, prioritized, categorized, assessed, authorized, planned and scheduled.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Input",
+              "questionDescription": "Proposed solutions to known errors Integrated and configured solution components",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "BAI03.05",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Approved service requests",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "DSS02.03",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Proposed solutions to known errors",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "DSS03.03",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Identified sustainable solutions",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "DSS03.05",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Approved changes to the plans",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "DSS04.08",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Root cause analyses and recommendations",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "DSS06.01",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+
+            {
+              "questionType": "Output",
+              "questionDescription": "Change plan and schedule",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "BAI07.01",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+
+            {
+              "questionType": "Output",
+              "questionDescription": "Approved requests for change",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "BAI07.01",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Impact assessments",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "Internal",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "BAI06.02",
+          "subComponentName": "Manage emergency changes.",
+          "subComponentDescription": "Carefully manage emergency changes to minimize further incidents. Ensure the emergency change is controlled and takes place securely. Verify that emergency changes are appropriately assessed and authorized after the change.",
+          "subComponentQuestions": [
+
+            {
+              "questionType": "Output",
+              "questionDescription": "Post-implementation review of emergency changes",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "Internal",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "BAI06.03",
+          "subComponentName": "Track and report change status.",
+          "subComponentDescription": "Maintain a tracking and reporting system to document rejected changes and communicate the status of approved, in-process and complete changes. Make certain that approved changes are implemented as planned.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Input",
+              "questionDescription": "Record of all approved and applied change requests",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "BAI03.09",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Change request status reports",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "BAI01.06; BAI10.03",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "BAI06.04",
+          "subComponentDescription": "Whenever changes are implemented, update the solution, user documentation and procedures affected by the change.",
+          "subComponentName": "Close and document the changes.",
+          "subComponentQuestions": [
+
+            {
+              "questionType": "Output",
+              "questionDescription": "Change documentation",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "Internal",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
 
 
-                                      ]
-                                    },
-                                    {
-                                      "componentName": "E",
-                                      "componentDescription": "Principles Policies and Procedures",
-                                      "componentPercFinal": 0,
-                                      "componentQuestions": [
-                                        {
-                                          "questionType": "Component question",
-                                          "relevantPolicy": "IT change management policy",
-                                          "policyDescription": "Communicates management intent that all changes to enterprise IT are managed and implemented so as to minimize risk and impact to stakeholders. Covers in-scope assets and standard change management process.",
-                                          "detailedGuidance": "string",
-                                          "detailedReference": "string",
-                                          "questionAnswer": 0,
-                                          "questionScore": 0,
-                                          "questionComment": "comment"
-                                        }
+          ]
+        }
+      ]
+    },
+    {
+      "componentName": "D",
+      "componentDescription": "Peoples, Skills and Competencies",
+      "componentPercFinal": 0,
+      "componentQuestions": [
+        {
+          "questionType": "Component question",
+          "questionSkill": "Change Support",
+          "relatedGuidance": "e-Competence Framework (e-CF)—A common European Framework for ICT Professionals in all industry sectors—Part 1: Framework, 2016 ",
+          "detailedReference": "C. Run - C.2. Change Support",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+
+        {
+          "questionType": "Component question",
+          "questionSkill": "Change management",
+          "relatedGuidance": "Skills Framework for the Information Age V6, 2015 ",
+          "detailedReference": "CHMG",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        }
 
 
-                                      ]
-                                    },
-                                    {
-                                      "componentName": "F",
-                                      "componentDescription": "Culture, Ethics and Behavior",
-                                      "componentPercFinal": 0,
-                                      "componentQuestions": [
-                                        {
-                                          "questionType": "Component question",
-                                          "keyCultureElement": "Leaders must create a culture of continuous improvement in IT solutions and services, recognizing that improvement requires them to understand the impact of technology change on the enterprise, its inherent risk and associated mitigation, as well as its cost. Leaders must balance the impact of change against its expected benefits and contribution to I&T strategy and enterprise objectives.",
-                                          "relatedGuidance": "string",
-                                          "detailedReference": "string",
-                                          "questionAnswer": 0,
-                                          "questionScore": 0,
-                                          "questionComment": "comment"
-                                        }
+      ]
+    },
+    {
+      "componentName": "E",
+      "componentDescription": "Principles Policies and Procedures",
+      "componentPercFinal": 0,
+      "componentQuestions": [
+        {
+          "questionType": "Component question",
+          "relevantPolicy": "IT change management policy",
+          "policyDescription": "Communicates management intent that all changes to enterprise IT are managed and implemented so as to minimize risk and impact to stakeholders. Covers in-scope assets and standard change management process.",
+          "detailedGuidance": "string",
+          "detailedReference": "string",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        }
 
-                                      ]
-                                    },
-                                    {
-                                      "componentName": "G",
-                                      "componentDescription": "Services, Infrastructure and Applications",
-                                      "componentPercFinal": 0,
-                                      "componentQuestions": [
-                                        {
-                                          "questionType": "Component question",
-                                          "questionDescription": "Configuration management tools",
-                                          "questionAnswer": 0,
-                                          "questionScore": 0,
-                                          "questionComment": "comment"
-                                        },
-                                        {
-                                          "questionType": "Component question",
-                                          "questionDescription": "IT change management tools",
-                                          "questionAnswer": 0,
-                                          "questionScore": 0,
-                                          "questionComment": "comment"
-                                        }
-                                      ]
-                                    }
-                                  ]
-                                }
+
+      ]
+    },
+    {
+      "componentName": "F",
+      "componentDescription": "Culture, Ethics and Behavior",
+      "componentPercFinal": 0,
+      "componentQuestions": [
+        {
+          "questionType": "Component question",
+          "keyCultureElement": "Leaders must create a culture of continuous improvement in IT solutions and services, recognizing that improvement requires them to understand the impact of technology change on the enterprise, its inherent risk and associated mitigation, as well as its cost. Leaders must balance the impact of change against its expected benefits and contribution to I&T strategy and enterprise objectives.",
+          "relatedGuidance": "string",
+          "detailedReference": "string",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        }
+
+      ]
+    },
+    {
+      "componentName": "G",
+      "componentDescription": "Services, Infrastructure and Applications",
+      "componentPercFinal": 0,
+      "componentQuestions": [
+        {
+          "questionType": "Component question",
+          "questionDescription": "Configuration management tools",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "Component question",
+          "questionDescription": "IT change management tools",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        }
+      ]
+    }
+  ]
+}
                               

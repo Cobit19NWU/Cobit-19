@@ -2,6 +2,7 @@
   "objectiveName": "BAI04",
   "objectiveDescription": "Balance current and future needs for availability, performance and capacity with cost-effective service provision. Include assessment of current capabilities, forecasting of future needs based on business requirements, analysis of business impacts, and assessment of risk to plan and implement actions to meet the identified requirements.",
   "objectivePurpose": "Maintain service availability, efficient management of resources and optimization of system performance through prediction of future performance and capacity requirements.",
+  "typeOfObjective": "Management",
   "maturityLevel": 0,
   "maturityLevel0PercFinal": 0,
   "maturityLevel1PercFinal": 0,
@@ -112,772 +113,772 @@
         }
       ]
     },
-  
+
+
+    {
+      "componentName": "A",
+      "componentDescription": "Processes",
+      "componentPercFinal": 0,
+      "subComponents": [
+        {
+          "subComponentCode": "BAI04.01",
+          "subComponentName": "Assess current availability, performance and capacity and create a baseline.",
+          "subComponentDescription": "Assess availability, performance and capacity of services and resources to ensure that cost-justifiable capacity and performance are available to support business needs and deliver against service level agreements (SLAs). Create availability, performance and capacity baselines for future comparison.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Consider the following (current and forecasted) in the assessment of availability, performance and capacity of services and resources: customer requirements, business priorities, business objectives, budget impact, resource utilization, IT capabilities and industry trends.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Identify and follow up on all incidents caused by inadequate performance or capacity.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
 
             {
-              "componentName": "A",
-              "componentDescription": "Processes",
-              "componentPercFinal": 0,
-              "subComponents": [
-                {
-                  "subComponentCode": "BAI04.01",
-                  "subComponentName": "Assess current availability, performance and capacity and create a baseline.",
-                  "subComponentDescription": "Assess availability, performance and capacity of services and resources to ensure that cost-justifiable capacity and performance are available to support business needs and deliver against service level agreements (SLAs). Create availability, performance and capacity baselines for future comparison.",
-                  "subComponentQuestions": [
-                    {
-                      "questionType": "Maturity Level 2",
-                      "questionDescription": "Consider the following (current and forecasted) in the assessment of availability, performance and capacity of services and resources: customer requirements, business priorities, business objectives, budget impact, resource utilization, IT capabilities and industry trends.",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Maturity Level 3",
-                      "questionDescription": "Identify and follow up on all incidents caused by inadequate performance or capacity.",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-
-                    {
-                      "questionType": "Maturity Level 4",
-                      "questionDescription": "Monitor actual performance and capacity usage against defined thresholds, supported, where necessary, with automated software.",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Maturity Level 4",
-                      "questionDescription": "Regularly evaluate the current levels of performance for all processing levels (business demand, service capacity and resource capacity) by comparing them against trends and SLAs. Take into account changes in the environment.",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
+              "questionType": "Maturity Level 4",
+              "questionDescription": "Monitor actual performance and capacity usage against defined thresholds, supported, where necessary, with automated software.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": "Regularly evaluate the current levels of performance for all processing levels (business demand, service capacity and resource capacity) by comparing them against trends and SLAs. Take into account changes in the environment.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
 
 
-                    {
-                      "questionType": "Related Guidance",
-                      "questionDescription": "string",
-                      "relatedGuidance": "CMMI Cybermaturity Platform, 2018",
-                      "detailedReference": "DP.CP Capacity Planning",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Related Guidance",
-                      "questionDescription": "string",
-                      "relatedGuidance": "ISF, The Standard of Good Practice for Information Security 2016",
-                      "detailedReference": "SY2.2 Performance and Capacity Management",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Related Guidance",
-                      "questionDescription": "string",
-                      "relatedGuidance": "ISO/IEC 20000-1:2011(E)",
-                      "detailedReference": "6.5 Capacity management",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Related Guidance",
-                      "questionDescription": "string",
-                      "relatedGuidance": "ITIL V3, 2011",
-                      "detailedReference": "Service Design, 4.4 Availability Management; 4.5 Capacity Management",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Related Guidance",
-                      "questionDescription": "string",
-                      "relatedGuidance": "3.14 Planning (PL-10, PL-11)",
-                      "detailedReference": "National Institute of Standards and Technology Special Publication 800-53, Revision 5 (Draft), August 2017",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    }
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "string",
+              "relatedGuidance": "CMMI Cybermaturity Platform, 2018",
+              "detailedReference": "DP.CP Capacity Planning",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "string",
+              "relatedGuidance": "ISF, The Standard of Good Practice for Information Security 2016",
+              "detailedReference": "SY2.2 Performance and Capacity Management",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "string",
+              "relatedGuidance": "ISO/IEC 20000-1:2011(E)",
+              "detailedReference": "6.5 Capacity management",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "string",
+              "relatedGuidance": "ITIL V3, 2011",
+              "detailedReference": "Service Design, 4.4 Availability Management; 4.5 Capacity Management",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "string",
+              "relatedGuidance": "3.14 Planning (PL-10, PL-11)",
+              "detailedReference": "National Institute of Standards and Technology Special Publication 800-53, Revision 5 (Draft), August 2017",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
 
 
 
-                  ]
-                },
-                {
-                  "subComponentCode": "BAI04.02",
-                  "subComponentName": "Assess business impact.",
-                  "subComponentDescription": "Identify important services to the enterprise. Map services and resources to business processes and identify business dependencies. Ensure that the impact of unavailable resources is fully agreed on and accepted by the customer. For vital business functions, ensure that availability requirements can be satisfied per service level agreement (SLA).",
-                  "subComponentQuestions": [
-                    {
-                      "questionType": "Maturity Level 2",
-                      "questionDescription": "Identify only those solutions or services that are critical in the availability and capacity management process.",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Maturity Level 3",
-                      "questionDescription": "Map the selected solutions or services to the application(s) and infrastructure (IT and facility) on which they depend to enable a focus on critical resources for availability planning.",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Maturity Level 4",
-                      "questionDescription": "Collect data on availability patterns from logs of past failures and performance monitoring. Use modeling tools that help predict failures based on past usage trends and management expectations of new environment or user conditions.",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Maturity Level 4",
-                      "questionDescription": "Based on the collected data, create scenarios that describe future availability situations to illustrate a variety of potential capacity levels needed to achieve the availability performance objective..",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Maturity Level 4",
-                      "questionDescription": "Based on the scenarios, determine the likelihood that the availability performance objective will not be achieved.",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Maturity Level 4",
-                      "questionDescription": "Determine the impact of the scenarios on the business performance measures (e.g., revenue, profit, customer services). Engage the business-line, functional (especially finance) and regional leaders to understand their evaluation of impact.",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Maturity Level 4",
-                      "questionDescription": "Ensure that business process owners fully understand and agree to the results of this analysis. From the business owners, obtain a list of unacceptable risk scenarios that require a response to reduce risk to acceptable levels.",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Related Guidance",
-                      "questionDescription": "string",
-                      "relatedGuidance": "ISO/IEC 20000-1:2011(E)",
-                      "detailedReference": "6.3 Service continuity and availability management",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    }
-                  ]
-                    },
+          ]
+        },
+        {
+          "subComponentCode": "BAI04.02",
+          "subComponentName": "Assess business impact.",
+          "subComponentDescription": "Identify important services to the enterprise. Map services and resources to business processes and identify business dependencies. Ensure that the impact of unavailable resources is fully agreed on and accepted by the customer. For vital business functions, ensure that availability requirements can be satisfied per service level agreement (SLA).",
+          "subComponentQuestions": [
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Identify only those solutions or services that are critical in the availability and capacity management process.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Map the selected solutions or services to the application(s) and infrastructure (IT and facility) on which they depend to enable a focus on critical resources for availability planning.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": "Collect data on availability patterns from logs of past failures and performance monitoring. Use modeling tools that help predict failures based on past usage trends and management expectations of new environment or user conditions.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": "Based on the collected data, create scenarios that describe future availability situations to illustrate a variety of potential capacity levels needed to achieve the availability performance objective..",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": "Based on the scenarios, determine the likelihood that the availability performance objective will not be achieved.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": "Determine the impact of the scenarios on the business performance measures (e.g., revenue, profit, customer services). Engage the business-line, functional (especially finance) and regional leaders to understand their evaluation of impact.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": "Ensure that business process owners fully understand and agree to the results of this analysis. From the business owners, obtain a list of unacceptable risk scenarios that require a response to reduce risk to acceptable levels.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "string",
+              "relatedGuidance": "ISO/IEC 20000-1:2011(E)",
+              "detailedReference": "6.3 Service continuity and availability management",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
 
-                    {
-                      "subComponentCode": "BAI04.03",
-                      "subComponentName": "Plan for new or changed service requirements.",
-                      "subComponentDescription": "Plan and prioritize availability, performance and capacity implications of changing business needs and service requirements.",
-                      "subComponentQuestions": [
-                        {
-                          "questionType": "Maturity Level 3",
-                          "questionDescription": "Identify availability and capacity implications of changing business needs and improvement opportunities. Use modelling techniques to validate availability, performance and capacity plans.",
-                          "relatedGuidance": "string",
-                          "detailedReference": "string",
-                          "inputFrom": "string",
-                          "outputTo": "string, ",
-                          "questionAnswer": 0,
-                          "questionScore": 0,
-                          "questionComment": "comment"
-                        },
-                        {
-                          "questionType": "Maturity Level 4",
-                          "questionDescription": "Ensure that management performs comparisons of actual demand on resources against forecasted supply and demand to evaluate current forecasting techniques and make improvements where possible.",
-                          "relatedGuidance": "string",
-                          "detailedReference": "string",
-                          "inputFrom": "string",
-                          "outputTo": "string, ",
-                          "questionAnswer": 0,
-                          "questionScore": 0,
-                          "questionComment": "comment"
-                        },
-                        {
-                          "questionType": "Maturity Level 5",
-                          "questionDescription": "Prioritize needed improvements and create cost-justifiable availability and capacity plans.",
-                          "relatedGuidance": "string",
-                          "detailedReference": "string",
-                          "inputFrom": "string",
-                          "outputTo": "string, ",
-                          "questionAnswer": 0,
-                          "questionScore": 0,
-                          "questionComment": "comment"
-                        },
-                        {
-                          "questionType": "Maturity Level 5",
-                          "questionDescription": "Adjust the performance and capacity plans and SLAs based on realistic, new, proposed and/or projected business processes and supporting services, applications and infrastructure changes. Also include reviews of actual performance and capacity usage, including workload levels.",
-                          "relatedGuidance": "string",
-                          "detailedReference": "string",
-                          "inputFrom": "string",
-                          "outputTo": "string, ",
-                          "questionAnswer": 0,
-                          "questionScore": 0,
-                          "questionComment": "comment"
-                        },
+        {
+          "subComponentCode": "BAI04.03",
+          "subComponentName": "Plan for new or changed service requirements.",
+          "subComponentDescription": "Plan and prioritize availability, performance and capacity implications of changing business needs and service requirements.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Identify availability and capacity implications of changing business needs and improvement opportunities. Use modelling techniques to validate availability, performance and capacity plans.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": "Ensure that management performs comparisons of actual demand on resources against forecasted supply and demand to evaluate current forecasting techniques and make improvements where possible.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 5",
+              "questionDescription": "Prioritize needed improvements and create cost-justifiable availability and capacity plans.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 5",
+              "questionDescription": "Adjust the performance and capacity plans and SLAs based on realistic, new, proposed and/or projected business processes and supporting services, applications and infrastructure changes. Also include reviews of actual performance and capacity usage, including workload levels.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
 
-                        {
-                          "questionType": "Related Guidance",
-                          "questionDescription": "string",
-                          "relatedGuidance": "ISO/IEC 20000-1:2011(E)",
-                          "detailedReference": "5. Design and transition of new changed services",
-                          "inputFrom": "string",
-                          "outputTo": "string,",
-                          "questionAnswer": 0,
-                          "questionScore": 0,
-                          "questionComment": "comment"
-                        }
-                      ]
-                        },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "string",
+              "relatedGuidance": "ISO/IEC 20000-1:2011(E)",
+              "detailedReference": "5. Design and transition of new changed services",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
 
-                        {
-                          "subComponentCode": "BAI04.04",
-                          "subComponentName": "Monitor and review availability and capacity.",
-                          "subComponentDescription": "Monitor, measure, analyze, report and review availability, performance and capacity. Identify deviations from established baselines. Review trend analysis reports identifying any significant issues and variances. Initiate actions where necessary and ensure that all outstanding issues are addressed.",
-                          "subComponentQuestions": [
+        {
+          "subComponentCode": "BAI04.04",
+          "subComponentName": "Monitor and review availability and capacity.",
+          "subComponentDescription": "Monitor, measure, analyze, report and review availability, performance and capacity. Identify deviations from established baselines. Review trend analysis reports identifying any significant issues and variances. Initiate actions where necessary and ensure that all outstanding issues are addressed.",
+          "subComponentQuestions": [
 
-                            {
-                              "questionType": "Maturity Level 2",
-                              "questionDescription": " Provide capacity reports to the budgeting processes.",
-                              "relatedGuidance": "string",
-                              "detailedReference": "string",
-                              "inputFrom": "string",
-                              "outputTo": "string, ",
-                              "questionAnswer": 0,
-                              "questionScore": 0,
-                              "questionComment": "comment"
-                            },
-                            {
-                              "questionType": "Maturity Level 3",
-                              "questionDescription": "Establish a process for gathering data to provide management with monitoring and reporting information for availability, performance and capacity workload of all I&T-related resources.",
-                              "relatedGuidance": "string",
-                              "detailedReference": "string",
-                              "inputFrom": "string",
-                              "outputTo": "string, ",
-                              "questionAnswer": 0,
-                              "questionScore": 0,
-                              "questionComment": "comment"
-                            },
-                            {
-                              "questionType": "Maturity Level 4",
-                              "questionDescription": " Provide regular reporting of the results in an appropriate form for review by IT and business management and communication to enterprise management.",
-                              "relatedGuidance": "string",
-                              "detailedReference": "string",
-                              "inputFrom": "string",
-                              "outputTo": "string, ",
-                              "questionAnswer": 0,
-                              "questionScore": 0,
-                              "questionComment": "comment"
-                            },
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": " Provide capacity reports to the budgeting processes.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Establish a process for gathering data to provide management with monitoring and reporting information for availability, performance and capacity workload of all I&T-related resources.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": " Provide regular reporting of the results in an appropriate form for review by IT and business management and communication to enterprise management.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
 
-                            {
-                              "questionType": "Maturity Level 4",
-                              "questionDescription": "Integrate monitoring and reporting activities in the iterative capacity management activities (monitoring, analysis, tuning and implementations).",
-                              "relatedGuidance": "string",
-                              "detailedReference": "string",
-                              "inputFrom": "string",
-                              "outputTo": "string, ",
-                              "questionAnswer": 0,
-                              "questionScore": 0,
-                              "questionComment": "comment"
-                            }
-                          ]
-                            },
-
-
-                            {
-                              "subComponentCode": "BAI04.05",
-                              "subComponentName": "Investigate and address availability, performance and capacity issues.",
-                              "subComponentDescription": "Address deviations by investigating and resolving identified availability, performance and capacity issues.",
-                              "subComponentQuestions": [
-
-                                {
-                                  "questionType": "Maturity Level 3",
-                                  "questionDescription": "Obtain guidance from vendor product manuals to ensure an appropriate level of performance availability for peak processing and workloads.",
-                                  "relatedGuidance": "string",
-                                  "detailedReference": "string",
-                                  "inputFrom": "string",
-                                  "outputTo": "string, ",
-                                  "questionAnswer": 0,
-                                  "questionScore": 0,
-                                  "questionComment": "comment"
-                                },
-                                {
-                                  "questionType": "Maturity Level 3",
-                                  "questionDescription": "Define an escalation procedure for swift resolution in case of emergency capacity and performance problems.",
-                                  "relatedGuidance": "string",
-                                  "detailedReference": "string",
-                                  "inputFrom": "string",
-                                  "outputTo": "string, ",
-                                  "questionAnswer": 0,
-                                  "questionScore": 0,
-                                  "questionComment": "comment"
-                                },
-                                {
-                                  "questionType": "Maturity Level 4",
-                                  "questionDescription": "Identify performance and capacity gaps based on monitoring current and forecasted performance. Use the known availability, continuity and recovery specifications to classify resources and allow prioritization.",
-                                  "relatedGuidance": "string",
-                                  "detailedReference": "string",
-                                  "inputFrom": "string",
-                                  "outputTo": "string, ",
-                                  "questionAnswer": 0,
-                                  "questionScore": 0,
-                                  "questionComment": "comment"
-                                },
-                                {
-                                  "questionType": "Maturity Level 5",
-                                  "questionDescription": "Define corrective actions (e.g., shifting workload, prioritizing tasks or adding resources when performance and capacity issues are identified).",
-                                  "relatedGuidance": "string",
-                                  "detailedReference": "string",
-                                  "inputFrom": "string",
-                                  "outputTo": "string, ",
-                                  "questionAnswer": 0,
-                                  "questionScore": 0,
-                                  "questionComment": "comment"
-                                },
-                                {
-                                  "questionType": "Maturity Level 5",
-                                  "questionDescription": "Integrate required corrective actions into the appropriate planning and change management processes.",
-                                  "relatedGuidance": "string",
-                                  "detailedReference": "string",
-                                  "inputFrom": "string",
-                                  "outputTo": "string, ",
-                                  "questionAnswer": 0,
-                                  "questionScore": 0,
-                                  "questionComment": "comment"
-                                }
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": "Integrate monitoring and reporting activities in the iterative capacity management activities (monitoring, analysis, tuning and implementations).",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
 
 
+        {
+          "subComponentCode": "BAI04.05",
+          "subComponentName": "Investigate and address availability, performance and capacity issues.",
+          "subComponentDescription": "Address deviations by investigating and resolving identified availability, performance and capacity issues.",
+          "subComponentQuestions": [
 
-                              ]
-                            }
-
-                          ]
-                        },
-                        {
-                          "componentName": "B",
-                          "componentDescription": "Organizational Structures",
-                          "componentPercFinal": 0,
-                          "componentQuestions": [
-                            {
-                              "questionType": "BAI04.01",
-                              "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
-                              "questionAnswer": 0,
-                              "questionScore": 0,
-                              "questionComment": "comment"
-                            },
-                            {
-                              "questionType": "BAI04.02",
-                              "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
-                              "questionAnswer": 0,
-                              "questionScore": 0,
-                              "questionComment": "comment"
-                            },
-                            {
-                              "questionType": "BAI04.03",
-                              "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
-                              "questionAnswer": 0,
-                              "questionScore": 0,
-                              "questionComment": "comment"
-                            },
-                            {
-                              "questionType": "BAI04.04",
-                              "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
-                              "questionAnswer": 0,
-                              "questionScore": 0,
-                              "questionComment": "comment"
-                            },
-                            {
-                              "questionType": "BAI04.05",
-                              "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
-                              "questionAnswer": 0,
-                              "questionScore": 0,
-                              "questionComment": "comment"
-                            }
-                          ]
-                        },
-                        {
-                          "componentCode": "C",
-                          "componentDescription": "Information Flows and Items",
-                          "componentPercFinal": 0,
-                          "subComponents": [
-                            {
-                              "subComponentCode": "BAI04.01",
-                              "subComponentName": "Assess current availability, performance and capacity and create a baseline.",
-                              "subComponentDescription": "Assess availability, performance and capacity of services and resources to ensure that cost-justifiable capacity and performance are available to support business needs and deliver against service level agreements (SLAs). Create availability, performance and capacity baselines for future comparison.",
-                              "subComponentQuestions": [
-
-                                {
-                                  "questionType": "Input",
-                                  "questionDescription": "Requirements definition repository",
-                                  "relatedGuidance": "string",
-                                  "detailedReference": "string",
-                                  "inputFrom": "BAI02.01",
-                                  "outputTo": "string",
-                                  "questionAnswer": 0,
-                                  "questionScore": 0,
-                                  "questionComment": "comment"
-                                },
-                                {
-                                  "questionType": "Input",
-                                  "questionDescription": "Requirements risk register",
-                                  "relatedGuidance": "string",
-                                  "detailedReference": "string",
-                                  "inputFrom": "BAI02.03",
-                                  "outputTo": "string",
-                                  "questionAnswer": 0,
-                                  "questionScore": 0,
-                                  "questionComment": "comment"
-                                },
-                                {
-                                  "questionType": "Output",
-                                  "questionDescription": "Evaluations against SLAs",
-                                  "relatedGuidance": "string",
-                                  "detailedReference": "string",
-                                  "outputTo": "APO09.05",
-                                  "questionAnswer": 0,
-                                  "questionScore": 0,
-                                  "questionComment": "comment"
-                                },
-                                {
-                                  "questionType": "Output",
-                                  "questionDescription": "Availability, performance and capacity baselines",
-                                  "relatedGuidance": "string",
-                                  "detailedReference": "string",
-                                  "outputTo": "Internal",
-                                  "questionAnswer": 0,
-                                  "questionScore": 0,
-                                  "questionComment": "comment"
-                                }
-                              ]
-                                },
-                                {
-                                  "subComponentCode": "BAI04.02",
-                                  "subComponentName": "Assess business impact.",
-                                  "subComponentDescription": "Identify important services to the enterprise. Map services and resources to business processes and identify business dependencies. Ensure that the impact of unavailable resources is fully agreed on and accepted by the customer. For vital business functions, ensure that availability requirements can be satisfied per service level agreement (SLA).",
-                                  "subComponentQuestions": [
-                                    {
-                                      "questionType": "Input",
-                                      "questionDescription": "Internal and external service level agreements (SLAs)",
-                                      "relatedGuidance": "string",
-                                      "detailedReference": "string",
-                                      "inputFrom": "BAI03.02",
-                                      "outputTo": "srting",
-                                      "questionAnswer": 0,
-                                      "questionScore": 0,
-                                      "questionComment": "comment"
-                                    },
-                                    {
-                                      "questionType": "Output",
-                                      "questionDescription": "Availability, performance and capacity business impact assessments",
-                                      "relatedGuidance": "string",
-                                      "detailedReference": "string",
-                                      "inputFrom": "string",
-                                      "outputTo": "Internal",
-                                      "questionAnswer": 0,
-                                      "questionScore": 0,
-                                      "questionComment": "comment"
-                                    },
-                                    {
-                                      "questionType": "Output",
-                                      "questionDescription": "Availability, performance and capacity scenarios",
-                                      "relatedGuidance": "string",
-                                      "detailedReference": "string",
-                                      "inputFrom": "string",
-                                      "outputTo": "Internal",
-                                      "questionAnswer": 0,
-                                      "questionScore": 0,
-                                      "questionComment": "comment"
-                                    }
-
-                                  ]
-                                },
-                                {
-                                  "subComponentCode": "BAI04.03",
-                                  "subComponentName": "Plan for new or changed service requirements.",
-                                  "subComponentDescription": "Plan and prioritize availability, performance and capacity implications of changing business needs and service requirements.",
-                                  "subComponentQuestions": [
-                                    {
-                                      "questionType": "Input",
-                                      "questionDescription": "Documented solution components",
-                                      "relatedGuidance": "string",
-                                      "detailedReference": "string",
-                                      "inputFrom": "BAI03.03",
-                                      "outputTo": "string",
-                                      "questionAnswer": 0,
-                                      "questionScore": 0,
-                                      "questionComment": "comment"
-                                    },
-                                    {
-                                      "questionType": "Input",
-                                      "questionDescription": "Approved detailed design specification",
-                                      "relatedGuidance": "string",
-                                      "detailedReference": "string",
-                                      "inputFrom": "BAI03.02",
-                                      "outputTo": "string",
-                                      "questionAnswer": 0,
-                                      "questionScore": 0,
-                                      "questionComment": "comment"
-                                    },
-                                    {
-                                      "questionType": "Input",
-                                      "questionDescription": "Confirmed acceptance criteria from stakeholders",
-                                      "relatedGuidance": "string",
-                                      "detailedReference": "string",
-                                      "inputFrom": "BAI02.01",
-                                      "outputTo": "string",
-                                      "questionAnswer": 0,
-                                      "questionScore": 0,
-                                      "questionComment": "comment"
-                                    },
-                                    {
-                                      "questionType": "Input",
-                                      "questionDescription": "Approved high-level design specification",
-                                      "relatedGuidance": "string",
-                                      "detailedReference": "string",
-                                      "inputFrom": "BAI03.01",
-                                      "outputTo": "string",
-                                      "questionAnswer": 0,
-                                      "questionScore": 0,
-                                      "questionComment": "comment"
-                                    },
-                                    {
-                                      "questionType": "Output",
-                                      "questionDescription": "Performance and capacity plans",
-                                      "relatedGuidance": "string",
-                                      "detailedReference": "string",
-                                      "inputFrom": "string",
-                                      "outputTo": "APO02.02",
-                                      "questionAnswer": 0,
-                                      "questionScore": 0,
-                                      "questionComment": "comment"
-                                    },
-                                    {
-                                      "questionType": "Output",
-                                      "questionDescription": "Prioritized improvements",
-                                      "relatedGuidance": "string",
-                                      "detailedReference": "string",
-                                      "inputFrom": "string",
-                                      "outputTo": "APO02.02",
-                                      "questionAnswer": 0,
-                                      "questionScore": 0,
-                                      "questionComment": "comment"
-                                    }
-                                  ]
-                                },
-                                {
-                                  "subComponentCode": "BAI04.04",
-                                  "subComponentName": "Monitor and review availability and capacity.",
-                                  "subComponentDescription": "Monitor, measure, analyze, report and review availability, performance and capacity. Identify deviations from established baselines. Review trend analysis reports identifying any significant issues and variances. Initiate actions where necessary and ensure that all outstanding issues are addressed.",
-                                  "subComponentQuestions": [
-                                    {
-                                      "questionType": "Output",
-                                      "questionDescription": "Availability, performance and capacity monitoring review reports",
-                                      "relatedGuidance": "string",
-                                      "detailedReference": "string",
-                                      "inputFrom": "string",
-                                      "outputTo": "MEA01.03",
-                                      "questionAnswer": 0,
-                                      "questionScore": 0,
-                                      "questionComment": "comment"
-                                    }
-                                  ]
-                                    },
-                                    {
-                                      "subComponentCode": "BAI04.05",
-                                      "subComponentName": "Investigate and address availability, performance and capacity issues.",
-                                      "subComponentDescription": "Address deviations by investigating and resolving identified availability, performance and capacity issues.",
-                                      "subComponentQuestions": [
-                                        {
-                                          "questionType": "Output",
-                                          "questionDescription": "Emergency escalation procedure",
-                                          "relatedGuidance": "string",
-                                          "detailedReference": "string",
-                                          "inputFrom": "string",
-                                          "outputTo": "DSS02.02",
-                                          "questionAnswer": 0,
-                                          "questionScore": 0,
-                                          "questionComment": "comment"
-                                        },
-                                        {
-                                          "questionType": "Output",
-                                          "questionDescription": "Performance and capacity gaps",
-                                          "relatedGuidance": "string",
-                                          "detailedReference": "string",
-                                          "inputFrom": "string",
-                                          "outputTo": "Internal",
-                                          "questionAnswer": 0,
-                                          "questionScore": 0,
-                                          "questionComment": "comment"
-                                        },
-                                        {
-                                          "questionType": "Output",
-                                          "questionDescription": "Corrective actions",
-                                          "relatedGuidance": "string",
-                                          "detailedReference": "string",
-                                          "inputFrom": "string",
-                                          "outputTo": "APO02.02",
-                                          "questionAnswer": 0,
-                                          "questionScore": 0,
-                                          "questionComment": "comment"
-                                        }
-                                      ]
-
-                                    }
-                                  ]
-                                
-                        },
-                        {
-                          "componentName": "D",
-                          "componentDescription": "Peoples, Skills and Competencies",
-                          "componentPercFinal": 0,
-                          "componentQuestions": [
-                            {
-                              "questionType": "Component question",
-                              "questionSkill": "Availability management",
-                              "relatedGuidance": "Skills Framework for the Information Age V6, 2015 ",
-                              "detailedReference": "AVMT",
-                              "questionAnswer": 0,
-                              "questionScore": 0,
-                              "questionComment": "comment"
-                            },
-                            {
-                              "questionType": "Component question",
-                              "questionSkill": "Capacity management",
-                              "relatedGuidance": "Skills Framework for the Information Age V6, 2015 ",
-                              "detailedReference": "CPMG",
-                              "questionAnswer": 0,
-                              "questionScore": 0,
-                              "questionComment": "comment"
-                            }
-                          ]
-                        },
-                        {
-                          "componentName": "E",
-                          "componentDescription": "Principles Policies and Procedures",
-                          "componentPercFinal": 0,
-                          "componentQuestions": [
-                            {
-                              "questionType": "Component question",
-                              "relevantPolicy": "Availability management policy",
-                              "policyDescription": "Informs infrastructure planning in terms of availability, scalability, reliability and potentially resilience. Includes guidelines to identify bandwidth, capacity and availability of services (prior to design and provisioning), establish service level agreements (SLAs), and implement continuous monitoring of circuits, traffic and response times.",
-                              "detailedGuidance": "string",
-                              "detailedReference": "string",
-                              "questionAnswer": 0,
-                              "questionScore": 0,
-                              "questionComment": "comment"
-                            }
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Obtain guidance from vendor product manuals to ensure an appropriate level of performance availability for peak processing and workloads.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Define an escalation procedure for swift resolution in case of emergency capacity and performance problems.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": "Identify performance and capacity gaps based on monitoring current and forecasted performance. Use the known availability, continuity and recovery specifications to classify resources and allow prioritization.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 5",
+              "questionDescription": "Define corrective actions (e.g., shifting workload, prioritizing tasks or adding resources when performance and capacity issues are identified).",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 5",
+              "questionDescription": "Integrate required corrective actions into the appropriate planning and change management processes.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
 
 
-                          ]
-                        },
-                        {
-                          "componentName": "F",
-                          "componentDescription": "Culture, Ethics and Behavior",
-                          "componentPercFinal": 0,
-                          "componentQuestions": [
-                            {
-                              "questionType": "Component question",
-                              "keyCultureElement": "For enterprises that depend on information, availability and capacity management are critical to successful operations. Establish a culture in which product and service availability and capacity are prioritized (in line with business requirements) and supported by processes and behaviors that not only identify required availability and capacity before design, but also consider them in provisioning. Consistently define smart SLAs; continuously monitor circuits, traffic and response times; perform regular testing for business continuity and disaster recovery of infrastructure.",
-                              "relatedGuidance": "string",
-                              "detailedReference": "string",
-                              "questionAnswer": 0,
-                              "questionScore": 0,
-                              "questionComment": "comment"
-                            }
 
-                          ]
-                        },
-                        {
-                          "componentName": "G",
-                          "componentDescription": "Services, Infrastructure and Applications",
-                          "componentPercFinal": 0,
-                          "componentQuestions": [
+          ]
+        }
 
-                            {
-                              "questionType": "Component question",
-                              "questionDescription": "Capacity planning tools",
-                              "questionAnswer": 0,
-                              "questionScore": 0,
-                              "questionComment": "comment"
-                            },
-                            {
-                              "questionType": "Component question",
-                              "questionDescription": "Provisioning services and tools",
-                              "questionAnswer": 0,
-                              "questionScore": 0,
-                              "questionComment": "comment"
-                            },
-                            {
-                              "questionType": "Component question",
-                              "questionDescription": "Service level monitoring tools",
-                              "questionAnswer": 0,
-                              "questionScore": 0,
-                              "questionComment": "comment"
-                            }
-                          ]
-                        }
-                      ]
-                    }
+      ]
+    },
+    {
+      "componentName": "B",
+      "componentDescription": "Organizational Structures",
+      "componentPercFinal": 0,
+      "componentQuestions": [
+        {
+          "questionType": "BAI04.01",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "BAI04.02",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "BAI04.03",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "BAI04.04",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "BAI04.05",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        }
+      ]
+    },
+    {
+      "componentCode": "C",
+      "componentDescription": "Information Flows and Items",
+      "componentPercFinal": 0,
+      "subComponents": [
+        {
+          "subComponentCode": "BAI04.01",
+          "subComponentName": "Assess current availability, performance and capacity and create a baseline.",
+          "subComponentDescription": "Assess availability, performance and capacity of services and resources to ensure that cost-justifiable capacity and performance are available to support business needs and deliver against service level agreements (SLAs). Create availability, performance and capacity baselines for future comparison.",
+          "subComponentQuestions": [
+
+            {
+              "questionType": "Input",
+              "questionDescription": "Requirements definition repository",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "BAI02.01",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Requirements risk register",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "BAI02.03",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Evaluations against SLAs",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "outputTo": "APO09.05",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Availability, performance and capacity baselines",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "outputTo": "Internal",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "BAI04.02",
+          "subComponentName": "Assess business impact.",
+          "subComponentDescription": "Identify important services to the enterprise. Map services and resources to business processes and identify business dependencies. Ensure that the impact of unavailable resources is fully agreed on and accepted by the customer. For vital business functions, ensure that availability requirements can be satisfied per service level agreement (SLA).",
+          "subComponentQuestions": [
+            {
+              "questionType": "Input",
+              "questionDescription": "Internal and external service level agreements (SLAs)",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "BAI03.02",
+              "outputTo": "srting",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Availability, performance and capacity business impact assessments",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "Internal",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Availability, performance and capacity scenarios",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "Internal",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+
+          ]
+        },
+        {
+          "subComponentCode": "BAI04.03",
+          "subComponentName": "Plan for new or changed service requirements.",
+          "subComponentDescription": "Plan and prioritize availability, performance and capacity implications of changing business needs and service requirements.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Input",
+              "questionDescription": "Documented solution components",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "BAI03.03",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Approved detailed design specification",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "BAI03.02",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Confirmed acceptance criteria from stakeholders",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "BAI02.01",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Approved high-level design specification",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "BAI03.01",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Performance and capacity plans",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "APO02.02",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Prioritized improvements",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "APO02.02",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "BAI04.04",
+          "subComponentName": "Monitor and review availability and capacity.",
+          "subComponentDescription": "Monitor, measure, analyze, report and review availability, performance and capacity. Identify deviations from established baselines. Review trend analysis reports identifying any significant issues and variances. Initiate actions where necessary and ensure that all outstanding issues are addressed.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Output",
+              "questionDescription": "Availability, performance and capacity monitoring review reports",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "MEA01.03",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "BAI04.05",
+          "subComponentName": "Investigate and address availability, performance and capacity issues.",
+          "subComponentDescription": "Address deviations by investigating and resolving identified availability, performance and capacity issues.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Output",
+              "questionDescription": "Emergency escalation procedure",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "DSS02.02",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Performance and capacity gaps",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "Internal",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Corrective actions",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "APO02.02",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+
+        }
+      ]
+
+    },
+    {
+      "componentName": "D",
+      "componentDescription": "Peoples, Skills and Competencies",
+      "componentPercFinal": 0,
+      "componentQuestions": [
+        {
+          "questionType": "Component question",
+          "questionSkill": "Availability management",
+          "relatedGuidance": "Skills Framework for the Information Age V6, 2015 ",
+          "detailedReference": "AVMT",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "Component question",
+          "questionSkill": "Capacity management",
+          "relatedGuidance": "Skills Framework for the Information Age V6, 2015 ",
+          "detailedReference": "CPMG",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        }
+      ]
+    },
+    {
+      "componentName": "E",
+      "componentDescription": "Principles Policies and Procedures",
+      "componentPercFinal": 0,
+      "componentQuestions": [
+        {
+          "questionType": "Component question",
+          "relevantPolicy": "Availability management policy",
+          "policyDescription": "Informs infrastructure planning in terms of availability, scalability, reliability and potentially resilience. Includes guidelines to identify bandwidth, capacity and availability of services (prior to design and provisioning), establish service level agreements (SLAs), and implement continuous monitoring of circuits, traffic and response times.",
+          "detailedGuidance": "string",
+          "detailedReference": "string",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        }
+
+
+      ]
+    },
+    {
+      "componentName": "F",
+      "componentDescription": "Culture, Ethics and Behavior",
+      "componentPercFinal": 0,
+      "componentQuestions": [
+        {
+          "questionType": "Component question",
+          "keyCultureElement": "For enterprises that depend on information, availability and capacity management are critical to successful operations. Establish a culture in which product and service availability and capacity are prioritized (in line with business requirements) and supported by processes and behaviors that not only identify required availability and capacity before design, but also consider them in provisioning. Consistently define smart SLAs; continuously monitor circuits, traffic and response times; perform regular testing for business continuity and disaster recovery of infrastructure.",
+          "relatedGuidance": "string",
+          "detailedReference": "string",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        }
+
+      ]
+    },
+    {
+      "componentName": "G",
+      "componentDescription": "Services, Infrastructure and Applications",
+      "componentPercFinal": 0,
+      "componentQuestions": [
+
+        {
+          "questionType": "Component question",
+          "questionDescription": "Capacity planning tools",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "Component question",
+          "questionDescription": "Provisioning services and tools",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "Component question",
+          "questionDescription": "Service level monitoring tools",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        }
+      ]
+    }
+  ]
+}
                 

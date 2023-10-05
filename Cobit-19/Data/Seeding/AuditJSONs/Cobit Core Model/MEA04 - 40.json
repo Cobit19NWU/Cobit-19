@@ -1,7 +1,8 @@
-{  
+{
   "objectiveName": "MEA04",
   "objectiveDescription": "Plan, scope and execute assurance initiatives to comply with internal requirements, laws, regulations and strategic objectives. Enable management to deliver adequate and sustainable assurance in the enterprise by performing independent assurance reviews and activities.",
   "objectivePurpose": "Enable the organization to design and develop efficient and effective assurance initiatives, providing guidance on planning, scoping, executing and following up on assurance reviews, using a road map based on well-accepted assurance approaches.",
+  "typeOfObjective": "Governance",
   "maturityLevel": 0,
   "maturityLevel0PercFinal": 0,
   "maturityLevel1PercFinal": 0,
@@ -48,36 +49,36 @@
               "questionComment": "comment"
             }
           ]
+        },
+        {
+          "subComponentCode": "EG11",
+          "subComponentName": "Compliance with internal policies",
+          "subComponentQuestions": [
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Number of incidents related to noncompliance to policy",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
             },
-              {
-                "subComponentCode": "EG11",
-                "subComponentName": "Compliance with internal policies",
-                "subComponentQuestions": [
-                  {
-                    "questionType": "Enterprise goal",
-                    "questionDescription": "Number of incidents related to noncompliance to policy",
-                    "questionAnswer": 0,
-                    "questionScore": 0,
-                    "questionComment": "comment"
-                  },
-                  {
-                    "questionType": "Enterprise goal",
-                    "questionDescription": "Percent of stakeholders who understand policies",
-                    "questionAnswer": 0,
-                    "questionScore": 0,
-                    "questionComment": "comment"
-                  },
-                  {
-                    "questionType": "Enterprise goal",
-                    "questionDescription": "Percent of policies supported by effective standards and working practices",
-                    "questionAnswer": 0,
-                    "questionScore": 0,
-                    "questionComment": "comment"
-                  }
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Percent of stakeholders who understand policies",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Percent of policies supported by effective standards and working practices",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
 
-                ]
-              }
-            ]
+          ]
+        }
+      ]
     },
 
     {

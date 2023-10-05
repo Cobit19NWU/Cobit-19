@@ -5,6 +5,7 @@
         public string objectiveName { get; set; }
         public string objectiveDescription { get; set; }
         public string objectivePurpose { get; set; }
+        public string typeOfObjective { get; set; }
         public int maturityLevel { get; set; }
         public double maturityLevel0PercFinal { get; set; }
         public double maturityLevel1PercFinal { get; set; }

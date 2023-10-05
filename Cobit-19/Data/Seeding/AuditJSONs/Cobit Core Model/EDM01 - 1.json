@@ -2,6 +2,7 @@
   "objectiveName": "EDM01",
   "objectiveDescription": "Analyze and articulate the requirements for the governance of enterprise I&T. Put in place and maintain governance components with clarity of authority and responsibilities to achieve the enterprise's mission, goals, and objectives.",
   "objectivePurpose": "Provide a consistent approach integrated and aligned with the enterprise governance approach. I&T-related decisions are made in line with the enterprise strategies and objectives, and desired value is realized. To that end, ensure that I&T-related processes are overseen effectively and transparently; compliance with legal, contractual, and regulatory requirements is confirmed; and the governance requirements for board members are met.",
+  "typeOfObjective": "Governance",
   "maturityLevel": 0,
   "maturityLevel0PercFinal": 0,
   "maturityLevel1PercFinal": 0,

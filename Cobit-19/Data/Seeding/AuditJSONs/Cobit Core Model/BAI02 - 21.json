@@ -2,6 +2,7 @@
   "objectiveName": "BAI02",
   "objectiveDescription": "Identify solutions and analyze requirements before acquisition or creation to ensure that they align with enterprise strategic requirements covering business processes, applications, information/data, infrastructure and services. Coordinate the review of feasible options with affected stakeholders, including relative costs and benefits, risk analysis, and approval of requirements and proposed solutions.",
   "objectivePurpose": "Create optimal solutions that meet enterprise needs while minimizing risk.",
+  "typeOfObjective": "Management",
   "maturityLevel": 0,
   "maturityLevel0PercFinal": 0,
   "maturityLevel1PercFinal": 0,

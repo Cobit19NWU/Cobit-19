@@ -1,13 +1,14 @@
-{ 
+{
   "objectiveName": "APO09",
   "objectiveDescription": "Align I&T-enabled products and services and service levels with enterprise needs and expectations, including identification, specification, design, publishing, agreement, and monitoring of I&T products and services, service levels and performance indicators.",
   "objectivePurpose": "Ensure that I&T products, services and service levels meet current and future enterprise needs.",
+  "typeOfObjective": "Management",
   "maturityLevel": 0,
   "maturityLevel0PercFinal": 0,
   "maturityLevel1PercFinal": 0,
   "maturityLevel2PercFinal": 0,
   "maturityLevel3PercFinal": 0,
-  "maturityLevel4PercFinal": 0, 
+  "maturityLevel4PercFinal": 0,
   "maturityLevel5PercFinal": 0,
   "components": [
     {
@@ -15,906 +16,906 @@
       "componentDescription": "Enterprise Goals",
       "componentPercFinal": 0,
       "subComponents": [
-        
-          {
-            "subComponentCode": "EG01",
-            "subComponentName": "Portfolio of competitive products and services",
-            "subComponentQuestions": [
-              {
-                "questionType": "Enterprise goal",
-                "questionDescription": "Percent of products and services that meet or exceed targets in revenues and/or market share",
-                "questionAnswer": 0,
-                "questionScore": 0,
-                "questionComment": "comment"
-              },
-              {
-                "questionType": "Enterprise goal",
-                "questionDescription": "Percent of products and services that meet or exceed customer satisfaction targets",
-                "questionAnswer": 0,
-                "questionScore": 0,
-                "questionComment": "comment"
-              },
-              {
-                "questionType": "Enterprise goal",
-                "questionDescription": "Percent of products and services that provide competitive advantage",
-                "questionAnswer": 0,
-                "questionScore": 0,
-                "questionComment": "comment"
-              },
-              {
-                "questionType": "Enterprise goal",
-                "questionDescription": "Time to market for new products and services",
-                "questionAnswer": 0,
-                "questionScore": 0,
-                "questionComment": "comment"
-              }
-            ]
-          },
-          {
-            "subComponentCode": "EG08",
-            "subComponentName": "Optimization of internal business process functionality",
-            "subComponentQuestions": [
-              {
-                "questionType": "Enterprise goal",
-                "questionDescription": "Satisfaction levels of board and executive management with business process capabilities",
-                "questionAnswer": 0,
-                "questionScore": 0,
-                "questionComment": "comment"
-              },
-              {
-                "questionType": "Enterprise goal",
-                "questionDescription": "Satisfaction levels of customers with service delivery capabilities",
-                "questionAnswer": 0,
-                "questionScore": 0,
-                "questionComment": "comment"
-              },
-              {
-                "questionType": "Enterprise goal",
-                "questionDescription": "Satisfaction levels of suppliers with supply chain capabilities",
-                "questionAnswer": 0,
-                "questionScore": 0,
-                "questionComment": "comment"
-              }
 
-            ]
-          }
+        {
+          "subComponentCode": "EG01",
+          "subComponentName": "Portfolio of competitive products and services",
+          "subComponentQuestions": [
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Percent of products and services that meet or exceed targets in revenues and/or market share",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Percent of products and services that meet or exceed customer satisfaction targets",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Percent of products and services that provide competitive advantage",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Time to market for new products and services",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "EG08",
+          "subComponentName": "Optimization of internal business process functionality",
+          "subComponentQuestions": [
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Satisfaction levels of board and executive management with business process capabilities",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Satisfaction levels of customers with service delivery capabilities",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Satisfaction levels of suppliers with supply chain capabilities",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+
+          ]
+        }
       ]
 
     },
-{
-  "componentCode": "AG",
-  "componentDescription": "Alignment Goals",
-  "componentPercFinal": 0,
-  "subComponents": [
     {
-      "subComponentCode": "AG05",
-      "subComponentName": "Delivery of I&T services in line with business requirements",
-      "subComponentQuestions": [
+      "componentCode": "AG",
+      "componentDescription": "Alignment Goals",
+      "componentPercFinal": 0,
+      "subComponents": [
         {
-          "questionType": "Alignment goal",
-          "questionDescription": "Percent of business stakeholders satisfied that I&T service delivery meets agreed service levels",
-          "questionAnswer": 0,
-          "questionScore": 0,
-          "questionComment": "comment"
-        },
-        {
-          "questionType": "Alignment goal",
-          "questionDescription": "Number of business disruptions due to I&T service incidents",
-          "questionAnswer": 0,
-          "questionScore": 0,
-          "questionComment": "comment"
-        },
-        {
-          "questionType": "Alignment goal",
-          "questionDescription": "Percent of users satisfied with the quality of I&T service delivery",
-          "questionAnswer": 0,
-          "questionScore": 0,
-          "questionComment": "comment"
-        }
-      ]
-    }
-       
-                ]
-              },
-            
-        {
-          "componentName": "A",
-          "componentDescription": "Processes",
-          "componentPercFinal": 0,
-          "subComponents": [
+          "subComponentCode": "AG05",
+          "subComponentName": "Delivery of I&T services in line with business requirements",
+          "subComponentQuestions": [
             {
-              "subComponentCode": "APO09.01",
-              "subComponentName": " Identify I&T services.",
-              "subComponentDescription": "Analyze business requirements and the degree to which I&T-enabled services and service levels support business processes. Discuss and agree with the business on potential services and service levels. Compare potential service levels against the current service portfolio; identify new or changed services or service level options.",
-              "subComponentQuestions": [
-                {
-                  "questionType": "Maturity Level 2",
-                  "questionDescription": "Assess current I&T services and service levels to identify gaps between existing services and the business activities they support. Identify areas for improvement of existing services and service level options.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 2",
-                  "questionDescription": "Analyze, study and estimate future demand and confirm capacity of existing I&T-enabled services",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 3",
-                  "questionDescription": "Analyze business process activities to identify the need for new or redesigned I&T services.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 3",
-                  "questionDescription": "Compare identified requirements to existing service components in the portfolio. If possible, package existing service components (I&T services, service level options and service packages) into new service packages to meet identified business requirements",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 3",
-                  "questionDescription": "Regularly review the portfolio of I&T services with portfolio management and business relationship management to identify obsolete services. Agree on retirement and propose change.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 4",
-                  "questionDescription": "Where possible, match demands to service packages and create standardized services to obtain overall efficiencies",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Related Guidance",
-                  "questionDescription": "",
-                  "relatedGuidance": "ITIL V3, 2011",
-                  "detailedReference": "Service Strategy, 4.4 Demand management ",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                }
-              ]
-            },
-            {
-              "subComponentCode": "APO09.02",
-              "subComponentName": "Catalog I&T-enabled services",
-              "subComponentDescription": "Define and maintain one or more service catalogues for relevant target groups. Publish and maintain live I&T-enabled services in the service catalogs.",
-              "subComponentQuestions": [
-                {
-                  "questionType": "Maturity Level 2",
-                  "questionDescription": "Publish in catalogues relevant live I&T-enabled services, service packages and service level options from the portfolio.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 3",
-                  "questionDescription": "Continually ensure that the service components in the portfolio and the related service catalogues are complete and up to date.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 3",
-                  "questionDescription": "Inform business relationship management of any updates to the service catalogues.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Related Guidance",
-                  "questionDescription": "",
-                  "relatedGuidance": "ITIL V3, 2011",
-                  "detailedReference": "Service Design, 4.2 Service Catalogue Management",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                }
-              ]
-            },
-            {
-              "subComponentCode": "APO09.03",
-              "subComponentName": "Define and prepare service agreements",
-              "subComponentDescription": "Define and prepare service agreements based on options in the service catalogues. Include internal operational agreements.",
-              "subComponentQuestions": [
-                {
-                  "questionType": "Maturity Level 2",
-                  "questionDescription": "Analyze requirements for new or changed service agreements received from business relationship management to ensure that the requirements can be matched. Consider aspects such as service times, availability, performance, capacity, security, privacy, continuity, compliance and regulatory issues, usability, demand constraints, and data quality",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 2",
-                  "questionDescription": " Draft customer service agreements based on the services, service packages and service level options in the relevant service catalogues",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 2",
-                  "questionDescription": "Finalize customer service agreements with business relationship management.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 3",
-                  "questionDescription": " Determine, agree on and document internal operational agreements to underpin the customer service agreements, if applicable. ",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 3",
-                  "questionDescription": "Liaise with supplier management to ensure that appropriate commercial contracts with external service providers underpin the customer service agreements, if applicable.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Related Guidance",
-                  "questionDescription": "",
-                  "relatedGuidance": "ISF, The Standard of Good Practice for Information Security 2016",
-                  "detailedReference": "SY2.1 Service Level Agreements",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Related Guidance",
-                  "questionDescription": "",
-                  "relatedGuidance": "ISO/IEC 20000-1:2011(E)",
-                  "detailedReference": "4.5 Establish and improve the SMS; 6.1 Service level management",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Related Guidance",
-                  "questionDescription": "",
-                  "relatedGuidance": "ITIL V3, 2011",
-                  "detailedReference": "Service Design, 4.3 Service Level Management",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Related Guidance",
-                  "questionDescription": "",
-                  "relatedGuidance": "National Institute of Standards and Technology Special Publication 800-53, Revision 5 (Draft), August 2017",
-                  "detailedReference": "3.18 System and services acquisition (SA-9)",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                }
-              ]
-            },
-            {
-              "subComponentCode": "APO09.04",
-              "subComponentName": "Monitor and report service levels.",
-              "subComponentDescription": "Monitor service levels, report on achievements and identify trends. Provide the appropriate management information to aid performance management.",
-              "subComponentQuestions": [
-                {
-                  "questionType": "Maturity Level 4",
-                  "questionDescription": "Establish and maintain measures to monitor and collect service level data.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 4",
-                  "questionDescription": "Evaluate performance and provide regular and formal reporting of service agreement performance, including deviations from the agreed values. Distribute this report to business relationship management.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 4",
-                  "questionDescription": "Perform regular reviews to forecast and identify trends in service level performance. Incorporate quality management practices in the service monitoring.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 4",
-                  "questionDescription": " Provide the appropriate management information to aid performance management.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 4",
-                  "questionDescription": " Agree on action plans and remediations for any performance issues or negative trends",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Related Guidance",
-                  "questionDescription": "",
-                  "relatedGuidance": "HITRUST CSF version 9, September 2017",
-                  "detailedReference": "09.02 Control Third Party Service Delivery",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Related Guidance",
-                  "questionDescription": "",
-                  "relatedGuidance": "ISO/IEC 20000-1:2011(E) ",
-                  "detailedReference": "6.2 Service reporting",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                }
-              ]
-            },
-            {
-              "subComponentCode": "APO09.05",
-              "subComponentName": "Review service agreements and contracts.",
-              "subComponentDescription": "Conduct periodic reviews of the service agreements and revise when needed.",
-              "subComponentQuestions": [
-                {
-                  "questionType": "Maturity Level 3",
-                  "questionDescription": "Regularly review service agreements according to the agreed terms to ensure that they are effective and up to date. When appropriate, take into account changes in requirements, I&T-enabled services, service packages or service level options.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 4",
-                  "questionDescription": "When needed, revise the existing service agreement with the service provider. Agree on and update the internal operational agreement",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                }
-              ]
-            }
-
-          ]
-        },
-        {
-          "componentName": "B",
-          "componentDescription": "Organizational Structures",
-          "componentPercFinal": 0,
-          "componentQuestions": [
-            {
-              "questionType": "Sub Process 1",
-              "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+              "questionType": "Alignment goal",
+              "questionDescription": "Percent of business stakeholders satisfied that I&T service delivery meets agreed service levels",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": "comment"
             },
             {
-              "questionType": "Sub Process 2",
-              "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+              "questionType": "Alignment goal",
+              "questionDescription": "Number of business disruptions due to I&T service incidents",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": "comment"
             },
             {
-              "questionType": "Sub Process 3",
-              "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
-              "questionAnswer": 0,
-              "questionScore": 0,
-              "questionComment": "comment"
-            },
-            {
-              "questionType": "Sub Process 4",
-              "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
-              "questionAnswer": 0,
-              "questionScore": 0,
-              "questionComment": "comment"
-            },
-            {
-              "questionType": "Sub Process 5",
-              "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
-              "questionAnswer": 0,
-              "questionScore": 0,
-              "questionComment": "comment"
-            }
-          ]
-
-        },
-        {
-          "componentName": "C",
-          "componentDescription": "Information Flows and Items",
-          "componentPercFinal": 0,
-          "subComponents": [
-            {
-              "subComponentCode": "APO09.01",
-              "subComponentName": " Identify I&T services.",
-              "subComponentDescription": "Analyze business requirements and the degree to which I&T-enabled services and service levels support business processes. Discuss and agree with the business on potential services and service levels. Compare potential service levels against the current service portfolio; identify new or changed services or service level options.",
-              "subComponentQuestions": [
-
-                {
-                  "questionType": "Output",
-                  "questionDescription": "Identified gaps in I&T services to the business",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "APO01.10 ,APO02.02, APO05.02, APO08.02",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Output",
-                  "questionDescription": "Definitions of standard services",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "EDM02.01",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                }
-              ]
-            },
-            {
-              "subComponentCode": "APO09.02",
-              "subComponentName": "Catalog I&T-enabled services",
-              "subComponentDescription": "Define and maintain one or more service catalogues for relevant target groups. Publish and maintain live I&T-enabled services in the service catalogs.",
-              "subComponentQuestions": [
-
-                {
-                  "questionType": "Input",
-                  "questionDescription": "Updated portfolios of programs, services and assets",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "APO05.04",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Input",
-                  "questionDescription": "Approved resources plan",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "EDM04.01",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Input",
-                  "questionDescription": "Communication of resourcing strategies",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "EDM04.02",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                }
-              ]
-            },
-            {
-              "subComponentCode": "APO09.03",
-              "subComponentName": "Define and prepare service agreements",
-              "subComponentDescription": "Define and prepare service agreements based on options in the service catalogues. Include internal operational agreements.",
-              "subComponentQuestions": [
-
-                {
-                  "questionType": "Input",
-                  "questionDescription": "Customer requirements for quality management",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "APO11.02",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Input",
-                  "questionDescription": "Data quality requirements",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "APO14.07",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Output",
-                  "questionDescription": "Service level agreements (SLAs)",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "APO05.02, APO08.04, DSS01.02, DSS02.01, DSS02.02, DSS04.01, DSS05.02, DSS05.03",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Output",
-                  "questionDescription": "Operational level agreements (OLAs)",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "DSS01.02, DSS02.07, DSS04.03, DSS05.03",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                }
-              ]
-            },
-            {
-              "subComponentCode": "APO09.04",
-              "subComponentName": "Monitor and report service levels.",
-              "subComponentDescription": "Monitor service levels, report on achievements and identify trends. Provide the appropriate management information to aid performance management.",
-              "subComponentQuestions": [
-
-                {
-                  "questionType": "Input",
-                  "questionDescription": "Investment portfolio performance reports",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "APO05.03",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Input",
-                  "questionDescription": "Benefit results and related communications • Corrective actions to improve benefit realization",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "APO05.05",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Input",
-                  "questionDescription": "Satisfaction analyses",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "APO08.05",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Input",
-                  "questionDescription": "Results of quality monitoring for solution and service delivery • Root causes of quality delivery failures",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "APO11.03",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Input",
-                  "questionDescription": "Results of quality reviews and audits",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "APO11.04",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Input",
-                  "questionDescription": "Classified and prioritized incidents and service requests",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "DSS02.02",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Input",
-                  "questionDescription": "Closed service requests and incidents",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "DSS02.06",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Input",
-                  "questionDescription": "Incident status and trends report • Status of request fulfilment and trends report",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "DSS02.07",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Input",
-                  "questionDescription": "Remedial actions to address resource management deviations",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "EDM04.03",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Output",
-                  "questionDescription": "Service level performance reports",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "APO08.02, MEA01.03",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                }
-              ]
-            },
-            {
-              "subComponentCode": "APO09.05",
-              "subComponentName": "Review service agreements and contracts.",
-              "subComponentDescription": "Conduct periodic reviews of the service agreements and revise when needed.",
-              "subComponentQuestions": [
-
-                {
-                  "questionType": "Input",
-                  "questionDescription": "Results of quality of service, including customer feedback",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "APO11.02",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Input",
-                  "questionDescription": "Results of quality reviews and audits",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "APO11.04",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Input",
-                  "questionDescription": "Evaluations against SLAs",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "BAI04.01",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Input",
-                  "questionDescription": "Feedback on allocation and effectiveness of resources and capabilities",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "EDM04.03",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Output",
-                  "questionDescription": "Updated SLAs",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "Internal",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                }
-              ]
-            }
-
-          ]
-        },
-        {
-          "componentName": "D",
-          "componentDescription": "Peoples, Skills and Competencies",
-          "componentPercFinal": 0,
-          "componentQuestions": [
-            {
-              "questionType": "Component question",
-              "questionSkill": "Service level management",
-              "relatedGuidance": "Skills Framework for the Information Age V6, 2015",
-              "detailedReference": "A. Plan—A.2. Service Level Management",
-              "questionAnswer": 0,
-              "questionScore": 0,
-              "questionComment": "comment"
-            },
-            {
-              "questionType": "Component question",
-              "questionSkill": "Service level management",
-              "relatedGuidance": "e-Competence Framework (e-CF)—A common European Framework for ICT Professionals in all industry sectors—Part 1: Framework, 2016",
-              "detailedReference": "SLMO",
-              "questionAnswer": 0,
-              "questionScore": 0,
-              "questionComment": "comment"
-            }
-          ]
-        },
-        {
-          "componentName": "E",
-          "componentDescription": "Principles Policies and Procedures",
-          "componentPercFinal": 0,
-          "componentQuestions": [
-            {
-              "questionType": "Component question",
-              "relevantPolicy": "Service level agreement (SLA) policy",
-              "policyDescription": "Describes general standards and criteria to inform specific requirements and terms for delivery of services, whether between entities within the enterprise or between the enterprise and a third party.",
-              "detailedGuidance": "",
-              "detailedReference": "",
-              "questionAnswer": 0,
-              "questionScore": 0,
-              "questionComment": "comment"
-            }
-          ]
-        },
-        {
-          "componentName": "F",
-          "componentDescription": "Culture, Ethics and Behavior",
-          "componentPercFinal": 0,
-          "componentQuestions": [
-            {
-              "questionType": "Component question",
-              "keyCultureElement": "Establish a contract between a service provider (internal or external) and the end user that defines expected level of service. Make sure this service level is based on output, specifically defining what the customer will receive in SMART objectives (specific, measurable, achievable, realistic and time-phased). Establish a culture in which service levels are respected. Discourage noncompliance through a penalty system.",
-              "relatedGuidance": "",
-              "detailedReference": "",
-              "questionAnswer": 0,
-              "questionScore": 0,
-              "questionComment": "comment"
-            }
-          ]
-        },
-        {
-          "componentName": "G",
-          "componentDescription": "Services, Infrastructure and Applications",
-          "componentPercFinal": 0,
-          "componentQuestions": [
-            {
-              "questionType": "Component question",
-              "questionDescription": "Contract management system",
-              "questionAnswer": 0,
-              "questionScore": 0,
-              "questionComment": "comment"
-            },
-            {
-              "questionType": "Component question",
-              "questionDescription": "Service level monitoring tools ",
+              "questionType": "Alignment goal",
+              "questionDescription": "Percent of users satisfied with the quality of I&T service delivery",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": "comment"
             }
           ]
         }
+
+      ]
+    },
+
+    {
+      "componentName": "A",
+      "componentDescription": "Processes",
+      "componentPercFinal": 0,
+      "subComponents": [
+        {
+          "subComponentCode": "APO09.01",
+          "subComponentName": " Identify I&T services.",
+          "subComponentDescription": "Analyze business requirements and the degree to which I&T-enabled services and service levels support business processes. Discuss and agree with the business on potential services and service levels. Compare potential service levels against the current service portfolio; identify new or changed services or service level options.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Assess current I&T services and service levels to identify gaps between existing services and the business activities they support. Identify areas for improvement of existing services and service level options.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Analyze, study and estimate future demand and confirm capacity of existing I&T-enabled services",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Analyze business process activities to identify the need for new or redesigned I&T services.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Compare identified requirements to existing service components in the portfolio. If possible, package existing service components (I&T services, service level options and service packages) into new service packages to meet identified business requirements",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Regularly review the portfolio of I&T services with portfolio management and business relationship management to identify obsolete services. Agree on retirement and propose change.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": "Where possible, match demands to service packages and create standardized services to obtain overall efficiencies",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "",
+              "relatedGuidance": "ITIL V3, 2011",
+              "detailedReference": "Service Strategy, 4.4 Demand management ",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "APO09.02",
+          "subComponentName": "Catalog I&T-enabled services",
+          "subComponentDescription": "Define and maintain one or more service catalogues for relevant target groups. Publish and maintain live I&T-enabled services in the service catalogs.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Publish in catalogues relevant live I&T-enabled services, service packages and service level options from the portfolio.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Continually ensure that the service components in the portfolio and the related service catalogues are complete and up to date.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Inform business relationship management of any updates to the service catalogues.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "",
+              "relatedGuidance": "ITIL V3, 2011",
+              "detailedReference": "Service Design, 4.2 Service Catalogue Management",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "APO09.03",
+          "subComponentName": "Define and prepare service agreements",
+          "subComponentDescription": "Define and prepare service agreements based on options in the service catalogues. Include internal operational agreements.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Analyze requirements for new or changed service agreements received from business relationship management to ensure that the requirements can be matched. Consider aspects such as service times, availability, performance, capacity, security, privacy, continuity, compliance and regulatory issues, usability, demand constraints, and data quality",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": " Draft customer service agreements based on the services, service packages and service level options in the relevant service catalogues",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Finalize customer service agreements with business relationship management.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": " Determine, agree on and document internal operational agreements to underpin the customer service agreements, if applicable. ",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Liaise with supplier management to ensure that appropriate commercial contracts with external service providers underpin the customer service agreements, if applicable.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "",
+              "relatedGuidance": "ISF, The Standard of Good Practice for Information Security 2016",
+              "detailedReference": "SY2.1 Service Level Agreements",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "",
+              "relatedGuidance": "ISO/IEC 20000-1:2011(E)",
+              "detailedReference": "4.5 Establish and improve the SMS; 6.1 Service level management",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "",
+              "relatedGuidance": "ITIL V3, 2011",
+              "detailedReference": "Service Design, 4.3 Service Level Management",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "",
+              "relatedGuidance": "National Institute of Standards and Technology Special Publication 800-53, Revision 5 (Draft), August 2017",
+              "detailedReference": "3.18 System and services acquisition (SA-9)",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "APO09.04",
+          "subComponentName": "Monitor and report service levels.",
+          "subComponentDescription": "Monitor service levels, report on achievements and identify trends. Provide the appropriate management information to aid performance management.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": "Establish and maintain measures to monitor and collect service level data.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": "Evaluate performance and provide regular and formal reporting of service agreement performance, including deviations from the agreed values. Distribute this report to business relationship management.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": "Perform regular reviews to forecast and identify trends in service level performance. Incorporate quality management practices in the service monitoring.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": " Provide the appropriate management information to aid performance management.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": " Agree on action plans and remediations for any performance issues or negative trends",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "",
+              "relatedGuidance": "HITRUST CSF version 9, September 2017",
+              "detailedReference": "09.02 Control Third Party Service Delivery",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "",
+              "relatedGuidance": "ISO/IEC 20000-1:2011(E) ",
+              "detailedReference": "6.2 Service reporting",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "APO09.05",
+          "subComponentName": "Review service agreements and contracts.",
+          "subComponentDescription": "Conduct periodic reviews of the service agreements and revise when needed.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Regularly review service agreements according to the agreed terms to ensure that they are effective and up to date. When appropriate, take into account changes in requirements, I&T-enabled services, service packages or service level options.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": "When needed, revise the existing service agreement with the service provider. Agree on and update the internal operational agreement",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        }
+
+      ]
+    },
+    {
+      "componentName": "B",
+      "componentDescription": "Organizational Structures",
+      "componentPercFinal": 0,
+      "componentQuestions": [
+        {
+          "questionType": "Sub Process 1",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "Sub Process 2",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "Sub Process 3",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "Sub Process 4",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "Sub Process 5",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        }
+      ]
+
+    },
+    {
+      "componentName": "C",
+      "componentDescription": "Information Flows and Items",
+      "componentPercFinal": 0,
+      "subComponents": [
+        {
+          "subComponentCode": "APO09.01",
+          "subComponentName": " Identify I&T services.",
+          "subComponentDescription": "Analyze business requirements and the degree to which I&T-enabled services and service levels support business processes. Discuss and agree with the business on potential services and service levels. Compare potential service levels against the current service portfolio; identify new or changed services or service level options.",
+          "subComponentQuestions": [
+
+            {
+              "questionType": "Output",
+              "questionDescription": "Identified gaps in I&T services to the business",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "APO01.10 ,APO02.02, APO05.02, APO08.02",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Definitions of standard services",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "EDM02.01",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "APO09.02",
+          "subComponentName": "Catalog I&T-enabled services",
+          "subComponentDescription": "Define and maintain one or more service catalogues for relevant target groups. Publish and maintain live I&T-enabled services in the service catalogs.",
+          "subComponentQuestions": [
+
+            {
+              "questionType": "Input",
+              "questionDescription": "Updated portfolios of programs, services and assets",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "APO05.04",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Approved resources plan",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "EDM04.01",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Communication of resourcing strategies",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "EDM04.02",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "APO09.03",
+          "subComponentName": "Define and prepare service agreements",
+          "subComponentDescription": "Define and prepare service agreements based on options in the service catalogues. Include internal operational agreements.",
+          "subComponentQuestions": [
+
+            {
+              "questionType": "Input",
+              "questionDescription": "Customer requirements for quality management",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "APO11.02",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Data quality requirements",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "APO14.07",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Service level agreements (SLAs)",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "APO05.02, APO08.04, DSS01.02, DSS02.01, DSS02.02, DSS04.01, DSS05.02, DSS05.03",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Operational level agreements (OLAs)",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "DSS01.02, DSS02.07, DSS04.03, DSS05.03",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "APO09.04",
+          "subComponentName": "Monitor and report service levels.",
+          "subComponentDescription": "Monitor service levels, report on achievements and identify trends. Provide the appropriate management information to aid performance management.",
+          "subComponentQuestions": [
+
+            {
+              "questionType": "Input",
+              "questionDescription": "Investment portfolio performance reports",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "APO05.03",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Benefit results and related communications • Corrective actions to improve benefit realization",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "APO05.05",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Satisfaction analyses",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "APO08.05",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Results of quality monitoring for solution and service delivery • Root causes of quality delivery failures",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "APO11.03",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Results of quality reviews and audits",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "APO11.04",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Classified and prioritized incidents and service requests",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "DSS02.02",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Closed service requests and incidents",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "DSS02.06",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Incident status and trends report • Status of request fulfilment and trends report",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "DSS02.07",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Remedial actions to address resource management deviations",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "EDM04.03",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Service level performance reports",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "APO08.02, MEA01.03",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "APO09.05",
+          "subComponentName": "Review service agreements and contracts.",
+          "subComponentDescription": "Conduct periodic reviews of the service agreements and revise when needed.",
+          "subComponentQuestions": [
+
+            {
+              "questionType": "Input",
+              "questionDescription": "Results of quality of service, including customer feedback",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "APO11.02",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Results of quality reviews and audits",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "APO11.04",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Evaluations against SLAs",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "BAI04.01",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Feedback on allocation and effectiveness of resources and capabilities",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "EDM04.03",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Updated SLAs",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "Internal",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        }
+
+      ]
+    },
+    {
+      "componentName": "D",
+      "componentDescription": "Peoples, Skills and Competencies",
+      "componentPercFinal": 0,
+      "componentQuestions": [
+        {
+          "questionType": "Component question",
+          "questionSkill": "Service level management",
+          "relatedGuidance": "Skills Framework for the Information Age V6, 2015",
+          "detailedReference": "A. Plan—A.2. Service Level Management",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "Component question",
+          "questionSkill": "Service level management",
+          "relatedGuidance": "e-Competence Framework (e-CF)—A common European Framework for ICT Professionals in all industry sectors—Part 1: Framework, 2016",
+          "detailedReference": "SLMO",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        }
+      ]
+    },
+    {
+      "componentName": "E",
+      "componentDescription": "Principles Policies and Procedures",
+      "componentPercFinal": 0,
+      "componentQuestions": [
+        {
+          "questionType": "Component question",
+          "relevantPolicy": "Service level agreement (SLA) policy",
+          "policyDescription": "Describes general standards and criteria to inform specific requirements and terms for delivery of services, whether between entities within the enterprise or between the enterprise and a third party.",
+          "detailedGuidance": "",
+          "detailedReference": "",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        }
+      ]
+    },
+    {
+      "componentName": "F",
+      "componentDescription": "Culture, Ethics and Behavior",
+      "componentPercFinal": 0,
+      "componentQuestions": [
+        {
+          "questionType": "Component question",
+          "keyCultureElement": "Establish a contract between a service provider (internal or external) and the end user that defines expected level of service. Make sure this service level is based on output, specifically defining what the customer will receive in SMART objectives (specific, measurable, achievable, realistic and time-phased). Establish a culture in which service levels are respected. Discourage noncompliance through a penalty system.",
+          "relatedGuidance": "",
+          "detailedReference": "",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        }
+      ]
+    },
+    {
+      "componentName": "G",
+      "componentDescription": "Services, Infrastructure and Applications",
+      "componentPercFinal": 0,
+      "componentQuestions": [
+        {
+          "questionType": "Component question",
+          "questionDescription": "Contract management system",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "Component question",
+          "questionDescription": "Service level monitoring tools ",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        }
       ]
     }
+  ]
+}
   
 
 

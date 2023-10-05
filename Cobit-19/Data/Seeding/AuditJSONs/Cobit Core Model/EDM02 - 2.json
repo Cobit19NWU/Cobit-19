@@ -1,7 +1,8 @@
-{  
+{
   "objectiveName": "EDM02",
   "objectiveDescription": "Optimize the value to the business from investments in business processes, I&T services and I&T assets.",
   "objectivePurpose": "Secure optimal value from I&T-enabled initiatives, services and assets; cost-efficient delivery of solutions and services; and a reliable and accurate icture of costs and likely benefits so that business needs are supported effectively and efficiently.",
+  "typeOfObjective": "Governance",
   "maturityLevel": 0,
   "maturityLevel0PercFinal": 0,
   "maturityLevel1PercFinal": 0,
@@ -114,461 +115,118 @@
           ]
         }
       ]
-    }, {
-          "componentCode": "AG",
-          "componentDescription": "Alignment Goals",
-          "componentPercFinal": 0,
-          "subComponents": [
+    },
+    {
+      "componentCode": "AG",
+      "componentDescription": "Alignment Goals",
+      "componentPercFinal": 0,
+      "subComponents": [
+        {
+          "subComponentCode": "AG03",
+          "subComponentName": "Realized benefits from I&T-enabled investments and services portfolio",
+          "subComponentQuestions": [
             {
-              "subComponentCode": "AG03",
-              "subComponentName": "Realized benefits from I&T-enabled investments and services portfolio",
-              "subComponentQuestions": [
-                {
-                  "questionType": "Alignment goal",
-                  "questionDescription": "Percent of I&T-enabled investments for which claimed benefits in the business case are met or exceeded",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Alignment goal",
-                  "questionDescription": "Percent of I&T services for which expected benefits (as stated in service level agreements) are realized",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                }
+              "questionType": "Alignment goal",
+              "questionDescription": "Percent of I&T-enabled investments for which claimed benefits in the business case are met or exceeded",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Alignment goal",
+              "questionDescription": "Percent of I&T services for which expected benefits (as stated in service level agreements) are realized",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
 
-              ]
-            }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "componentName": "A",
+      "componentDescription": "Process",
+      "componentPercFinal": 0,
+      "subComponents": [
         {
-          "componentName": "A",
-          "componentDescription": "Process",
-          "componentPercFinal": 0,
-          "subComponents": [
+          "subComponentCode": "EDM02.01",
+          "subComponentName": "Establish the target investment mix",
+          "subComponentDescription": "Review and ensure clarity of the enterprise and I&T strategies and current services. Define an appropriate investment mix based on cost, alignment with strategy, type of benefit for the programs in the portfolio, degree of risk, and financial measures such as cost and expected return on investment (ROI) over the full economic life cycle. Adjust the enterprise and I&T strategies where necessary.",
+          "subComponentQuestions": [
             {
-              "subComponentCode": "EDM02.01",
-              "subComponentName": "Establish the target investment mix",
-              "subComponentDescription": "Review and ensure clarity of the enterprise and I&T strategies and current services. Define an appropriate investment mix based on cost, alignment with strategy, type of benefit for the programs in the portfolio, degree of risk, and financial measures such as cost and expected return on investment (ROI) over the full economic life cycle. Adjust the enterprise and I&T strategies where necessary.",
-              "subComponentQuestions": [
-                {
-                  "questionType": "Maturity Level 2",
-                  "questionDescription": ". Create and maintain portfolios of I&T-enabled investment programs, IT services and IT assets, which form the basis for the current IT budget and support the I&T tactical and strategic plans.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 2",
-                  "questionDescription": " Obtain a common understanding between IT and the other business functions on the potential opportunities for IT to enable and contribute to enterprise strategy.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 2",
-                  "questionDescription": " Identify the broad categories of information systems, applications, data, IT services, infrastructure, I&T assets, resources, skills, practices, controls and relationships needed to support the enterprise strategy.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 2",
-                  "questionDescription": "Agree on I&T goals, taking into account the interrelationships between the enterprise strategy and the I&T services, assets and other resources. Identify and leverage synergies that can be achieved.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 2",
-                  "questionDescription": "Define an investment mix that achieves the right balance among a number of dimensions, including an appropriate balance of short- and long-term returns, financial and nonfinancial benefits, and high- and low-risk investments.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Related Guidance",
-                  "questionDescription": "",
-                  "relatedGuidance": "King IV Report on Corporate Governance for South Africa, 2016",
-                  "detailedReference": "Part 5.5: Stakeholder relationships—Principle 17",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Related Guidance",
-                  "questionDescription": "",
-                  "relatedGuidance": "The Open Group IT4IT Reference Architecture, Version 2.0",
-                  "detailedReference": "3.2 IT Value Chain and IT4IT Reference Architecture",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                }
-              ]
-            },
-            {
-              "subComponentCode": "EDM02.02",
-              "subComponentName": "Evaluate value optimization",
-              "subComponentDescription": "Continually evaluate the portfolio of I&T-enabled investments, services and assets to determine the likelihood of achieving enterprise objectives and delivering value. Identify and evaluate any changes in direction to management that will optimize value creation.",
-              "subComponentQuestions": [
-                {
-                  "questionType": "Maturity Level 2",
-                  "questionDescription": "Understand stakeholder requirements; strategic I&T issues, such as dependence on I&T; and technology insights and capabilities regarding the actual and potential significance of I&T for the enterprise’s strategy.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 3",
-                  "questionDescription": "Understand the key elements of governance required for the reliable, secure and cost-effective delivery of optimal value from the use of existing and new I&T services, assets and resources. ",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 3",
-                  "questionDescription": "Understand and regularly discuss the opportunities that could arise for the enterprise from changes enabled by current, new or emerging technologies, and optimize the value created from those opportunities. ",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 4",
-                  "questionDescription": "Evaluate how effectively the enterprise and I&T strategies have been integrated and aligned within the enterprise and with enterprise goals for delivering value. ",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 4",
-                  "questionDescription": "Understand and consider how effective current roles, responsibilities, accountabilities and decision-making bodies are in ensuring value creation from I&T-enabled investments, services and assets.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 4",
-                  "questionDescription": "Consider how well the management of I&T-enabled investments, services and assets aligns with enterprise value management and financial management practices.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 4",
-                  "questionDescription": ". Evaluate the portfolio of investments, services and assets for alignment with the enterprise’s strategic objectives; enterprise worth, both financial and nonfinancial; risk, both delivery risk and benefits risk; business process alignment; effectiveness in terms of usability, availability and responsiveness; and efficiency in terms of cost, redundancy and technical health.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Related Guidance",
-                  "questionDescription": "",
-                  "relatedGuidance": "COSO Enterprise Risk Management, June 2017",
-                  "detailedReference": "7. Strategy and Objective-Setting—Principle 8",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Related Guidance",
-                  "questionDescription": "",
-                  "relatedGuidance": "ISF, The Standard of Good Practice for Information Security 2016",
-                  "detailedReference": "SG2.2 Stakeholder Value Delivery",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Related Guidance",
-                  "questionDescription": "",
-                  "relatedGuidance": "ISO/IEC 38500:2015(E)",
-                  "detailedReference": "5.3 Principle 2: Strategy (Evaluate)",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Related Guidance",
-                  "questionDescription": "",
-                  "relatedGuidance": "King IV Report on Corporate Governance for South Africa, 2016",
-                  "detailedReference": "Part 5.2: Strategy, performance and reporting—Principle 4",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Related Guidance",
-                  "questionDescription": "",
-                  "relatedGuidance": "The Open Group IT4IT Reference Architecture, Version 2.0",
-                  "detailedReference": "5. Strategy to Portfolio (S2P) Value Stream.",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                }
-              ]
-            },
-            {
-              "subComponentCode": "EDM02.03",
-              "subComponentName": "Direct value optimization.",
-              "subComponentDescription": "Direct value management principles and practices to enable optimal value realization from I&T-enabled investments throughout their full economic life cycle.",
-              "subComponentQuestions": [
-                {
-                  "questionType": "Maturity Level 2",
-                  "questionDescription": "Define and communicate portfolio and investment types, categories, criteria and relative weightings to the criteria to allow for overall relative value scores.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 3",
-                  "questionDescription": "Define requirements for stage-gates and other reviews for significance of the investment to the enterprise and associated risk, program schedules, funding plans, and the delivery of key capabilities and benefits and ongoing contribution to value.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 3",
-                  "questionDescription": "Direct management to consider potential innovative uses of I&T that enable the enterprise to respond to new opportunities or challenges, undertake new business, increase competitiveness, or improve processes.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 3",
-                  "questionDescription": "Direct any required changes in assignment of accountabilities and responsibilities for executing the investment portfolio and delivering value from business processes and services.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 3",
-                  "questionDescription": "Direct any required changes to the portfolio of investments and services to realign with current and expected enterprise objectives and/or constraints.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 3",
-                  "questionDescription": "Recommend consideration of potential innovations, organizational changes or operational improvements that could drive increased value for the enterprise from I&T-enabled initiatives.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 4",
-                  "questionDescription": "Define and communicate enterprise-level value delivery goals and outcome measures to enable effective monitoring.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Related Guidance",
-                  "questionDescription": "",
-                  "relatedGuidance": "ISO/IEC 38500:2015(E) ",
-                  "detailedReference": "5.3 Principle 2: Strategy (Direct)",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                }
-              ]
-            },
-            {
-              "subComponentCode": "EDM02.04",
-              "subComponentName": "Monitor value optimization",
-              "subComponentDescription": "Monitor key goals and metrics to determine whether the enterprise receives expected value and benefit from I&T-enabled investments and services. Identify significant issues and consider corrective actions.",
-              "subComponentQuestions": [
-                {
-                  "questionType": "Maturity Level 4",
-                  "questionDescription": "Define a balanced set of performance objectives, metrics, targets and benchmarks. Metrics should cover activity and outcome measures, including lead and lag indicators for outcomes, as well as an appropriate balance of financial and nonfinancial measures. Review and agree on them with IT and other business functions, and other relevant stakeholders.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 4",
-                  "questionDescription": "Collect relevant, timely, complete, credible and accurate data to report on progress in delivering value against targets. Obtain a succinct, high-level, all-around view of portfolio, program and I&T (technical and operational capabilities) performance that supports decision making. Ensure that expected results are being achieved.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 4",
-                  "questionDescription": "Obtain regular and relevant portfolio, program and I&T (technological and functional) performance reports. Review the enterprise’s progress toward identified goals and the extent to which planned objectives have been achieved, deliverables obtained, performance targets met and risk mitigated.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 5",
-                  "questionDescription": "Upon review of reports, ensure that appropriate management corrective action is initiated and controlled.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 5",
-                  "questionDescription": "Upon review of reports, take appropriate management action as required to ensure that value is optimized.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Related Guidance",
-                  "questionDescription": "",
-                  "relatedGuidance": "ISO/IEC 38500:2015(E)  ",
-                  "detailedReference": "5.3 Principle 2: Strategy (Monitor)",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "componentName": "B",
-          "componentDescription": "Organizational Structures",
-          "componentPercFinal": 0,
-          "componentQuestions": [
-            {
-              "questionType": "Sub Process 1",
-              "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+              "questionType": "Maturity Level 2",
+              "questionDescription": ". Create and maintain portfolios of I&T-enabled investment programs, IT services and IT assets, which form the basis for the current IT budget and support the I&T tactical and strategic plans.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": "comment"
             },
             {
-              "questionType": "Sub Process 2",
-              "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+              "questionType": "Maturity Level 2",
+              "questionDescription": " Obtain a common understanding between IT and the other business functions on the potential opportunities for IT to enable and contribute to enterprise strategy.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": "comment"
             },
             {
-              "questionType": "Sub Process 3",
-              "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+              "questionType": "Maturity Level 2",
+              "questionDescription": " Identify the broad categories of information systems, applications, data, IT services, infrastructure, I&T assets, resources, skills, practices, controls and relationships needed to support the enterprise strategy.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": "comment"
             },
             {
-              "questionType": "Sub Process 4",
-              "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Agree on I&T goals, taking into account the interrelationships between the enterprise strategy and the I&T services, assets and other resources. Identify and leverage synergies that can be achieved.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Define an investment mix that achieves the right balance among a number of dimensions, including an appropriate balance of short- and long-term returns, financial and nonfinancial benefits, and high- and low-risk investments.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "",
+              "relatedGuidance": "King IV Report on Corporate Governance for South Africa, 2016",
+              "detailedReference": "Part 5.5: Stakeholder relationships—Principle 17",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "",
+              "relatedGuidance": "The Open Group IT4IT Reference Architecture, Version 2.0",
+              "detailedReference": "3.2 IT Value Chain and IT4IT Reference Architecture",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": "comment"
@@ -576,241 +234,138 @@
           ]
         },
         {
-          "componentCode": "C",
-          "componentDescription": "Information Flows and Items",
-          "componentPercFinal": 0,
-          "subComponents": [
+          "subComponentCode": "EDM02.02",
+          "subComponentName": "Evaluate value optimization",
+          "subComponentDescription": "Continually evaluate the portfolio of I&T-enabled investments, services and assets to determine the likelihood of achieving enterprise objectives and delivering value. Identify and evaluate any changes in direction to management that will optimize value creation.",
+          "subComponentQuestions": [
             {
-              "subComponentCode": "EDM02.01",
-              "subComponentName": "Establish the target investment mix",
-              "subComponentDescription": "Review and ensure clarity of the enterprise and I&T strategies and current services. Define an appropriate investment mix based on cost, alignment with strategy, type of benefit for the programs in the portfolio, degree of risk, and financial measures such as cost and expected return on investment (ROI) over the full economic life cycle. Adjust the enterprise and I&T strategies where necessary.",
-              "subComponentQuestions": [
-                {
-                  "questionType": "Input",
-                  "questionDescription": "Definition of strategic, initiatives, Risk assessment, initiatives, Strategic road map",
-                  "inputFrom": "APO02.05",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Input",
-                  "questionDescription": "Definitions of standard services",
-                  "inputFrom": "APO09.01",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Input",
-                  "questionDescription": "Service definitions",
-                  "inputFrom": "BAI03.11",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Input",
-                  "questionDescription": "Investment types and criteria",
-                  "inputFrom": "EDM02.03",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Output",
-                  "questionDescription": "Feedback on strategy and goals",
-                  "inputFrom": "string",
-                  "outputTo": "APO02.05",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Output",
-                  "questionDescription": "Identified resources and capabilities required to support strategy",
-                  "inputFrom": "string",
-                  "outputTo": "Internal,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Output",
-                  "questionDescription": "Defined investment mix ",
-                  "inputFrom": "string",
-                  "outputTo": "Internal, EDM02.03",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                }
-              ]
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Understand stakeholder requirements; strategic I&T issues, such as dependence on I&T; and technology insights and capabilities regarding the actual and potential significance of I&T for the enterprise’s strategy.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
             },
             {
-              "subComponentCode": "EDM02.02",
-              "subComponentName": "Evaluate value optimization",
-              "subComponentDescription": "Continually evaluate the portfolio of I&T-enabled investments, services and assets to determine the likelihood of achieving enterprise objectives and delivering value. Identify and evaluate any changes in direction to management that will optimize value creation.",
-
-              "subComponentQuestions": [
-                {
-                  "questionType": "Input",
-                  "questionDescription": "Strategic road map",
-                  "inputFrom": "APO02.05",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Input",
-                  "questionDescription": "Investment return expectations",
-                  "inputFrom": "APO05.01",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Input",
-                  "questionDescription": "Selected programs with ROI milestones",
-                  "inputFrom": "APO05.01",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Input",
-                  "questionDescription": "Stage-gate review results",
-                  "inputFrom": "BAI01.06",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Input",
-                  "questionDescription": "Benefit results andrelat ed communications",
-                  "inputFrom": "APO05.05",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Output",
-                  "questionDescription": "Evaluation of strategic alignment",
-                  "inputFrom": "string",
-                  "outputTo": "APO02.04, APO05.02",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Output",
-                  "questionDescription": "Evaluation of investment and services portfolios",
-                  "inputFrom": "string",
-                  "outputTo": "APO05.02, APO05.03, APO06.02",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                }
-              ]
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Understand the key elements of governance required for the reliable, secure and cost-effective delivery of optimal value from the use of existing and new I&T services, assets and resources. ",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
             },
             {
-              "subComponentCode": "EDM02.03",
-              "subComponentName": "Direct value optimization.",
-              "subComponentDescription": "Direct value management principles and practices to enable optimal value realization from I&T-enabled investments throughout their full economic life cycle.",
-              "subComponentQuestions": [
-                {
-                  "questionType": "Input",
-                  "questionDescription": "Investment portfolio performance reports",
-                  "inputFrom": "APO05.03",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Input",
-                  "questionDescription": "Defined investment mix",
-                  "inputFrom": "EDM02.01",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Output",
-                  "questionDescription": "Requirements for stage-gate reviews",
-                  "inputFrom": "string",
-                  "outputTo": "BAI01.01, BAI11.01",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Output",
-                  "questionDescription": "Investment types and criteria",
-                  "inputFrom": "string",
-                  "outputTo": "EDM02.01, APO05.02",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                }
-              ]
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Understand and regularly discuss the opportunities that could arise for the enterprise from changes enabled by current, new or emerging technologies, and optimize the value created from those opportunities. ",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
             },
             {
-              "subComponentCode": "EDM02.04",
-              "subComponentName": "Monitor value optimization",
-              "subComponentDescription": "Monitor key goals and metrics to determine whether the enterprise receives expected value and benefit from I&T-enabled investments and services. Identify significant issues and consider corrective actions.",
-              "subComponentQuestions": [
-
-                {
-                  "questionType": "Input",
-                  "questionDescription": "Investment portfolio performance reports",
-                  "inputFrom": "APO05.03",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Output",
-                  "questionDescription": "Actions to improve value delivery",
-                  "inputFrom": "string",
-                  "outputTo": "APO05.03, APO06.02 ,BAI01.01, BAI11.01 ,EDM05.01",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Output",
-                  "questionDescription": "Feedback on portfolio and program performance",
-                  "inputFrom": "string",
-                  "outputTo": "APO05.03, APO06.05, BAI01.06",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "componentName": "D",
-          "componentDescription": "Peoples, Skills and Competencies",
-          "componentPercFinal": 0,
-          "componentQuestions": [
+              "questionType": "Maturity Level 4",
+              "questionDescription": "Evaluate how effectively the enterprise and I&T strategies have been integrated and aligned within the enterprise and with enterprise goals for delivering value. ",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
             {
-              "questionType": "Component question",
-              "questionSkill": "Benefits management",
-              "relatedGuidance": "Skills Framework for the Information Age V6, 2015",
-              "detailedReference": "BENM",
+              "questionType": "Maturity Level 4",
+              "questionDescription": "Understand and consider how effective current roles, responsibilities, accountabilities and decision-making bodies are in ensuring value creation from I&T-enabled investments, services and assets.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": "Consider how well the management of I&T-enabled investments, services and assets aligns with enterprise value management and financial management practices.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": ". Evaluate the portfolio of investments, services and assets for alignment with the enterprise’s strategic objectives; enterprise worth, both financial and nonfinancial; risk, both delivery risk and benefits risk; business process alignment; effectiveness in terms of usability, availability and responsiveness; and efficiency in terms of cost, redundancy and technical health.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "",
+              "relatedGuidance": "COSO Enterprise Risk Management, June 2017",
+              "detailedReference": "7. Strategy and Objective-Setting—Principle 8",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "",
+              "relatedGuidance": "ISF, The Standard of Good Practice for Information Security 2016",
+              "detailedReference": "SG2.2 Stakeholder Value Delivery",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "",
+              "relatedGuidance": "ISO/IEC 38500:2015(E)",
+              "detailedReference": "5.3 Principle 2: Strategy (Evaluate)",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "",
+              "relatedGuidance": "King IV Report on Corporate Governance for South Africa, 2016",
+              "detailedReference": "Part 5.2: Strategy, performance and reporting—Principle 4",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "",
+              "relatedGuidance": "The Open Group IT4IT Reference Architecture, Version 2.0",
+              "detailedReference": "5. Strategy to Portfolio (S2P) Value Stream.",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": "comment"
@@ -818,53 +373,167 @@
           ]
         },
         {
-          "componentName": "E",
-          "componentDescription": "Principles Policies and Procedures",
-          "componentPercFinal": 0,
-          "componentQuestions": [
+          "subComponentCode": "EDM02.03",
+          "subComponentName": "Direct value optimization.",
+          "subComponentDescription": "Direct value management principles and practices to enable optimal value realization from I&T-enabled investments throughout their full economic life cycle.",
+          "subComponentQuestions": [
             {
-              "questionType": "Component question",
-              "relevantPolicy": "Budgeting and delivery execution policy",
-              "policyDescription": "Sets guidelines to identify needs and requirements for investments, monitor fulfillment, and ensure maximum benefit. Addresses formulation of budget requests. Monitors budget and technical performance execution to plan. Recommends reallocation or Addresses monitoring of performance against service level agreements and other performance-based metrics.",
-              "detailedGuidance": "",
-              "detailedReference": "",
-              "questionAnswer": 0,
-              "questionScore": 0,
-              "questionComment": "comment"
-            }
-          ]
-        },
-        {
-          "componentName": "F",
-          "componentDescription": "Culture, Ethics and Behavior",
-          "componentPercFinal": 0,
-          "componentQuestions": [
-            {
-              "questionType": "Component question",
-              "keyCultureElement": "The value that I&T adds depends on the degree to which I&T is aligned with the business and meets its expectations. Optimize I&T value by establishing a culture in which I&T services are delivered on time and within budget, with appropriate quality.",
-              "relatedGuidance": "",
-              "detailedReference": "",
-              "questionAnswer": 0,
-              "questionScore": 0,
-              "questionComment": "comment"
-            }
-          ]
-        },
-        {
-          "componentName": "G",
-          "componentDescription": "Services, Infrastructure and Applications",
-          "componentPercFinal": 0,
-          "componentQuestions": [
-            {
-              "questionType": "Component question",
-              "questionDescription": "Cost accounting system",
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Define and communicate portfolio and investment types, categories, criteria and relative weightings to the criteria to allow for overall relative value scores.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": "comment"
             },
             {
-              "questionType": "Component question",
-              "questionDescription": "Program management tool",
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Define requirements for stage-gates and other reviews for significance of the investment to the enterprise and associated risk, program schedules, funding plans, and the delivery of key capabilities and benefits and ongoing contribution to value.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Direct management to consider potential innovative uses of I&T that enable the enterprise to respond to new opportunities or challenges, undertake new business, increase competitiveness, or improve processes.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Direct any required changes in assignment of accountabilities and responsibilities for executing the investment portfolio and delivering value from business processes and services.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Direct any required changes to the portfolio of investments and services to realign with current and expected enterprise objectives and/or constraints.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Recommend consideration of potential innovations, organizational changes or operational improvements that could drive increased value for the enterprise from I&T-enabled initiatives.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": "Define and communicate enterprise-level value delivery goals and outcome measures to enable effective monitoring.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "",
+              "relatedGuidance": "ISO/IEC 38500:2015(E) ",
+              "detailedReference": "5.3 Principle 2: Strategy (Direct)",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "EDM02.04",
+          "subComponentName": "Monitor value optimization",
+          "subComponentDescription": "Monitor key goals and metrics to determine whether the enterprise receives expected value and benefit from I&T-enabled investments and services. Identify significant issues and consider corrective actions.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": "Define a balanced set of performance objectives, metrics, targets and benchmarks. Metrics should cover activity and outcome measures, including lead and lag indicators for outcomes, as well as an appropriate balance of financial and nonfinancial measures. Review and agree on them with IT and other business functions, and other relevant stakeholders.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": "Collect relevant, timely, complete, credible and accurate data to report on progress in delivering value against targets. Obtain a succinct, high-level, all-around view of portfolio, program and I&T (technical and operational capabilities) performance that supports decision making. Ensure that expected results are being achieved.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": "Obtain regular and relevant portfolio, program and I&T (technological and functional) performance reports. Review the enterprise’s progress toward identified goals and the extent to which planned objectives have been achieved, deliverables obtained, performance targets met and risk mitigated.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 5",
+              "questionDescription": "Upon review of reports, ensure that appropriate management corrective action is initiated and controlled.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 5",
+              "questionDescription": "Upon review of reports, take appropriate management action as required to ensure that value is optimized.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "",
+              "relatedGuidance": "ISO/IEC 38500:2015(E)  ",
+              "detailedReference": "5.3 Principle 2: Strategy (Monitor)",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": "comment"
@@ -872,6 +541,339 @@
           ]
         }
       ]
+    },
+    {
+      "componentName": "B",
+      "componentDescription": "Organizational Structures",
+      "componentPercFinal": 0,
+      "componentQuestions": [
+        {
+          "questionType": "Sub Process 1",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "Sub Process 2",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "Sub Process 3",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "Sub Process 4",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        }
+      ]
+    },
+    {
+      "componentCode": "C",
+      "componentDescription": "Information Flows and Items",
+      "componentPercFinal": 0,
+      "subComponents": [
+        {
+          "subComponentCode": "EDM02.01",
+          "subComponentName": "Establish the target investment mix",
+          "subComponentDescription": "Review and ensure clarity of the enterprise and I&T strategies and current services. Define an appropriate investment mix based on cost, alignment with strategy, type of benefit for the programs in the portfolio, degree of risk, and financial measures such as cost and expected return on investment (ROI) over the full economic life cycle. Adjust the enterprise and I&T strategies where necessary.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Input",
+              "questionDescription": "Definition of strategic, initiatives, Risk assessment, initiatives, Strategic road map",
+              "inputFrom": "APO02.05",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Definitions of standard services",
+              "inputFrom": "APO09.01",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Service definitions",
+              "inputFrom": "BAI03.11",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Investment types and criteria",
+              "inputFrom": "EDM02.03",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Feedback on strategy and goals",
+              "inputFrom": "string",
+              "outputTo": "APO02.05",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Identified resources and capabilities required to support strategy",
+              "inputFrom": "string",
+              "outputTo": "Internal,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Defined investment mix ",
+              "inputFrom": "string",
+              "outputTo": "Internal, EDM02.03",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "EDM02.02",
+          "subComponentName": "Evaluate value optimization",
+          "subComponentDescription": "Continually evaluate the portfolio of I&T-enabled investments, services and assets to determine the likelihood of achieving enterprise objectives and delivering value. Identify and evaluate any changes in direction to management that will optimize value creation.",
+
+          "subComponentQuestions": [
+            {
+              "questionType": "Input",
+              "questionDescription": "Strategic road map",
+              "inputFrom": "APO02.05",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Investment return expectations",
+              "inputFrom": "APO05.01",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Selected programs with ROI milestones",
+              "inputFrom": "APO05.01",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Stage-gate review results",
+              "inputFrom": "BAI01.06",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Benefit results andrelat ed communications",
+              "inputFrom": "APO05.05",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Evaluation of strategic alignment",
+              "inputFrom": "string",
+              "outputTo": "APO02.04, APO05.02",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Evaluation of investment and services portfolios",
+              "inputFrom": "string",
+              "outputTo": "APO05.02, APO05.03, APO06.02",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "EDM02.03",
+          "subComponentName": "Direct value optimization.",
+          "subComponentDescription": "Direct value management principles and practices to enable optimal value realization from I&T-enabled investments throughout their full economic life cycle.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Input",
+              "questionDescription": "Investment portfolio performance reports",
+              "inputFrom": "APO05.03",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Defined investment mix",
+              "inputFrom": "EDM02.01",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Requirements for stage-gate reviews",
+              "inputFrom": "string",
+              "outputTo": "BAI01.01, BAI11.01",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Investment types and criteria",
+              "inputFrom": "string",
+              "outputTo": "EDM02.01, APO05.02",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "EDM02.04",
+          "subComponentName": "Monitor value optimization",
+          "subComponentDescription": "Monitor key goals and metrics to determine whether the enterprise receives expected value and benefit from I&T-enabled investments and services. Identify significant issues and consider corrective actions.",
+          "subComponentQuestions": [
+
+            {
+              "questionType": "Input",
+              "questionDescription": "Investment portfolio performance reports",
+              "inputFrom": "APO05.03",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Actions to improve value delivery",
+              "inputFrom": "string",
+              "outputTo": "APO05.03, APO06.02 ,BAI01.01, BAI11.01 ,EDM05.01",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Feedback on portfolio and program performance",
+              "inputFrom": "string",
+              "outputTo": "APO05.03, APO06.05, BAI01.06",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "componentName": "D",
+      "componentDescription": "Peoples, Skills and Competencies",
+      "componentPercFinal": 0,
+      "componentQuestions": [
+        {
+          "questionType": "Component question",
+          "questionSkill": "Benefits management",
+          "relatedGuidance": "Skills Framework for the Information Age V6, 2015",
+          "detailedReference": "BENM",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        }
+      ]
+    },
+    {
+      "componentName": "E",
+      "componentDescription": "Principles Policies and Procedures",
+      "componentPercFinal": 0,
+      "componentQuestions": [
+        {
+          "questionType": "Component question",
+          "relevantPolicy": "Budgeting and delivery execution policy",
+          "policyDescription": "Sets guidelines to identify needs and requirements for investments, monitor fulfillment, and ensure maximum benefit. Addresses formulation of budget requests. Monitors budget and technical performance execution to plan. Recommends reallocation or Addresses monitoring of performance against service level agreements and other performance-based metrics.",
+          "detailedGuidance": "",
+          "detailedReference": "",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        }
+      ]
+    },
+    {
+      "componentName": "F",
+      "componentDescription": "Culture, Ethics and Behavior",
+      "componentPercFinal": 0,
+      "componentQuestions": [
+        {
+          "questionType": "Component question",
+          "keyCultureElement": "The value that I&T adds depends on the degree to which I&T is aligned with the business and meets its expectations. Optimize I&T value by establishing a culture in which I&T services are delivered on time and within budget, with appropriate quality.",
+          "relatedGuidance": "",
+          "detailedReference": "",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        }
+      ]
+    },
+    {
+      "componentName": "G",
+      "componentDescription": "Services, Infrastructure and Applications",
+      "componentPercFinal": 0,
+      "componentQuestions": [
+        {
+          "questionType": "Component question",
+          "questionDescription": "Cost accounting system",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "Component question",
+          "questionDescription": "Program management tool",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        }
+      ]
     }
+  ]
+}
   
 

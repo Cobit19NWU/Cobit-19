@@ -2,6 +2,7 @@
   "objectiveName": "APO02",
   "objectiveDescription": "Provide a holistic view of the current business and I&T environment, the future direction, and the initiatives required to migrate to the desired future environment. Ensure that the desired level of digitization is integral to the future direction and the I&T strategy. Assess the organization’s current digital maturity and develop a road map to close the gaps. With the business, rethink internal operations as well as customer-facing activities. Ensure focus on the transformation journey across the organization. Leverage enterprise architecture building blocks, governance components and the organization’s ecosystem, including externally provided services and related capabilities, to enable reliable but agile and efficient response to strategic objectives.",
   "objectivePurpose": "Support the digital transformation strategy of the organization and deliver the desired value through a road map of incremental changes. Use a holistic I&T approach, ensuring that each initiative is clearly connected to an overarching strategy. Enable change in all different aspects of the organization, from channels and processes to data, culture, skills, operating model and incentives.",
+  "typeOfObjective": "Management",
   "maturityLevel": 0,
   "maturityLevel0PercFinal": 0,
   "maturityLevel1PercFinal": 0,
@@ -9,7 +10,7 @@
   "maturityLevel3PercFinal": 0,
   "maturityLevel4PercFinal": 0,
   "maturityLevel5PercFinal": 0,
-  "components": [  
+  "components": [
     {
       "componentCode": "EG",
       "componentDescription": "Enterprise Goals",
@@ -48,108 +49,108 @@
               "questionComment": "comment"
             }
           ]
+        },
+
+        {
+          "subComponentCode": "EG05",
+          "subComponentName": "Customer-oriented service culture",
+          "subComponentQuestions": [
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Number of customer service disruptions",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
             },
-            
-              {
-                "subComponentCode": "EG05",
-                "subComponentName": "Customer-oriented service culture",
-                "subComponentQuestions": [
-                  {
-                    "questionType": "Enterprise goal",
-                    "questionDescription": "Number of customer service disruptions",
-                    "questionAnswer": 0,
-                    "questionScore": 0,
-                    "questionComment": "comment"
-                  },
-                  {
-                    "questionType": "Enterprise goal",
-                    "questionDescription": "Percent of business stakeholders satisfied that customer service delivery meets agreed levels",
-                    "questionAnswer": 0,
-                    "questionScore": 0,
-                    "questionComment": "comment"
-                  },
-                  {
-                    "questionType": "Enterprise goal",
-                    "questionDescription": "Number of customer complaints",
-                    "questionAnswer": 0,
-                    "questionScore": 0,
-                    "questionComment": "comment"
-                  },
-                  {
-                    "questionType": "Enterprise goal",
-                    "questionDescription": "Trend of customer satisfaction survey results",
-                    "questionAnswer": 0,
-                    "questionScore": 0,
-                    "questionComment": "comment"
-                  }
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Percent of business stakeholders satisfied that customer service delivery meets agreed levels",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Number of customer complaints",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Trend of customer satisfaction survey results",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
 
-                ]
-              },
+          ]
+        },
 
-              {
-                "subComponentCode": "EG08",
-                "subComponentName": "Optimization of internal business process functionality",
-                "subComponentQuestions": [
-                  {
-                    "questionType": "Enterprise goal",
-                    "questionDescription": "Satisfaction levels of board and executive management with business process capabilities",
-                    "questionAnswer": 0,
-                    "questionScore": 0,
-                    "questionComment": "comment"
-                  },
-                  {
-                    "questionType": "Enterprise goal",
-                    "questionDescription": "Satisfaction levels of customers with service delivery capabilities",
-                    "questionAnswer": 0,
-                    "questionScore": 0,
-                    "questionComment": "comment"
-                  },
-                  {
-                    "questionType": "Enterprise goal",
-                    "questionDescription": "Satisfaction levels of suppliers with supply chain capabilities",
-                    "questionAnswer": 0,
-                    "questionScore": 0,
-                    "questionComment": "comment"
-                  }
+        {
+          "subComponentCode": "EG08",
+          "subComponentName": "Optimization of internal business process functionality",
+          "subComponentQuestions": [
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Satisfaction levels of board and executive management with business process capabilities",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Satisfaction levels of customers with service delivery capabilities",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Satisfaction levels of suppliers with supply chain capabilities",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
 
-                ]
-              },
-              {
-                "subComponentCode": "EG12",
-                "subComponentName": "Managed digital transformation programs",
-                "subComponentQuestions": [
-                  {
-                    "questionType": "Enterprise goal",
-                    "questionDescription": "Number of programs on time and within budget",
-                    "questionAnswer": 0,
-                    "questionScore": 0,
-                    "questionComment": "comment"
-                  },
-                  {
-                    "questionType": "Enterprise goal",
-                    "questionDescription": "Percent of stakeholders satisfied with program delivery",
-                    "questionAnswer": 0,
-                    "questionScore": 0,
-                    "questionComment": "comment"
-                  },
-                  {
-                    "questionType": "Enterprise goal",
-                    "questionDescription": "Percent of business transformation programs stopped",
-                    "questionAnswer": 0,
-                    "questionScore": 0,
-                    "questionComment": "comment"
-                  },
-                  {
-                    "questionType": "Enterprise goal",
-                    "questionDescription": "Percent of business transformation programs with regular reported status updates",
-                    "questionAnswer": 0,
-                    "questionScore": 0,
-                    "questionComment": "comment"
-                  }
+          ]
+        },
+        {
+          "subComponentCode": "EG12",
+          "subComponentName": "Managed digital transformation programs",
+          "subComponentQuestions": [
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Number of programs on time and within budget",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Percent of stakeholders satisfied with program delivery",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Percent of business transformation programs stopped",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Percent of business transformation programs with regular reported status updates",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
 
-                ]
-              }
-            ]
+          ]
+        }
+      ]
     },
 
     {
@@ -194,1184 +195,1184 @@
       ]
     },
     {
-              "componentName": "A",
-              "componentDescription": "Processes",
-              "componentPercFinal": 0,
-              "subComponents": [
-                {
-                  "subComponentCode": "APO02.01",
-                  "subComponentName": "Understand enterprise context and direction.",
-                  "subComponentDescription": "Understand the enterprise context (industry drivers, relevant regulations,basis for competition), its current way of working and its ambition level in terms of digitization.",
-                  "subComponentQuestions": [
-                    {
-                      "questionType": "Maturity Level 2",
-                      "questionDescription": "Develop and maintain an understanding of the external environment of the enterprise.",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Maturity Level 2",
-                      "questionDescription": "Develop and maintain an understanding of the current way of working, including the operational environment, enterprise architecture (business, information, data, applications and technology domains), enterprise culture and current challenges",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Maturity Level 2",
-                      "questionDescription": "Develop and maintain an understanding of future enterprise direction, including enterprise strategy, goals and objectives. Understand the ambition level of the enterprise in terms of digitization, which may include a range of increasingly aspirational goals, from cutting costs, increasing customer centricity, or getting to market faster by digitizing internal operations, to creating entirely new revenue streams from new business models (e.g., platform business).",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Maturity Level 2",
-                      "questionDescription": "Identify key stakeholders and obtain insight on their requirements",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Related Guidance",
-                      "questionDescription": "",
-                      "relatedGuidance": "COSO Enterprise Risk Management, June 2017",
-                      "detailedReference": "7. Strategy and Objective-Setting—Principle 6",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    }
-                  ]
-                },
-                {
-                  "subComponentCode": "APO02.02",
-                  "subComponentName": "Assess current capabilities, performance and digital maturity of the enterprise.",
-                  "subComponentDescription": "Assess the performance of current I&T services and develop an understanding of current business and I&T capabilities (both internal and external). Assess current digital maturity of the enterprise and its appetite for change.",
-                  "subComponentQuestions": [
-                    {
-                      "questionType": "Maturity Level 2",
-                      "questionDescription": "",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Maturity Level 3",
-                      "questionDescription": "Assess digital maturity across different dimensions (e.g., ability of leadership to leverage technology, level of accepted technology risk, approach to innovation, culture and knowledge level of users). Assess appetite for change.",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Related Guidance",
-                      "questionDescription": "",
-                      "relatedGuidance": "COSO Enterprise Risk Management, June 2017 ",
-                      "detailedReference": "7. Strategy and Objective-Setting—Principle 6; 9. Review and Revision—Principle 15",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    }
-                  ]
-                },
-                {
-                  "subComponentCode": "APO02.03",
-                  "subComponentName": "Define target digital capabilities",
-                  "subComponentDescription": "Based on the understanding of enterprise context and direction, define the target I&T products and services and required capabilities. Consider reference standards, best practices and validated emerging technologies.",
-                  "subComponentQuestions": [
-                    {
-                      "questionType": "Maturity Level 2",
-                      "questionDescription": "Summarize enterprise context and direction and identify specific I&T aspects of enterprise strategy (e.g., digitizing processes, implementing new technology, supporting legacy architecture, applying new digital business models, developing digital product portfolio, etc.).",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Maturity Level 2",
-                      "questionDescription": "Define high-level I&T objectives and goals and specify their contribution to enterprise objectives",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Maturity Level 3",
-                      "questionDescription": ". Detail required I&T services and products to realize enterprise objectives. Consider validated emerging technology or innovation ideas, reference standards, competitor business and I&T capabilities, comparative benchmarks of good practice, and emerging I&T service provision.",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Maturity Level 3",
-                      "questionDescription": ". Determine I&T capabilities, methodologies and organizational approaches required to realize the defined I&T product and service portfolio. Consider different development methodologies (Agile, scrum, waterfall, bimodal IT), depending on business requirements. Consider how each could help realize I&T objectives. ",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    }
-                  ]
-                },
-                {
-                  "subComponentCode": "APO02.04",
-                  "subComponentName": "Conduct a gap analysis",
-                  "subComponentDescription": "Identify gaps between current and target environments and describe the high-level changes in the enterprise architecture.",
-                  "subComponentQuestions": [
-                    {
-                      "questionType": "Maturity Level 3",
-                      "questionDescription": "Identify all gaps and changes required to realize the target environment",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Maturity Level 3",
-                      "questionDescription": "Describe high-level changes in enterprise architecture (business, information, data, applications and technology domains).",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Maturity Level 3",
-                      "questionDescription": "Consider the high-level implications of all gaps. Assess the impact of potential changes on business and I&T operating models, I&T research and development capabilities, and I&T investment programs.",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Maturity Level 4",
-                      "questionDescription": " Consider the value of potential changes to business and IT capabilities, I&T services and enterprise architecture, and the implications if no changes are realized.",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Maturity Level 4",
-                      "questionDescription": "Refine the target environment definition and prepare a value statement outlining benefits of the target environment.",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    }
-                  ]
-                },
-                {
-                  "subComponentCode": "APO02.05",
-                  "subComponentName": "Define the strategic plan and road map.",
-                  "subComponentDescription": "Develop a holistic digital strategy, in cooperation with relevant stakeholders, and detail a road map that defines the incremental steps required to achieve the goals and objectives. Ensure focus on the transformation journey through the appointment of a person who helps spearhead the digital transformation and drives alignment between business and I&T.",
-                  "subComponentQuestions": [
-                    {
-                      "questionType": "Maturity Level 3",
-                      "questionDescription": " Define initiatives required to close gaps between current and target environments. Integrate initiatives into a coherent I&T strategy that aligns I&T with all aspects of the business.",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Maturity Level 3",
-                      "questionDescription": "Detail a road map that defines the incremental steps required to achieve the goals and objectives of the I&T strategy. Ensure actions are included to train people with new skills, support adoption of new technology, sustain change throughout the organization, etc.",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Maturity Level 3",
-                      "questionDescription": "Consider the external ecosystem (enterprise partners, suppliers, start-ups, etc.) to help support execution of the road map.",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Maturity Level 3",
-                      "questionDescription": "Group actions into programs and/or projects with a clear goal or deliverable. For each project, identify high-level resource requirements, schedule, investment/operational budget, risk, change impact, etc.",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Maturity Level 3",
-                      "questionDescription": "Determine dependencies, overlaps, synergies and impacts among projects, and prioritize.",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Maturity Level 3",
-                      "questionDescription": "Finalize road map, indicating relative scheduling and interdependencies of projects.",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Maturity Level 3",
-                      "questionDescription": "Ensure focus on the transformation journey. Appoint a champion of digital transformation and alignment between business and I&T (chief digital officer [CDO] or other traditional C-suite role).",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Maturity Level 3",
-                      "questionDescription": "Obtain support and formal approval of plan from stakeholders.",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Maturity Level 3",
-                      "questionDescription": " Translate objectives into measurable outcomes represented by metrics (what) and targets (how much). Ensure that outcomes and measures correlate to enterprise benefits.",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Related Guidance",
-                      "questionDescription": "",
-                      "relatedGuidance": "ISF, The Standard of Good Practice for Information Security 2016",
-                      "detailedReference": "SG2.1 Information Security Strategy",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Related Guidance",
-                      "questionDescription": "",
-                      "relatedGuidance": "ITIL V3, 2011",
-                      "detailedReference": "Service Strategy, 4.1 Strategy management for IT services",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    }
-                  ]
-                },
-                {
-                  "subComponentCode": "APO02.06",
-                  "subComponentName": "Communicate the I&T strategy and direction.",
-                  "subComponentDescription": "Create awareness and understanding of the business and I&T objectives and direction, as captured in the I&T strategy, through communication to appropriate stakeholders and users throughout the enterprise.",
-                  "subComponentQuestions": [
-                    {
-                      "questionType": "Maturity Level 3",
-                      "questionDescription": "Develop a communication plan covering the required messages, target audiences, communication mechanisms/channels and schedules.",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Maturity Level 3",
-                      "questionDescription": "Prepare a communication package that delivers the plan effectively, using available media and technologies.",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Maturity Level 3",
-                      "questionDescription": "Develop and maintain a network for endorsing, supporting and driving the I&T strategy",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Maturity Level 3",
-                      "questionDescription": "Obtain feedback and update the communication plan and delivery as required",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    }
-                  ]
-                }
-
-              ]
+      "componentName": "A",
+      "componentDescription": "Processes",
+      "componentPercFinal": 0,
+      "subComponents": [
+        {
+          "subComponentCode": "APO02.01",
+          "subComponentName": "Understand enterprise context and direction.",
+          "subComponentDescription": "Understand the enterprise context (industry drivers, relevant regulations,basis for competition), its current way of working and its ambition level in terms of digitization.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Develop and maintain an understanding of the external environment of the enterprise.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
             },
             {
-              "componentName": "B",
-              "componentDescription": "Organizational Structures",
-              "componentPercFinal": 0,
-              "componentQuestions": [
-                {
-                  "questionType": "Sub Process 1",
-                  "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Sub Process 2",
-                  "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Sub Process 3",
-                  "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Sub Process 4",
-                  "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Sub Process 5",
-                  "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Sub Process 6",
-                  "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                }
-              ]
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Develop and maintain an understanding of the current way of working, including the operational environment, enterprise architecture (business, information, data, applications and technology domains), enterprise culture and current challenges",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
             },
             {
-              "componentName": "C",
-              "componentDescription": "Information Flows and Items",
-              "componentPercFinal": 0,
-              "subComponents": [
-                {
-                  "subComponentCode": "APO02.01",
-                  "subComponentName": "Understand enterprise context and direction.",
-                  "subComponentDescription": "Understand the enterprise context (industry drivers, relevant regulations,basis for competition), its current way of working and its ambition level in terms of digitization.",
-                  "subComponentQuestions": [
-
-                    {
-                      "questionType": "Input",
-                      "questionDescription": "Innovation opportunities linked to business drivers",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "APO04.02",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Input",
-                      "questionDescription": "Guiding principles for allocating resources and capabilities",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "EDM04.01",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Input",
-                      "questionDescription": "Enterprise strategy and strengths, weaknesses, opportunities, threats (SWOT) analysis",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "Outside COBIT",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Output",
-                      "questionDescription": "Sources and priorities for change",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "Internal",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    }
-                  ]
-                },
-                {
-                  "subComponentCode": "APO02.02",
-                  "subComponentName": "Assess current capabilities, performance and digital maturity of the enterprise.",
-                  "subComponentDescription": "Assess the performance of current I&T services and develop an understanding of current business and I&T capabilities (both internal and external). Assess current digital maturity of the enterprise and its appetite for change.",
-                  "subComponentQuestions": [
-
-                    {
-                      "questionType": "Input",
-                      "questionDescription": "Cost optimization opportunities",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "APO06.05",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Input",
-                      "questionDescription": "Definition of potential improvement projects",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "APO08.05",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Input",
-                      "questionDescription": "Identified gaps in IT services to the business",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "APO09.01",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Input",
-                      "questionDescription": "Improvement action plans and remediations",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "APO09.04",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Input",
-                      "questionDescription": "Emerging risk issues and factors",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "APO12.01",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Input",
-                      "questionDescription": "Risk analysis results",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "APO12.02",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Input",
-                      "questionDescription": "Aggregated risk profile, including status of risk management actions",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "APO12.03",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Input",
-                      "questionDescription": "Project proposals for reducing risk",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "APO12.05",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Input",
-                      "questionDescription": "Feedback on allocation and effectiveness of resources and capabilities",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "EDM04.03",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Input",
-                      "questionDescription": "Prioritized improvements • Performance and capacity plans",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "BAI04.03",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Input",
-                      "questionDescription": "Corrective actions",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "BAI04.05",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Input",
-                      "questionDescription": "Results of fit-for-purpose reviews",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "BAI09.01 ",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Input",
-                      "questionDescription": "Results of cost optimization reviews • Opportunities to reduce asset costs or increase value",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "BAI09.04 ",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Output",
-                      "questionDescription": "Gaps and risk related to current capabilities",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "APO12.01",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Output",
-                      "questionDescription": "Capability SWOT analysis",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "Internal",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Output",
-                      "questionDescription": "Baseline of current capabilities",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "Internal",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    }
-                  ]
-                },
-                {
-                  "subComponentCode": "APO02.03",
-                  "subComponentName": "Define target digital capabilities",
-                  "subComponentDescription": "Based on the understanding of enterprise context and direction, define the target I&T products and services and required capabilities. Consider reference standards, best practices and validated emerging technologies.",
-                  "subComponentQuestions": [
-
-                    {
-                      "questionType": "Input",
-                      "questionDescription": "Results and recommendations from proof-of-concept initiatives • Analysis of rejected initiatives",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "APO04.05",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Output",
-                      "questionDescription": "Proposed enterprise architecture changes",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "APO03.03",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Output",
-                      "questionDescription": "Required business and IT capabilities",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "Internal",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Output",
-                      "questionDescription": "High-level I&T-related goals",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "Internal",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    }
-                  ]
-                },
-                {
-                  "subComponentCode": "APO02.04",
-                  "subComponentName": "Conduct a gap analysis",
-                  "subComponentDescription": "Identify gaps between current and target environments and describe the high-level changes in the enterprise architecture.",
-                  "subComponentQuestions": [
-
-                    {
-                      "questionType": "Input",
-                      "questionDescription": "Assessments of using innovative approaches",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "APO04.06",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Input",
-                      "questionDescription": "Investment return expectations",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "APO05.01",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Input",
-                      "questionDescription": "Results of program goal achievement monitoring",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "BAI01.05",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Input",
-                      "questionDescription": "Stage-gate review results",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "BAI01.06",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Input",
-                      "questionDescription": "Post-implementation review results",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "BAI11.09",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Input",
-                      "questionDescription": "Evaluation of strategic alignment",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "EDM02.02",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Output",
-                      "questionDescription": "Gaps and changes required to realize target capability",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "APO01.03, APO13.02, BAI03.11, EDM04.01",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Output",
-                      "questionDescription": "Value benefit statement for target environment",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "BAI03.11",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    }
-                  ]
-                },
-                {
-                  "subComponentCode": "APO02.05",
-                  "subComponentName": "Define the strategic plan and road map.",
-                  "subComponentDescription": "Develop a holistic digital strategy, in cooperation with relevant stakeholders, and detail a road map that defines the incremental steps required to achieve the goals and objectives. Ensure focus on the transformation journey through the appointment of a person who helps spearhead the digital transformation and drives alignment between business and I&T.",
-                  "subComponentQuestions": [
-
-                    {
-                      "questionType": "Input",
-                      "questionDescription": "Defined scope of architecture • Architecture concept business case and value proposition",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "APO03.01",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Input",
-                      "questionDescription": "Information architecture model",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "APO03.02",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Input",
-                      "questionDescription": "Transition architectures",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "APO03.03",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Input",
-                      "questionDescription": "Funding options",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "APO05.01",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Input",
-                      "questionDescription": "Budget allocations",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "APO06.02",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Input",
-                      "questionDescription": "I&T budget",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "APO06.03",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Input",
-                      "questionDescription": "Action plan to adjust license numbers and allocations",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "BAI09.05",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Input",
-                      "questionDescription": "Approved strategic options",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "DSS04.02",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Input",
-                      "questionDescription": "Feedback on strategy and goals",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "EDM02.01 ",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Input",
-                      "questionDescription": "Approved resources plan",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "EDM04.01 ",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Input",
-                      "questionDescription": "Remedial actions to address resource management deviations",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "EDM04.03",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Output",
-                      "questionDescription": "I&T strategy and objectives",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "All APO, All BAI, All DSS, All MEA",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Output",
-                      "questionDescription": "Strategic road map",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "APO01.01, APO03.01, APO08.01, EDM02.01, EDM02.02",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Output",
-                      "questionDescription": "Definition of strategic initiatives",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "EDM02.01",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Output",
-                      "questionDescription": "Risk assessment initiatives",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "EDM02.01, APO12.01",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    }
-                  ]
-                },
-                {
-                  "subComponentCode": "APO02.06",
-                  "subComponentName": "Communicate the I&T strategy and direction.",
-                  "subComponentDescription": "Create awareness and understanding of the business and I&T objectives and direction, as captured in the I&T strategy, through communication to appropriate stakeholders and users throughout the enterprise.",
-                  "subComponentQuestions": [
-
-                    {
-                      "questionType": "Input",
-                      "questionDescription": "Communication of resourcing strategies",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "EDM04.02",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Output",
-                      "questionDescription": "Communication package",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "All APO, All BAI, All DSS, All MEA",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Output",
-                      "questionDescription": "Communication plan",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "Internal",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    }
-                  ]
-                }
-
-              ]
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Develop and maintain an understanding of future enterprise direction, including enterprise strategy, goals and objectives. Understand the ambition level of the enterprise in terms of digitization, which may include a range of increasingly aspirational goals, from cutting costs, increasing customer centricity, or getting to market faster by digitizing internal operations, to creating entirely new revenue streams from new business models (e.g., platform business).",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
             },
             {
-              "componentName": "D",
-              "componentDescription": "Peoples, Skills and Competencies",
-              "componentPercFinal": 0,
-              "componentQuestions": [
-                {
-                  "questionType": "Component question",
-                  "questionSkill": "Business plan development",
-                  "relatedGuidance": "e-Competence Framework (e-CF)—A common European Framework for ICT Professionals in all industry sectors—Part 1: Framework, 2016",
-                  "detailedReference": "A. Plan—A.3. Business Plan Development ",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Component question",
-                  "questionSkill": "Emerging technology monitoring",
-                  "relatedGuidance": "Skills Framework for the Information Age V6, 2015",
-                  "detailedReference": "EMRG",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Component question",
-                  "questionSkill": "I&T strategy and planning",
-                  "relatedGuidance": "Skills Framework for the Information Age V6, 2015",
-                  "detailedReference": "ITSP",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Component question",
-                  "questionSkill": "Strategy alignment",
-                  "relatedGuidance": "e-Competence Framework (e-CF)—A common European Framework for ICT Professionals in all industry sectors—Part 1: Framework, 2016",
-                  "detailedReference": "A. Plan—A.1. IS and Business Strategy Alignment ",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                }
-
-              ]
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Identify key stakeholders and obtain insight on their requirements",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
             },
             {
-              "componentName": "E",
-              "componentDescription": "Principles Policies and Procedures",
-              "componentPercFinal": 0,
-              "componentQuestions": [
-                {
-                  "questionType": "Component question",
-                  "relevantPolicy": "I&T service strategy principles",
-                  "policyDescription": "For details, refer to related guidance.",
-                  "detailedGuidance": "ITIL V3, 2011 ",
-                  "detailedReference": "Service Strategy, 3. Service strategy principles",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Component question",
-                  "relevantPolicy": "I&T strategy policy and principles",
-                  "policyDescription": "Provides holistic view of current business and I&T environment, strategic direction and initiatives required to transition to the desired future environment. Ensures that business and I&T strategy reflect target level of digitization.",
-                  "detailedGuidance": "",
-                  "detailedReference": "",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                }
-              ]
+              "questionType": "Related Guidance",
+              "questionDescription": "",
+              "relatedGuidance": "COSO Enterprise Risk Management, June 2017",
+              "detailedReference": "7. Strategy and Objective-Setting—Principle 6",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "APO02.02",
+          "subComponentName": "Assess current capabilities, performance and digital maturity of the enterprise.",
+          "subComponentDescription": "Assess the performance of current I&T services and develop an understanding of current business and I&T capabilities (both internal and external). Assess current digital maturity of the enterprise and its appetite for change.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
             },
             {
-              "componentName": "F",
-              "componentDescription": "Culture, Ethics and Behavior",
-              "componentPercFinal": 0,
-              "componentQuestions": [
-                {
-                  "questionType": "Component question",
-                  "keyCultureElement": "Establish a culture and underlying values that fit the overall business strategy (i.e., customer oriented, innovation driven, product based). Find ways to inject speed into processes and introduce the supporting culture and behavior that allow moving at a faster pace. This could start with changing basic habits such as having more frequent strategy leadership meetings or automating certain activities. In the current context of digital business models, ecosystems and disruption, it is vital for many organizations to prioritize digital transformation in their strategy. Build a culture that challenges the status quo and explores new ways of working (e.g., invest in automation to respond rapidly to customers, develop sophisticated reporting and analytics to interpret customer needs, build innovative interfaces to gather customer data, create mechanisms to deliver content and offers across all relevant channels).",
-                  "relatedGuidance": "The Scaled Agile Framework for Lean Enterprises",
-                  "detailedReference": "Configurable framework that helps organizations deliver new products and solutions in the shortest sustainable lead time (all chapters)",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                }
-              ]
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Assess digital maturity across different dimensions (e.g., ability of leadership to leverage technology, level of accepted technology risk, approach to innovation, culture and knowledge level of users). Assess appetite for change.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
             },
             {
-              "componentName": "G",
-              "componentDescription": "Services, Infrastructure and Applications",
-              "componentPercFinal": 0,
-              "componentQuestions": [
-                {
-                  "questionType": "Component question",
-                  "questionDescription": " Customer analytics",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Component question",
-                  "questionDescription": "Industry benchmarks",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Component question",
-                  "questionDescription": "Performance measurement system (e.g., balanced scorecard, skills management tools)",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Component question",
-                  "questionDescription": "Technology watch services and tools",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                }
-              ]
+              "questionType": "Related Guidance",
+              "questionDescription": "",
+              "relatedGuidance": "COSO Enterprise Risk Management, June 2017 ",
+              "detailedReference": "7. Strategy and Objective-Setting—Principle 6; 9. Review and Revision—Principle 15",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "APO02.03",
+          "subComponentName": "Define target digital capabilities",
+          "subComponentDescription": "Based on the understanding of enterprise context and direction, define the target I&T products and services and required capabilities. Consider reference standards, best practices and validated emerging technologies.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Summarize enterprise context and direction and identify specific I&T aspects of enterprise strategy (e.g., digitizing processes, implementing new technology, supporting legacy architecture, applying new digital business models, developing digital product portfolio, etc.).",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Define high-level I&T objectives and goals and specify their contribution to enterprise objectives",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": ". Detail required I&T services and products to realize enterprise objectives. Consider validated emerging technology or innovation ideas, reference standards, competitor business and I&T capabilities, comparative benchmarks of good practice, and emerging I&T service provision.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": ". Determine I&T capabilities, methodologies and organizational approaches required to realize the defined I&T product and service portfolio. Consider different development methodologies (Agile, scrum, waterfall, bimodal IT), depending on business requirements. Consider how each could help realize I&T objectives. ",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "APO02.04",
+          "subComponentName": "Conduct a gap analysis",
+          "subComponentDescription": "Identify gaps between current and target environments and describe the high-level changes in the enterprise architecture.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Identify all gaps and changes required to realize the target environment",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Describe high-level changes in enterprise architecture (business, information, data, applications and technology domains).",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Consider the high-level implications of all gaps. Assess the impact of potential changes on business and I&T operating models, I&T research and development capabilities, and I&T investment programs.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": " Consider the value of potential changes to business and IT capabilities, I&T services and enterprise architecture, and the implications if no changes are realized.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": "Refine the target environment definition and prepare a value statement outlining benefits of the target environment.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "APO02.05",
+          "subComponentName": "Define the strategic plan and road map.",
+          "subComponentDescription": "Develop a holistic digital strategy, in cooperation with relevant stakeholders, and detail a road map that defines the incremental steps required to achieve the goals and objectives. Ensure focus on the transformation journey through the appointment of a person who helps spearhead the digital transformation and drives alignment between business and I&T.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": " Define initiatives required to close gaps between current and target environments. Integrate initiatives into a coherent I&T strategy that aligns I&T with all aspects of the business.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Detail a road map that defines the incremental steps required to achieve the goals and objectives of the I&T strategy. Ensure actions are included to train people with new skills, support adoption of new technology, sustain change throughout the organization, etc.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Consider the external ecosystem (enterprise partners, suppliers, start-ups, etc.) to help support execution of the road map.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Group actions into programs and/or projects with a clear goal or deliverable. For each project, identify high-level resource requirements, schedule, investment/operational budget, risk, change impact, etc.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Determine dependencies, overlaps, synergies and impacts among projects, and prioritize.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Finalize road map, indicating relative scheduling and interdependencies of projects.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Ensure focus on the transformation journey. Appoint a champion of digital transformation and alignment between business and I&T (chief digital officer [CDO] or other traditional C-suite role).",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Obtain support and formal approval of plan from stakeholders.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": " Translate objectives into measurable outcomes represented by metrics (what) and targets (how much). Ensure that outcomes and measures correlate to enterprise benefits.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "",
+              "relatedGuidance": "ISF, The Standard of Good Practice for Information Security 2016",
+              "detailedReference": "SG2.1 Information Security Strategy",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "",
+              "relatedGuidance": "ITIL V3, 2011",
+              "detailedReference": "Service Strategy, 4.1 Strategy management for IT services",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "APO02.06",
+          "subComponentName": "Communicate the I&T strategy and direction.",
+          "subComponentDescription": "Create awareness and understanding of the business and I&T objectives and direction, as captured in the I&T strategy, through communication to appropriate stakeholders and users throughout the enterprise.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Develop a communication plan covering the required messages, target audiences, communication mechanisms/channels and schedules.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Prepare a communication package that delivers the plan effectively, using available media and technologies.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Develop and maintain a network for endorsing, supporting and driving the I&T strategy",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Obtain feedback and update the communication plan and delivery as required",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
             }
           ]
         }
+
+      ]
+    },
+    {
+      "componentName": "B",
+      "componentDescription": "Organizational Structures",
+      "componentPercFinal": 0,
+      "componentQuestions": [
+        {
+          "questionType": "Sub Process 1",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "Sub Process 2",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "Sub Process 3",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "Sub Process 4",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "Sub Process 5",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "Sub Process 6",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        }
+      ]
+    },
+    {
+      "componentName": "C",
+      "componentDescription": "Information Flows and Items",
+      "componentPercFinal": 0,
+      "subComponents": [
+        {
+          "subComponentCode": "APO02.01",
+          "subComponentName": "Understand enterprise context and direction.",
+          "subComponentDescription": "Understand the enterprise context (industry drivers, relevant regulations,basis for competition), its current way of working and its ambition level in terms of digitization.",
+          "subComponentQuestions": [
+
+            {
+              "questionType": "Input",
+              "questionDescription": "Innovation opportunities linked to business drivers",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "APO04.02",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Guiding principles for allocating resources and capabilities",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "EDM04.01",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Enterprise strategy and strengths, weaknesses, opportunities, threats (SWOT) analysis",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "Outside COBIT",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Sources and priorities for change",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "Internal",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "APO02.02",
+          "subComponentName": "Assess current capabilities, performance and digital maturity of the enterprise.",
+          "subComponentDescription": "Assess the performance of current I&T services and develop an understanding of current business and I&T capabilities (both internal and external). Assess current digital maturity of the enterprise and its appetite for change.",
+          "subComponentQuestions": [
+
+            {
+              "questionType": "Input",
+              "questionDescription": "Cost optimization opportunities",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "APO06.05",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Definition of potential improvement projects",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "APO08.05",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Identified gaps in IT services to the business",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "APO09.01",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Improvement action plans and remediations",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "APO09.04",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Emerging risk issues and factors",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "APO12.01",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Risk analysis results",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "APO12.02",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Aggregated risk profile, including status of risk management actions",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "APO12.03",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Project proposals for reducing risk",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "APO12.05",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Feedback on allocation and effectiveness of resources and capabilities",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "EDM04.03",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Prioritized improvements • Performance and capacity plans",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "BAI04.03",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Corrective actions",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "BAI04.05",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Results of fit-for-purpose reviews",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "BAI09.01 ",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Results of cost optimization reviews • Opportunities to reduce asset costs or increase value",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "BAI09.04 ",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Gaps and risk related to current capabilities",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "APO12.01",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Capability SWOT analysis",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "Internal",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Baseline of current capabilities",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "Internal",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "APO02.03",
+          "subComponentName": "Define target digital capabilities",
+          "subComponentDescription": "Based on the understanding of enterprise context and direction, define the target I&T products and services and required capabilities. Consider reference standards, best practices and validated emerging technologies.",
+          "subComponentQuestions": [
+
+            {
+              "questionType": "Input",
+              "questionDescription": "Results and recommendations from proof-of-concept initiatives • Analysis of rejected initiatives",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "APO04.05",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Proposed enterprise architecture changes",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "APO03.03",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Required business and IT capabilities",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "Internal",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "High-level I&T-related goals",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "Internal",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "APO02.04",
+          "subComponentName": "Conduct a gap analysis",
+          "subComponentDescription": "Identify gaps between current and target environments and describe the high-level changes in the enterprise architecture.",
+          "subComponentQuestions": [
+
+            {
+              "questionType": "Input",
+              "questionDescription": "Assessments of using innovative approaches",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "APO04.06",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Investment return expectations",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "APO05.01",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Results of program goal achievement monitoring",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "BAI01.05",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Stage-gate review results",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "BAI01.06",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Post-implementation review results",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "BAI11.09",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Evaluation of strategic alignment",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "EDM02.02",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Gaps and changes required to realize target capability",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "APO01.03, APO13.02, BAI03.11, EDM04.01",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Value benefit statement for target environment",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "BAI03.11",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "APO02.05",
+          "subComponentName": "Define the strategic plan and road map.",
+          "subComponentDescription": "Develop a holistic digital strategy, in cooperation with relevant stakeholders, and detail a road map that defines the incremental steps required to achieve the goals and objectives. Ensure focus on the transformation journey through the appointment of a person who helps spearhead the digital transformation and drives alignment between business and I&T.",
+          "subComponentQuestions": [
+
+            {
+              "questionType": "Input",
+              "questionDescription": "Defined scope of architecture • Architecture concept business case and value proposition",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "APO03.01",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Information architecture model",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "APO03.02",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Transition architectures",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "APO03.03",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Funding options",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "APO05.01",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Budget allocations",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "APO06.02",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "I&T budget",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "APO06.03",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Action plan to adjust license numbers and allocations",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "BAI09.05",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Approved strategic options",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "DSS04.02",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Feedback on strategy and goals",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "EDM02.01 ",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Approved resources plan",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "EDM04.01 ",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Remedial actions to address resource management deviations",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "EDM04.03",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "I&T strategy and objectives",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "All APO, All BAI, All DSS, All MEA",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Strategic road map",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "APO01.01, APO03.01, APO08.01, EDM02.01, EDM02.02",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Definition of strategic initiatives",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "EDM02.01",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Risk assessment initiatives",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "EDM02.01, APO12.01",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "APO02.06",
+          "subComponentName": "Communicate the I&T strategy and direction.",
+          "subComponentDescription": "Create awareness and understanding of the business and I&T objectives and direction, as captured in the I&T strategy, through communication to appropriate stakeholders and users throughout the enterprise.",
+          "subComponentQuestions": [
+
+            {
+              "questionType": "Input",
+              "questionDescription": "Communication of resourcing strategies",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "EDM04.02",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Communication package",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "All APO, All BAI, All DSS, All MEA",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Communication plan",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "Internal",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        }
+
+      ]
+    },
+    {
+      "componentName": "D",
+      "componentDescription": "Peoples, Skills and Competencies",
+      "componentPercFinal": 0,
+      "componentQuestions": [
+        {
+          "questionType": "Component question",
+          "questionSkill": "Business plan development",
+          "relatedGuidance": "e-Competence Framework (e-CF)—A common European Framework for ICT Professionals in all industry sectors—Part 1: Framework, 2016",
+          "detailedReference": "A. Plan—A.3. Business Plan Development ",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "Component question",
+          "questionSkill": "Emerging technology monitoring",
+          "relatedGuidance": "Skills Framework for the Information Age V6, 2015",
+          "detailedReference": "EMRG",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "Component question",
+          "questionSkill": "I&T strategy and planning",
+          "relatedGuidance": "Skills Framework for the Information Age V6, 2015",
+          "detailedReference": "ITSP",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "Component question",
+          "questionSkill": "Strategy alignment",
+          "relatedGuidance": "e-Competence Framework (e-CF)—A common European Framework for ICT Professionals in all industry sectors—Part 1: Framework, 2016",
+          "detailedReference": "A. Plan—A.1. IS and Business Strategy Alignment ",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        }
+
+      ]
+    },
+    {
+      "componentName": "E",
+      "componentDescription": "Principles Policies and Procedures",
+      "componentPercFinal": 0,
+      "componentQuestions": [
+        {
+          "questionType": "Component question",
+          "relevantPolicy": "I&T service strategy principles",
+          "policyDescription": "For details, refer to related guidance.",
+          "detailedGuidance": "ITIL V3, 2011 ",
+          "detailedReference": "Service Strategy, 3. Service strategy principles",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "Component question",
+          "relevantPolicy": "I&T strategy policy and principles",
+          "policyDescription": "Provides holistic view of current business and I&T environment, strategic direction and initiatives required to transition to the desired future environment. Ensures that business and I&T strategy reflect target level of digitization.",
+          "detailedGuidance": "",
+          "detailedReference": "",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        }
+      ]
+    },
+    {
+      "componentName": "F",
+      "componentDescription": "Culture, Ethics and Behavior",
+      "componentPercFinal": 0,
+      "componentQuestions": [
+        {
+          "questionType": "Component question",
+          "keyCultureElement": "Establish a culture and underlying values that fit the overall business strategy (i.e., customer oriented, innovation driven, product based). Find ways to inject speed into processes and introduce the supporting culture and behavior that allow moving at a faster pace. This could start with changing basic habits such as having more frequent strategy leadership meetings or automating certain activities. In the current context of digital business models, ecosystems and disruption, it is vital for many organizations to prioritize digital transformation in their strategy. Build a culture that challenges the status quo and explores new ways of working (e.g., invest in automation to respond rapidly to customers, develop sophisticated reporting and analytics to interpret customer needs, build innovative interfaces to gather customer data, create mechanisms to deliver content and offers across all relevant channels).",
+          "relatedGuidance": "The Scaled Agile Framework for Lean Enterprises",
+          "detailedReference": "Configurable framework that helps organizations deliver new products and solutions in the shortest sustainable lead time (all chapters)",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        }
+      ]
+    },
+    {
+      "componentName": "G",
+      "componentDescription": "Services, Infrastructure and Applications",
+      "componentPercFinal": 0,
+      "componentQuestions": [
+        {
+          "questionType": "Component question",
+          "questionDescription": " Customer analytics",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "Component question",
+          "questionDescription": "Industry benchmarks",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "Component question",
+          "questionDescription": "Performance measurement system (e.g., balanced scorecard, skills management tools)",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "Component question",
+          "questionDescription": "Technology watch services and tools",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        }
+      ]
+    }
+  ]
+}
       

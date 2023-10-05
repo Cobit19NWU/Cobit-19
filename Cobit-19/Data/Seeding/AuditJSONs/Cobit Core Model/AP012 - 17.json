@@ -2,6 +2,7 @@
   "objectiveName": "APO12",
   "objectiveDescription": "Continually identify, assess and reduce I&T-related risk within tolerance levels set by enterprise executive management",
   "objectivePurpose": "Integrate the management of I&T-related enterprise risk with overall enterprise risk management (ERM) and balance the costs and benefits of managing I&T-related enterprise risk.",
+  "typeOfObjective": "Management",
   "maturityLevel": 0,
   "maturityLevel0PercFinal": 0,
   "maturityLevel1PercFinal": 0,
@@ -792,678 +793,425 @@
               "questionComment": "comment"
             }
           ]
-            },
-
-            {
-              "subComponentCode": "APO12.06",
-              "subComponentName": "Respond to risk.",
-              "subComponentDescription": "Respond in a timely manner to materialized risk events with effective measures to limit the magnitude of loss.",
-              "subComponentQuestions": [
-                {
-                  "questionType": "Maturity Level 3",
-                  "questionDescription": "Prepare, maintain and test plans that document the specific steps to take when a risk event may cause a significant operational or development incident with serious business impact. Ensure that plans include pathways of escalation across the enterprise.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 3",
-                  "questionDescription": "Apply the appropriate response plan to minimize the impact when risk incidents occur.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string, ",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 4",
-                  "questionDescription": "Categorize incidents and compare I&T-related loss exposures against risk tolerance thresholds. Communicate business impacts to decision makers as part of reporting and update the risk profile.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string, ",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 4",
-                  "questionDescription": "Examine past adverse events/losses and missed opportunities and determine root causes.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string, ",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Maturity Level 5",
-                  "questionDescription": "Communicate root cause, additional risk response requirements and process improvements to appropriate decision makers.Ensure that the cause response requirements and process improvement are included in risk governance processes.",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "string, ",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Related Guidance",
-                  "questionDescription": "string",
-                  "relatedGuidance": "COSO Enterprise Risk Management, June 2017",
-                  "detailedReference": "8. Performance—Principle 13",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-
-                {
-                  "questionType": "Related Guidance",
-                  "questionDescription": "string",
-                  "relatedGuidance": "ISF, The Standard of Good Practice for Information Security 2016",
-                  "detailedReference": "IR2.9 Risk Treatment",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Related Guidance",
-                  "questionDescription": "string",
-                  "relatedGuidance": "ISO/IEC 27001:2013/Cor.2:2015(E)",
-                  "detailedReference": "6.1 Action to address risk and opportunities",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Related Guidance",
-                  "questionDescription": "string",
-                  "relatedGuidance": "ISO/IEC 27005:2011(E)",
-                  "detailedReference": "9. Information security risk treatment",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Related Guidance",
-                  "questionDescription": "string",
-                  "relatedGuidance": "National Institute of Standards and Technology Special Publication 800-37 Revision 2 (Draft) May 2018 ",
-                  "detailedReference": "3.6 Authorization (Task 4)",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Related Guidance",
-                  "questionDescription": "string",
-                  "relatedGuidance": "National Institute of Standards and Technology Special Publication 800-37 Revision 2 (Draft) May 2018 ",
-                  "detailedReference": "3.6 Authorization (Task 4)",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Related Guidance",
-                  "questionDescription": "string",
-                  "relatedGuidance": "National Institute of Standards and Technology Special Publication 800-53, Revision 5 (Draft), August 2017 ",
-                  "detailedReference": "3.15 Program management (PM-9, PM-31)",
-                  "inputFrom": "string",
-                  "outputTo": "string,",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Input",
-                  "questionDescription": "Remedial actions to address risk management deviations",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "EDM03.03",
-                  "outputTo": "string",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Output",
-                  "questionDescription": "Risk impact communication",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "APO01.02;APO08.04; DSS04.02",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Output",
-                  "questionDescription": "Risk-related root causes",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "DSS02.03;DSS03.01; DSS03.02;DSS03.03; DSS03.05; DSS04.02; MEA02.04; MEA04.04; MEA04.06",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Output",
-                  "questionDescription": "Risk-related incident response plans",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "DSS02.05",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                }
-
-              ]
-            }
-          ]
         },
+
         {
-          "componentName": "B",
-          "componentDescription": "Organizational Structures",
-          "componentPercFinal": 0,
-          "componentQuestions": [
+          "subComponentCode": "APO12.06",
+          "subComponentName": "Respond to risk.",
+          "subComponentDescription": "Respond in a timely manner to materialized risk events with effective measures to limit the magnitude of loss.",
+          "subComponentQuestions": [
             {
-              "questionType": "APO12.01",
-              "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
-              "questionAnswer": 0,
-              "questionScore": 0,
-              "questionComment": "comment"
-            },
-            {
-              "questionType": "APO12.02",
-              "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
-              "questionAnswer": 0,
-              "questionScore": 0,
-              "questionComment": "comment"
-            },
-            {
-              "questionType": "APO12.03",
-              "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
-              "questionAnswer": 0,
-              "questionScore": 0,
-              "questionComment": "comment"
-            },
-            {
-              "questionType": "APO12.04  ",
-              "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
-              "questionAnswer": 0,
-              "questionScore": 0,
-              "questionComment": "comment"
-            },
-            {
-              "questionType": "APO12.05",
-              "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
-              "questionAnswer": 0,
-              "questionScore": 0,
-              "questionComment": "comment"
-            },
-            {
-              "questionType": "APO12.06",
-              "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
-              "questionAnswer": 0,
-              "questionScore": 0,
-              "questionComment": "comment"
-            }
-          ]
-        },
-        {
-          "componentCode": "C",
-          "componentDescription": "Information Flows and Items",
-          "componentPercFinal": 0,
-          "subComponents": [
-            {
-              "subComponentCode": "APO12.01",
-              "subComponentName": "Collect Data.",
-              "subComponentDescription": "Identify and collect relevant data to enable effective I&T-related risk identification analysis and reporting.",
-              "subComponentQuestions": [
-
-
-                {
-                  "questionType": "Input",
-                  "questionDescription": "Gaps and risk related to current capabilities",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "APO02.02",
-                  "outputTo": "string",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Input",
-                  "questionDescription": "Risk assessment initiatives",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "APO02.05",
-                  "outputTo": "string",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Input",
-                  "questionDescription": "Identified vendor delivery risks",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "APO10.045",
-                  "outputTo": "string",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Input",
-                  "questionDescription": "Incident status and trends report",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "DSS02.07",
-                  "outputTo": "string",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Input",
-                  "questionDescription": "Evaluation of risk management activities",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "EDM03.01",
-                  "outputTo": "string",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Input",
-                  "questionDescription": "• Risk management policies • Key objectives to be monitored for risk management • Approved process for measuring risk management",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "EDM03.02",
-                  "outputTo": "string",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Output",
-                  "questionDescription": "Emerging risk issues and factors",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "APO01.01;APO02.02;EDM03.01",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-
-                {
-                  "questionType": "Output",
-                  "questionDescription": "Data on risk events and contributing factors",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "Internal",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Output",
-                  "questionDescription": "Data on the operating environment relating to risk",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "inputFrom": "string",
-                  "outputTo": "Internal",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                }
-              ]
-                },
-                {
-                  "subComponentCode": "APO12.02 ",
-                  "subComponentName": "Analyze risk",
-                  "subComponentDescription": "Develop a substantiated view on actual I&T risk, in support of risk decisions.",
-                  "subComponentQuestions": [
-                    {
-                      "questionType": "Input",
-                      "questionDescription": "Business impact analyses (BIAs)",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "DSS04.02",
-                      "outputTo": "sring,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Input",
-                      "questionDescription": "Evaluations of potential threats",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "DSS05.01",
-                      "outputTo": "sring,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Input",
-                      "questionDescription": "Threat advisories",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "Outside COBIT",
-                      "outputTo": "sring,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Output",
-                      "questionDescription": "Risk analysis results",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string,",
-                      "outputTo": "APO01.01;APO02.02;EDM03.03;BAI01.08;BAI11.06",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Output",
-                      "questionDescription": "I&T risk scenarios",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string,",
-                      "outputTo": "Internal",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Output",
-                      "questionDescription": "Scope of risk analysis efforts",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string,",
-                      "outputTo": "Internal",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    }
-
-                  ]
-                },
-                {
-                  "subComponentCode": "APO12.03 ",
-                  "subComponentName": "Maintain a risk profile",
-                  "subComponentDescription": "Maintain an inventory of known risk and risk attributes, including expected frequency potential impact and responses. Document related resources capabilities and current control activities related to risk items.",
-                  "subComponentQuestions": [
-                    {
-                      "questionType": "Input",
-                      "questionDescription": "Identified vendor delivery risk",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "APO10.04",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Input",
-                      "questionDescription": "Evaluations of potential threats",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "DSS05.01",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Input",
-                      "questionDescription": "• Risk appetite guidance, • Approved risk tolerance levels ",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "EDM03.01",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Output",
-                      "questionDescription": "Aggregated risk profile including status of risk management actions",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "outputTo": "APO02.02;EDM03.02",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Output",
-                      "questionDescription": "Documented risk scenarios by line of business and function",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "sring,",
-                      "outputTo": "Internal",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    }
-                  ]
-                },
-                {
-                  "subComponentCode": "APO12.04",
-                  "subComponentName": "  Articulate risk.",
-                  "subComponentDescription": "Communicate information on the current state of I&T-related exposures and opportunities in a timely manner to all required stakeholders for appropriate response.",
-                  "subComponentQuestions": [
-                    {
-                      "questionType": "Output",
-                      "questionDescription": "Risk analysis and risk profile reports for stakeholders",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "outputTo": "APO10.04;EDM03.03;EDM05.02;MEA04.05",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Output",
-                      "questionDescription": "Results of third-party risk assessments",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "outputTo": "APO10.04;EDM03.03;MEA02.01",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Output",
-                      "questionDescription": "Opportunities for acceptance of greater risk",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "outputTo": "EDM03.03",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    }
-
-                  ]
-
-
-
-                },
-                {
-                  "subComponentCode": "APO12.05",
-                  "subComponentName": "Define a risk management action portfolio.",
-                  "subComponentDescription": "Manage opportunities to reduce risk to an acceptable level as a portfolio.",
-                  "subComponentQuestions": [
-                    {
-                      "questionType": "Output",
-                      "questionDescription": "Project proposals for reducing risk",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "APO02.02;APO13.02",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    }
-                  ]
-                },
-                {
-                  "subComponentCode": "APO12.06",
-                  "subComponentName": "Respond to risk.",
-                  "subComponentDescription": "Respond in a timely manner to materialized risk events with effective measures to limit the magnitude of loss.",
-                  "subComponentQuestions": [
-                    {
-                      "questionType": "Input",
-                      "questionDescription": "Remedial actions to address risk management deviations",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "EDM03.03",
-                      "outputTo": "string",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Output",
-                      "questionDescription": "Risk impact communication",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "APO01.02;APO08.04; DSS04.02",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Output",
-                      "questionDescription": "Risk-related root causes",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "DSS02.03;DSS03.01; DSS03.02;DSS03.03; DSS03.05; DSS04.02; MEA02.04; MEA04.04; MEA04.06",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Output",
-                      "questionDescription": "Risk-related incident response plans",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "DSS02.05",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    }
-                  ]
-                }
-              ]
-        },
-        {
-          "componentName": "D",
-          "componentDescription": "Peoples, Skills and Competencies",
-          "componentPercFinal": 0,
-          "componentQuestions": [
-
-            {
-              "questionType": "Component question",
-              "questionSkill": "Information assurance",
-              "relatedGuidance": "Skills Framework for the Information Age V6, 2015 ",
-              "detailedReference": "INAS",
-              "questionAnswer": 0,
-              "questionScore": 0,
-              "questionComment": "comment"
-            },
-            {
-              "questionType": "Component question",
-              "questionSkill": "Business risk management",
-              "relatedGuidance": "Skills Framework for the Information Age V6, 2015 ",
-              "detailedReference": "BURM",
-              "questionAnswer": 0,
-              "questionScore": 0,
-              "questionComment": "comment"
-            },
-            {
-              "questionType": "Component question",
-              "questionSkill": "Risk management",
-              "relatedGuidance": "e-Competence Framework (e-CF)—A common European Framework for ICT, Professionals in all industry sectors-Part 1: Framework 2016 ",
-              "detailedReference": "E. Manage—E.3. Risk Management",
-              "questionAnswer": 0,
-              "questionScore": 0,
-              "questionComment": "comment"
-            }
-          ]
-        },
-        {
-          "componentName": "E",
-          "componentDescription": "Principles Policies and Procedures",
-          "componentPercFinal": 0,
-          "componentQuestions": [
-            {
-              "questionType": "Component question",
-              "relevantPolicy": "Enterprise risk policy",
-              "policyDescription": "Defines governance and management of enterprise risk at strategic tactical and operational levels pursuant to business objectives. Translates enterprise governance into risk governance principles and policy and elaborates risk management activities",
-              "detailedGuidance": "National Institute of Standards and Technology Special Publication 800-53 Revision 5 (Draft)August 2017",
-              "detailedReference": "3.17 Risk assessment (RA-1)",
-              "questionAnswer": 0,
-              "questionScore": 0,
-              "questionComment": "comment"
-            },
-            {
-              "questionType": "Component question",
-              "relevantPolicy": "Fraud risk policy",
-              "policyDescription": "Informs protection of enterprise brand reputation and assets in the event of loss or damage resulting from fraud or misconduct.Guides employees in reporting suspicious activity and handling sensitive information and evidence. Encourages antifraud culture and cultivates awareness of risk.",
-              "detailedGuidance": "National Institute of Standards and Technology Special Publication 800-37 Revision 2 (Draft)August 2018",
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Prepare, maintain and test plans that document the specific steps to take when a risk event may cause a significant operational or development incident with serious business impact. Ensure that plans include pathways of escalation across the enterprise.",
+              "relatedGuidance": "string",
               "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": "comment"
-            }
-
-          ]
-        },
-        {
-          "componentName": "F",
-          "componentDescription": "Culture, Ethics and Behavior",
-          "componentPercFinal": 0,
-          "componentQuestions": [
+            },
             {
-              "questionType": "Component question",
-              "keyCultureElement": "To support a transparent and participatory risk culture, senior management should set direction and demonstrate visible and genuine support for incorporation of risk practices throughout the enterprise. Management should encourage open communication and business ownership for I&T-related business risk. Desirable behaviors include aligning policies to the defined risk appetite reporting risk trends to senior management and risk governing bodies rewarding effective risk management and proactively monitoring risk and progress on the risk action plan.",
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Apply the appropriate response plan to minimize the impact when risk incidents occur.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": "Categorize incidents and compare I&T-related loss exposures against risk tolerance thresholds. Communicate business impacts to decision makers as part of reporting and update the risk profile.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": "Examine past adverse events/losses and missed opportunities and determine root causes.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 5",
+              "questionDescription": "Communicate root cause, additional risk response requirements and process improvements to appropriate decision makers.Ensure that the cause response requirements and process improvement are included in risk governance processes.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "string",
+              "relatedGuidance": "COSO Enterprise Risk Management, June 2017",
+              "detailedReference": "8. Performance—Principle 13",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "string",
               "relatedGuidance": "ISF, The Standard of Good Practice for Information Security 2016",
-              "detailedReference": "IR1.2 Information Risk Assessment",
+              "detailedReference": "IR2.9 Risk Treatment",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "string",
+              "relatedGuidance": "ISO/IEC 27001:2013/Cor.2:2015(E)",
+              "detailedReference": "6.1 Action to address risk and opportunities",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "string",
+              "relatedGuidance": "ISO/IEC 27005:2011(E)",
+              "detailedReference": "9. Information security risk treatment",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "string",
+              "relatedGuidance": "National Institute of Standards and Technology Special Publication 800-37 Revision 2 (Draft) May 2018 ",
+              "detailedReference": "3.6 Authorization (Task 4)",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "string",
+              "relatedGuidance": "National Institute of Standards and Technology Special Publication 800-37 Revision 2 (Draft) May 2018 ",
+              "detailedReference": "3.6 Authorization (Task 4)",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "string",
+              "relatedGuidance": "National Institute of Standards and Technology Special Publication 800-53, Revision 5 (Draft), August 2017 ",
+              "detailedReference": "3.15 Program management (PM-9, PM-31)",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Remedial actions to address risk management deviations",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "EDM03.03",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Risk impact communication",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "APO01.02;APO08.04; DSS04.02",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Risk-related root causes",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "DSS02.03;DSS03.01; DSS03.02;DSS03.03; DSS03.05; DSS04.02; MEA02.04; MEA04.04; MEA04.06",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Risk-related incident response plans",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "DSS02.05",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+
+          ]
+        }
+      ]
+    },
+    {
+      "componentName": "B",
+      "componentDescription": "Organizational Structures",
+      "componentPercFinal": 0,
+      "componentQuestions": [
+        {
+          "questionType": "APO12.01",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "APO12.02",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "APO12.03",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "APO12.04  ",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "APO12.05",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "APO12.06",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        }
+      ]
+    },
+    {
+      "componentCode": "C",
+      "componentDescription": "Information Flows and Items",
+      "componentPercFinal": 0,
+      "subComponents": [
+        {
+          "subComponentCode": "APO12.01",
+          "subComponentName": "Collect Data.",
+          "subComponentDescription": "Identify and collect relevant data to enable effective I&T-related risk identification analysis and reporting.",
+          "subComponentQuestions": [
+
+
+            {
+              "questionType": "Input",
+              "questionDescription": "Gaps and risk related to current capabilities",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "APO02.02",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Risk assessment initiatives",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "APO02.05",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Identified vendor delivery risks",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "APO10.045",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Incident status and trends report",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "DSS02.07",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Evaluation of risk management activities",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "EDM03.01",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "• Risk management policies • Key objectives to be monitored for risk management • Approved process for measuring risk management",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "EDM03.02",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Emerging risk issues and factors",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "APO01.01;APO02.02;EDM03.01",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+
+            {
+              "questionType": "Output",
+              "questionDescription": "Data on risk events and contributing factors",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "Internal",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Data on the operating environment relating to risk",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "Internal",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "APO12.02 ",
+          "subComponentName": "Analyze risk",
+          "subComponentDescription": "Develop a substantiated view on actual I&T risk, in support of risk decisions.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Input",
+              "questionDescription": "Business impact analyses (BIAs)",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "DSS04.02",
+              "outputTo": "sring,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Evaluations of potential threats",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "DSS05.01",
+              "outputTo": "sring,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Threat advisories",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "Outside COBIT",
+              "outputTo": "sring,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Risk analysis results",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string,",
+              "outputTo": "APO01.01;APO02.02;EDM03.03;BAI01.08;BAI11.06",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "I&T risk scenarios",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string,",
+              "outputTo": "Internal",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Scope of risk analysis efforts",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string,",
+              "outputTo": "Internal",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": "comment"
@@ -1472,34 +1220,170 @@
           ]
         },
         {
-          "componentName": "G",
-          "componentDescription": "Services, Infrastructure and Applications",
-          "componentPercFinal": 0,
-          "componentQuestions": [
+          "subComponentCode": "APO12.03 ",
+          "subComponentName": "Maintain a risk profile",
+          "subComponentDescription": "Maintain an inventory of known risk and risk attributes, including expected frequency potential impact and responses. Document related resources capabilities and current control activities related to risk items.",
+          "subComponentQuestions": [
             {
-              "questionType": "Component question",
-              "questionDescription": "Crisis management services",
+              "questionType": "Input",
+              "questionDescription": "Identified vendor delivery risk",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "APO10.04",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": "comment"
             },
             {
-              "questionType": "Component question",
-              "questionDescription": "Governance, risk and compliance (GRC) tools",
+              "questionType": "Input",
+              "questionDescription": "Evaluations of potential threats",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "DSS05.01",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": "comment"
             },
             {
-              "questionType": "Component question",
-              "questionDescription": "Risk analysis tools",
+              "questionType": "Input",
+              "questionDescription": "• Risk appetite guidance, • Approved risk tolerance levels ",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "EDM03.01",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": "comment"
             },
             {
-              "questionType": "Component question",
-              "questionDescription": "Risk intelligence services",
+              "questionType": "Output",
+              "questionDescription": "Aggregated risk profile including status of risk management actions",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "outputTo": "APO02.02;EDM03.02",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Documented risk scenarios by line of business and function",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "sring,",
+              "outputTo": "Internal",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "APO12.04",
+          "subComponentName": "  Articulate risk.",
+          "subComponentDescription": "Communicate information on the current state of I&T-related exposures and opportunities in a timely manner to all required stakeholders for appropriate response.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Output",
+              "questionDescription": "Risk analysis and risk profile reports for stakeholders",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "outputTo": "APO10.04;EDM03.03;EDM05.02;MEA04.05",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Results of third-party risk assessments",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "outputTo": "APO10.04;EDM03.03;MEA02.01",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Opportunities for acceptance of greater risk",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "outputTo": "EDM03.03",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+
+          ]
+
+
+
+        },
+        {
+          "subComponentCode": "APO12.05",
+          "subComponentName": "Define a risk management action portfolio.",
+          "subComponentDescription": "Manage opportunities to reduce risk to an acceptable level as a portfolio.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Output",
+              "questionDescription": "Project proposals for reducing risk",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "APO02.02;APO13.02",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "APO12.06",
+          "subComponentName": "Respond to risk.",
+          "subComponentDescription": "Respond in a timely manner to materialized risk events with effective measures to limit the magnitude of loss.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Input",
+              "questionDescription": "Remedial actions to address risk management deviations",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "EDM03.03",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Risk impact communication",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "APO01.02;APO08.04; DSS04.02",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Risk-related root causes",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "DSS02.03;DSS03.01; DSS03.02;DSS03.03; DSS03.05; DSS04.02; MEA02.04; MEA04.04; MEA04.06",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Risk-related incident response plans",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "DSS02.05",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": "comment"
@@ -1507,7 +1391,124 @@
           ]
         }
       ]
+    },
+    {
+      "componentName": "D",
+      "componentDescription": "Peoples, Skills and Competencies",
+      "componentPercFinal": 0,
+      "componentQuestions": [
+
+        {
+          "questionType": "Component question",
+          "questionSkill": "Information assurance",
+          "relatedGuidance": "Skills Framework for the Information Age V6, 2015 ",
+          "detailedReference": "INAS",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "Component question",
+          "questionSkill": "Business risk management",
+          "relatedGuidance": "Skills Framework for the Information Age V6, 2015 ",
+          "detailedReference": "BURM",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "Component question",
+          "questionSkill": "Risk management",
+          "relatedGuidance": "e-Competence Framework (e-CF)—A common European Framework for ICT, Professionals in all industry sectors-Part 1: Framework 2016 ",
+          "detailedReference": "E. Manage—E.3. Risk Management",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        }
+      ]
+    },
+    {
+      "componentName": "E",
+      "componentDescription": "Principles Policies and Procedures",
+      "componentPercFinal": 0,
+      "componentQuestions": [
+        {
+          "questionType": "Component question",
+          "relevantPolicy": "Enterprise risk policy",
+          "policyDescription": "Defines governance and management of enterprise risk at strategic tactical and operational levels pursuant to business objectives. Translates enterprise governance into risk governance principles and policy and elaborates risk management activities",
+          "detailedGuidance": "National Institute of Standards and Technology Special Publication 800-53 Revision 5 (Draft)August 2017",
+          "detailedReference": "3.17 Risk assessment (RA-1)",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "Component question",
+          "relevantPolicy": "Fraud risk policy",
+          "policyDescription": "Informs protection of enterprise brand reputation and assets in the event of loss or damage resulting from fraud or misconduct.Guides employees in reporting suspicious activity and handling sensitive information and evidence. Encourages antifraud culture and cultivates awareness of risk.",
+          "detailedGuidance": "National Institute of Standards and Technology Special Publication 800-37 Revision 2 (Draft)August 2018",
+          "detailedReference": "string",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        }
+
+      ]
+    },
+    {
+      "componentName": "F",
+      "componentDescription": "Culture, Ethics and Behavior",
+      "componentPercFinal": 0,
+      "componentQuestions": [
+        {
+          "questionType": "Component question",
+          "keyCultureElement": "To support a transparent and participatory risk culture, senior management should set direction and demonstrate visible and genuine support for incorporation of risk practices throughout the enterprise. Management should encourage open communication and business ownership for I&T-related business risk. Desirable behaviors include aligning policies to the defined risk appetite reporting risk trends to senior management and risk governing bodies rewarding effective risk management and proactively monitoring risk and progress on the risk action plan.",
+          "relatedGuidance": "ISF, The Standard of Good Practice for Information Security 2016",
+          "detailedReference": "IR1.2 Information Risk Assessment",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        }
+
+      ]
+    },
+    {
+      "componentName": "G",
+      "componentDescription": "Services, Infrastructure and Applications",
+      "componentPercFinal": 0,
+      "componentQuestions": [
+        {
+          "questionType": "Component question",
+          "questionDescription": "Crisis management services",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "Component question",
+          "questionDescription": "Governance, risk and compliance (GRC) tools",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "Component question",
+          "questionDescription": "Risk analysis tools",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "Component question",
+          "questionDescription": "Risk intelligence services",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        }
+      ]
     }
+  ]
+}
   
 
         

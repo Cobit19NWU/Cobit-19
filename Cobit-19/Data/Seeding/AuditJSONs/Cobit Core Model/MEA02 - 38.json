@@ -1,7 +1,8 @@
-{  
+{
   "objectiveName": "MEA02",
   "objectiveDescription": "Define and maintain appropriate business process controls to ensure that information related to and processed by in-house or outsourced business processes satisfies all relevant information control requirements. Identify the relevant information control requirements. Manage and operate adequate input, throughput and output controls (application controls) to ensure that information and information processing satisfy these requirements.",
   "objectivePurpose": "Maintain information integrity and the security of information assets handled within business processes in the enterprise or its outsourced operation.",
+  "typeOfObjective": "Governance",
   "maturityLevel": 0,
   "maturityLevel0PercFinal": 0,
   "maturityLevel1PercFinal": 0,
@@ -48,37 +49,37 @@
               "questionComment": "comment"
             }
           ]
+        },
+        {
+          "subComponentCode": "EG11",
+          "subComponentName": "Compliance with internal policies",
+          "subComponentQuestions": [
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Number of incidents related to noncompliance to policy",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
             },
-              {
-                "subComponentCode": "EG11",
-                "subComponentName": "Compliance with internal policies",
-                "subComponentQuestions": [
-                  {
-                    "questionType": "Enterprise goal",
-                    "questionDescription": "Number of incidents related to noncompliance to policy",
-                    "questionAnswer": 0,
-                    "questionScore": 0,
-                    "questionComment": "comment"
-                  },
-                  {
-                    "questionType": "Enterprise goal",
-                    "questionDescription": "Percent of stakeholders who understand policies",
-                    "questionAnswer": 0,
-                    "questionScore": 0,
-                    "questionComment": "comment"
-                  },
-                  {
-                    "questionType": "Enterprise goal",
-                    "questionDescription": "Percent of policies supported by effective standards and working practices",
-                    "questionAnswer": 0,
-                    "questionScore": 0,
-                    "questionComment": "comment"
-                  }
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Percent of stakeholders who understand policies",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Percent of policies supported by effective standards and working practices",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
 
-                ]
-              }
-            ] 
-        
+          ]
+        }
+      ]
+
     },
 
     {

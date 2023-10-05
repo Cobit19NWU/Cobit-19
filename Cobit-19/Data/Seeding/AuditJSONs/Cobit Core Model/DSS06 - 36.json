@@ -1,7 +1,8 @@
-{  
+{
   "objectiveName": "DSS06",
   "objectiveDescription": "Define and maintain appropriate business process controls to ensure that information related to and processed by in-house or outsourced business processes satisfies all relevant information control requirements. Identify the relevant information control requirements. Manage and operate adequate input, throughput and output controls (application controls) to ensure that information and information processing satisfy these requirements.",
   "objectivePurpose": "Maintain information integrity and the security of information assets handled within business processes in the enterprise or its outsourced operation.",
+  "typeOfObjective": "Management",
   "maturityLevel": 0,
   "maturityLevel0PercFinal": 0,
   "maturityLevel1PercFinal": 0,
@@ -150,941 +151,941 @@
           ]
         }
       ]
-        },
+    },
 
+    {
+      "componentCode": "AG",
+      "componentDescription": "Alignment Goals",
+      "componentPercFinal": 0,
+      "subComponents": [
         {
-          "componentCode": "AG",
-          "componentDescription": "Alignment Goals",
-          "componentPercFinal": 0,
-          "subComponents": [
+          "subComponentCode": "AG08",
+          "subComponentName": "Enabling and supporting business processes by integrating applications and technology",
+          "subComponentQuestions": [
             {
-              "subComponentCode": "AG08",
-              "subComponentName": "Enabling and supporting business processes by integrating applications and technology",
-              "subComponentQuestions": [
-                {
-                  "questionType": "Alignment goal",
-                  "questionDescription": "Time to execute business services or processes",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Alignment goal",
-                  "questionDescription": "Number of I&T-enabled business programs delayed or incurring additional cost due to technology-integration issues",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Alignment goal",
-                  "questionDescription": "Number of business process changes that need to be delayed or reworked because of technology-integration issues",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Alignment goal",
-                  "questionDescription": "Number of applications or critical infrastructures operating in silos and not integrated",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                }
-              ]
-            }
-          ]
+              "questionType": "Alignment goal",
+              "questionDescription": "Time to execute business services or processes",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
             },
             {
-              "componentName": "A",
-              "componentDescription": "Processes",
-              "componentPercFinal": 0,
-              "subComponents": [
-                {
-                  "subComponentCode": "DSS06.01",
-                  "subComponentName": "Align control activities embedded in business processes with enterprise objectives.",
-                  "subComponentDescription": "Continually assess and monitor the execution of business process activities and related controls (based on enterprise risk), to ensure that processing controls align with business needs.",
-                  "subComponentQuestions": [
-                    {
-                      "questionType": "Maturity Level 2",
-                      "questionDescription": "Identify and document the necessary control activities for key business processes to satisfy control requirements for strategic, operational, reporting and compliance objectives.",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Maturity Level 2",
-                      "questionDescription": "Prioritize control activities based on the inherent risk to the business. Identify key controls.",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Maturity Level 2",
-                      "questionDescription": "Ensure ownership of key control activities.",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Maturity Level 3",
-                      "questionDescription": "Implement automated controls.",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Maturity Level 4",
-                      "questionDescription": "Continually monitor control activities on an end-to-end basis to identify opportunities for improvement.",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Maturity Level 5",
-                      "questionDescription": "Continually improve the design and operation of business process controls.",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Related Guidance",
-                      "questionDescription": "string",
-                      "relatedGuidance": "National Institute of Standards and Technology Special Publication 800-37, Revision 2 (Draft), May 2018",
-                      "detailedReference": "3.1 Preparation (Task 10, 11)",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Related Guidance",
-                      "questionDescription": "string",
-                      "relatedGuidance": "The CIS Critical Security Controls for Effective Cyber Defense Version 6.1, August 2016",
-                      "detailedReference": "CSC 14: Controlled Access Based on the Need to Know",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    }
-                  ]
-                },
-                {
-                  "subComponentCode": "DSS06.02",
-                  "subComponentName": "Control the processing of information.",
-                  "subComponentDescription": "Operate the execution of the business process activities and related controls, based on enterprise risk. Ensure that information processing is valid, complete, accurate, timely and secure (i.e., reflects legitimate and authorized business use).",
-                  "subComponentQuestions": [
-                    {
-                      "questionType": "Maturity Level 2",
-                      "questionDescription": "Authenticate the originator of transactions and verify that the individual has the authority to originate the transaction.",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Maturity Level 2",
-                      "questionDescription": "Ensure adequate segregation of duties regarding the origination and approval of transactions.",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Maturity Level 3",
-                      "questionDescription": "Verify that transactions are accurate, complete and valid. Controls may include sequence, limit, range, validity, reasonableness, table look-ups, existence, key verification, check digit, completeness, duplicate and logical relationship checks, and time edits. Validation criteria and parameters should be subject to periodic reviews and confirmations. Validate input data and edit or, where applicable, send back for correction as close to the point of origination as possible.",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Maturity Level 3",
-                      "questionDescription": "Without compromising original transaction authorization levels, correct and resubmit data that were erroneously input. Where appropriate for reconstruction, retain original source documents for the appropriate amount of time.",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Maturity Level 3",
-                      "questionDescription": "Maintain the integrity and validity of data throughout the processing cycle. Ensure that detection of erroneous transactions does not disrupt processing of valid transactions.",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Maturity Level 3",
-                      "questionDescription": "Handle output in an authorized manner, deliver it to the appropriate recipient and protect the information during transmission. Verify the accuracy and completeness of the output.",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Maturity Level 3",
-                      "questionDescription": "Maintain the integrity of data during unexpected interruptions in business processing. Confirm data integrity after processing failures.",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Maturity Level 3",
-                      "questionDescription": "Before passing transaction data between internal applications and business/operational functions (inside or outside the enterprise), check for proper addressing, authenticity of origin and integrity of content. Maintain authenticity and integrity during transmission or transport.",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Related Guidance",
-                      "questionDescription": "string",
-                      "relatedGuidance": "HITRUST CSF version 9, September 2017",
-                      "detailedReference": "13.01 Openness and Transparency; 13.02 Individual Choice and Participation",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Related Guidance",
-                      "questionDescription": "string",
-                      "relatedGuidance": "ISF, The Standard of Good Practice for Information Security 2016",
-                      "detailedReference": "BA1.4 Information Validation",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    }
-                  ]
-                },
-                {
-                  "subComponentCode": "DSS06.03",
-                  "subComponentName": "Manage roles, responsibilities, access privileges and levels of authority.",
-                  "subComponentDescription": "Manage business roles, responsibilities, levels of authority and segregation of duties needed to support the business process objectives. Authorize access to all information assets related to business information processes, including those under the custody of the business, IT and third parties. This ensures that the business knows where the data are and who is handling data on its behalf.",
-                  "subComponentQuestions": [
-                    {
-                      "questionType": "Maturity Level 2",
-                      "questionDescription": "Allocate roles and responsibilities based on approved job descriptions and business process activities.",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Maturity Level 2",
-                      "questionDescription": "Allocate levels of authority for approval of transactions, transaction limits and any other decisions relating to the business process, based on approved job roles.",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Maturity Level 2",
-                      "questionDescription": "Allocate roles for sensitive activities so there is a clear segregation of duties.",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Maturity Level 3",
-                      "questionDescription": "Allocate access rights and privileges based on the minimum that is required to perform job activities, based on pre-defined job roles. Remove or revise access rights immediately if the job role changes or a staff member leaves the business process area. Periodically review to ensure that the access is appropriate for the current threats, risk, technology and business need.",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Maturity Level 3",
-                      "questionDescription": "On a regular basis, provide awareness and training regarding roles and responsibilities so that everyone understands their responsibilities; the importance of controls; and the security, integrity, confidentiality and privacy of company information in all its forms.",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Maturity Level 3",
-                      "questionDescription": "Ensure administrative privileges are sufficiently and effectively secured, tracked and controlled to prevent misuse.",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Maturity Level 4",
-                      "questionDescription": "Periodically review access control definitions, logs and exception reports. Ensure that all access privileges are valid and aligned with current staff members and their allocated roles.",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Related Guidance",
-                      "questionDescription": "string",
-                      "relatedGuidance": "HITRUST CSF version 9, September 2017",
-                      "detailedReference": "13.04 Collection, Use and Disclosure",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Related Guidance",
-                      "questionDescription": "string",
-                      "relatedGuidance": "ISO/IEC 27002:2013/Cor.2:2015(E)",
-                      "detailedReference": "7. Human resource security",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Related Guidance",
-                      "questionDescription": "string",
-                      "relatedGuidance": "The CIS Critical Security Controls for Effective Cyber Defense Version 6.1, August 2016",
-                      "detailedReference": "CSC 5: Controlled Use of Administrative Privileges",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    }
-                  ]
-                },
-                {
-                  "subComponentCode": "DSS06.04",
-                  "subComponentName": "Manage errors and exceptions.",
-                  "subComponentDescription": "Manage business process exceptions and errors and facilitate remediation, executing defined corrective actions and escalating as necessary. This treatment of exceptions and errors provides assurance of the accuracy and integrity of the business information process.",
-                  "subComponentQuestions": [
-                    {
-                      "questionType": "Maturity Level 2",
-                      "questionDescription": "Review errors, exceptions and deviations.",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Maturity Level 2",
-                      "questionDescription": "Follow up, correct, approve and resubmit source documents and transactions.",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Maturity Level 2",
-                      "questionDescription": "Maintain evidence of remedial actions.",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Maturity Level 3",
-                      "questionDescription": "Define and maintain procedures to assign ownership for errors and exceptions, correct errors, override errors and handle outof-balance conditions",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Maturity Level 4",
-                      "questionDescription": "Report relevant business information process errors in a timely manner to perform root cause and trending analysis.",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    }
-                  ]
-                },
-                {
-                  "subComponentCode": "DSS06.05",
-                  "subComponentName": "Ensure traceability and accountability for information events.",
-                  "subComponentDescription": "Ensure that business information can be traced to an originating business event and associated with accountable parties. This discoverability provides assurance that business information is reliable and has been processed in accordance with defined objectives.",
-                  "subComponentQuestions": [
-                    {
-                      "questionType": "Maturity Level 2",
-                      "questionDescription": "Capture source information, supporting evidence and the record of transactions.",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Maturity Level 3",
-                      "questionDescription": "Define retention requirements, based on business requirements, to meet operational, financial reporting and compliance needs.",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Maturity Level 3",
-                      "questionDescription": "Dispose of source information, supporting evidence and the record of transactions in accordance with the retention policy.",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    }
-                  ]
-                },
-                {
-                  "subComponentCode": "DSS06.06",
-                  "subComponentName": "Secure information assets.",
-                  "subComponentDescription": "Secure information assets accessible by the business through approved methods, including information in electronic form (e.g., portable media devices, user applications and storage devices, or other methods that create new assets in any form), information in physical form (e.g., source documents or output reports) and information during transit. This benefits the business by providing end-to-end safeguarding of information.",
-                  "subComponentQuestions": [
-                    {
-                      "questionType": "Maturity Level 2",
-                      "questionDescription": "Restrict use, distribution and physical access of information according to its classification.",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Maturity Level 2",
-                      "questionDescription": "Provide acceptable use awareness and training.",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Maturity Level 3",
-                      "questionDescription": "Apply data classification and acceptable use and security policies and procedures to protect information assets under the control of the business.",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Maturity Level 3",
-                      "questionDescription": "Identify and implement processes, tools and techniques to reasonably verify compliance.",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Maturity Level 4",
-                      "questionDescription": "Report to business and other stakeholders on violations and deviations.",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Related Guidance",
-                      "questionDescription": "string",
-                      "relatedGuidance": "CMMI Cybermaturity Platform, 2018",
-                      "detailedReference": "AC.MP Manage Access Permissions",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Related Guidance",
-                      "questionDescription": "string",
-                      "relatedGuidance": "The CIS Critical Security Controls for Effective Cyber Defense Version 6.1, August 2016",
-                      "detailedReference": "CSC 18: Application Software Security",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    }
-                  ]
-                }
-              ]
+              "questionType": "Alignment goal",
+              "questionDescription": "Number of I&T-enabled business programs delayed or incurring additional cost due to technology-integration issues",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
             },
             {
-              "componentName": "B",
-              "componentDescription": "Organizational Structures",
-              "componentPercFinal": 0,
-              "componentQuestions": [
-                {
-                  "questionType": "DSS06.01",
-                  "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "DSS06.02",
-                  "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "DSS06.03",
-                  "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "DSS06.04",
-                  "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "DSS06.05",
-                  "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "DSS06.06",
-                  "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                }
-              ]
+              "questionType": "Alignment goal",
+              "questionDescription": "Number of business process changes that need to be delayed or reworked because of technology-integration issues",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
             },
             {
-              "componentCode": "C",
-              "componentDescription": "Information Flows and Items",
-              "componentPercFinal": 0,
-              "subComponents": [
-                {
-                  "subComponentCode": "DSS06.01",
-                  "subComponentName": "Align control activities embedded in business processes with enterprise objectives.",
-                  "subComponentDescription": "Continually assess and monitor the execution of business process activities and related controls (based on enterprise risk), to ensure that processing controls align with business needs.",
-                  "subComponentQuestions": [
-                    {
-                      "questionType": "Input",
-                      "questionDescription": "Data classification guidelines, Data integrity procedures",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "APO01.07",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Output",
-                      "questionDescription": "Root cause analyses and recommendations",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "BAI06.01; MEA02.04;MEA04.04; MEA04.06; MEA04.07",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Output",
-                      "questionDescription": "Results of processing effectiveness reviews",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "MEA02.04",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    }
-                  ]
-                },
-                {
-                  "subComponentCode": "DSS06.02",
-                  "subComponentName": "Control the processing of information.",
-                  "subComponentDescription": "Operate the execution of the business process activities and related controls, based on enterprise risk. Ensure that information processing is valid, complete, accurate, timely and secure (i.e., reflects legitimate and authorized business use).",
-                  "subComponentQuestions": [
-                    {
-                      "questionType": "Input",
-                      "questionDescription": "Operation and use plan",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "BAI05.05",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Input",
-                      "questionDescription": "Migration plan",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "BAI07.02",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Output",
-                      "questionDescription": "Processing control reports",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "Internal",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    }
-                  ]
-                },
-                {
-                  "subComponentCode": "DSS06.03",
-                  "subComponentName": "Manage roles, responsibilities, access privileges and levels of authority.",
-                  "subComponentDescription": "Manage business roles, responsibilities, levels of authority and segregation of duties needed to support the business process objectives. Authorize access to all information assets related to business information processes, including those under the custody of the business, IT and third parties. This ensures that the business knows where the data are and who is handling data on its behalf.",
-                  "subComponentQuestions": [
-                    {
-                      "questionType": "Input",
-                      "questionDescription": "Quality management system (QMS) roles, responsibilities and decision rights",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "APO11.01",
-                      "outputTo": "string",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Input",
-                      "questionDescription": "Information security management system (ISMS) scope statement",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "APO13.01",
-                      "outputTo": "string",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Input",
-                      "questionDescription": "Access logs",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "DSS05.05",
-                      "outputTo": "string",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Input",
-                      "questionDescription": "Assigned responsibilities for resource management",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "EDM04.02",
-                      "outputTo": "string",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Output",
-                      "questionDescription": "Allocated levels of authority",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "APO01.05",
-                      "outputTo": "string",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Output",
-                      "questionDescription": "Allocated roles and responsibilities",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "APO01.05",
-                      "outputTo": "string",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Output",
-                      "questionDescription": "Allocated access rights",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "APO07.04",
-                      "outputTo": "string",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    }
-                  ]
-                },
-                {
-                  "subComponentCode": "DSS06.04",
-                  "subComponentName": "Manage errors and exceptions.",
-                  "subComponentDescription": "Manage business process exceptions and errors and facilitate remediation, executing defined corrective actions and escalating as necessary. This treatment of exceptions and errors provides assurance of the accuracy and integrity of the business information process.",
-                  "subComponentQuestions": [
-                    {
-                      "questionType": "Output",
-                      "questionDescription": "Error reports and root cause analysis",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "Internal",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Output",
-                      "questionDescription": "Evidence of error correction and remediation",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "MEA02.04",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    }
-                  ]
-                },
-                {
-                  "subComponentCode": "DSS06.05",
-                  "subComponentName": "Ensure traceability and accountability for information events.",
-                  "subComponentDescription": "Ensure that business information can be traced to an originating business event and associated with accountable parties. This discoverability provides assurance that business information is reliable and has been processed in accordance with defined objectives",
-                  "subComponentQuestions": [
-                    {
-                      "questionType": "Output",
-                      "questionDescription": "Record of transactions",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "Internal",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Output",
-                      "questionDescription": "Retention requirements",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "Internal; APO14.09",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    }
-                  ]
-                },
-                {
-                  "subComponentCode": "DSS06.06",
-                  "subComponentName": "Secure information assets.",
-                  "subComponentDescription": "Secure information assets accessible by the business through approved methods, including information in electronic form (e.g., portable media devices, user applications and storage devices, or other methods that create new assets in any form), information in physical form (e.g., source documents or output reports) and information during transit. This benefits the business by providing end-to-end safeguarding of information.",
-                  "subComponentQuestions": [
-                    {
-                      "questionType": "Output",
-                      "questionDescription": "Reports of violations",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "DSS05.03",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "componentName": "D",
-              "componentDescription": "Peoples, Skills and Competencies",
-              "componentPercFinal": 0,
-              "componentQuestions": [
-                {
-                  "questionType": "Component question",
-                  "questionSkill": "Information security",
-                  "relatedGuidance": "Skills Framework for the Information Age V6, 2015",
-                  "detailedReference": "SCTY",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Component question",
-                  "questionSkill": "Security administration",
-                  "relatedGuidance": "Skills Framework for the Information Age V6, 2015",
-                  "detailedReference": "SCAD",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                }
-              ]
-            },
-            {
-              "componentName": "E",
-              "componentDescription": "Principles Policies and Procedures",
-              "componentPercFinal": 0,
-              "componentQuestions": [
-                {
-                  "questionType": "Component question",
-                  "relevantPolicy": "Business controls guidance",
-                  "policyDescription": "Defines business process controls to ensure proper control and reduce risk of fraud and errors. Identifies manual controls to protect documents (e.g., source, input, processing and output documents); identifies supervisory controls to review the flow of documents and ensure correct processing. Includes I&T general controls (e.g., physical security, access and authentication, and change management) and application controls (e.g., edit checking, system configuration and security settings).",
-                  "detailedGuidance": "string",
-                  "detailedReference": "string",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                }
-              ]
-            },
-            {
-              "componentName": "F",
-              "componentDescription": "Culture, Ethics and Behavior",
-              "componentPercFinal": 0,
-              "componentQuestions": [
-                {
-                  "questionType": "Component question",
-                  "keyCultureElement": "Create a culture that embraces the need for sound controls in business processes, building them into applications in development or requiring them in applications bought or accessed as a service. Encourage all employees to have a controls consciousness to protect all assets of the organization (e.g., paper records and facilities).",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                }
-              ]
-            },
-            {
-              "componentName": "G",
-              "componentDescription": "Services, Infrastructure and Applications",
-              "componentPercFinal": 0,
-              "componentQuestions": [
-                {
-                  "questionType": "Component question",
-                  "questionDescription": "Component: Services, Infrastructure and Applications, Automated application controls, Event log auditing tools",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                }
-              ]
+              "questionType": "Alignment goal",
+              "questionDescription": "Number of applications or critical infrastructures operating in silos and not integrated",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
             }
           ]
         }
+      ]
+    },
+    {
+      "componentName": "A",
+      "componentDescription": "Processes",
+      "componentPercFinal": 0,
+      "subComponents": [
+        {
+          "subComponentCode": "DSS06.01",
+          "subComponentName": "Align control activities embedded in business processes with enterprise objectives.",
+          "subComponentDescription": "Continually assess and monitor the execution of business process activities and related controls (based on enterprise risk), to ensure that processing controls align with business needs.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Identify and document the necessary control activities for key business processes to satisfy control requirements for strategic, operational, reporting and compliance objectives.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Prioritize control activities based on the inherent risk to the business. Identify key controls.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Ensure ownership of key control activities.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Implement automated controls.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": "Continually monitor control activities on an end-to-end basis to identify opportunities for improvement.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 5",
+              "questionDescription": "Continually improve the design and operation of business process controls.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "string",
+              "relatedGuidance": "National Institute of Standards and Technology Special Publication 800-37, Revision 2 (Draft), May 2018",
+              "detailedReference": "3.1 Preparation (Task 10, 11)",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "string",
+              "relatedGuidance": "The CIS Critical Security Controls for Effective Cyber Defense Version 6.1, August 2016",
+              "detailedReference": "CSC 14: Controlled Access Based on the Need to Know",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "DSS06.02",
+          "subComponentName": "Control the processing of information.",
+          "subComponentDescription": "Operate the execution of the business process activities and related controls, based on enterprise risk. Ensure that information processing is valid, complete, accurate, timely and secure (i.e., reflects legitimate and authorized business use).",
+          "subComponentQuestions": [
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Authenticate the originator of transactions and verify that the individual has the authority to originate the transaction.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Ensure adequate segregation of duties regarding the origination and approval of transactions.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Verify that transactions are accurate, complete and valid. Controls may include sequence, limit, range, validity, reasonableness, table look-ups, existence, key verification, check digit, completeness, duplicate and logical relationship checks, and time edits. Validation criteria and parameters should be subject to periodic reviews and confirmations. Validate input data and edit or, where applicable, send back for correction as close to the point of origination as possible.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Without compromising original transaction authorization levels, correct and resubmit data that were erroneously input. Where appropriate for reconstruction, retain original source documents for the appropriate amount of time.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Maintain the integrity and validity of data throughout the processing cycle. Ensure that detection of erroneous transactions does not disrupt processing of valid transactions.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Handle output in an authorized manner, deliver it to the appropriate recipient and protect the information during transmission. Verify the accuracy and completeness of the output.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Maintain the integrity of data during unexpected interruptions in business processing. Confirm data integrity after processing failures.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Before passing transaction data between internal applications and business/operational functions (inside or outside the enterprise), check for proper addressing, authenticity of origin and integrity of content. Maintain authenticity and integrity during transmission or transport.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "string",
+              "relatedGuidance": "HITRUST CSF version 9, September 2017",
+              "detailedReference": "13.01 Openness and Transparency; 13.02 Individual Choice and Participation",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "string",
+              "relatedGuidance": "ISF, The Standard of Good Practice for Information Security 2016",
+              "detailedReference": "BA1.4 Information Validation",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "DSS06.03",
+          "subComponentName": "Manage roles, responsibilities, access privileges and levels of authority.",
+          "subComponentDescription": "Manage business roles, responsibilities, levels of authority and segregation of duties needed to support the business process objectives. Authorize access to all information assets related to business information processes, including those under the custody of the business, IT and third parties. This ensures that the business knows where the data are and who is handling data on its behalf.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Allocate roles and responsibilities based on approved job descriptions and business process activities.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Allocate levels of authority for approval of transactions, transaction limits and any other decisions relating to the business process, based on approved job roles.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Allocate roles for sensitive activities so there is a clear segregation of duties.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Allocate access rights and privileges based on the minimum that is required to perform job activities, based on pre-defined job roles. Remove or revise access rights immediately if the job role changes or a staff member leaves the business process area. Periodically review to ensure that the access is appropriate for the current threats, risk, technology and business need.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "On a regular basis, provide awareness and training regarding roles and responsibilities so that everyone understands their responsibilities; the importance of controls; and the security, integrity, confidentiality and privacy of company information in all its forms.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Ensure administrative privileges are sufficiently and effectively secured, tracked and controlled to prevent misuse.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": "Periodically review access control definitions, logs and exception reports. Ensure that all access privileges are valid and aligned with current staff members and their allocated roles.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "string",
+              "relatedGuidance": "HITRUST CSF version 9, September 2017",
+              "detailedReference": "13.04 Collection, Use and Disclosure",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "string",
+              "relatedGuidance": "ISO/IEC 27002:2013/Cor.2:2015(E)",
+              "detailedReference": "7. Human resource security",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "string",
+              "relatedGuidance": "The CIS Critical Security Controls for Effective Cyber Defense Version 6.1, August 2016",
+              "detailedReference": "CSC 5: Controlled Use of Administrative Privileges",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "DSS06.04",
+          "subComponentName": "Manage errors and exceptions.",
+          "subComponentDescription": "Manage business process exceptions and errors and facilitate remediation, executing defined corrective actions and escalating as necessary. This treatment of exceptions and errors provides assurance of the accuracy and integrity of the business information process.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Review errors, exceptions and deviations.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Follow up, correct, approve and resubmit source documents and transactions.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Maintain evidence of remedial actions.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Define and maintain procedures to assign ownership for errors and exceptions, correct errors, override errors and handle outof-balance conditions",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": "Report relevant business information process errors in a timely manner to perform root cause and trending analysis.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "DSS06.05",
+          "subComponentName": "Ensure traceability and accountability for information events.",
+          "subComponentDescription": "Ensure that business information can be traced to an originating business event and associated with accountable parties. This discoverability provides assurance that business information is reliable and has been processed in accordance with defined objectives.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Capture source information, supporting evidence and the record of transactions.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Define retention requirements, based on business requirements, to meet operational, financial reporting and compliance needs.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Dispose of source information, supporting evidence and the record of transactions in accordance with the retention policy.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "DSS06.06",
+          "subComponentName": "Secure information assets.",
+          "subComponentDescription": "Secure information assets accessible by the business through approved methods, including information in electronic form (e.g., portable media devices, user applications and storage devices, or other methods that create new assets in any form), information in physical form (e.g., source documents or output reports) and information during transit. This benefits the business by providing end-to-end safeguarding of information.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Restrict use, distribution and physical access of information according to its classification.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Provide acceptable use awareness and training.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Apply data classification and acceptable use and security policies and procedures to protect information assets under the control of the business.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Identify and implement processes, tools and techniques to reasonably verify compliance.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": "Report to business and other stakeholders on violations and deviations.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "string",
+              "relatedGuidance": "CMMI Cybermaturity Platform, 2018",
+              "detailedReference": "AC.MP Manage Access Permissions",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "string",
+              "relatedGuidance": "The CIS Critical Security Controls for Effective Cyber Defense Version 6.1, August 2016",
+              "detailedReference": "CSC 18: Application Software Security",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "componentName": "B",
+      "componentDescription": "Organizational Structures",
+      "componentPercFinal": 0,
+      "componentQuestions": [
+        {
+          "questionType": "DSS06.01",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "DSS06.02",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "DSS06.03",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "DSS06.04",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "DSS06.05",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "DSS06.06",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        }
+      ]
+    },
+    {
+      "componentCode": "C",
+      "componentDescription": "Information Flows and Items",
+      "componentPercFinal": 0,
+      "subComponents": [
+        {
+          "subComponentCode": "DSS06.01",
+          "subComponentName": "Align control activities embedded in business processes with enterprise objectives.",
+          "subComponentDescription": "Continually assess and monitor the execution of business process activities and related controls (based on enterprise risk), to ensure that processing controls align with business needs.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Input",
+              "questionDescription": "Data classification guidelines, Data integrity procedures",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "APO01.07",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Root cause analyses and recommendations",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "BAI06.01; MEA02.04;MEA04.04; MEA04.06; MEA04.07",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Results of processing effectiveness reviews",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "MEA02.04",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "DSS06.02",
+          "subComponentName": "Control the processing of information.",
+          "subComponentDescription": "Operate the execution of the business process activities and related controls, based on enterprise risk. Ensure that information processing is valid, complete, accurate, timely and secure (i.e., reflects legitimate and authorized business use).",
+          "subComponentQuestions": [
+            {
+              "questionType": "Input",
+              "questionDescription": "Operation and use plan",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "BAI05.05",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Migration plan",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "BAI07.02",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Processing control reports",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "Internal",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "DSS06.03",
+          "subComponentName": "Manage roles, responsibilities, access privileges and levels of authority.",
+          "subComponentDescription": "Manage business roles, responsibilities, levels of authority and segregation of duties needed to support the business process objectives. Authorize access to all information assets related to business information processes, including those under the custody of the business, IT and third parties. This ensures that the business knows where the data are and who is handling data on its behalf.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Input",
+              "questionDescription": "Quality management system (QMS) roles, responsibilities and decision rights",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "APO11.01",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Information security management system (ISMS) scope statement",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "APO13.01",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Access logs",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "DSS05.05",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Assigned responsibilities for resource management",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "EDM04.02",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Allocated levels of authority",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "APO01.05",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Allocated roles and responsibilities",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "APO01.05",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Allocated access rights",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "APO07.04",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "DSS06.04",
+          "subComponentName": "Manage errors and exceptions.",
+          "subComponentDescription": "Manage business process exceptions and errors and facilitate remediation, executing defined corrective actions and escalating as necessary. This treatment of exceptions and errors provides assurance of the accuracy and integrity of the business information process.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Output",
+              "questionDescription": "Error reports and root cause analysis",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "Internal",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Evidence of error correction and remediation",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "MEA02.04",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "DSS06.05",
+          "subComponentName": "Ensure traceability and accountability for information events.",
+          "subComponentDescription": "Ensure that business information can be traced to an originating business event and associated with accountable parties. This discoverability provides assurance that business information is reliable and has been processed in accordance with defined objectives",
+          "subComponentQuestions": [
+            {
+              "questionType": "Output",
+              "questionDescription": "Record of transactions",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "Internal",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Retention requirements",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "Internal; APO14.09",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "DSS06.06",
+          "subComponentName": "Secure information assets.",
+          "subComponentDescription": "Secure information assets accessible by the business through approved methods, including information in electronic form (e.g., portable media devices, user applications and storage devices, or other methods that create new assets in any form), information in physical form (e.g., source documents or output reports) and information during transit. This benefits the business by providing end-to-end safeguarding of information.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Output",
+              "questionDescription": "Reports of violations",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "DSS05.03",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "componentName": "D",
+      "componentDescription": "Peoples, Skills and Competencies",
+      "componentPercFinal": 0,
+      "componentQuestions": [
+        {
+          "questionType": "Component question",
+          "questionSkill": "Information security",
+          "relatedGuidance": "Skills Framework for the Information Age V6, 2015",
+          "detailedReference": "SCTY",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "Component question",
+          "questionSkill": "Security administration",
+          "relatedGuidance": "Skills Framework for the Information Age V6, 2015",
+          "detailedReference": "SCAD",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        }
+      ]
+    },
+    {
+      "componentName": "E",
+      "componentDescription": "Principles Policies and Procedures",
+      "componentPercFinal": 0,
+      "componentQuestions": [
+        {
+          "questionType": "Component question",
+          "relevantPolicy": "Business controls guidance",
+          "policyDescription": "Defines business process controls to ensure proper control and reduce risk of fraud and errors. Identifies manual controls to protect documents (e.g., source, input, processing and output documents); identifies supervisory controls to review the flow of documents and ensure correct processing. Includes I&T general controls (e.g., physical security, access and authentication, and change management) and application controls (e.g., edit checking, system configuration and security settings).",
+          "detailedGuidance": "string",
+          "detailedReference": "string",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        }
+      ]
+    },
+    {
+      "componentName": "F",
+      "componentDescription": "Culture, Ethics and Behavior",
+      "componentPercFinal": 0,
+      "componentQuestions": [
+        {
+          "questionType": "Component question",
+          "keyCultureElement": "Create a culture that embraces the need for sound controls in business processes, building them into applications in development or requiring them in applications bought or accessed as a service. Encourage all employees to have a controls consciousness to protect all assets of the organization (e.g., paper records and facilities).",
+          "relatedGuidance": "string",
+          "detailedReference": "string",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        }
+      ]
+    },
+    {
+      "componentName": "G",
+      "componentDescription": "Services, Infrastructure and Applications",
+      "componentPercFinal": 0,
+      "componentQuestions": [
+        {
+          "questionType": "Component question",
+          "questionDescription": "Component: Services, Infrastructure and Applications, Automated application controls, Event log auditing tools",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        }
+      ]
+    }
+  ]
+}
       
     
   

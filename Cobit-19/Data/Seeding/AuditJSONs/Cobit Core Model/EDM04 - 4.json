@@ -1,7 +1,8 @@
-{  
+{
   "objectiveName": "EDM04",
   "objectiveDescription": "Ensure that adequate and sufficient business and I&T-related resources (people, process and technology) are available to support enterprise objectives effectively and, at optimal cost.",
   "objectivePurpose": "Ensure that the resource needs of the enterprise are met in the optimal manner, I&T costs are optimized, and there is an increased likelihood of benefit realization and readiness for future change.",
+  "typeOfObjective": "Governance",
   "maturityLevel": 0,
   "maturityLevel0PercFinal": 0,
   "maturityLevel1PercFinal": 0,
@@ -48,728 +49,728 @@
               "questionComment": "comment"
             }
           ]
-            },
-            
-
-              {
-                "subComponentCode": "EG08",
-                "subComponentName": "Optimization of internal business process functionality",
-                "subComponentQuestions": [
-                  {
-                    "questionType": "Enterprise goal",
-                    "questionDescription": "Satisfaction levels of board and executive management with business process capabilities",
-                    "questionAnswer": 0,
-                    "questionScore": 0,
-                    "questionComment": "comment"
-                  },
-                  {
-                    "questionType": "Enterprise goal",
-                    "questionDescription": "Satisfaction levels of customers with service delivery capabilities",
-                    "questionAnswer": 0,
-                    "questionScore": 0,
-                    "questionComment": "comment"
-                  },
-                  {
-                    "questionType": "Enterprise goal",
-                    "questionDescription": "Satisfaction levels of suppliers with supply chain capabilities",
-                    "questionAnswer": 0,
-                    "questionScore": 0,
-                    "questionComment": "comment"
-                  }
-
-
-                ]
-              },
-
-
-              {
-                "subComponentCode": "EG12",
-                "subComponentName": "Managed digital transformation programs",
-                "subComponentQuestions": [
-                  {
-                    "questionType": "Enterprise goal",
-                    "questionDescription": "Number of programs on time and within budget",
-                    "questionAnswer": 0,
-                    "questionScore": 0,
-                    "questionComment": "comment"
-                  },
-                  {
-                    "questionType": "Enterprise goal",
-                    "questionDescription": "Percent of stakeholders satisfied with program delivery",
-                    "questionAnswer": 0,
-                    "questionScore": 0,
-                    "questionComment": "comment"
-                  },
-                  {
-                    "questionType": "Enterprise goal",
-                    "questionDescription": "Percent of business transformation programs stopped",
-                    "questionAnswer": 0,
-                    "questionScore": 0,
-                    "questionComment": "comment"
-                  },
-                  {
-                    "questionType": "Enterprise goal",
-                    "questionDescription": "Percent of business transformation programs with regular reported status updates",
-                    "questionAnswer": 0,
-                    "questionScore": 0,
-                    "questionComment": "comment"
-                  }
-                ]
-              }
-            ]
-          
         },
 
-        {
-          "componentCode": "AG",
-          "componentDescription": "Alignment Goals",
-          "componentPercFinal": 0,
-          "subComponents": [
-            {
-              "subComponentCode": "AG02",
-              "subComponentName": "Delivering programs on time, on budget and meeting requirements and quality standards",
-              "subComponentQuestions": [
-                {
-                  "questionType": "Alignment goal",
-                  "questionDescription": "Number of programs/projects on time and within budget",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Alignment goal",
-                  "questionDescription": "Number of programs needing significant rework due to quality defects",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
 
-                {
-                  "questionType": "Alignment goal",
-                  "questionDescription": "Percent of stakeholders satisfied with program/project quality",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                }
-              ]
+        {
+          "subComponentCode": "EG08",
+          "subComponentName": "Optimization of internal business process functionality",
+          "subComponentQuestions": [
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Satisfaction levels of board and executive management with business process capabilities",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Satisfaction levels of customers with service delivery capabilities",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Satisfaction levels of suppliers with supply chain capabilities",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+
+
+          ]
+        },
+
+
+        {
+          "subComponentCode": "EG12",
+          "subComponentName": "Managed digital transformation programs",
+          "subComponentQuestions": [
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Number of programs on time and within budget",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Percent of stakeholders satisfied with program delivery",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Percent of business transformation programs stopped",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Percent of business transformation programs with regular reported status updates",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
             }
           ]
-                },
-                {
-                  "componentName": "A",
-                  "componentDescription": "Process",
-                  "componentPercFinal": 0,
-                  "subComponents": [
-                    {
-                      "subComponentCode": "EDM04.01",
-                      "subComponentName": " Evaluate resource management",
-                      "subComponentDescription": "Continually examine and evaluate the current and future need for business and I&T resources (financial and human), options for resourcing (including sourcing strategies), and allocation and management principles to meet the needs of the enterprise in the optimal manner.",
-                      "subComponentQuestions": [
-                        {
-                          "questionType": "Maturity Level 2",
-                          "questionDescription": "Starting from the current and future strategies, examine the potential options for providing I&T-related resources (technology, financial and human resources), and develop capabilities to meet current and future needs (including sourcing options).",
-                          "relatedGuidance": "string",
-                          "detailedReference": "string",
-                          "inputFrom": "string",
-                          "outputTo": "string,",
-                          "questionAnswer": 0,
-                          "questionScore": 0,
-                          "questionComment": "comment"
-                        },
-                        {
-                          "questionType": "Maturity Level 2",
-                          "questionDescription": ". Define the key principles for resource allocation and management of resources and capabilities so I&T can meet the needs of the enterprise according to the agreed priorities and budgetary constraints. For example, define preferred sourcing options for certain services and financial boundaries per sourcing option.",
-                          "relatedGuidance": "string",
-                          "detailedReference": "string",
-                          "inputFrom": "string",
-                          "outputTo": "string,",
-                          "questionAnswer": 0,
-                          "questionScore": 0,
-                          "questionComment": "comment"
-                        },
-                        {
-                          "questionType": "Maturity Level 2",
-                          "questionDescription": "Review and approve the resource plan and enterprise architecture strategies for delivering value and mitigating risk with the allocated resources.",
-                          "relatedGuidance": "string",
-                          "detailedReference": "string",
-                          "inputFrom": "string",
-                          "outputTo": "string,",
-                          "questionAnswer": 0,
-                          "questionScore": 0,
-                          "questionComment": "comment"
-                        },
-                        {
-                          "questionType": "Maturity Level 2",
-                          "questionDescription": ". Understand requirements for aligning I&T resource management with enterprise financial and human resources (HR) planning",
-                          "relatedGuidance": "string",
-                          "detailedReference": "string",
-                          "inputFrom": "string",
-                          "outputTo": "string,",
-                          "questionAnswer": 0,
-                          "questionScore": 0,
-                          "questionComment": "comment"
-                        },
-                        {
-                          "questionType": "Maturity Level 3",
-                          "questionDescription": "Define principles for the management and control of the enterprise architecture.",
-                          "relatedGuidance": "string",
-                          "detailedReference": "string",
-                          "inputFrom": "string",
-                          "outputTo": "string,",
-                          "questionAnswer": 0,
-                          "questionScore": 0,
-                          "questionComment": "comment"
-                        },
-                        {
-                          "questionType": "Related Guidance",
-                          "questionDescription": "string",
-                          "relatedGuidance": "CMMI Cybermaturity Platform, 2018 ",
-                          "detailedReference": "GR.DR Direct Resource Management Needs",
-                          "inputFrom": "string",
-                          "outputTo": "string,",
-                          "questionAnswer": 0,
-                          "questionScore": 0,
-                          "questionComment": "comment"
-                        },
-                        {
-                          "questionType": "Related Guidance",
-                          "questionDescription": "string",
-                          "relatedGuidance": "ISO/IEC 38500:2015(E)",
-                          "detailedReference": "5.4 Principle 3: Acquisition (Evaluate)",
-                          "inputFrom": "string",
-                          "outputTo": "string,",
-                          "questionAnswer": 0,
-                          "questionScore": 0,
-                          "questionComment": "comment"
-                        },
-                        {
-                          "questionType": "Information flow in",
-                          "questionDescription": "Gaps and changes required to realize target capability",
-                          "relatedGuidance": "string",
-                          "detailedReference": "string",
-                          "inputFrom": "APO02.04",
-                          "outputTo": "string,",
-                          "questionAnswer": 0,
-                          "questionScore": 0,
-                          "questionComment": "comment"
-                        },
-                        {
-                          "questionType": "Information flow in",
-                          "questionDescription": "Skill development plans",
-                          "relatedGuidance": "string",
-                          "detailedReference": "string",
-                          "inputFrom": "APO07.03",
-                          "outputTo": "string,",
-                          "questionAnswer": 0,
-                          "questionScore": 0,
-                          "questionComment": "comment"
-                        },
-                        {
-                          "questionType": "Information flow in",
-                          "questionDescription": "Decision results of vendor evaluations",
-                          "relatedGuidance": "string",
-                          "detailedReference": "string",
-                          "inputFrom": "APO10.02",
-                          "outputTo": "string,",
-                          "questionAnswer": 0,
-                          "questionScore": 0,
-                          "questionComment": "comment"
-                        },
-                        {
-                          "questionType": "Information flow out",
-                          "questionDescription": "Guiding principles for allocation of resources and capabilities",
-                          "relatedGuidance": "string",
-                          "detailedReference": "string",
-                          "inputFrom": "string",
-                          "outputTo": "APO02.01, APO07.01, BAI03.11",
-                          "questionAnswer": 0,
-                          "questionScore": 0,
-                          "questionComment": "comment"
-                        },
-                        {
-                          "questionType": "Information flow out",
-                          "questionDescription": "Approved resources plan",
-                          "relatedGuidance": "string",
-                          "detailedReference": "string",
-                          "inputFrom": "string",
-                          "outputTo": "APO02.05, APO07.01, APO09.02",
-                          "questionAnswer": 0,
-                          "questionScore": 0,
-                          "questionComment": "comment"
-                        },
-                        {
-                          "questionType": "Information flow out",
-                          "questionDescription": "Guiding principles for enterprise architecture",
-                          "relatedGuidance": "string",
-                          "detailedReference": "string",
-                          "inputFrom": "string",
-                          "outputTo": "APO03.01",
-                          "questionAnswer": 0,
-                          "questionScore": 0,
-                          "questionComment": "comment"
-                        }
+        }
+      ]
 
-                      ]
-                    },
-                    {
-                      "subComponentCode": "EDM04.02",
-                      "subComponentName": "Direct resource management",
-                      "subComponentDescription": "Description",
-                      "subComponentQuestions": [
-                        {
-                          "questionType": "Maturity Level 2",
-                          "questionDescription": "Assign responsibilities for executing resource management.",
-                          "relatedGuidance": "string",
-                          "detailedReference": "string",
-                          "inputFrom": "string",
-                          "outputTo": "string,",
-                          "questionAnswer": 0,
-                          "questionScore": 0,
-                          "questionComment": "comment"
-                        },
-                        {
-                          "questionType": "Maturity Level 2",
-                          "questionDescription": "Establish principles related to safeguarding resources.",
-                          "relatedGuidance": "string",
-                          "detailedReference": "string",
-                          "inputFrom": "string",
-                          "outputTo": "string,",
-                          "questionAnswer": 0,
-                          "questionScore": 0,
-                          "questionComment": "comment"
-                        },
-                        {
-                          "questionType": "Maturity Level 3",
-                          "questionDescription": " Communicate and drive the adoption of the resource management strategies, principles, and agreed resource plan and enterprise architecture strategies.",
-                          "relatedGuidance": "string",
-                          "detailedReference": "string",
-                          "inputFrom": "string",
-                          "outputTo": "string,",
-                          "questionAnswer": 0,
-                          "questionScore": 0,
-                          "questionComment": "comment"
-                        },
-                        {
-                          "questionType": "Maturity Level 3",
-                          "questionDescription": "Align resource management with enterprise financial and HR planning.",
-                          "relatedGuidance": "string",
-                          "detailedReference": "string",
-                          "inputFrom": "string",
-                          "outputTo": "string,",
-                          "questionAnswer": 0,
-                          "questionScore": 0,
-                          "questionComment": "comment"
-                        },
-                        {
-                          "questionType": "Maturity Level 4",
-                          "questionDescription": "Define key goals, measures and metrics for resource management",
-                          "relatedGuidance": "string",
-                          "detailedReference": "string",
-                          "inputFrom": "string",
-                          "outputTo": "string,",
-                          "questionAnswer": 0,
-                          "questionScore": 0,
-                          "questionComment": "comment"
-                        },
-                        {
-                          "questionType": "Related Guidance",
-                          "questionDescription": "string",
-                          "relatedGuidance": "CMMI Cybermaturity Platform, 2018",
-                          "detailedReference": "GR.ER Evaluate Resource Management Needs",
-                          "inputFrom": "string",
-                          "outputTo": "string,",
-                          "questionAnswer": 0,
-                          "questionScore": 0,
-                          "questionComment": "comment"
-                        },
-                        {
-                          "questionType": "Related Guidance",
-                          "questionDescription": "string",
-                          "relatedGuidance": "ISO/IEC 38500:2015(E) ",
-                          "detailedReference": "5.4 Principle 3: Acquisition (Direct)",
-                          "inputFrom": "string",
-                          "outputTo": "string,",
-                          "questionAnswer": 0,
-                          "questionScore": 0,
-                          "questionComment": "comment"
-                        },
-                        {
-                          "questionType": "Related Guidance",
-                          "questionDescription": "string",
-                          "relatedGuidance": "COSO Enterprise Risk Management, June 2017",
-                          "detailedReference": "Governance and Culture—Principle 5",
-                          "inputFrom": "string",
-                          "outputTo": "string,",
-                          "questionAnswer": 0,
-                          "questionScore": 0,
-                          "questionComment": "comment"
-                        },
-                        {
-                          "questionType": "Related Guidance",
-                          "questionDescription": "string",
-                          "relatedGuidance": "National Institute of Standards and Technology Special Publication 800-53, Revision 5 (Draft), August 2017",
-                          "detailedReference": "3.14 Planning (PL-4) ",
-                          "inputFrom": "string",
-                          "outputTo": "string,",
-                          "questionAnswer": 0,
-                          "questionScore": 0,
-                          "questionComment": "comment"
-                        },
-                        {
-                          "questionType": "Information flow out",
-                          "questionDescription": "Principles for safeguarding resources",
-                          "relatedGuidance": "string",
-                          "detailedReference": "string",
-                          "inputFrom": "string",
-                          "outputTo": "APO01.02",
-                          "questionAnswer": 0,
-                          "questionScore": 0,
-                          "questionComment": "comment"
-                        },
-                        {
-                          "questionType": "Information flow out",
-                          "questionDescription": "Assigned responsibilities for resource management",
-                          "relatedGuidance": "string",
-                          "detailedReference": "string",
-                          "inputFrom": "string",
-                          "outputTo": "APO01.05, DSS06.03",
-                          "questionAnswer": 0,
-                          "questionScore": 0,
-                          "questionComment": "comment"
-                        },
-                        {
-                          "questionType": "Information flow out",
-                          "questionDescription": "Communication of resourcing strategies",
-                          "relatedGuidance": "string",
-                          "detailedReference": "string",
-                          "inputFrom": "string",
-                          "outputTo": "APO02.06, APO07.05, APO09.02",
-                          "questionAnswer": 0,
-                          "questionScore": 0,
-                          "questionComment": "comment"
-                        }
-                      ]
+    },
 
-                    },
-                    {
-                      "subComponentCode": "EDM04.03",
-                      "subComponentName": "Monitor resource management",
-                      "subComponentDescription": "Monitor the key goals and metrics of the resource management processes. Determine how deviations or problems will be identified, tracked and reported for remediation.",
-                      "subComponentQuestions": [
-                        {
-                          "questionType": "Maturity Level 4",
-                          "questionDescription": "Monitor the allocation and optimization of resources in accordance with enterprise objectives and priorities using agreed goals and metrics.",
-                          "relatedGuidance": "string",
-                          "detailedReference": "string",
-                          "inputFrom": "string",
-                          "outputTo": "string,",
-                          "questionAnswer": 0,
-                          "questionScore": 0,
-                          "questionComment": "comment"
-                        },
-                        {
-                          "questionType": "Maturity Level 4",
-                          "questionDescription": "Monitor I&T-related sourcing strategies, enterprise architecture strategies, and business- and IT-related capabilities and resources to ensure that current and future needs and objectives of the enterprise can be met.",
-                          "relatedGuidance": "string",
-                          "detailedReference": "string",
-                          "inputFrom": "string",
-                          "outputTo": "string,",
-                          "questionAnswer": 0,
-                          "questionScore": 0,
-                          "questionComment": "comment"
-                        },
-                        {
-                          "questionType": "Maturity Level 4",
-                          "questionDescription": "Monitor resource performance against targets, analyze the cause of deviations, and initiate remedial action to address the underlying causes",
-                          "relatedGuidance": "string",
-                          "detailedReference": "string",
-                          "inputFrom": "string",
-                          "outputTo": "string,",
-                          "questionAnswer": 0,
-                          "questionScore": 0,
-                          "questionComment": "comment"
-                        },
-                        {
-                          "questionType": "Related Guidance",
-                          "questionDescription": "",
-                          "relatedGuidance": "CMMI Cybermaturity Platform, 2018",
-                          "detailedReference": "GR.MR Monitor Resource Management Needs",
-                          "inputFrom": "string",
-                          "outputTo": "string,",
-                          "questionAnswer": 0,
-                          "questionScore": 0,
-                          "questionComment": "comment"
-                        },
-                        {
-                          "questionType": "Related Guidance",
-                          "questionDescription": "string",
-                          "relatedGuidance": "ISO/IEC 38500:2015(E)",
-                          "detailedReference": "5.4 Principle 3: Acquisition (Evaluate)",
-                          "inputFrom": "string",
-                          "outputTo": "string,",
-                          "questionAnswer": 0,
-                          "questionScore": 0,
-                          "questionComment": "comment"
-                        },
-                        {
-                          "questionType": "Information flow out",
-                          "questionDescription": "Feedback on allocationand effectiveness of resources andc capabilities",
-                          "relatedGuidance": "string",
-                          "detailedReference": "string",
-                          "inputFrom": "string",
-                          "outputTo": "EDM05.01, APO02.02, APO07.05, APO09.05",
-                          "questionAnswer": 0,
-                          "questionScore": 0,
-                          "questionComment": "comment"
-                        },
-                        {
-                          "questionType": "Information flow out",
-                          "questionDescription": "Remedial actions to address resource management deviation",
-                          "relatedGuidance": "string",
-                          "detailedReference": "string",
-                          "inputFrom": "string",
-                          "outputTo": "APO02.05, APO07.01, APO07.03, APO09.04",
-                          "questionAnswer": 0,
-                          "questionScore": 0,
-                          "questionComment": "comment"
-                        }
-                      ]
-                    }
-                  ]
-                },
+    {
+      "componentCode": "AG",
+      "componentDescription": "Alignment Goals",
+      "componentPercFinal": 0,
+      "subComponents": [
+        {
+          "subComponentCode": "AG02",
+          "subComponentName": "Delivering programs on time, on budget and meeting requirements and quality standards",
+          "subComponentQuestions": [
+            {
+              "questionType": "Alignment goal",
+              "questionDescription": "Number of programs/projects on time and within budget",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Alignment goal",
+              "questionDescription": "Number of programs needing significant rework due to quality defects",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
 
-                {
-                  "componentName": "B",
-                  "componentDescription": "Organizational Structures",
-                  "componentPercFinal": 0,
-                  "componentQuestions": [
-                    {
-                      "questionType": "Sub Process 1",
-                      "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Sub Process 2",
-                      "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Sub Process 3",
-                      "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    }
-
-                  ]
-
-                },
-                {
-                  "componentCode": "C",
-                  "componentDescription": "Information Flows and Items",
-                  "componentPercFinal": 0,
-                  "subComponents": [
-                    {
-                      "subComponentCode": "EDM04.01",
-                      "subComponentName": " Evaluate resource management",
-                      "subComponentDescription": "Continually examine and evaluate the current and future need for business and I&T resources (financial and human), options for resourcing (including sourcing strategies), and allocation and management principles to meet the needs of the enterprise in the optimal manner.",
-                      "subComponentQuestions": [
-                        {
-                          "questionType": "Input",
-                          "questionDescription": "Gaps and changes required to realize target capability",
-                          "inputFrom": "APO02.04",
-                          "outputTo": "string,",
-                          "questionAnswer": 0,
-                          "questionScore": 0,
-                          "questionComment": "comment"
-                        },
-                        {
-                          "questionType": "Input",
-                          "questionDescription": "Skill development plans",
-                          "inputFrom": "APO07.03",
-                          "outputTo": "string,",
-                          "questionAnswer": 0,
-                          "questionScore": 0,
-                          "questionComment": "comment"
-                        },
-                        {
-                          "questionType": "Input",
-                          "questionDescription": "Decision results of vendor evaluations",
-                          "inputFrom": "APO10.02",
-                          "outputTo": "string,",
-                          "questionAnswer": 0,
-                          "questionScore": 0,
-                          "questionComment": "comment"
-                        },
-                        {
-                          "questionType": "Output",
-                          "questionDescription": "Guiding principles for allocation of resources and capabilities",
-                          "inputFrom": "string",
-                          "outputTo": "APO02.01, APO07.01, BAI03.11",
-                          "questionAnswer": 0,
-                          "questionScore": 0,
-                          "questionComment": "comment"
-                        },
-                        {
-                          "questionType": "Output",
-                          "questionDescription": "Approved resources plan",
-                          "inputFrom": "string",
-                          "outputTo": "APO02.05, APO07.01, APO09.02",
-                          "questionAnswer": 0,
-                          "questionScore": 0,
-                          "questionComment": "comment"
-                        },
-                        {
-                          "questionType": "Output",
-                          "questionDescription": "Guiding principles for enterprise architecture",
-                          "inputFrom": "string",
-                          "outputTo": "APO03.01",
-                          "questionAnswer": 0,
-                          "questionScore": 0,
-                          "questionComment": "comment"
-                        }
-                      ]
-                    },
-                    {
-                      "subComponentCode": "EDM04.02",
-                      "subComponentName": "Direct resource management",
-                      "subComponentDescription": "Description",
-
-                      "subComponentQuestions": [
-                        {
-                          "questionType": "Output",
-                          "questionDescription": "Principles for safeguarding resources",
-                          "inputFrom": "string",
-                          "outputTo": "APO01.02",
-                          "questionAnswer": 0,
-                          "questionScore": 0,
-                          "questionComment": "comment"
-                        },
-                        {
-                          "questionType": "Output",
-                          "questionDescription": "Assigned responsibilities for resource management",
-                          "inputFrom": "string",
-                          "outputTo": "APO01.05, DSS06.03",
-                          "questionAnswer": 0,
-                          "questionScore": 0,
-                          "questionComment": "comment"
-                        },
-                        {
-                          "questionType": "Output",
-                          "questionDescription": "Communication of resourcing strategies",
-                          "inputFrom": "string",
-                          "outputTo": "APO02.06, APO07.05, APO09.02",
-                          "questionAnswer": 0,
-                          "questionScore": 0,
-                          "questionComment": "comment"
-                        }
-                      ]
-                    },
-                    {
-                      "subComponentCode": "EDM04.03",
-                      "subComponentName": "Monitor resource management",
-                      "subComponentDescription": "Monitor the key goals and metrics of the resource management processes. Determine how deviations or problems will be identified, tracked and reported for remediation.",
-                      "subComponentQuestions": [
-                        {
-                          "questionType": "Output",
-                          "questionDescription": "Feedback on allocationand effectiveness of resources andc capabilities",
-                          "inputFrom": "string",
-                          "outputTo": "EDM05.01, APO02.02, APO07.05, APO09.05",
-                          "questionAnswer": 0,
-                          "questionScore": 0,
-                          "questionComment": "comment"
-                        },
-                        {
-                          "questionType": "Output",
-                          "questionDescription": "Remedial actions to address resource management deviation",
-                          "inputFrom": "string",
-                          "outputTo": "APO02.05, APO07.01, APO07.03, APO09.04",
-                          "questionAnswer": 0,
-                          "questionScore": 0,
-                          "questionComment": "comment"
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "componentName": "D",
-                  "componentDescription": "Peoples, Skills and Competencies",
-                  "componentPercFinal": 0,
-                  "componentQuestions": [
-                    {
-                      "questionType": "Component question",
-                      "questionSkill": "Portfolio management",
-                      "relatedGuidance": "Skills Framework for the Information Age V6, 2015",
-                      "detailedReference": "POMG",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Component question",
-                      "questionSkill": "Resourcing",
-                      "relatedGuidance": "Skills Framework for the Information Age V6, 2015",
-                      "detailedReference": "RESC",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    }
-                  ]
-                },
-                {
-                  "componentName": "E",
-                  "componentDescription": "Principles Policies and Procedures",
-                  "componentPercFinal": 0,
-                  "componentQuestions": [
-                    {
-                      "questionType": "Component question",
-                      "relevantPolicy": "Performance measurement policy ",
-                      "policyDescription": "Identifies the need for a performance measurement system beyond conventional accounting. This system encompasses measurement of relationships and knowledge-based assets necessary to compete in the information age, including customer focus, process efficiency and the ability to learn and grow (balanced scorecard). The balanced scorecard translates strategy into action to achieve enterprise goals, taking into account intangibles like customer satisfaction, streamlining of internal functions, creation of operational efficiencies and development of staff skills. This holistic view of operations helps link long-term strategic objectives and short-term ctions.",
-                      "detailedGuidance": "",
-                      "detailedReference": "",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    }
-                  ]
-                },
-                {
-                  "componentName": "F",
-                  "componentDescription": "Culture, Ethics and Behavior",
-                  "componentPercFinal": 0,
-                  "componentQuestions": [
-                    {
-                      "questionType": "Component question",
-                      "keyCultureElement": "Establish a culture in which resources are valued and the investment, use and allocation of resources (whether people, information, applications, technology or facilities) align with organizational needs. Illustrate these values by ensuring that appropriate methods and adequate skills exist in the organization; for example, ensure that benefits from service procurement are real and achievable, and implement sound performance measurement systems (e.g., the balanced scorecard).",
-                      "relatedGuidance": "",
-                      "detailedReference": "",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    }
-                  ]
-                },
-                {
-                  "componentName": "G",
-                  "componentDescription": "Services, Infrastructure and Applications",
-                  "componentPercFinal": 0,
-                  "componentQuestions": [
-                    {
-                      "questionType": "Component question",
-                      "questionDescription": "Performance measurement system (e.g., balanced scorecard, skills management tools)",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    }
-                  ]
-                }
-              ]
+            {
+              "questionType": "Alignment goal",
+              "questionDescription": "Percent of stakeholders satisfied with program/project quality",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
             }
+          ]
+        }
+      ]
+    },
+    {
+      "componentName": "A",
+      "componentDescription": "Process",
+      "componentPercFinal": 0,
+      "subComponents": [
+        {
+          "subComponentCode": "EDM04.01",
+          "subComponentName": " Evaluate resource management",
+          "subComponentDescription": "Continually examine and evaluate the current and future need for business and I&T resources (financial and human), options for resourcing (including sourcing strategies), and allocation and management principles to meet the needs of the enterprise in the optimal manner.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Starting from the current and future strategies, examine the potential options for providing I&T-related resources (technology, financial and human resources), and develop capabilities to meet current and future needs (including sourcing options).",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": ". Define the key principles for resource allocation and management of resources and capabilities so I&T can meet the needs of the enterprise according to the agreed priorities and budgetary constraints. For example, define preferred sourcing options for certain services and financial boundaries per sourcing option.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Review and approve the resource plan and enterprise architecture strategies for delivering value and mitigating risk with the allocated resources.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": ". Understand requirements for aligning I&T resource management with enterprise financial and human resources (HR) planning",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Define principles for the management and control of the enterprise architecture.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "string",
+              "relatedGuidance": "CMMI Cybermaturity Platform, 2018 ",
+              "detailedReference": "GR.DR Direct Resource Management Needs",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "string",
+              "relatedGuidance": "ISO/IEC 38500:2015(E)",
+              "detailedReference": "5.4 Principle 3: Acquisition (Evaluate)",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Information flow in",
+              "questionDescription": "Gaps and changes required to realize target capability",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "APO02.04",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Information flow in",
+              "questionDescription": "Skill development plans",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "APO07.03",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Information flow in",
+              "questionDescription": "Decision results of vendor evaluations",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "APO10.02",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Information flow out",
+              "questionDescription": "Guiding principles for allocation of resources and capabilities",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "APO02.01, APO07.01, BAI03.11",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Information flow out",
+              "questionDescription": "Approved resources plan",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "APO02.05, APO07.01, APO09.02",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Information flow out",
+              "questionDescription": "Guiding principles for enterprise architecture",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "APO03.01",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+
+          ]
+        },
+        {
+          "subComponentCode": "EDM04.02",
+          "subComponentName": "Direct resource management",
+          "subComponentDescription": "Description",
+          "subComponentQuestions": [
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Assign responsibilities for executing resource management.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Establish principles related to safeguarding resources.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": " Communicate and drive the adoption of the resource management strategies, principles, and agreed resource plan and enterprise architecture strategies.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Align resource management with enterprise financial and HR planning.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": "Define key goals, measures and metrics for resource management",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "string",
+              "relatedGuidance": "CMMI Cybermaturity Platform, 2018",
+              "detailedReference": "GR.ER Evaluate Resource Management Needs",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "string",
+              "relatedGuidance": "ISO/IEC 38500:2015(E) ",
+              "detailedReference": "5.4 Principle 3: Acquisition (Direct)",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "string",
+              "relatedGuidance": "COSO Enterprise Risk Management, June 2017",
+              "detailedReference": "Governance and Culture—Principle 5",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "string",
+              "relatedGuidance": "National Institute of Standards and Technology Special Publication 800-53, Revision 5 (Draft), August 2017",
+              "detailedReference": "3.14 Planning (PL-4) ",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Information flow out",
+              "questionDescription": "Principles for safeguarding resources",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "APO01.02",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Information flow out",
+              "questionDescription": "Assigned responsibilities for resource management",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "APO01.05, DSS06.03",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Information flow out",
+              "questionDescription": "Communication of resourcing strategies",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "APO02.06, APO07.05, APO09.02",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+
+        },
+        {
+          "subComponentCode": "EDM04.03",
+          "subComponentName": "Monitor resource management",
+          "subComponentDescription": "Monitor the key goals and metrics of the resource management processes. Determine how deviations or problems will be identified, tracked and reported for remediation.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": "Monitor the allocation and optimization of resources in accordance with enterprise objectives and priorities using agreed goals and metrics.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": "Monitor I&T-related sourcing strategies, enterprise architecture strategies, and business- and IT-related capabilities and resources to ensure that current and future needs and objectives of the enterprise can be met.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": "Monitor resource performance against targets, analyze the cause of deviations, and initiate remedial action to address the underlying causes",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "",
+              "relatedGuidance": "CMMI Cybermaturity Platform, 2018",
+              "detailedReference": "GR.MR Monitor Resource Management Needs",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "string",
+              "relatedGuidance": "ISO/IEC 38500:2015(E)",
+              "detailedReference": "5.4 Principle 3: Acquisition (Evaluate)",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Information flow out",
+              "questionDescription": "Feedback on allocationand effectiveness of resources andc capabilities",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "EDM05.01, APO02.02, APO07.05, APO09.05",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Information flow out",
+              "questionDescription": "Remedial actions to address resource management deviation",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "APO02.05, APO07.01, APO07.03, APO09.04",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "componentName": "B",
+      "componentDescription": "Organizational Structures",
+      "componentPercFinal": 0,
+      "componentQuestions": [
+        {
+          "questionType": "Sub Process 1",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "Sub Process 2",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "Sub Process 3",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        }
+
+      ]
+
+    },
+    {
+      "componentCode": "C",
+      "componentDescription": "Information Flows and Items",
+      "componentPercFinal": 0,
+      "subComponents": [
+        {
+          "subComponentCode": "EDM04.01",
+          "subComponentName": " Evaluate resource management",
+          "subComponentDescription": "Continually examine and evaluate the current and future need for business and I&T resources (financial and human), options for resourcing (including sourcing strategies), and allocation and management principles to meet the needs of the enterprise in the optimal manner.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Input",
+              "questionDescription": "Gaps and changes required to realize target capability",
+              "inputFrom": "APO02.04",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Skill development plans",
+              "inputFrom": "APO07.03",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Decision results of vendor evaluations",
+              "inputFrom": "APO10.02",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Guiding principles for allocation of resources and capabilities",
+              "inputFrom": "string",
+              "outputTo": "APO02.01, APO07.01, BAI03.11",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Approved resources plan",
+              "inputFrom": "string",
+              "outputTo": "APO02.05, APO07.01, APO09.02",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Guiding principles for enterprise architecture",
+              "inputFrom": "string",
+              "outputTo": "APO03.01",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "EDM04.02",
+          "subComponentName": "Direct resource management",
+          "subComponentDescription": "Description",
+
+          "subComponentQuestions": [
+            {
+              "questionType": "Output",
+              "questionDescription": "Principles for safeguarding resources",
+              "inputFrom": "string",
+              "outputTo": "APO01.02",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Assigned responsibilities for resource management",
+              "inputFrom": "string",
+              "outputTo": "APO01.05, DSS06.03",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Communication of resourcing strategies",
+              "inputFrom": "string",
+              "outputTo": "APO02.06, APO07.05, APO09.02",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "EDM04.03",
+          "subComponentName": "Monitor resource management",
+          "subComponentDescription": "Monitor the key goals and metrics of the resource management processes. Determine how deviations or problems will be identified, tracked and reported for remediation.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Output",
+              "questionDescription": "Feedback on allocationand effectiveness of resources andc capabilities",
+              "inputFrom": "string",
+              "outputTo": "EDM05.01, APO02.02, APO07.05, APO09.05",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Remedial actions to address resource management deviation",
+              "inputFrom": "string",
+              "outputTo": "APO02.05, APO07.01, APO07.03, APO09.04",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "componentName": "D",
+      "componentDescription": "Peoples, Skills and Competencies",
+      "componentPercFinal": 0,
+      "componentQuestions": [
+        {
+          "questionType": "Component question",
+          "questionSkill": "Portfolio management",
+          "relatedGuidance": "Skills Framework for the Information Age V6, 2015",
+          "detailedReference": "POMG",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "Component question",
+          "questionSkill": "Resourcing",
+          "relatedGuidance": "Skills Framework for the Information Age V6, 2015",
+          "detailedReference": "RESC",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        }
+      ]
+    },
+    {
+      "componentName": "E",
+      "componentDescription": "Principles Policies and Procedures",
+      "componentPercFinal": 0,
+      "componentQuestions": [
+        {
+          "questionType": "Component question",
+          "relevantPolicy": "Performance measurement policy ",
+          "policyDescription": "Identifies the need for a performance measurement system beyond conventional accounting. This system encompasses measurement of relationships and knowledge-based assets necessary to compete in the information age, including customer focus, process efficiency and the ability to learn and grow (balanced scorecard). The balanced scorecard translates strategy into action to achieve enterprise goals, taking into account intangibles like customer satisfaction, streamlining of internal functions, creation of operational efficiencies and development of staff skills. This holistic view of operations helps link long-term strategic objectives and short-term ctions.",
+          "detailedGuidance": "",
+          "detailedReference": "",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        }
+      ]
+    },
+    {
+      "componentName": "F",
+      "componentDescription": "Culture, Ethics and Behavior",
+      "componentPercFinal": 0,
+      "componentQuestions": [
+        {
+          "questionType": "Component question",
+          "keyCultureElement": "Establish a culture in which resources are valued and the investment, use and allocation of resources (whether people, information, applications, technology or facilities) align with organizational needs. Illustrate these values by ensuring that appropriate methods and adequate skills exist in the organization; for example, ensure that benefits from service procurement are real and achievable, and implement sound performance measurement systems (e.g., the balanced scorecard).",
+          "relatedGuidance": "",
+          "detailedReference": "",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        }
+      ]
+    },
+    {
+      "componentName": "G",
+      "componentDescription": "Services, Infrastructure and Applications",
+      "componentPercFinal": 0,
+      "componentQuestions": [
+        {
+          "questionType": "Component question",
+          "questionDescription": "Performance measurement system (e.g., balanced scorecard, skills management tools)",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        }
+      ]
+    }
+  ]
+}
           
         
       

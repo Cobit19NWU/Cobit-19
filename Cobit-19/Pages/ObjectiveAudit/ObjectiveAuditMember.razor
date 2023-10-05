@@ -16,6 +16,11 @@
     private IList<UserDto> _userDtos { get; set; }
     private IList<ObjectiveAuditMemberDto> _objectiveAuditMemberDtos { get; set; }
     private IList<ObjectiveAuditMemberDto> _membersDisplayList { get; set; }
+    private string auditJSON;
+    private FullObjectiveAuditDto fullAudit;
+    private string objectiveType;
+    public string userRole;
+    public bool correctRole = false;
 
     [Parameter]
     [SupplyParameterFromQuery]
@@ -29,8 +34,12 @@
     {
         _objectiveAuditDto = objectiveAuditProvider.getByID(ObjectiveAuditID);
         _objectiveAuditMemberDtos = objectiveAuditProvider.getMembersByObjectiveAuditID(ObjectiveAuditID);
-        _userDtos = userManagementProvider.GetAllUsers();
         _membersDisplayList = new List<ObjectiveAuditMemberDto>();
+        auditJSON = objectiveAuditProvider.getAuditJSON(ObjectiveAuditID);
+        fullAudit = AuditJSONParsingService.parseAuditTemplate(auditJSON);
+        objectiveType = fullAudit.typeOfObjective;
+        _userDtos = await userManagementProvider.GetAllAuditorsByAuditIDAsync(AuditId, objectiveType);
+
 
         PopulateMembersList();
     }

@@ -1,7 +1,8 @@
-{  
+{
   "objectiveName": "EDM05",
   "objectiveDescription": "Ensure that stakeholders are identified and engaged in the I&T governance system and that enterprise I&T performance and conformance measurement and reporting are transparent, with stakeholders approving the goals and metrics and necessary remedial actions.",
   "objectivePurpose": "Ensure that stakeholders are supportive of the I&T strategy and road map, communication to stakeholders is effective and timely, and the basis for reporting is established to increase performance. Identify areas for improvement, and confirm that I&T-related objectives and strategies are in line with the enterprise’s strategy.",
+  "typeOfObjective": "Governance",
   "maturityLevel": 0,
   "maturityLevel0PercFinal": 0,
   "maturityLevel1PercFinal": 0,
@@ -34,43 +35,43 @@
               "questionComment": "comment"
             }
           ]
+        },
+        {
+          "subComponentCode": "EG06",
+          "subComponentName": "Quality of management information",
+          "subComponentQuestions": [
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Degree of board and executive management satisfaction with decision-making information",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
             },
-              {
-                "subComponentCode": "EG06",
-                "subComponentName": "Quality of management information",
-                "subComponentQuestions": [
-                  {
-                    "questionType": "Enterprise goal",
-                    "questionDescription": "Degree of board and executive management satisfaction with decision-making information",
-                    "questionAnswer": 0,
-                    "questionScore": 0,
-                    "questionComment": "comment"
-                  },
-                  {
-                    "questionType": "Enterprise goal",
-                    "questionDescription": "Number of incidents caused by incorrect business decisions based on inaccurate information",
-                    "questionAnswer": 0,
-                    "questionScore": 0,
-                    "questionComment": "comment"
-                  },
-                  {
-                    "questionType": "Enterprise goal",
-                    "questionDescription": "Time to provide information supporting effective business decisions",
-                    "questionAnswer": 0,
-                    "questionScore": 0,
-                    "questionComment": "comment"
-                  },
-                  {
-                    "questionType": "Enterprise goal",
-                    "questionDescription": "Timeliness of management information",
-                    "questionAnswer": 0,
-                    "questionScore": 0,
-                    "questionComment": "comment"
-                  }
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Number of incidents caused by incorrect business decisions based on inaccurate information",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Time to provide information supporting effective business decisions",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Timeliness of management information",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
 
-                ]
-              }
-            ]
+          ]
+        }
+      ]
     },
 
     {
@@ -110,448 +111,448 @@
 
     },
 
+    {
+      "componentName": "A",
+      "componentDescription": "Process",
+      "componentPercFinal": 0,
+      "subComponents": [
+        {
+          "subComponentCode": "EDM05.01",
+          "subComponentName": "Evaluate stakeholder engagement and reporting requirements.",
+          "subComponentDescription": "Continually examine and evaluate current and future requirements for stakeholder engagement and reporting (including reporting mandated by regulatory requirements), and communication to other stakeholders. Establish principles for engaging and communicating with stakeholders.",
+          "subComponentQuestions": [
             {
-              "componentName": "A",
-              "componentDescription": "Process",
-              "componentPercFinal": 0,
-              "subComponents": [
-                {
-                  "subComponentCode": "EDM05.01",
-                  "subComponentName": "Evaluate stakeholder engagement and reporting requirements.",
-                  "subComponentDescription": "Continually examine and evaluate current and future requirements for stakeholder engagement and reporting (including reporting mandated by regulatory requirements), and communication to other stakeholders. Establish principles for engaging and communicating with stakeholders.",
-                  "subComponentQuestions": [
-                    {
-                      "questionType": "Maturity Level 2",
-                      "questionDescription": " Identify all relevant I&T stakeholders within and outside the enterprise. Group stakeholders in stakeholder categories with similar requirements",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Maturity Level 2",
-                      "questionDescription": "Examine and make judgment on the current and future mandatory reporting requirements relating to the use of I&T within the enterprise (regulation, legislation, common law, contractual), including extent and frequency.",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Maturity Level 2",
-                      "questionDescription": "Examine and make judgment on the current and future communication and reporting requirements for other stakeholders relating to the use of I&T within the enterprise, including required level of involvement/consultation and extent of communication/level of detail and conditions.",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Maturity Level 2",
-                      "questionDescription": "Maintain principles for communication with external and internal stakeholders, including communication formats and channels, and for stakeholder acceptance and sign-off of reporting.",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Related Guidance",
-                      "questionDescription": "",
-                      "relatedGuidance": "CMMI Cybermaturity Platform, 2018",
-                      "detailedReference": "SR.DR Direct Stakeholder Communication and Reporting",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    }
+              "questionType": "Maturity Level 2",
+              "questionDescription": " Identify all relevant I&T stakeholders within and outside the enterprise. Group stakeholders in stakeholder categories with similar requirements",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Examine and make judgment on the current and future mandatory reporting requirements relating to the use of I&T within the enterprise (regulation, legislation, common law, contractual), including extent and frequency.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Examine and make judgment on the current and future communication and reporting requirements for other stakeholders relating to the use of I&T within the enterprise, including required level of involvement/consultation and extent of communication/level of detail and conditions.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Maintain principles for communication with external and internal stakeholders, including communication formats and channels, and for stakeholder acceptance and sign-off of reporting.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "",
+              "relatedGuidance": "CMMI Cybermaturity Platform, 2018",
+              "detailedReference": "SR.DR Direct Stakeholder Communication and Reporting",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
 
-                  ]
-                },
-                {
-                  "subComponentCode": "EDM05.02",
-                  "subComponentName": "Direct stakeholder engagement, communication and reporting.",
-                  "subComponentDescription": "Ensure the establishment of effective stakeholder involvement,communication and reporting, including mechanisms for ensuring the quality and completeness of information, overseeing mandatory reporting, and creating a communication strategy for stakeholders.",
-                  "subComponentQuestions": [
-                    {
-                      "questionType": "Maturity Level 2",
-                      "questionDescription": "Direct the establishment of the consultation and communication strategy for external and internal stakeholders",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Maturity Level 2",
-                      "questionDescription": "Direct the implementation of mechanisms to ensure that information meets all criteria for mandatory I&T reporting requirements for the enterprise.",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Maturity Level 2",
-                      "questionDescription": "Establish mechanisms for validation and approval of mandatory reporting.",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Maturity Level 2",
-                      "questionDescription": " Establish reporting escalation mechanisms.",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Related Guidance",
-                      "questionDescription": "",
-                      "relatedGuidance": "CMMI Cybermaturity Platform, 2018",
-                      "detailedReference": "SR.AR Apply Stakeholder Reporting Requirements",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Related Guidance",
-                      "questionDescription": "",
-                      "relatedGuidance": "King IV Report on Corporate Governance for South Africa, 2016 ",
-                      "detailedReference": "Part 5.5: Stakeholder relationships—Principle 16",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Related Guidance",
-                      "questionDescription": "",
-                      "relatedGuidance": "King IV Report on Corporate Governance for South Africa, 2016 ",
-                      "detailedReference": "Part 5.2: Strategy, performance and reporting—Principle 5",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Related Guidance",
-                      "questionDescription": "",
-                      "relatedGuidance": "National Institute of Standards and Technology Framework for Improving Critical Infrastructure Cybersecurity V1.1, April 2018",
-                      "detailedReference": "3.3 Communicating Cybersecurity Requirements with Stakeholders",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    }
-                  ]
-                },
-                {
-                  "subComponentCode": "EDM05.03",
-                  "subComponentName": "Monitor stakeholder engagement",
-                  "subComponentDescription": "Monitor stakeholder engagement levels and the effectiveness of stakeholder communication. Assess mechanisms for ensuring accuracy, reliability and effectiveness, and ascertain whether the requirements of different stakeholders in terms of reporting and communication are met.",
-                  "subComponentQuestions": [
-                    {
-                      "questionType": "Maturity Level 4",
-                      "questionDescription": "Periodically assess the effectiveness of the mechanisms for ensuring the accuracy and reliability of mandatory reporting",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Maturity Level 4",
-                      "questionDescription": ". Periodically assess the effectiveness of the mechanisms for, and outcomes from, involvement of and communication with external and internal stakeholders.",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Maturity Level 4",
-                      "questionDescription": "Determine whether the requirements of different stakeholders are met and assess stakeholder engagement levels.",
-                      "relatedGuidance": "string",
-                      "detailedReference": "string",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Related Guidance",
-                      "questionDescription": "",
-                      "relatedGuidance": "CMMI Cybermaturity Platform, 2018",
-                      "detailedReference": "SR.MC Monitor Stakeholder Communication",
-                      "inputFrom": "string",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    }
-                  ]
-                }
-
-              ]
+          ]
+        },
+        {
+          "subComponentCode": "EDM05.02",
+          "subComponentName": "Direct stakeholder engagement, communication and reporting.",
+          "subComponentDescription": "Ensure the establishment of effective stakeholder involvement,communication and reporting, including mechanisms for ensuring the quality and completeness of information, overseeing mandatory reporting, and creating a communication strategy for stakeholders.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Direct the establishment of the consultation and communication strategy for external and internal stakeholders",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
             },
             {
-              "componentName": "B",
-              "componentDescription": "Organizational Structures",
-              "componentPercFinal": 0,
-              "componentQuestions": [
-                {
-                  "questionType": "Sub Process 1",
-                  "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Sub Process 2",
-                  "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Sub Process 3",
-                  "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                }
-              ]
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Direct the implementation of mechanisms to ensure that information meets all criteria for mandatory I&T reporting requirements for the enterprise.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
             },
             {
-              "componentCode": "C",
-              "componentDescription": "Information Flows and Items",
-              "componentPercFinal": 0,
-              "subComponents": [
-                {
-                  "subComponentCode": "EDM05.01",
-                  "subComponentName": "Evaluate stakeholder engagement and reporting requirements.",
-                  "subComponentDescription": "Continually examine and evaluate current and future requirements for stakeholder engagement and reporting (including reporting mandated by regulatory requirements), and communication to other stakeholders. Establish principles for engaging and communicating with stakeholders.",
-                  "subComponentQuestions": [
-                    {
-                      "questionType": "Input",
-                      "questionDescription": "Actions to improve value delivery",
-                      "inputFrom": "EDM02.04",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Input",
-                      "questionDescription": "Risk management issues for the board",
-                      "inputFrom": "EDM03.03",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Input",
-                      "questionDescription": "Feedback on allocation and effectiveness of resources and capabilities",
-                      "inputFrom": "EDM04.03",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Output",
-                      "questionDescription": "Reporting and communications principles",
-                      "inputFrom": "string",
-                      "outputTo": "MEA01.01",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Output",
-                      "questionDescription": "Evaluation of enterprise reporting requirements",
-                      "inputFrom": "string",
-                      "outputTo": "MEA01.01",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    }
-                  ]
-                },
-                {
-                  "subComponentCode": "EDM05.02",
-                  "subComponentName": "Direct stakeholder engagement, communication and reporting.",
-                  "subComponentDescription": "Ensure the establishment of effective stakeholder involvement,communication and reporting, including mechanisms for ensuring the quality and completeness of information, overseeing mandatory reporting, and creating a communication strategy for stakeholders.",
-                  "subComponentQuestions": [
-                    {
-                      "questionType": "Input",
-                      "questionDescription": "Risk analysis and risk profile reports for stakeholders",
-                      "inputFrom": "APO12.04",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Output",
-                      "questionDescription": "Rules for validating and approving mandatory reports",
-                      "inputFrom": "string",
-                      "outputTo": "MEA01.01, MEA03.04",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Output",
-                      "questionDescription": "Escalation guidelines",
-                      "inputFrom": "string",
-                      "outputTo": "MEA01.05",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    }
-                  ]
-                },
-                {
-                  "subComponentCode": "EDM05.03",
-                  "subComponentName": "Monitor stakeholder engagement",
-                  "subComponentDescription": "Monitor stakeholder engagement levels and the effectiveness of stakeholder communication. Assess mechanisms for ensuring accuracy, reliability and effectiveness, and ascertain whether the requirements of different stakeholders in terms of reporting and communication are met.",
-                  "subComponentQuestions": [
-                    {
-                      "questionType": "Input",
-                      "questionDescription": "Assurance review results • Assurance review report",
-                      "inputFrom": "MEA04.08 ",
-                      "outputTo": "string,",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    },
-                    {
-                      "questionType": "Output",
-                      "questionDescription": "Assessment of reporting effectiveness",
-                      "inputFrom": "string",
-                      "outputTo": "MEA01.01, MEA03.04",
-                      "questionAnswer": 0,
-                      "questionScore": 0,
-                      "questionComment": "comment"
-                    }
-                  ]
-                }
-              ]
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Establish mechanisms for validation and approval of mandatory reporting.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
             },
             {
-              "componentName": "D",
-              "componentDescription": "Peoples, Skills and Competencies",
-              "componentPercFinal": 0,
-              "componentQuestions": [
-                {
-                  "questionType": "Component question",
-                  "questionSkill": "Relationship management",
-                  "relatedGuidance": "e-Competence Framework (e-CF)—A common European Framework for ICT Professionals in all industry sectors—Part 1: Framework, 2016",
-                  "detailedReference": "E. Manage—E.4. Relationship Management",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                }
-              ]
+              "questionType": "Maturity Level 2",
+              "questionDescription": " Establish reporting escalation mechanisms.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
             },
             {
-              "componentName": "E",
-              "componentDescription": "Principles Policies and Procedures",
-              "componentPercFinal": 0,
-              "componentQuestions": [
-                {
-                  "questionType": "Component question",
-                  "relevantPolicy": " Transparency policy",
-                  "policyDescription": "Addresses the importance of frequent, open communication with all stakeholders to ensure that they understand the strategic importance of I&T to enterprise success. Ensures that transparency supports appropriate risk mitigation, linking transparency and effective risk management to I&T value and enterprise growth.",
-                  "detailedGuidance": "",
-                  "detailedReference": "",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                }
-              ]
+              "questionType": "Related Guidance",
+              "questionDescription": "",
+              "relatedGuidance": "CMMI Cybermaturity Platform, 2018",
+              "detailedReference": "SR.AR Apply Stakeholder Reporting Requirements",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
             },
             {
-              "componentName": "F",
-              "componentDescription": "Culture, Ethics and Behavior",
-              "componentPercFinal": 0,
-              "componentQuestions": [
-                {
-                  "questionType": "Component question",
-                  "keyCultureElement": "Create a culture in which open and structured communication is provided to key stakeholders, in line with their requirements",
-                  "relatedGuidance": "",
-                  "detailedReference": "",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                }
-              ]
+              "questionType": "Related Guidance",
+              "questionDescription": "",
+              "relatedGuidance": "King IV Report on Corporate Governance for South Africa, 2016 ",
+              "detailedReference": "Part 5.5: Stakeholder relationships—Principle 16",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
             },
             {
-              "componentName": "G",
-              "componentDescription": "Services, Infrastructure and Applications",
-              "componentPercFinal": 0,
-              "componentQuestions": [
-                {
-                  "questionType": "Component question",
-                  "questionDescription": "Stakeholder survey tools ",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Component question",
-                  "questionDescription": " Communication tools and channels ",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                },
-                {
-                  "questionType": "Component question",
-                  "questionDescription": "IT dashboarding ",
-                  "questionAnswer": 0,
-                  "questionScore": 0,
-                  "questionComment": "comment"
-                }
-              ]
+              "questionType": "Related Guidance",
+              "questionDescription": "",
+              "relatedGuidance": "King IV Report on Corporate Governance for South Africa, 2016 ",
+              "detailedReference": "Part 5.2: Strategy, performance and reporting—Principle 5",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "",
+              "relatedGuidance": "National Institute of Standards and Technology Framework for Improving Critical Infrastructure Cybersecurity V1.1, April 2018",
+              "detailedReference": "3.3 Communicating Cybersecurity Requirements with Stakeholders",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "EDM05.03",
+          "subComponentName": "Monitor stakeholder engagement",
+          "subComponentDescription": "Monitor stakeholder engagement levels and the effectiveness of stakeholder communication. Assess mechanisms for ensuring accuracy, reliability and effectiveness, and ascertain whether the requirements of different stakeholders in terms of reporting and communication are met.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": "Periodically assess the effectiveness of the mechanisms for ensuring the accuracy and reliability of mandatory reporting",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": ". Periodically assess the effectiveness of the mechanisms for, and outcomes from, involvement of and communication with external and internal stakeholders.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": "Determine whether the requirements of different stakeholders are met and assess stakeholder engagement levels.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "",
+              "relatedGuidance": "CMMI Cybermaturity Platform, 2018",
+              "detailedReference": "SR.MC Monitor Stakeholder Communication",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
             }
           ]
         }
+
+      ]
+    },
+    {
+      "componentName": "B",
+      "componentDescription": "Organizational Structures",
+      "componentPercFinal": 0,
+      "componentQuestions": [
+        {
+          "questionType": "Sub Process 1",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "Sub Process 2",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "Sub Process 3",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        }
+      ]
+    },
+    {
+      "componentCode": "C",
+      "componentDescription": "Information Flows and Items",
+      "componentPercFinal": 0,
+      "subComponents": [
+        {
+          "subComponentCode": "EDM05.01",
+          "subComponentName": "Evaluate stakeholder engagement and reporting requirements.",
+          "subComponentDescription": "Continually examine and evaluate current and future requirements for stakeholder engagement and reporting (including reporting mandated by regulatory requirements), and communication to other stakeholders. Establish principles for engaging and communicating with stakeholders.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Input",
+              "questionDescription": "Actions to improve value delivery",
+              "inputFrom": "EDM02.04",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Risk management issues for the board",
+              "inputFrom": "EDM03.03",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Feedback on allocation and effectiveness of resources and capabilities",
+              "inputFrom": "EDM04.03",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Reporting and communications principles",
+              "inputFrom": "string",
+              "outputTo": "MEA01.01",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Evaluation of enterprise reporting requirements",
+              "inputFrom": "string",
+              "outputTo": "MEA01.01",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "EDM05.02",
+          "subComponentName": "Direct stakeholder engagement, communication and reporting.",
+          "subComponentDescription": "Ensure the establishment of effective stakeholder involvement,communication and reporting, including mechanisms for ensuring the quality and completeness of information, overseeing mandatory reporting, and creating a communication strategy for stakeholders.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Input",
+              "questionDescription": "Risk analysis and risk profile reports for stakeholders",
+              "inputFrom": "APO12.04",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Rules for validating and approving mandatory reports",
+              "inputFrom": "string",
+              "outputTo": "MEA01.01, MEA03.04",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Escalation guidelines",
+              "inputFrom": "string",
+              "outputTo": "MEA01.05",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "EDM05.03",
+          "subComponentName": "Monitor stakeholder engagement",
+          "subComponentDescription": "Monitor stakeholder engagement levels and the effectiveness of stakeholder communication. Assess mechanisms for ensuring accuracy, reliability and effectiveness, and ascertain whether the requirements of different stakeholders in terms of reporting and communication are met.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Input",
+              "questionDescription": "Assurance review results • Assurance review report",
+              "inputFrom": "MEA04.08 ",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Assessment of reporting effectiveness",
+              "inputFrom": "string",
+              "outputTo": "MEA01.01, MEA03.04",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "componentName": "D",
+      "componentDescription": "Peoples, Skills and Competencies",
+      "componentPercFinal": 0,
+      "componentQuestions": [
+        {
+          "questionType": "Component question",
+          "questionSkill": "Relationship management",
+          "relatedGuidance": "e-Competence Framework (e-CF)—A common European Framework for ICT Professionals in all industry sectors—Part 1: Framework, 2016",
+          "detailedReference": "E. Manage—E.4. Relationship Management",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        }
+      ]
+    },
+    {
+      "componentName": "E",
+      "componentDescription": "Principles Policies and Procedures",
+      "componentPercFinal": 0,
+      "componentQuestions": [
+        {
+          "questionType": "Component question",
+          "relevantPolicy": " Transparency policy",
+          "policyDescription": "Addresses the importance of frequent, open communication with all stakeholders to ensure that they understand the strategic importance of I&T to enterprise success. Ensures that transparency supports appropriate risk mitigation, linking transparency and effective risk management to I&T value and enterprise growth.",
+          "detailedGuidance": "",
+          "detailedReference": "",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        }
+      ]
+    },
+    {
+      "componentName": "F",
+      "componentDescription": "Culture, Ethics and Behavior",
+      "componentPercFinal": 0,
+      "componentQuestions": [
+        {
+          "questionType": "Component question",
+          "keyCultureElement": "Create a culture in which open and structured communication is provided to key stakeholders, in line with their requirements",
+          "relatedGuidance": "",
+          "detailedReference": "",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        }
+      ]
+    },
+    {
+      "componentName": "G",
+      "componentDescription": "Services, Infrastructure and Applications",
+      "componentPercFinal": 0,
+      "componentQuestions": [
+        {
+          "questionType": "Component question",
+          "questionDescription": "Stakeholder survey tools ",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "Component question",
+          "questionDescription": " Communication tools and channels ",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "Component question",
+          "questionDescription": "IT dashboarding ",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        }
+      ]
+    }
+  ]
+}
       
     
   

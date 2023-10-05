@@ -1,7 +1,8 @@
-{  
+{
 	"objectiveName": "BAI07",
 	"objectiveDescription": "Formally accept and make operational new solutions. Include implementation planning, system and data conversion, acceptance testing, communication, release preparation, promotion to production of new or changed business processes and I&T services, early production support, and a post-implementation review.",
 	"objectivePurpose": "Implement solutions safely and in line with the agreed expectations and outcomes.",
+	"typeOfObjective": "Management",
 	"maturityLevel": 0,
 	"maturityLevel0PercFinal": 0,
 	"maturityLevel1PercFinal": 0,
@@ -798,549 +799,549 @@
 							"questionAnswer": 0,
 							"questionScore": 0,
 							"questionComment": "comment"
-																		}
-																	]
-																}
-															]
-																},
-																				{
-																					"componentName": "B",
-																					"componentDescription": "Organizational Structures",
-																					"componentPercFinal": 0,
-																					"componentQuestions": [
+						}
+					]
+				}
+			]
+		},
+		{
+			"componentName": "B",
+			"componentDescription": "Organizational Structures",
+			"componentPercFinal": 0,
+			"componentQuestions": [
 
-																						{
-																							"questionType": "BAI07.01",
-																							"questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
-																							"questionAnswer": 0,
-																							"questionScore": 0,
-																							"questionComment": "comment"
-																						},
-																						{
-																							"questionType": "BAI07.02",
-																							"questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
-																							"questionAnswer": 0,
-																							"questionScore": 0,
-																							"questionComment": "comment"
-																						},
-																						{
-																							"questionType": "BAI07.03",
-																							"questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
-																							"questionAnswer": 0,
-																							"questionScore": 0,
-																							"questionComment": "comment"
-																						},
-																						{
-																							"questionType": "BAI07.04",
-																							"questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
-																							"questionAnswer": 0,
-																							"questionScore": 0,
-																							"questionComment": "comment"
-																						},
-																						{
-																							"questionType": "BAI07.05",
-																							"questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
-																							"questionAnswer": 0,
-																							"questionScore": 0,
-																							"questionComment": "comment"
-																						},
-																						{
-																							"questionType": "BAI07.06",
-																							"questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
-																							"questionAnswer": 0,
-																							"questionScore": 0,
-																							"questionComment": "comment"
-																						},
-																						{
-																							"questionType": "BAI07.07",
-																							"questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
-																							"questionAnswer": 0,
-																							"questionScore": 0,
-																							"questionComment": "comment"
-																						},
-																						{
-																							"questionType": "BAI08.07",
-																							"questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
-																							"questionAnswer": 0,
-																							"questionScore": 0,
-																							"questionComment": "comment"
-																						}
-																					]
-																				},
+				{
+					"questionType": "BAI07.01",
+					"questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+					"questionAnswer": 0,
+					"questionScore": 0,
+					"questionComment": "comment"
+				},
+				{
+					"questionType": "BAI07.02",
+					"questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+					"questionAnswer": 0,
+					"questionScore": 0,
+					"questionComment": "comment"
+				},
+				{
+					"questionType": "BAI07.03",
+					"questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+					"questionAnswer": 0,
+					"questionScore": 0,
+					"questionComment": "comment"
+				},
+				{
+					"questionType": "BAI07.04",
+					"questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+					"questionAnswer": 0,
+					"questionScore": 0,
+					"questionComment": "comment"
+				},
+				{
+					"questionType": "BAI07.05",
+					"questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+					"questionAnswer": 0,
+					"questionScore": 0,
+					"questionComment": "comment"
+				},
+				{
+					"questionType": "BAI07.06",
+					"questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+					"questionAnswer": 0,
+					"questionScore": 0,
+					"questionComment": "comment"
+				},
+				{
+					"questionType": "BAI07.07",
+					"questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+					"questionAnswer": 0,
+					"questionScore": 0,
+					"questionComment": "comment"
+				},
+				{
+					"questionType": "BAI08.07",
+					"questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+					"questionAnswer": 0,
+					"questionScore": 0,
+					"questionComment": "comment"
+				}
+			]
+		},
 
-																				{
-																					"componentCode": "C",
-																					"componentDescription": "Information Flows and Items",
-																					"componentPercFinal": 0,
-																					"subComponents": [
-																						{
-																							"subComponentCode": "BAI07.01",
-																							"subComponentName": "Establish an implementation plan.",
-																							"subComponentDescription": "Establish an implementation plan that covers system and data conversion, acceptance testing criteria, communication, training, release preparation, promotion to production, early production support, a fallback/back up plan, and a post-implementation review. Obtain approval from relevant parties.",
-																							"subComponentQuestions": [
+		{
+			"componentCode": "C",
+			"componentDescription": "Information Flows and Items",
+			"componentPercFinal": 0,
+			"subComponents": [
+				{
+					"subComponentCode": "BAI07.01",
+					"subComponentName": "Establish an implementation plan.",
+					"subComponentDescription": "Establish an implementation plan that covers system and data conversion, acceptance testing criteria, communication, training, release preparation, promotion to production, early production support, a fallback/back up plan, and a post-implementation review. Obtain approval from relevant parties.",
+					"subComponentQuestions": [
 
-																								{
-																									"questionType": "Input",
-																									"questionDescription": "Quality management plan",
-																									"relatedGuidance": "string",
-																									"detailedReference": "string",
-																									"inputFrom": "BAI01.07",
-																									"outputTo": "string",
-																									"questionAnswer": 0,
-																									"questionScore": 0,
-																									"questionComment": "comment"
-																								},
-																								{
-																									"questionType": "Input",
-																									"questionDescription": "• Approved requests for change • Change plan and schedule",
-																									"relatedGuidance": "string",
-																									"detailedReference": "string",
-																									"inputFrom": "BAI06.01",
-																									"outputTo": "string",
-																									"questionAnswer": 0,
-																									"questionScore": 0,
-																									"questionComment": "comment"
-																								},
-																								{
-																									"questionType": "Input",
-																									"questionDescription": "Project quality management plan",
-																									"relatedGuidance": "string",
-																									"detailedReference": "string",
-																									"inputFrom": "BAI11.05",
-																									"outputTo": "string",
-																									"questionAnswer": 0,
-																									"questionScore": 0,
-																									"questionComment": "comment"
-																								},
+						{
+							"questionType": "Input",
+							"questionDescription": "Quality management plan",
+							"relatedGuidance": "string",
+							"detailedReference": "string",
+							"inputFrom": "BAI01.07",
+							"outputTo": "string",
+							"questionAnswer": 0,
+							"questionScore": 0,
+							"questionComment": "comment"
+						},
+						{
+							"questionType": "Input",
+							"questionDescription": "• Approved requests for change • Change plan and schedule",
+							"relatedGuidance": "string",
+							"detailedReference": "string",
+							"inputFrom": "BAI06.01",
+							"outputTo": "string",
+							"questionAnswer": 0,
+							"questionScore": 0,
+							"questionComment": "comment"
+						},
+						{
+							"questionType": "Input",
+							"questionDescription": "Project quality management plan",
+							"relatedGuidance": "string",
+							"detailedReference": "string",
+							"inputFrom": "BAI11.05",
+							"outputTo": "string",
+							"questionAnswer": 0,
+							"questionScore": 0,
+							"questionComment": "comment"
+						},
 
-																								{
-																									"questionType": "Output",
-																									"questionDescription": "Implementation fallback and recovery processes",
-																									"relatedGuidance": "string",
-																									"detailedReference": "string",
-																									"inputFrom": "string",
-																									"outputTo": "Internal",
-																									"questionAnswer": 0,
-																									"questionScore": 0,
-																									"questionComment": "comment"
-																								},
+						{
+							"questionType": "Output",
+							"questionDescription": "Implementation fallback and recovery processes",
+							"relatedGuidance": "string",
+							"detailedReference": "string",
+							"inputFrom": "string",
+							"outputTo": "Internal",
+							"questionAnswer": 0,
+							"questionScore": 0,
+							"questionComment": "comment"
+						},
 
-																								{
-																									"questionType": "Output",
-																									"questionDescription": "Approved implementation plan",
-																									"relatedGuidance": "string",
-																									"detailedReference": "string",
-																									"inputFrom": "string",
-																									"outputTo": "Internal",
-																									"questionAnswer": 0,
-																									"questionScore": 0,
-																									"questionComment": "comment"
-																								}
+						{
+							"questionType": "Output",
+							"questionDescription": "Approved implementation plan",
+							"relatedGuidance": "string",
+							"detailedReference": "string",
+							"inputFrom": "string",
+							"outputTo": "Internal",
+							"questionAnswer": 0,
+							"questionScore": 0,
+							"questionComment": "comment"
+						}
 
-																							]
-																						},
-																						{
-																							"subComponentCode": "BAI07.02",
-																							"subComponentName": "Plan business process, system and data conversion.",
-																							"subComponentDescription": "Prepare for business process, I&T service data and infrastructure migration as part of the enterprise’s development methods. Include audit trails and a recovery plan should the migration fail.",
-																							"subComponentQuestions": [
+					]
+				},
+				{
+					"subComponentCode": "BAI07.02",
+					"subComponentName": "Plan business process, system and data conversion.",
+					"subComponentDescription": "Prepare for business process, I&T service data and infrastructure migration as part of the enterprise’s development methods. Include audit trails and a recovery plan should the migration fail.",
+					"subComponentQuestions": [
 
-																								{
-																									"questionType": "Output",
-																									"questionDescription": "Migration plan",
-																									"relatedGuidance": "string",
-																									"detailedReference": "string",
-																									"inputFrom": "string",
-																									"outputTo": "DSS06.02",
-																									"questionAnswer": 0,
-																									"questionScore": 0,
-																									"questionComment": "comment"
-																								}
-
-
-																							]
-																						},
-																						{
-																							"subComponentCode": "BAI07.03",
-																							"subComponentName": "Plan acceptance tests.",
-																							"subComponentDescription": "Establish a test plan based on enterprisewide standards that define roles, responsibilities, and entry and exit criteria. Ensure that the plan is approved by relevant parties.",
-																							"subComponentQuestions": [
-
-																								{
-																									"questionType": "Input",
-																									"questionDescription": "Requirements for independent verification of deliverables",
-																									"relatedGuidance": "string",
-																									"detailedReference": "string",
-																									"inputFrom": "BAI01.07",
-																									"outputTo": "string",
-																									"questionAnswer": 0,
-																									"questionScore": 0,
-																									"questionComment": "comment"
-																								},
-																								{
-																									"questionType": "Input",
-																									"questionDescription": "• Test plan • Test procedures",
-																									"relatedGuidance": "string",
-																									"detailedReference": "string",
-																									"inputFrom": "BAI03.07",
-																									"outputTo": "string",
-																									"questionAnswer": 0,
-																									"questionScore": 0,
-																									"questionComment": "comment"
-																								},
-																								{
-																									"questionType": "Input",
-																									"questionDescription": "• Test result logs and audit trails • Test result communications",
-																									"relatedGuidance": "string",
-																									"detailedReference": "string",
-																									"inputFrom": "BAI03.08",
-																									"outputTo": "string",
-																									"questionAnswer": 0,
-																									"questionScore": 0,
-																									"questionComment": "comment"
-																								},
-																								{
-																									"questionType": "Input",
-																									"questionDescription": "Requirements for independent verification of project deliverables",
-																									"relatedGuidance": "string",
-																									"detailedReference": "string",
-																									"inputFrom": "BAI11.05",
-																									"outputTo": "string",
-																									"questionAnswer": 0,
-																									"questionScore": 0,
-																									"questionComment": "comment"
-																								},
-																								{
-																									"questionType": "Output",
-																									"questionDescription": "Approved acceptance test plan",
-																									"relatedGuidance": "string",
-																									"detailedReference": "string",
-																									"inputFrom": "string",
-																									"outputTo": "BAI01.04; BAI11.04",
-																									"questionAnswer": 0,
-																									"questionScore": 0,
-																									"questionComment": "comment"
-																								}
-
-																							]
-																						},
-
-																						{
-																							"subComponentCode": "BAI07.04",
-																							"subComponentName": "Establish a test environment.",
-																							"subComponentDescription": "Define and establish a secure test environment representative of the planned business process and IT operations environment in terms of performance, capacity, security, internal controls, operational practices, data quality, privacy requirements and workloads.",
-																							"subComponentQuestions": [
-
-																								{
-																									"questionType": "Output",
-																									"questionDescription": "Test data",
-																									"relatedGuidance": "string",
-																									"detailedReference": "string",
-																									"inputFrom": "string",
-																									"outputTo": "Internal",
-																									"questionAnswer": 0,
-																									"questionScore": 0,
-																									"questionComment": "comment"
-																								}
-																							]
-																						},
-																						{
-																							"subComponentCode": "BAI07.05",
-																							"subComponentName": "Perform acceptance tests.",
-																							"subComponentDescription": "Test changes independently, in accordance with the defined test plan, prior to migration to the live operational environment.",
-																							"subComponentQuestions": [
-																								{
-																									"questionType": "Output",
-																									"questionDescription": "Approved acceptance and release for production",
-																									"relatedGuidance": "string",
-																									"detailedReference": "string",
-																									"inputFrom": "string",
-																									"outputTo": "BAI01.04",
-																									"questionAnswer": 0,
-																									"questionScore": 0,
-																									"questionComment": "comment"
-																								},
-
-																								{
-																									"questionType": "Output",
-																									"questionDescription": "Evaluation of acceptance results",
-																									"relatedGuidance": "string",
-																									"detailedReference": "string",
-																									"inputFrom": "string",
-																									"outputTo": "BAI01.06",
-																									"questionAnswer": 0,
-																									"questionScore": 0,
-																									"questionComment": "comment"
-																								},
-
-																								{
-																									"questionType": "Output",
-																									"questionDescription": "Test results log",
-																									"relatedGuidance": "string",
-																									"detailedReference": "string",
-																									"inputFrom": "string",
-																									"outputTo": "Internal",
-																									"questionAnswer": 0,
-																									"questionScore": 0,
-																									"questionComment": "comment"
-																								}
-
-																							]
-																						},
-																						{
-																							"subComponentCode": "BAI07.06",
-																							"subComponentName": "Promote to production and manage releases.",
-																							"subComponentDescription": "Promote the accepted solution to the business and operations. Where appropriate, run the solution as a pilot implementation or in parallel with the old solution for a defined period and compare behavior and results. If significant problems occur, revert to the original environment based on the fallback/back-up plan. Manage releases of solution components.",
-																							"subComponentQuestions": [
-
-																								{
-																									"questionType": "Output",
-																									"questionDescription": "Release plan",
-																									"relatedGuidance": "string",
-																									"detailedReference": "string",
-																									"inputFrom": "string",
-																									"outputTo": "BAI10.01",
-																									"questionAnswer": 0,
-																									"questionScore": 0,
-																									"questionComment": "comment"
-																								},
-																								{
-																									"questionType": "Output",
-																									"questionDescription": "Release log",
-																									"relatedGuidance": "string",
-																									"detailedReference": "string",
-																									"inputFrom": "string",
-																									"outputTo": "Internal",
-																									"questionAnswer": 0,
-																									"questionScore": 0,
-																									"questionComment": "comment"
-																								}
-																							]
-																						},
-																						{
-																							"subComponentCode": "BAI07.07",
-																							"subComponentName": "Provide early production support.",
-																							"subComponentDescription": "For an agreed period of time, provide early support to users and I&T operations to resolve issues and help stabilize the new solution.",
-																							"subComponentQuestions": [
-																								{
-																									"questionType": "Input",
-																									"questionDescription": "Results of quality of service, including customer feedback",
-																									"relatedGuidance": "string",
-																									"detailedReference": "string",
-																									"inputFrom": "APO11.02",
-																									"outputTo": "string",
-																									"questionAnswer": 0,
-																									"questionScore": 0,
-																									"questionComment": "comment"
-																								},
-																								{
-																									"questionType": "Input",
-																									"questionDescription": "Success measures and results",
-																									"relatedGuidance": "string",
-																									"detailedReference": "string",
-																									"inputFrom": "BAI05.05",
-																									"outputTo": "string",
-																									"questionAnswer": 0,
-																									"questionScore": 0,
-																									"questionComment": "comment"
-																								},
-																								{
-																									"questionType": "Output",
-																									"questionDescription": "Supplemental support plan",
-																									"relatedGuidance": "string",
-																									"detailedReference": "string",
-																									"inputFrom": "string",
-																									"outputTo": "APO08.04; APO08.05; DSS02.04",
-																									"questionAnswer": 0,
-																									"questionScore": 0,
-																									"questionComment": "comment"
-																								}
-																							]
-																						},
-																						{
-																							"subComponentCode": "BAI07.08",
-																							"subComponentDescription": "Conduct a post-implementation review to confirm outcome and results, identify lessons learned, and develop an action plan. Evaluate actual performance and outcomes of the new or changed service against expected performance and outcomes anticipated by the user or customer.",
-																							"subComponentName": "Perform a post-implementation review.",
-																							"subComponentQuestions": [
-																								{
-																									"questionType": "Input",
-																									"questionDescription": "• Results of solution and service delivery quality monitoring • Root causes of quality delivery failures",
-																									"relatedGuidance": "string",
-																									"detailedReference": "string",
-																									"inputFrom": "APO11.03",
-																									"outputTo": "string",
-																									"questionAnswer": 0,
-																									"questionScore": 0,
-																									"questionComment": "comment"
-																								},
-																								{
-																									"questionType": "Input",
-																									"questionDescription": "Results of quality reviews and audits",
-																									"relatedGuidance": "string",
-																									"detailedReference": "string",
-																									"inputFrom": "APO11.04",
-																									"outputTo": "string",
-																									"questionAnswer": 0,
-																									"questionScore": 0,
-																									"questionComment": "comment"
-																								},
-																								{
-																									"questionType": "Input",
-																									"questionDescription": "Success measures and results",
-																									"relatedGuidance": "string",
-																									"detailedReference": "string",
-																									"inputFrom": "BAI05.05",
-																									"outputTo": "string",
-																									"questionAnswer": 0,
-																									"questionScore": 0,
-																									"questionComment": "comment"
-																								},
-
-																								{
-																									"questionType": "Output",
-																									"questionDescription": "Remedial action plan",
-																									"relatedGuidance": "string",
-																									"detailedReference": "string",
-																									"inputFrom": "string",
-																									"outputTo": "BAI01.09;BAI11.09",
-																									"questionAnswer": 0,
-																									"questionScore": 0,
-																									"questionComment": "comment"
-																								},
-
-																								{
-																									"questionType": "Output",
-																									"questionDescription": "Post-implementation review report",
-																									"relatedGuidance": "string",
-																									"detailedReference": "string",
-																									"inputFrom": "string",
-																									"outputTo": "BAI01.09;BAI11.09",
-																									"questionAnswer": 0,
-																									"questionScore": 0,
-																									"questionComment": "comment"
-																								}
-																							]
-																						}
-																					]
-																				},
-																				{
-																					"componentName": "D",
-																					"componentDescription": "Peoples, Skills and Competencies",
-																					"componentPercFinal": 0,
-																					"componentQuestions": [
-																						{
-																							"questionType": "Component question",
-																							"questionSkill": "Business process testing",
-																							"relatedGuidance": "Skills Framework for the Information Age V6, 2015 ",
-																							"detailedReference": "BPTS",
-																							"questionAnswer": 0,
-																							"questionScore": 0,
-																							"questionComment": "comment"
-																						},
-																						{
-																							"questionType": "Component question",
-																							"questionSkill": "Release and deployment",
-																							"relatedGuidance": "Skills Framework for the Information Age V6, 2015 ",
-																							"detailedReference": "RELM",
-																							"questionAnswer": 0,
-																							"questionScore": 0,
-																							"questionComment": "comment"
-																						},
-																						{
-																							"questionType": "Component question",
-																							"questionSkill": "Service acceptance",
-																							"relatedGuidance": "Skills Framework for the Information Age V6, 2015 ",
-																							"detailedReference": "SEAC",
-																							"questionAnswer": 0,
-																							"questionScore": 0,
-																							"questionComment": "comment"
-																						},
-																						{
-																							"questionType": "Component question",
-																							"questionSkill": "Testing",
-																							"relatedGuidance": "Skills Framework for the Information Age V6, 2015 ",
-																							"detailedReference": "TEST",
-																							"questionAnswer": 0,
-																							"questionScore": 0,
-																							"questionComment": "comment"
-																						},
-																						{
-																							"questionType": "Component question",
-																							"questionSkill": "User experience evaluation",
-																							"relatedGuidance": "Skills Framework for the Information Age V6, 2015 ",
-																							"detailedReference": "USEV",
-																							"questionAnswer": 0,
-																							"questionScore": 0,
-																							"questionComment": "comment"
-																						}
+						{
+							"questionType": "Output",
+							"questionDescription": "Migration plan",
+							"relatedGuidance": "string",
+							"detailedReference": "string",
+							"inputFrom": "string",
+							"outputTo": "DSS06.02",
+							"questionAnswer": 0,
+							"questionScore": 0,
+							"questionComment": "comment"
+						}
 
 
-																					]
-																				},
-																				{
-																					"componentName": "E",
-																					"componentDescription": "Principles Policies and Procedures",
-																					"componentPercFinal": 0,
-																					"componentQuestions": [
-																						{
-																							"questionType": "Component question",
-																							"relevantPolicy": "IT change management policy",
-																							"policyDescription": "Communicates management intent that all changes to enterprise IT are managed and implemented so as to minimize risk and impact to stakeholders. Covers in-scope assets and standard change management process.",
-																							"detailedGuidance": "string",
-																							"detailedReference": "string",
-																							"questionAnswer": 0,
-																							"questionScore": 0,
-																							"questionComment": "comment"
-																						}
+					]
+				},
+				{
+					"subComponentCode": "BAI07.03",
+					"subComponentName": "Plan acceptance tests.",
+					"subComponentDescription": "Establish a test plan based on enterprisewide standards that define roles, responsibilities, and entry and exit criteria. Ensure that the plan is approved by relevant parties.",
+					"subComponentQuestions": [
+
+						{
+							"questionType": "Input",
+							"questionDescription": "Requirements for independent verification of deliverables",
+							"relatedGuidance": "string",
+							"detailedReference": "string",
+							"inputFrom": "BAI01.07",
+							"outputTo": "string",
+							"questionAnswer": 0,
+							"questionScore": 0,
+							"questionComment": "comment"
+						},
+						{
+							"questionType": "Input",
+							"questionDescription": "• Test plan • Test procedures",
+							"relatedGuidance": "string",
+							"detailedReference": "string",
+							"inputFrom": "BAI03.07",
+							"outputTo": "string",
+							"questionAnswer": 0,
+							"questionScore": 0,
+							"questionComment": "comment"
+						},
+						{
+							"questionType": "Input",
+							"questionDescription": "• Test result logs and audit trails • Test result communications",
+							"relatedGuidance": "string",
+							"detailedReference": "string",
+							"inputFrom": "BAI03.08",
+							"outputTo": "string",
+							"questionAnswer": 0,
+							"questionScore": 0,
+							"questionComment": "comment"
+						},
+						{
+							"questionType": "Input",
+							"questionDescription": "Requirements for independent verification of project deliverables",
+							"relatedGuidance": "string",
+							"detailedReference": "string",
+							"inputFrom": "BAI11.05",
+							"outputTo": "string",
+							"questionAnswer": 0,
+							"questionScore": 0,
+							"questionComment": "comment"
+						},
+						{
+							"questionType": "Output",
+							"questionDescription": "Approved acceptance test plan",
+							"relatedGuidance": "string",
+							"detailedReference": "string",
+							"inputFrom": "string",
+							"outputTo": "BAI01.04; BAI11.04",
+							"questionAnswer": 0,
+							"questionScore": 0,
+							"questionComment": "comment"
+						}
+
+					]
+				},
+
+				{
+					"subComponentCode": "BAI07.04",
+					"subComponentName": "Establish a test environment.",
+					"subComponentDescription": "Define and establish a secure test environment representative of the planned business process and IT operations environment in terms of performance, capacity, security, internal controls, operational practices, data quality, privacy requirements and workloads.",
+					"subComponentQuestions": [
+
+						{
+							"questionType": "Output",
+							"questionDescription": "Test data",
+							"relatedGuidance": "string",
+							"detailedReference": "string",
+							"inputFrom": "string",
+							"outputTo": "Internal",
+							"questionAnswer": 0,
+							"questionScore": 0,
+							"questionComment": "comment"
+						}
+					]
+				},
+				{
+					"subComponentCode": "BAI07.05",
+					"subComponentName": "Perform acceptance tests.",
+					"subComponentDescription": "Test changes independently, in accordance with the defined test plan, prior to migration to the live operational environment.",
+					"subComponentQuestions": [
+						{
+							"questionType": "Output",
+							"questionDescription": "Approved acceptance and release for production",
+							"relatedGuidance": "string",
+							"detailedReference": "string",
+							"inputFrom": "string",
+							"outputTo": "BAI01.04",
+							"questionAnswer": 0,
+							"questionScore": 0,
+							"questionComment": "comment"
+						},
+
+						{
+							"questionType": "Output",
+							"questionDescription": "Evaluation of acceptance results",
+							"relatedGuidance": "string",
+							"detailedReference": "string",
+							"inputFrom": "string",
+							"outputTo": "BAI01.06",
+							"questionAnswer": 0,
+							"questionScore": 0,
+							"questionComment": "comment"
+						},
+
+						{
+							"questionType": "Output",
+							"questionDescription": "Test results log",
+							"relatedGuidance": "string",
+							"detailedReference": "string",
+							"inputFrom": "string",
+							"outputTo": "Internal",
+							"questionAnswer": 0,
+							"questionScore": 0,
+							"questionComment": "comment"
+						}
+
+					]
+				},
+				{
+					"subComponentCode": "BAI07.06",
+					"subComponentName": "Promote to production and manage releases.",
+					"subComponentDescription": "Promote the accepted solution to the business and operations. Where appropriate, run the solution as a pilot implementation or in parallel with the old solution for a defined period and compare behavior and results. If significant problems occur, revert to the original environment based on the fallback/back-up plan. Manage releases of solution components.",
+					"subComponentQuestions": [
+
+						{
+							"questionType": "Output",
+							"questionDescription": "Release plan",
+							"relatedGuidance": "string",
+							"detailedReference": "string",
+							"inputFrom": "string",
+							"outputTo": "BAI10.01",
+							"questionAnswer": 0,
+							"questionScore": 0,
+							"questionComment": "comment"
+						},
+						{
+							"questionType": "Output",
+							"questionDescription": "Release log",
+							"relatedGuidance": "string",
+							"detailedReference": "string",
+							"inputFrom": "string",
+							"outputTo": "Internal",
+							"questionAnswer": 0,
+							"questionScore": 0,
+							"questionComment": "comment"
+						}
+					]
+				},
+				{
+					"subComponentCode": "BAI07.07",
+					"subComponentName": "Provide early production support.",
+					"subComponentDescription": "For an agreed period of time, provide early support to users and I&T operations to resolve issues and help stabilize the new solution.",
+					"subComponentQuestions": [
+						{
+							"questionType": "Input",
+							"questionDescription": "Results of quality of service, including customer feedback",
+							"relatedGuidance": "string",
+							"detailedReference": "string",
+							"inputFrom": "APO11.02",
+							"outputTo": "string",
+							"questionAnswer": 0,
+							"questionScore": 0,
+							"questionComment": "comment"
+						},
+						{
+							"questionType": "Input",
+							"questionDescription": "Success measures and results",
+							"relatedGuidance": "string",
+							"detailedReference": "string",
+							"inputFrom": "BAI05.05",
+							"outputTo": "string",
+							"questionAnswer": 0,
+							"questionScore": 0,
+							"questionComment": "comment"
+						},
+						{
+							"questionType": "Output",
+							"questionDescription": "Supplemental support plan",
+							"relatedGuidance": "string",
+							"detailedReference": "string",
+							"inputFrom": "string",
+							"outputTo": "APO08.04; APO08.05; DSS02.04",
+							"questionAnswer": 0,
+							"questionScore": 0,
+							"questionComment": "comment"
+						}
+					]
+				},
+				{
+					"subComponentCode": "BAI07.08",
+					"subComponentDescription": "Conduct a post-implementation review to confirm outcome and results, identify lessons learned, and develop an action plan. Evaluate actual performance and outcomes of the new or changed service against expected performance and outcomes anticipated by the user or customer.",
+					"subComponentName": "Perform a post-implementation review.",
+					"subComponentQuestions": [
+						{
+							"questionType": "Input",
+							"questionDescription": "• Results of solution and service delivery quality monitoring • Root causes of quality delivery failures",
+							"relatedGuidance": "string",
+							"detailedReference": "string",
+							"inputFrom": "APO11.03",
+							"outputTo": "string",
+							"questionAnswer": 0,
+							"questionScore": 0,
+							"questionComment": "comment"
+						},
+						{
+							"questionType": "Input",
+							"questionDescription": "Results of quality reviews and audits",
+							"relatedGuidance": "string",
+							"detailedReference": "string",
+							"inputFrom": "APO11.04",
+							"outputTo": "string",
+							"questionAnswer": 0,
+							"questionScore": 0,
+							"questionComment": "comment"
+						},
+						{
+							"questionType": "Input",
+							"questionDescription": "Success measures and results",
+							"relatedGuidance": "string",
+							"detailedReference": "string",
+							"inputFrom": "BAI05.05",
+							"outputTo": "string",
+							"questionAnswer": 0,
+							"questionScore": 0,
+							"questionComment": "comment"
+						},
+
+						{
+							"questionType": "Output",
+							"questionDescription": "Remedial action plan",
+							"relatedGuidance": "string",
+							"detailedReference": "string",
+							"inputFrom": "string",
+							"outputTo": "BAI01.09;BAI11.09",
+							"questionAnswer": 0,
+							"questionScore": 0,
+							"questionComment": "comment"
+						},
+
+						{
+							"questionType": "Output",
+							"questionDescription": "Post-implementation review report",
+							"relatedGuidance": "string",
+							"detailedReference": "string",
+							"inputFrom": "string",
+							"outputTo": "BAI01.09;BAI11.09",
+							"questionAnswer": 0,
+							"questionScore": 0,
+							"questionComment": "comment"
+						}
+					]
+				}
+			]
+		},
+		{
+			"componentName": "D",
+			"componentDescription": "Peoples, Skills and Competencies",
+			"componentPercFinal": 0,
+			"componentQuestions": [
+				{
+					"questionType": "Component question",
+					"questionSkill": "Business process testing",
+					"relatedGuidance": "Skills Framework for the Information Age V6, 2015 ",
+					"detailedReference": "BPTS",
+					"questionAnswer": 0,
+					"questionScore": 0,
+					"questionComment": "comment"
+				},
+				{
+					"questionType": "Component question",
+					"questionSkill": "Release and deployment",
+					"relatedGuidance": "Skills Framework for the Information Age V6, 2015 ",
+					"detailedReference": "RELM",
+					"questionAnswer": 0,
+					"questionScore": 0,
+					"questionComment": "comment"
+				},
+				{
+					"questionType": "Component question",
+					"questionSkill": "Service acceptance",
+					"relatedGuidance": "Skills Framework for the Information Age V6, 2015 ",
+					"detailedReference": "SEAC",
+					"questionAnswer": 0,
+					"questionScore": 0,
+					"questionComment": "comment"
+				},
+				{
+					"questionType": "Component question",
+					"questionSkill": "Testing",
+					"relatedGuidance": "Skills Framework for the Information Age V6, 2015 ",
+					"detailedReference": "TEST",
+					"questionAnswer": 0,
+					"questionScore": 0,
+					"questionComment": "comment"
+				},
+				{
+					"questionType": "Component question",
+					"questionSkill": "User experience evaluation",
+					"relatedGuidance": "Skills Framework for the Information Age V6, 2015 ",
+					"detailedReference": "USEV",
+					"questionAnswer": 0,
+					"questionScore": 0,
+					"questionComment": "comment"
+				}
 
 
-																					]
-																				},
-																				{
-																					"componentName": "F",
-																					"componentDescription": "Culture, Ethics and Behavior",
-																					"componentPercFinal": 0,
-																					"componentQuestions": [
-																						{
-																							"questionType": "Component question",
-																							"keyCultureElement": "Establish a culture that ensures timely communication of IT change requests to affected groups; consult the affected groups regarding implementation and testing of changes.",
-																							"relatedGuidance": "string",
-																							"detailedReference": "string",
-																							"questionAnswer": 0,
-																							"questionScore": 0,
-																							"questionComment": "comment"
-																						}
+			]
+		},
+		{
+			"componentName": "E",
+			"componentDescription": "Principles Policies and Procedures",
+			"componentPercFinal": 0,
+			"componentQuestions": [
+				{
+					"questionType": "Component question",
+					"relevantPolicy": "IT change management policy",
+					"policyDescription": "Communicates management intent that all changes to enterprise IT are managed and implemented so as to minimize risk and impact to stakeholders. Covers in-scope assets and standard change management process.",
+					"detailedGuidance": "string",
+					"detailedReference": "string",
+					"questionAnswer": 0,
+					"questionScore": 0,
+					"questionComment": "comment"
+				}
 
-																					]
-																				},
-																				{
-																					"componentName": "G",
-																					"componentDescription": "Services, Infrastructure and Applications",
-																					"componentPercFinal": 0,
-																					"componentQuestions": [
-																						{
-																							"questionType": "Component question",
-																							"questionDescription": "IT change management tools",
-																							"questionAnswer": 0,
-																							"questionScore": 0,
-																							"questionComment": "comment"
-																						},
-																						{
-																							"questionType": "Component question",
-																							"questionDescription": "Release management tools",
-																							"questionAnswer": 0,
-																							"questionScore": 0,
-																							"questionComment": "comment"
-																						},
-																						{
-																							"questionType": "Component question",
-																							"questionDescription": "Testing tools and services",
-																							"questionAnswer": 0,
-																							"questionScore": 0,
-																							"questionComment": "comment"
-																						}
-																					]
-																				}
-																			]
-																		}
+
+			]
+		},
+		{
+			"componentName": "F",
+			"componentDescription": "Culture, Ethics and Behavior",
+			"componentPercFinal": 0,
+			"componentQuestions": [
+				{
+					"questionType": "Component question",
+					"keyCultureElement": "Establish a culture that ensures timely communication of IT change requests to affected groups; consult the affected groups regarding implementation and testing of changes.",
+					"relatedGuidance": "string",
+					"detailedReference": "string",
+					"questionAnswer": 0,
+					"questionScore": 0,
+					"questionComment": "comment"
+				}
+
+			]
+		},
+		{
+			"componentName": "G",
+			"componentDescription": "Services, Infrastructure and Applications",
+			"componentPercFinal": 0,
+			"componentQuestions": [
+				{
+					"questionType": "Component question",
+					"questionDescription": "IT change management tools",
+					"questionAnswer": 0,
+					"questionScore": 0,
+					"questionComment": "comment"
+				},
+				{
+					"questionType": "Component question",
+					"questionDescription": "Release management tools",
+					"questionAnswer": 0,
+					"questionScore": 0,
+					"questionComment": "comment"
+				},
+				{
+					"questionType": "Component question",
+					"questionDescription": "Testing tools and services",
+					"questionAnswer": 0,
+					"questionScore": 0,
+					"questionComment": "comment"
+				}
+			]
+		}
+	]
+}
 																

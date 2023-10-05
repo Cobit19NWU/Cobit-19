@@ -164,7 +164,8 @@ namespace Cobit_19.Data
             //Seeding roles to AspNetRoles table
             builder.Entity<IdentityRole>().HasData(new IdentityRole { Id = "2c5e174e-3b0e-446f-86af-483d56fd7210", Name = "Administrator", NormalizedName = "ADMINISTRATOR".ToUpper() });
             builder.Entity<IdentityRole>().HasData(new IdentityRole { Id = "36c9f3b8-42e6-4ab1-a50d-e89986c5d1f7", Name = "Head Auditor", NormalizedName = "HEAD AUDITOR".ToUpper() });
-            builder.Entity<IdentityRole>().HasData(new IdentityRole { Id = "5e70cf29-1b64-4f58-85dd-07b3c46015a3", Name = "Auditor", NormalizedName = "AUDITOR".ToUpper() });
+            builder.Entity<IdentityRole>().HasData(new IdentityRole { Id = "5e70cf29-1b64-4f58-85dd-07b3c46015a3", Name = "Governance Auditor", NormalizedName = " GOVERNANCE AUDITOR".ToUpper() });
+            builder.Entity<IdentityRole>().HasData(new IdentityRole { Id = "e23abcf2-58f5-4c9b-9ef7-984a1d6a7c7a", Name = "Management Auditor", NormalizedName = "MANAGEMENT AUDITOR".ToUpper() });
             builder.Entity<IdentityRole>().HasData(new IdentityRole { Id = "d3ae1c6e-1c8a-43e7-9a2a-971fc7fbb295", Name = "Client", NormalizedName = "CLIENT".ToUpper() });
 
 
@@ -196,7 +197,7 @@ namespace Cobit_19.Data
                     EmailConfirmed = true,
                     PasswordHash = hasher.HashPassword(null, "RandomPa$$w0rd1"),
                 },
-                new ApplicationUser //AUDITOR USER
+                new ApplicationUser //GOVERNANCE AUDITOR USER
                 {
                     FirstName = "Alice",
                     LastName = "Johnson",
@@ -207,12 +208,23 @@ namespace Cobit_19.Data
                     EmailConfirmed = true,
                     PasswordHash = hasher.HashPassword(null, "RandomPa$$w0rd2"),
                 },
+                new ApplicationUser //MANAGEMENT AUDITOR USER
+                {
+                    FirstName = "Emma",
+                    LastName = "Davis",
+                    Email = "emma.davis@example.com",
+                    Id = "a1b2c3d4-e5f6-4a5b-9c8d-0e9f0a1b2c3d",
+                    UserName = "emma.davis@example.com",
+                    NormalizedUserName = "EMMA.DAVIS@EXAMPLE.COM",
+                    EmailConfirmed = true,
+                    PasswordHash = hasher.HashPassword(null, "StrongP@ssw0rd"),
+                },
                 new ApplicationUser //CLIENT USER
                 {
                     FirstName = "Michael",
                     LastName = "Brown",
                     Email = "michael.brown@example.com",
-                    Id = "b2c3d4e5-f6a7-1234-5678-0987654321dc", 
+                    Id = "b2c3d4e5-f6a7-1234-5678-0987654321dc",
                     UserName = "michael.brown@example.com",
                     NormalizedUserName = "MICHAEL.BROWN@EXAMPLE.COM",
                     EmailConfirmed = true,
@@ -223,22 +235,27 @@ namespace Cobit_19.Data
 
             //Seeding the relation between our user and role to AspNetUserRoles table
             builder.Entity<IdentityUserRole<string>>().HasData(
-                new IdentityUserRole<string>
+                new IdentityUserRole<string> //ADMIN
                 {
                     RoleId = "2c5e174e-3b0e-446f-86af-483d56fd7210",
                     UserId = "8e445865-a24d-4543-a6c6-9443d048cdb9"
                 },
-                new IdentityUserRole<string>
+                new IdentityUserRole<string> //HEAD AUDITOR
                 {
                     RoleId = "36c9f3b8-42e6-4ab1-a50d-e89986c5d1f7",
                     UserId = "fa567c12-5678-4321-bacd-87654321de1f"
                 },
-                new IdentityUserRole<string>
+                new IdentityUserRole<string> //GOVERNANCE AUDITOR
                 {
                     RoleId = "5e70cf29-1b64-4f58-85dd-07b3c46015a3",
                     UserId = "9b1a0f34-8765-4321-dcba-ba09876543c2"
                 },
-                new IdentityUserRole<string>
+                new IdentityUserRole<string> //MANAGEMENT AUDITOR
+                {
+                    RoleId = "e23abcf2-58f5-4c9b-9ef7-984a1d6a7c7a",
+                    UserId = "a1b2c3d4-e5f6-4a5b-9c8d-0e9f0a1b2c3d"
+                },
+                new IdentityUserRole<string> //CLIENT USER
                 {
                     RoleId = "d3ae1c6e-1c8a-43e7-9a2a-971fc7fbb295",
                     UserId = "b2c3d4e5-f6a7-1234-5678-0987654321dc"
@@ -249,7 +266,8 @@ namespace Cobit_19.Data
                 new SubscriptionModel { ApplicationUserID = "8e445865-a24d-4543-a6c6-9443d048cdb9", FocusAreaID = 1 },
                 new SubscriptionModel { ApplicationUserID = "fa567c12-5678-4321-bacd-87654321de1f", FocusAreaID = 1 },
                 new SubscriptionModel { ApplicationUserID = "9b1a0f34-8765-4321-dcba-ba09876543c2", FocusAreaID = 1 },
-                new SubscriptionModel { ApplicationUserID = "b2c3d4e5-f6a7-1234-5678-0987654321dc", FocusAreaID = 1 });
+                new SubscriptionModel { ApplicationUserID = "b2c3d4e5-f6a7-1234-5678-0987654321dc", FocusAreaID = 1 },
+                new SubscriptionModel { ApplicationUserID = "a1b2c3d4-e5f6-4a5b-9c8d-0e9f0a1b2c3d", FocusAreaID = 1 });
 
             builder.Entity<AuditMemberModel>().HasData(
                 new AuditMemberModel { ApplicationUserID = "8e445865-a24d-4543-a6c6-9443d048cdb9", AuditID = 1 },
@@ -259,7 +277,8 @@ namespace Cobit_19.Data
                 new AuditMemberModel { ApplicationUserID = "8e445865-a24d-4543-a6c6-9443d048cdb9", AuditID = 5 },
                 new AuditMemberModel { ApplicationUserID = "fa567c12-5678-4321-bacd-87654321de1f", AuditID = 1 },
                 new AuditMemberModel { ApplicationUserID = "9b1a0f34-8765-4321-dcba-ba09876543c2", AuditID = 1 },
-                new AuditMemberModel { ApplicationUserID = "b2c3d4e5-f6a7-1234-5678-0987654321dc", AuditID = 1 });
+                new AuditMemberModel { ApplicationUserID = "b2c3d4e5-f6a7-1234-5678-0987654321dc", AuditID = 1 },
+                new AuditMemberModel { ApplicationUserID = "a1b2c3d4-e5f6-4a5b-9c8d-0e9f0a1b2c3d", AuditID = 1 });
 
             builder.Entity<FocusAreaModel>().HasData(
                 new FocusAreaModel { ID = 1, Name = "Cobit Core Model", Description = "General Core Model", DateCreated = DateTime.Parse("Jan 1, 2009"), ApplicationUserID = "8e445865-a24d-4543-a6c6-9443d048cdb9" });
