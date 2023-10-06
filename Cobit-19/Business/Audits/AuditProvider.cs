@@ -129,6 +129,14 @@ namespace Cobit_19.Business.Audits
                 _dbContext.ObjectiveAudits.Add(objAudit);
             }
 
+            var auditMember = new AuditMemberModel
+            {
+                ApplicationUserID = audit.ApplicationUserID,
+                AuditID = audit.ID
+            };
+
+            _dbContext.AuditMembers.Add(auditMember);
+
             await _dbContext.SaveChangesAsync();
 
             return _mapper.Map<AuditDto>(audit);
