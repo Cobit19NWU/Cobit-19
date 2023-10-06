@@ -93,7 +93,7 @@ namespace Cobit_19.Business.Audits
             var audit = _mapper.Map<AuditModel>(auditEditorDto);
 
             await _dbContext.Audits.AddAsync(audit);
-
+            await _dbContext.SaveChangesAsync();
 
             // Create Answers
             var DesignFactors = await getDesignFactorsAsync(audit.ID);
@@ -111,7 +111,7 @@ namespace Cobit_19.Business.Audits
             }
 
             //Create ObjectiveAudits
-            /*var objectives = await getObjectivesAsync();
+            var objectives = await getObjectivesAsync();
             var objectiveTemplates = await _objectiveAuditProvider.getAllObjectiveTemplatesAsync();
             foreach (var objTemplate in objectiveTemplates)
             {
@@ -127,7 +127,7 @@ namespace Cobit_19.Business.Audits
                     UserAuditObject = objTemplate.AuditObject
                 };
                 _dbContext.ObjectiveAudits.Add(objAudit);
-            }*/
+            }
 
             await _dbContext.SaveChangesAsync();
 
