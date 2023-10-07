@@ -1,9 +1,11 @@
 ﻿using AutoMapper;
+using Cobit_19.Business.ObjectiveAudits;
 using Cobit_19.Data;
 using Cobit_19.Data.Models;
 using Cobit_19.Shared.Dtos;
 using Cobit_19.Shared.Enums;
 using Microsoft.EntityFrameworkCore;
+using Cobit_19.Business.Admin;
 
 namespace Cobit_19.Business.Audits
 {
@@ -12,10 +14,14 @@ namespace Cobit_19.Business.Audits
         private readonly IMapper _mapper;
         private readonly AppDbContext _dbContext;
         private static readonly object _lock = new object();
-        public AuditProvider(IMapper mapper, AppDbContext dbContext)
+        private readonly ObjectiveAuditProvider _objectiveAuditProvider;
+        private readonly UserManagementProvider _userManagementProvider;
+        public AuditProvider(IMapper mapper, AppDbContext dbContext, ObjectiveAuditProvider objectiveAuditProvider, UserManagementProvider userManagementProvider)
         {
             _dbContext = dbContext;
             _mapper = mapper;
+            _objectiveAuditProvider = objectiveAuditProvider;
+            _userManagementProvider = userManagementProvider;
         }
 
         // Get audit by id with focus area and design factors
@@ -90,6 +96,7 @@ namespace Cobit_19.Business.Audits
             var audit = _mapper.Map<AuditModel>(auditEditorDto);
 
             await _dbContext.Audits.AddAsync(audit);
+            await _dbContext.SaveChangesAsync();
 
             // Create Answers
             var DesignFactors = await getDesignFactorsAsync(audit.ID);
@@ -108,19 +115,37 @@ namespace Cobit_19.Business.Audits
 
             //Create ObjectiveAudits
             var objectives = await getObjectivesAsync();
-            foreach (var obj in objectives)
+            var objectiveTemplates = await _objectiveAuditProvider.getAllObjectiveTemplatesAsync();
+            foreach (var objTemplate in objectiveTemplates)
             {
+
                 var objAudit = new ObjectiveAuditModel
                 {
                     AuditID = audit.ID,
-                    ObjectiveID = obj.ID,
+                    ObjectiveID = objTemplate.ObjectiveID,
                     ApplicationUserID = audit.ApplicationUserID,
                     DateCreated = DateTime.Now,
                     Selected = false,
-                    Status = AuditStatus.NotStarted
+                    Status = AuditStatus.NotStarted,
+                    UserAuditObject = objTemplate.AuditObject
                 };
                 _dbContext.ObjectiveAudits.Add(objAudit);
             }
+
+            var adminUsers = await _userManagementProvider.GetAdminUsersAsync();
+
+            foreach (var adminUser in adminUsers)
+            {
+                var auditMember = new AuditMemberModel
+                {
+                    ApplicationUserID = adminUser.ID,
+                    AuditID = audit.ID
+                };
+
+                _dbContext.AuditMembers.Add(auditMember);
+            }
+
+
 
             await _dbContext.SaveChangesAsync();
 
@@ -216,6 +241,15 @@ namespace Cobit_19.Business.Audits
             var isUserInAudit = await checkQuery.AnyAsync();
 
             return isUserInAudit;
+        }
+
+        public async Task addAuditMember(AuditMemberDto auditMemberDto)
+        {
+            var auditMember = _mapper.Map<AuditMemberModel>(auditMemberDto);
+
+            _dbContext.AuditMembers.Add(auditMember);
+
+            await _dbContext.SaveChangesAsync();
         }
 
     }

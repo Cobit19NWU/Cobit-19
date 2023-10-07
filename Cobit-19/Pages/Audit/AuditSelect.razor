@@ -38,6 +38,11 @@
             }
         }
     }
+
+    private void OnManageAuditClick()
+    {
+        navigationManager.NavigateTo($"/ManageAudit?focusAreaID={focusAreaID}&userID={userID}");
+    }
 }
 
 <AuthorizeView>
@@ -81,4 +86,9 @@
             </div>
         </div>
     </div>
+    <AuthorizeView Roles="Administrator, Head Auditor, Client" Context="buttonCtx">
+        <div class="container">
+            <button class="btn btn-primary" @onclick='OnManageAuditClick'>Manage Audits</button>
+        </div>
+    </AuthorizeView>
 </AuthorizeView>

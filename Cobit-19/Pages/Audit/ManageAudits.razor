@@ -1,0 +1,104 @@
+﻿@page "/ManageAudit"
+@using Cobit_19.Shared.Dtos
+@using Cobit_19.Business.FocusAreas
+@using Cobit_19.Business.Audits
+@using Cobit_19.Business.Admin
+@using Cobit_19.Shared.Enums
+@inject FocusAreaProvider focusAreaProvider
+@inject AuditProvider auditProvider
+@inject UserManagementProvider userManagementProvider
+
+@code{
+    [Parameter]
+    [SupplyParameterFromQuery]
+    public int focusAreaID { get; set; }
+
+    [Parameter]
+    [SupplyParameterFromQuery]
+    public string userID { get; set; }
+
+    public IEnumerable<AuditDto> audits;
+    public string? newAuditName;
+    public int selectDeleteAuditID;
+    public int addUserAuditID;
+    public string? addUserID;
+    public AuditDto deletedAudit;
+    public IList<UserDto> allUsers;
+
+    protected override void OnInitialized()
+    {
+        audits = focusAreaProvider.GetAuditsForFocusAreaByUserID(userID, focusAreaID);
+        allUsers = userManagementProvider.GetAllUsers();
+    }
+
+    private async Task deleteAudit()
+    {
+        await auditProvider.deleteAsync(selectDeleteAuditID);
+    }
+
+    private async Task createAudit()
+    {
+        var newAudit = new AuditEditorDto
+            {
+                FocusAreaID = focusAreaID,
+                Name = newAuditName,
+                UserID = userID,
+                DateCreated = DateTime.Now,
+                DateCompleted = null,
+                Status = AuditStatus.NotStarted
+            };
+
+        await auditProvider.createAsync(newAudit);
+    }
+
+    private async Task addUsertoAudit()
+    {
+        var newAuditMember = new AuditMemberDto
+        {
+            ApplicationUserID = addUserID,
+            AuditID = addUserAuditID
+        };
+
+        await auditProvider.addAuditMember(newAuditMember);
+    }
+}
+
+<div class="row">
+    <div class="row">
+        <div class="col-sm border m-3">
+            <label for="newAuditName">Audit Name:</label><br />
+            <input type="text" id="newAuditName" @bind="newAuditName"/><br /><br />
+            <button class="btn btn-primary" @onclick="createAudit">Create New Audit</button>
+        </div>
+
+        <div class="col-sm border m-3">
+            <label for="selectAuditName">Select Audit:</label><br />
+            <select id="selectAuditName" @bind="addUserAuditID">
+                @foreach (var audit in audits)
+                {
+                    <option value="@audit.ID">@audit.Name</option>
+                }
+            </select><br /><br />
+
+            <label for="selectAuditUser">Audit User:</label><br />
+            <select id="selectAuditUser" @bind="addUserID">
+                @foreach (var user in allUsers)
+                {
+                    <option value="@user.ID">@user.UserName</option>
+                }
+            </select><br /><br />
+            <button class="btn btn-primary" @onclick="addUsertoAudit">Add User</button>
+        </div>
+
+        <div class="col-sm border m-3">
+            <label for="deleteAuditName">Select Audit:</label><br />
+            <select id="deleteAuditName" @bind="selectDeleteAuditID">
+                @foreach(var audit in audits)
+                {
+                    <option value="@audit.ID">@audit.Name</option>
+                }
+            </select><br /><br />
+            <button class="btn btn-primary" @onclick="deleteAudit">Delete Audit</button>
+        </div>
+    </div>
+</div>
