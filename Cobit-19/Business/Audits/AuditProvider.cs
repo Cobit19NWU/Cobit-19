@@ -5,6 +5,7 @@ using Cobit_19.Data.Models;
 using Cobit_19.Shared.Dtos;
 using Cobit_19.Shared.Enums;
 using Microsoft.EntityFrameworkCore;
+using Cobit_19.Business.Admin;
 
 namespace Cobit_19.Business.Audits
 {
@@ -14,11 +15,13 @@ namespace Cobit_19.Business.Audits
         private readonly AppDbContext _dbContext;
         private static readonly object _lock = new object();
         private readonly ObjectiveAuditProvider _objectiveAuditProvider;
-        public AuditProvider(IMapper mapper, AppDbContext dbContext, ObjectiveAuditProvider objectiveAuditProvider)
+        private readonly UserManagementProvider _userManagementProvider;
+        public AuditProvider(IMapper mapper, AppDbContext dbContext, ObjectiveAuditProvider objectiveAuditProvider, UserManagementProvider userManagementProvider)
         {
             _dbContext = dbContext;
             _mapper = mapper;
             _objectiveAuditProvider = objectiveAuditProvider;
+            _userManagementProvider = userManagementProvider;
         }
 
         // Get audit by id with focus area and design factors
@@ -129,13 +132,20 @@ namespace Cobit_19.Business.Audits
                 _dbContext.ObjectiveAudits.Add(objAudit);
             }
 
-            var auditMember = new AuditMemberModel
-            {
-                ApplicationUserID = audit.ApplicationUserID,
-                AuditID = audit.ID
-            };
+            var adminUsers = await _userManagementProvider.GetAdminUsersAsync();
 
-            _dbContext.AuditMembers.Add(auditMember);
+            foreach (var adminUser in adminUsers)
+            {
+                var auditMember = new AuditMemberModel
+                {
+                    ApplicationUserID = adminUser.ID,
+                    AuditID = audit.ID
+                };
+
+                _dbContext.AuditMembers.Add(auditMember);
+            }
+
+
 
             await _dbContext.SaveChangesAsync();
 
@@ -231,6 +241,15 @@ namespace Cobit_19.Business.Audits
             var isUserInAudit = await checkQuery.AnyAsync();
 
             return isUserInAudit;
+        }
+
+        public async Task addAuditMember(AuditMemberDto auditMemberDto)
+        {
+            var auditMember = _mapper.Map<AuditMemberModel>(auditMemberDto);
+
+            _dbContext.AuditMembers.Add(auditMember);
+
+            await _dbContext.SaveChangesAsync();
         }
 
     }

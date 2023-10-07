@@ -9,11 +9,13 @@ namespace Cobit_19.Business.Admin
     {
         private readonly IMapper _mapper;
         private readonly UserManager<ApplicationUser> _userManager;
+        private readonly RoleManager<IdentityRole> _roleManager; 
 
-        public UserManagementProvider(IMapper mapper, UserManager<ApplicationUser> userManager)
+        public UserManagementProvider(IMapper mapper, UserManager<ApplicationUser> userManager, RoleManager<IdentityRole> roleManager)
         {
             _mapper = mapper;
             _userManager = userManager;
+            _roleManager = roleManager;
         }
 
         public IList<UserDto> GetAllUsers()
@@ -22,6 +24,15 @@ namespace Cobit_19.Business.Admin
             var userDtos = _mapper.Map<IList<UserDto>>(users);
 
             return userDtos;
+        }
+
+        public async Task<IList<UserDto>> GetAdminUsersAsync()
+        {
+            var adminUsers = await _userManager.GetUsersInRoleAsync("Administrator");
+
+            var adminUserDtos = _mapper.Map<IList<UserDto>>(adminUsers);
+
+            return adminUserDtos;
         }
 
         public async Task<UserDto> GetUserByIdAsync(string id)
