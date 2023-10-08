@@ -64,15 +64,34 @@
 }
 
 <div class="row">
+
+    <div class="container-fluid ">
+        <div class="col">
+            <div class="panel panel-primary">
+
+                <div class="panel-heading p-2" style="color: white; background-color : purple"><b>
+                    Manage Audits
+                    </b>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="row">
-        <div class="col-sm border m-3">
-            <label for="newAuditName">Audit Name:</label><br />
+        <div class="col-sm border m-3"  >
+            <div class="panel-heading p-1" style="color: white; background-color : purple">
+                Create new audit
+            </div>
+            <label for="newAuditName"><b>Audit Name: </b></label><br>
             <input type="text" id="newAuditName" @bind="newAuditName"/><br /><br />
-            <button class="btn btn-primary" @onclick="createAudit">Create New Audit</button>
+            <button class="btn btn-primary"  @onclick="createAudit">Create New Audit</button>
         </div>
 
         <div class="col-sm border m-3">
-            <label for="selectAuditName">Select Audit:</label><br />
+            <div class="panel-heading p-1" style="color: white; background-color : purple">
+                Assign user to an audit
+            </div> 
+            <label for="selectAuditName"><b>Select Audit:</b></label><br />
             <select id="selectAuditName" @bind="addUserAuditID">
                 @foreach (var audit in audits)
                 {
@@ -80,7 +99,7 @@
                 }
             </select><br /><br />
 
-            <label for="selectAuditUser">Audit User:</label><br />
+            <label for="selectAuditUser"><b>Audit User:</b></label><br />
             <select id="selectAuditUser" @bind="addUserID">
                 @foreach (var user in allUsers)
                 {
@@ -91,14 +110,17 @@
         </div>
 
         <div class="col-sm border m-3">
-            <label for="deleteAuditName">Select Audit:</label><br />
+            <div class="panel-heading p-1" style="color: white; background-color : purple">
+                Delete an audit
+            </div>
+            <label for="deleteAuditName"><b>Select Audit:</b></label><br />
             <select id="deleteAuditName" @bind="selectDeleteAuditID">
                 @foreach(var audit in audits)
                 {
                     <option value="@audit.ID">@audit.Name</option>
                 }
             </select><br /><br />
-            <button class="btn btn-primary" @onclick="deleteAudit">Delete Audit</button>
+            <button class="btn btn-primary"  @onclick="deleteAudit">Delete Audit</button>
         </div>
     </div>
 </div>
