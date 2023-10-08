@@ -13,6 +13,7 @@
         public double maturityLevel3PercFinal { get; set; }
         public double maturityLevel4PercFinal { get; set; }
         public double maturityLevel5PercFinal { get; set; }
+        public string structuresImage { get; set; }
         public List<ComponentDto> components { get; set; }
     }
 }
