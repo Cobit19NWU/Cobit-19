@@ -20,6 +20,7 @@
     public List<SubComponentQuestionDto>? subCompQuestions;
     public SubComponentDto subComponent;
     public ComponentDto component;
+    public string structureImageLink;
     public List<SubComponentQuestionDto> MLevelQuestions;
     public List<SubComponentQuestionDto> relatedGuidanceQuestions;
     public List<SubComponentQuestionDto> inputQuestions;
@@ -44,6 +45,8 @@
             component = auditJSON.components[componentID];
             compQuestions = component.componentQuestions;
         }
+
+        structureImageLink = auditJSON.structuresImage;
     }
 
     private void updateComponent(ChangeEventArgs e, ComponentQuestionDto compQuestion = null, SubComponentQuestionDto subCompQuestion = null)
@@ -360,7 +363,7 @@
         </div>
 
         <div class="d-flex justify-content-center border mt-2">
-            <img src=@auditJSON.structuresImage alt="Structures image" width="700"/>
+            <img src="@structureImageLink" alt="Structures image" width="700"/>
         </div>
 
         <table class="table table-bordered mt-4">
