@@ -4,6 +4,8 @@
 @using Cobit_19.Shared.Dtos
 @inject ObjectiveAuditProvider objectiveAuditProvider
 @using Syncfusion.Blazor.CircularGauge
+@using Syncfusion.Blazor.ProgressBar
+@using Syncfusion.Blazor.LinearGauge
 
 @code {
     [Parameter]
@@ -11,9 +13,11 @@
     public int objectiveAuditId { get; set; }
     public FullObjectiveAuditDto auditObject;
     public string auditJSON;
+    public int maturityLevel;
     public List<ComponentDto> components;
     public List<string> gaugeLabels = new List<string> {"Enterprise Goals", "Alignment Goals", "Processes", "Structure", "Information",
                                                         "People", "Policies", "Culture", "Technology"};
+
 
     public int labelNum = 0;
 
@@ -22,6 +26,7 @@
         auditJSON = objectiveAuditProvider.getAuditJSON(objectiveAuditId);
         auditObject = AuditJSONParsingService.parseAuditTemplate(auditJSON);
         components = auditObject.components;
+        maturityLevel = auditObject.maturityLevel;
     }
 }
 
@@ -43,6 +48,24 @@
             <p class="text-white">@auditObject.objectivePurpose</p>
         </div>
     </div>
+
+    <div class="border mt-3">
+        <div class="mt-2">
+            <SfLinearGauge Title="Maturity Level" Orientation="Orientation.Horizontal" AllowMargin="false" Width="100%" Height="100%">
+                <LinearGaugeTitleStyle FontWeight="bold" Color="blue" Size="23px"></LinearGaugeTitleStyle>
+                <LinearGaugeMargin Left="0" Right="0" Top="0" Bottom="0"></LinearGaugeMargin>
+                <LinearGaugeAxes>
+                    <LinearGaugeAxis Minimum="0" Maximum="5">
+                        <LinearGaugeMajorTicks Interval="1" Color="Red"></LinearGaugeMajorTicks>
+                        <LinearGaugePointers>
+                            <LinearGaugePointer PointerValue="@maturityLevel" Type="Point.Bar" Color="red"></LinearGaugePointer>
+                        </LinearGaugePointers>
+                    </LinearGaugeAxis>
+                </LinearGaugeAxes>
+            </SfLinearGauge>
+        </div>
+    </div>
+
 
     <div class="border row mt-4">
         <div class="row">
