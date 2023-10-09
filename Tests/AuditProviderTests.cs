@@ -32,7 +32,7 @@ namespace Testing
             });
             _mapper = mapperConfig.CreateMapper();
             
-            _auditProvider = new AuditProvider(_mapper, _fixture.CreateContext());
+            
         }
 
         [Fact]
