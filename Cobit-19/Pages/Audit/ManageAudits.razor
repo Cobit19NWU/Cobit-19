@@ -1,4 +1,5 @@
 ﻿@page "/ManageAudit"
+@using Blazored.Toast.Configuration;
 @using Cobit_19.Shared.Dtos
 @using Cobit_19.Business.FocusAreas
 @using Cobit_19.Business.Audits
@@ -7,6 +8,9 @@
 @inject FocusAreaProvider focusAreaProvider
 @inject AuditProvider auditProvider
 @inject UserManagementProvider userManagementProvider
+@using Blazored.Toast
+@using Blazored.Toast.Services
+@inject IToastService toastService
 
 @code{
     [Parameter]
@@ -24,6 +28,7 @@
     public string? addUserID;
     public AuditDto deletedAudit;
     public IList<UserDto> allUsers;
+    public bool createAuditNotificationVisible = false;
 
     protected override void OnInitialized()
     {
@@ -34,6 +39,7 @@
     private async Task deleteAudit()
     {
         await auditProvider.deleteAsync(selectDeleteAuditID);
+        toastService.ShowSuccess("Audit Deleted");
     }
 
     private async Task createAudit()
@@ -49,6 +55,7 @@
             };
 
         await auditProvider.createAsync(newAudit);
+        toastService.ShowSuccess("Audit Created");
     }
 
     private async Task addUsertoAudit()
@@ -60,9 +67,14 @@
         };
 
         await auditProvider.addAuditMember(newAuditMember);
+        toastService.ShowSuccess("User added");
     }
 }
 
+<BlazoredToasts Position="ToastPosition.TopLeft"
+                Timeout="10"
+                IconType="IconType.Material"
+                 />
 <div class="row">
 
     <div class="container-fluid ">
