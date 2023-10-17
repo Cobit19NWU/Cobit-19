@@ -82,7 +82,7 @@
     private void CheckNavButtons()
     {
         // Check if there is a next design factor
-        var next = focusAreaProvider.GetNextDesignFactor(AuditId, DFId);
+        var next = focusAreaProvider.GetNextDesignFactor(1, DFId);
 
         if (next != null)
         {
@@ -94,7 +94,7 @@
         }
 
         // Check if there is a previous design factor
-        var prev = focusAreaProvider.GetPrevDesignFactor(AuditId, DFId);
+        var prev = focusAreaProvider.GetPrevDesignFactor(1, DFId);
 
         if (prev != null)
         {
