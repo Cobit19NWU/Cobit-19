@@ -12,6 +12,7 @@ using Syncfusion.Blazor;
 using Cobit_19.Business.Admin;
 using Cobit_19.Business.FocusAreas;
 using Cobit_19.Business.ObjectiveAudits;
+using Blazored.Toast;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -49,6 +50,7 @@ builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 builder.Services.AddSyncfusionBlazor();
+builder.Services.AddBlazoredToast();
 
 builder.Services.AddScoped<UserManagementProvider>();
 builder.Services.AddScoped<AuditProvider>();
