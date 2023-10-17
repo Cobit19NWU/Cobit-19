@@ -82,7 +82,7 @@
     private void CheckNavButtons()
     {
         // Check if there is a next design factor
-        var next = focusAreaProvider.GetNextDesignFactor(AuditId, DFId);
+        var next = focusAreaProvider.GetNextDesignFactor(1, DFId);
 
         if (next != null)
         {
@@ -94,7 +94,7 @@
         }
 
         // Check if there is a previous design factor
-        var prev = focusAreaProvider.GetPrevDesignFactor(AuditId, DFId);
+        var prev = focusAreaProvider.GetPrevDesignFactor(1, DFId);
 
         if (prev != null)
         {
@@ -270,6 +270,29 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+
+                    <div class="row mt-4 border-2 p-4">
+                        @if (_isPreviousButtonDFId != -1)
+                        {
+                            <div class="col">
+                                <button class="btn btn-primary" onclick="@(() => NavButtonPress(_isPreviousButtonDFId))">Back</button>
+                            </div>
+                        }
+                        <!--This is not implemented correctly. It should check how many pages exist and then populate the buttons this will only work for 10 DF-->
+                        @for (int i = 1; i <= 10; i++)
+                        {
+                            int x = i;
+                            <div class="col">
+                                <button class="btn btn-outline-light text-primary" onclick="@(() => NavButtonPress(x))">@i</button>
+                            </div>
+                        }
+                        @if (_isNextButtonDFId != -1)
+                        {
+                            <div class="col">
+                    <button class="btn btn-primary" onclick="@(() => NavButtonPress(_isNextButtonDFId))">Next</button>
+                            </div>
+                        }
                     </div>
                 }
             </div>

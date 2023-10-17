@@ -108,6 +108,9 @@ namespace Cobit_19.Business.Audits
                     {
                         AuditID = audit.ID,
                         QuestionID = question.ID,
+                        Answer = question.BaseAnswer,
+                        AnswerRange = question.AnswerRange,
+                        Odds = question.Odds,
                     };
                     _dbContext.Answers.Add(answer);
                 }

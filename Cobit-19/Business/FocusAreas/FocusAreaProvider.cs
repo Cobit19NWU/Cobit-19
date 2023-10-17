@@ -119,10 +119,10 @@ namespace Cobit_19.Business.FocusAreas
             return _mapper.Map<AuditDto>(audit);
         }
 
-        public DesignFactorDto GetNextDesignFactor(int focusAreaID, int designFactorID)
+        public DesignFactorDto GetNextDesignFactor(int FocusAreaID, int designFactorID)
         {
             var designFactors = _dbContext.FocusAreas
-                .Where(fa => fa.ID == focusAreaID)
+                .Where(fa => fa.ID == FocusAreaID)
                 .SelectMany(fa => fa.DesignFactors)
                 .OrderBy(df => df.ID)
                 .ToList();
@@ -146,10 +146,10 @@ namespace Cobit_19.Business.FocusAreas
             return _mapper.Map<DesignFactorDto>(value);
         }
 
-        public DesignFactorDto GetPrevDesignFactor(int focusAreaID, int designFactorID)
+        public DesignFactorDto GetPrevDesignFactor(int FocusAreaID, int designFactorID)
         {
             var designFactors = _dbContext.FocusAreas
-                .Where(fa => fa.ID == focusAreaID)
+                .Where(fa => fa.ID == FocusAreaID)
                 .SelectMany(fa => fa.DesignFactors)
                 .OrderBy(df => df.ID)
                 .ToList();
