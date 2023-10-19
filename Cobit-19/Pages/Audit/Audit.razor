@@ -83,6 +83,11 @@
     {
         navigationManager.NavigateTo("/ObjectiveAuditScope?AuditId=" + AuditId);
     }
+
+    private void generateReportsButtonsPress()
+    {
+        navigationManager.NavigateTo("/Reports");
+    }
 }
 
 @if (isUserInAudit)
@@ -213,7 +218,7 @@
                                         </div>
                                     </td>
                                     <td>
-                                        <button class="btn btn-primary btn-sm">
+                                        <button class="btn btn-primary btn-sm" @onclick="() => generateReportsButtonsPress()">
                                             <i class="fa-solid fa-chart-line"></i>
                                             View Reports
                                         </button>
