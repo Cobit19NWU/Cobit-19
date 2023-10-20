@@ -1,0 +1,52 @@
+﻿@page "/component"
+@using Cobit_19.Business.ObjectiveAudits
+@using Cobit_19.Shared.Dtos
+@inject NavigationManager navigationManager
+@inject ObjectiveAuditProvider objectiveAuditProvider
+
+
+
+@code {
+    [Parameter]
+    [SupplyParameterFromQuery]
+    public int objectiveAuditId { get; set; }
+
+    [Parameter]
+    [SupplyParameterFromQuery]
+    public int compId { get; set; }
+
+    public string jsonAuditString;
+    public FullObjectiveAuditDto auditJSON;
+    public List<SubComponentDto>? subComps;
+    public ComponentDto component;
+    public int subCompDefault = -1;
+
+    protected override void OnInitialized()
+    {
+        jsonAuditString = objectiveAuditProvider.getAuditJSON(objectiveAuditId);
+        auditJSON = AuditJSONParsingService.parseAuditTemplate(jsonAuditString);
+        component = objectiveAuditProvider.getComponent(auditJSON, compId);
+        subComps = objectiveAuditProvider.getSubComponents(component);
+    }
+}
+
+<div class="container">
+    <div class="border-bottom text-center mb-2">
+        <h6 class="text-secondary">Maturity Assesments for @auditJSON.objectiveName</h6>
+    </div>
+    <div>
+        <ComponentSelectBar objectiveAuditId="@objectiveAuditId" selectedPage="@component.componentDescription"/>
+    </div>
+
+    <div>
+        @if (subComps == null)
+        {
+            <QuestionTable auditJSON="@auditJSON" componentID="@compId" subComponentID="@subCompDefault" objectiveAuditId="@objectiveAuditId"/>
+        }
+        else
+        {
+            <SubComponentTable subComps="@subComps" compId="@compId" auditJSON="@auditJSON" objectiveAuditId="@objectiveAuditId"/>
+        }
+    </div>
+</div>
+

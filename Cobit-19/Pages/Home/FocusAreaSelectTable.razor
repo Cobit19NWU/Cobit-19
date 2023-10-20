@@ -1,0 +1,56 @@
+﻿@using Cobit_19.Business.FocusAreas;
+@using Cobit_19.Shared.Dtos;
+@inject FocusAreaProvider focusAreaProvider
+@inject NavigationManager navigationManager
+
+@code {
+    [Parameter]
+    public string userID { get; set; }
+    IEnumerable<FocusAreaDto> focusAreaList;
+
+    protected override void OnInitialized()
+    {
+        focusAreaList = focusAreaProvider.GetFocusAreasByUserID(userID);
+    }
+
+
+    private void FocusAreaSelectionClick(int focusAreaID)
+    {
+        navigationManager.NavigateTo($"/AuditSelect?focusAreaID={focusAreaID}");
+    }
+}
+
+@if (!string.IsNullOrEmpty(userID))
+{
+    <table class="table table-hover">
+        <thead>
+            <tr style="background-color: purple; color: white;">
+                <th>Activity</th>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Completion</th>
+                <th>Show Audits</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var focusArea in focusAreaList)
+            {
+                <tr>
+                    <td>@focusAreaProvider.GetFocusAreaActivityStatus(userID, focusArea.ID)</td>
+                    <td>@focusArea.Name</td>
+                    <td>@focusArea.Description</td>
+                    <td>
+                        <span class="badge bg-success">
+                            @focusAreaProvider.GetFocusAreaCompletionStatus(userID, focusArea.ID)
+                        </span>
+                    </td>
+                    <td>
+                        <button @onclick="(e) => FocusAreaSelectionClick(focusArea.ID)" type="button" class="btn btn-primary">
+                            Show Audits
+                        </button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}

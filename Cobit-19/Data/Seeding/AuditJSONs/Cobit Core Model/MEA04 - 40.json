@@ -1,0 +1,1252 @@
+{
+  "objectiveName": "MEA04",
+  "objectiveDescription": "Plan, scope and execute assurance initiatives to comply with internal requirements, laws, regulations and strategic objectives. Enable management to deliver adequate and sustainable assurance in the enterprise by performing independent assurance reviews and activities.",
+  "objectivePurpose": "Enable the organization to design and develop efficient and effective assurance initiatives, providing guidance on planning, scoping, executing and following up on assurance reviews, using a road map based on well-accepted assurance approaches.",
+  "typeOfObjective": "Governance",
+  "maturityLevel": 0,
+  "maturityLevel0PercFinal": 0,
+  "maturityLevel1PercFinal": 0,
+  "maturityLevel2PercFinal": 0,
+  "maturityLevel3PercFinal": 0,
+  "maturityLevel4PercFinal": 0,
+  "maturityLevel5PercFinal": 0,
+  "structuresImage": "https://i.imgur.com/OB31OJo.png",
+  "components": [
+    {
+      "componentCode": "EG",
+      "componentDescription": "Enterprise Goals",
+      "componentPercFinal": 0,
+      "subComponents": [
+        {
+          "subComponentCode": "EG03",
+          "subComponentName": "Compliance with external laws and regulations",
+          "subComponentQuestions": [
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Cost of regulatory noncompliance, including settlements and fines",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Number of regulatory noncompliance issues causing public comment or negative publicity",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Number of noncompliance matters noted by regulators",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Number of regulatory noncompliance issues relating to contractual agreements with business partners",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "EG11",
+          "subComponentName": "Compliance with internal policies",
+          "subComponentQuestions": [
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Number of incidents related to noncompliance to policy",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Percent of stakeholders who understand policies",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Percent of policies supported by effective standards and working practices",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+
+          ]
+        }
+      ]
+    },
+
+    {
+      "componentCode": "AG",
+      "componentDescription": "Alignment Goals",
+      "componentPercFinal": 0,
+      "subComponents": [
+
+        {
+          "subComponentCode": "AG11",
+          "subComponentName": "I&T compliance with internal policies",
+          "subComponentQuestions": [
+            {
+              "questionType": "Alignment goal",
+              "questionDescription": "Number of incidents related to noncompliance with I&Trelated policies",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Alignment goal",
+              "questionDescription": "Number of exceptions to internal policies",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Alignment goal",
+              "questionDescription": "Frequency of policy review and update",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        }
+
+      ]
+    },
+    {
+      "componentName": "A",
+      "componentDescription": "Processes",
+      "componentPercFinal": 0,
+      "subComponents": [
+        {
+          "subComponentCode": "MEA04.01",
+          "subComponentName": "Ensure that assurance providers are independent and qualified.",
+          "subComponentDescription": "Ensure that the entities performing assurance are independent from the function, groups or organizations in scope. The entities performing assurance should demonstrate an appropriate attitude and appearance, competence in the skills and knowledge necessary to perform assurance, and adherence to codes of ethics and professional standards.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Establish adherence to applicable codes of ethics and standards (e.g., Code of Professional Ethics of ISACA) and (industry and geography-specific) assurance standards (e.g., IT Audit and Assurance Standards of ISACA and the International Auditing and Assurance Standards Board’s [IAASB’s] International Framework for Assurance Engagements [IAASB Assurance Framework]).",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Establish independence of assurance providers.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Establish competency and qualification of assurance providers.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "string",
+              "relatedGuidance": "HITRUST CSF version 9, September 2017",
+              "detailedReference": "06.03 Information System Audit Considerations",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "MEA04.02",
+          "subComponentName": "Develop risk-based planning of assurance initiatives.",
+          "subComponentDescription": "Determine assurance objectives based on assessments of the internal and external environment and context, the risk of not achieving enterprise goals, and the opportunities associated achievement of the same goals.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Understand the enterprise strategy and priorities.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Understand the internal context of the enterprise. This understanding will help the assurance professional to better assess the enterprise goals and the relative importance of enterprise and alignment goals, as well as the most important threats to these goals. In turn, this will assist in defining a better and more relevant scope for the assurance engagement.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Understand the external context of the enterprise. This understanding will help the assurance professional to better understand the enterprise goals and the relative importance of enterprise and alignment goals, as well as the most important threats to these goals. In turn, this will assist in defining a better and more relevant scope for the assurance engagement.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Develop an overall yearly plan for assurance initiatives containing the consolidated assurance objectives",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "string",
+              "relatedGuidance": "King IV Report on Corporate Governance for South Africa, 2016",
+              "detailedReference": "Part 5.4: Governance functional areas—Principle 15",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "MEA04.03",
+          "subComponentName": "Determine the objectives of the assurance initiative.",
+          "subComponentDescription": "Define and agree with all stakeholders on the objectives of the assurance initiative.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Define the assurance objective of the assurance initiative by identifying the stakeholders of the assurance initiative and their interests.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Agree on the high-level objectives and the organizational boundaries of the assurance engagement.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Consider the use of the COBIT Goals Cascade and its different levels to express the assurance objective.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Ensure that the objectives of the assurance engagement consider all three value objective components: delivering benefits that support strategic objectives, optimizing the risk that strategic objectives are not achieved and optimizing resource levels required to achieve the strategic objectives.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "string",
+              "relatedGuidance": "CMMI Data Management Maturity Model, 2014",
+              "detailedReference": "Supporting Processes - Process Quality Assurance",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "MEA04.04",
+          "subComponentName": "Define the scope of the assurance initiative.",
+          "subComponentDescription": "Define and agree with all stakeholders on the scope of the assurance initiative, based on the assurance objectives.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Define all governance components in scope of the review, that is, the principles, policies and frameworks; processes; organizational structures; culture, ethics and behavior; information; services, infrastructure and applications; people, skills and competences",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Based on the scope definition, define an engagement plan, considering information to be collected and stakeholders to be interviewed.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Confirm and refine the scope based on an understanding of the enterprise architecture",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Refine the scope of the assurance engagement, based on available resources.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "string",
+              "relatedGuidance": "CMMI Cybermaturity Platform, 2018",
+              "detailedReference": "TP.LA Apply Logging and Audit Processes",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "MEA04.05",
+          "subComponentName": "Define the work program for the assurance initiative.",
+          "subComponentDescription": "Define a detailed work program for the assurance initiative, structured according to the management objectives and governance components in scope.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Define detailed steps for collecting and evaluating information from management controls within scope. Focus on assessing the definition and application of good practices, related to control design, and achievement of control objectives, related to control effectiveness.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Understand the context of the management objectives and the supporting management controls that are put in place. Understand how these management controls contribute to the achievement of the alignment goals and enterprise goals.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Understand all stakeholders and their interests.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Agree on the expected good practices for the management controls.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Should a management control be weak, define practices to identify residual risk (in preparation for reporting).",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Understand the life cycle stage of the management controls and agree on expected values.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "DSS04.06",
+          "subComponentName": "Execute the assurance initiative, focusing on design effectiveness.",
+          "subComponentDescription": "Execute the planned assurance initiative. Validate and confirm the design of the internal controls in place. Additionally, and specifically in internal audit assignments, consider the cost-effectiveness of the governance component design.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Refine the understanding of the IT assurance subject.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Refine the scope of the IT assurance subject.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Observe/inspect and review the management control approach. Validate the design with the control owner for completeness, relevancy, timeliness and measurability.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Ask the control owner whether the responsibilities for the governance component and overall accountability have been assigned. Confirm the response. Test whether accountability and responsibilities are understood and accepted. Verify that the right skills and the necessary resources are available.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Reconsider the balance of prevention vs. detection and correction types of management control activities.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Consider the effort spent in maintaining the management controls and the associated cost/effectiveness.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "string",
+              "relatedGuidance": "ISF, The Standard of Good Practice for Information Security 2016",
+              "detailedReference": "SI1 Security Audit",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "string",
+              "relatedGuidance": "ISO/IEC 27001:2013/Cor.2:2015(E)",
+              "detailedReference": "9.2 Internal audit",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "MEA04.07",
+          "subComponentName": "Execute the assurance initiative, focusing on operating effectiveness.",
+          "subComponentDescription": "Execute the planned assurance initiative. Test whether the internal controls in place are appropriate and sufficient. Test the outcome of the key management objectives in scope of the assurance initiative.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Assess whether the expected outcomes for each of the management controls in scope are achieved. That is, assess the effectiveness of the management control (control effectiveness).",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Ensure that the assurance professional tests the outcome or effectiveness of the management control by looking for direct and indirect evidence of the impact on the management controls goals. This implies the direct and indirect substantiation of measurable contribution of the management goals to the alignment goals, thereby recording direct and indirect evidence of actually achieving the expected outcomes.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Determine whether the assurance professional obtains direct or indirect evidence for selected items/periods by applying a selection of testing techniques to ensure that the management control under review is working effectively. Ensure that the assurance professional also performs a limited review of the adequacy of the management control results and determines the level of substantive testing and additional work needed to provide assurance that the management control performance is adequate",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Investigate whether a management control can be made more efficient and if its design can be more effective by optimizing steps or looking for synergies with other management controls.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "string",
+              "relatedGuidance": "ISF, The Standard of Good Practice for Information Security 2016",
+              "detailedReference": "SI1 Security Audit",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "string",
+              "relatedGuidance": "SO/IEC 27001:2013/Cor.2:2015(E)",
+              "detailedReference": "9.2 Internal audit",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "MEA04.08",
+          "subComponentName": "Report and follow up on the assurance initiative.",
+          "subComponentDescription": "Provide positive assurance opinions, where appropriate, and recommendations for improvement relating to identified operational performance, external compliance and internal control weaknesses.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Document the impact of control weaknesses.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Communicate with management during execution of the initiative so there is a clear understanding of the work performed and agreement on and acceptance of the preliminary findings and recommendations.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Provide management with a report (aligned with the terms of reference, scope and agreed reporting standards) that supports the results of the initiative and enables a clear focus on key issues and important actions.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": "Provide management with a report (aligned with the terms of reference, scope and agreed reporting standards) that supports the results of the initiative and enables a clear focus on key issues and important actions.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "MEA04.09",
+          "subComponentName": "Follow up on recommendations and actions.",
+          "subComponentDescription": "Agree on, follow up and implement the identified recommendations for improvement.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Agree on and implement internally, within the organization, the necessary actions that need to be taken to resolve identified weaknesses and gaps.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Follow up, within the organization, to determine whether corrective actions were taken and internal control weaknesses were resolved.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "componentName": "B",
+      "componentDescription": "Organizational Structures",
+      "componentPercFinal": 0,
+      "componentQuestions": [
+        {
+          "questionType": "MEA04.01",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "MEA04.02",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "MEA04.03",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "MEA04.04",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "MEA04.05",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "MEA04.06",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "MEA04.07",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "MEA04.08",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "MEA04.09",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        }
+      ]
+    },
+    {
+      "componentCode": "C",
+      "componentDescription": "Information Flows and Items",
+      "componentPercFinal": 0,
+      "subComponents": [
+        {
+          "subComponentCode": "MEA04.01",
+          "subComponentName": "Ensure that assurance providers are independent and qualified.",
+          "subComponentDescription": "Ensure that the entities performing assurance are independent from the function, groups or organizations in scope. The entities performing assurance should demonstrate an appropriate attitude and appearance, competence in the skills and knowledge necessary to perform assurance, and adherence to codes of ethics and professional standards.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Output",
+              "questionDescription": "Results of assurance provider evaluations",
+              "inputFrom": "Internal",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "MEA04.02",
+          "subComponentName": "Develop risk-based planning of assurance initiatives.",
+          "subComponentDescription": "Determine assurance objectives based on assessments of the internal and external environment and context, the risk of not achieving enterprise goals, and the opportunities associated achievement of the same goals.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Input",
+              "questionDescription": "Program audit plans",
+              "inputFrom": "BAI01.05",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Independent assurance plans",
+              "inputFrom": "DSS01.02",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Assurance plans",
+              "inputFrom": "string",
+              "outputTo": "All APO; All BAI; All DSS; All MEA; EDM01.03",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Assessment criteria",
+              "inputFrom": "string",
+              "outputTo": "internal",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "High-level assessments",
+              "inputFrom": "string",
+              "outputTo": "Internal",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "MEA04.03",
+          "subComponentName": "Determine the objectives of the assurance initiative.",
+          "subComponentDescription": "Define and agree with all stakeholders on the objectives of the assurance initiative.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Input",
+              "questionDescription": "Assurance plans",
+              "inputFrom": "MEA04.02",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Assurance objectives and expected benefits",
+              "inputFrom": "string",
+              "outputTo": "Internal",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "MEA04.04",
+          "subComponentName": "Define the scope of the assurance initiative.",
+          "subComponentDescription": "Define and agree with all stakeholders on the scope of the assurance initiative, based on the assurance objectives.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Input",
+              "questionDescription": "Root causes of failure to deliver quality",
+              "inputFrom": "APO11.03",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Risk-related root causes",
+              "inputFrom": "APO12.06",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Root cause analyses and recommendations",
+              "inputFrom": "DSS06.01",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Reports of noncompliance issues and root causes",
+              "inputFrom": "MEA03.04",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Assurance review practices",
+              "inputFrom": "string",
+              "outputTo": "Internal",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Engagement plan",
+              "inputFrom": "string",
+              "outputTo": "Internal",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Assurance review scope",
+              "inputFrom": "string",
+              "outputTo": "Internal",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "MEA04.05",
+          "subComponentName": "Define the work program for the assurance initiative.",
+          "subComponentDescription": "Define a detailed work program for the assurance initiative, structured according to the management objectives and governance components in scope.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Input",
+              "questionDescription": "Risk analysis and risk profile reports for stakeholders",
+              "inputFrom": "APO12.04",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Refined scope",
+              "inputFrom": "string",
+              "outputTo": "Internal",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Detailed assurance work program",
+
+              "inputFrom": "MEA04.06",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "MEA04.06",
+          "subComponentName": "Execute the assurance initiative, focusing on design effectiveness.",
+          "subComponentDescription": "Execute the planned assurance initiative. Validate and confirm the design of the internal controls in place. Additionally, and specifically in internal audit assignments, consider the cost-effectiveness of the governance component design.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Input",
+              "questionDescription": "Risk-related root causes",
+              "inputFrom": "APO12.06",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Root cause analyses and recommendations",
+              "inputFrom": "DSS06.01",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Detailed assurance work program",
+              "inputFrom": "MEA04.05",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Documented design of internal controls",
+              "inputFrom": "string",
+              "outputTo": "MEA04.07",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "MEA04.07",
+          "subComponentName": "Execute the assurance initiative, focusing on operating effectiveness.",
+          "subComponentDescription": "Execute the planned assurance initiative. Test whether the internal controls in place are appropriate and sufficient. Test the outcome of the key management objectives in scope of the assurance initiative.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Input",
+              "questionDescription": "Incident and service request log",
+              "inputFrom": "DSS02.02",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Incident resolutions",
+              "inputFrom": "DSS02.05",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Problem resolution monitoring reports",
+              "inputFrom": "DSS03.05",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Results of penetration tests",
+              "inputFrom": "DSS05.02",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Access logs",
+              "inputFrom": "DSS05.05",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Root cause analyses and recommendations",
+              "inputFrom": "DSS06.01",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Documented design of internal controls",
+              "inputFrom": "MEA04.06",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Control effectiveness testing",
+              "inputFrom": "string",
+              "outputTo": "MEA04.08; MEA04.09",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "MEA04.08",
+          "subComponentName": "Report and follow up on the assurance initiative.",
+          "subComponentDescription": "Provide positive assurance opinions, where appropriate, and recommendations for improvement relating to identified operational performance, external compliance and internal control weaknesses.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Input",
+              "questionDescription": "Identified compliance gaps",
+              "inputFrom": "MEA03.03",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Control effectiveness testing",
+              "inputFrom": "MEA04.07",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Assurance review report",
+              "inputFrom": "string",
+              "outputTo": "All APO; All BAI; All DSS;  All MEA; EDM05.03",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Assurance review results",
+              "inputFrom": "string",
+              "outputTo": "All APO; All BAI; All DSS;  All MEA; EDM05.03; MEA04.09",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "MEA04.09",
+          "subComponentName": "Follow up on recommendations and actions.",
+          "subComponentDescription": "Agree on, follow up and implement the identified recommendations for improvement.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Input",
+              "questionDescription": "Control effectiveness testing",
+              "inputFrom": "MEA04.07",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Assurance review results",
+              "inputFrom": "MEA04.08",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Remedial actions",
+              "inputFrom": "string",
+              "outputTo": "All APO; All BAI; All DSS;  All MEA",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "componentName": "D",
+      "componentDescription": "Peoples, Skills and Competencies",
+      "componentPercFinal": 0,
+      "componentQuestions": [
+        {
+          "questionType": "Component question",
+          "questionSkill": "A number of core principles, described by the Institute of Internal Auditors®, support the effectiveness and efficiency of the (internal) audit function. These principles include, among others, the importance of independence, effective communication skills, proactiveness, etc.",
+          "relatedGuidance": "Core Principles for the Professional Practice of Internal Auditing, The Institute of Internal Auditors",
+          "detailedReference": "cfr. IIA website—Standards & Guidance - Core Principles",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "Component question",
+          "questionSkill": "Risk management",
+          "relatedGuidance": "e-Competence Framework (e-CF)—A common European Framework for ICT Professionals in all industry sectors—Part 1: Framework, 2016",
+          "detailedReference": "E. Manage— E.3. Information Security Management",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        }
+      ]
+    },
+    {
+      "componentName": "E",
+      "componentDescription": "Principles Policies and Procedures",
+      "componentPercFinal": 0,
+      "componentQuestions": [
+        {
+          "questionType": "Component question",
+          "relevantPolicy": "Assurance guide",
+          "policyDescription": "Provides guidance on performing assurance activities. Enables efficient and effective development of I&T assurance initiatives, including planning, scoping and executing assurance reviews, based on well-accepted assurance approaches. Provides assurance steps to test the control design, test the outcome of the operational effectiveness of the control, and document control weaknesses and their impact.",
+          "detailedGuidance": "string",
+          "detailedReference": "string",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "Component question",
+          "relevantPolicy": "Internal audit charter",
+          "policyDescription": "Provides independence to undertake audit reviews and report findings and recommendations directly to top management. The internal audit function should be a separate entity reporting either to the chief executive officer or chief operating officer. With respect to I&T, the charter should stipulate that the function is responsible for reviewing both general and application controls to determine whether the controls have been designed in accordance with management direction, established standards and procedures, and known legal requirements, and whether the controls are operating effectively to provide reliability and security over the data being processed (i.e., confidentiality, integrity and availability). The charter should stipulate that the internal audit function is responsible for reviewing the design, development and implementation of new systems or major modifications of existing systems.",
+          "detailedGuidance": "string",
+          "detailedReference": "string",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        }
+      ]
+    },
+    {
+      "componentName": "F",
+      "componentDescription": "Culture, Ethics and Behavior",
+      "componentPercFinal": 0,
+      "componentQuestions": [
+        {
+          "questionType": "Component question",
+          "keyCultureElement": "reate a culture that embraces internal audit and assurance findings and recommendations, based on root cause analysis. Leaders must ensure that internal audit and assurance are involved in strategic initiatives and recognize the need for (and value of) audit and assurance reports.",
+          "relatedGuidance": "string",
+          "detailedReference": "string",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "Component question",
+          "keyCultureElement": "Ensure an ethical culture of internal auditing through an appropriate code of ethics.",
+          "relatedGuidance": "Code of Ethics, The Institute of Internal Auditors",
+          "detailedReference": "cfr. IIA website—Standards & Guidance—Code of Ethics",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        }
+      ]
+    },
+    {
+      "componentName": "G",
+      "componentDescription": "Services, Infrastructure and Applications",
+      "componentPercFinal": 0,
+      "componentQuestions": [
+        {
+          "questionType": "Component question",
+          "questionDescription": "• Assurance engagement tools, Event log auditing tools, Third-party assurance provisioning services",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        }
+      ]
+    }
+  ]
+}

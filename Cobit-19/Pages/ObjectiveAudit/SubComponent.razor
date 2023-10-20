@@ -1,0 +1,64 @@
+﻿@page "/subComp"
+@using Cobit_19.Business.ObjectiveAudits
+@using Cobit_19.Shared.Dtos
+@inject ObjectiveAuditProvider auditProvider
+
+@code {
+    public string currentDirectory;
+    public string filePath;
+    public string fileContents;
+    public FullObjectiveAuditDto audit;
+    protected override void OnInitialized()
+    {
+        currentDirectory = Directory.GetCurrentDirectory();
+        filePath = Path.Combine(currentDirectory, "Data", "Seeding", "AuditJSONs", "EDM01.json");
+
+        try
+        {
+            fileContents = File.ReadAllText(filePath);
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine("lmao:" + ex.Message);
+        }
+
+        audit = AuditJSONParsingService.parseAuditTemplate(fileContents);
+    }
+}
+
+<div class="container">
+    <div>
+        <ComponentSelectBar />
+    </div>
+    <div>
+    <table class=" table table-secondary">
+        <thead>
+            <tr>
+                <th>@audit.components[0].subComponents[0].subComponentCode - @audit.components[0].subComponents[0].subComponentName</th>
+                <th>Achievement</th>
+                <th>Total:</th>
+            </tr>
+        </thead>
+    </table>
+
+    @if (auditProvider.GetSubComponentMLevelQuestions(audit.components[0].subComponents[0]) != null)
+    {
+        <MaturityLevelTable MLevelQuestions="@auditProvider.GetSubComponentMLevelQuestions(audit.components[0].subComponents[0])" />
+    }
+
+    @if (auditProvider.GetSubComponentRelatedGuidanceQuestions(audit.components[0].subComponents[0]) != null)
+    {
+        <RelatedGuidanceTable RelatedGuidanceQuestions="@auditProvider.GetSubComponentRelatedGuidanceQuestions(audit.components[0].subComponents[0])" />
+    }
+
+    @if (auditProvider.GetSubComponentInputQuestions(audit.components[0].subComponents[0]) != null)
+    {
+        <InputTable inputQuestions="@auditProvider.GetSubComponentInputQuestions(audit.components[0].subComponents[0])" />
+    }
+
+    @if (auditProvider.GetSubComponentOutputQuestions(audit.components[0].subComponents[0]) !=  null)
+    {
+        <OutputTable outputQuestions="@auditProvider.GetSubComponentOutputQuestions(audit.components[0].subComponents[0])" />
+    }
+    </div>
+</div>

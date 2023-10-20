@@ -1,0 +1,1174 @@
+{
+  "objectiveName": "BAI05",
+  "objectiveDescription": "Maximize the likelihood of successfully implementing sustainable enterprisewide organizational change quickly and with reduced risk. Cover the complete life cycle of the change and all affected stakeholders in the business and IT.",
+  "objectivePurpose": "Prepare and commit stakeholders for business change and reduce the risk of failure.",
+  "typeOfObjective": "Management",
+  "maturityLevel": 0,
+  "maturityLevel0PercFinal": 0,
+  "maturityLevel1PercFinal": 0,
+  "maturityLevel2PercFinal": 0,
+  "maturityLevel3PercFinal": 0,
+  "maturityLevel4PercFinal": 0,
+  "maturityLevel5PercFinal": 0,
+  "structuresImage": "https://i.imgur.com/mBoIolH.png",
+  "components": [
+    {
+      "componentCode": "EG",
+      "componentDescription": "Enterprise Goals",
+      "componentPercFinal": 0,
+      "subComponents": [
+        {
+          "subComponentCode": "EG01",
+          "subComponentName": "Portfolio of competitive products and services",
+          "subComponentQuestions": [
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Percent of products and services that meet or exceed targets in revenues and/or market share",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Percent of products and services that meet or exceed customer satisfaction targets",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Percent of products and services that provide competitive advantage",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Time to market for new products and services",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "EG05",
+          "subComponentName": "Customer-oriented service culture",
+          "subComponentQuestions": [
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Number of customer service disruptions",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Percent of business stakeholders satisfied that customer service delivery meets agreed levels",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Number of customer complaints",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Trend of customer satisfaction survey results",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+
+          ]
+        },
+
+        {
+          "subComponentCode": "EG08",
+          "subComponentName": "Optimization of internal business process functionality",
+          "subComponentQuestions": [
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Satisfaction levels of board and executive management with business process capabilities",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Satisfaction levels of customers with service delivery capabilities",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Satisfaction levels of suppliers with supply chain capabilities",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "EG12",
+          "subComponentName": "Managed digital transformation programs",
+          "subComponentQuestions": [
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Number of programs on time and within budget",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Percent of stakeholders satisfied with program delivery",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Percent of business transformation programs stopped",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Percent of business transformation programs with regular reported status updates",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+
+          ]
+        }
+
+      ]
+    },
+
+    {
+      "componentCode": "AG",
+      "componentDescription": "Alignment Goals",
+      "componentPercFinal": 0,
+      "subComponents": [
+        {
+          "subComponentCode": "AG03",
+          "subComponentName": "Realized benefits from I&T-enabled investments and services portfolio",
+          "subComponentQuestions": [
+            {
+              "questionType": "Alignment goal",
+              "questionDescription": "Percent of I&T-enabled investments for which claimed benefits in the business case are met or exceeded",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Alignment goal",
+              "questionDescription": "Percent of I&T services for which expected benefits (as stated in service level agreements) are realized",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+
+        {
+          "subComponentCode": "AG08",
+          "subComponentName": "Enabling and supporting business processes by integrating applications and technology",
+          "subComponentQuestions": [
+            {
+              "questionType": "Alignment goal",
+              "questionDescription": "Time to execute business services or processes",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Alignment goal",
+              "questionDescription": "Number of I&T-enabled business programs delayed or incurring additional cost due to technology-integration issues",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Alignment goal",
+              "questionDescription": "Number of business process changes that need to be delayed or reworked because of technology-integration issues",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Alignment goal",
+              "questionDescription": "Number of applications or critical infrastructures operating in silos and not integrated",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "AG09",
+          "subComponentName": "Delivering programs on time, on budget and meeting requirements and quality standards",
+          "subComponentQuestions": [
+            {
+              "questionType": "Alignment goal",
+              "questionDescription": "Number of programs/projects on time and within budget",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Alignment goal",
+              "questionDescription": "Number of programs needing significant rework due to quality defects",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Alignment goal",
+              "questionDescription": "Percent of stakeholders satisfied with program/project quality",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "componentName": "A",
+      "componentDescription": "Processes",
+      "componentPercFinal": 0,
+      "subComponents": [
+
+        {
+          "subComponentCode": "BAI05.01 ",
+          "subComponentName": "Establish the desire to change",
+          "subComponentDescription": "Understand the scope and impact of the desired change. Assess stakeholder readiness and willingness to change. Identify actions that will motivate stakeholder acceptance and participation to make the change work successfully.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": " Assess the scope and impact of the envisioned change, the various stakeholders who are affected, the nature of the impact on and involvement required from each stakeholder group, and the current readiness and ability to adopt the change.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "To establish the desire to change, identify, leverage and communicate current pain points, negative events, risk, customer dissatisfaction and business problems, as well as initial benefits, future opportunities and rewards, and competitive advantages.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Issue key communications from the executive committee or CEO to demonstrate commitment to the change.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Provide visible leadership from senior management to establish direction and to align, motivate and inspire stakeholders to desire the change.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "string",
+              "relatedGuidance": "PROSCI® 3-Phase Change Management Process",
+              "detailedReference": "Phase 1. Preparing for change—Define your change management strategy",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "BAI05.02",
+          "subComponentName": "Form an effective implementation team.",
+          "subComponentDescription": "Establish an effective implementation team by assembling appropriate members, creating trust, and establishing common goals and effectiveness measures.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Identify and assemble an effective core implementation team that includes appropriate members from business and IT with the capacity to spend the required amount of time and contribute knowledge and expertise, experience, credibility, and authority. Consider including external parties such as consultants to provide an independent view or to address skill gaps. Identify potential change agents within different parts of the enterprise with whom the core team can work to support the vision and cascade changes.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Create trust within the core implementation team through carefully planned events with effective communication and joint activities.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Develop a common vision and goals that support the enterprise objectives.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "string",
+              "relatedGuidance": "PROSCI® 3-Phase Change Management Process",
+              "detailedReference": "Phase 1. Preparing for change—Prepare your change management team",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "BAI05.03",
+          "subComponentName": "Communicate desired vision.",
+          "subComponentDescription": "Communicate the desired vision for the change in the language of those affected by it. The communication should be made by senior management and include the rationale for, and benefits of, the change; the impacts of not making the change; and the vision, the road map and the involvement required of the various stakeholders.",
+          "subComponentQuestions": [
+
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Develop a vision communication plan to address the core audience groups, their behavioral profiles and information requirements, communication channels, and principles.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Deliver the communication at appropriate levels of the enterprise, in accordance with the plan.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Reinforce the communication through multiple forums and repetition.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Make all levels of leadership accountable for demonstrating the vision.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": "Check understanding of the desired vision and respond to any issues highlighted by staff.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+
+        {
+          "subComponentCode": "BAI05.04",
+          "subComponentName": "Empower role players and identify short-term wins.",
+          "subComponentDescription": "Empower those with implementation roles by assigning accountability. Provide training and align organizational structures and HR processes. Identify and communicate short-term wins that are important from a change-enablement perspective.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Plan the training opportunities staff will need to develop the appropriate skills and attitudes to feel empowered.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Identify, prioritize and deliver opportunities for quick wins. These could be related to current known areas of difficulty or external factors that need to be addressed urgently.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Leverage delivered quick wins by communicating the benefits to those impacted to show the vision is on track. Fine-tune the vision, keep leaders on board and build momentum.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Identify organizational structures compatible with the vision; if required, make changes to ensure alignment.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Align HR processes and measurement systems (e.g., performance evaluation, compensation decisions, promotion decisions, recruiting and hiring) to support the vision.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Identify and manage leaders who continue to resist needed change.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+
+
+        {
+          "subComponentCode": "BAI05.05",
+          "subComponentName": "Enable operation and use.",
+          "subComponentDescription": "Plan and implement all technical, operational and usage aspects so all those who are involved in the future state environment can exercise their responsibility.",
+          "subComponentQuestions": [
+
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": " Develop a plan for operation and use of the change. The plan should communicate and build on realized quick wins, address behavioral and cultural aspects of the broader transition, and increase buy-in and engagement. Ensure that the plan covers a holistic view of the change and provides documentation (e.g., procedures), mentoring, training, coaching, knowledge transfer, enhanced immediate post-go-live support and ongoing support.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": "Implement the operation and use plan. Define and track success measures, including hard business measures and perception measures that indicate how people feel about a change. Take remedial action as necessary.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "string",
+              "relatedGuidance": "PROSCI® 3-Phase Change Management Process",
+              "detailedReference": "Phase 3. Reinforcing change",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+
+        {
+          "subComponentCode": "BAI05.06",
+          "subComponentName": "Embed new approaches.",
+          "subComponentDescription": "Embed new approaches by tracking implemented changes, assessing the effectiveness of the operation and use plan, and sustaining ongoing awareness through regular communication. Take corrective measures as appropriate (which may include enforcing compliance).",
+          "subComponentQuestions": [
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Make process owners accountable for normal day-to-day operations.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Celebrate successes and implement reward and recognition programs to reinforce the change.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Provide ongoing awareness through regular communication of the change and its adoption.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": "Use performance measurement systems to identify root causes for low adoption. Take corrective action.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": "Conduct compliance audits to identify root causes for low adoption. Recommend corrective action.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "string",
+              "relatedGuidance": "PROSCI® 3-Phase Change Management Process",
+              "detailedReference": "Phase 3. Reinforcing change",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+
+
+        {
+          "subComponentCode": "BAI05.07",
+          "subComponentDescription": "Sustain changes through effective training of new staff, ongoing communication campaigns, continued commitment of top management, monitoring of adoption and sharing of lessons learned across the enterprise.",
+          "subComponentName": "Sustain changes",
+          "subComponentQuestions": [
+
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Sustain and reinforce the change through regular communication that demonstrates top management commitment.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Provide mentoring, training, coaching and knowledge transfer to new staff to sustain the change.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": "Perform periodic reviews of the operation and use of the change. Identify improvements.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 5",
+              "questionDescription": "Capture lessons learned relating to implementation of the change. Share knowledge across the enterprise.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "string",
+              "relatedGuidance": "PROSCI® 3-Phase Change Management Process",
+              "detailedReference": "Phase 3. Reinforcing change",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "componentName": "B",
+      "componentDescription": "Organizational Structures",
+      "componentPercFinal": 0,
+      "componentQuestions": [
+        {
+          "questionType": "BAI05.01",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "BAI05.02",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "BAI05.03",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "BAI05.04",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "BAI05.05",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "BAI05.06",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "BAI05.07",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        }
+      ]
+    },
+
+    {
+      "componentCode": "C",
+      "componentDescription": "Information Flows and Items",
+      "componentPercFinal": 0,
+      "subComponents": [
+        {
+          "subComponentCode": "BAI05.01 ",
+          "subComponentName": "Establish the desire to change",
+          "subComponentDescription": "Understand the scope and impact of the desired change. Assess stakeholder readiness and willingness to change. Identify actions that will motivate stakeholder acceptance and participation to make the change work successfully.",
+          "subComponentQuestions": [
+
+
+            {
+              "questionType": "Input",
+              "questionDescription": "Results of quality of service, including customer feedback",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "APO11.02",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "• Requirements definition repository • Confirmed acceptance criteria from stakeholders",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "BAI02.01",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "• Requirements risk register • Risk mitigation actions",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "BAI02.03",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Approved high-level design specification",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "BAI03.01",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Approved detailed design specification",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "BAI03.02",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Communications from executive management committing to change",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "Internal",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Communications of drivers for change",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "Internal",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "BAI05.02",
+          "subComponentName": "Form an effective implementation team.",
+          "subComponentDescription": "Establish an effective implementation team by assembling appropriate members, creating trust, and establishing common goals and effectiveness measures.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Input",
+              "questionDescription": "Confirmed acceptance criteria from stakeholders",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "BAI02.01",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+
+            {
+              "questionType": "Output",
+              "questionDescription": "Common vision and goals",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "BAI01.02",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "BAI05.03",
+          "subComponentName": "Communicate desired vision.",
+          "subComponentDescription": "Communicate the desired vision for the change in the language of those affected by it. The communication should be made by senior management and include the rationale for, and benefits of, the change; the impacts of not making the change; and the vision, the road map and the involvement required of the various stakeholders.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Output",
+              "questionDescription": "Vision communications plan",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "BAI01.04",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Vision communications",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "BAI01.05",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "BAI05.04",
+          "subComponentName": "Empower role players and identify short-term wins.",
+          "subComponentDescription": "Empower those with implementation roles by assigning accountability. Provide training and align organizational structures and HR processes. Identify and communicate short-term wins that are important from a change-enablement perspective.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Input",
+              "questionDescription": "Enterprise organizational structure",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "Outside COBIT",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Aligned HR performance objectives",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "APO07.04",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+
+            {
+              "questionType": "Output",
+              "questionDescription": "Identified quick wins",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "BAI01.04",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Communication of benefits",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "BAI01.06",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "BAI05.05",
+          "subComponentName": "Enable operation and use.",
+          "subComponentDescription": "Plan and implement all technical, operational and usage aspects so all those who are involved in the future state environment can exercise their responsibility.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Input",
+              "questionDescription": "Documented solution components",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "BAI03.03",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Updated solution components and related documentation",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "BAI03.10",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Operation and use plan",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "APO08.04; BAI08.03; DSS01.01; DSS01.02; DSS06.02",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Success measures and results",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "APO08.05; BAI07.07; BAI07.08; MEA01.03",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "BAI05.06",
+          "subComponentName": "Embed new approaches.",
+          "subComponentDescription": "Embed new approaches by tracking implemented changes, assessing the effectiveness of the operation and use plan, and sustaining ongoing awareness through regular communication. Take corrective measures as appropriate (which may include enforcing compliance).",
+          "subComponentQuestions": [
+            {
+              "questionType": "Output",
+              "questionDescription": "Compliance audit results",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "MEA02.02; MEA03.03",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Awareness communications",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "Internal",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "HR performance review results",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "APO07.04",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "BAI05.07",
+          "subComponentDescription": "Sustain changes through effective training of new staff, ongoing communication campaigns, continued commitment of top management, monitoring of adoption and sharing of lessons learned across the enterprise.",
+          "subComponentName": "Sustain changes",
+          "subComponentQuestions": [
+            {
+              "questionType": "Output",
+              "questionDescription": "Knowledge transfer plans",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "BAI08.02; BAI08.03",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Communications of management’s commitment",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "Internal",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Reviews of operational use",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "MEA02.02",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        }
+      ]
+    },
+
+
+    {
+      "componentName": "D",
+      "componentDescription": "Peoples, Skills and Competencies",
+      "componentPercFinal": 0,
+      "componentQuestions": [
+        {
+          "questionType": "Component question",
+          "questionSkill": "Business Change Management",
+          "relatedGuidance": "e-Competence Framework (e-CF)—A common European Framework for ICT Professionals in all industry sectors—Part 1: Framework, 2016 ",
+          "detailedReference": "E. Manage—E.7. Business Change Management",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "Component question",
+          "questionSkill": "Change implementation planning and management",
+          "relatedGuidance": "Skills Framework for the Information Age V6, 2015 ",
+          "detailedReference": "CIPM",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "Component question",
+          "questionSkill": "Organization design and implementation",
+          "relatedGuidance": "Skills Framework for the Information Age V6, 2015 ",
+          "detailedReference": "ORDI",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        }
+
+
+      ]
+    },
+    {
+      "componentName": "E",
+      "componentDescription": "Principles Policies and Procedures",
+      "componentPercFinal": 0,
+      "componentQuestions": [
+        {
+          "questionType": "Component question",
+          "relevantPolicy": "Organizational change management policy",
+          "policyDescription": "Provides framework and outlines principles for managing organizational change. Reflects current legislation and provides good people-management practices; ensures consistent approach to managing change across the organization.",
+          "detailedGuidance": "string",
+          "detailedReference": "string",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        }
+
+
+      ]
+    },
+    {
+      "componentName": "F",
+      "componentDescription": "Culture, Ethics and Behavior",
+      "componentPercFinal": 0,
+      "componentQuestions": [
+        {
+          "questionType": "Component question",
+          "keyCultureElement": "Realizing value from I&T-enabled investments requires more than delivering I&T solutions and services. It also requires changes to business processes, skills and competencies, culture and behavior, etc., all of which must be included in the business case for the investment. Leadership must create a culture of continuous change through flexibility, openness and confidence and establish appropriate change management support and communication.",
+          "relatedGuidance": "string",
+          "detailedReference": "string",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        }
+
+      ]
+    },
+    {
+      "componentName": "G",
+      "componentDescription": "Services, Infrastructure and Applications",
+      "componentPercFinal": 0,
+      "componentQuestions": [
+        {
+          "questionType": "Component question",
+          "questionDescription": "Communication tools and channels",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "Component question",
+          "questionDescription": "Surveying tools",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        }
+      ]
+    }
+  ]
+}
+                                             

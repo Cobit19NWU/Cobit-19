@@ -1,0 +1,94 @@
+﻿@page "/AuditSelect"
+@using Cobit_19.Data.Models;
+@using Microsoft.AspNetCore.Identity;
+@using Microsoft.AspNetCore.WebUtilities;
+@inject NavigationManager navigationManager
+@inject AuthenticationStateProvider authStateProvider
+@inject UserManager<ApplicationUser> _userManager
+
+@code {
+    [Parameter]
+    [SupplyParameterFromQuery]
+    public int focusAreaID { get; set; }
+    public string userID;
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            var uri = new Uri(navigationManager.Uri);
+            var authState = await authStateProvider.GetAuthenticationStateAsync();
+            var user = authState.User;
+
+            if (QueryHelpers.ParseQuery(uri.Query).TryGetValue("focusAreaID", out var focusAreaIDValue))
+            {
+                if (int.TryParse(focusAreaIDValue, out var parsedFocusAreaID))
+                {
+                    focusAreaID = parsedFocusAreaID;
+                }
+
+            }
+
+            if (user.Identity.IsAuthenticated)
+            {
+                var currentUser = await _userManager.GetUserAsync(user);
+                userID = currentUser.Id;
+
+                StateHasChanged();
+            }
+        }
+    }
+
+    private void OnManageAuditClick()
+    {
+        navigationManager.NavigateTo($"/ManageAudit?focusAreaID={focusAreaID}&userID={userID}");
+    }
+}
+
+<AuthorizeView>
+    <div class="container">
+        <div class="row">
+            <div class="col-9">
+                <div class="container border">
+                    <div>
+                        <AuditSelectTable userID="@userID" focusAreaID="@focusAreaID" />
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <InfoPannel Header="Info - Audit Selection">
+                    <Body>
+                        <div>
+                            <p>All the audits that form part of the selected Focus Area Assigned to you is displayed here:</p>
+                            <table class="table table-stripped small m-t-md">
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <i class="fa fa-circle fa-2xs"></i>
+                                        </td>
+                                        <td>
+                                            <strong>Select</strong> the audits that you would like to complete.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <i class="fa fa-circle fa-2xs"></i>
+                                        </td>
+                                        <td>
+                                            The persons selected here are only responsible for the audit of the objectives selected in the previous step.
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </Body>
+                </InfoPannel>
+            </div>
+        </div>
+    </div>
+    <AuthorizeView Roles="Administrator, Head Auditor, Client" Context="buttonCtx">
+        <div class="container">
+            <button class="btn btn-primary" @onclick='OnManageAuditClick'>Manage Audits</button>
+        </div>
+    </AuthorizeView>
+</AuthorizeView>

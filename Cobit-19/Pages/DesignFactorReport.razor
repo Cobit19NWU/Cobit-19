@@ -1,0 +1,117 @@
+﻿@page "/DesignFactorReport"
+@using Cobit_19.Business.Audits;
+@using Cobit_19.Shared.Dtos;
+@using Syncfusion.Blazor.Charts
+
+@inject AuditProvider auditProvider
+
+@code {
+    protected SfChart? sfChart;
+    protected List<ObjectiveValueDto>? _objectiveValueDtos;
+    protected List<ChartSeries> _seriesCollection = new List<ChartSeries>();
+
+    [Parameter]
+    [SupplyParameterFromQuery]
+    public int AuditId { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        if (_objectiveValueDtos == null)
+        {   var designFactors = new List<DesignFactorDto>();
+
+            // This is a temporary solution to get the design factors
+            var dfSummary = await auditProvider.getDesignFactorsAsync(AuditId);
+
+            foreach (var df in dfSummary)
+            {
+                designFactors.Add(await auditProvider.getDesignFactorFullAsync(AuditId, df.ID));
+            }
+
+            var _objectiveDtos = await auditProvider.getObjectivesAsync();
+
+            _objectiveValueDtos = MappingService.CalculateSummary(designFactors, _objectiveDtos);
+            changeChartType(ChartSeriesType.Column);
+        }
+    }
+
+    private void changeChartType(ChartSeriesType chartSeriesType)
+    {
+        if (_seriesCollection is not null)
+        {
+            _seriesCollection.Clear();
+
+            _seriesCollection.Add( new ChartSeries
+            {
+                DataSource = _objectiveValueDtos,
+                XName = "Objective",
+                YName = "RelativeInportance",
+                Fill = "#4A26D9",
+                Type = chartSeriesType,
+            });
+        }
+    }
+
+    private async Task Export()
+    {
+        await sfChart.ExportAsync(ExportType.PNG, "Summary");
+    }
+}
+
+<AuthorizeView>
+    <div class="container-fluid h-100 bg-white border-3 border-light">
+        <div class="row">
+            <div>
+                @if (_objectiveValueDtos is null)
+                {
+                    <p><em>Loading...</em></p>
+                }
+                else
+                {
+                    <div class="card">
+                        <div class="card-header text-white h3" style="background-color : purple;">
+                            Summary - View of all Design Factors
+                        </div>
+                        <div class="card-body">
+                            <div>
+                                <SfChart @ref="sfChart" Title="Business Objectives">
+                                    <ChartPrimaryXAxis Interval="1" LabelRotation="90" ValueType="Syncfusion.Blazor.Charts.ValueType.Category" />
+
+                                    <ChartPrimaryYAxis Title="Relative Importance" ValueType="Syncfusion.Blazor.Charts.ValueType.Double" />
+
+                                    <ChartTooltipSettings Enable="true"></ChartTooltipSettings>
+
+                                    <ChartSeriesCollection>
+                                            @foreach (var series in _seriesCollection)
+                                            {
+                                                <ChartSeries DataSource="@series.DataSource" XName="@series.XName" YName="@series.YName" Fill="@series.Fill"
+                                                                Type="@series.Type">
+                                                </ChartSeries>
+                                            }
+
+                                    </ChartSeriesCollection>
+
+
+                                </SfChart>
+                                
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div  class="container-fluid">
+                                <div class="row">
+                                    <div class="col-sm-1 btn-group rounded-3">
+                                        <button class="btn btn-outline-light" style="background-color:purple;" @onclick="@(() => changeChartType(ChartSeriesType.Radar))">Radar</button>
+                                        <button class="btn btn-outline-light" style="background-color:purple;" @onclick="@(() => changeChartType(ChartSeriesType.Column))">Column</button>
+                                        <button class="btn btn-outline-light" style="background-color:purple;" @onclick="@(() => changeChartType(ChartSeriesType.Bar))">Bar</button>
+                                    </div>
+                                    <div class="col">
+                                        <button class="btn btn-outline-light float-xl-end" style="background-color:purple;" @onclick="Export">Export</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</AuthorizeView>

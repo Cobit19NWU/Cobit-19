@@ -1,0 +1,23 @@
+version: '3.4'
+
+services:
+  SqlServerDb:
+        container_name: SqlServerContainer
+        image: mcr.microsoft.com/mssql/server:2017-latest
+        ports:
+            - 8002:1433
+        environment:
+            - ACCEPT_EULA=Y
+            - MSSQL_SA_PASSWORD=myStong_Password123#
+  cobit-19:
+    image: ${DOCKER_REGISTRY-}cobit19
+    ports:
+        - 8001:80 
+    build:
+      context: .
+      dockerfile: Cobit-19/Dockerfile
+    environment:
+      RUNTIME: Production
+    depends_on:
+            - SqlServerDb
+   

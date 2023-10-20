@@ -1,0 +1,114 @@
+﻿@page "/auditDashBoard"
+@using Cobit_19.Business.ObjectiveAudits
+@using Microsoft.AspNetCore.Identity
+@using Cobit_19.Shared.Dtos
+@inject ObjectiveAuditProvider objectiveAuditProvider
+@using Syncfusion.Blazor.CircularGauge
+@using Syncfusion.Blazor.ProgressBar
+@using Syncfusion.Blazor.LinearGauge
+
+@code {
+    [Parameter]
+    [SupplyParameterFromQuery]
+    public int objectiveAuditId { get; set; }
+    public FullObjectiveAuditDto auditObject;
+    public string auditJSON;
+    public int maturityLevel;
+    public List<ComponentDto> components;
+    public List<string> gaugeLabels = new List<string> {"Enterprise Goals", "Alignment Goals", "Processes", "Structure", "Information",
+                                                        "People", "Policies", "Culture", "Technology"};
+
+
+    public int labelNum = 0;
+
+    protected override void OnInitialized()
+    {
+        auditJSON = objectiveAuditProvider.getAuditJSON(objectiveAuditId);
+        auditObject = AuditJSONParsingService.parseAuditTemplate(auditJSON);
+        components = auditObject.components;
+        maturityLevel = auditObject.maturityLevel;
+    }
+}
+
+<div class="container">
+    <div class="border-bottom text-center mb-2">
+        <h6 class="text-secondary">Maturity Assesments for @auditObject.objectiveName</h6>
+    </div>
+    <div class="mb-5 row">
+        <ComponentSelectBar objectiveAuditId="@objectiveAuditId" selectedPage="Dashboard"/>
+    </div>
+
+    <div class="row">
+        <div class="col border col-md-5 mx-4 text-center bg-dark rounded-3">
+            <h3 class="text-white">Description</h3>
+            <p class="text-white">@auditObject.objectiveDescription</p>
+        </div>
+        <div class="col border col-md-5 mx-4 text-center bg-dark rounded-3">
+            <h3 class="text-white">Purpose</h3>
+            <p class="text-white">@auditObject.objectivePurpose</p>
+        </div>
+    </div>
+
+    <div class="border mt-3">
+        <div class="mt-2">
+            <SfLinearGauge Title="Maturity Level" Orientation="Orientation.Horizontal" AllowMargin="false" Width="100%" Height="100%">
+                <LinearGaugeTitleStyle FontWeight="bold" Color="blue" Size="23px"></LinearGaugeTitleStyle>
+                <LinearGaugeMargin Left="0" Right="0" Top="0" Bottom="0"></LinearGaugeMargin>
+                <LinearGaugeAxes>
+                    <LinearGaugeAxis Minimum="0" Maximum="5">
+                        <LinearGaugeMajorTicks Interval="1" Color="Red"></LinearGaugeMajorTicks>
+                        <LinearGaugePointers>
+                            <LinearGaugePointer PointerValue="@maturityLevel" Type="Point.Bar" Color="red"></LinearGaugePointer>
+                        </LinearGaugePointers>
+                    </LinearGaugeAxis>
+                </LinearGaugeAxes>
+            </SfLinearGauge>
+        </div>
+    </div>
+
+
+    <div class="border row mt-4">
+        <div class="row">
+            @foreach (ComponentDto component in components)
+            {
+                <div class="col-md-4">
+                    <SfCircularGauge Title="@gaugeLabels[labelNum]" Width="250px" Height="250px">
+                        <CircularGaugeTitleStyle Color="blue" FontWeight="bold" Size="10"></CircularGaugeTitleStyle>
+                        <CircularGaugeAxes>
+                            <CircularGaugeAxis>
+                                <CircularGaugeRanges>
+                                    <CircularGaugeRange  Start="0" End="15" Color="red" />
+                                    <CircularGaugeRange Start="15" End="50" Color="orange"/>
+                                    <CircularGaugeRange Start="50" End="85" Color="yellow"/>
+                                    <CircularGaugeRange Start="85" End="100" Color="green"/>
+                                </CircularGaugeRanges>
+                                <CircularGaugePointers>
+                                    <CircularGaugePointer Value="@component.componentPercFinal"></CircularGaugePointer>
+                                </CircularGaugePointers>
+                                <CircularGaugeAnnotations>
+                                    <CircularGaugeAnnotation Angle="195" ZIndex="1">
+                                        <ContentTemplate>
+                                            <div class="custom-annotation">@component.componentPercFinal</div>
+                                        </ContentTemplate>
+                                    </CircularGaugeAnnotation>
+                                </CircularGaugeAnnotations>
+                            </CircularGaugeAxis>
+                        </CircularGaugeAxes>
+                    </SfCircularGauge>
+                    <style type="text/css">
+                        .custom-annotation {
+                            color: white;
+                            background-color: blue;
+                            height: 30px;
+                            width: 30px;
+                            border-radius: 15px;
+                            padding: 4px 0 0 6px;
+                            font-weight: bold;
+                        }
+                    </style>
+                </div>
+                labelNum++;
+            }
+        </div>
+    </div>
+</div>

@@ -1,0 +1,176 @@
+﻿@page "/ObjectiveAuditMembers"
+
+@using Cobit_19.Business.Admin;
+@using Cobit_19.Business.ObjectiveAudits;
+@using Cobit_19.Shared.Dtos;
+@using Cobit_19.Shared.Enums;
+@using Microsoft.AspNetCore.Components.Web
+@using Microsoft.AspNetCore.WebUtilities
+@inject UserManagementProvider userManagementProvider
+@inject ObjectiveAuditProvider objectiveAuditProvider
+@inject NavigationManager navigationManager
+
+@code {
+    private ObjectiveAuditDto? _objectiveAuditDto { get; set; }
+
+    private IList<UserDto> _userDtos { get; set; }
+    private IList<ObjectiveAuditMemberDto> _objectiveAuditMemberDtos { get; set; }
+    private IList<ObjectiveAuditMemberDto> _membersDisplayList { get; set; }
+    private string auditJSON;
+    private FullObjectiveAuditDto fullAudit;
+    private string objectiveType;
+    public string userRole;
+    public bool correctRole = false;
+
+    [Parameter]
+    [SupplyParameterFromQuery]
+    public int AuditId { get; set; }
+
+    [Parameter]
+    [SupplyParameterFromQuery]
+    public int ObjectiveAuditID { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        _objectiveAuditDto = objectiveAuditProvider.getByID(ObjectiveAuditID);
+        _objectiveAuditMemberDtos = objectiveAuditProvider.getMembersByObjectiveAuditID(ObjectiveAuditID);
+        _membersDisplayList = new List<ObjectiveAuditMemberDto>();
+        auditJSON = objectiveAuditProvider.getAuditJSON(ObjectiveAuditID);
+        fullAudit = AuditJSONParsingService.parseAuditTemplate(auditJSON);
+        objectiveType = fullAudit.typeOfObjective;
+        _userDtos = await userManagementProvider.GetAllAuditorsByAuditIDAsync(AuditId, objectiveType);
+
+
+        PopulateMembersList();
+    }
+
+    private void PopulateMembersList()
+    {
+        foreach (var user in _userDtos)
+        {
+            var member = new ObjectiveAuditMemberDto
+            {
+                ApplicationUserID = user.ID,
+                ObjectiveAuditID = ObjectiveAuditID,
+                Selected = false,
+                UserDto = user
+            };
+
+            if (_objectiveAuditMemberDtos.Any(a => a.ApplicationUserID == user.ID))
+                member.Selected = true;
+
+            _membersDisplayList.Add(member);
+        }
+    }
+
+    private async void Update(string userID)
+    {
+        ObjectiveAuditMemberEditorDto member = new ObjectiveAuditMemberEditorDto()
+        {
+            ObjectiveAuditID = ObjectiveAuditID,
+            ApplicationUserID = userID
+        };
+
+        if (objectiveAuditProvider.isMember(member))
+        {
+            await objectiveAuditProvider.deleteMember(member);
+        }
+        else
+        {
+            await objectiveAuditProvider.addMember(member);
+        }
+
+        var listMember = _membersDisplayList.Where(a => a.ApplicationUserID == userID).First();
+        listMember.Selected = !listMember.Selected;
+    }
+
+    private void NavButtonPress()
+    {
+        var queryStrDict = new Dictionary<string, string>
+            {
+                ["AuditId"] = (AuditId).ToString(),
+            };
+        navigationManager.NavigateTo(
+            QueryHelpers.AddQueryString("/objectiveAuditScope", queryStrDict)
+        );
+    }
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-8">
+            @if (_objectiveAuditDto is null || _userDtos is null)
+            {
+                <p><em>Loading...</em></p>
+            }
+            else
+            {
+                <table class="table table-hover table-striped">
+                    <thead style="">
+                        <tr>
+                            <th colspan="6">
+                                <div class="ibox-title">
+                                    <h5>
+                                        <strong>Scope Selection</strong>
+                                    </h5>
+                                </div>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th style="background-color: purple; color: white;">#</th>
+                            <th style="background-color: purple; color: white;">User</th>
+                            <th style="background-color: purple; color: white;">Selected</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var user in _membersDisplayList)
+                        {
+                            <tr>
+                                <td>@(_membersDisplayList.IndexOf(user) + 1)</td>
+                                <td>@(user.UserDto.UserName) </td>
+                                <td>
+                                    <input type="checkbox" checked="@user.Selected" @onclick="() => Update(user.ApplicationUserID)" />
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            }
+            <div class="row">
+                <div class="col">
+                    <button type="button" onclick="@(() => NavButtonPress())" class="btn btn-primary">Done</button>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <InfoPannel Header="Audit Members">
+                <Body>
+                    <div>
+                        <p>In this phase, prioritized governance and management objectives can be assigned to an auditor, to complete a maturity assessment by following these steps:</p>
+                        <table class="table table-stripped small m-t-md">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <i class="fa fa-circle fa-2xs"></i>
+                                    </td>
+                                    <td>
+                                        <strong>Select</strong> an auditor who would be responsible for administering an audit on an objective 
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <i class="fa fa-circle fa-2xs"></i>
+                                    </td>
+                                    <td>
+                                        The persons selected here are only responsible for the audit of the objectives selected in the previous step.
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </Body>
+            </InfoPannel>
+        </div>
+    </div>
+</div>

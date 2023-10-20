@@ -1,0 +1,97 @@
+﻿@page "/objectiveAuditSelect"
+@using Cobit_19.Shared.Dtos
+@using Cobit_19.Shared.Enums
+@using Microsoft.AspNetCore.Identity
+@using Cobit_19.Business.ObjectiveAudits
+@using Cobit_19.Business.Audits
+@inject ObjectiveAuditProvider objectiveAuditProvider
+@inject NavigationManager navigationManager
+@inject AuditProvider auditProvider
+
+
+@code {
+    IList<ObjectiveAuditDto> objectiveAudits;
+    [Parameter]
+    [SupplyParameterFromQuery]
+    public int AuditId { get; set; }
+
+    public AuditDto audit;
+    public string auditName;
+
+    protected async override Task OnInitializedAsync()
+    {
+        objectiveAudits = objectiveAuditProvider.getAll(AuditId);
+        audit = await auditProvider.getAsync(AuditId);
+        auditName = audit.Name;
+    }
+
+    private void auditButtonClick(int objectiveAuditId)
+    {
+        navigationManager.NavigateTo("/auditDashboard?objectiveAuditId=" + objectiveAuditId);
+    }
+
+    private string statusFormatter(AuditStatus status)
+    {
+        if (status == AuditStatus.NotStarted)
+        {
+            return "Not Started";
+        }
+        else if (status == AuditStatus.InProgress)
+        {
+            return "In Progress";
+        }
+        else
+        {
+            return "Completed";
+        }
+    }
+
+    private string statusBadge (AuditStatus status)
+    {
+        if (status == AuditStatus.NotStarted)
+        {
+            return "badge bg-danger";
+        }
+        else if (status == AuditStatus.InProgress)
+        {
+            return "badge bg-warning";
+        }
+        else
+        {
+            return "badge bg-success";
+        }
+    }
+}
+
+<div class="container">
+    <div>
+        <h5>Maturity Assesments</h5>
+    </div>
+
+    <div>
+        <table class="table">
+            <thead>
+                <tr style="background-color: purple; color: white;">
+                    <th>Audit Name</th>
+                    <th>Description</th>
+                    <th>Maturity Level</th>
+                    <th>Status</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var audit in objectiveAudits)
+                {
+                    var fullAudit = AuditJSONParsingService.parseAuditTemplate(audit.UserAuditObject);
+                    <tr>
+                        <td>@auditName</td>
+                        <td>@audit.Objective.Code</td>
+                        <td>@fullAudit.maturityLevel</td>
+                        <td><span class="@statusBadge(audit.Status)">@statusFormatter(audit.Status)</span></td>
+                        <td><button class="btn btn-primary" @onclick = "() => auditButtonClick(audit.ID)">Modify</button></td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,180 @@
+
+{
+  "objectiveName": "name",
+  "objectiveDescription": "description",
+  "objectivePurpose": "purpose",
+  "maturityLevel": 0,
+  "maturityLevel0PercFinal": 0,
+  "maturityLevel1PercFinal": 0,
+  "maturityLevel2PercFinal": 0,
+  "maturityLevel3PercFinal": 0,
+  "maturityLevel4PercFinal": 0,
+  "maturityLevel5PercFinal": 0,
+  "components": [
+    {
+      "componentCode": "EG",
+      "componentDescription": "Enterprise Goals",
+      "componentPercFinal": 0,
+      "subComponents": [
+        {
+          "subComponentCode": "EG04",
+          "subComponentName": "Quality of financial information",
+          "subComponentQuestions": [
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Question",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "componentCode": "AG",
+      "componentDescription": "Alignment Goals",
+      "componentPercFinal": 0,
+      "subComponents": [
+        {
+          "subComponentCode": "AG10",
+          "subComponentName": "Quality of I&T management information",
+          "subComponentQuestions": [
+            {
+              "questionType": "Alignment goal",
+              "questionDescription": "Question",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "componentCode": "A",
+      "componentDescription": "Processes",
+      "componentPercFinal": 0,
+      "subComponents": [
+        {
+          "subComponentCode": "subCompCode",
+          "subComponentName": "Sub process name",
+          "subComponentDescription": "Description",
+          "subComponentQuestions": [
+            {
+              "questionType": "Maturity Level 0 .. 5 OR Related Guidance OR Input OR Output",
+              "questionDescription": "string",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "componentCode": "B",
+      "componentDescription": "Organizational Structures",
+      "componentPercFinal": 0,
+      "componentQuestions": [
+        {
+          "questionType": "Component question",
+          "questionDescription": "string",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        }
+      ]
+    },
+    {
+      "componentCode": "C",
+      "componentDescription": "Information Flows and Items",
+      "componentPercFinal": 0,
+      "subComponents": [
+        {
+          "subComponentCode": "subCompCode",
+          "subComponentName": "Sub process name",
+          "subComponentDescription": "Description",
+          "subComponentQuestions": [
+            {
+              "questionType": "Input or output",
+              "questionDescription": "string",
+              "inputFrom": "string",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "componentCode": "D",
+      "componentDescription": "Peoples, Skills and Competencies",
+      "componentPercFinal": 0,
+      "componentQuestions": [
+        {
+          "questionType": "Component question",
+          "questionSkill": "string",
+          "relatedGuidance": "string",
+          "detailedReference": "string",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        }
+      ]
+    },
+    {
+      "componentCode": "E",
+      "componentDescription": "Principles Policies and Procedures",
+      "componentPercFinal": 0,
+      "componentQuestions": [
+        {
+          "questionType": "Component question",
+          "relevantPolicy": "string",
+          "policyDescription": "string",
+          "detailedGuidance": "string",
+          "detailedReference": "string",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        }
+      ]
+    },
+    {
+      "componentCode": "F",
+      "componentDescription": "Culture, Ethics and Behavior",
+      "componentPercFinal": 0,
+      "componentQuestions": [
+        {
+          "questionType": "Component question",
+          "keyCultureElement": "string",
+          "relatedGuidance": "string",
+          "detailedReference": "string",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        }
+      ]
+    },
+    {
+      "componentCode": "G",
+      "componentDescription": "Services, Infrastructure and Applications",
+      "componentPercFinal": 0,
+      "componentQuestions": [
+        {
+          "questionType": "Component question",
+          "questionDescription": "string",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        }
+      ]
+    }
+  ]
+}

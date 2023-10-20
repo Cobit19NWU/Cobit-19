@@ -1,0 +1,1623 @@
+{
+  "objectiveName": "BAI01",
+  "objectiveDescription": "Manage all programs from the investment portfolio in alignment with enterprise strategy and in a coordinated way, based on a standard program management approach. Initiate, plan, control, and execute programs, and monitor expected value from the program.",
+  "objectivePurpose": "Realize desired business value and reduce the risk of unexpected delays, costs and value erosion. To do so, improve communications to and involvement of business and end users, ensure the value and quality of program deliverables and follow up of projects within the programs, and maximize program contribution to the investment portfolio.",
+  "typeOfObjective": "Management",
+  "maturityLevel": 0,
+  "maturityLevel0PercFinal": 0,
+  "maturityLevel1PercFinal": 0,
+  "maturityLevel2PercFinal": 0,
+  "maturityLevel3PercFinal": 0,
+  "maturityLevel4PercFinal": 0,
+  "maturityLevel5PercFinal": 0,
+  "structuresImage": "https://i.imgur.com/xno3aYY.png",
+  "components": [
+    {
+      "componentCode": "EG",
+      "componentDescription": "Enterprise Goals",
+      "componentPercFinal": 0,
+      "subComponents": [
+        {
+          "subComponentCode": "EG01",
+          "subComponentName": "Portfolio of competitive products and services",
+          "subComponentQuestions": [
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Percent of products and services that meet or exceed targets in revenues and/or market share",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Percent of products and services that meet or exceed customer satisfaction targets",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Percent of products and services that provide competitive advantage",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Time to market for new products and services",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "EG08",
+          "subComponentName": "Optimization of internal business process functionality",
+          "subComponentQuestions": [
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Satisfaction levels of board and executive management with business process capabilities",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Satisfaction levels of customers with service delivery capabilities",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Satisfaction levels of suppliers with supply chain capabilities",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+
+          ]
+        },
+
+        {
+          "subComponentCode": "EG12",
+          "subComponentName": "Managed digital transformation programs",
+          "subComponentQuestions": [
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Number of programs on time and within budget",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Percent of stakeholders satisfied with program delivery",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Percent of business transformation programs stopped",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Percent of business transformation programs with regular reported status updates",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+
+          ]
+        }
+      ]
+
+    },
+
+    {
+      "componentCode": "AG",
+      "componentDescription": "Alignment Goals",
+      "componentPercFinal": 0,
+      "subComponents": [
+        {
+          "subComponentCode": "AG03",
+          "subComponentName": "Realized benefits from I&T-enabled investments and services portfolio",
+          "subComponentQuestions": [
+            {
+              "questionType": "Alignment goal",
+              "questionDescription": "Percent of I&T-enabled investments for which claimed benefits in the business case are met or exceeded",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Alignment goal",
+              "questionDescription": "Percent of I&T services for which expected benefits (as stated in service level agreements) are realized",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+
+        {
+          "subComponentCode": "AG09",
+          "subComponentName": "Delivering programs on time, on budget and meeting requirements and quality standards",
+          "subComponentQuestions": [
+            {
+              "questionType": "Alignment goal",
+              "questionDescription": "Number of programs/projects on time and within budget",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Alignment goal",
+              "questionDescription": "Number of programs needing significant rework due to quality defects",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Alignment goal",
+              "questionDescription": "Percent of stakeholders satisfied with program/project quality",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+
+          ]
+        }
+      ]
+    },
+    {
+      "componentName": "A",
+      "componentDescription": "Processes",
+      "componentPercFinal": 0,
+      "subComponents": [
+
+        {
+          "subComponentCode": "BAI01.01 ",
+          "subComponentName": " Maintain a standard approach for program management.",
+          "subComponentDescription": "Maintain a standard approach for program management that enables governance and management review, decision-making and delivery management activities. These activities should focus consistently on business value and goals (i.e., requirements, risk, costs, schedule and quality targets).",
+          "subComponentQuestions": [
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Maintain and enforce a standard approach to program management, aligned to the enterprise’s specific environment and with good practice based on defined process and use of appropriate technology. Ensure that the approach covers the full life cycle and disciplines to be followed, including the management of scope, resources, risk, cost, quality, time, communication, stakeholder involvement, procurement, change control, integration and benefit realization.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Put in place a program office or project management office (PMO) that maintains the standard approach for program and project management across the organization. The PMO supports all programs and projects by creating and maintaining required project documentation templates, providing training and best practices for program/project managers, tracking metrics on the use of best practices for project management, etc. In some cases the PMO may also report on program/project progress to senior management and/or stakeholders, help prioritize projects, and ensure all projects support the overall business objectives of the enterprise.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": "Evaluate lessons learned based on the use of the program management approach and update the approach accordingly.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+
+        {
+          "subComponentCode": "BAI01.02",
+          "subComponentName": "Initiate a program.",
+          "subComponentDescription": "Initiate a program to confirm expected benefits and obtain authorization to proceed. This includes agreeing on program sponsorship, confirming the program mandate through approval of the conceptual business case, appointing program board or committee members, producing the program brief, reviewing and updating the business case, developing a benefits realization plan, and obtaining approval from sponsors to proceed. ",
+          "subComponentQuestions": [
+
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Agree on program sponsorship. Appoint a program board/committee with members who have strategic interest in the program, responsibility for investment decision making, will be significantly impacted by the program and will be required to enable delivery of the change..",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Appoint a dedicated manager for the program, with the commensurate competencies and skills to manage the program effectively and efficiently.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Confirm the program mandate with sponsors and stakeholders. Articulate the strategic objectives for the program, potential strategies for delivery, improvement and benefits that are expected, and how the program fits with other initiatives.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Develop a detailed business case for a program. Involve all key stakeholders to develop and document a complete understanding of the expected enterprise outcomes, how they will be measured, the full scope of initiatives required, the risk involved and the impact on all aspects of the enterprise. Identify and assess alternative courses of action to achieve the desired enterprise outcomes.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Develop a benefits realization plan that will be managed throughout the program to ensure that planned benefits always have owners and are achieved, sustained and optimized.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Prepare the initial (conceptual) program business case, providing essential decision-making information regarding purpose, contribution to business objectives, expected value created, time frames, etc. Submit it for approval.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+
+
+        {
+          "subComponentCode": "BAI01.03",
+          "subComponentName": " Manage stakeholder engagement.",
+          "subComponentDescription": "Manage stakeholder engagement to ensure an active exchange of accurate, consistent and timely information for all relevant stakeholders. This includes planning, identifying and engaging stakeholders and managing their expectations.",
+          "subComponentQuestions": [
+
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Plan how stakeholders inside and outside the enterprise will be identified, analyzed, engaged and managed through the life cycle of the projects.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Identify, engage and manage stakeholders by establishing and maintaining appropriate levels of coordination, communication and liaison to ensure that they are involved in the program.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": " Analyze stakeholder interests and requirements.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": "Follow a defined process for collaborative agreements with respect to shared data and data usage within business processes.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "string",
+              "relatedGuidance": "PMBOK Guide Sixth Edition, 2017",
+              "detailedReference": "Part 1: 10. Project communications management",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "BAI01.04",
+          "subComponentName": "Develop and maintain the program plan.",
+          "subComponentDescription": "Formulate a program to lay the initial groundwork. Position it for successful execution by formalizing the scope of the work and identifying deliverables that will satisfy goals and deliver value. Maintain and update the program plan and business case throughout the full economic life cycle of the program, ensuring alignment with strategic objectives and reflecting the current status and insights gained to date.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Specify funding, cost, schedule and interdependencies of multiple projects.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Define and document the program plan covering all projects. Include what is needed to bring about changes to the enterprise; its purpose, mission, vision, values, culture, products and services; business processes; people skills and numbers; relationships with stakeholders, customers, suppliers and others; technology needs; and organizational restructuring required to achieve the program’s expected enterprise outcomes.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Ensure that there is effective communication of program plans and progress reports among all projects and with the overall program. Ensure that any changes made to individual plans are reflected in the other enterprise program plans.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Maintain the program plan to ensure that it is up to date and reflects alignment with current strategic objectives, actual progress and material changes to outcomes, benefits, costs and risk. Have the business drive the objectives and prioritize the work throughout to ensure that the program, as designed, will meet enterprise requirements. Review progress of individual projects and adjust the projects as necessary to meet scheduled milestones and releases.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Throughout the program’s economic life, update and maintain the business case and a benefits register to identify and define key benefits arising from undertaking the program.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Prepare a program budget that reflects the full economic life cycle costs and the associated financial and nonfinancial benefits.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+
+        {
+          "subComponentCode": "BAI01.05",
+          "subComponentName": " Launch and execute the program.",
+          "subComponentDescription": "Launch and execute the program to acquire and direct the resources needed to accomplish the goals and benefits of the program as defined in the program plan. In accordance with stage-gate or release review criteria, prepare for stage-gate, iteration or release reviews to report progress and make the case for funding up to the following stage-gate or release review. ",
+          "subComponentQuestions": [
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Plan, resource and commission the necessary projects required to achieve the program results, based on funding review and approvals at each stage-gate review.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Manage each program or project to ensure that decision making and delivery activities are focused on value by achieving benefits for the business and goals in a consistent manner, addressing risk, and achieving stakeholder requirements..",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Establish agreed stages of the development process (development checkpoints). At the end of each stage, facilitate formal discussions of approved criteria with the stakeholders. After successful completion of functionality, performance and quality reviews, and before finalizing stage activities, obtain formal approval and sign-off from all stakeholders and the sponsor/ business process owner.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": "Undertake a benefits realization process throughout the program to ensure that planned benefits always have owners and are likely to be achieved, sustained and optimized. Monitor benefits delivery and report against performance targets at the stagegate or iteration and release reviews. Perform root cause analysis for deviations from the plan and identify and address any necessary remedial actions.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": "Plan audits, quality reviews, phase/stage-gate reviews and reviews of realized benefits.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+
+        {
+          "subComponentCode": "BAI01.06",
+          "subComponentName": "Monitor, control and report on the program outcomes.",
+          "subComponentDescription": "Monitor and control performance against plan throughout the full economic life cycle of the investment, covering solution delivery at the program level and value/outcome at the enterprise level. Report performance to the program steering committee and the sponsors. ",
+          "subComponentQuestions": [
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Update operational I&T portfolios to reflect changes that result from the program in the relevant I&T service, asset or resource portfolios.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": "Monitor and control the performance of the overall program and the projects within the program, including contributions of the business and IT to the projects. Report in a timely, complete and accurate fashion. Reporting may include schedule, funding, functionality, user satisfaction, internal controls and acceptance of accountabilities.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": "Monitor and control performance against enterprise and I&T strategies and goals. Report to management on enterprise changes implemented, benefits realized against the benefits realization plan and the adequacy of the benefits realization process.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": "Monitor and control IT services, assets and resources created or changed as a result of the program. Note implementation and in-service dates. Report to management on performance levels, sustained service delivery and contribution to value.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": "Manage program performance against key criteria (e.g., scope, schedule, quality, benefits realization, costs, risk, velocity), identify deviations from the plan and take timely remedial action when required.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": "Monitor individual project performance related to delivery of the expected capabilities, schedule, benefits realization, costs, risk or other metric. Identify potential impacts on program performance and take timely remedial action when required.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": "In accordance with stage-gate, release or iteration review criteria, undertake reviews to report on the progress of the program so that management can make go/no-go or adjustment decisions and approve further funding up to the following stage-gate, release or iteration.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+
+        {
+          "subComponentCode": "BAI01.07 ",
+          "subComponentName": "Manage program quality.",
+          "subComponentDescription": "Prepare and execute a quality management plan, processes and practices that align with quality management standards (QMS). Describe the approach to program quality and implementation. The plan should be formally reviewed and agreed on by all parties concerned and incorporated into the integrated program plan.",
+          "subComponentQuestions": [
+
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "To provide quality assurance for the program deliverables, identify ownership and responsibilities, quality review processes, success criteria and performance metrics.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Identify assurance tasks and practices required to support the accreditation of new or modified systems during program planning, and include them in the integrated plans. Ensure that the tasks provide assurance that internal controls and security/privacy solutions meet the defined requirements.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": "Define any requirements for independent validation and verification of the quality of deliverables in the plan.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Perform quality assurance and control activities in accordance with the quality management plan and QMS.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+
+        {
+          "subComponentCode": "BAI01.08 ",
+          "subComponentName": "Manage program risk.",
+          "subComponentDescription": "Eliminate or minimize specific risk associated with programs through a systematic process of planning, identifying, analyzing, responding to, monitoring and controlling the areas or events with the potential to cause unwanted change. Define and record any risk faced by program management.",
+          "subComponentQuestions": [
+
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Establish a formal risk management approach aligned with the enterprise risk management (ERM) framework. Ensure that the approach includes identifying, analyzing, responding to, mitigating, monitoring and controlling risk.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Assign to appropriately skilled personnel the responsibility for executing the enterprise’s risk management process within a program and ensuring that this is incorporated into the solution development practices. Consider allocating this role to an independent team, especially if an objective viewpoint is required or a program is considered critical.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Perform the risk assessment of identifying and quantifying risk continuously throughout the program. Manage and communicate risk appropriately within the program governance structure.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Identify owners for actions to avoid, accept or mitigate risk.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+
+
+        {
+          "subComponentCode": "BAI01.09 ",
+          "subComponentName": "Close a program.",
+          "subComponentDescription": "Remove the program from the active investment portfolio when there is agreement that the desired value has been achieved or when it is clear it will not be achieved within the value criteria set for the program.",
+          "subComponentQuestions": [
+
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Bring the program to an orderly closure, including formal approval, disbanding of the program organization and supporting function, validation of deliverables, and communication of retirement.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": "Review and document lessons learned. Once the program is retired, remove it from the active investment portfolio. Move any resulting capabilities to an operational asset portfolio to ensure that value continues to be created and sustained.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Maturity Level 5",
+              "questionDescription": "Put accountability and processes in place to ensure that the enterprise continues to optimize value from the service, asset or resources. Additional investments may be required at some future time to ensure that this occurs.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string, ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "string",
+              "relatedGuidance": "National Institute of Standards and Technology Framework for Improving Critical Infrastructure Cybersecurity v1.1, April 2018",
+              "detailedReference": "RS.IM Improvements",
+              "inputFrom": "string",
+              "outputTo": "string,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+
+            {
+              "questionType": "Output",
+              "questionDescription": "Communication of program retirement and ongoing accountabilities",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "APO05.04;APO07.06",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "• Post-implementation review report • Remedial action plan",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "BAI07.08",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+
+          ]
+        }
+      ]
+    },
+    {
+      "componentName": "B",
+      "componentDescription": "Organizational Structures",
+      "componentPercFinal": 0,
+      "componentQuestions": [
+        {
+          "questionType": "BAI01.01",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+
+        {
+          "questionType": "BAI01.02",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "BAI01.03",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "BAI01.04",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "BAI01.05",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "BAI01.06",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "BAI01.07",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "BAI01.08",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "BAI01.09",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        }
+      ]
+    },
+    {
+      "componentCode": "C",
+      "componentDescription": "Information Flows and Items",
+      "componentPercFinal": 0,
+      "subComponents": [
+        {
+          "subComponentCode": "BAI01.01",
+          "subComponentName": "Maintain a standard approach for program management.",
+          "subComponentDescription": " Maintain a standard approach for program management that enables governance and management review, decision-making and delivery management activities. These activities should focus consistently on business value and goals (i.e., requirements, risk, costs, schedule and quality targets).",
+          "subComponentQuestions": [
+
+            {
+              "questionType": "Input",
+              "questionDescription": "• Data classification guidelines • Data security and control guidelines • Data integrity procedures",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "APO01.07",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Architecture principles",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "APO03.01",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "• Baseline domain descriptions and architecture definition • Information architecture model",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "APO03.02",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Solution development guidance",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "APO03.05",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Vendor requests for information (RFIs) and requests for proposals (RFPs)",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "APO03.05",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Acceptance criteria",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "APO11.02",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Business glossary",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "APO14.02",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Confirmed acceptance criteria from stakeholders",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "outputTo": "BAI03.01; BAI03.02; BAI03.12; BAI04.03; BAI05.01; BAI05.02",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Confirmed acceptance criteria from stakeholders",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "outputTo": "BAI03.01; BAI03.02; BAI03.12; BAI04.03; BAI05.01; BAI05.02",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Record of requirement change requests",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "outputTo": "BAI03.09",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "BAI01.02",
+          "subComponentName": "Initiate a program.",
+          "subComponentDescription": "Initiate a program to confirm expected benefits and obtain authorization to proceed. This includes agreeing on program sponsorship, confirming the program mandate through approval of the conceptual business case, appointing program board or committee members, producing the program brief, reviewing and updating the business case, developing a benefits realization plan, and obtaining approval from sponsors to proceed.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Input",
+              "questionDescription": "• Resource requirements • Implementation phase descriptions",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "APO03.04",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+
+            {
+              "questionType": "Input",
+              "questionDescription": "Program business case",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "APO05.02",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Skills and competencies matrix",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "APO07.03",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Common vision and goals",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "BAI05.02",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Program mandate and brief",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "APO05.02",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Program concept business case",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "APO05.02",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": " Program benefit realization plan",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "APO05.02; APO06.05",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+
+          ]
+        },
+        {
+          "subComponentCode": "BAI01.03",
+          "subComponentName": " Manage stakeholder engagement.",
+          "subComponentDescription": "Manage stakeholder engagement to ensure an active exchange of accurate, consistent and timely information for all relevant stakeholders. This includes planning, identifying and engaging stakeholders and managing their expectations.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Output",
+              "questionDescription": "Results of stakeholder engagement effectiveness assessments",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "Internal",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+
+            {
+              "questionType": "Output",
+              "questionDescription": "Stakeholder engagement plan",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "Internal",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "BAI01.04",
+          "subComponentName": "Develop and maintain the program plan.",
+          "subComponentDescription": "Formulate a program to lay the initial groundwork. Position it for successful execution by formalizing the scope of the work and identifying deliverables that will satisfy goals and deliver value. Maintain and update the program plan and business case throughout the full economic life cycle of the program, ensuring alignment with strategic objectives and reflecting the current status and insights gained to date.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Input",
+              "questionDescription": "Selected programs with ROI milestones",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "APO05.02",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Skills and competencies matrix",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "APO07.03",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Inventory of business and IT human resources",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "APO07.05",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Implementation team and roles",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "BAI05.02",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Vision communication plan",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "BAI05.03",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Identified quick wins",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "BAI05.04",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Approved acceptance test plan",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "BAI07.03",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Approved acceptance and release for production",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "BAI07.05",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Program budget and benefits register",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "APO05.05; APO06.05",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Resource requirements and roles",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "BAI07.05",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+
+
+            {
+              "questionType": "Output",
+              "questionDescription": "Program plan",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "Internal",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+
+        },
+        {
+          "subComponentCode": "BAI01.05",
+          "subComponentName": " Launch and execute the program.",
+          "subComponentDescription": "Launch and execute the program to acquire and direct the resources needed to accomplish the goals and benefits of the program as defined in the program plan. In accordance with stage-gate or release review criteria, prepare for stage-gate, iteration or release reviews to report progress and make the case for funding up to the following stage-gate or release review. ",
+          "subComponentQuestions": [
+            {
+              "questionType": "Input",
+              "questionDescription": "Vision communications",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "BAI05.03",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+
+            {
+              "questionType": "Output",
+              "questionDescription": "Results of program goal achievement monitoring",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "APO02.04",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Results of benefit realization monitoring",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "APO05.05; APO06.05",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Program audit plans",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "MEA04.02",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "BAI01.06",
+          "subComponentName": "Monitor, control and report on the program outcomes.",
+          "subComponentDescription": "Monitor and control performance against plan throughout the full economic life cycle of the investment, covering solution delivery at the program level and value/outcome at the enterprise level. Report performance to the program steering committee and the sponsors. ",
+          "subComponentQuestions": [
+
+
+            {
+              "questionType": "Input",
+              "questionDescription": "Investment return expectations",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "APO05.01",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+
+            {
+              "questionType": "Input",
+              "questionDescription": "Business case assessments",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "APO05.02",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Investment portfolio performance reports",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "APO05.03",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+
+            {
+              "questionType": "Input",
+              "questionDescription": "• Benefit results and related communications • Corrective actions to improve benefit realization",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "APO05.05",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "• Resourcing shortfall analyses • Resource utilization records",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "APO07.05",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+
+            {
+              "questionType": "Input",
+              "questionDescription": "Communication of benefits",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "BAI05.04",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Change request status reports",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "BAI06.03",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+
+            {
+              "questionType": "Input",
+              "questionDescription": "Evaluation of acceptance results",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "BAI07.055",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Feedback on portfolio and program performance",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "EDM02.04",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Results of program performance reviews",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "APO05.01",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Stage-gate review results",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "APO02.04;APO05.03;EDM02.02",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "BAI01.07 ",
+          "subComponentName": "Manage program quality.",
+          "subComponentDescription": "Prepare and execute a quality management plan, processes and practices that align with quality management standards (QMS). Describe the approach to program quality and implementation. The plan should be formally reviewed and agreed on by all parties concerned and incorporated into the integrated program plan.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Output",
+              "questionDescription": "Requirements for independent verification of deliverables",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "BAI07.03",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Customer requirements for quality management",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "APO11.01",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+
+            {
+              "questionType": "Input",
+              "questionDescription": "Quality management plans",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "APO11.01",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Quality management plan",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "BAI02.04; BAI03.06; BAI07.01",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "BAI01.08 ",
+          "subComponentName": "Manage program risk.",
+          "subComponentDescription": "Eliminate or minimize specific risk associated with programs through a systematic process of planning, identifying, analyzing, responding to, monitoring and controlling the areas or events with the potential to cause unwanted change. Define and record any risk faced by program management.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Output",
+              "questionDescription": "Backup test plan",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "DSS04.07",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Communication of program retirement and ongoing accountabilities",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "APO05.04;APO07.06",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "• Post-implementation review report • Remedial action plan",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "BAI07.08",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        },
+        {
+          "subComponentCode": "BAI01.09 ",
+          "subComponentName": "Close a program.",
+          "subComponentDescription": "Remove the program from the active investment portfolio when there is agreement that the desired value has been achieved or when it is clear it will not be achieved within the value criteria set for the program.",
+          "subComponentQuestions": [
+
+            {
+              "questionType": "Output",
+              "questionDescription": "Communication of program retirement and ongoing accountabilities",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "APO05.04;APO07.06",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "• Post-implementation review report • Remedial action plan",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "BAI07.08",
+              "outputTo": "string",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": "comment"
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "componentName": "D",
+      "componentDescription": "Peoples, Skills and Competencies",
+      "componentPercFinal": 0,
+      "componentQuestions": [
+
+        {
+          "questionType": "Component question",
+          "questionSkill": "Benefits management",
+          "relatedGuidance": "Skills Framework for the Information Age V6, 2015 ",
+          "detailedReference": "BENM",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "Component question",
+          "questionSkill": "Business plan development",
+          "relatedGuidance": "e-Competence Framework (e-CF)—A common European Framework for ICT Professionals in all industry sectors—Part 1: Framework, 2016 ",
+          "detailedReference": "A. Plan—A.3. Business Plan Development",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "Component question",
+          "questionSkill": "Program management",
+          "relatedGuidance": "Skills Framework for the Information Age V6, 2015 ",
+          "detailedReference": "PGMG",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        },
+        {
+          "questionType": "Component question",
+          "questionSkill": "Project and portfolio management",
+          "relatedGuidance": "e-Competence Framework (e-CF)—A common European Framework for ICT Professionals in all industry sectors—Part 1: Framework, 2016 ",
+          "detailedReference": "E. Manage—E.2. Project and Portfolio Management",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        }
+
+
+      ]
+    },
+    {
+      "componentName": "E",
+      "componentDescription": "Principles Policies and Procedures",
+      "componentPercFinal": 0,
+      "componentQuestions": [
+        {
+          "questionType": "Component question",
+          "relevantPolicy": "Program/project management policy",
+          "policyDescription": "Guides management of risk related to programs and projects. Details management position and expectation regarding program and project management. Treats accountability, goals and objectives regarding performance, budget, risk analysis, reporting and mitigation of adverse events during program/project execution.",
+          "detailedGuidance": "PMBOK Guide Sixth edition, 2017 Part 1: 2.3.1 Processes, policies ",
+          "detailedReference": "Part 1: 2.3.1 Processes, policie and procedures",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        }
+
+
+      ]
+    },
+    {
+      "componentName": "F",
+      "componentDescription": "Culture, Ethics and Behavior",
+      "componentPercFinal": 0,
+      "componentQuestions": [
+        {
+          "questionType": "Component question",
+          "keyCultureElement": "Ensure the organization understands and supports the value of enterprisewide program management. Establish an enterprisewide culture that supports consistent implementation of program management, taking into account organizational structure and business environment. Ensure the program office has a central view of all programs in the enterprise portfolio.",
+          "relatedGuidance": "CMMI Data Management Maturity Model, 2014 ",
+          "detailedReference": "Data Governance",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        }
+
+      ]
+    },
+    {
+      "componentName": "G",
+      "componentDescription": "Services, Infrastructure and Applications",
+      "componentPercFinal": 0,
+      "componentQuestions": [
+
+        {
+          "questionType": "Component question",
+          "questionDescription": "Program management tool",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": "comment"
+        }
+      ]
+    }
+  ]
+}
+  
+          
+      
+
