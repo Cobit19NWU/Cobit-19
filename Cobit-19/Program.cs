@@ -71,8 +71,8 @@ if (!app.Environment.IsDevelopment())
 }
 else
 {
-    var syncfusionKey = Environment.GetEnvironmentVariable("SYNCFUSION_KEY");
-    Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense(syncfusionKey);
+    var key = builder.Configuration.GetValue<string>("Syncfusion");
+    Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense(key);
 }
 
 
