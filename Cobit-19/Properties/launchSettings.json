@@ -4,7 +4,8 @@
       "commandName": "Project",
       "launchBrowser": true,
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "SYNCFUSION_KEY": "Mjc3MTYzM0AzMjMzMmUzMDJlMzBQclAwTThTSjV2aFQ0L3IxYmNZZzRlNEpjcHZsT1l4RWdlbVpYTGNhSXFVPQ=="
       },
       "dotnetRunMessages": true,
       "applicationUrl": "https://localhost:7283;http://localhost:5175"

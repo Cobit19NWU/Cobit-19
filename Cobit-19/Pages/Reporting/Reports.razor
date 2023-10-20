@@ -1,8 +1,39 @@
 ﻿@page "/Reports"
 
+@using Cobit_19.Business.Reports
+@using Cobit_19.Business.ObjectiveAudits
+@using Cobit_19.Shared.Dtos
+
+@inject ReportProvider reportProvider
+@inject ObjectiveAuditProvider objectiveAuditProvider
+@inject IJSRuntime JSRuntime
+
 
 @code {
 
+    [Parameter]
+    [SupplyParameterFromQuery]
+    public int AuditId {get; set;}
+
+    private IList<ObjectiveAuditDto> objAudits;
+
+    protected override void OnInitialized()
+    {
+        objAudits = objectiveAuditProvider.getAll(AuditId);
+    }
+
+    private async Task objectiveAuditReportClick()
+    {
+        var pdfStream = reportProvider.createObjectiveAuditReport(objAudits);
+
+        if (pdfStream != null)
+        {
+            byte[] pdfBytes = pdfStream.ToArray();
+
+            await JSRuntime.InvokeVoidAsync("downloadFile", pdfBytes, "sample.pdf");
+        }
+
+    }
 }
 
 <div class="container">
@@ -23,7 +54,7 @@
             <tr>
                 <td>Download Objective Audits Report</td>
                 <td>
-                    <button class="btn btn-primary">Generate Report</button>
+                    <button class="btn btn-primary" @onclick="objectiveAuditReportClick">Generate Report</button>
                 </td>
             </tr>
         </tbody>

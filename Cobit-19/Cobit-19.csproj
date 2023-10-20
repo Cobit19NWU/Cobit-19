@@ -43,6 +43,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="wwwroot\js\interop.js" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Content Update="Data\Seeding\AuditJSONs\AuditTemplate.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
