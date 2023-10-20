@@ -37,7 +37,7 @@ namespace Cobit_19.Business.Reports
 
             PdfFont font = new PdfStandardFont(PdfFontFamily.Helvetica, 20);
 
-            graphics.DrawString("Testing", font, PdfBrushes.Black, new Syncfusion.Drawing.PointF(50, 0));
+            graphics.DrawString("Objective Audits Report", font, PdfBrushes.Black, new Syncfusion.Drawing.PointF(150, 0));
 
             PdfGrid table = new PdfGrid();
 
@@ -63,9 +63,16 @@ namespace Cobit_19.Business.Reports
                 tableRowStyle.TextBrush = PdfBrushes.Blue;
                 tableRowStyle.TextPen = PdfPens.Pink;
 
-                tableRow.Height = 50;
-                tableRow.Cells[0].Value = auditObject.typeOfObjective;
-                tableRow.Cells[1].Value = auditObject.objectiveName;
+                PdfStringFormat format = new PdfStringFormat();
+                format.Alignment = PdfTextAlignment.Center;
+                format.LineAlignment = PdfVerticalAlignment.Middle;
+
+                tableRow.Height = 25;
+                tableRow.Cells[0].StringFormat = format;
+                tableRow.Cells[1].StringFormat = format;
+                tableRow.Cells[2].StringFormat = format;
+                tableRow.Cells[0].Value = auditObject.objectiveName;
+                tableRow.Cells[1].Value = objAudit.Objective.Description;
                 tableRow.Cells[2].Value = auditObject.maturityLevel.ToString();
             }
 
