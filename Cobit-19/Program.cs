@@ -13,6 +13,7 @@ using Cobit_19.Business.Admin;
 using Cobit_19.Business.FocusAreas;
 using Cobit_19.Business.ObjectiveAudits;
 using Blazored.Toast;
+using Cobit_19.Business.Reports;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -56,6 +57,7 @@ builder.Services.AddScoped<UserManagementProvider>();
 builder.Services.AddScoped<AuditProvider>();
 builder.Services.AddScoped<FocusAreaProvider>();
 builder.Services.AddScoped<ObjectiveAuditProvider>();
+builder.Services.AddScoped<ReportProvider>();
 
 var app = builder.Build();
 
