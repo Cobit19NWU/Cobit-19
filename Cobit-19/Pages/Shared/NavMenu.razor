@@ -18,6 +18,13 @@
                 <span class="oi oi-lock-locked" aria-hidden="true"></span> Login
             </NavLink>
         </div>
+        <AuthorizeView Roles="Administrator">
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="/UserManagement">
+                <span class="oi oi-person" aria-hidden="true"></span> Manage Users
+            </NavLink>    
+        </div>
+        </AuthorizeView>
     </nav>
 </div>
 

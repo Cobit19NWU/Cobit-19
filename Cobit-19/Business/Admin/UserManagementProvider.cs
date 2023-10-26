@@ -86,6 +86,8 @@ namespace Cobit_19.Business.Admin
         public async Task<bool> CreateUserAsync(UserEditorDto userDto)
         {
             var user = _mapper.Map<ApplicationUser>(userDto);
+            user.LockoutEnabled = false;
+            user.EmailConfirmed = true;
 
             var passwordHasher = new PasswordHasher<ApplicationUser>();
             user.PasswordHash = passwordHasher.HashPassword(user, userDto.Password);
@@ -123,6 +125,23 @@ namespace Cobit_19.Business.Admin
             {
                 return null; //Can a user have more than one role? Note for later discussion.
             }
+        }
+
+        public async Task addUserToRoleAsync(string userName, string role)
+        {
+            var user = await _userManager.FindByNameAsync(userName);
+
+            if (user != null)
+            {
+                await _userManager.AddToRoleAsync(user, role);
+            }
+        }
+
+        public List<string> getAllRoles()
+        {
+            var roles = _roleManager.Roles.Select(role => role.Name).ToList();
+
+            return roles;
         }
     }
 }
