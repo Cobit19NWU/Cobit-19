@@ -1,4 +1,10 @@
 ﻿
+@using Cobit_19.Shared.Dtos;
+@using Microsoft.AspNetCore.Identity
+@using Cobit_19.Data.Models
+@using Cobit_19.Business.Admin
+@inject AuthenticationStateProvider authStateProvider
+@inject UserManagementProvider userManagementProvider
 
 <div class="@NavMenuCssClass" @onclick="ToggleNavMenu">
     <nav class="flex-column">
@@ -7,6 +13,11 @@
                 <div class="dropdown profile-element text-center">
                     <img alt="image" class="rounded-circle text-center" src="images/CobitLogo.jpg" />
                 </div>
+                <div>
+                    <p class="text-light text-center">@firstName @lastName</p>
+                    <p class="text-light text-center">@userRole</p>
+                </div>
+                <div></div>
                 <hr />
             </li>
             <NavLink class="nav-link" href="/" Match="NavLinkMatch.All">
@@ -30,6 +41,23 @@
     private bool collapseNavMenu = true;
 
     private string? NavMenuCssClass => collapseNavMenu ? "collapse" : null;
+
+    private string? firstName;
+    private string? lastName;
+    private string? userRole;
+    private string userID;
+    private UserDto userDto;
+
+    protected async override Task OnInitializedAsync()
+    {
+        var authState = await authStateProvider.GetAuthenticationStateAsync();
+        var user = authState.User;
+
+        if (user.Identity.IsAuthenticated)
+        {
+            (firstName, lastName) = await userManagementProvider.getUserRealNameAsync(user);
+        }
+    }
 
     private void ToggleNavMenu()
     {

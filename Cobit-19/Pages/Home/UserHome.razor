@@ -1,8 +1,9 @@
 ﻿@page "/"
 @using Cobit_19.Data.Models;
 @using Microsoft.AspNetCore.Identity;
+@using Cobit_19.Business.Admin
 @inject AuthenticationStateProvider authStateProvider
-@inject UserManager<ApplicationUser> _userManager
+@inject UserManagementProvider userManagementProvider
 
 @code {
     private string userID;
@@ -15,8 +16,7 @@
 
         if (user.Identity.IsAuthenticated)
         {
-            var currentUser = await _userManager.GetUserAsync(user);
-            userID = currentUser.Id;
+            userID = await userManagementProvider.getUserIDAsync(user);
 
             // Trigger a state change to re-render the component after the userID is set.
             StateHasChanged();
