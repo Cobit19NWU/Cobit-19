@@ -32,8 +32,6 @@ namespace Tests
                 mc.AddProfile(new UserProfile());
             });
             _mapper = mapperConfig.CreateMapper();
-
-            _focusAreaProvider = new FocusAreaProvider(_mapper, _fixture.CreateContext());
         }
 
         [Fact]

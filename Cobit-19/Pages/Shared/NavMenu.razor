@@ -12,12 +12,17 @@
             <NavLink class="nav-link" href="/" Match="NavLinkMatch.All">
                 <span class="oi oi-home" aria-hidden="true"></span> Home
             </NavLink>
-        </div>
-        <div class="nav-item  px-3">
-            <NavLink class="nav-link" href="Identity/Account/Login">
-                <span class="oi oi-lock-locked" aria-hidden="true"></span> Login
+            <NavLink class="nav-link" href="/AssessmentGuides">
+                <span class="oi oi-document" aria-hidden="true"></span> Assessment Guides
             </NavLink>
         </div>
+        <AuthorizeView Roles="Administrator">
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="/UserManagement">
+                <span class="oi oi-person" aria-hidden="true"></span> Manage Users
+            </NavLink>    
+        </div>
+        </AuthorizeView>
     </nav>
 </div>
 

@@ -118,6 +118,17 @@
         );
     }
 
+    private void NavButtonPress1()
+    {
+        var queryStrDict = new Dictionary<string, string>
+            {
+                ["AuditId"] = (AuditId).ToString(),
+            };
+        navigationManager.NavigateTo(
+            QueryHelpers.AddQueryString("/Audit", queryStrDict)
+        );
+    }
+
     private AnswerDto getFirstAnswer()
     {
         return _designFactorDto.Questions.FirstOrDefault().Answers.FirstOrDefault();
@@ -253,26 +264,10 @@
                         </div>
 
                         <DesignFactorChart Values="@_mappedObjectives"></DesignFactorChart>
-
-                        <div class="row m-3">
-                            <div class="col">
-                                @if (_isPreviousButtonDFId != -1)
-                                {
-                            <button type="button" onclick="@(() => NavButtonPress(_isPreviousButtonDFId))" class="btn btn-primary btn-lg">Back</button>
-                                }
-                            </div>
-                            <div class="col">
-                                <div class="float-end">
-                                    @if (_isNextButtonDFId != -1)
-                                    {
-                                        <button type="button" onclick="@(() => NavButtonPress(_isNextButtonDFId))" class="btn btn-primary btn-lg">Next</button>
-                                    }
-                                </div>
-                            </div>
-                        </div>
+                        
                     </div>
 
-                    <div class="row mt-4 border-2 p-4">
+                    <div class="row lg-4 border-2 p-4">
                         @if (_isPreviousButtonDFId != -1)
                         {
                             <div class="col">
@@ -284,13 +279,28 @@
                         {
                             int x = i;
                             <div class="col">
-                                <button class="btn btn-outline-light text-primary" onclick="@(() => NavButtonPress(x))">@i</button>
+                                @if ((i - 1) == _isPreviousButtonDFId )
+                                {
+                                    <button id="DFnav" class="btn btn-primary" onclick="@(() => NavButtonPress(x))">@i</button>                                    
+                                }
+                                else
+                                {
+                                    <button id="DFnav" class="btn btn-outline-light text-primary" onclick="@(() => NavButtonPress(x))">@i</button>
+                                }
+                                
+                                
                             </div>
                         }
                         @if (_isNextButtonDFId != -1)
                         {
                             <div class="col">
-                    <button class="btn btn-primary" onclick="@(() => NavButtonPress(_isNextButtonDFId))">Next</button>
+                                <button class="btn btn-primary" onclick="@(() => NavButtonPress(_isNextButtonDFId))">Next</button>
+                            </div>
+                        }
+                         @if (_isNextButtonDFId == -1)
+                        {
+                            <div class="col">
+                                <button type="button" onclick="@(() => NavButtonPress1())" class="btn btn-primary">Done</button>
                             </div>
                         }
                     </div>
