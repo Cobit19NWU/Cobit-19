@@ -59,22 +59,20 @@ builder.Services.AddScoped<FocusAreaProvider>();
 builder.Services.AddScoped<ObjectiveAuditProvider>();
 builder.Services.AddScoped<ReportProvider>();
 
-var app = builder.Build();
+builder.Services.AddSignalR(e => {
+    e.MaximumReceiveMessageSize = 102400000;
+});
 
+var syncfusionKey = Environment.GetEnvironmentVariable("SYNCFUSION_KEY");
+var app = builder.Build();
+Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense(syncfusionKey);
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
-    var syncfusionKey = builder.Configuration["Syncfusion:ServiceApiKey"];
-    Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense(syncfusionKey);
     app.UseExceptionHandler("/Error");
     // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
-}
-else
-{
-    var key = builder.Configuration.GetValue<string>("Syncfusion");
-    Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense(key);
 }
 
 
