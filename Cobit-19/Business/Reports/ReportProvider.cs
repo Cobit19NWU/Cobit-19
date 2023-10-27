@@ -5,15 +5,21 @@ using Syncfusion.Pdf.Graphics;
 using Syncfusion.Pdf.Grid;
 using System.Configuration;
 using Cobit_19.Business.ObjectiveAudits;
+using System.Drawing;
+using Cobit_19.Business.Audits;
+using Cobit_19.Migrations;
+using NuGet.DependencyResolver;
 
 namespace Cobit_19.Business.Reports
 {
     public class ReportProvider
     {
         private readonly AppDbContext _dbContext;
-        public ReportProvider(AppDbContext dbContext)
+        private readonly AuditProvider _auditProvider;
+        public ReportProvider(AppDbContext dbContext, AuditProvider auditProvider)
         {
             _dbContext = dbContext;
+            _auditProvider = auditProvider;
         }
 
         public MemoryStream createDFReport()
@@ -85,6 +91,28 @@ namespace Cobit_19.Business.Reports
             pdfDocument.Close();
 
             return stream;
+        }
+
+        public Image Base64ToImage(string base64String)
+        {
+            // Convert base 64 string to byte[]
+            byte[] imageBytes = Convert.FromBase64String(base64String);
+            // Convert byte[] to Image
+            using (var ms = new MemoryStream(imageBytes, 0, imageBytes.Length))
+            {
+                Image image = Image.FromStream(ms, true);
+                return image;
+            }
+        }
+
+        public async Task<MemoryStream> createGoalsCascadeReport(int auditId, string chartImage)
+        {
+            var designfactors = await _auditProvider.getDesignFactorsAsync(auditId);
+
+            GoalsCascadeReport goalsCascadeReport = new GoalsCascadeReport();
+            var memoryStream = goalsCascadeReport.create(designfactors, chartImage);
+
+            return memoryStream;
         }
     }
 }

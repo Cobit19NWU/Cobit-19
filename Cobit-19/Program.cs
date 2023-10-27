@@ -59,6 +59,10 @@ builder.Services.AddScoped<FocusAreaProvider>();
 builder.Services.AddScoped<ObjectiveAuditProvider>();
 builder.Services.AddScoped<ReportProvider>();
 
+builder.Services.AddSignalR(e => {
+    e.MaximumReceiveMessageSize = 102400000;
+});
+
 var syncfusionKey = Environment.GetEnvironmentVariable("SYNCFUSION_KEY");
 var app = builder.Build();
 Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense(syncfusionKey);
