@@ -2,8 +2,10 @@
 @using Cobit_19.Business.Audits;
 @using Cobit_19.Shared.Dtos;
 @using Syncfusion.Blazor.Charts
+@using Microsoft.AspNetCore.WebUtilities
 
 @inject AuditProvider auditProvider
+@inject NavigationManager navigationManager
 
 @code {
     protected SfChart? sfChart;
@@ -49,6 +51,17 @@
                 Type = chartSeriesType,
             });
         }
+    }
+
+    private void NavButtonPress1()
+    {
+        var queryStrDict = new Dictionary<string, string>
+            {
+                ["AuditId"] = (AuditId).ToString(),
+            };
+        navigationManager.NavigateTo(
+            QueryHelpers.AddQueryString("/Audit", queryStrDict)
+        );
     }
 
     private async Task Export()
@@ -105,10 +118,17 @@
                                     </div>
                                     <div class="col">
                                         <button class="btn btn-outline-light float-xl-end" style="background-color:purple;" @onclick="Export">Export</button>
+                                                                               
                                     </div>
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <div class="col">
+                        <br>
+                    </div>
+                    <div class="col">
+                        <button type="button" onclick="@(() => NavButtonPress1())" class="btn btn-outline-light" style="background-color:purple;">Back</button>
                     </div>
                 }
             </div>
