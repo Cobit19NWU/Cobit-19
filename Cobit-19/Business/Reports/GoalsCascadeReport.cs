@@ -72,7 +72,8 @@ namespace Cobit_19.Business.Reports
             //LOGO
             var logodim = new PointF(500, 280);
             PdfGraphics graphics = page.Graphics;
-            FileStream imageStream = new FileStream(@"C:\\Users\\gerni\\OneDrive\\Programming\\Cobit 19\\New folder\\Cobit-19\\Cobit-19\\wwwroot\\images\\CobitWatermark.jpg", FileMode.Open, FileAccess.Read);
+            string path = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName;
+            FileStream imageStream = new FileStream(path + "/Cobit-19/Cobit-19/wwwroot/images/CobitWatermark.jpg", FileMode.Open, FileAccess.Read);
             PdfImage logo = new PdfBitmap(imageStream);
             graphics.DrawImage(logo, 0,0,logodim.X,logodim.Y);
 
