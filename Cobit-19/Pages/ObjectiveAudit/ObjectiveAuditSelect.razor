@@ -1,4 +1,5 @@
 ﻿@page "/objectiveAuditSelect"
+@using Cobit_19.Data.Models;
 @using Cobit_19.Shared.Dtos
 @using Cobit_19.Shared.Enums
 @using Microsoft.AspNetCore.Identity
@@ -7,6 +8,8 @@
 @inject ObjectiveAuditProvider objectiveAuditProvider
 @inject NavigationManager navigationManager
 @inject AuditProvider auditProvider
+@inject UserManager<ApplicationUser> userManager
+@inject AuthenticationStateProvider authStateProvider
 
 
 @code {
@@ -17,12 +20,23 @@
 
     public AuditDto audit;
     public string auditName;
+    public string userID;
 
     protected async override Task OnInitializedAsync()
     {
-        objectiveAudits = objectiveAuditProvider.getAll(AuditId);
         audit = await auditProvider.getAsync(AuditId);
         auditName = audit.Name;
+
+        var authState = await authStateProvider.GetAuthenticationStateAsync();
+        var user = authState.User;
+
+        if (user.Identity.IsAuthenticated)
+        {
+            var currentUser = await userManager.GetUserAsync(user);
+            userID = currentUser.Id;
+        }
+
+        objectiveAudits = objectiveAuditProvider.getObjectiveAuditsForUser(userID, AuditId);
     }
 
     private void auditButtonClick(int objectiveAuditId)

@@ -52,6 +52,19 @@ namespace Cobit_19.Business.ObjectiveAudits
             return _mapper.Map<IList<ObjectiveAuditMemberDto>>(quary);
         }
 
+        public IList<ObjectiveAuditDto> getObjectiveAuditsForUser(string userID, int auditID)
+        {
+            var allObjectiveAudits = getAll(auditID).Select(audit => audit.ID);
+
+            var objectiveAuditsForMember = _dbContext.ObjectiveAuditMembers
+                .Where(auditMember => allObjectiveAudits.Contains(auditMember.ObjectiveAuditID) && auditMember.ApplicationUserID == userID)
+                .Select(auditID => auditID.ObjectiveAuditID).ToList();
+
+            var objectiveAudits = _dbContext.ObjectiveAudits.Where(audit => objectiveAuditsForMember.Contains(audit.ID)).ToList();
+
+            return _mapper.Map<IList<ObjectiveAuditDto>>(objectiveAudits);
+        }
+
         // Set selected objectiveAudits
         // TODO Implement status functionality
         public async Task<ObjectiveAuditDto> updateAsync(ObjectiveAuditEditorDto objectiveAuditEditor)
