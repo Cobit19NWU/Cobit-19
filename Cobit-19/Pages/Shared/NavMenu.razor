@@ -19,6 +19,13 @@
                 <span class="oi oi-document" aria-hidden="true"></span> Assessment Guides
             </NavLink>
         </div>
+        <AuthorizeView Roles="Administrator">
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="/UserManagement">
+                <span class="oi oi-person" aria-hidden="true"></span> Manage Users
+            </NavLink>    
+        </div>
+        </AuthorizeView>
     </nav>
 </div>
 

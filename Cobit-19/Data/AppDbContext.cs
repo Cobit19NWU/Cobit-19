@@ -164,7 +164,7 @@ namespace Cobit_19.Data
             //Seeding roles to AspNetRoles table
             builder.Entity<IdentityRole>().HasData(new IdentityRole { Id = "2c5e174e-3b0e-446f-86af-483d56fd7210", Name = "Administrator", NormalizedName = "ADMINISTRATOR".ToUpper() });
             builder.Entity<IdentityRole>().HasData(new IdentityRole { Id = "36c9f3b8-42e6-4ab1-a50d-e89986c5d1f7", Name = "Head Auditor", NormalizedName = "HEAD AUDITOR".ToUpper() });
-            builder.Entity<IdentityRole>().HasData(new IdentityRole { Id = "5e70cf29-1b64-4f58-85dd-07b3c46015a3", Name = "Governance Auditor", NormalizedName = " GOVERNANCE AUDITOR".ToUpper() });
+            builder.Entity<IdentityRole>().HasData(new IdentityRole { Id = "5e70cf29-1b64-4f58-85dd-07b3c46015a3", Name = "Governance Auditor", NormalizedName = "GOVERNANCE AUDITOR".ToUpper() });
             builder.Entity<IdentityRole>().HasData(new IdentityRole { Id = "e23abcf2-58f5-4c9b-9ef7-984a1d6a7c7a", Name = "Management Auditor", NormalizedName = "MANAGEMENT AUDITOR".ToUpper() });
             builder.Entity<IdentityRole>().HasData(new IdentityRole { Id = "d3ae1c6e-1c8a-43e7-9a2a-971fc7fbb295", Name = "Client", NormalizedName = "CLIENT".ToUpper() });
 

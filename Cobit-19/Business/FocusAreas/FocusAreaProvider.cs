@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using Cobit_19.Data;
 using Cobit_19.Shared.Enums;
 using Cobit_19.Data.Models;
+using Microsoft.AspNetCore.Identity;
 
 namespace Cobit_19.Business.FocusAreas
 {
@@ -11,11 +12,13 @@ namespace Cobit_19.Business.FocusAreas
     {
         private readonly IMapper _mapper;
         private readonly AppDbContext _dbContext;
+        private readonly UserManager<ApplicationUser> _userManager;
 
-        public FocusAreaProvider(IMapper mapper, AppDbContext dbContext)
+        public FocusAreaProvider(IMapper mapper, AppDbContext dbContext, UserManager<ApplicationUser> userManager)
         {
             _mapper = mapper;
             _dbContext = dbContext;
+            _userManager = userManager;
         }
 
         public IEnumerable<FocusAreaDto> GetFocusAreasByUserID(string userID)
@@ -63,6 +66,12 @@ namespace Cobit_19.Business.FocusAreas
         public string GetFocusAreaCompletionStatus(string userID, int focusAreaID)
         {
             var audit = GetLastAuditForFocusAreaByUserID(userID, focusAreaID);
+
+            if (audit == null)
+            {
+                return "Not Started";
+            }
+
             if (audit.Status == AuditStatus.NotStarted)
             {
                 return "Not Started";
@@ -171,6 +180,22 @@ namespace Cobit_19.Business.FocusAreas
             var value = designFactors.ElementAtOrDefault(pos - 1);
 
             return _mapper.Map<DesignFactorDto>(value);
+        }
+
+        public async Task AddUserToFocusAreaAsync(int focusAreaID, string userName)
+        {
+            var user = await _userManager.FindByNameAsync(userName);
+            var userID = user.Id;
+
+            SubscriptionModel newSub = new SubscriptionModel
+            {
+                ApplicationUserID = userID,
+                FocusAreaID = focusAreaID,
+            };
+
+            await _dbContext.Subscriptions.AddAsync(newSub);
+
+            await _dbContext.SaveChangesAsync();
         }
 
 
