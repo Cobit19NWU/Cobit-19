@@ -29,6 +29,7 @@ builder.Services.AddDbContext<AppDbContext>(options => {
         {
             sqlServerOptions.CommandTimeout(1000); // Set the command timeout to 120 seconds (adjust as needed)
         });
+     
     }
     else
     {
@@ -47,13 +48,15 @@ builder.Services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.R
     .AddEntityFrameworkStores<AppDbContext>();
 builder.Services.AddAuthentication("Identity.Application")
     .AddCookie();
+
+builder.Services.AddTransient<UserManager<ApplicationUser>>();
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 builder.Services.AddSyncfusionBlazor();
 builder.Services.AddBlazoredToast();
 
-builder.Services.AddScoped<UserManagementProvider>();
+builder.Services.AddTransient<UserManagementProvider>();
 builder.Services.AddScoped<AuditProvider>();
 builder.Services.AddScoped<FocusAreaProvider>();
 builder.Services.AddScoped<ObjectiveAuditProvider>();

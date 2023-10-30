@@ -7,7 +7,6 @@ using System.Configuration;
 using Cobit_19.Business.ObjectiveAudits;
 using System.Drawing;
 using Cobit_19.Business.Audits;
-using Cobit_19.Migrations;
 using NuGet.DependencyResolver;
 
 namespace Cobit_19.Business.Reports

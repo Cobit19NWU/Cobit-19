@@ -1164,11 +1164,7 @@ namespace Cobit_19.Data
                 builder.Entity<ObjectiveAuditTemplateModel>().HasData(new ObjectiveAuditTemplateModel { AuditObject = auditObject, ObjectiveID = objectiveID, FocusAreaID = 1 });
                 //Audit ID 1
                 builder.Entity<ObjectiveAuditModel>().HasData(new ObjectiveAuditModel { ID = objectiveAuditID, AuditID = 1, ObjectiveID = objectiveID, ApplicationUserID = "8e445865-a24d-4543-a6c6-9443d048cdb9", UserAuditObject = auditObject });
-            }
-
-            for (int i = 16; i <= 40; i++)
-            {
-                builder.Entity<ObjectiveAuditMembersModel>().HasData(new ObjectiveAuditMembersModel { ObjectiveAuditID = i, ApplicationUserID = "8e445865-a24d-4543-a6c6-9443d048cdb9", DateAdded = DateTime.Now });
+                builder.Entity<ObjectiveAuditMembersModel>().HasData(new ObjectiveAuditMembersModel { ObjectiveAuditID = objectiveAuditID, ApplicationUserID = "8e445865-a24d-4543-a6c6-9443d048cdb9", DateAdded = DateTime.Now });
             }
         }
     }
