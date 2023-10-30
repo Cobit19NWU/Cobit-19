@@ -2,9 +2,11 @@
 @using Cobit_19.Business.Audits;
 @using Cobit_19.Business.Reports;
 @using Cobit_19.Shared.Dtos;
+@using Microsoft.AspNetCore.WebUtilities;
 @using Syncfusion.Blazor.Charts
 @using System.Text.RegularExpressions;
 
+@inject NavigationManager navigationManager
 @inject ReportProvider reportProvider
 @inject AuditProvider auditProvider
 @inject IJSRuntime JSRuntime
@@ -74,8 +76,24 @@
             await JSRuntime.InvokeVoidAsync("downloadFile", pdfBytes, "sample.pdf");
         }
     }
+
+    private void BackButtonPress()
+    {
+        var queryStrDict = new Dictionary<string, string>
+            {
+                ["AuditId"] = (AuditId).ToString(),
+            };
+        navigationManager.NavigateTo(
+            QueryHelpers.AddQueryString("/Audit", queryStrDict)
+        );
+    }
 }
 
+<div>
+    <button type="button" onclick="@(() => BackButtonPress())" class="mb-2 btn btn-primary">
+        Back
+    </button>
+</div>
 <AuthorizeView>
     <div class="container-fluid bg-white border-1 border-dark">
         <div class="row border-2">

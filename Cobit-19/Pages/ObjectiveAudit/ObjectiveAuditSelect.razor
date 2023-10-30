@@ -5,6 +5,7 @@
 @using Microsoft.AspNetCore.Identity
 @using Cobit_19.Business.ObjectiveAudits
 @using Cobit_19.Business.Audits
+@using Microsoft.AspNetCore.WebUtilities;
 @inject ObjectiveAuditProvider objectiveAuditProvider
 @inject NavigationManager navigationManager
 @inject AuditProvider auditProvider
@@ -75,8 +76,24 @@
             return "badge bg-success";
         }
     }
+
+    private void BackButtonPress()
+    {
+        var queryStrDict = new Dictionary<string, string>
+            {
+                ["AuditId"] = (AuditId).ToString(),
+            };
+        navigationManager.NavigateTo(
+            QueryHelpers.AddQueryString("/Audit", queryStrDict)
+        );
+    }
 }
 
+<div>
+    <button type="button" onclick="@(() => BackButtonPress())" class="mb-2 btn btn-primary">
+        Back
+    </button>
+</div>
 <div class="container">
     <div>
         <h5>Maturity Assesments</h5>
