@@ -17,9 +17,7 @@
     public List<ComponentDto> components;
     public List<string> gaugeLabels = new List<string> {"Enterprise Goals", "Alignment Goals", "Processes", "Structure", "Information",
                                                         "People", "Policies", "Culture", "Technology"};
-
-
-    public int labelNum = 0;
+    public int labelNum;
 
     protected override void OnInitialized()
     {
@@ -27,6 +25,7 @@
         auditObject = AuditJSONParsingService.parseAuditTemplate(auditJSON);
         components = auditObject.components;
         maturityLevel = auditObject.maturityLevel;
+        labelNum = 0;
     }
 }
 

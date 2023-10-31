@@ -15,93 +15,77 @@ namespace Cobit_19.Business.Reports
     {
         private readonly AppDbContext _dbContext;
         private readonly AuditProvider _auditProvider;
-        public ReportProvider(AppDbContext dbContext, AuditProvider auditProvider)
+        private readonly ObjectiveAuditProvider _objectiveAuditProvider;
+        public ReportProvider(AppDbContext dbContext, AuditProvider auditProvider, ObjectiveAuditProvider objectiveAuditProvider)
         {
             _dbContext = dbContext;
             _auditProvider = auditProvider;
+            _objectiveAuditProvider = objectiveAuditProvider;
         }
 
-        public MemoryStream createDFReport()
+        public MemoryStream createObjectiveAuditReport(int objectiveAuditID)
         {
-            return new MemoryStream();
-        }
+            var obj = _objectiveAuditProvider.getByID(objectiveAuditID);
 
-        public MemoryStream createCanvasReport()
-        {
-            return new MemoryStream();
-        }
-        public MemoryStream createObjectiveAuditReport(IList<ObjectiveAuditDto> objectiveAudits)
-        {
-            PdfDocument pdfDocument = new PdfDocument();
+            return new MemoryStream();  
+            //PdfDocument pdfDocument = new PdfDocument();
 
-            pdfDocument.PageSettings.Size = PdfPageSize.A4;
+            //pdfDocument.PageSettings.Size = PdfPageSize.A4;
 
-            PdfPage page = pdfDocument.Pages.Add();
+            //PdfPage page = pdfDocument.Pages.Add();
 
-            PdfGraphics graphics = page.Graphics;
+            //PdfGraphics graphics = page.Graphics;
 
-            PdfFont font = new PdfStandardFont(PdfFontFamily.Helvetica, 20);
+            //PdfFont font = new PdfStandardFont(PdfFontFamily.Helvetica, 20);
 
-            graphics.DrawString("Objective Audits Report", font, PdfBrushes.Black, new Syncfusion.Drawing.PointF(150, 0));
+            //graphics.DrawString("Objective Audits Report", font, PdfBrushes.Black, new Syncfusion.Drawing.PointF(150, 0));
 
-            PdfGrid table = new PdfGrid();
+            //PdfGrid table = new PdfGrid();
 
-            table.Columns.Add(3);
+            //table.Columns.Add(3);
 
-            table.Headers.Add(1);
+            //table.Headers.Add(1);
 
-            PdfGridRow tableHeader = table.Headers[0];
+            //PdfGridRow tableHeader = table.Headers[0];
 
-            tableHeader.Cells[0].Value = "Objective Code";
-            tableHeader.Cells[1].Value = "Objective Name";
-            tableHeader.Cells[2].Value = "Maturity Level";
+            //tableHeader.Cells[0].Value = "Objective Code";
+            //tableHeader.Cells[1].Value = "Objective Name";
+            //tableHeader.Cells[2].Value = "Maturity Level";
 
-            foreach (var objAudit in objectiveAudits)
-            {
-                PdfGridRow tableRow = table.Rows.Add();
-                PdfGridRowStyle tableRowStyle = new PdfGridRowStyle();
-                var auditString = objAudit.UserAuditObject;
-                var auditObject = AuditJSONParsingService.parseAuditTemplate(auditString);
+            //foreach (var objAudit in objectiveAudits)
+            //{
+            //    PdfGridRow tableRow = table.Rows.Add();
+            //    PdfGridRowStyle tableRowStyle = new PdfGridRowStyle();
+            //    var auditString = objAudit.UserAuditObject;
+            //    var auditObject = AuditJSONParsingService.parseAuditTemplate(auditString);
 
-                tableRowStyle.BackgroundBrush = PdfBrushes.LightYellow;
-                tableRowStyle.Font = new PdfStandardFont(PdfFontFamily.Courier, 15);
-                tableRowStyle.TextBrush = PdfBrushes.Blue;
-                tableRowStyle.TextPen = PdfPens.Pink;
+            //    tableRowStyle.BackgroundBrush = PdfBrushes.LightYellow;
+            //    tableRowStyle.Font = new PdfStandardFont(PdfFontFamily.Courier, 15);
+            //    tableRowStyle.TextBrush = PdfBrushes.Blue;
+            //    tableRowStyle.TextPen = PdfPens.Pink;
 
-                PdfStringFormat format = new PdfStringFormat();
-                format.Alignment = PdfTextAlignment.Center;
-                format.LineAlignment = PdfVerticalAlignment.Middle;
+            //    PdfStringFormat format = new PdfStringFormat();
+            //    format.Alignment = PdfTextAlignment.Center;
+            //    format.LineAlignment = PdfVerticalAlignment.Middle;
 
-                tableRow.Height = 25;
-                tableRow.Cells[0].StringFormat = format;
-                tableRow.Cells[1].StringFormat = format;
-                tableRow.Cells[2].StringFormat = format;
-                tableRow.Cells[0].Value = auditObject.objectiveName;
-                tableRow.Cells[1].Value = objAudit.Objective.Description;
-                tableRow.Cells[2].Value = auditObject.maturityLevel.ToString();
-            }
+            //    tableRow.Height = 25;
+            //    tableRow.Cells[0].StringFormat = format;
+            //    tableRow.Cells[1].StringFormat = format;
+            //    tableRow.Cells[2].StringFormat = format;
+            //    tableRow.Cells[0].Value = auditObject.objectiveName;
+            //    tableRow.Cells[1].Value = objAudit.Objective.Description;
+            //    tableRow.Cells[2].Value = auditObject.maturityLevel.ToString();
+            //}
 
-            table.ApplyBuiltinStyle(PdfGridBuiltinStyle.GridTable4Accent1);
-            table.Draw(page, new Syncfusion.Drawing.PointF(10, 40));
+            //table.ApplyBuiltinStyle(PdfGridBuiltinStyle.GridTable4Accent1);
+            //table.Draw(page, new Syncfusion.Drawing.PointF(10, 40));
 
-            MemoryStream stream = new MemoryStream();
+            //MemoryStream stream = new MemoryStream();
 
-            pdfDocument.Save(stream);
-            pdfDocument.Close();
+            //pdfDocument.Save(stream);
+            //pdfDocument.Close();
 
-            return stream;
-        }
-
-        public Image Base64ToImage(string base64String)
-        {
-            // Convert base 64 string to byte[]
-            byte[] imageBytes = Convert.FromBase64String(base64String);
-            // Convert byte[] to Image
-            using (var ms = new MemoryStream(imageBytes, 0, imageBytes.Length))
-            {
-                Image image = Image.FromStream(ms, true);
-                return image;
-            }
+            //return stream;
         }
 
         public async Task<MemoryStream> createGoalsCascadeReport(int auditId, string chartImage)

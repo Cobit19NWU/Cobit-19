@@ -18,7 +18,6 @@ namespace Cobit_19.Business.Reports
     public class GoalsCascadeReport
     {
         private PdfDocument _pdfDocument;
-        private object watermarkGraphics;
 
         public GoalsCascadeReport()
         {
