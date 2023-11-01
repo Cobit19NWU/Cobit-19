@@ -1,4 +1,5 @@
 ﻿@page "/objectiveAuditSelect"
+@using Cobit_19.Business.Reports;
 @using Cobit_19.Data.Models;
 @using Cobit_19.Shared.Dtos
 @using Cobit_19.Shared.Enums
@@ -11,6 +12,8 @@
 @inject AuditProvider auditProvider
 @inject UserManager<ApplicationUser> userManager
 @inject AuthenticationStateProvider authStateProvider
+@inject ReportProvider reportProvider
+@inject IJSRuntime JSRuntime
 
 
 @code {
@@ -87,6 +90,19 @@
             QueryHelpers.AddQueryString("/Audit", queryStrDict)
         );
     }
+
+    public async void ExportComplete(int objectiveAuditId)
+    {
+        var pdfStream = reportProvider.createObjectiveAuditReport(objectiveAuditId);
+
+        if (pdfStream != null)
+        {
+            byte[] pdfBytes = pdfStream.ToArray();
+
+            await JSRuntime.InvokeVoidAsync("downloadFile", pdfBytes, "sample.pdf");
+        }
+    }
+
 }
 
 <div>
@@ -96,7 +112,7 @@
 </div>
 <div class="container">
     <div>
-        <h5>Maturity Assesments</h5>
+        <h2>Maturity Assessments</h2>
     </div>
 
     <div>
@@ -108,18 +124,20 @@
                     <th>Maturity Level</th>
                     <th>Status</th>
                     <th></th>
+                    <th>Report</th>
                 </tr>
             </thead>
             <tbody>
-                @foreach (var audit in objectiveAudits)
+                @foreach (var objectiveAudit in objectiveAudits)
                 {
-                    var fullAudit = AuditJSONParsingService.parseAuditTemplate(audit.UserAuditObject);
+                    var fullAudit = AuditJSONParsingService.parseAuditTemplate(objectiveAudit.UserAuditObject);
                     <tr>
                         <td>@auditName</td>
-                        <td>@audit.Objective.Code</td>
+                        <td>@objectiveAudit.Objective.Code</td>
                         <td>@fullAudit.maturityLevel</td>
-                        <td><span class="@statusBadge(audit.Status)">@statusFormatter(audit.Status)</span></td>
-                        <td><button class="btn btn-primary" @onclick = "() => auditButtonClick(audit.ID)">Modify</button></td>
+                        <td><span class="@statusBadge(audit.Status)">@statusFormatter(objectiveAudit.Status)</span></td>
+                        <td><button class="btn btn-primary" @onclick="() => auditButtonClick(objectiveAudit.ID)">Modify</button></td>
+                        <td><button class="btn btn-outline-primary" @onclick="() => ExportComplete(objectiveAudit.ID)">Report</button></td>
                     </tr>
                 }
             </tbody>

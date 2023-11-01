@@ -24,14 +24,14 @@
 
     private async Task objectiveAuditReportClick()
     {
-        var pdfStream = reportProvider.createObjectiveAuditReport(objAudits);
+        //var pdfStream = reportProvider.createObjectiveAuditReport(o);
 
-        if (pdfStream != null)
-        {
-            byte[] pdfBytes = pdfStream.ToArray();
+        //if (pdfStream != null)
+        //{
+        //    byte[] pdfBytes = pdfStream.ToArray();
 
-            await JSRuntime.InvokeVoidAsync("downloadFile", pdfBytes, "sample.pdf");
-        }
+        //    await JSRuntime.InvokeVoidAsync("downloadFile", pdfBytes, "sample.pdf");
+        //}
 
     }
 }
