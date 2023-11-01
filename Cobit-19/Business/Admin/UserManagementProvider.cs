@@ -152,25 +152,18 @@ namespace Cobit_19.Business.Admin
 
         public async Task<string> getUserIDAsync(ClaimsPrincipal user)
         {
-            lock (_lock)
-            {
-                var currentUser =  _userManager.GetUserAsync(user).Result;
-                var userID = currentUser.Id;
-                return userID;
-            }
+            var currentUser =  _userManager.GetUserAsync(user).Result;
+            var userID = currentUser.Id;
+            return userID;
         }
 
         public async Task<(string, string)> getUserRealNameAsync(ClaimsPrincipal user)
         {
+            var currentUser = _userManager.GetUserAsync(user).Result;
+            var firstName = currentUser.FirstName;
+            var lastName = currentUser.LastName;
 
-            lock (_lock)
-            {
-                var currentUser = _userManager.GetUserAsync(user).Result;
-                var firstName = currentUser.FirstName;
-                var lastName = currentUser.LastName;
-
-                return (firstName, lastName);
-            }
+            return (firstName, lastName);
         }
     }
 }
