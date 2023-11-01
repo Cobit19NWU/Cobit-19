@@ -4,7 +4,7 @@
 @using Cobit_19.Data.Models
 @using Cobit_19.Business.Admin
 @inject AuthenticationStateProvider authStateProvider
-@inject UserManagementProvider userManagementProvider
+@inject IServiceProvider serviceProvider
 
 <div class="@NavMenuCssClass" @onclick="ToggleNavMenu">
     <nav class="flex-column">
@@ -14,8 +14,8 @@
                     <img alt="image" class="rounded-circle text-center" src="images/CobitLogo.jpg" />
                 </div>
                 <div>
-                    <p class="text-light text-center">@firstName @lastName</p>
-                    <p class="text-light text-center">@userRole</p>
+                    <h6 class="text-light text-center">@firstName @lastName</h6>
+                    <h6 class="text-light text-center">@userRole</h6>
                 </div>
                 <div></div>
                 <hr />
@@ -50,6 +50,10 @@
 
     protected async override Task OnInitializedAsync()
     {
+        var scope = serviceProvider.CreateScope();
+        var userManagementProvider = scope.ServiceProvider.GetRequiredService<UserManagementProvider>();
+
+
         var authState = await authStateProvider.GetAuthenticationStateAsync();
         var user = authState.User;
 
@@ -57,6 +61,10 @@
         {
             (firstName, lastName) = await userManagementProvider.getUserRealNameAsync(user);
         }
+        userID = await userManagementProvider.getUserIDAsync(user);
+        userDto = await userManagementProvider.GetUserDtoByIdAsync(userID);
+
+        userRole = await userManagementProvider.getUserRoleAsync(userDto);
     }
 
     private void ToggleNavMenu()

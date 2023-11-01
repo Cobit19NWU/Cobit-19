@@ -118,7 +118,7 @@
         );
     }
 
-    private void NavButtonPress1()
+    private void BackButtonPress()
     {
         var queryStrDict = new Dictionary<string, string>
             {
@@ -135,6 +135,11 @@
     }
 }
 
+<div>
+    <button type="button" onclick="@(() => BackButtonPress())" class="btn btn-primary">
+        Back
+    </button>
+</div>
 <AuthorizeView>
     <div class="container">
         <div class="row">
@@ -300,7 +305,7 @@
                          @if (_isNextButtonDFId == -1)
                         {
                             <div class="col">
-                                <button type="button" onclick="@(() => NavButtonPress1())" class="btn btn-primary">Done</button>
+                                <button type="button" onclick="@(() => BackButtonPress())" class="btn btn-primary">Done</button>
                             </div>
                         }
                     </div>

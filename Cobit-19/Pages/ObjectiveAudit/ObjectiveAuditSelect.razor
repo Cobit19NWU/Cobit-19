@@ -80,6 +80,17 @@
         }
     }
 
+    private void BackButtonPress()
+    {
+        var queryStrDict = new Dictionary<string, string>
+            {
+                ["AuditId"] = (AuditId).ToString(),
+            };
+        navigationManager.NavigateTo(
+            QueryHelpers.AddQueryString("/Audit", queryStrDict)
+        );
+    }
+
     public async void ExportComplete(int objectiveAuditId)
     {
         var pdfStream = reportProvider.createObjectiveAuditReport(objectiveAuditId);
@@ -92,18 +103,13 @@
         }
     }
 
-    private void BackButtonPress()
-    {
-        var queryStrDict = new Dictionary<string, string>
-            {
-                ["AuditId"] = (AuditId).ToString(),
-            };
-        navigationManager.NavigateTo(
-            QueryHelpers.AddQueryString("/Audit", queryStrDict)
-        );
-    }
 }
 
+<div>
+    <button type="button" onclick="@(() => BackButtonPress())" class="mb-2 btn btn-primary">
+        Back
+    </button>
+</div>
 <div class="container">
     <div>
         <h5>Maturity Assessments</h5>
