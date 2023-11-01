@@ -1,4 +1,5 @@
 ﻿using Cobit_19.Shared.Dtos;
+using Syncfusion.Blazor.CircularGauge.Internal;
 using Syncfusion.Drawing;
 using Syncfusion.Pdf;
 using Syncfusion.Pdf.Graphics;
@@ -18,24 +19,38 @@ namespace Cobit_19.Business.Reports
             _pdfDocument.PageSettings.Orientation = PdfPageOrientation.Landscape;
         }
 
-        public MemoryStream create(List<DesignFactorDto> designFactors, string chartBase64)
+        public MemoryStream create(FullObjectiveAuditDto fullObjectiveAuditDto)
         {
+            AssesmentData data = new AssesmentData()
+            {
+                Organization = "NWU",
+                Assessment = "COBIT 2019",
+                Lead = "Daniel Coetzee",
+                FocusArea = "Cobit Core Model",
+                Auditor = "Alice Johnson",
+                AuditName = "Audit 1",
+                Date = DateTime.Now,
+                Maturity = 1,
+                Target = 1
+            };
 
+            string title = "Maturity Assessment Report for " + fullObjectiveAuditDto.objectiveName;
+            addCoverPager(title, fullObjectiveAuditDto.objectiveDescription, fullObjectiveAuditDto.objectivePurpose, data);
+            
+            List<ComponentDto> components;
 
-            //addCoverPager("The corporation manufactures goods, is a large enterprise, is very cost conscious, and desires to be a cost leader in its market. The enterprise considers I&T purely a supporting function for efficient and effective operations. Although IT is a supporting function, the enterprise is critically dependent on it. The enterprise takes a traditional approach to new development and operations and is quite hesitant to adopt new technologies. Recently, the enterprise was confronted with a malware attack and suffered from several operational IT problems. The enterprise houses and operates critical IT equipment in-house.");
+            if(fullObjectiveAuditDto.components != null)
+            {
+                int i = 0;
+                while (fullObjectiveAuditDto.components[i].componentDescription != "Processes")
+                {
+                    i++;
+                }
 
-            //addDesignFactorPage("1.1 Enterprise Strategy (Design Factor 1)", "A primary focus on Innovation/Differentiation, Growth/Acquisition and a secondary focus on client service/stability is/are depicted as outlined below.", designFactors[0]);
-            //addDesignFactorPage("1.2 Enterprise Goals (Design Factor 2)", "The enterprise has ranked the 13 generic enterprise goals on a scale from 1 to 5, as depicted below. The diagram shows that EG03 Compliance with external laws and regulations, EG06 Business-service continuity and availability is/are the highest-ranked enterprise goal/s.", designFactors[1]);
-            //addDesignFactorPage("1.3 Risk profile (Design Factor 3)", "A high-level risk analysis has resulted in a risk profile, identifying the following highest risk categories: IT operational infrastructure incidents, unauthorized actions, software adoption/usage problems, hardware incidents, software failures and logical attacks.  ", designFactors[2]);
-            //addDesignFactorPage("1.4 I&T-related issues (Design Factor 4)Design Factor", "An analysis of the current situation (on a scale from 1 to 3) resulted in an assessment of current I&T-related issues, as depicted below. These are perceived to be important issues to the enterprise: significant incidents, service delivery problems by outsourcers, hidden IT cost and IT cost overall.", designFactors[3]);
-            //addDesignFactorPage("1.5 Threat landscape (Design Factor 5)", "The diagram below depicts the threat landscape under which the enterprise believes it operates. Due to its geopolitical situation, industry sector or particular profile, the enterprise is operating in a 93% high-threat environment. In addition, the enterprise is operating under what are considered normal threat levels at 7%.", designFactors[4]);
-            //addDesignFactorPage("1.6 Compliance requirements (Design Factor 6)", "The enterprise is subject to higher (81%) than average compliance requirements, most often related to industry sector or geopolitical conditions.", designFactors[5]);
-            //addDesignFactorPage("1.7 Role of IT (Design Factor 7)", "The role of IT is expressed as strategic. IT is critical for both running and innovating the organization’s business processes and services. Secondary IT is expressed as support. IT is not crucial for the running and continuity of the business process and services, nor for their innovation.", designFactors[6]);
-            //addDesignFactorPage("1.8 Sourcing model for IT (Design Factor 8)", "The selected sourcing model of the enterprise, is predominantly insourced at 65%  (The enterprise provides for their own IT staff and services).  Secondary is outsourcing at 20% (The enterprise calls upon the services of a third party to provide IT services)", designFactors[7]);
-            //addDesignFactorPage("1.9 IT implementation methods (Design Factor 9)", "The enterprise primarily uses traditional IT development and operations methods at 46%. The enterprise uses a more classic approach towards software development (waterfall) and separates software development and operations. Secondary it uses devOps at 34% (The enterprise uses DevOps working methods for software building, deployment and operations)", designFactors[8]);
-            //addDesignFactorPage("1.10 Technology adoption strategy (Design Factor 10)", "The enterprise is, at best, a first mover at 40% when it comes to new technology adoption. The enterprise generally adopts new technologies as early as possible and tries to gain first-mover advantage.", designFactors[9]);
-            //
-            //addSummary("Governance and Management Objectives ", "This section adds the governance and management priorities resulting from step 1. This synthesis results in the following adjusted priorities for governance and management objectives in NWU’s governance system.", chartBase64);
+                var processes = fullObjectiveAuditDto.components[i];
+                addProcessPage(processes);
+            }
+
 
             MemoryStream stream = new MemoryStream();
 
@@ -116,45 +131,65 @@ namespace Cobit_19.Business.Reports
 
             infoTable.Draw(graphics, new PointF(0, logodim.Y + 30 + sizeF.Height + 30));
 
+            // Description Header
+            font = new PdfStandardFont(PdfFontFamily.Helvetica, 14, PdfFontStyle.Bold);
+            graphics.DrawString("Description", font, PdfBrushes.Black, new PointF(0, logodim.Y + 30 + sizeF.Height + 30 + 130));
             //Description
             font = new PdfStandardFont(PdfFontFamily.Helvetica, 12, PdfFontStyle.Regular);
             PdfTextElement pdfTextElement = new PdfTextElement(description, font);
-            pdfTextElement.Draw(page, new RectangleF(0, logodim.Y + 30 + sizeF.Height + 30 + 100, page.GetClientSize().Width, page.GetClientSize().Height));
+            pdfTextElement.Draw(page, new RectangleF(0, logodim.Y + 30 + sizeF.Height + 30 + 150, page.GetClientSize().Width, page.GetClientSize().Height));
 
+            // Description Header
+            font = new PdfStandardFont(PdfFontFamily.Helvetica, 14, PdfFontStyle.Bold);
+            graphics.DrawString("Purpose", font, PdfBrushes.Black, new PointF(0, logodim.Y + 30 + sizeF.Height + 30 + 210));
             //Purpose
             font = new PdfStandardFont(PdfFontFamily.Helvetica, 12, PdfFontStyle.Regular);
             pdfTextElement = new PdfTextElement(purpose, font);
-            pdfTextElement.Draw(page, new RectangleF(0, logodim.Y + 30 + sizeF.Height + 30 + 130, page.GetClientSize().Width, page.GetClientSize().Height));
+            pdfTextElement.Draw(page, new RectangleF(0, logodim.Y + 30 + sizeF.Height + 30 + 230, page.GetClientSize().Width, page.GetClientSize().Height));
 
-        }
+            // Process Description
+            string processHeader = "Process compliance";
+            string ProcessDescription = "Processes describe an organized set of practices and activities to achieve certain objectives and produce a set of outputs that support achievement of overall IT-related goals.";
 
-        private void addProcessPage(DesignFactorDto designFactorDto)
-        {
-            PdfPage page = _pdfDocument.Pages.Add();
-            PdfGraphics graphics = page.Graphics;
-            PdfFont font = new PdfStandardFont(PdfFontFamily.Helvetica, 20, PdfFontStyle.Bold);
-
-            string header = "Process compliance";
-            string description = "Processes describe an organized set of practices and activities to achieve certain objectives and produce a set of outputs that support achievement of overall IT-related goals.";
-            
-            SizeF sizeFHeader = font.MeasureString(header);
-
-            graphics.DrawString(header, font, PdfBrushes.Black, new PointF(0, 0));
+            font = new PdfStandardFont(PdfFontFamily.Helvetica, 14, PdfFontStyle.Bold);
+            graphics.DrawString(processHeader, font, PdfBrushes.Black, new PointF(0, logodim.Y + 30 + sizeF.Height + 30 + 270));
 
             font = new PdfStandardFont(PdfFontFamily.Helvetica, 12, PdfFontStyle.Regular);
+            pdfTextElement = new PdfTextElement(ProcessDescription, font);
+            pdfTextElement.Draw(page, new RectangleF(0, logodim.Y + 30 + sizeF.Height + 30 + 290, page.GetClientSize().Width, page.GetClientSize().Height));
 
-            SizeF sizeFDescr = font.MeasureString(description);
-
-            PdfTextElement pdfTextElement = new PdfTextElement(description, font);
-            pdfTextElement.Draw(page, new RectangleF(0, sizeFHeader.Height + 15, page.GetClientSize().Width, page.GetClientSize().Height));
-
-            
-            
-            
-            
         }
 
-        private void subProcess(string header, List<Activities> activities)
+        private void addProcessPage(ComponentDto component)
+        {
+            foreach(SubComponentDto subComponentDto in component.subComponents)
+            {
+                var title = subComponentDto.subComponentCode + " - " + subComponentDto.subComponentName;
+                subProcess(title, subComponentDto.subComponentQuestions);
+            }
+        }
+
+        public string GetAnswerAchievement(double answerValue)
+        {
+            if (answerValue <= 2)
+            {
+                return "Not Achieved";
+            }
+            else if (answerValue > 2 && answerValue <= 5)
+            {
+                return "Partially Achieved";
+            }
+            else if (answerValue > 5 && answerValue <= 8)
+            {
+                return "Largely Achieved";
+            }
+            else
+            {
+                return "Fully Achieved";
+            }
+        }
+
+        private void subProcess(string header, List<SubComponentQuestionDto> questions)
         {
             PdfPage page = _pdfDocument.Pages.Add();
             PdfGraphics graphics = page.Graphics;
@@ -191,7 +226,7 @@ namespace Cobit_19.Business.Reports
             tableHeader.Cells[3].Value = "Rating";
 
             bool col = true;
-            foreach (var activitie in activities)
+            foreach (var question in questions)
             {
                 PdfGridRow tableRow = table.Rows.Add();
 
@@ -208,16 +243,15 @@ namespace Cobit_19.Business.Reports
                 }
                 col = !col;
 
-                tableRow.Height = 20;
                 tableRow.Cells[0].StringFormat = format;
                 tableRow.Cells[1].StringFormat = format;
                 tableRow.Cells[2].StringFormat = format;
                 tableRow.Cells[3].StringFormat = format;
 
-                tableRow.Cells[0].Value = activitie.Maturity.ToString();
-                tableRow.Cells[0].Value = activitie.Activity;
-                tableRow.Cells[0].Value = activitie.Importance.ToString();
-                tableRow.Cells[0].Value = activitie.Rating;
+                tableRow.Cells[0].Value = question.questionType;
+                tableRow.Cells[1].Value = question.questionDescription;
+                tableRow.Cells[2].Value = question.questionAnswer.ToString();
+                tableRow.Cells[3].Value = GetAnswerAchievement(question.questionScore);
             }
 
             table.Draw(page, new PointF(0, sizeFHeader.Height + 20));
