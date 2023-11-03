@@ -1,9 +1,9 @@
 ﻿@page "/Reports"
-
+@using Microsoft.AspNetCore.WebUtilities
 @using Cobit_19.Business.Reports
 @using Cobit_19.Business.ObjectiveAudits
 @using Cobit_19.Shared.Dtos
-
+@inject NavigationManager navigationManager
 @inject ReportProvider reportProvider
 @inject ObjectiveAuditProvider objectiveAuditProvider
 @inject IJSRuntime JSRuntime
@@ -21,6 +21,16 @@
     {
         objAudits = objectiveAuditProvider.getAll(AuditId);
     }
+    private void BackButtonPress()
+    {
+        var queryStrDict = new Dictionary<string, string>
+            {
+                ["AuditId"] = (AuditId).ToString(),
+            };
+        navigationManager.NavigateTo(
+            QueryHelpers.AddQueryString("/Audit", queryStrDict)
+        );
+    }
 
     private async Task objectiveAuditReportClick()
     {
@@ -34,7 +44,13 @@
         //}
 
     }
+   
 }
+<div>
+    <button type="button" onclick="@(() => BackButtonPress())" class="mb-2 btn btn-primary">
+        Back
+    </button>
+</div>
 
 <div class="container">
     <table class="table table-hover table-striped">
