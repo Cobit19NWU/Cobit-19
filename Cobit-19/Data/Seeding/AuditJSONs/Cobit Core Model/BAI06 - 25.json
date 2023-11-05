@@ -668,8 +668,8 @@
         {
           "questionType": "Component question",
           "keyCultureElement": "Leaders must create a culture of continuous improvement in IT solutions and services, recognizing that improvement requires them to understand the impact of technology change on the enterprise, its inherent risk and associated mitigation, as well as its cost. Leaders must balance the impact of change against its expected benefits and contribution to I&T strategy and enterprise objectives.",
-          "relatedGuidance": "string",
-          "detailedReference": "string",
+          "relatedGuidance": "No related guidance given",
+          "detailedReference": "No detailed reference given",
           "questionAnswer": 0,
           "questionScore": 0,
           "questionComment": "comment"

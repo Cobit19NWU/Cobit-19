@@ -836,8 +836,8 @@
         {
           "questionType": "Component question",
           "keyCultureElement": "Support a culture of proactive problem management (detection, action and prevention) with clearly defined roles and responsibilities. Ensure a transparent and open environment for reporting problems by providing independent reporting mechanisms and/or rewarding people who bring problems forward.",
-          "relatedGuidance": "string",
-          "detailedReference": "string",
+          "relatedGuidance": "No related guidance given",
+          "detailedReference": "No detailed reference given",
           "questionAnswer": 0,
           "questionScore": 0,
           "questionComment": "comment"

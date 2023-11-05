@@ -685,8 +685,8 @@
 				{
 					"questionType": "Component question",
 					"keyCultureElement": "Embed a knowledge-sharing culture in the enterprise. Proactively communicate the value of knowledge to encourage knowledge creation, use, reuse and sharing. Encourage the sharing and transfer of knowledge by identifying and leveraging motivational factors.",
-					"relatedGuidance": "string",
-					"detailedReference": "string",
+					"relatedGuidance": "No related guidance given",
+					"detailedReference": "No detailed reference given",
 					"questionAnswer": 0,
 					"questionScore": 0,
 					"questionComment": "comment"

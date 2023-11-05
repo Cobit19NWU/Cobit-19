@@ -842,8 +842,8 @@
         {
           "questionType": "Component question",
           "keyCultureElement": "For enterprises that depend on information, availability and capacity management are critical to successful operations. Establish a culture in which product and service availability and capacity are prioritized (in line with business requirements) and supported by processes and behaviors that not only identify required availability and capacity before design, but also consider them in provisioning. Consistently define smart SLAs; continuously monitor circuits, traffic and response times; perform regular testing for business continuity and disaster recovery of infrastructure.",
-          "relatedGuidance": "string",
-          "detailedReference": "string",
+          "relatedGuidance": "No related guidance given",
+          "detailedReference": "No detailed reference given",
           "questionAnswer": 0,
           "questionScore": 0,
           "questionComment": "comment"
