@@ -97,6 +97,7 @@ namespace Cobit_19.Business.Audits
         {
             // Create Audit
             var audit = _mapper.Map<AuditModel>(auditEditorDto);
+            var adminUsers = await _userManagementProvider.GetAdminUsersAsync();
 
             await _dbContext.Audits.AddAsync(audit);
             await _dbContext.SaveChangesAsync();
@@ -124,7 +125,6 @@ namespace Cobit_19.Business.Audits
             var objectiveTemplates = await _objectiveAuditProvider.getAllObjectiveTemplatesAsync();
             foreach (var objTemplate in objectiveTemplates)
             {
-
                 var objAudit = new ObjectiveAuditModel
                 {
                     AuditID = audit.ID,
@@ -135,10 +135,25 @@ namespace Cobit_19.Business.Audits
                     Status = AuditStatus.NotStarted,
                     UserAuditObject = objTemplate.AuditObject
                 };
+
                 _dbContext.ObjectiveAudits.Add(objAudit);
+                _dbContext.SaveChanges();
+
+                var objAuditID = objAudit.ID;
+
+                foreach (var adminUser in adminUsers)
+                {
+                    var objAuditMember = new ObjectiveAuditMembersModel
+                    {
+                        ApplicationUserID = adminUser.ID,
+                        ObjectiveAuditID = objAuditID,
+                        DateAdded = DateTime.Now
+                    };
+
+                    _dbContext.ObjectiveAuditMembers.Add(objAuditMember);
+                }
             }
 
-            var adminUsers = await _userManagementProvider.GetAdminUsersAsync();
 
             foreach (var adminUser in adminUsers)
             {
