@@ -1277,8 +1277,8 @@
         {
           "questionType": "Component question",
           "keyCultureElement": "Create an environment in which management understands architectural needs relative to business goals and objectives. Drive effective practice of enterprise architecture throughout the organization (not only by enterprise architects). Ensure a holistic approach that links components more seamlessly (e.g., by moving away from dedicated teams of application specialists). ",
-          "relatedGuidance": "",
-          "detailedReference": "",
+          "relatedGuidance": "No related guidance given",
+          "detailedReference": "No detailed reference given",
           "questionAnswer": 0,
           "questionScore": 0,
           "questionComment": "comment"

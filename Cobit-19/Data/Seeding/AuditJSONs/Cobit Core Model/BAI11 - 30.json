@@ -1479,8 +1479,8 @@
         {
           "questionType": "Component question",
           "keyCultureElement": "Establish an enterprisewide project management culture that ensures consistent and optimal implementation of project management across the enterprise, taking into account organizational structure and business environment. Ensure that all initiatives are translated into projects (or changes, where minor in scope); ensure that no ad hoc actions occur outside the scope of project management.",
-          "relatedGuidance": "string",
-          "detailedReference": "string",
+          "relatedGuidance": "No related guidance given",
+          "detailedReference": "No detailed reference given",
           "questionAnswer": 0,
           "questionScore": 0,
           "questionComment": "comment"

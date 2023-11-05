@@ -1217,8 +1217,8 @@
         {
           "questionType": "Component question",
           "keyCultureElement": "reate a culture that embraces internal audit and assurance findings and recommendations, based on root cause analysis. Leaders must ensure that internal audit and assurance are involved in strategic initiatives and recognize the need for (and value of) audit and assurance reports.",
-          "relatedGuidance": "string",
-          "detailedReference": "string",
+          "relatedGuidance": "No related guidance given",
+          "detailedReference": "No detailed reference given",
           "questionAnswer": 0,
           "questionScore": 0,
           "questionComment": "comment"

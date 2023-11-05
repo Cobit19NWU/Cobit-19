@@ -886,8 +886,8 @@
         {
           "questionType": "Component question",
           "keyCultureElement": "Establish a contract between a service provider (internal or external) and the end user that defines expected level of service. Make sure this service level is based on output, specifically defining what the customer will receive in SMART objectives (specific, measurable, achievable, realistic and time-phased). Establish a culture in which service levels are respected. Discourage noncompliance through a penalty system.",
-          "relatedGuidance": "",
-          "detailedReference": "",
+          "relatedGuidance": "No related guidance given",
+          "detailedReference": "No detailed reference given",
           "questionAnswer": 0,
           "questionScore": 0,
           "questionComment": "comment"

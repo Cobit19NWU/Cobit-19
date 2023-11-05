@@ -845,8 +845,8 @@
         {
           "questionType": "Component question",
           "keyCultureElement": "The value that I&T adds depends on the degree to which I&T is aligned with the business and meets its expectations. Optimize I&T value by establishing a culture in which I&T services are delivered on time and within budget, with appropriate quality.",
-          "relatedGuidance": "",
-          "detailedReference": "",
+          "relatedGuidance": "No related guidance given",
+          "detailedReference": "No detailed reference given",
           "questionAnswer": 0,
           "questionScore": 0,
           "questionComment": "comment"

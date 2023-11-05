@@ -2194,8 +2194,8 @@
         {
           "questionType": "Component question",
           "keyCultureElement": "Ensure agile and scalable delivery of digital services; engage an ecosystem of partners with whom the organization can work or set up a bimodal IT structure with digital factories, agile leaders and teams, continuous flow, and a mindset toward improvement.",
-          "relatedGuidance": "string",
-          "detailedReference": "string",
+          "relatedGuidance": "No related guidance given",
+          "detailedReference": "No detailed reference given",
           "questionAnswer": 0,
           "questionScore": 0,
           "questionComment": "comment"
@@ -2203,8 +2203,8 @@
         {
           "questionType": "Component question",
           "keyCultureElement": "Establish an open, unbiased culture that fairly and objectively evaluates alternatives when investigating potential new solutions (including whether to build or buy).",
-          "relatedGuidance": "string",
-          "detailedReference": "string",
+          "relatedGuidance": "No related guidance given",
+          "detailedReference": "No detailed reference given",
           "questionAnswer": 0,
           "questionScore": 0,
           "questionComment": "comment"
