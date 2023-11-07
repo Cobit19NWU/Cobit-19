@@ -206,6 +206,10 @@
                                                 {
                                                     <th>@i</th>
                                                 }
+                                                @if(_designFactorDto.Questions.Count >= 10)
+                                                {
+                                                    <th>Risk Rating</th>
+                                                }
                                             }
                                             else if (getFirstAnswer().AnswerRange == 100)
                                             {
@@ -244,6 +248,29 @@
                                                             class="form-check-input"
                                                             @onchange="((e) => Update(q.ID, UpdateType.answer, e))"
                                                             checked="@IsAnswerSelected(q.Answers.First().Answer, i)" />
+                                                        </td>
+                                                    }
+                                                    @if(_designFactorDto.Questions.Count >= 10)
+                                                    {
+                                                        <td>
+                                                            @if (q.Answers.First().Answer == 1)
+                                                            {
+                                                                <span class="badge bg-success">
+                                                                    <b>Low Risk</b>
+                                                                </span>
+                                                            }
+                                                            else if (q.Answers.First().Answer == 2)
+                                                            {
+                                                                <span class="badge bg-warning flex-fill">
+                                                                    <b>Moderate Risk</b>
+                                                                </span>
+                                                            }
+                                                            else
+                                                            {
+                                                                <span class="badge bg-danger flex-fill">
+                                                                    <b>High Risk</b>
+                                                                </span>
+                                                            }
                                                         </td>
                                                     }
                                                 }

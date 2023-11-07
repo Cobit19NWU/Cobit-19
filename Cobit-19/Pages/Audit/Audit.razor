@@ -284,24 +284,6 @@
                                     </td>
                                 </tr>
                             </AuthorizeView>
-                            <AuthorizeView Roles="Administrator, Head Auditor, Client">
-                                <tr>
-                                    <td>
-                                        <span class="badge bg-success" style="font-size:12px">Completed</span>
-                                    </td>
-                                    <td>
-                                        <div>
-                                            <h5>Reports</h5>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <button class="btn btn-primary btn-sm" @onclick="() => generateReportsButtonsPress()">
-                                            <i class="fa-solid fa-chart-line"></i>
-                                            View Reports
-                                        </button>
-                                    </td>
-                                </tr>
-                            </AuthorizeView>
                         </tbody>
                     </table>
                 }
