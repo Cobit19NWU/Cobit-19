@@ -6,6 +6,7 @@
 @using Microsoft.AspNetCore.Identity
 @using Cobit_19.Business.ObjectiveAudits
 @using Cobit_19.Business.Audits
+@using Cobit_19.Business.Admin
 @using Microsoft.AspNetCore.WebUtilities;
 @inject ObjectiveAuditProvider objectiveAuditProvider
 @inject NavigationManager navigationManager
@@ -13,6 +14,7 @@
 @inject UserManager<ApplicationUser> userManager
 @inject AuthenticationStateProvider authStateProvider
 @inject ReportProvider reportProvider
+@inject UserManagementProvider userManagementProvider
 @inject IJSRuntime JSRuntime
 
 
@@ -25,6 +27,7 @@
     public AuditDto audit;
     public string auditName;
     public string userID;
+    IList<ObjectiveAuditMemberDto> auditMembers;
 
     protected async override Task OnInitializedAsync()
     {
@@ -121,7 +124,7 @@
                 <tr style="background-color: purple; color: white;">
                     <th>Audit Name</th>
                     <th>Description</th>
-                    <th>Auditor</th>
+                    <th>Assigned to audit</th>
                     <th>Maturity Level</th>
                     <th>Status</th>
                     <th></th>
@@ -132,9 +135,18 @@
                 @foreach (var objectiveAudit in objectiveAudits)
                 {
                     var fullAudit = AuditJSONParsingService.parseAuditTemplate(objectiveAudit.UserAuditObject);
+                    auditMembers = objectiveAuditProvider.getMembersByObjectiveAuditID(objectiveAudit.ID);
                     <tr>
                         <td>@auditName</td>
                         <td>@objectiveAudit.Objective.Code</td>
+                        <td>
+                            @foreach (var auditMember in auditMembers)
+                            {
+                                var user = userManagementProvider.GetUserDtoByIdAsync(auditMember.ApplicationUserID).Result;
+                                @user.UserName
+                                <br />
+                            }
+                        </td>
                         <td>@fullAudit.maturityLevel</td>
                         <td><span class="@statusBadge(audit.Status)">@statusFormatter(objectiveAudit.Status)</span></td>
                         <td><button class="btn btn-primary" @onclick="() => auditButtonClick(objectiveAudit.ID)">Modify</button></td>

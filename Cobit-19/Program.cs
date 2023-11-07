@@ -66,7 +66,7 @@ builder.Services.AddSignalR(e => {
     e.MaximumReceiveMessageSize = 102400000;
 });
 
-var syncfusionKey = Environment.GetEnvironmentVariable("SYNCFUSION_KEY");
+var syncfusionKey = Environment.GetEnvironmentVariable("SYNCFUSION_KEY", EnvironmentVariableTarget.Machine);
 var app = builder.Build();
 Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense(syncfusionKey);
 
