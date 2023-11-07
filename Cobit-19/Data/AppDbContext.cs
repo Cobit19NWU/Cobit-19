@@ -271,6 +271,10 @@ namespace Cobit_19.Data
 
             builder.Entity<AuditMemberModel>().HasData(
                 new AuditMemberModel { ApplicationUserID = "8e445865-a24d-4543-a6c6-9443d048cdb9", AuditID = 1 },
+                new AuditMemberModel { ApplicationUserID = "8e445865-a24d-4543-a6c6-9443d048cdb9", AuditID = 2 },
+                new AuditMemberModel { ApplicationUserID = "8e445865-a24d-4543-a6c6-9443d048cdb9", AuditID = 3 },
+                new AuditMemberModel { ApplicationUserID = "8e445865-a24d-4543-a6c6-9443d048cdb9", AuditID = 4 },
+                new AuditMemberModel { ApplicationUserID = "8e445865-a24d-4543-a6c6-9443d048cdb9", AuditID = 5 },
                 new AuditMemberModel { ApplicationUserID = "fa567c12-5678-4321-bacd-87654321de1f", AuditID = 1 },
                 new AuditMemberModel { ApplicationUserID = "9b1a0f34-8765-4321-dcba-ba09876543c2", AuditID = 1 },
                 new AuditMemberModel { ApplicationUserID = "b2c3d4e5-f6a7-1234-5678-0987654321dc", AuditID = 1 },
@@ -380,7 +384,11 @@ namespace Cobit_19.Data
                 );
 
             builder.Entity<AuditModel>().HasData(
-                new AuditModel { ID = 1, FocusAreaID = 1, ApplicationUserID = "8e445865-a24d-4543-a6c6-9443d048cdb9", Name = "Audit 1", DateCreated = DateTime.Parse("Jan 1, 2009"), Status = AuditStatus.InProgress }
+                new AuditModel { ID = 1, FocusAreaID = 1, ApplicationUserID = "8e445865-a24d-4543-a6c6-9443d048cdb9", Name = "Audit 1", DateCreated = DateTime.Parse("Jan 1, 2009"), Status = AuditStatus.InProgress },
+                new AuditModel { ID = 2, FocusAreaID = 1, ApplicationUserID = "8e445865-a24d-4543-a6c6-9443d048cdb9", Name = "Audit 2", DateCreated = DateTime.Parse("Jan 2, 2009"), Status = AuditStatus.InProgress },
+                new AuditModel { ID = 3, FocusAreaID = 1, ApplicationUserID = "8e445865-a24d-4543-a6c6-9443d048cdb9", Name = "Audit 3", DateCreated = DateTime.Parse("Jan 3, 2009"), Status = AuditStatus.InProgress },
+                new AuditModel { ID = 4, FocusAreaID = 1, ApplicationUserID = "8e445865-a24d-4543-a6c6-9443d048cdb9", Name = "Audit 4", DateCreated = DateTime.Parse("Jan 4, 2009"), Status = AuditStatus.InProgress },
+                new AuditModel { ID = 5, FocusAreaID = 1, ApplicationUserID = "8e445865-a24d-4543-a6c6-9443d048cdb9", Name = "Audit 5", DateCreated = DateTime.Parse("Jan 5, 2009"), Status = AuditStatus.InProgress }
                 );
             builder.Entity<AnswerModel>().HasData(
                 new AnswerModel { AuditID = 1, QuestionID = 1, Answer = 3, AnswerRange = 5 },
@@ -508,6 +516,29 @@ namespace Cobit_19.Data
                 new ObjectiveModel { ID = 38, Name = "MEA02", Code = "MEA02", Description = "Manage System of Internal Control" },
                 new ObjectiveModel { ID = 39, Name = "MEA03", Code = "MEA03", Description = "Manage Compliance With External Requirement" },
                 new ObjectiveModel { ID = 40, Name = "MEA04", Code = "MEA04", Description = "Manage Assurance" }
+                );
+
+            builder.Entity<ObjectiveAuditModel>().HasData(
+
+                //Audit ID 2                      
+                new ObjectiveAuditModel { ID = 41, AuditID = 2, ObjectiveID = 1, ApplicationUserID = "8e445865-a24d-4543-a6c6-9443d048cdb9" },
+                new ObjectiveAuditModel { ID = 42, AuditID = 2, ObjectiveID = 2, ApplicationUserID = "8e445865-a24d-4543-a6c6-9443d048cdb9" },
+                new ObjectiveAuditModel { ID = 43, AuditID = 2, ObjectiveID = 3, ApplicationUserID = "8e445865-a24d-4543-a6c6-9443d048cdb9" },
+                                                  
+                //AuObjectiveAuditModel           
+                new ObjectiveAuditModel { ID = 44, AuditID = 3, ObjectiveID = 1, ApplicationUserID = "8e445865-a24d-4543-a6c6-9443d048cdb9" },
+                new ObjectiveAuditModel { ID = 45, AuditID = 3, ObjectiveID = 2, ApplicationUserID = "8e445865-a24d-4543-a6c6-9443d048cdb9" },
+                new ObjectiveAuditModel { ID = 46, AuditID = 3, ObjectiveID = 3, ApplicationUserID = "8e445865-a24d-4543-a6c6-9443d048cdb9" },
+                                       
+                //AuObjectiveAuditModel
+                new ObjectiveAuditModel { ID = 47, AuditID = 4, ObjectiveID = 1, ApplicationUserID = "8e445865-a24d-4543-a6c6-9443d048cdb9" },
+                new ObjectiveAuditModel { ID = 48, AuditID = 4, ObjectiveID = 2, ApplicationUserID = "8e445865-a24d-4543-a6c6-9443d048cdb9" },
+                new ObjectiveAuditModel { ID = 49, AuditID = 4, ObjectiveID = 3, ApplicationUserID = "8e445865-a24d-4543-a6c6-9443d048cdb9" },
+                                                   
+                //auObjectiveAuditModel            
+                new ObjectiveAuditModel { ID = 50, AuditID = 5, ObjectiveID = 1, ApplicationUserID = "8e445865-a24d-4543-a6c6-9443d048cdb9" },
+                new ObjectiveAuditModel { ID = 51, AuditID = 5, ObjectiveID = 2, ApplicationUserID = "8e445865-a24d-4543-a6c6-9443d048cdb9" },
+                new ObjectiveAuditModel { ID = 52, AuditID = 5, ObjectiveID = 3, ApplicationUserID = "8e445865-a24d-4543-a6c6-9443d048cdb9" }
                 );
 
             /// Mapping 4 Questions and 40 Objectives with their weights for design factor 1

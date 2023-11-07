@@ -17,7 +17,7 @@
 
 
 @code {
-    IList<ObjectiveAuditDto> _objectiveAudits;
+    IList<ObjectiveAuditDto> objectiveAudits;
     [Parameter]
     [SupplyParameterFromQuery]
     public int AuditId { get; set; }
@@ -40,7 +40,7 @@
             userID = currentUser.Id;
         }
 
-        _objectiveAudits = objectiveAuditProvider.getObjectiveAuditsForUser(userID, AuditId);
+        objectiveAudits = objectiveAuditProvider.getObjectiveAuditsForUser(userID, AuditId);
     }
 
     private void auditButtonClick(int objectiveAuditId)
@@ -111,41 +111,37 @@
     </button>
 </div>
 <div class="container">
-        @if (_objectiveAudits == null || _objectiveAudits.Count == 0)
-        {
-            <h2> No audits are assigned to you ..</h2>
-        }
-        else
-        {
+    <div>
+        <h2>Maturity Assessments</h2>
+    </div>
 
-            <div>
-                <h2>Maturity Assessments</h2>
-            </div>
-            <table class="table">
-                <thead>
-                    <tr style="background-color: purple; color: white;">
-                        <th>Audit Name</th>
-                        <th>Description</th>
-                        <th>Auditor</th>
-                        <th>Maturity Level</th>
-                        <th>Status</th>
-                        <th>Report</th>
+    <div>
+        <table class="table">
+            <thead>
+                <tr style="background-color: purple; color: white;">
+                    <th>Audit Name</th>
+                    <th>Description</th>
+                    <th>Auditor</th>
+                    <th>Maturity Level</th>
+                    <th>Status</th>
+                    <th></th>
+                    <th>Report</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var objectiveAudit in objectiveAudits)
+                {
+                    var fullAudit = AuditJSONParsingService.parseAuditTemplate(objectiveAudit.UserAuditObject);
+                    <tr>
+                        <td>@auditName</td>
+                        <td>@objectiveAudit.Objective.Code</td>
+                        <td>@fullAudit.maturityLevel</td>
+                        <td><span class="@statusBadge(audit.Status)">@statusFormatter(objectiveAudit.Status)</span></td>
+                        <td><button class="btn btn-primary" @onclick="() => auditButtonClick(objectiveAudit.ID)">Modify</button></td>
+                        <td><button class="btn btn-outline-primary" @onclick="() => ExportComplete(objectiveAudit.ID)">Report</button></td>
                     </tr>
-                </thead>
-                <tbody>
-                    @foreach (var objectiveAudit in _objectiveAudits)
-                    {
-                        var fullAudit = AuditJSONParsingService.parseAuditTemplate(objectiveAudit.UserAuditObject);
-                        <tr>
-                            <td>@auditName</td>
-                            <td>@objectiveAudit.Objective.Code</td>
-                            <td>@fullAudit.maturityLevel</td>
-                            <td><span class="@statusBadge(audit.Status)">@statusFormatter(objectiveAudit.Status)</span></td>
-                            <td><button class="btn btn-primary" @onclick="() => auditButtonClick(objectiveAudit.ID)">Modify</button></td>
-                            <td><button class="btn btn-outline-primary" @onclick="() => ExportComplete(objectiveAudit.ID)">Report</button></td>
-                        </tr>
-                    }
-                </tbody>
-            </table>
-        }
+                }
+            </tbody>
+        </table>
+    </div>
 </div>

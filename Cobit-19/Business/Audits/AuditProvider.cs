@@ -30,12 +30,7 @@ namespace Cobit_19.Business.Audits
         // Get audit by id with focus area and design factors
         public async Task<AuditDto> getAsync(int id)
         {
-            var quary = await _dbContext.Audits
-                .Include(a => a.ApplicationUser)
-                .Include(a => a.FocusArea)
-                .Where(a => a.ID == id)
-                .FirstOrDefaultAsync();
-
+            var quary = await _dbContext.Audits.FindAsync(id);
             return _mapper.Map<AuditDto>(quary);
         }
 
