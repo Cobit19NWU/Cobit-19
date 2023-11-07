@@ -59,7 +59,7 @@
     }
 }
 
-<div class="container">
+<div class="container-fluid">
     <BlazoredToasts Position="ToastPosition.TopLeft"
                     Timeout="4"
                     IconType="IconType.Material" />
@@ -75,7 +75,26 @@
     </div>
 
     <div class="row">
+        <div class="col border">
+            <table class="table table-hover table-striped modal-dialog-scrollable">
+                <thead style="">
+                    <tr>
+                        <th style="background-color: purple; color: white;">#</th>
+                        <th style="background-color: purple; color: white;">User</th>
+                    </tr>
 
+                </thead>
+                <tbody>
+                    @foreach (var user in allUsers)
+                    {
+                        <tr>
+                            <td>@(allUsers.IndexOf(user) + 1)</td>
+                            <td>@user.UserName</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
         <div class="col border">
             <div class="panel-heading p-1" style="color: white; background-color : purple">
                 Add user
