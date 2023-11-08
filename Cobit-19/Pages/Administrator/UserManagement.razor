@@ -1,0 +1,143 @@
+﻿@page "/UserManagement"
+@using Blazored.Toast.Configuration;
+@using Cobit_19.Business.Admin
+@using Cobit_19.Business.FocusAreas
+@using Cobit_19.Business.Audits
+@using Cobit_19.Shared.Dtos
+@using Blazored.Toast
+@using Blazored.Toast.Services
+@inject UserManagementProvider userManagementProvider
+@inject FocusAreaProvider focusAreaProvider
+@inject AuditProvider auditProvider
+@inject IToastService toastService
+
+@code {
+    public IList<UserDto>? allUsers;
+    public List<String>? allRoles;
+    public string? deleteUserID;
+    public string? addPassword;
+    public string? addFirstName;
+    public string? addLastName;
+    public string? addEmail;
+    public string? userRole = "Administrator";
+
+
+    protected override void OnInitialized()
+    {
+        allUsers = userManagementProvider.GetAllUsers();
+        allRoles = userManagementProvider.getAllRoles();
+    }
+
+    private async Task addUserOnClickAsync()
+    {
+        UserEditorDto newUser = new UserEditorDto
+            {
+                UserName = addEmail,
+                Password = addPassword,
+                FirstName = addFirstName,
+                LastName = addLastName,
+                Email = addEmail
+            };
+
+        await userManagementProvider.CreateUserAsync(newUser);
+        await userManagementProvider.addUserToRoleAsync(addEmail, userRole);
+        await focusAreaProvider.AddUserToFocusAreaAsync(1, addEmail);
+
+        if (userRole == "Administrator")
+        {
+            await auditProvider.addMemberToAllAudits(addEmail);
+        }
+
+        toastService.ShowSuccess("User Successfully Created!");
+    }
+
+    private async Task deleteUserOnClickAsync()
+    {
+        await userManagementProvider.DeleteUserAsync(deleteUserID);
+
+        toastService.ShowSuccess("User Deleted!");
+    }
+}
+
+<div class="container-fluid">
+    <BlazoredToasts Position="ToastPosition.TopLeft"
+                    Timeout="4"
+                    IconType="IconType.Material" />
+    <div class="row">
+        <div class="panel panel-primary">
+
+            <div class="panel-heading p-2 mb-2" style="color: white; background-color : purple; position:relative; right:7px">
+                <b>
+                    Manage Users
+                </b>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col border">
+            <table class="table table-hover table-striped modal-dialog-scrollable">
+                <thead style="">
+                    <tr>
+                        <th style="background-color: purple; color: white;">#</th>
+                        <th style="background-color: purple; color: white;">User</th>
+                    </tr>
+
+                </thead>
+                <tbody>
+                    @foreach (var user in allUsers)
+                    {
+                        <tr>
+                            <td>@(allUsers.IndexOf(user) + 1)</td>
+                            <td>@user.UserName</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+        <div class="col border">
+            <div class="panel-heading p-1" style="color: white; background-color : purple">
+                Add user
+            </div>
+
+            <label for="emailField"><b>Email:</b></label><br />
+            <input type="text" id="emailField" @bind="@addEmail" /><br />
+
+            <label for="firstNameField"><b>First Name:</b></label><br />
+            <input type="text" id="firstNameField" @bind="@addFirstName" /><br />
+
+            <label for="lastNameField"><b>Last Name:</b></label><br />
+            <input type="text" id="lastNameField" @bind="@addLastName" /><br />
+
+            <label for="passwordField"><b>Password:</b></label><br />
+            <input type="text" id="passwordField" @bind="@addPassword" /><br />
+
+            <label for="userRoleField"><b>Select User Role:</b></label><br />
+            <select id="userRoleField" @bind="@userRole">
+                @foreach(var roleName in allRoles)
+                {
+                    <option value="@roleName">@roleName</option>
+                }
+            </select><br /><br />
+
+            <button class="btn btn-primary" @onclick="addUserOnClickAsync">Add User</button>
+
+        </div>
+
+        <div class="col border mx-3">
+            <div class="panel-heading p-1" style="color: white; background-color : purple">
+                Delete user
+            </div>
+
+            <label for="userDelete"><b>Select User:</b></label><br />
+            <select id="userDelete" @bind="@deleteUserID">
+                @foreach(var user in allUsers)
+                {
+                    <option value="@user.ID">@user.UserName</option>
+                }
+            </select><br /><br />
+
+            <button class="btn btn-primary" @onclick="deleteUserOnClickAsync">Delete User</button>
+        </div>
+    </div>
+</div>

@@ -6,6 +6,7 @@ using Cobit_19.Shared.Dtos;
 using Cobit_19.Shared.Enums;
 using Microsoft.EntityFrameworkCore;
 using Cobit_19.Business.Admin;
+using Microsoft.AspNetCore.Identity;
 
 namespace Cobit_19.Business.Audits
 {
@@ -16,18 +17,25 @@ namespace Cobit_19.Business.Audits
         private static readonly object _lock = new object();
         private readonly ObjectiveAuditProvider _objectiveAuditProvider;
         private readonly UserManagementProvider _userManagementProvider;
-        public AuditProvider(IMapper mapper, AppDbContext dbContext, ObjectiveAuditProvider objectiveAuditProvider, UserManagementProvider userManagementProvider)
+        private readonly UserManager<ApplicationUser> _userManager;
+        public AuditProvider(IMapper mapper, AppDbContext dbContext, ObjectiveAuditProvider objectiveAuditProvider, UserManagementProvider userManagementProvider, UserManager<ApplicationUser> userManager)
         {
             _dbContext = dbContext;
             _mapper = mapper;
             _objectiveAuditProvider = objectiveAuditProvider;
             _userManagementProvider = userManagementProvider;
+            _userManager = userManager;
         }
 
         // Get audit by id with focus area and design factors
         public async Task<AuditDto> getAsync(int id)
         {
-            var quary = await _dbContext.Audits.FindAsync(id);
+            var quary = await _dbContext.Audits
+                .Include(a => a.ApplicationUser)
+                .Include(a => a.FocusArea)
+                .Where(a => a.ID == id)
+                .FirstOrDefaultAsync();
+
             return _mapper.Map<AuditDto>(quary);
         }
 
@@ -94,6 +102,7 @@ namespace Cobit_19.Business.Audits
         {
             // Create Audit
             var audit = _mapper.Map<AuditModel>(auditEditorDto);
+            var adminUsers = await _userManagementProvider.GetAdminUsersAsync();
 
             await _dbContext.Audits.AddAsync(audit);
             await _dbContext.SaveChangesAsync();
@@ -121,7 +130,6 @@ namespace Cobit_19.Business.Audits
             var objectiveTemplates = await _objectiveAuditProvider.getAllObjectiveTemplatesAsync();
             foreach (var objTemplate in objectiveTemplates)
             {
-
                 var objAudit = new ObjectiveAuditModel
                 {
                     AuditID = audit.ID,
@@ -132,10 +140,25 @@ namespace Cobit_19.Business.Audits
                     Status = AuditStatus.NotStarted,
                     UserAuditObject = objTemplate.AuditObject
                 };
+
                 _dbContext.ObjectiveAudits.Add(objAudit);
+                _dbContext.SaveChanges();
+
+                var objAuditID = objAudit.ID;
+
+                foreach (var adminUser in adminUsers)
+                {
+                    var objAuditMember = new ObjectiveAuditMembersModel
+                    {
+                        ApplicationUserID = adminUser.ID,
+                        ObjectiveAuditID = objAuditID,
+                        DateAdded = DateTime.Now
+                    };
+
+                    _dbContext.ObjectiveAuditMembers.Add(objAuditMember);
+                }
             }
 
-            var adminUsers = await _userManagementProvider.GetAdminUsersAsync();
 
             foreach (var adminUser in adminUsers)
             {
@@ -251,6 +274,27 @@ namespace Cobit_19.Business.Audits
             var auditMember = _mapper.Map<AuditMemberModel>(auditMemberDto);
 
             _dbContext.AuditMembers.Add(auditMember);
+
+            await _dbContext.SaveChangesAsync();
+        }
+
+        public async Task addMemberToAllAudits(string userName)
+        {
+            var user = await _userManager.FindByNameAsync(userName);
+            var userID = user.Id;
+
+            var audits = await getAllAsync();
+
+            foreach(var audit in audits)
+            {
+                AuditMemberModel auditMember = new AuditMemberModel
+                {
+                    ApplicationUserID = userID,
+                    AuditID = audit.ID
+                };
+
+                await _dbContext.AuditMembers.AddAsync(auditMember);
+            }
 
             await _dbContext.SaveChangesAsync();
         }

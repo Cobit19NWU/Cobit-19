@@ -1635,7 +1635,9 @@
       "componentQuestions": [
         {
           "questionType": "Component question",
-          "questionDescription": "Set an internal culture of alignment between business and IT, establishing the necessary management objectives, structures, processes, and roles and responsibilities that enable decision making and value creation in the most effective and efficient manner.",
+          "keyCultureElement": "Set an internal culture of alignment between business and IT, establishing the necessary management objectives, structures, processes, and roles and responsibilities that enable decision making and value creation in the most effective and efficient manner.",
+          "relatedGuidance": "No related guidance given",
+          "detailedReference": "No detailed reference given",
           "questionAnswer": 0,
           "questionScore": 0,
           "questionComment": "comment"

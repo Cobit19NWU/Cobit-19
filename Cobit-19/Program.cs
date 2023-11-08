@@ -13,6 +13,7 @@ using Cobit_19.Business.Admin;
 using Cobit_19.Business.FocusAreas;
 using Cobit_19.Business.ObjectiveAudits;
 using Blazored.Toast;
+using Cobit_19.Business.Reports;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -28,6 +29,7 @@ builder.Services.AddDbContext<AppDbContext>(options => {
         {
             sqlServerOptions.CommandTimeout(1000); // Set the command timeout to 120 seconds (adjust as needed)
         });
+     
     }
     else
     {
@@ -46,33 +48,34 @@ builder.Services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.R
     .AddEntityFrameworkStores<AppDbContext>();
 builder.Services.AddAuthentication("Identity.Application")
     .AddCookie();
+
+builder.Services.AddTransient<UserManager<ApplicationUser>>();
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 builder.Services.AddSyncfusionBlazor();
 builder.Services.AddBlazoredToast();
 
-builder.Services.AddScoped<UserManagementProvider>();
+builder.Services.AddTransient<UserManagementProvider>();
 builder.Services.AddScoped<AuditProvider>();
 builder.Services.AddScoped<FocusAreaProvider>();
 builder.Services.AddScoped<ObjectiveAuditProvider>();
+builder.Services.AddScoped<ReportProvider>();
 
+builder.Services.AddSignalR(e => {
+    e.MaximumReceiveMessageSize = 102400000;
+});
+
+var syncfusionKey = Environment.GetEnvironmentVariable("SYNCFUSION_KEY");
 var app = builder.Build();
-
+Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense(syncfusionKey);
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
-    var syncfusionKey = builder.Configuration["Syncfusion:ServiceApiKey"];
-    Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense(syncfusionKey);
     app.UseExceptionHandler("/Error");
     // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
-}
-else
-{
-    var key = builder.Configuration.GetValue<string>("Syncfusion");
-    Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense(key);
 }
 
 

@@ -714,8 +714,8 @@
         {
           "questionType": "Component question",
           "keyCultureElement": "Establish a culture that supports a structured approach to configuration management across departments in which users recognize the value of strict configuration management (e.g., avoiding version conflicts or duplicative effort) and apply the rules and procedures that were put in place.",
-          "relatedGuidance": "string",
-          "detailedReference": "string",
+          "relatedGuidance": "No related guidance given",
+          "detailedReference": "No detailed reference given",
           "questionAnswer": 0,
           "questionScore": 0,
           "questionComment": "comment"

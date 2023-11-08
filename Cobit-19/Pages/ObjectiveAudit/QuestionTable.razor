@@ -130,10 +130,24 @@
         {
             compQuestion.questionAnswer = int.Parse(e.Value.ToString());
             compQuestion.questionScore = objectiveAuditProvider.calculateAnswerScore(compQuestion.questionAnswer);
-
-
         }
 
+    }
+
+    private void updateQuestionComment(ChangeEventArgs e, ComponentQuestionDto compQuestion = null, SubComponentQuestionDto subCompQuestion = null)
+    {
+        if (compQuestion != null)
+        {
+            compQuestion.questionComment = e.Value.ToString();
+        }
+        else
+        {
+            subCompQuestion.questionComment = e.Value.ToString();
+        }
+
+        auditJsonString = AuditJSONParsingService.auditTemplateSerializer(auditJSON);
+
+        objectiveAuditProvider.updateAuditJSON(objectiveAuditId, auditJsonString);
     }
 
 }
@@ -183,7 +197,7 @@
                         <td><div class="bg-primary rounded-3 text-center" style="width: 100px; height: 50px;">@(objectiveAuditProvider.GetAnswerAchievement(subCompQuestion.questionAnswer) == 3 ? "X" : " ")</div></td>
                         <td>@subCompQuestion.questionScore</td>
                         <td>
-                            <input type="text" />
+                            <input type="text" @onchange="@((e) => updateQuestionComment(e, subCompQuestion: subCompQuestion))" value="@subCompQuestion.questionComment" />
                         </td>
                     </tr>
                 }
@@ -234,7 +248,7 @@
                         <td><div class="bg-primary rounded-3 text-center" style="width: 100px; height: 50px;">@(objectiveAuditProvider.GetAnswerAchievement(subCompQuestion.questionAnswer) == 3 ? "X" : " ")</div></td>
                         <td>@objectiveAuditProvider.calculateAnswerScore(subCompQuestion.questionAnswer)</td>
                         <td>
-                            <input type="text" />
+                            <input type="text" @onchange="@((e) => updateQuestionComment(e, subCompQuestion: subCompQuestion))" value="@subCompQuestion.questionComment" />
                         </td>
                     </tr>
                 }
@@ -287,7 +301,7 @@
                         <td><div class="bg-primary rounded-3 text-center" style="width: 100px; height: 50px;">@(objectiveAuditProvider.GetAnswerAchievement(MLevelQuestion.questionAnswer) == 3 ? "X" : " ")</div></td>
                         <td>@objectiveAuditProvider.calculateAnswerScore(MLevelQuestion.questionAnswer)</td>
                         <td>
-                            <input type="text" />
+                            <input type="text" @onchange="@((e) => updateQuestionComment(e, subCompQuestion: MLevelQuestion))" value="@MLevelQuestion.questionComment" />
                         </td>
                     </tr>
                 }
@@ -340,7 +354,7 @@
                             )</div></td>
                                 <td>@objectiveAuditProvider.calculateAnswerScore(relatedGuidanceQuestion.questionAnswer)</td>
                                 <td>
-                                    <input type="text" />
+                                <input type="text" @onchange="@((e) => updateQuestionComment(e, subCompQuestion: relatedGuidanceQuestion))" value="@relatedGuidanceQuestion.questionComment" />
                                 </td>
                             </tr>
                         }
@@ -402,7 +416,7 @@
                         <td><div class="bg-primary rounded-3 text-center" style="width: 100px; height: 50px;">@(objectiveAuditProvider.GetAnswerAchievement(compQuestion.questionAnswer) == 3 ? "X" : " ")</div></td>
                         <td>@objectiveAuditProvider.calculateAnswerScore(compQuestion.questionAnswer)</td>
                         <td>
-                            <input type="text" />
+                            <input type="text" @onchange="@((e) => updateQuestionComment(e, compQuestion: compQuestion))" value="@compQuestion.questionComment" />
                         </td>
                     </tr>
                 }
@@ -469,7 +483,7 @@
                             )</div></td>
                             <td>@objectiveAuditProvider.calculateAnswerScore(inputQuestion.questionAnswer)</td>
                                 <td>
-                                    <input type="text" />
+                                <input type="text" @onchange="@((e) => updateQuestionComment(e, subCompQuestion: inputQuestion))" value="@inputQuestion.questionComment" />
                                 </td>
                             </tr>
                         }
@@ -525,7 +539,7 @@
                             )</div></td>
                             <td>@objectiveAuditProvider.calculateAnswerScore(outputQuestion.questionAnswer)</td>
                                 <td>
-                                    <input type="text" />
+                                <input type="text" @onchange="@((e) => updateQuestionComment(e, subCompQuestion: outputQuestion))" value="@outputQuestion.questionComment" />
                                 </td>
                             </tr>
                         }
@@ -583,7 +597,7 @@
                         <td><div class="bg-primary rounded-3 text-center" style="width: 100px; height: 50px;">@(objectiveAuditProvider.GetAnswerAchievement(compQuestion.questionAnswer) == 3 ? "X" : " ")</div></td>
                         <td>@objectiveAuditProvider.calculateAnswerScore(compQuestion.questionAnswer)</td>
                         <td>
-                            <input type="text" />
+                            <input type="text" @onchange="@((e) => updateQuestionComment(e, compQuestion: compQuestion))" value="@compQuestion.questionComment" />
                         </td>
                     </tr>
                 }
@@ -642,7 +656,7 @@
                         <td><div class="bg-primary rounded-3 text-center" style="width: 100px; height: 50px;">@(objectiveAuditProvider.GetAnswerAchievement(compQuestion.questionAnswer) == 3 ? "X" : " ")</div></td>
                         <td>@objectiveAuditProvider.calculateAnswerScore(compQuestion.questionAnswer)</td>
                         <td>
-                            <input type="text" />
+                            <input type="text" @onchange="@((e) => updateQuestionComment(e, compQuestion: compQuestion))" value="@compQuestion.questionComment" />
                         </td>
                     </tr>
                 }
@@ -699,7 +713,7 @@
                         <td><div class="bg-primary rounded-3 text-center" style="width: 100px; height: 50px;">@(objectiveAuditProvider.GetAnswerAchievement(compQuestion.questionAnswer) == 3 ? "X" : " ")</div></td>
                         <td>@objectiveAuditProvider.calculateAnswerScore(compQuestion.questionAnswer)</td>
                         <td>
-                            <input type="text" />
+                            <input type="text" @onchange="@((e) => updateQuestionComment(e, compQuestion: compQuestion))" value="@compQuestion.questionComment" />
                         </td>
                     </tr>
                 }
@@ -754,7 +768,7 @@
                         <td><div class="bg-primary rounded-3 text-center" style="width: 100px; height: 50px;">@(objectiveAuditProvider.GetAnswerAchievement(compQuestion.questionAnswer) == 3 ? "X" : " ")</div></td>
                         <td>@objectiveAuditProvider.calculateAnswerScore(compQuestion.questionAnswer)</td>
                         <td>
-                            <input type="text" />
+                            <input type="text" @onchange="@((e) => updateQuestionComment(e, compQuestion: compQuestion))" value="@compQuestion.questionComment" />
                         </td>
                     </tr>
                 }

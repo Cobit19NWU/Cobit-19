@@ -18,6 +18,7 @@ services:
       dockerfile: Cobit-19/Dockerfile
     environment:
       RUNTIME: Production
+      SYNCFUSION_KEY: Mjc4MzQ2OUAzMjMyMmUzMDJlMzBZTGFFMDZ5ZXphWkFGVVZKZUMrcE51U0RMTTVxV3IrMU13ZmNCTzBheFlRPQ==
     depends_on:
             - SqlServerDb
    

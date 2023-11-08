@@ -5,6 +5,7 @@ using Cobit_19.Shared.Dtos;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using System.Collections;
+using System.Security.Claims;
 
 namespace Cobit_19.Business.Admin
 {
@@ -14,6 +15,7 @@ namespace Cobit_19.Business.Admin
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly RoleManager<IdentityRole> _roleManager; 
         private readonly AppDbContext _dbContext;
+        private static readonly object _lock = new object();
 
         public UserManagementProvider(IMapper mapper, UserManager<ApplicationUser> userManager, RoleManager<IdentityRole> roleManager, AppDbContext? dbContext)
         {
@@ -42,7 +44,7 @@ namespace Cobit_19.Business.Admin
 
             foreach(var userID in usersInAudit)
             {
-                var user = await GetUserByIdAsync(userID);
+                var user = await GetUserDtoByIdAsync(userID);
 
                 userList.Add(user);
             }
@@ -75,17 +77,21 @@ namespace Cobit_19.Business.Admin
             return adminUserDtos;
         }
 
-        public async Task<UserDto> GetUserByIdAsync(string id)
+        public async Task<UserDto> GetUserDtoByIdAsync(string id)
         {
+
             var user = await _userManager.FindByIdAsync(id);
             var userDto = _mapper.Map<UserDto>(user);
 
             return userDto;
+            
         }
 
         public async Task<bool> CreateUserAsync(UserEditorDto userDto)
         {
             var user = _mapper.Map<ApplicationUser>(userDto);
+            user.LockoutEnabled = false;
+            user.EmailConfirmed = true;
 
             var passwordHasher = new PasswordHasher<ApplicationUser>();
             user.PasswordHash = passwordHasher.HashPassword(user, userDto.Password);
@@ -112,6 +118,7 @@ namespace Cobit_19.Business.Admin
         public async Task<string> getUserRoleAsync(UserDto user)
         {
             var mappedUser = _mapper.Map<ApplicationUser>(user);
+
             var roles = await _userManager.GetRolesAsync(mappedUser);
 
             if (roles.Count == 1)
@@ -123,6 +130,40 @@ namespace Cobit_19.Business.Admin
             {
                 return null; //Can a user have more than one role? Note for later discussion.
             }
+            
+        }
+
+        public async Task addUserToRoleAsync(string userName, string role)
+        {
+            var user = await _userManager.FindByNameAsync(userName);
+
+            if (user != null)
+            {
+                await _userManager.AddToRoleAsync(user, role);
+            }
+        }
+
+        public List<string> getAllRoles()
+        {
+            var roles = _roleManager.Roles.Select(role => role.Name).ToList();
+
+            return roles;
+        }
+
+        public async Task<string> getUserIDAsync(ClaimsPrincipal user)
+        {
+            var currentUser =  _userManager.GetUserAsync(user).Result;
+            var userID = currentUser.Id;
+            return userID;
+        }
+
+        public async Task<(string, string)> getUserRealNameAsync(ClaimsPrincipal user)
+        {
+            var currentUser = _userManager.GetUserAsync(user).Result;
+            var firstName = currentUser.FirstName;
+            var lastName = currentUser.LastName;
+
+            return (firstName, lastName);
         }
     }
 }

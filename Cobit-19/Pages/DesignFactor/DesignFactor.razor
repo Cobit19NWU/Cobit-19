@@ -12,6 +12,8 @@
     protected DesignFactorDto? _designFactorDto;
     protected List<ObjectiveDto>? _objectiveDtos;
 
+    private string error;
+
     [Parameter]
     [SupplyParameterFromQuery]
     public int AuditId { get; set; }
@@ -23,6 +25,7 @@
     private int _isNextButtonDFId { get; set; } = -1;
     private int _isPreviousButtonDFId { get; set; } = -1;
 
+
     private enum UpdateType
     {
         answer,
@@ -32,6 +35,7 @@
     //Constructor
     protected override async Task OnInitializedAsync()
     {
+        error = "";
         _designFactorDto = await auditProvider.getDesignFactorFullAsync(AuditId, DFId);
         _objectiveDtos = await auditProvider.getObjectivesAsync();
         _mappedObjectives = MappingService.Calculate(_designFactorDto, _objectiveDtos);
@@ -70,6 +74,8 @@
 
             _mappedObjectives = MappingService.Calculate(_designFactorDto, _objectiveDtos);
         }
+
+        checkTotal();
     }
 
     // Used to check if the answer is selected
@@ -118,12 +124,48 @@
         );
     }
 
+    private void BackButtonPress()
+    {
+        var queryStrDict = new Dictionary<string, string>
+            {
+                ["AuditId"] = (AuditId).ToString(),
+            };
+        navigationManager.NavigateTo(
+            QueryHelpers.AddQueryString("/Audit", queryStrDict)
+        );
+    }
+
     private AnswerDto getFirstAnswer()
     {
         return _designFactorDto.Questions.FirstOrDefault().Answers.FirstOrDefault();
     }
+
+    private bool checkTotal()
+    {
+        if (getFirstAnswer().Odds == 0 && getFirstAnswer().AnswerRange == 100)
+        {
+            error = "";
+            int total = 0;
+            foreach (var q in _designFactorDto.Questions)
+            {
+                total += q.Answers.FirstOrDefault().Answer;
+            }
+
+            if (total != 100)
+            {
+                error = "The total must add up to 100 current total is" + total.ToString();
+                return false;
+            }
+        }
+        return true;
+    }
 }
 
+<div>
+    <button type="button" onclick="@(() => BackButtonPress())" class="btn btn-primary">
+        Back
+    </button>
+</div>
 <AuthorizeView>
     <div class="container">
         <div class="row">
@@ -137,6 +179,12 @@
                     <div class="border border-dark bg-light p-3">
                         <div>
                             <h3> Design Factor : @_designFactorDto.Description</h3>
+                            @if(error != "")
+                            {
+                                <div class="row bg-danger bg-opacity-25 m-3 p-2 text-center">
+                                    <strong>@error</strong>
+                                </div>
+                            }
                         </div>
                         @if (_designFactorDto.Questions.Count == 0)
                         {
@@ -172,6 +220,7 @@
                                         {
                                             <th>Value(1 - @getFirstAnswer().AnswerRange)</th>
                                             <th>Likelihood(1 - @getFirstAnswer().AnswerRange)</th>
+                                            <th>Risk Rating</th>
                                         }
                                         <th>Baseline</th>
                                     </tr>
@@ -219,6 +268,26 @@
                                                     class="form-control"
                                                     @onchange="((e) => Update(q.ID, UpdateType.odds, e))" />
                                                 </td>
+                                                <td>
+                                                    @if(q.Answers.First().Answer * q.Answers.First().Odds < 10)
+                                                    {
+                                                        <span class="badge bg-success">
+                                                            <b>Low Risk</b>
+                                                        </span>
+                                                    }
+                                                    else if (q.Answers.First().Answer * q.Answers.First().Odds < 15)
+                                                    {
+                                                        <span class="badge bg-warning flex-fill">
+                                                            <b>Moderate Risk</b>
+                                                        </span>
+                                                    }
+                                                    else
+                                                    {
+                                                        <span class="badge bg-danger flex-fill">
+                                                            <b>High Risk</b>
+                                                        </span>
+                                                    }
+                                                </td>
                                             }
                                             <td>
                                                 <b>
@@ -253,26 +322,10 @@
                         </div>
 
                         <DesignFactorChart Values="@_mappedObjectives"></DesignFactorChart>
-
-                        <div class="row m-3">
-                            <div class="col">
-                                @if (_isPreviousButtonDFId != -1)
-                                {
-                            <button type="button" onclick="@(() => NavButtonPress(_isPreviousButtonDFId))" class="btn btn-primary btn-lg">Back</button>
-                                }
-                            </div>
-                            <div class="col">
-                                <div class="float-end">
-                                    @if (_isNextButtonDFId != -1)
-                                    {
-                                        <button type="button" onclick="@(() => NavButtonPress(_isNextButtonDFId))" class="btn btn-primary btn-lg">Next</button>
-                                    }
-                                </div>
-                            </div>
-                        </div>
+                        
                     </div>
 
-                    <div class="row mt-4 border-2 p-4">
+                    <div class="row lg-4 border-2 p-4">
                         @if (_isPreviousButtonDFId != -1)
                         {
                             <div class="col">
@@ -284,13 +337,28 @@
                         {
                             int x = i;
                             <div class="col">
-                                <button class="btn btn-outline-light text-primary" onclick="@(() => NavButtonPress(x))">@i</button>
+                                @if ((i - 1) == _isPreviousButtonDFId )
+                                {
+                                    <button id="DFnav" class="btn btn-primary" onclick="@(() => NavButtonPress(x))">@i</button>                                    
+                                }
+                                else
+                                {
+                                    <button id="DFnav" class="btn btn-outline-light text-primary" onclick="@(() => NavButtonPress(x))">@i</button>
+                                }
+                                
+                                
                             </div>
                         }
                         @if (_isNextButtonDFId != -1)
                         {
                             <div class="col">
-                    <button class="btn btn-primary" onclick="@(() => NavButtonPress(_isNextButtonDFId))">Next</button>
+                                <button class="btn btn-primary" onclick="@(() => NavButtonPress(_isNextButtonDFId))">Next</button>
+                            </div>
+                        }
+                         @if (_isNextButtonDFId == -1)
+                        {
+                            <div class="col">
+                                <button type="button" onclick="@(() => BackButtonPress())" class="btn btn-primary">Done</button>
                             </div>
                         }
                     </div>

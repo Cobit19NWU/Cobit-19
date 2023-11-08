@@ -50,6 +50,11 @@
         <div class="row">
             <div class="col-9">
                 <div class="container border">
+                    <AuthorizeView Roles="Administrator, Head Auditor, Client" Context="buttonCtx">
+                        <div class="container text-end mt-3">
+                            <button class="btn btn-primary" @onclick='OnManageAuditClick'>Manage Audits</button>
+                        </div>
+                    </AuthorizeView>
                     <div>
                         <AuditSelectTable userID="@userID" focusAreaID="@focusAreaID" />
                     </div>
@@ -86,9 +91,5 @@
             </div>
         </div>
     </div>
-    <AuthorizeView Roles="Administrator, Head Auditor, Client" Context="buttonCtx">
-        <div class="container">
-            <button class="btn btn-primary" @onclick='OnManageAuditClick'>Manage Audits</button>
-        </div>
-    </AuthorizeView>
 </AuthorizeView>
+

@@ -164,7 +164,7 @@ namespace Cobit_19.Data
             //Seeding roles to AspNetRoles table
             builder.Entity<IdentityRole>().HasData(new IdentityRole { Id = "2c5e174e-3b0e-446f-86af-483d56fd7210", Name = "Administrator", NormalizedName = "ADMINISTRATOR".ToUpper() });
             builder.Entity<IdentityRole>().HasData(new IdentityRole { Id = "36c9f3b8-42e6-4ab1-a50d-e89986c5d1f7", Name = "Head Auditor", NormalizedName = "HEAD AUDITOR".ToUpper() });
-            builder.Entity<IdentityRole>().HasData(new IdentityRole { Id = "5e70cf29-1b64-4f58-85dd-07b3c46015a3", Name = "Governance Auditor", NormalizedName = " GOVERNANCE AUDITOR".ToUpper() });
+            builder.Entity<IdentityRole>().HasData(new IdentityRole { Id = "5e70cf29-1b64-4f58-85dd-07b3c46015a3", Name = "Governance Auditor", NormalizedName = "GOVERNANCE AUDITOR".ToUpper() });
             builder.Entity<IdentityRole>().HasData(new IdentityRole { Id = "e23abcf2-58f5-4c9b-9ef7-984a1d6a7c7a", Name = "Management Auditor", NormalizedName = "MANAGEMENT AUDITOR".ToUpper() });
             builder.Entity<IdentityRole>().HasData(new IdentityRole { Id = "d3ae1c6e-1c8a-43e7-9a2a-971fc7fbb295", Name = "Client", NormalizedName = "CLIENT".ToUpper() });
 
@@ -271,10 +271,6 @@ namespace Cobit_19.Data
 
             builder.Entity<AuditMemberModel>().HasData(
                 new AuditMemberModel { ApplicationUserID = "8e445865-a24d-4543-a6c6-9443d048cdb9", AuditID = 1 },
-                new AuditMemberModel { ApplicationUserID = "8e445865-a24d-4543-a6c6-9443d048cdb9", AuditID = 2 },
-                new AuditMemberModel { ApplicationUserID = "8e445865-a24d-4543-a6c6-9443d048cdb9", AuditID = 3 },
-                new AuditMemberModel { ApplicationUserID = "8e445865-a24d-4543-a6c6-9443d048cdb9", AuditID = 4 },
-                new AuditMemberModel { ApplicationUserID = "8e445865-a24d-4543-a6c6-9443d048cdb9", AuditID = 5 },
                 new AuditMemberModel { ApplicationUserID = "fa567c12-5678-4321-bacd-87654321de1f", AuditID = 1 },
                 new AuditMemberModel { ApplicationUserID = "9b1a0f34-8765-4321-dcba-ba09876543c2", AuditID = 1 },
                 new AuditMemberModel { ApplicationUserID = "b2c3d4e5-f6a7-1234-5678-0987654321dc", AuditID = 1 },
@@ -292,8 +288,8 @@ namespace Cobit_19.Data
                 new DesignFactorModel { ID = 6, FocusAreaID = 1, Name = "Cobit Core Model - Design Factor 6", Description = "Compliance Requirements", Information = "The compliance requirements to which the enterprise is subject to, can be classified according to these categories. Low compliance requirements - The enterprise is subject to a minimal set of regular compliance requirements that are lower than average. Normal compliance requirements - The enterprise is subject to a set of regular compliance requirements that are common across different industries. High compliance requirements - The enterprise is subject to higher than average compliance requirements, most often related to the industry sector or geopolitical conditions" },
                 new DesignFactorModel { ID = 7, FocusAreaID = 1, Name = "Cobit Core Model - Design Factor 7", Description = "Role of IT", Information = "The role of IT for the enterprise can be classified according to the categories: Support - IT is not crucial for the running and continuity of the business process and services, nor for their innovation. Factory - When IT fails, it immediately impacts the running and continuity of the business processes and services. However, IT is not seen as a driver for innovating business processes and services. Turnaround - IT is seen as a driver for innovating business processes and services. At this moment, however, IT is not a critical dependency for the current running and continuity of the business processes and services." },
                 new DesignFactorModel { ID = 8, FocusAreaID = 1, Name = "Cobit Core Model - Design Factor 8", Description = "Sourcing model for IT", Information = "The sourcing model the enterprise adopts can be classified according to the categories: Outsourcing - The enterprise calls upon the services of a third party to provide IT services. Cloud - The enterprise maximizes the use of the cloud for providing IT services to its users. Insourced - The enterprise provides for their own IT staff and services." },
-                new DesignFactorModel { ID = 9, FocusAreaID = 1, Name = "Cobit Core Model - Design Factor 9", Description = "IT implementation methods", Information = "The methods the enterprise adopts can be classified according to the categories: Agile - The enterprise uses Agile development working methods for its software development. DevOps - The enterprise uses DevOps working methods for software building, deployment and operations. Traditional - The enterprise uses a more classic approach towards software development (waterfall)                                  separates software development and operations." },
-                new DesignFactorModel { ID = 10, FocusAreaID = 1, Name = "Cobit Core Model - Design Factor 10", Description = "The technology adoption strategy can be classified according to the categories: First mover - The enterprise generally adopts new technologies as early as possible and tries to gain a first-mover advantage. Follower - The enterprise typically waits for new technology to become mainstream and proven before adopting them. Slow adopter - The enterprise is very late in adopting new technologies." }
+                new DesignFactorModel { ID = 9, FocusAreaID = 1, Name = "Cobit Core Model - Design Factor 9", Description = "IT implementation methods", Information = "The methods the enterprise adopts can be classified according to the categories: Agile - The enterprise uses Agile development working methods for its software development. DevOps - The enterprise uses DevOps working methods for software building, deployment and operations. Traditional - The enterprise uses a more classic approach towards software development (waterfall) separates software development and operations." },
+                new DesignFactorModel { ID = 10, FocusAreaID = 1, Name = "Cobit Core Model - Design Factor 10", Description = "Technology Adoption Strategy", Information = "The technology adoption strategy can be classified according to the categories: First mover - The enterprise generally adopts new technologies as early as possible and tries to gain a first-mover advantage. Follower - The enterprise typically waits for new technology to become mainstream and proven before adopting them. Slow adopter - The enterprise is very late in adopting new technologies." }
                 //new DesignFactorModel { ID = 11, FocusAreaID = 1, Name = "Cobit Core Model - Design Factor 11", Description = "Enterprise Size" }
                 );
 
@@ -384,11 +380,7 @@ namespace Cobit_19.Data
                 );
 
             builder.Entity<AuditModel>().HasData(
-                new AuditModel { ID = 1, FocusAreaID = 1, ApplicationUserID = "8e445865-a24d-4543-a6c6-9443d048cdb9", Name = "Audit 1", DateCreated = DateTime.Parse("Jan 1, 2009"), Status = AuditStatus.InProgress },
-                new AuditModel { ID = 2, FocusAreaID = 1, ApplicationUserID = "8e445865-a24d-4543-a6c6-9443d048cdb9", Name = "Audit 2", DateCreated = DateTime.Parse("Jan 2, 2009"), Status = AuditStatus.InProgress },
-                new AuditModel { ID = 3, FocusAreaID = 1, ApplicationUserID = "8e445865-a24d-4543-a6c6-9443d048cdb9", Name = "Audit 3", DateCreated = DateTime.Parse("Jan 3, 2009"), Status = AuditStatus.InProgress },
-                new AuditModel { ID = 4, FocusAreaID = 1, ApplicationUserID = "8e445865-a24d-4543-a6c6-9443d048cdb9", Name = "Audit 4", DateCreated = DateTime.Parse("Jan 4, 2009"), Status = AuditStatus.InProgress },
-                new AuditModel { ID = 5, FocusAreaID = 1, ApplicationUserID = "8e445865-a24d-4543-a6c6-9443d048cdb9", Name = "Audit 5", DateCreated = DateTime.Parse("Jan 5, 2009"), Status = AuditStatus.InProgress }
+                new AuditModel { ID = 1, FocusAreaID = 1, ApplicationUserID = "8e445865-a24d-4543-a6c6-9443d048cdb9", Name = "Audit 1", DateCreated = DateTime.Parse("Jan 1, 2009"), Status = AuditStatus.InProgress }
                 );
             builder.Entity<AnswerModel>().HasData(
                 new AnswerModel { AuditID = 1, QuestionID = 1, Answer = 3, AnswerRange = 5 },
@@ -516,29 +508,6 @@ namespace Cobit_19.Data
                 new ObjectiveModel { ID = 38, Name = "MEA02", Code = "MEA02", Description = "Manage System of Internal Control" },
                 new ObjectiveModel { ID = 39, Name = "MEA03", Code = "MEA03", Description = "Manage Compliance With External Requirement" },
                 new ObjectiveModel { ID = 40, Name = "MEA04", Code = "MEA04", Description = "Manage Assurance" }
-                );
-
-            builder.Entity<ObjectiveAuditModel>().HasData(
-
-                //Audit ID 2                      
-                new ObjectiveAuditModel { ID = 41, AuditID = 2, ObjectiveID = 1, ApplicationUserID = "8e445865-a24d-4543-a6c6-9443d048cdb9" },
-                new ObjectiveAuditModel { ID = 42, AuditID = 2, ObjectiveID = 2, ApplicationUserID = "8e445865-a24d-4543-a6c6-9443d048cdb9" },
-                new ObjectiveAuditModel { ID = 43, AuditID = 2, ObjectiveID = 3, ApplicationUserID = "8e445865-a24d-4543-a6c6-9443d048cdb9" },
-                                                  
-                //AuObjectiveAuditModel           
-                new ObjectiveAuditModel { ID = 44, AuditID = 3, ObjectiveID = 1, ApplicationUserID = "8e445865-a24d-4543-a6c6-9443d048cdb9" },
-                new ObjectiveAuditModel { ID = 45, AuditID = 3, ObjectiveID = 2, ApplicationUserID = "8e445865-a24d-4543-a6c6-9443d048cdb9" },
-                new ObjectiveAuditModel { ID = 46, AuditID = 3, ObjectiveID = 3, ApplicationUserID = "8e445865-a24d-4543-a6c6-9443d048cdb9" },
-                                       
-                //AuObjectiveAuditModel
-                new ObjectiveAuditModel { ID = 47, AuditID = 4, ObjectiveID = 1, ApplicationUserID = "8e445865-a24d-4543-a6c6-9443d048cdb9" },
-                new ObjectiveAuditModel { ID = 48, AuditID = 4, ObjectiveID = 2, ApplicationUserID = "8e445865-a24d-4543-a6c6-9443d048cdb9" },
-                new ObjectiveAuditModel { ID = 49, AuditID = 4, ObjectiveID = 3, ApplicationUserID = "8e445865-a24d-4543-a6c6-9443d048cdb9" },
-                                                   
-                //auObjectiveAuditModel            
-                new ObjectiveAuditModel { ID = 50, AuditID = 5, ObjectiveID = 1, ApplicationUserID = "8e445865-a24d-4543-a6c6-9443d048cdb9" },
-                new ObjectiveAuditModel { ID = 51, AuditID = 5, ObjectiveID = 2, ApplicationUserID = "8e445865-a24d-4543-a6c6-9443d048cdb9" },
-                new ObjectiveAuditModel { ID = 52, AuditID = 5, ObjectiveID = 3, ApplicationUserID = "8e445865-a24d-4543-a6c6-9443d048cdb9" }
                 );
 
             /// Mapping 4 Questions and 40 Objectives with their weights for design factor 1
@@ -1164,6 +1133,7 @@ namespace Cobit_19.Data
                 builder.Entity<ObjectiveAuditTemplateModel>().HasData(new ObjectiveAuditTemplateModel { AuditObject = auditObject, ObjectiveID = objectiveID, FocusAreaID = 1 });
                 //Audit ID 1
                 builder.Entity<ObjectiveAuditModel>().HasData(new ObjectiveAuditModel { ID = objectiveAuditID, AuditID = 1, ObjectiveID = objectiveID, ApplicationUserID = "8e445865-a24d-4543-a6c6-9443d048cdb9", UserAuditObject = auditObject });
+                builder.Entity<ObjectiveAuditMembersModel>().HasData(new ObjectiveAuditMembersModel { ObjectiveAuditID = objectiveAuditID, ApplicationUserID = "8e445865-a24d-4543-a6c6-9443d048cdb9", DateAdded = DateTime.Now });
             }
         }
     }

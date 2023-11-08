@@ -1116,7 +1116,7 @@
           "subComponentQuestions": [
             {
               "questionType": "Input",
-              "questionDescription": "• Risk impact communication, Risk-related root causes",
+              "questionDescription": "ï¿½ Risk impact communication, Risk-related root causes",
               "inputFrom": "APO12.06",
               "outputTo": "string",
               "questionAnswer": 0,
@@ -1366,7 +1366,7 @@
         {
           "questionType": "Component question",
           "relevantPolicy": "Business continuity policy",
-          "policyDescription": "Outlines management’s commitment to the business impact assessment (BIA), business contingency plan (including trusted recovery), recovery requirements for critical systems, defined thresholds and triggers for contingencies, escalation plan, data recovery plan, training and testing.",
+          "policyDescription": "Outlines managementï¿½s commitment to the business impact assessment (BIA), business contingency plan (including trusted recovery), recovery requirements for critical systems, defined thresholds and triggers for contingencies, escalation plan, data recovery plan, training and testing.",
           "detailedGuidance": "string",
           "detailedReference": "string",
           "questionAnswer": 0,
@@ -1392,9 +1392,9 @@
       "componentQuestions": [
         {
           "questionType": "Component question",
-          "keyCultureElement": "Embed the need for business resilience in the enterprise culture. Regularly and frequently update employees about core values, desired behaviors and strategic objectives to maintain the enterprise’s composure and image in every situation. Regularly test business continuity procedures and disaster recovery.",
-          "relatedGuidance": "string",
-          "detailedReference": "string",
+          "keyCultureElement": "Embed the need for business resilience in the enterprise culture. Regularly and frequently update employees about core values, desired behaviors and strategic objectives to maintain the enterpriseï¿½s composure and image in every situation. Regularly test business continuity procedures and disaster recovery.",
+          "relatedGuidance": "No related guidance given",
+          "detailedReference": "No detailed reference given",
           "questionAnswer": 0,
           "questionScore": 0,
           "questionComment": "comment"

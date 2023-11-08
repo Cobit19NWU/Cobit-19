@@ -958,8 +958,8 @@
         {
           "questionType": "Component question",
           "keyCultureElement": "Establish a culture that identifies, assesses, and reports the relative economic and strategic value of each asset to the enterprise in an open, consistent and transparent manner.",
-          "relatedGuidance": "string",
-          "detailedReference": "string",
+          "relatedGuidance": "No related guidance given",
+          "detailedReference": "No detailed reference given",
           "questionAnswer": 0,
           "questionScore": 0,
           "questionComment": "comment"

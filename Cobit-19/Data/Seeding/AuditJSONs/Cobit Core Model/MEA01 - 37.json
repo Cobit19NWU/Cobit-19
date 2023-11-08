@@ -1061,8 +1061,8 @@
         {
           "questionType": "Component question",
           "keyCultureElement": "To achieve the organization’s goals and optimize performance, promote a culture of continuous improvement of business and I&T processes.",
-          "relatedGuidance": "string",
-          "detailedReference": "string",
+          "relatedGuidance": "No related guidance given",
+          "detailedReference": "No detailed reference given",
           "questionAnswer": 0,
           "questionScore": 0,
           "questionComment": "comment"

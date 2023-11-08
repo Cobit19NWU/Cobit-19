@@ -30,15 +30,20 @@
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.17.0" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.14" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
-    <PackageReference Include="Syncfusion.Blazor.Charts" Version="22.1.39" />
-    <PackageReference Include="Syncfusion.Blazor.CircularGauge" Version="22.2.12" />
-    <PackageReference Include="Syncfusion.Blazor.LinearGauge" Version="22.2.12" />
-    <PackageReference Include="Syncfusion.Blazor.Notifications" Version="22.2.12" />
-    <PackageReference Include="Syncfusion.Blazor.ProgressBar" Version="22.2.12" />
+    <PackageReference Include="Syncfusion.Blazor.Charts" Version="22.1.12" />
+    <PackageReference Include="Syncfusion.Blazor.CircularGauge" Version="22.1.12" />
+    <PackageReference Include="Syncfusion.Blazor.LinearGauge" Version="22.1.12" />
+    <PackageReference Include="Syncfusion.Blazor.Notifications" Version="22.1.12" />
+    <PackageReference Include="Syncfusion.Blazor.ProgressBar" Version="22.1.12" />
+    <PackageReference Include="Syncfusion.Pdf.Net.Core" Version="22.1.12" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Migrations\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\js\interop.js" />
   </ItemGroup>
 
   <ItemGroup>

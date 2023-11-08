@@ -83,6 +83,11 @@
     {
         navigationManager.NavigateTo("/ObjectiveAuditScope?AuditId=" + AuditId);
     }
+
+    private void generateReportsButtonsPress()
+    {
+        navigationManager.NavigateTo("/Reports?AuditId=" + AuditId);
+    }
 }
 
 @if (isUserInAudit)
@@ -96,6 +101,83 @@
                 }
                 else
                 {
+                    <div class="container bg-light mb-4 border-4 border p-4">
+                        <h1>
+                           @_auditDto.Name
+                        </h1>
+                        <table class="table table-borderless">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <b>
+                                            Focus Area: 
+                                        </b>
+                                    </td>
+                                    <td>
+                                        <p>@_auditDto.FocusArea.Name</p>
+                                    </td>
+                                    <td>
+                                        <b>
+                                            Created By: 
+                                        </b>
+                                    </td>
+                                    <td>
+                                        <p>@_auditDto.User.UserName</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>
+                                            Date Created:
+                                        </b>
+                                    </td>
+                                    <td>
+                                        <p>@_auditDto.DateCreated.Date.ToShortDateString()</p>
+                                    </td>
+                                    <td>
+                                        <b>
+                                            Status:
+                                        </b>
+                                    </td>
+                                    <td>
+                                        @if(_auditDto.DateCompleted != null)
+                                        {
+                                            <span class="badge bg-success">Completed</span>
+                                        }
+                                        else
+                                        {
+                                            <span class="badge bg-primary">In Progress</span>
+                                        }
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>
+                                            Date Completed:
+                                        </b>
+                                    </td>
+                                    <td>
+                                        @if(_auditDto.DateCompleted != null)                               
+                                        {
+                                            <p>@_auditDto.DateCompleted</p>
+                                        }
+                                        else
+                                        {
+                                            <p></p>
+                                        }
+                                    </td>
+                                    <td>      
+                                        <b>
+                                            Maturity:
+                                        </b>
+                                    </td>
+                                    <td>
+                                        <p>0</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                     <table class="table table-striped">
                         <thead>
                             <tr style="background-color: purple; color: white;">
@@ -198,24 +280,6 @@
                                         <button class="btn btn-primary btn-sm" @onclick="() => viewAuditButtonPress()">
                                             <i class="fa-regular fa-clipboard"></i>
                                             View Audits
-                                        </button>
-                                    </td>
-                                </tr>
-                            </AuthorizeView>
-                            <AuthorizeView Roles="Administrator, Head Auditor, Client">
-                                <tr>
-                                    <td>
-                                        <span class="badge bg-success" style="font-size:12px">Completed</span>
-                                    </td>
-                                    <td>
-                                        <div>
-                                            <h5>Reports</h5>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <button class="btn btn-primary btn-sm">
-                                            <i class="fa-solid fa-chart-line"></i>
-                                            View Reports
                                         </button>
                                     </td>
                                 </tr>
