@@ -19,6 +19,7 @@
     private int _auditId;
 
     public FullObjectiveAuditDto auditObject;
+    private ObjectiveAuditDto objectiveAudit;
     public string auditJSON;
     public int maturityLevel;
     public List<ComponentDto> components;
@@ -33,6 +34,8 @@
         _auditId = objectiveAuditProvider.getAuditIdFromObjectiveAuditID(objectiveAuditId);
         components = auditObject.components;
         maturityLevel = auditObject.maturityLevel;
+
+        objectiveAudit = objectiveAuditProvider.getByID(objectiveAuditId);
     }
 
     public async void ExportComplete(int objectiveAuditId)
@@ -66,7 +69,7 @@
 </div>
 <div class="container">
     <div class="border-bottom text-center mb-2">
-        <h6 class="text-secondary">Maturity Assesments for @auditObject.objectiveName</h6>
+        <h6 class="text-secondary">Maturity Assesments for @objectiveAudit.Objective.Description (@auditObject.objectiveName)</h6>
     </div>
     <div class="mb-5 row">
         <ComponentSelectBar objectiveAuditId="@objectiveAuditId" selectedPage="Dashboard"/>
