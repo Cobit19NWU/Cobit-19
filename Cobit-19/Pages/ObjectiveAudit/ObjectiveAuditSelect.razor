@@ -15,6 +15,7 @@
 @inject AuthenticationStateProvider authStateProvider
 @inject ReportProvider reportProvider
 @inject UserManagementProvider userManagementProvider
+@inject IServiceProvider serviceProvider
 @inject IJSRuntime JSRuntime
 
 
@@ -131,7 +132,9 @@
             </thead>
             <tbody>
                 @{
-                    objectiveAudits = objectiveAuditProvider.getObjectiveAuditsForUser(userID, AuditId);
+                    var scope = serviceProvider.CreateScope();
+                    var objectiveAuditGetAllProvider = scope.ServiceProvider.GetRequiredService<ObjectiveAuditProvider>();
+                    objectiveAudits = objectiveAuditGetAllProvider.getObjectiveAuditsForUser(userID, AuditId);
                 }
 
                 @foreach (var objectiveAudit in objectiveAudits)
