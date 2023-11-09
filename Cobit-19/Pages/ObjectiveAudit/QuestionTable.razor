@@ -1,5 +1,4 @@
-﻿
-@using Cobit_19.Shared.Dtos
+﻿@using Cobit_19.Shared.Dtos
 @using Cobit_19.Business.ObjectiveAudits
 @inject ObjectiveAuditProvider objectiveAuditProvider
 
@@ -163,15 +162,30 @@
             <div class="col-sm text-center">Total - <span class="badge bg-primary">@objectiveAuditProvider.calculateSubComponentScore(subCompQuestions).Item3 % </span></div>
         </div>
 
+        <div class="row border m-4">
+            <div class="col bg-danger rounded-3 m-2">
+                <h4>N (Not achieved)</h4>
+            </div>
+            <div class="col bg-warning rounded-3 m-2">
+                <h4>P (Partially achieved)</h4>
+            </div>
+            <div class="col bg-success rounded-3 m-2">
+                <h4>L (Largely achieved)</h4>
+            </div>
+            <div class="col bg-primary rounded-3 m-2">
+                <h4>F (Fully achieved)</h4>
+            </div>
+        </div>
+
         <table class="table table-bordered mt-4">
             <thead>
                 <tr>
                     <th>Enterprise Goal</th>
                     <th>Importance</th>
-                    <th>N (Not achieved)</th>
-                    <th>P (Partially achieved)</th>
-                    <th>L (Largely achieved)</th>
-                    <th>F (Fully achieved)</th>
+                    <th>N</th>
+                    <th>P</th>
+                    <th>L</th>
+                    <th>F</th>
                     <th>Score</th>
                     <th>Comment</th>
                 </tr>
@@ -191,10 +205,10 @@
                                 }
                             </select>
                         </td>
-                        <td><div class="bg-danger rounded-3 text-center" style="width: 100px; height: 50px;">@(objectiveAuditProvider.GetAnswerAchievement(subCompQuestion.questionAnswer) == 0 ? "X" : " ")</div></td>
-                        <td><div class="bg-warning rounded-3 text-center" style="width: 100px; height: 50px;">@(objectiveAuditProvider.GetAnswerAchievement(subCompQuestion.questionAnswer) == 1 ? "X" : " ")</div></td>
-                        <td><div class="bg-success rounded-3 text-center" style="width: 100px; height: 50px;">@(objectiveAuditProvider.GetAnswerAchievement(subCompQuestion.questionAnswer) == 2 ? "X" : " ")</div></td>
-                        <td><div class="bg-primary rounded-3 text-center" style="width: 100px; height: 50px;">@(objectiveAuditProvider.GetAnswerAchievement(subCompQuestion.questionAnswer) == 3 ? "X" : " ")</div></td>
+                        <td><div class="bg-danger rounded-3 text-center" style="width: 60px; height: 50px;">@(objectiveAuditProvider.GetAnswerAchievement(subCompQuestion.questionAnswer) == 0 ? "X" : " ")</div></td>
+                        <td><div class="bg-warning rounded-3 text-center" style="width: 60px; height: 50px;">@(objectiveAuditProvider.GetAnswerAchievement(subCompQuestion.questionAnswer) == 1 ? "X" : " ")</div></td>
+                        <td><div class="bg-success rounded-3 text-center" style="width: 60px; height: 50px;">@(objectiveAuditProvider.GetAnswerAchievement(subCompQuestion.questionAnswer) == 2 ? "X" : " ")</div></td>
+                        <td><div class="bg-primary rounded-3 text-center" style="width: 60px; height: 50px;">@(objectiveAuditProvider.GetAnswerAchievement(subCompQuestion.questionAnswer) == 3 ? "X" : " ")</div></td>
                         <td>@subCompQuestion.questionScore</td>
                         <td>
                             <input type="text" @onchange="@((e) => updateQuestionComment(e, subCompQuestion: subCompQuestion))" value="@subCompQuestion.questionComment" />
@@ -214,15 +228,30 @@
             <div class="col-sm text-center">Total - <span class="badge bg-primary">@objectiveAuditProvider.calculateSubComponentScore(subCompQuestions).Item3 % </span></div>
         </div>
 
+        <div class="row border m-4">
+            <div class="col bg-danger rounded-3 m-2">
+                <h4>N (Not achieved)</h4>
+            </div>
+            <div class="col bg-warning rounded-3 m-2">
+                <h4>P (Partially achieved)</h4>
+            </div>
+            <div class="col bg-success rounded-3 m-2">
+                <h4>L (Largely achieved)</h4>
+            </div>
+            <div class="col bg-primary rounded-3 m-2">
+                <h4>F (Fully achieved)</h4>
+            </div>
+        </div>
+
         <table class="table table-bordered mt-4">
             <thead>
                 <tr>
-                    <th>Alignment Goal</th>
+                    <th>Allignment Goal</th>
                     <th>Importance</th>
-                    <th>N (Not achieved)</th>
-                    <th>P (Partially achieved)</th>
-                    <th>L (Largely achieved)</th>
-                    <th>F (Fully achieved)</th>
+                    <th>N</th>
+                    <th>P</th>
+                    <th>L</th>
+                    <th>F</th>
                     <th>Score</th>
                     <th>Comment</th>
                 </tr>
@@ -242,10 +271,10 @@
                                 }
                             </select>
                         </td>
-                        <td><div class="bg-danger rounded-3 text-center" style="width: 100px; height: 50px;">@(objectiveAuditProvider.GetAnswerAchievement(subCompQuestion.questionAnswer) == 0 ? "X" : " ")</div></td>
-                        <td><div class="bg-warning rounded-3 text-center" style="width: 100px; height: 50px;">@(objectiveAuditProvider.GetAnswerAchievement(subCompQuestion.questionAnswer) == 1 ? "X" : " ")</div></td>
-                        <td><div class="bg-success rounded-3 text-center" style="width: 100px; height: 50px;">@(objectiveAuditProvider.GetAnswerAchievement(subCompQuestion.questionAnswer) == 2 ? "X" : " ")</div></td>
-                        <td><div class="bg-primary rounded-3 text-center" style="width: 100px; height: 50px;">@(objectiveAuditProvider.GetAnswerAchievement(subCompQuestion.questionAnswer) == 3 ? "X" : " ")</div></td>
+                        <td><div class="bg-danger rounded-3 text-center" style="width: 60px; height: 50px;">@(objectiveAuditProvider.GetAnswerAchievement(subCompQuestion.questionAnswer) == 0 ? "X" : " ")</div></td>
+                        <td><div class="bg-warning rounded-3 text-center" style="width: 60px; height: 50px;">@(objectiveAuditProvider.GetAnswerAchievement(subCompQuestion.questionAnswer) == 1 ? "X" : " ")</div></td>
+                        <td><div class="bg-success rounded-3 text-center" style="width: 60px; height: 50px;">@(objectiveAuditProvider.GetAnswerAchievement(subCompQuestion.questionAnswer) == 2 ? "X" : " ")</div></td>
+                        <td><div class="bg-primary rounded-3 text-center" style="width: 60px; height: 50px;">@(objectiveAuditProvider.GetAnswerAchievement(subCompQuestion.questionAnswer) == 3 ? "X" : " ")</div></td>
                         <td>@objectiveAuditProvider.calculateAnswerScore(subCompQuestion.questionAnswer)</td>
                         <td>
                             <input type="text" @onchange="@((e) => updateQuestionComment(e, subCompQuestion: subCompQuestion))" value="@subCompQuestion.questionComment" />
@@ -265,16 +294,31 @@
             <div class="col-sm text-center">Total - <span class="badge bg-primary">@objectiveAuditProvider.calculateSubComponentScore(subCompQuestions).Item3 % </span></div>
         </div>
 
+        <div class="row border m-4">
+            <div class="col bg-danger rounded-3 m-2">
+                <h4>N (Not achieved)</h4>
+            </div>
+            <div class="col bg-warning rounded-3 m-2">
+                <h4>P (Partially achieved)</h4>
+            </div>
+            <div class="col bg-success rounded-3 m-2">
+                <h4>L (Largely achieved)</h4>
+            </div>
+            <div class="col bg-primary rounded-3 m-2">
+                <h4>F (Fully achieved)</h4>
+            </div>
+        </div>
+
         <table class="table table-bordered mt-4">
             <thead>
                 <tr>
                     <th>Level</th>
                     <th>Management Practices (MP) and Metrics to measure the achievement of the Management Practices (MP): </th>
                     <th>Importance</th>
-                    <th>N (Not achieved)</th>
-                    <th>P (Partially achieved)</th>
-                    <th>L (Largely achieved)</th>
-                    <th>F (Fully achieved)</th>
+                    <th>N</th>
+                    <th>P</th>
+                    <th>L</th>
+                    <th>F</th>
                     <th>Score</th>
                     <th>Comment</th>
                 </tr>
@@ -295,10 +339,10 @@
                                 }
                             </select>
                         </td>
-                        <td><div class="bg-danger rounded-3 text-center" style="width: 100px; height: 50px;">@(objectiveAuditProvider.GetAnswerAchievement(MLevelQuestion.questionAnswer) == 0 ? "X" : " ")</div></td>
-                        <td><div class="bg-warning rounded-3 text-center" style="width: 100px; height: 50px;">@(objectiveAuditProvider.GetAnswerAchievement(MLevelQuestion.questionAnswer) == 1 ? "X" : " ")</div></td>
-                        <td><div class="bg-success rounded-3 text-center" style="width: 100px; height: 50px;">@(objectiveAuditProvider.GetAnswerAchievement(MLevelQuestion.questionAnswer) == 2 ? "X" : " ")</div></td>
-                        <td><div class="bg-primary rounded-3 text-center" style="width: 100px; height: 50px;">@(objectiveAuditProvider.GetAnswerAchievement(MLevelQuestion.questionAnswer) == 3 ? "X" : " ")</div></td>
+                        <td><div class="bg-danger rounded-3 text-center" style="width: 60px; height: 50px;">@(objectiveAuditProvider.GetAnswerAchievement(MLevelQuestion.questionAnswer) == 0 ? "X" : " ")</div></td>
+                        <td><div class="bg-warning rounded-3 text-center" style="width: 60px; height: 50px;">@(objectiveAuditProvider.GetAnswerAchievement(MLevelQuestion.questionAnswer) == 1 ? "X" : " ")</div></td>
+                        <td><div class="bg-success rounded-3 text-center" style="width: 60px; height: 50px;">@(objectiveAuditProvider.GetAnswerAchievement(MLevelQuestion.questionAnswer) == 2 ? "X" : " ")</div></td>
+                        <td><div class="bg-primary rounded-3 text-center" style="width: 60px; height: 50px;">@(objectiveAuditProvider.GetAnswerAchievement(MLevelQuestion.questionAnswer) == 3 ? "X" : " ")</div></td>
                         <td>@objectiveAuditProvider.calculateAnswerScore(MLevelQuestion.questionAnswer)</td>
                         <td>
                             <input type="text" @onchange="@((e) => updateQuestionComment(e, subCompQuestion: MLevelQuestion))" value="@MLevelQuestion.questionComment" />
@@ -309,56 +353,87 @@
         </table>
 
         @if (relatedGuidanceQuestions != null)
-            {
-                <table class="table table-bordered">
-                    <thead>
-                        <tr>
-                            <th>Related Guidance</th>
-                            <th>Detailed Reference</th>
-                            <th>Importance</th>
-                            <th>N (Not achieved)</th>
-                            <th>P (Partially achieved)</th>
-                            <th>L (Largely achieved)</th>
-                            <th>F (Fully achieved)</th>
-                            <th>Score</th>
-                            <th>Comment</th>
-                        </tr>
-                    </thead>
+        {
+            <div class="row border m-4">
+                <div class="col bg-danger rounded-3 m-2">
+                    <h4>N (Not achieved)</h4>
+                </div>
+                <div class="col bg-warning rounded-3 m-2">
+                    <h4>P (Partially achieved)</h4>
+                </div>
+                <div class="col bg-success rounded-3 m-2">
+                    <h4>L (Largely achieved)</h4>
+                </div>
+                <div class="col bg-primary rounded-3 m-2">
+                    <h4>F (Fully achieved)</h4>
+                </div>
+            </div>
 
-                    <tbody>
-                        @for (int i = 0; i < relatedGuidanceQuestions.Count; i++)
-                        {
-                            SubComponentQuestionDto relatedGuidanceQuestion = relatedGuidanceQuestions[i];
-                            <tr>
-                                <td>@relatedGuidanceQuestion.relatedGuidance</td>
-                                <td>@relatedGuidanceQuestion.detailedReference</td>
-                                <td>
-                                    <select name="answer" value="@relatedGuidanceQuestion.questionAnswer" @onchange="@((e) => updateComponent(e, subCompQuestion: relatedGuidanceQuestion))">
-                                        @for (int j = 0; j <= 10; j++)
-                                        {
-                                            <option value="@j">@j</option>
-                                        }
-                                    </select>
-                                </td>
-                                <td><div class="bg-danger rounded-3 text-center" style="width: 100px; height: 50px;">@(
-                            objectiveAuditProvider.GetAnswerAchievement(relatedGuidanceQuestion.questionAnswer) == 0 ? "X" : " "
-                            )</div></td>
-                                <td><div class="bg-warning rounded-3 text-center" style="width: 100px; height: 50px;">@(
-                            objectiveAuditProvider.GetAnswerAchievement(relatedGuidanceQuestion.questionAnswer) == 1 ? "X" : " "
-                            )</div></td>
-                                <td><div class="bg-success rounded-3 text-center" style="width: 100px; height: 50px;">@(
-                            objectiveAuditProvider.GetAnswerAchievement(relatedGuidanceQuestion.questionAnswer) == 2 ? "X" : " "
-                            )</div></td>
-                                <td><div class="bg-primary rounded-3 text-center" style="width: 100px; height: 50px;">@(
-                            objectiveAuditProvider.GetAnswerAchievement(relatedGuidanceQuestion.questionAnswer) == 3 ? "X" : " "
-                            )</div></td>
-                                <td>@objectiveAuditProvider.calculateAnswerScore(relatedGuidanceQuestion.questionAnswer)</td>
-                                <td>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Related Guidance</th>
+                        <th>Detailed Reference</th>
+                        <th>Importance</th>
+                        <th>N</th>
+                        <th>P</th>
+                        <th>L</th>
+                        <th>F</th>
+                        <th>Score</th>
+                        <th>Comment</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    @for (int i = 0; i < relatedGuidanceQuestions.Count; i++)
+                    {
+                        SubComponentQuestionDto relatedGuidanceQuestion = relatedGuidanceQuestions[i];
+                        <tr>
+                            <td>@relatedGuidanceQuestion.relatedGuidance</td>
+                            <td>@relatedGuidanceQuestion.detailedReference</td>
+                            <td>
+                                <select name="answer" value="@relatedGuidanceQuestion.questionAnswer" @onchange="@((e) => updateComponent(e, subCompQuestion: relatedGuidanceQuestion))">
+                                    @for (int j = 0; j <= 10; j++)
+                                    {
+                                        <option value="@j">@j</option>
+                                    }
+                                </select>
+                            </td>
+                            <td>
+                                <div class="bg-danger rounded-3 text-center" style="width: 60px; height: 50px;">
+                                    @(
+                                        objectiveAuditProvider.GetAnswerAchievement(relatedGuidanceQuestion.questionAnswer) == 0 ? "X" : " "
+                                        )
+                                </div>
+                            </td>
+                            <td>
+                                <div class="bg-warning rounded-3 text-center" style="width: 60px; height: 50px;">
+                                    @(
+                                        objectiveAuditProvider.GetAnswerAchievement(relatedGuidanceQuestion.questionAnswer) == 1 ? "X" : " "
+                                        )
+                                </div>
+                            </td>
+                            <td>
+                                <div class="bg-success rounded-3 text-center" style="width: 60px; height: 50px;">
+                                    @(
+                                        objectiveAuditProvider.GetAnswerAchievement(relatedGuidanceQuestion.questionAnswer) == 2 ? "X" : " "
+                                        )
+                                </div>
+                            </td>
+                            <td>
+                                <div class="bg-primary rounded-3 text-center" style="width: 60px; height: 50px;">
+                                    @(
+                                        objectiveAuditProvider.GetAnswerAchievement(relatedGuidanceQuestion.questionAnswer) == 3 ? "X" : " "
+                                        )
+                                </div>
+                            </td>
+                            <td>@objectiveAuditProvider.calculateAnswerScore(relatedGuidanceQuestion.questionAnswer)</td>
+                            <td>
                                 <input type="text" @onchange="@((e) => updateQuestionComment(e, subCompQuestion: relatedGuidanceQuestion))" value="@relatedGuidanceQuestion.questionComment" />
-                                </td>
-                            </tr>
-                        }
-                    </tbody>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
             </table>
         }
     }
@@ -377,7 +452,22 @@
         </div>
 
         <div class="d-flex justify-content-center border mt-2">
-            <img src="@structureImageLink" alt="Structures image" width="700"/>
+            <img src="@structureImageLink" alt="Structures image" width="700" />
+        </div>
+
+        <div class="row border m-4">
+            <div class="col bg-danger rounded-3 m-2">
+                <h4>N (Not achieved)</h4>
+            </div>
+            <div class="col bg-warning rounded-3 m-2">
+                <h4>P (Partially achieved)</h4>
+            </div>
+            <div class="col bg-success rounded-3 m-2">
+                <h4>L (Largely achieved)</h4>
+            </div>
+            <div class="col bg-primary rounded-3 m-2">
+                <h4>F (Fully achieved)</h4>
+            </div>
         </div>
 
         <table class="table table-bordered mt-4">
@@ -386,10 +476,10 @@
                     <th>Sub-Component</th>
                     <th class="col-12">Regarding the Organisational Structures above. For each management practice, look at the roles and responsibilities diagram according to your organisational context, and select a level of importance/relevance:</th>
                     <th>Importance</th>
-                    <th>N (Not achieved)</th>
-                    <th>P (Partially achieved)</th>
-                    <th>L (Largely achieved)</th>
-                    <th>F (Fully achieved)</th>
+                    <th>N</th>
+                    <th>P</th>
+                    <th>L</th>
+                    <th>F</th>
                     <th>Score</th>
                     <th>Comment</th>
                 </tr>
@@ -410,10 +500,10 @@
                                 }
                             </select>
                         </td>
-                        <td><div class="bg-danger rounded-3 text-center" style="width: 100px; height: 50px;">@(objectiveAuditProvider.GetAnswerAchievement(compQuestion.questionAnswer) == 0 ? "X" : " ")</div></td>
-                        <td><div class="bg-warning rounded-3 text-center" style="width: 100px; height: 50px;">@(objectiveAuditProvider.GetAnswerAchievement(compQuestion.questionAnswer) == 1 ? "X" : " ")</div></td>
-                        <td><div class="bg-success rounded-3 text-center" style="width: 100px; height: 50px;">@(objectiveAuditProvider.GetAnswerAchievement(compQuestion.questionAnswer) == 2 ? "X" : " ")</div></td>
-                        <td><div class="bg-primary rounded-3 text-center" style="width: 100px; height: 50px;">@(objectiveAuditProvider.GetAnswerAchievement(compQuestion.questionAnswer) == 3 ? "X" : " ")</div></td>
+                        <td><div class="bg-danger rounded-3 text-center" style="width: 60px; height: 50px;">@(objectiveAuditProvider.GetAnswerAchievement(compQuestion.questionAnswer) == 0 ? "X" : " ")</div></td>
+                        <td><div class="bg-warning rounded-3 text-center" style="width: 60px; height: 50px;">@(objectiveAuditProvider.GetAnswerAchievement(compQuestion.questionAnswer) == 1 ? "X" : " ")</div></td>
+                        <td><div class="bg-success rounded-3 text-center" style="width: 60px; height: 50px;">@(objectiveAuditProvider.GetAnswerAchievement(compQuestion.questionAnswer) == 2 ? "X" : " ")</div></td>
+                        <td><div class="bg-primary rounded-3 text-center" style="width: 60px; height: 50px;">@(objectiveAuditProvider.GetAnswerAchievement(compQuestion.questionAnswer) == 3 ? "X" : " ")</div></td>
                         <td>@objectiveAuditProvider.calculateAnswerScore(compQuestion.questionAnswer)</td>
                         <td>
                             <input type="text" @onchange="@((e) => updateQuestionComment(e, compQuestion: compQuestion))" value="@compQuestion.questionComment" />
@@ -434,116 +524,176 @@
         </div>
 
         @if (inputQuestions != null)
-            {
-                <h3></h3>
-                <table class="table table-bordered mt-4">
-                    <thead>
-                        <tr>
-                        <th colspan="9">@subComponent.subComponentCode received the following inputs from upstream processes</th>
-                        </tr>
-                        <tr>
-                            <th>Description</th>
-                            <th>From</th>
-                            <th>Importance</th>
-                            <th>N (Not achieved)</th>
-                            <th>P (Partially achieved)</th>
-                            <th>L (Largely achieved)</th>
-                            <th>F (Fully achieved)</th>
-                            <th>Score</th>
-                            <th>Comment</th>
-                        </tr>
-                    </thead>
+        {
+            <div class="row border m-4">
+                <div class="col bg-danger rounded-3 m-2">
+                    <h4>N (Not achieved)</h4>
+                </div>
+                <div class="col bg-warning rounded-3 m-2">
+                    <h4>P (Partially achieved)</h4>
+                </div>
+                <div class="col bg-success rounded-3 m-2">
+                    <h4>L (Largely achieved)</h4>
+                </div>
+                <div class="col bg-primary rounded-3 m-2">
+                    <h4>F (Fully achieved)</h4>
+                </div>
+            </div>
 
-                    <tbody>
-                        @for (int i = 0; i < inputQuestions.Count; i++)
-                        {
-                            SubComponentQuestionDto inputQuestion = inputQuestions[i];
-                            <tr>
-                                <td>@inputQuestion.questionDescription</td>
-                                <td>@inputQuestion.inputFrom</td>
-                                <td>
-                                    <select name="answer" value="@inputQuestion.questionAnswer" @onchange="@((e) => updateComponent(e, subCompQuestion: inputQuestion))">
-                                        @for (int j = 0; j <= 10; j++)
-                                        {
-                                            <option value="@j">@j</option>
-                                        }
-                                    </select>
-                                </td>
-                                <td><div class="bg-danger rounded-3 text-center" style="width: 100px; height: 50px;">@(
-                            objectiveAuditProvider.GetAnswerAchievement(inputQuestion.questionAnswer) == 0 ? "X" : " "
-                            )</div></td>
-                                <td><div class="bg-warning rounded-3 text-center" style="width: 100px; height: 50px;">@(
+            <table class="table table-bordered mt-4">
+                <thead>
+                    <tr>
+                        <th colspan="9">@subComponent.subComponentCode received the following inputs from upstream processes</th>
+                    </tr>
+                    <tr>
+                        <th>Description</th>
+                        <th>From</th>
+                        <th>Importance</th>
+                        <th>N</th>
+                        <th>P</th>
+                        <th>L</th>
+                        <th>F</th>
+                        <th>Score</th>
+                        <th>Comment</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    @for (int i = 0; i < inputQuestions.Count; i++)
+                    {
+                        SubComponentQuestionDto inputQuestion = inputQuestions[i];
+                        <tr>
+                            <td>@inputQuestion.questionDescription</td>
+                            <td>@inputQuestion.inputFrom</td>
+                            <td>
+                                <select name="answer" value="@inputQuestion.questionAnswer" @onchange="@((e) => updateComponent(e, subCompQuestion: inputQuestion))">
+                                    @for (int j = 0; j <= 10; j++)
+                                    {
+                                        <option value="@j">@j</option>
+                                    }
+                                </select>
+                            </td>
+                            <td>
+                                <div class="bg-danger rounded-3 text-center" style="width: 60px; height: 50px;">
+                                    @(
+                                        objectiveAuditProvider.GetAnswerAchievement(inputQuestion.questionAnswer) == 0 ? "X" : " "
+                                        )
+                                </div>
+                            </td>
+                            <td>
+                                <div class="bg-warning rounded-3 text-center" style="width: 60px; height: 50px;">
+                                    @(
                                         objectiveAuditProvider.GetAnswerAchievement(inputQuestion.questionAnswer) == 1 ? "X" : " "
-                            )</div></td>
-                                <td><div class="bg-success rounded-3 text-center" style="width: 100px; height: 50px;">@(
-                            objectiveAuditProvider.GetAnswerAchievement(inputQuestion.questionAnswer) == 2 ? "X" : " "
-                            )</div></td>
-                                <td><div class="bg-primary rounded-3 text-center" style="width: 100px; height: 50px;">@(
-                            objectiveAuditProvider.GetAnswerAchievement(inputQuestion.questionAnswer) == 3 ? "X" : " "
-                            )</div></td>
+                                        )
+                                </div>
+                            </td>
+                            <td>
+                                <div class="bg-success rounded-3 text-center" style="width: 60px; height: 50px;">
+                                    @(
+                                        objectiveAuditProvider.GetAnswerAchievement(inputQuestion.questionAnswer) == 2 ? "X" : " "
+                                        )
+                                </div>
+                            </td>
+                            <td>
+                                <div class="bg-primary rounded-3 text-center" style="width: 60px; height: 50px;">
+                                    @(
+                                        objectiveAuditProvider.GetAnswerAchievement(inputQuestion.questionAnswer) == 3 ? "X" : " "
+                                        )
+                                </div>
+                            </td>
                             <td>@objectiveAuditProvider.calculateAnswerScore(inputQuestion.questionAnswer)</td>
-                                <td>
+                            <td>
                                 <input type="text" @onchange="@((e) => updateQuestionComment(e, subCompQuestion: inputQuestion))" value="@inputQuestion.questionComment" />
-                                </td>
-                            </tr>
-                        }
-                    </tbody>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
             </table>
         }
 
         @if (outputQuestions != null)
-            {
-                <table class="table table-bordered">
-                    <thead>
-                        <tr>
+        {
+            <div class="row border m-4">
+                <div class="col bg-danger rounded-3 m-2">
+                    <h4>N (Not achieved)</h4>
+                </div>
+                <div class="col bg-warning rounded-3 m-2">
+                    <h4>P (Partially achieved)</h4>
+                </div>
+                <div class="col bg-success rounded-3 m-2">
+                    <h4>L (Largely achieved)</h4>
+                </div>
+                <div class="col bg-primary rounded-3 m-2">
+                    <h4>F (Fully achieved)</h4>
+                </div>
+            </div>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
                         <th colspan="9">@subComponent.subComponentCode generated the following outputs, and outputs were forwarded to all relevant down-stream processes.</th>
-                        </tr>
-                        <tr>
-                            <th>Description</th>
-                            <th>To</th>
-                            <th>Importance</th>
-                            <th>N (Not achieved)</th>
-                            <th>P (Partially achieved)</th>
-                            <th>L (Largely achieved)</th>
-                            <th>F (Fully achieved)</th>
-                            <th>Score</th>
-                            <th>Comment</th>
-                        </tr>
-                    </thead>
+                    </tr>
+                    <tr>
+                        <th>Description</th>
+                        <th>To</th>
+                        <th>Importance</th>
+                        <th>N</th>
+                        <th>P</th>
+                        <th>L</th>
+                        <th>F</th>
+                        <th>Score</th>
+                        <th>Comment</th>
+                    </tr>
+                </thead>
 
-                    <tbody>
-                        @foreach (SubComponentQuestionDto outputQuestion in outputQuestions)
-                        {
-                            <tr>
+                <tbody>
+                    @foreach (SubComponentQuestionDto outputQuestion in outputQuestions)
+                    {
+                        <tr>
                             <td>@outputQuestion.questionDescription</td>
                             <td>@outputQuestion.outputTo</td>
-                                <td>
+                            <td>
                                 <select name="answer" value="@outputQuestion.questionAnswer" @onchange="@((e) => updateComponent(e, subCompQuestion: outputQuestion))">
-                                        @for (int j = 0; j <= 10; j++)
-                                        {
-                                            <option value="@j">@j</option>
-                                        }
-                                    </select>
-                                </td>
-                                <td><div class="bg-danger rounded-3 text-center" style="width: 100px; height: 50px;">@(
+                                    @for (int j = 0; j <= 10; j++)
+                                    {
+                                        <option value="@j">@j</option>
+                                    }
+                                </select>
+                            </td>
+                            <td>
+                                <div class="bg-danger rounded-3 text-center" style="width: 60px; height: 50px;">
+                                    @(
                                         objectiveAuditProvider.GetAnswerAchievement(outputQuestion.questionAnswer) == 0 ? "X" : " "
-                            )</div></td>
-                                <td><div class="bg-warning rounded-3 text-center" style="width: 100px; height: 50px;">@(
-                            objectiveAuditProvider.GetAnswerAchievement(outputQuestion.questionAnswer) == 1 ? "X" : " "
-                            )</div></td>
-                                <td><div class="bg-success rounded-3 text-center" style="width: 100px; height: 50px;">@(
-                            objectiveAuditProvider.GetAnswerAchievement(outputQuestion.questionAnswer) == 2 ? "X" : " "
-                            )</div></td>
-                                <td><div class="bg-primary rounded-3 text-center" style="width: 100px; height: 50px;">@(
+                                        )
+                                </div>
+                            </td>
+                            <td>
+                                <div class="bg-warning rounded-3 text-center" style="width: 60px; height: 50px;">
+                                    @(
+                                        objectiveAuditProvider.GetAnswerAchievement(outputQuestion.questionAnswer) == 1 ? "X" : " "
+                                        )
+                                </div>
+                            </td>
+                            <td>
+                                <div class="bg-success rounded-3 text-center" style="width: 60px; height: 50px;">
+                                    @(
+                                        objectiveAuditProvider.GetAnswerAchievement(outputQuestion.questionAnswer) == 2 ? "X" : " "
+                                        )
+                                </div>
+                            </td>
+                            <td>
+                                <div class="bg-primary rounded-3 text-center" style="width: 60px; height: 50px;">
+                                    @(
                                         objectiveAuditProvider.GetAnswerAchievement(outputQuestion.questionAnswer) == 3 ? "X" : " "
-                            )</div></td>
+                                        )
+                                </div>
+                            </td>
                             <td>@objectiveAuditProvider.calculateAnswerScore(outputQuestion.questionAnswer)</td>
-                                <td>
+                            <td>
                                 <input type="text" @onchange="@((e) => updateQuestionComment(e, subCompQuestion: outputQuestion))" value="@outputQuestion.questionComment" />
-                                </td>
-                            </tr>
-                        }
-                    </tbody>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
             </table>
         }
     }
@@ -561,16 +711,31 @@
             <div class="col-sm text-center">Total - <span class="badge bg-primary">@objectiveAuditProvider.calculateComponentScore(component, false).Item3 % </span></div>
         </div>
 
+        <div class="row border m-4">
+            <div class="col bg-danger rounded-3 m-2">
+                <h4>N (Not achieved)</h4>
+            </div>
+            <div class="col bg-warning rounded-3 m-2">
+                <h4>P (Partially achieved)</h4>
+            </div>
+            <div class="col bg-success rounded-3 m-2">
+                <h4>L (Largely achieved)</h4>
+            </div>
+            <div class="col bg-primary rounded-3 m-2">
+                <h4>F (Fully achieved)</h4>
+            </div>
+        </div>
+
         <table class="table table-bordered mt-4">
             <thead>
                 <tr>
                     <th>Skills</th>
                     <th>Related Guidance (Standards, frameworks, Compliance Requirements)</th>
                     <th>Importance</th>
-                    <th>N (Not achieved)</th>
-                    <th>P (Partially achieved)</th>
-                    <th>L (Largely achieved)</th>
-                    <th>F (Fully achieved)</th>
+                    <th>N</th>
+                    <th>P</th>
+                    <th>L</th>
+                    <th>F</th>
                     <th>Score</th>
                     <th>Comment</th>
                 </tr>
@@ -591,10 +756,10 @@
                                 }
                             </select>
                         </td>
-                        <td><div class="bg-danger rounded-3 text-center" style="width: 100px; height: 50px;">@(objectiveAuditProvider.GetAnswerAchievement(compQuestion.questionAnswer) == 0 ? "X" : " ")</div></td>
-                        <td><div class="bg-warning rounded-3 text-center" style="width: 100px; height: 50px;">@(objectiveAuditProvider.GetAnswerAchievement(compQuestion.questionAnswer) == 1 ? "X" : " ")</div></td>
-                        <td><div class="bg-success rounded-3 text-center" style="width: 100px; height: 50px;">@(objectiveAuditProvider.GetAnswerAchievement(compQuestion.questionAnswer) == 2 ? "X" : " ")</div></td>
-                        <td><div class="bg-primary rounded-3 text-center" style="width: 100px; height: 50px;">@(objectiveAuditProvider.GetAnswerAchievement(compQuestion.questionAnswer) == 3 ? "X" : " ")</div></td>
+                        <td><div class="bg-danger rounded-3 text-center" style="width: 60px; height: 50px;">@(objectiveAuditProvider.GetAnswerAchievement(compQuestion.questionAnswer) == 0 ? "X" : " ")</div></td>
+                        <td><div class="bg-warning rounded-3 text-center" style="width: 60px; height: 50px;">@(objectiveAuditProvider.GetAnswerAchievement(compQuestion.questionAnswer) == 1 ? "X" : " ")</div></td>
+                        <td><div class="bg-success rounded-3 text-center" style="width: 60px; height: 50px;">@(objectiveAuditProvider.GetAnswerAchievement(compQuestion.questionAnswer) == 2 ? "X" : " ")</div></td>
+                        <td><div class="bg-primary rounded-3 text-center" style="width: 60px; height: 50px;">@(objectiveAuditProvider.GetAnswerAchievement(compQuestion.questionAnswer) == 3 ? "X" : " ")</div></td>
                         <td>@objectiveAuditProvider.calculateAnswerScore(compQuestion.questionAnswer)</td>
                         <td>
                             <input type="text" @onchange="@((e) => updateQuestionComment(e, compQuestion: compQuestion))" value="@compQuestion.questionComment" />
@@ -618,6 +783,21 @@
             <div class="col-sm text-center">Total - <span class="badge bg-primary">@objectiveAuditProvider.calculateComponentScore(component, false).Item3 % </span></div>
         </div>
 
+        <div class="row border m-4">
+            <div class="col bg-danger rounded-3 m-2">
+                <h4>N (Not achieved)</h4>
+            </div>
+            <div class="col bg-warning rounded-3 m-2">
+                <h4>P (Partially achieved)</h4>
+            </div>
+            <div class="col bg-success rounded-3 m-2">
+                <h4>L (Largely achieved)</h4>
+            </div>
+            <div class="col bg-primary rounded-3 m-2">
+                <h4>F (Fully achieved)</h4>
+            </div>
+        </div>
+
         <table class="table table-bordered mt-4">
             <thead>
                 <tr>
@@ -625,10 +805,10 @@
                     <th class="col-12">Policy Description</th>
                     <th>Related Reference</th>
                     <th>Importance</th>
-                    <th>N (Not achieved)</th>
-                    <th>P (Partially achieved)</th>
-                    <th>L (Largely achieved)</th>
-                    <th>F (Fully achieved)</th>
+                    <th>N</th>
+                    <th>P</th>
+                    <th>L</th>
+                    <th>F</th>
                     <th>Score</th>
                     <th>Comment</th>
                 </tr>
@@ -650,10 +830,10 @@
                                 }
                             </select>
                         </td>
-                        <td><div class="bg-danger rounded-3 text-center" style="width: 100px; height: 50px;">@(objectiveAuditProvider.GetAnswerAchievement(compQuestion.questionAnswer) == 0 ? "X" : " ")</div></td>
-                        <td><div class="bg-warning rounded-3 text-center" style="width: 100px; height: 50px;">@(objectiveAuditProvider.GetAnswerAchievement(compQuestion.questionAnswer) == 1 ? "X" : " ")</div></td>
-                        <td><div class="bg-success rounded-3 text-center" style="width: 100px; height: 50px;">@(objectiveAuditProvider.GetAnswerAchievement(compQuestion.questionAnswer) == 2 ? "X" : " ")</div></td>
-                        <td><div class="bg-primary rounded-3 text-center" style="width: 100px; height: 50px;">@(objectiveAuditProvider.GetAnswerAchievement(compQuestion.questionAnswer) == 3 ? "X" : " ")</div></td>
+                        <td><div class="bg-danger rounded-3 text-center" style="width: 60px; height: 50px;">@(objectiveAuditProvider.GetAnswerAchievement(compQuestion.questionAnswer) == 0 ? "X" : " ")</div></td>
+                        <td><div class="bg-warning rounded-3 text-center" style="width: 60px; height: 50px;">@(objectiveAuditProvider.GetAnswerAchievement(compQuestion.questionAnswer) == 1 ? "X" : " ")</div></td>
+                        <td><div class="bg-success rounded-3 text-center" style="width: 60px; height: 50px;">@(objectiveAuditProvider.GetAnswerAchievement(compQuestion.questionAnswer) == 2 ? "X" : " ")</div></td>
+                        <td><div class="bg-primary rounded-3 text-center" style="width: 60px; height: 50px;">@(objectiveAuditProvider.GetAnswerAchievement(compQuestion.questionAnswer) == 3 ? "X" : " ")</div></td>
                         <td>@objectiveAuditProvider.calculateAnswerScore(compQuestion.questionAnswer)</td>
                         <td>
                             <input type="text" @onchange="@((e) => updateQuestionComment(e, compQuestion: compQuestion))" value="@compQuestion.questionComment" />
@@ -677,16 +857,31 @@
             <div class="col-sm text-center">Total - <span class="badge bg-primary">@objectiveAuditProvider.calculateComponentScore(component, false).Item3 % </span></div>
         </div>
 
+        <div class="row border m-4">
+            <div class="col bg-danger rounded-3 m-2">
+                <h4>N (Not achieved)</h4>
+            </div>
+            <div class="col bg-warning rounded-3 m-2">
+                <h4>P (Partially achieved)</h4>
+            </div>
+            <div class="col bg-success rounded-3 m-2">
+                <h4>L (Largely achieved)</h4>
+            </div>
+            <div class="col bg-primary rounded-3 m-2">
+                <h4>F (Fully achieved)</h4>
+            </div>
+        </div>
+
         <table class="table table-bordered mt-4">
             <thead>
                 <tr>
                     <th>Key Culture Element</th>
                     <th>Detailed & Related Reference</th>
                     <th>Importance</th>
-                    <th>N (Not achieved)</th>
-                    <th>P (Partially achieved)</th>
-                    <th>L (Largely achieved)</th>
-                    <th>F (Fully achieved)</th>
+                    <th>N</th>
+                    <th>P</th>
+                    <th>L</th>
+                    <th>F</th>
                     <th>Score</th>
                     <th>Comment</th>
                 </tr>
@@ -707,10 +902,10 @@
                                 }
                             </select>
                         </td>
-                        <td><div class="bg-danger rounded-3 text-center" style="width: 100px; height: 50px;">@(objectiveAuditProvider.GetAnswerAchievement(compQuestion.questionAnswer) == 0 ? "X" : " ")</div></td>
-                        <td><div class="bg-warning rounded-3 text-center" style="width: 100px; height: 50px;">@(objectiveAuditProvider.GetAnswerAchievement(compQuestion.questionAnswer) == 1 ? "X" : " ")</div></td>
-                        <td><div class="bg-success rounded-3 text-center" style="width: 100px; height: 50px;">@(objectiveAuditProvider.GetAnswerAchievement(compQuestion.questionAnswer) == 2 ? "X" : " ")</div></td>
-                        <td><div class="bg-primary rounded-3 text-center" style="width: 100px; height: 50px;">@(objectiveAuditProvider.GetAnswerAchievement(compQuestion.questionAnswer) == 3 ? "X" : " ")</div></td>
+                        <td><div class="bg-danger rounded-3 text-center" style="width: 60px; height: 50px;">@(objectiveAuditProvider.GetAnswerAchievement(compQuestion.questionAnswer) == 0 ? "X" : " ")</div></td>
+                        <td><div class="bg-warning rounded-3 text-center" style="width: 60px; height: 50px;">@(objectiveAuditProvider.GetAnswerAchievement(compQuestion.questionAnswer) == 1 ? "X" : " ")</div></td>
+                        <td><div class="bg-success rounded-3 text-center" style="width: 60px; height: 50px;">@(objectiveAuditProvider.GetAnswerAchievement(compQuestion.questionAnswer) == 2 ? "X" : " ")</div></td>
+                        <td><div class="bg-primary rounded-3 text-center" style="width: 60px; height: 50px;">@(objectiveAuditProvider.GetAnswerAchievement(compQuestion.questionAnswer) == 3 ? "X" : " ")</div></td>
                         <td>@objectiveAuditProvider.calculateAnswerScore(compQuestion.questionAnswer)</td>
                         <td>
                             <input type="text" @onchange="@((e) => updateQuestionComment(e, compQuestion: compQuestion))" value="@compQuestion.questionComment" />
@@ -734,15 +929,30 @@
             <div class="col-sm text-center">Total - <span class="badge bg-primary">@objectiveAuditProvider.calculateComponentScore(component, false).Item3 % </span></div>
         </div>
 
+        <div class="row border m-4">
+            <div class="col bg-danger rounded-3 m-2">
+                <h4>N (Not achieved)</h4>
+            </div>
+            <div class="col bg-warning rounded-3 m-2">
+                <h4>P (Partially achieved)</h4>
+            </div>
+            <div class="col bg-success rounded-3 m-2">
+                <h4>L (Largely achieved)</h4>
+            </div>
+            <div class="col bg-primary rounded-3 m-2">
+                <h4>F (Fully achieved)</h4>
+            </div>
+        </div>
+
         <table class="table table-bordered mt-4">
             <thead>
                 <tr>
                     <th>Description</th>
                     <th>Importance</th>
-                    <th>N (Not achieved)</th>
-                    <th>P (Partially achieved)</th>
-                    <th>L (Largely achieved)</th>
-                    <th>F (Fully achieved)</th>
+                    <th>N</th>
+                    <th>P</th>
+                    <th>L</th>
+                    <th>F</th>
                     <th>Score</th>
                     <th>Comment</th>
                 </tr>
@@ -762,10 +972,10 @@
                                 }
                             </select>
                         </td>
-                        <td><div class="bg-danger rounded-3 text-center" style="width: 100px; height: 50px;">@(objectiveAuditProvider.GetAnswerAchievement(compQuestion.questionAnswer) == 0 ? "X" : " ")</div></td>
-                        <td><div class="bg-warning rounded-3 text-center" style="width: 100px; height: 50px;">@(objectiveAuditProvider.GetAnswerAchievement(compQuestion.questionAnswer) == 1 ? "X" : " ")</div></td>
-                        <td><div class="bg-success rounded-3 text-center" style="width: 100px; height: 50px;">@(objectiveAuditProvider.GetAnswerAchievement(compQuestion.questionAnswer) == 2 ? "X" : " ")</div></td>
-                        <td><div class="bg-primary rounded-3 text-center" style="width: 100px; height: 50px;">@(objectiveAuditProvider.GetAnswerAchievement(compQuestion.questionAnswer) == 3 ? "X" : " ")</div></td>
+                        <td><div class="bg-danger rounded-3 text-center" style="width: 60px; height: 50px;">@(objectiveAuditProvider.GetAnswerAchievement(compQuestion.questionAnswer) == 0 ? "X" : " ")</div></td>
+                        <td><div class="bg-warning rounded-3 text-center" style="width: 60px; height: 50px;">@(objectiveAuditProvider.GetAnswerAchievement(compQuestion.questionAnswer) == 1 ? "X" : " ")</div></td>
+                        <td><div class="bg-success rounded-3 text-center" style="width: 60px; height: 50px;">@(objectiveAuditProvider.GetAnswerAchievement(compQuestion.questionAnswer) == 2 ? "X" : " ")</div></td>
+                        <td><div class="bg-primary rounded-3 text-center" style="width: 60px; height: 50px;">@(objectiveAuditProvider.GetAnswerAchievement(compQuestion.questionAnswer) == 3 ? "X" : " ")</div></td>
                         <td>@objectiveAuditProvider.calculateAnswerScore(compQuestion.questionAnswer)</td>
                         <td>
                             <input type="text" @onchange="@((e) => updateQuestionComment(e, compQuestion: compQuestion))" value="@compQuestion.questionComment" />
