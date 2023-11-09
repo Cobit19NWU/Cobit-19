@@ -67,7 +67,7 @@ namespace Cobit_19.Business.ObjectiveAudits
 
         public int getAuditIdFromObjectiveAuditID(int objectiveAuditID)
         {
-            var res = _dbContext.ObjectiveAudits.Where(a => a.ObjectiveID == objectiveAuditID).FirstOrDefault();
+            var res = _dbContext.ObjectiveAudits.Where(a => a.ID == objectiveAuditID).FirstOrDefault();
 
             return res.AuditID;
         }
