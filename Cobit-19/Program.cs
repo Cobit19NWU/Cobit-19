@@ -47,7 +47,10 @@ builder.Services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.R
     .AddRoles<IdentityRole>()
     .AddEntityFrameworkStores<AppDbContext>();
 builder.Services.AddAuthentication("Identity.Application")
-    .AddCookie();
+    .AddCookie(options =>
+    {
+        options.LoginPath = "/Identity/Account/Login";
+    });
 
 builder.Services.AddTransient<UserManager<ApplicationUser>>();
 builder.Services.AddRazorPages();
