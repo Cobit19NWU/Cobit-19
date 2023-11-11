@@ -72,6 +72,16 @@ namespace Cobit_19.Business.ObjectiveAudits
             return res.AuditID;
         }
 
+        public ObjectiveDto getObjective(int ObjectiveAuditID)
+        {
+            var ObjectiveAudit = getByID(ObjectiveAuditID);
+            var objectiveID = ObjectiveAudit.ObjectiveID;
+
+            var objectiveQuery = _dbContext.Objectives.Where(obj => obj.ID == objectiveID).FirstOrDefault();
+
+            return _mapper.Map<ObjectiveDto>(objectiveQuery);
+        }
+
         // Set selected objectiveAudits
         // TODO Implement status functionality
         public async Task<ObjectiveAuditDto> updateAsync(ObjectiveAuditEditorDto objectiveAuditEditor)

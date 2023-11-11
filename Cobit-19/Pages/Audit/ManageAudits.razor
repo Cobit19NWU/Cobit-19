@@ -34,12 +34,23 @@
     {
         audits = focusAreaProvider.GetAuditsForFocusAreaByUserID(userID, focusAreaID);
         allUsers = userManagementProvider.GetAllUsers();
+
+        RefreshData();
+    }
+
+    private void RefreshData()
+    {
+        audits = focusAreaProvider.GetAuditsForFocusAreaByUserID(userID, focusAreaID);
+        allUsers = userManagementProvider.GetAllUsers();
     }
 
     private async Task deleteAudit()
     {
         await auditProvider.deleteAsync(selectDeleteAuditID);
         toastService.ShowSuccess("Audit Deleted");
+
+        RefreshData();
+        StateHasChanged();
     }
 
     private async Task createAudit()
@@ -56,6 +67,9 @@
 
         await auditProvider.createAsync(newAudit);
         toastService.ShowSuccess("Audit Created");
+
+        RefreshData();
+        StateHasChanged();
     }
 
     private async Task addUsertoAudit()
@@ -68,6 +82,9 @@
 
         await auditProvider.addAuditMember(newAuditMember);
         toastService.ShowSuccess("User added");
+
+        RefreshData();
+        StateHasChanged();
     }
 }
 

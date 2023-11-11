@@ -24,6 +24,11 @@
 
     protected override void OnInitialized()
     {
+        RefreshUserData();
+    }
+
+    private void RefreshUserData()
+    {
         allUsers = userManagementProvider.GetAllUsers();
         allRoles = userManagementProvider.getAllRoles();
     }
@@ -49,6 +54,9 @@
         }
 
         toastService.ShowSuccess("User Successfully Created!");
+
+        RefreshUserData();
+        StateHasChanged();
     }
 
     private async Task deleteUserOnClickAsync()
