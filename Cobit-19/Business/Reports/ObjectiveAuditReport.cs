@@ -1,4 +1,5 @@
 ﻿using Cobit_19.Shared.Dtos;
+using Microsoft.IdentityModel.Tokens;
 using Syncfusion.Blazor.CircularGauge.Internal;
 using Syncfusion.Drawing;
 using Syncfusion.Pdf;
@@ -184,7 +185,7 @@ namespace Cobit_19.Business.Reports
 
             PdfGrid table = new PdfGrid();
 
-            table.Columns.Add(4);
+            table.Columns.Add(5);
             table.Headers.Add(1);
 
             PdfGridRowStyle tableHeaderStyle = new PdfGridRowStyle();
@@ -204,10 +205,12 @@ namespace Cobit_19.Business.Reports
             tableHeader.Cells[1].StringFormat = format;
             tableHeader.Cells[2].StringFormat = format;
             tableHeader.Cells[3].StringFormat = format;
+            tableHeader.Cells[4].StringFormat = format;
             tableHeader.Cells[0].Value = "Maturity Level";
             tableHeader.Cells[1].Value = "Activity";
             tableHeader.Cells[2].Value = "Importance";
             tableHeader.Cells[3].Value = "Rating";
+            tableHeader.Cells[3].Value = "Comment";
 
             bool col = true;
             foreach (var question in questions)
@@ -231,11 +234,16 @@ namespace Cobit_19.Business.Reports
                 tableRow.Cells[1].StringFormat = format;
                 tableRow.Cells[2].StringFormat = format;
                 tableRow.Cells[3].StringFormat = format;
+                tableRow.Cells[4].StringFormat = format;
 
-                tableRow.Cells[0].Value = question.questionType;
-                tableRow.Cells[1].Value = question.questionDescription;
-                tableRow.Cells[2].Value = question.questionAnswer.ToString();
-                tableRow.Cells[3].Value = GetAnswerAchievement(question.questionScore);
+                if (!question.questionDescription.IsNullOrEmpty())
+                {
+                    tableRow.Cells[0].Value = question.questionType;
+                    tableRow.Cells[1].Value = question.questionDescription;
+                    tableRow.Cells[2].Value = question.questionAnswer.ToString();
+                    tableRow.Cells[3].Value = GetAnswerAchievement(question.questionScore);
+                    tableRow.Cells[4].Value = question.questionComment.ToString();
+                }
             }
 
             table.Draw(page, new PointF(0, sizeFHeader.Height + 20));
