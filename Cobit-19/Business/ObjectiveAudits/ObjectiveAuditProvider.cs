@@ -36,6 +36,7 @@ namespace Cobit_19.Business.ObjectiveAudits
             var quary = _dbContext.ObjectiveAudits
                 .Where(a => a.ID == objectiveAuditID)
                 .Include(a => a.ObjectiveAuditMembers)
+                .Include(a => a.Objective) 
                 .FirstOrDefault();
 
             return _mapper.Map<ObjectiveAuditDto>(quary);

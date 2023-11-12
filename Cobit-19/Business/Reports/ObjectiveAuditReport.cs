@@ -24,21 +24,15 @@ namespace Cobit_19.Business.Reports
 
             string title = "Maturity Assessment Report for " + fullObjectiveAuditDto.objectiveName;
             addCoverPager(title, fullObjectiveAuditDto.objectiveDescription, fullObjectiveAuditDto.objectivePurpose, data);
-            
-            List<ComponentDto> components;
 
-            if(fullObjectiveAuditDto.components != null)
+            if(fullObjectiveAuditDto.components != null && fullObjectiveAuditDto.components.Count != 0)
             {
-                int i = 0;
-                while (fullObjectiveAuditDto.components[i].componentDescription != "Processes")
+                var processes = fullObjectiveAuditDto.components.Where(a => a.componentDescription == "Process").FirstOrDefault();
+                if (processes != null)
                 {
-                    i++;
+                    addProcessPage(processes);
                 }
-
-                var processes = fullObjectiveAuditDto.components[i];
-                addProcessPage(processes);
             }
-
 
             MemoryStream stream = new MemoryStream();
 
@@ -93,19 +87,14 @@ namespace Cobit_19.Business.Reports
             gridRow.Cells[1].Style = cellStyle;
             gridRow.Style = cellStyle;
 
-            string auditorString = "Auditors: ";
-            foreach (var auditor in assesmentData.Auditors)
-            {
-                auditorString += auditor + "\t \n";
-            }
-
             gridRow = infoTable.Rows.Add();
             gridRow.Height = 25;
-            gridRow.Cells[0].Value = auditorString;
+            gridRow.Cells[0].Value = "Auditors: " + assesmentData.Auditors.Last();
             gridRow.Cells[0].Style = cellStyle;
             gridRow.Cells[1].Value = "Audit Name:    " + assesmentData.AuditName;
             gridRow.Cells[1].Style = cellStyle;
             gridRow.Style = cellStyle;
+
 
             gridRow = infoTable.Rows.Add();
             gridRow.Height = 25;
@@ -123,6 +112,7 @@ namespace Cobit_19.Business.Reports
             gridRow.Cells[1].Style = cellStyle;
             gridRow.Style = cellStyle;
 
+
             infoTable.Draw(graphics, new PointF(0, logodim.Y + 30 + sizeF.Height + 30));
 
             // Description Header
@@ -135,22 +125,22 @@ namespace Cobit_19.Business.Reports
 
             // Description Header
             font = new PdfStandardFont(PdfFontFamily.Helvetica, 14, PdfFontStyle.Bold);
-            graphics.DrawString("Purpose", font, PdfBrushes.Black, new PointF(0, logodim.Y + 30 + sizeF.Height + 30 + 210));
+            graphics.DrawString("Purpose", font, PdfBrushes.Black, new PointF(0, logodim.Y + 30 + sizeF.Height + 30 + 195));
             //Purpose
             font = new PdfStandardFont(PdfFontFamily.Helvetica, 12, PdfFontStyle.Regular);
             pdfTextElement = new PdfTextElement(purpose, font);
-            pdfTextElement.Draw(page, new RectangleF(0, logodim.Y + 30 + sizeF.Height + 30 + 230, page.GetClientSize().Width, page.GetClientSize().Height));
+            pdfTextElement.Draw(page, new RectangleF(0, logodim.Y + 30 + sizeF.Height + 30 + 215, page.GetClientSize().Width, page.GetClientSize().Height));
 
             // Process Description
             string processHeader = "Process compliance";
             string ProcessDescription = "Processes describe an organized set of practices and activities to achieve certain objectives and produce a set of outputs that support achievement of overall IT-related goals.";
 
             font = new PdfStandardFont(PdfFontFamily.Helvetica, 14, PdfFontStyle.Bold);
-            graphics.DrawString(processHeader, font, PdfBrushes.Black, new PointF(0, logodim.Y + 30 + sizeF.Height + 30 + 270));
+            graphics.DrawString(processHeader, font, PdfBrushes.Black, new PointF(0, logodim.Y + 30 + sizeF.Height + 30 + 290));
 
             font = new PdfStandardFont(PdfFontFamily.Helvetica, 12, PdfFontStyle.Regular);
             pdfTextElement = new PdfTextElement(ProcessDescription, font);
-            pdfTextElement.Draw(page, new RectangleF(0, logodim.Y + 30 + sizeF.Height + 30 + 290, page.GetClientSize().Width, page.GetClientSize().Height));
+            pdfTextElement.Draw(page, new RectangleF(0, logodim.Y + 30 + sizeF.Height + 30 +310, page.GetClientSize().Width, page.GetClientSize().Height));
 
         }
 

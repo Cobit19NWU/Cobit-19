@@ -28,7 +28,6 @@
     public AuditDto audit;
     public string auditName;
     public string userID;
-    IList<ObjectiveAuditMemberDto> auditMembers;
 
     protected async override Task OnInitializedAsync()
     {
@@ -140,12 +139,12 @@
                 @foreach (var objectiveAudit in objectiveAudits)
                 {
                     var fullAudit = AuditJSONParsingService.parseAuditTemplate(objectiveAudit.UserAuditObject);
-                    auditMembers = objectiveAuditProvider.getMembersByObjectiveAuditID(objectiveAudit.ID);
+                    var auditors = objectiveAuditProvider.getMembersByObjectiveAuditID(objectiveAudit.ID);
                     <tr>
                         <td>@auditName</td>
                         <td>@objectiveAudit.Objective.Code</td>
                         <td>
-                            @foreach (var auditMember in auditMembers)
+                            @foreach (var auditMember in auditors)
                             {
                                 var user = userManagementProvider.GetUserDtoByIdAsync(auditMember.ApplicationUserID).Result;
                                 @user.UserName

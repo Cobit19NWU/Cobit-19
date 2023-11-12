@@ -36,7 +36,14 @@ namespace Cobit_19.Business.Reports
             var AuditID = _objectiveAuditProvider.getAuditIdFromObjectiveAuditID(objectiveAuditId);
             var assesment = await _auditProvider.getAsync(AuditID);
             
-            var objectiveAuditMembers = await _userManagementProvider.GetAllAuditorsByAuditIDAsync(AuditID, auditObject.typeOfObjective);
+            var objectiveAuditMembers = _objectiveAuditProvider.getMembersByObjectiveAuditID(objectiveAuditId);
+
+            List<string> users = new List<string>();
+            foreach(var auditMember in objectiveAuditMembers)
+            {
+                var user = _userManagementProvider.GetUserDtoByIdAsync(auditMember.ApplicationUserID).Result;
+                users.Add(user.UserName);
+            }
 
             AssesmentData data = new AssesmentData()
             {
@@ -44,7 +51,7 @@ namespace Cobit_19.Business.Reports
                 Assessment = "COBIT 2019",
                 Lead = assesment.User.UserName,
                 FocusArea = assesment.FocusArea.Name,
-                Auditors = objectiveAuditMembers.Select(a => a.UserName).ToList(),
+                Auditors = users,
                 AuditName = assesment.Name,
                 Date = assesment.DateCreated.Date,
                 Maturity = auditObject.maturityLevel,
