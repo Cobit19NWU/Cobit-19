@@ -206,10 +206,7 @@
                                                 {
                                                     <th>@i</th>
                                                 }
-                                                @if(_designFactorDto.Questions.Count >= 10)
-                                                {
-                                                    <th>Risk Rating</th>
-                                                }
+                                                <th>Rating</th>
                                             }
                                             else if (getFirstAnswer().AnswerRange == 100)
                                             {
@@ -250,29 +247,62 @@
                                                             checked="@IsAnswerSelected(q.Answers.First().Answer, i)" />
                                                         </td>
                                                     }
-                                                    @if(_designFactorDto.Questions.Count >= 10)
-                                                    {
-                                                        <td>
+                                                    <td>
+                                                        @if (q.AnswerRange == 5)
+                                                        {
                                                             @if (q.Answers.First().Answer == 1)
                                                             {
                                                                 <span class="badge bg-success">
-                                                                    <b>Low Risk</b>
+                                                                    <b>Not important</b>
                                                                 </span>
                                                             }
                                                             else if (q.Answers.First().Answer == 2)
                                                             {
                                                                 <span class="badge bg-warning flex-fill">
-                                                                    <b>Moderate Risk</b>
+                                                                    <b>Somewhat important</b>
+                                                                </span>
+                                                            }
+                                                            else if (q.Answers.First().Answer == 3)
+                                                            {
+                                                                <span class="badge bg-warning flex-fill">
+                                                                    <b>Moderately important</b>
+                                                                </span>
+                                                            }
+                                                            else if (q.Answers.First().Answer == 4)
+                                                            {
+                                                                <span class="badge bg-danger flex-fill">
+                                                                    <b>Important</b>
                                                                 </span>
                                                             }
                                                             else
                                                             {
                                                                 <span class="badge bg-danger flex-fill">
-                                                                    <b>High Risk</b>
+                                                                    <b>Most Important</b>
                                                                 </span>
                                                             }
-                                                        </td>
-                                                    }
+                                                        }
+                                                        else
+                                                        {
+                                                            @if (q.Answers.First().Answer == 1)
+                                                            {
+                                                                <span class="badge bg-success">
+                                                                    <b>No Risk</b>
+                                                                </span>
+                                                            }
+                                                            else if (q.Answers.First().Answer == 2)
+                                                            {
+                                                                <span class="badge bg-warning flex-fill">
+                                                                    <b>Issue</b>
+                                                                </span>
+                                                            }
+                                                            else if (q.Answers.First().Answer == 3)
+                                                            {
+                                                                <span class="badge bg-danger flex-fill">
+                                                                    <b>Serious Issue</b>
+                                                                </span>
+                                                            }
+                                                        }
+                                                    </td>
                                                 }
                                                 else
                                                 {

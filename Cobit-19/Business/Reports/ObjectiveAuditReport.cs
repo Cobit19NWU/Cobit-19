@@ -1,4 +1,5 @@
 ﻿using Cobit_19.Shared.Dtos;
+using Microsoft.IdentityModel.Tokens;
 using Syncfusion.Blazor.CircularGauge.Internal;
 using Syncfusion.Drawing;
 using Syncfusion.Pdf;
@@ -19,38 +20,20 @@ namespace Cobit_19.Business.Reports
             _pdfDocument.PageSettings.Orientation = PdfPageOrientation.Landscape;
         }
 
-        public MemoryStream create(FullObjectiveAuditDto fullObjectiveAuditDto)
+        public MemoryStream create(FullObjectiveAuditDto fullObjectiveAuditDto, AssesmentData data)
         {
-            AssesmentData data = new AssesmentData()
-            {
-                Organization = "NWU",
-                Assessment = "COBIT 2019",
-                Lead = "Daniel Coetzee",
-                FocusArea = "Cobit Core Model",
-                Auditor = "Alice Johnson",
-                AuditName = "Audit 1",
-                Date = DateTime.Now,
-                Maturity = 1,
-                Target = 1
-            };
 
             string title = "Maturity Assessment Report for " + fullObjectiveAuditDto.objectiveName;
             addCoverPager(title, fullObjectiveAuditDto.objectiveDescription, fullObjectiveAuditDto.objectivePurpose, data);
-            
-            List<ComponentDto> components;
 
-            if(fullObjectiveAuditDto.components != null)
+            if(fullObjectiveAuditDto.components != null && fullObjectiveAuditDto.components.Count != 0)
             {
-                int i = 0;
-                while (fullObjectiveAuditDto.components[i].componentDescription != "Processes")
+                var processes = fullObjectiveAuditDto.components.Where(a => a.componentDescription == "Process").FirstOrDefault();
+                if (processes != null)
                 {
-                    i++;
+                    addProcessPage(processes);
                 }
-
-                var processes = fullObjectiveAuditDto.components[i];
-                addProcessPage(processes);
             }
-
 
             MemoryStream stream = new MemoryStream();
 
@@ -107,11 +90,12 @@ namespace Cobit_19.Business.Reports
 
             gridRow = infoTable.Rows.Add();
             gridRow.Height = 25;
-            gridRow.Cells[0].Value = "Auditor: " + assesmentData.Auditor;
+            gridRow.Cells[0].Value = "Auditors: " + assesmentData.Auditors.Last();
             gridRow.Cells[0].Style = cellStyle;
             gridRow.Cells[1].Value = "Audit Name:    " + assesmentData.AuditName;
             gridRow.Cells[1].Style = cellStyle;
             gridRow.Style = cellStyle;
+
 
             gridRow = infoTable.Rows.Add();
             gridRow.Height = 25;
@@ -129,6 +113,7 @@ namespace Cobit_19.Business.Reports
             gridRow.Cells[1].Style = cellStyle;
             gridRow.Style = cellStyle;
 
+
             infoTable.Draw(graphics, new PointF(0, logodim.Y + 30 + sizeF.Height + 30));
 
             // Description Header
@@ -141,22 +126,22 @@ namespace Cobit_19.Business.Reports
 
             // Description Header
             font = new PdfStandardFont(PdfFontFamily.Helvetica, 14, PdfFontStyle.Bold);
-            graphics.DrawString("Purpose", font, PdfBrushes.Black, new PointF(0, logodim.Y + 30 + sizeF.Height + 30 + 210));
+            graphics.DrawString("Purpose", font, PdfBrushes.Black, new PointF(0, logodim.Y + 30 + sizeF.Height + 30 + 195));
             //Purpose
             font = new PdfStandardFont(PdfFontFamily.Helvetica, 12, PdfFontStyle.Regular);
             pdfTextElement = new PdfTextElement(purpose, font);
-            pdfTextElement.Draw(page, new RectangleF(0, logodim.Y + 30 + sizeF.Height + 30 + 230, page.GetClientSize().Width, page.GetClientSize().Height));
+            pdfTextElement.Draw(page, new RectangleF(0, logodim.Y + 30 + sizeF.Height + 30 + 215, page.GetClientSize().Width, page.GetClientSize().Height));
 
             // Process Description
             string processHeader = "Process compliance";
             string ProcessDescription = "Processes describe an organized set of practices and activities to achieve certain objectives and produce a set of outputs that support achievement of overall IT-related goals.";
 
             font = new PdfStandardFont(PdfFontFamily.Helvetica, 14, PdfFontStyle.Bold);
-            graphics.DrawString(processHeader, font, PdfBrushes.Black, new PointF(0, logodim.Y + 30 + sizeF.Height + 30 + 270));
+            graphics.DrawString(processHeader, font, PdfBrushes.Black, new PointF(0, logodim.Y + 30 + sizeF.Height + 30 + 290));
 
             font = new PdfStandardFont(PdfFontFamily.Helvetica, 12, PdfFontStyle.Regular);
             pdfTextElement = new PdfTextElement(ProcessDescription, font);
-            pdfTextElement.Draw(page, new RectangleF(0, logodim.Y + 30 + sizeF.Height + 30 + 290, page.GetClientSize().Width, page.GetClientSize().Height));
+            pdfTextElement.Draw(page, new RectangleF(0, logodim.Y + 30 + sizeF.Height + 30 +310, page.GetClientSize().Width, page.GetClientSize().Height));
 
         }
 
@@ -200,7 +185,7 @@ namespace Cobit_19.Business.Reports
 
             PdfGrid table = new PdfGrid();
 
-            table.Columns.Add(4);
+            table.Columns.Add(5);
             table.Headers.Add(1);
 
             PdfGridRowStyle tableHeaderStyle = new PdfGridRowStyle();
@@ -220,10 +205,12 @@ namespace Cobit_19.Business.Reports
             tableHeader.Cells[1].StringFormat = format;
             tableHeader.Cells[2].StringFormat = format;
             tableHeader.Cells[3].StringFormat = format;
+            tableHeader.Cells[4].StringFormat = format;
             tableHeader.Cells[0].Value = "Maturity Level";
             tableHeader.Cells[1].Value = "Activity";
             tableHeader.Cells[2].Value = "Importance";
             tableHeader.Cells[3].Value = "Rating";
+            tableHeader.Cells[3].Value = "Comment";
 
             bool col = true;
             foreach (var question in questions)
@@ -247,11 +234,16 @@ namespace Cobit_19.Business.Reports
                 tableRow.Cells[1].StringFormat = format;
                 tableRow.Cells[2].StringFormat = format;
                 tableRow.Cells[3].StringFormat = format;
+                tableRow.Cells[4].StringFormat = format;
 
-                tableRow.Cells[0].Value = question.questionType;
-                tableRow.Cells[1].Value = question.questionDescription;
-                tableRow.Cells[2].Value = question.questionAnswer.ToString();
-                tableRow.Cells[3].Value = GetAnswerAchievement(question.questionScore);
+                if (!question.questionDescription.IsNullOrEmpty())
+                {
+                    tableRow.Cells[0].Value = question.questionType;
+                    tableRow.Cells[1].Value = question.questionDescription;
+                    tableRow.Cells[2].Value = question.questionAnswer.ToString();
+                    tableRow.Cells[3].Value = GetAnswerAchievement(question.questionScore);
+                    tableRow.Cells[4].Value = question.questionComment.ToString();
+                }
             }
 
             table.Draw(page, new PointF(0, sizeFHeader.Height + 20));

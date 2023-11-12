@@ -28,7 +28,6 @@
     public AuditDto audit;
     public string auditName;
     public string userID;
-    IList<ObjectiveAuditMemberDto> auditMembers;
 
     protected async override Task OnInitializedAsync()
     {
@@ -95,7 +94,7 @@
 
     public async void ExportComplete(int objectiveAuditId)
     {
-        var pdfStream = reportProvider.createObjectiveAuditReport(objectiveAuditId);
+        var pdfStream = await reportProvider.createObjectiveAuditReport(objectiveAuditId);
 
         if (pdfStream != null)
         {
@@ -155,7 +154,7 @@
                     @foreach (var objectiveAudit in objectiveAudits)
                     {
                         var fullAudit = AuditJSONParsingService.parseAuditTemplate(objectiveAudit.UserAuditObject);
-                        auditMembers = objectiveAuditProvider.getMembersByObjectiveAuditID(objectiveAudit.ID);
+                        var auditMembers = objectiveAuditProvider.getMembersByObjectiveAuditID(objectiveAudit.ID);
                         <tr>
                             <td>@auditName</td>
                             <td>@objectiveAudit.Objective.Code</td>
@@ -187,7 +186,7 @@
                     @foreach (var objectiveAudit in objectiveAudits)
                     {
                         var fullAudit = AuditJSONParsingService.parseAuditTemplate(objectiveAudit.UserAuditObject);
-                        auditMembers = objectiveAuditProvider.getMembersByObjectiveAuditID(objectiveAudit.ID);
+                        var auditMembers = objectiveAuditProvider.getMembersByObjectiveAuditID(objectiveAudit.ID);
                         <tr>
                             <td>@auditName</td>
                             <td>@objectiveAudit.Objective.Code</td>
