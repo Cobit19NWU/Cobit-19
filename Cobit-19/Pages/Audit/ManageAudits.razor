@@ -11,6 +11,7 @@
 @using Blazored.Toast
 @using Blazored.Toast.Services
 @inject IToastService toastService
+@inject NavigationManager navigationManager
 
 @code{
     [Parameter]
@@ -34,12 +35,23 @@
     {
         audits = focusAreaProvider.GetAuditsForFocusAreaByUserID(userID, focusAreaID);
         allUsers = userManagementProvider.GetAllUsers();
+
+        RefreshData();
+    }
+
+    private void RefreshData()
+    {
+        audits = focusAreaProvider.GetAuditsForFocusAreaByUserID(userID, focusAreaID);
+        allUsers = userManagementProvider.GetAllUsers();
     }
 
     private async Task deleteAudit()
     {
         await auditProvider.deleteAsync(selectDeleteAuditID);
         toastService.ShowSuccess("Audit Deleted");
+
+        RefreshData();
+        StateHasChanged();
     }
 
     private async Task createAudit()
@@ -56,6 +68,9 @@
 
         await auditProvider.createAsync(newAudit);
         toastService.ShowSuccess("Audit Created");
+
+        RefreshData();
+        StateHasChanged();
     }
 
     private async Task addUsertoAudit()
@@ -68,6 +83,14 @@
 
         await auditProvider.addAuditMember(newAuditMember);
         toastService.ShowSuccess("User added");
+
+        RefreshData();
+        StateHasChanged();
+    }
+
+    private void handleBackClick()
+    {
+        navigationManager.NavigateTo($"/AuditSelect?focusAreaID={focusAreaID}");
     }
 }
 
@@ -134,5 +157,8 @@
             </select><br /><br />
             <button class="btn btn-primary"  @onclick="deleteAudit">Delete Audit</button>
         </div>
+    </div>
+    <div>
+        <button class="btn btn-primary" @onclick="handleBackClick">Back</button>
     </div>
 </div>
