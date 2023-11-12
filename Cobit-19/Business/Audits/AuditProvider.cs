@@ -98,7 +98,7 @@ namespace Cobit_19.Business.Audits
             return _mapper.Map<List<ObjectiveDto>>(objectives);
         }
 
-        public async Task<AuditDto> createAsync(AuditEditorDto auditEditorDto)
+        public async Task<AuditDto> createAsync(AuditEditorDto auditEditorDto, string userRole, UserDto user)
         {
             // Create Audit
             var audit = _mapper.Map<AuditModel>(auditEditorDto);
@@ -157,6 +157,18 @@ namespace Cobit_19.Business.Audits
 
                     _dbContext.ObjectiveAuditMembers.Add(objAuditMember);
                 }
+
+                if (userRole == "Head Auditor")
+                {
+                    var objAuditMember = new ObjectiveAuditMembersModel
+                    {
+                        ApplicationUserID = user.ID,
+                        ObjectiveAuditID = objAuditID,
+                        DateAdded = DateTime.Now
+                    };
+
+                    _dbContext.ObjectiveAuditMembers.Add(objAuditMember);
+                }
             }
 
 
@@ -165,6 +177,17 @@ namespace Cobit_19.Business.Audits
                 var auditMember = new AuditMemberModel
                 {
                     ApplicationUserID = adminUser.ID,
+                    AuditID = audit.ID
+                };
+
+                _dbContext.AuditMembers.Add(auditMember);
+            }
+
+            if (userRole == "Head Auditor")
+            {
+                var auditMember = new AuditMemberModel
+                {
+                    ApplicationUserID = user.ID,
                     AuditID = audit.ID
                 };
 
