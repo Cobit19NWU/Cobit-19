@@ -11,6 +11,7 @@
 @using Blazored.Toast
 @using Blazored.Toast.Services
 @inject IToastService toastService
+@inject NavigationManager navigationManager
 
 @code{
     [Parameter]
@@ -86,6 +87,11 @@
         RefreshData();
         StateHasChanged();
     }
+
+    private void handleBackClick()
+    {
+        navigationManager.NavigateTo($"/AuditSelect?focusAreaID={focusAreaID}");
+    }
 }
 
 <BlazoredToasts Position="ToastPosition.TopLeft"
@@ -151,5 +157,8 @@
             </select><br /><br />
             <button class="btn btn-primary"  @onclick="deleteAudit">Delete Audit</button>
         </div>
+    </div>
+    <div>
+        <button class="btn btn-primary" @onclick="handleBackClick">Back</button>
     </div>
 </div>
