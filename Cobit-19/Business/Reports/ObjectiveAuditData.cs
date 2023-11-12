@@ -8,7 +8,7 @@
             public string Assessment { get; set; }
             public string Lead { get; set; }
             public string FocusArea { get; set; }
-            public string Auditor { get; set; }
+            public List<string> Auditors { get; set; }
             public string AuditName { get; set; }
             public int Target { get; set; }
             public int Maturity { get; set; }

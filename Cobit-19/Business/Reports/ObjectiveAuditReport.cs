@@ -19,20 +19,8 @@ namespace Cobit_19.Business.Reports
             _pdfDocument.PageSettings.Orientation = PdfPageOrientation.Landscape;
         }
 
-        public MemoryStream create(FullObjectiveAuditDto fullObjectiveAuditDto)
+        public MemoryStream create(FullObjectiveAuditDto fullObjectiveAuditDto, AssesmentData data)
         {
-            AssesmentData data = new AssesmentData()
-            {
-                Organization = "NWU",
-                Assessment = "COBIT 2019",
-                Lead = "Daniel Coetzee",
-                FocusArea = "Cobit Core Model",
-                Auditor = "Alice Johnson",
-                AuditName = "Audit 1",
-                Date = DateTime.Now,
-                Maturity = 1,
-                Target = 1
-            };
 
             string title = "Maturity Assessment Report for " + fullObjectiveAuditDto.objectiveName;
             addCoverPager(title, fullObjectiveAuditDto.objectiveDescription, fullObjectiveAuditDto.objectivePurpose, data);
@@ -105,9 +93,15 @@ namespace Cobit_19.Business.Reports
             gridRow.Cells[1].Style = cellStyle;
             gridRow.Style = cellStyle;
 
+            string auditorString = "Auditors: ";
+            foreach (var auditor in assesmentData.Auditors)
+            {
+                auditorString += auditor + "\t \n";
+            }
+
             gridRow = infoTable.Rows.Add();
             gridRow.Height = 25;
-            gridRow.Cells[0].Value = "Auditor: " + assesmentData.Auditor;
+            gridRow.Cells[0].Value = auditorString;
             gridRow.Cells[0].Style = cellStyle;
             gridRow.Cells[1].Value = "Audit Name:    " + assesmentData.AuditName;
             gridRow.Cells[1].Style = cellStyle;

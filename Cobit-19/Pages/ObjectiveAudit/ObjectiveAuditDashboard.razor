@@ -40,7 +40,7 @@
 
     public async void ExportComplete(int objectiveAuditId)
     {
-        var pdfStream = reportProvider.createObjectiveAuditReport(objectiveAuditId);
+        var pdfStream = await reportProvider.createObjectiveAuditReport(objectiveAuditId);
 
         if (pdfStream != null)
         {
