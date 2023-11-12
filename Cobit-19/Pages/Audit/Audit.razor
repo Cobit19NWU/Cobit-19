@@ -69,6 +69,17 @@
         );
     }
 
+    private void BackButtonPress()
+    {
+        var queryStrDict = new Dictionary<string, string>
+            {
+                ["FocusAreaID"] = (_auditDto.FocusArea.ID).ToString(),
+            };
+        navigationManager.NavigateTo(
+            QueryHelpers.AddQueryString("/AuditSelect", queryStrDict)
+        );
+    }
+
     private void viewAuditButtonPress()
     {
         navigationManager.NavigateTo("/objectiveAuditSelect?AuditId=" + AuditId);
@@ -90,6 +101,11 @@
     }
 }
 
+<div>
+    <button type="button" onclick="@(() => BackButtonPress())" class="mb-2 btn btn-primary">
+        Back
+    </button>
+</div
 @if (isUserInAudit)
 {
     <div class="container-sm">
@@ -103,44 +119,18 @@
                 {
                     <div class="container bg-light mb-4 border-4 border p-4">
                         <h1>
-                           @_auditDto.Name
+                           @_auditDto.FocusArea.Description
                         </h1>
                         <table class="table table-borderless">
                             <tbody>
                                 <tr>
                                     <td>
                                         <b>
-                                            Focus Area: 
+                                            Status: 
                                         </b>
                                     </td>
                                     <td>
-                                        <p>@_auditDto.FocusArea.Name</p>
-                                    </td>
-                                    <td>
-                                        <b>
-                                            Created By: 
-                                        </b>
-                                    </td>
-                                    <td>
-                                        <p>@_auditDto.User.UserName</p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <b>
-                                            Date Created:
-                                        </b>
-                                    </td>
-                                    <td>
-                                        <p>@_auditDto.DateCreated.Date.ToShortDateString()</p>
-                                    </td>
-                                    <td>
-                                        <b>
-                                            Status:
-                                        </b>
-                                    </td>
-                                    <td>
-                                        @if(_auditDto.DateCompleted != null)
+                                        @if (_auditDto.DateCompleted != null)
                                         {
                                             <span class="badge bg-success">Completed</span>
                                         }
@@ -149,30 +139,65 @@
                                             <span class="badge bg-primary">In Progress</span>
                                         }
                                     </td>
+                                    <td>
+                                        <b>
+                                            Audit Name: 
+                                        </b>
+                                    </td>
+                                    <td>
+                                        <p>@_auditDto.Name</p>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>
                                         <b>
-                                            Date Completed:
+                                            Created By:
                                         </b>
                                     </td>
                                     <td>
-                                        @if(_auditDto.DateCompleted != null)                               
-                                        {
-                                            <p>@_auditDto.DateCompleted</p>
-                                        }
-                                        else
-                                        {
-                                            <p></p>
-                                        }
+                                        <p>@_auditDto.User.UserName</p>
+                                    </td>
+                                    <td>
+                                        <b>
+                                            Version
+                                        </b>
+                                    </td>
+                                    <td>
+                                        <p>COBIT 2019 Framework</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>
+                                            Role:
+                                        </b>
+                                    </td>
+                                    <td>
+                                        Administrators
                                     </td>
                                     <td>      
                                         <b>
-                                            Maturity:
+                                            Created
+                                        </b>
+                                    </td>
+                                    <td>
+                                        <p>@_auditDto.DateCreated.Date.ToShortDateString()</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>
+                                            Maturity Level:
                                         </b>
                                     </td>
                                     <td>
                                         <p>0</p>
+                                    </td>
+                                    <td>      
+                                        <b>
+                                        </b>
+                                    </td>
+                                    <td>
                                     </td>
                                 </tr>
                             </tbody>
