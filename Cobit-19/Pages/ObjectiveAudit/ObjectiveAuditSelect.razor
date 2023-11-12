@@ -118,46 +118,85 @@
 
     <div>
         <table class="table">
-            <thead>
-                <tr style="background-color: purple; color: white;">
-                    <th>Audit Name</th>
-                    <th>Description</th>
-                    <th>Assigned to audit</th>
-                    <th>Maturity Level</th>
-                    <th>Status</th>
-                    <th></th>
-                    <th>Report</th>
-                </tr>
-            </thead>
-            <tbody>
-                @{
-                    var scope = serviceProvider.CreateScope();
-                    var objectiveAuditGetAllProvider = scope.ServiceProvider.GetRequiredService<ObjectiveAuditProvider>();
-                    objectiveAudits = objectiveAuditGetAllProvider.getObjectiveAuditsForUser(userID, AuditId);
-                }
-
-                @foreach (var objectiveAudit in objectiveAudits)
-                {
-                    var fullAudit = AuditJSONParsingService.parseAuditTemplate(objectiveAudit.UserAuditObject);
-                    var auditors = objectiveAuditProvider.getMembersByObjectiveAuditID(objectiveAudit.ID);
-                    <tr>
-                        <td>@auditName</td>
-                        <td>@objectiveAudit.Objective.Code</td>
-                        <td>
-                            @foreach (var auditMember in auditors)
-                            {
-                                var user = userManagementProvider.GetUserDtoByIdAsync(auditMember.ApplicationUserID).Result;
-                                @user.UserName
-                                <br />
-                            }
-                        </td>
-                        <td>@fullAudit.maturityLevel</td>
-                        <td><span class="@statusBadge(audit.Status)">@statusFormatter(objectiveAudit.Status)</span></td>
-                        <td><button class="btn btn-primary" @onclick="() => auditButtonClick(objectiveAudit.ID)">Modify</button></td>
-                        <td><button class="btn btn-outline-primary" @onclick="() => ExportComplete(objectiveAudit.ID)">Report</button></td>
+            <AuthorizeView Roles="Administrator, Head Auditor, Client">
+                <thead>
+                    <tr style="background-color: purple; color: white;">
+                        <th>Audit Name</th>
+                        <th>Description</th>
+                        <th>Assigned to audit</th>
+                        <th>Maturity Level</th>
+                        <th>Status</th>
+                        <th></th>
+                        <th>Report</th>
                     </tr>
-                }
-            </tbody>
+                </thead>
+            </AuthorizeView>
+            <AuthorizeView Roles="Governance Auditor, Management Auditor">
+                <thead>
+                    <tr style="background-color: purple; color: white;">
+                        <th>Audit Name</th>
+                        <th>Description</th>
+                        <th>Maturity Level</th>
+                        <th>Status</th>
+                        <th></th>
+                    </tr>
+                </thead>
+            </AuthorizeView>
+
+            <AuthorizeView Roles="Administrator, Head Auditor, Client">
+                <tbody>
+                    @{
+                        var scope = serviceProvider.CreateScope();
+                        var objectiveAuditGetAllProvider = scope.ServiceProvider.GetRequiredService<ObjectiveAuditProvider>();
+                        objectiveAudits = objectiveAuditGetAllProvider.getObjectiveAuditsForUser(userID, AuditId);
+                    }
+
+                    @foreach (var objectiveAudit in objectiveAudits)
+                    {
+                        var fullAudit = AuditJSONParsingService.parseAuditTemplate(objectiveAudit.UserAuditObject);
+                        auditMembers = objectiveAuditProvider.getMembersByObjectiveAuditID(objectiveAudit.ID);
+                        <tr>
+                            <td>@auditName</td>
+                            <td>@objectiveAudit.Objective.Code</td>
+                            <td>
+                                @foreach (var auditMember in auditMembers)
+                                {
+                                    var user = userManagementProvider.GetUserDtoByIdAsync(auditMember.ApplicationUserID).Result;
+                                    @user.UserName
+                                    <br />
+                                }
+                            </td>
+                            <td>@fullAudit.maturityLevel</td>
+                            <td><span class="@statusBadge(audit.Status)">@statusFormatter(objectiveAudit.Status)</span></td>
+                            <td><button class="btn btn-primary" @onclick="() => auditButtonClick(objectiveAudit.ID)">Modify</button></td>
+                            <td><button class="btn btn-outline-primary" @onclick="() => ExportComplete(objectiveAudit.ID)">Report</button></td>
+                        </tr>
+                    }
+                </tbody>
+            </AuthorizeView>
+
+            <AuthorizeView Roles="Governance Auditor, Management Auditor">
+                <tbody>
+                    @{
+                        var scope = serviceProvider.CreateScope();
+                        var objectiveAuditGetAllProvider = scope.ServiceProvider.GetRequiredService<ObjectiveAuditProvider>();
+                        objectiveAudits = objectiveAuditGetAllProvider.getObjectiveAuditsForUser(userID, AuditId);
+                    }
+
+                    @foreach (var objectiveAudit in objectiveAudits)
+                    {
+                        var fullAudit = AuditJSONParsingService.parseAuditTemplate(objectiveAudit.UserAuditObject);
+                        auditMembers = objectiveAuditProvider.getMembersByObjectiveAuditID(objectiveAudit.ID);
+                        <tr>
+                            <td>@auditName</td>
+                            <td>@objectiveAudit.Objective.Code</td>
+                            <td>@fullAudit.maturityLevel</td>
+                            <td><span class="@statusBadge(audit.Status)">@statusFormatter(objectiveAudit.Status)</span></td>
+                            <td><button class="btn btn-primary" @onclick="() => auditButtonClick(objectiveAudit.ID)">Modify</button></td>
+                        </tr>
+                    }
+                </tbody>
+            </AuthorizeView>
         </table>
     </div>
 </div>

@@ -26,28 +26,28 @@
               "questionDescription": "Percent of products and services that meet or exceed targets in revenues and/or market share",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Enterprise goal",
               "questionDescription": "Percent of products and services that meet or exceed customer satisfaction targets",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Enterprise goal",
               "questionDescription": "Percent of products and services that provide competitive advantage",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Enterprise goal",
               "questionDescription": "Time to market for new products and services",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             }
           ]
         },
@@ -62,21 +62,21 @@
               "questionDescription": "Level of awareness and understanding of business innovation opportunities",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Enterprise goal",
               "questionDescription": "Stakeholder satisfaction with levels of product and innovation expertise and ideas",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Enterprise goal",
               "questionDescription": "Number of approved product and service initiatives resulting from innovative ideas",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             }
 
           ]
@@ -98,28 +98,28 @@
               "questionDescription": "Level of satisfaction of business executives with I&T responsiveness to new requirements",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Alignment goal",
               "questionDescription": "Average time to market for new I&T-related services and applications",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Alignment goal",
               "questionDescription": "Average time to turn strategic I&T objectives into agreed and approved initiatives",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Alignment goal",
               "questionDescription": "Number of critical business processes supported by up-todate infrastructure and applications",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             }
           ]
         },
@@ -133,21 +133,21 @@
               "questionDescription": "Level of business executive awareness and understanding of I&T innovation possibilities",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Alignment goal",
               "questionDescription": "Number of approved initiatives resulting from innovative I&T ideas",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Alignment goal",
               "questionDescription": "Number of innovation champions recognized/awarded",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             }
           ]
         }
@@ -172,7 +172,7 @@
               "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Maturity Level 2",
@@ -183,7 +183,7 @@
               "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Maturity Level 3",
@@ -194,7 +194,7 @@
               "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Maturity Level 3",
@@ -205,7 +205,7 @@
               "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             }
           ]
         },
@@ -223,7 +223,7 @@
               "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Maturity Level 3",
@@ -234,7 +234,7 @@
               "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Maturity Level 3",
@@ -245,7 +245,7 @@
               "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             }
           ]
         },
@@ -263,7 +263,7 @@
               "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Maturity Level 2",
@@ -274,7 +274,7 @@
               "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Maturity Level 2",
@@ -285,7 +285,7 @@
               "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Maturity Level 2",
@@ -296,7 +296,7 @@
               "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             }
           ]
         },
@@ -314,7 +314,7 @@
               "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Maturity Level 3",
@@ -325,7 +325,7 @@
               "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Maturity Level 3",
@@ -336,7 +336,7 @@
               "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Maturity Level 3",
@@ -347,7 +347,7 @@
               "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Maturity Level 3",
@@ -358,7 +358,7 @@
               "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             }
           ]
         },
@@ -376,7 +376,7 @@
               "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Maturity Level 3",
@@ -387,7 +387,7 @@
               "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Maturity Level 3",
@@ -398,7 +398,7 @@
               "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Maturity Level 4",
@@ -409,7 +409,7 @@
               "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             }
           ]
         },
@@ -427,7 +427,7 @@
               "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Maturity Level 3",
@@ -438,7 +438,7 @@
               "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Maturity Level 4",
@@ -449,7 +449,7 @@
               "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Maturity Level 4",
@@ -460,7 +460,7 @@
               "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             }
           ]
         }
@@ -477,42 +477,42 @@
           "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
           "questionAnswer": 0,
           "questionScore": 0,
-          "questionComment": "comment"
+          "questionComment": ""
         },
         {
           "questionType": "Sub Process 2",
           "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
           "questionAnswer": 0,
           "questionScore": 0,
-          "questionComment": "comment"
+          "questionComment": ""
         },
         {
           "questionType": "Sub Process 3",
           "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
           "questionAnswer": 0,
           "questionScore": 0,
-          "questionComment": "comment"
+          "questionComment": ""
         },
         {
           "questionType": "Sub Process 4",
           "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
           "questionAnswer": 0,
           "questionScore": 0,
-          "questionComment": "comment"
+          "questionComment": ""
         },
         {
           "questionType": "Sub Process 5",
           "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
           "questionAnswer": 0,
           "questionScore": 0,
-          "questionComment": "comment"
+          "questionComment": ""
         },
         {
           "questionType": "Sub Process 6",
           "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
           "questionAnswer": 0,
           "questionScore": 0,
-          "questionComment": "comment"
+          "questionComment": ""
         }
       ]
 
@@ -537,7 +537,7 @@
               "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Output",
@@ -548,7 +548,7 @@
               "outputTo": "APO07.04",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Output",
@@ -559,7 +559,7 @@
               "outputTo": "Internal",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             }
           ]
         },
@@ -578,7 +578,7 @@
               "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Output",
@@ -589,7 +589,7 @@
               "outputTo": "APO02.01 ",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             }
           ]
         },
@@ -608,7 +608,7 @@
               "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Output",
@@ -619,7 +619,7 @@
               "outputTo": "BAI03.01",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             }
           ]
         },
@@ -638,7 +638,7 @@
               "outputTo": "APO05.02, APO06.02",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Output",
@@ -649,7 +649,7 @@
               "outputTo": "BAI03.01",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Output",
@@ -660,7 +660,7 @@
               "outputTo": "Internal",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             }
           ]
         },
@@ -679,7 +679,7 @@
               "outputTo": "APO02.03 ,BAI03.08",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Output",
@@ -690,7 +690,7 @@
               "outputTo": "APO02.03, BAI03.09",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             }
           ]
         },
@@ -709,7 +709,7 @@
               "outputTo": "APO05.03",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Output",
@@ -720,7 +720,7 @@
               "outputTo": "APO02.04, BAI03.02",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Output",
@@ -731,7 +731,7 @@
               "outputTo": "APO02.04, BAI03.02",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             }
           ]
         }
@@ -750,7 +750,7 @@
           "detailedReference": "A. Plan—A.3. Business Plan Development",
           "questionAnswer": 0,
           "questionScore": 0,
-          "questionComment": "comment"
+          "questionComment": ""
         },
         {
           "questionType": "Component question",
@@ -759,7 +759,7 @@
           "detailedReference": "EMRG",
           "questionAnswer": 0,
           "questionScore": 0,
-          "questionComment": "comment"
+          "questionComment": ""
         },
         {
           "questionType": "Component question",
@@ -768,7 +768,7 @@
           "detailedReference": "A. Plan—A.9. Innovating",
           "questionAnswer": 0,
           "questionScore": 0,
-          "questionComment": "comment"
+          "questionComment": ""
         },
         {
           "questionType": "Component question",
@@ -777,7 +777,7 @@
           "detailedReference": "INOV",
           "questionAnswer": 0,
           "questionScore": 0,
-          "questionComment": "comment"
+          "questionComment": ""
         },
         {
           "questionType": "Component question",
@@ -786,7 +786,7 @@
           "detailedReference": "RSCH",
           "questionAnswer": 0,
           "questionScore": 0,
-          "questionComment": "comment"
+          "questionComment": ""
         },
         {
           "questionType": "Component question",
@@ -795,7 +795,7 @@
           "detailedReference": "A. Plan—A.7. Technology Trend Monitoring",
           "questionAnswer": 0,
           "questionScore": 0,
-          "questionComment": "comment"
+          "questionComment": ""
         }
       ]
     },
@@ -812,7 +812,7 @@
           "detailedReference": "",
           "questionAnswer": 0,
           "questionScore": 0,
-          "questionComment": "comment"
+          "questionComment": ""
         }
       ]
     },
@@ -828,7 +828,7 @@
           "detailedReference": "No detailed reference given",
           "questionAnswer": 0,
           "questionScore": 0,
-          "questionComment": "comment"
+          "questionComment": ""
         }
       ]
     },
@@ -842,21 +842,21 @@
           "questionDescription": "Collaboration platforms",
           "questionAnswer": 0,
           "questionScore": 0,
-          "questionComment": "comment"
+          "questionComment": ""
         },
         {
           "questionType": "Component question",
           "questionDescription": "Industry benchmarks",
           "questionAnswer": 0,
           "questionScore": 0,
-          "questionComment": "comment"
+          "questionComment": ""
         },
         {
           "questionType": "Component question",
           "questionDescription": "Technology watch services and tools",
           "questionAnswer": 0,
           "questionScore": 0,
-          "questionComment": "comment"
+          "questionComment": ""
         }
       ]
     }

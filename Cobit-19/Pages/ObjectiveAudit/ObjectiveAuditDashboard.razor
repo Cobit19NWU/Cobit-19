@@ -19,7 +19,7 @@
     private int _auditId;
 
     public FullObjectiveAuditDto auditObject;
-    private ObjectiveAuditDto objectiveAudit;
+    private ObjectiveDto objective;
     public string auditJSON;
     public int maturityLevel;
     public List<ComponentDto> components;
@@ -35,7 +35,7 @@
         components = auditObject.components;
         maturityLevel = auditObject.maturityLevel;
 
-        objectiveAudit = objectiveAuditProvider.getByID(objectiveAuditId);
+        objective = objectiveAuditProvider.getObjective(objectiveAuditId);
     }
 
     public async void ExportComplete(int objectiveAuditId)
@@ -46,7 +46,7 @@
         {
             byte[] pdfBytes = pdfStream.ToArray();
 
-            await JSRuntime.InvokeVoidAsync("downloadFile", pdfBytes, "sample.pdf");
+            await JSRuntime.InvokeVoidAsync("downloadFile", pdfBytes, "Maturity assessment report.pdf");
         }
     }
 
@@ -69,7 +69,7 @@
 </div>
 <div class="container">
     <div class="border-bottom text-center mb-2">
-        <h6 class="text-secondary">Maturity Assesments for @objectiveAudit.Objective.Description (@auditObject.objectiveName)</h6>
+        <h6 class="text-secondary">Maturity Assesments for @objective.Description (@auditObject.objectiveName)</h6>
     </div>
     <div class="mb-5 row">
         <ComponentSelectBar objectiveAuditId="@objectiveAuditId" selectedPage="Dashboard"/>

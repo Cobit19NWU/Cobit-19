@@ -26,28 +26,28 @@
               "questionDescription": "Percent of products and services that meet or exceed targets in revenues and/or market share",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Enterprise goal",
               "questionDescription": "Percent of products and services that meet or exceed customer satisfaction targets",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Enterprise goal",
               "questionDescription": "Percent of products and services that provide competitive advantage",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Enterprise goal",
               "questionDescription": "Time to market for new products and services",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             }
           ]
         },
@@ -61,28 +61,28 @@
               "questionDescription": "Number of customer service disruptions",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Enterprise goal",
               "questionDescription": "Percent of business stakeholders satisfied that customer service delivery meets agreed levels",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Enterprise goal",
               "questionDescription": "Number of customer complaints",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Enterprise goal",
               "questionDescription": "Trend of customer satisfaction survey results",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             }
 
           ]
@@ -97,21 +97,21 @@
               "questionDescription": "Satisfaction levels of board and executive management with business process capabilities",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Enterprise goal",
               "questionDescription": "Satisfaction levels of customers with service delivery capabilities",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Enterprise goal",
               "questionDescription": "Satisfaction levels of suppliers with supply chain capabilities",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             }
 
           ]
@@ -125,28 +125,28 @@
               "questionDescription": "Number of programs on time and within budget",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Enterprise goal",
               "questionDescription": "Percent of stakeholders satisfied with program delivery",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Enterprise goal",
               "questionDescription": "Percent of business transformation programs stopped",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Enterprise goal",
               "questionDescription": "Percent of business transformation programs with regular reported status updates",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             }
 
           ]
@@ -168,28 +168,28 @@
               "questionDescription": "Time to execute business services or processes",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Alignment goal",
               "questionDescription": "Number of I&T-enabled business programs delayed or incurring additional cost due to technology-integration issues",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Alignment goal",
               "questionDescription": "Number of business process changes that need to be delayed or reworked because of technology-integration issues",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Alignment goal",
               "questionDescription": "Number of applications or critical infrastructures operating in silos and not integrated",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             }
           ]
         }
@@ -214,7 +214,7 @@
               "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Maturity Level 2",
@@ -225,7 +225,7 @@
               "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Maturity Level 2",
@@ -236,7 +236,7 @@
               "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Maturity Level 2",
@@ -247,7 +247,7 @@
               "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Related Guidance",
@@ -258,7 +258,7 @@
               "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             }
           ]
         },
@@ -276,7 +276,7 @@
               "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Maturity Level 3",
@@ -287,7 +287,7 @@
               "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Related Guidance",
@@ -298,7 +298,7 @@
               "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             }
           ]
         },
@@ -316,7 +316,7 @@
               "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Maturity Level 2",
@@ -327,7 +327,7 @@
               "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Maturity Level 3",
@@ -338,7 +338,7 @@
               "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Maturity Level 3",
@@ -349,7 +349,7 @@
               "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             }
           ]
         },
@@ -367,7 +367,7 @@
               "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Maturity Level 3",
@@ -378,7 +378,7 @@
               "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Maturity Level 3",
@@ -389,7 +389,7 @@
               "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Maturity Level 4",
@@ -400,7 +400,7 @@
               "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Maturity Level 4",
@@ -411,7 +411,7 @@
               "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             }
           ]
         },
@@ -429,7 +429,7 @@
               "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Maturity Level 3",
@@ -440,7 +440,7 @@
               "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Maturity Level 3",
@@ -451,7 +451,7 @@
               "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Maturity Level 3",
@@ -462,7 +462,7 @@
               "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Maturity Level 3",
@@ -473,7 +473,7 @@
               "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Maturity Level 3",
@@ -484,7 +484,7 @@
               "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Maturity Level 3",
@@ -495,7 +495,7 @@
               "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Maturity Level 3",
@@ -506,7 +506,7 @@
               "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Maturity Level 3",
@@ -517,7 +517,7 @@
               "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Related Guidance",
@@ -528,7 +528,7 @@
               "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Related Guidance",
@@ -539,7 +539,7 @@
               "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             }
           ]
         },
@@ -557,7 +557,7 @@
               "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Maturity Level 3",
@@ -568,7 +568,7 @@
               "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Maturity Level 3",
@@ -579,7 +579,7 @@
               "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Maturity Level 3",
@@ -590,7 +590,7 @@
               "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             }
           ]
         }
@@ -607,42 +607,42 @@
           "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
           "questionAnswer": 0,
           "questionScore": 0,
-          "questionComment": "comment"
+          "questionComment": ""
         },
         {
           "questionType": "Sub Process 2",
           "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
           "questionAnswer": 0,
           "questionScore": 0,
-          "questionComment": "comment"
+          "questionComment": ""
         },
         {
           "questionType": "Sub Process 3",
           "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
           "questionAnswer": 0,
           "questionScore": 0,
-          "questionComment": "comment"
+          "questionComment": ""
         },
         {
           "questionType": "Sub Process 4",
           "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
           "questionAnswer": 0,
           "questionScore": 0,
-          "questionComment": "comment"
+          "questionComment": ""
         },
         {
           "questionType": "Sub Process 5",
           "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
           "questionAnswer": 0,
           "questionScore": 0,
-          "questionComment": "comment"
+          "questionComment": ""
         },
         {
           "questionType": "Sub Process 6",
           "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
           "questionAnswer": 0,
           "questionScore": 0,
-          "questionComment": "comment"
+          "questionComment": ""
         }
       ]
     },
@@ -666,7 +666,7 @@
               "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Input",
@@ -677,7 +677,7 @@
               "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Input",
@@ -688,7 +688,7 @@
               "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Output",
@@ -699,7 +699,7 @@
               "outputTo": "Internal",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             }
           ]
         },
@@ -718,7 +718,7 @@
               "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Input",
@@ -729,7 +729,7 @@
               "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Input",
@@ -740,7 +740,7 @@
               "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Input",
@@ -751,7 +751,7 @@
               "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Input",
@@ -762,7 +762,7 @@
               "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Input",
@@ -773,7 +773,7 @@
               "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Input",
@@ -784,7 +784,7 @@
               "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Input",
@@ -795,7 +795,7 @@
               "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Input",
@@ -806,7 +806,7 @@
               "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Input",
@@ -817,7 +817,7 @@
               "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Input",
@@ -828,7 +828,7 @@
               "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Input",
@@ -839,7 +839,7 @@
               "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Input",
@@ -850,7 +850,7 @@
               "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Output",
@@ -861,7 +861,7 @@
               "outputTo": "APO12.01",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Output",
@@ -872,7 +872,7 @@
               "outputTo": "Internal",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Output",
@@ -883,7 +883,7 @@
               "outputTo": "Internal",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             }
           ]
         },
@@ -902,7 +902,7 @@
               "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Output",
@@ -913,7 +913,7 @@
               "outputTo": "APO03.03",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Output",
@@ -924,7 +924,7 @@
               "outputTo": "Internal",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Output",
@@ -935,7 +935,7 @@
               "outputTo": "Internal",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             }
           ]
         },
@@ -954,7 +954,7 @@
               "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Input",
@@ -965,7 +965,7 @@
               "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Input",
@@ -976,7 +976,7 @@
               "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Input",
@@ -987,7 +987,7 @@
               "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Input",
@@ -998,7 +998,7 @@
               "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Input",
@@ -1009,7 +1009,7 @@
               "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Output",
@@ -1020,7 +1020,7 @@
               "outputTo": "APO01.03, APO13.02, BAI03.11, EDM04.01",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Output",
@@ -1031,7 +1031,7 @@
               "outputTo": "BAI03.11",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             }
           ]
         },
@@ -1050,7 +1050,7 @@
               "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Input",
@@ -1061,7 +1061,7 @@
               "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Input",
@@ -1072,7 +1072,7 @@
               "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Input",
@@ -1083,7 +1083,7 @@
               "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Input",
@@ -1094,7 +1094,7 @@
               "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Input",
@@ -1105,7 +1105,7 @@
               "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Input",
@@ -1116,7 +1116,7 @@
               "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Input",
@@ -1127,7 +1127,7 @@
               "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Input",
@@ -1138,7 +1138,7 @@
               "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Input",
@@ -1149,7 +1149,7 @@
               "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Input",
@@ -1160,7 +1160,7 @@
               "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Output",
@@ -1171,7 +1171,7 @@
               "outputTo": "All APO, All BAI, All DSS, All MEA",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Output",
@@ -1182,7 +1182,7 @@
               "outputTo": "APO01.01, APO03.01, APO08.01, EDM02.01, EDM02.02",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Output",
@@ -1193,7 +1193,7 @@
               "outputTo": "EDM02.01",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Output",
@@ -1204,7 +1204,7 @@
               "outputTo": "EDM02.01, APO12.01",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             }
           ]
         },
@@ -1223,7 +1223,7 @@
               "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Output",
@@ -1234,7 +1234,7 @@
               "outputTo": "All APO, All BAI, All DSS, All MEA",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             },
             {
               "questionType": "Output",
@@ -1245,7 +1245,7 @@
               "outputTo": "Internal",
               "questionAnswer": 0,
               "questionScore": 0,
-              "questionComment": "comment"
+              "questionComment": ""
             }
           ]
         }
@@ -1264,7 +1264,7 @@
           "detailedReference": "A. Plan—A.3. Business Plan Development ",
           "questionAnswer": 0,
           "questionScore": 0,
-          "questionComment": "comment"
+          "questionComment": ""
         },
         {
           "questionType": "Component question",
@@ -1273,7 +1273,7 @@
           "detailedReference": "EMRG",
           "questionAnswer": 0,
           "questionScore": 0,
-          "questionComment": "comment"
+          "questionComment": ""
         },
         {
           "questionType": "Component question",
@@ -1282,7 +1282,7 @@
           "detailedReference": "ITSP",
           "questionAnswer": 0,
           "questionScore": 0,
-          "questionComment": "comment"
+          "questionComment": ""
         },
         {
           "questionType": "Component question",
@@ -1291,7 +1291,7 @@
           "detailedReference": "A. Plan—A.1. IS and Business Strategy Alignment ",
           "questionAnswer": 0,
           "questionScore": 0,
-          "questionComment": "comment"
+          "questionComment": ""
         }
 
       ]
@@ -1309,7 +1309,7 @@
           "detailedReference": "Service Strategy, 3. Service strategy principles",
           "questionAnswer": 0,
           "questionScore": 0,
-          "questionComment": "comment"
+          "questionComment": ""
         },
         {
           "questionType": "Component question",
@@ -1319,7 +1319,7 @@
           "detailedReference": "",
           "questionAnswer": 0,
           "questionScore": 0,
-          "questionComment": "comment"
+          "questionComment": ""
         }
       ]
     },
@@ -1335,7 +1335,7 @@
           "detailedReference": "Configurable framework that helps organizations deliver new products and solutions in the shortest sustainable lead time (all chapters)",
           "questionAnswer": 0,
           "questionScore": 0,
-          "questionComment": "comment"
+          "questionComment": ""
         }
       ]
     },
@@ -1349,28 +1349,28 @@
           "questionDescription": " Customer analytics",
           "questionAnswer": 0,
           "questionScore": 0,
-          "questionComment": "comment"
+          "questionComment": ""
         },
         {
           "questionType": "Component question",
           "questionDescription": "Industry benchmarks",
           "questionAnswer": 0,
           "questionScore": 0,
-          "questionComment": "comment"
+          "questionComment": ""
         },
         {
           "questionType": "Component question",
           "questionDescription": "Performance measurement system (e.g., balanced scorecard, skills management tools)",
           "questionAnswer": 0,
           "questionScore": 0,
-          "questionComment": "comment"
+          "questionComment": ""
         },
         {
           "questionType": "Component question",
           "questionDescription": "Technology watch services and tools",
           "questionAnswer": 0,
           "questionScore": 0,
-          "questionComment": "comment"
+          "questionComment": ""
         }
       ]
     }
