@@ -210,7 +210,7 @@ namespace Cobit_19.Business.Reports
             tableHeader.Cells[1].Value = "Activity";
             tableHeader.Cells[2].Value = "Importance";
             tableHeader.Cells[3].Value = "Rating";
-            tableHeader.Cells[3].Value = "Comment";
+            tableHeader.Cells[4].Value = "Comment";
 
             bool col = true;
             foreach (var question in questions)
