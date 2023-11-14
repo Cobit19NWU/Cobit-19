@@ -28,7 +28,7 @@ namespace Cobit_19.Business.Reports
 
             if(fullObjectiveAuditDto.components != null && fullObjectiveAuditDto.components.Count != 0)
             {
-                var processes = fullObjectiveAuditDto.components.Where(a => a.componentDescription == "Process").FirstOrDefault();
+                var processes = fullObjectiveAuditDto.components.Where(a => a.componentDescription == "Process" || a.componentDescription == "Processes").FirstOrDefault();
                 if (processes != null)
                 {
                     addProcessPage(processes);
@@ -82,7 +82,7 @@ namespace Cobit_19.Business.Reports
 
             gridRow = infoTable.Rows.Add();
             gridRow.Height = 25;
-            gridRow.Cells[0].Value = "Lead Assessor: " + assesmentData.Lead;
+            gridRow.Cells[0].Value = "Auditors: " + assesmentData.Auditors.Last();
             gridRow.Cells[0].Style = cellStyle;
             gridRow.Cells[1].Value = "Focus Area:    " + assesmentData.FocusArea;
             gridRow.Cells[1].Style = cellStyle;
@@ -90,7 +90,7 @@ namespace Cobit_19.Business.Reports
 
             gridRow = infoTable.Rows.Add();
             gridRow.Height = 25;
-            gridRow.Cells[0].Value = "Auditors: " + assesmentData.Auditors.Last();
+            gridRow.Cells[0].Value = "Target Level: " + assesmentData.Target;
             gridRow.Cells[0].Style = cellStyle;
             gridRow.Cells[1].Value = "Audit Name:    " + assesmentData.AuditName;
             gridRow.Cells[1].Style = cellStyle;
@@ -99,17 +99,9 @@ namespace Cobit_19.Business.Reports
 
             gridRow = infoTable.Rows.Add();
             gridRow.Height = 25;
-            gridRow.Cells[0].Value = "Target Level: " + assesmentData.Target;
-            gridRow.Cells[0].Style = cellStyle;
-            gridRow.Cells[1].Value = "Year:    " + assesmentData.Date.Year;
-            gridRow.Cells[1].Style = cellStyle;
-            gridRow.Style = cellStyle;
-
-            gridRow = infoTable.Rows.Add();
-            gridRow.Height = 25;
             gridRow.Cells[0].Value = "Maturity Level:" + assesmentData.Maturity.ToString();
             gridRow.Cells[0].Style = cellStyle;
-            gridRow.Cells[1].Value = "";
+            gridRow.Cells[1].Value = "Year:    " + assesmentData.Date.Year;
             gridRow.Cells[1].Style = cellStyle;
             gridRow.Style = cellStyle;
 
@@ -118,19 +110,19 @@ namespace Cobit_19.Business.Reports
 
             // Description Header
             font = new PdfStandardFont(PdfFontFamily.Helvetica, 14, PdfFontStyle.Bold);
-            graphics.DrawString("Description", font, PdfBrushes.Black, new PointF(0, logodim.Y + 30 + sizeF.Height + 30 + 130));
+            graphics.DrawString("Description", font, PdfBrushes.Black, new PointF(0, logodim.Y + 30 + sizeF.Height + 30 + 110));
             //Description
             font = new PdfStandardFont(PdfFontFamily.Helvetica, 12, PdfFontStyle.Regular);
             PdfTextElement pdfTextElement = new PdfTextElement(description, font);
-            pdfTextElement.Draw(page, new RectangleF(0, logodim.Y + 30 + sizeF.Height + 30 + 150, page.GetClientSize().Width, page.GetClientSize().Height));
+            pdfTextElement.Draw(page, new RectangleF(0, logodim.Y + 30 + sizeF.Height + 30 + 130, page.GetClientSize().Width, page.GetClientSize().Height));
 
             // Description Header
             font = new PdfStandardFont(PdfFontFamily.Helvetica, 14, PdfFontStyle.Bold);
-            graphics.DrawString("Purpose", font, PdfBrushes.Black, new PointF(0, logodim.Y + 30 + sizeF.Height + 30 + 195));
+            graphics.DrawString("Purpose", font, PdfBrushes.Black, new PointF(0, logodim.Y + 30 + sizeF.Height + 30 + 200));
             //Purpose
             font = new PdfStandardFont(PdfFontFamily.Helvetica, 12, PdfFontStyle.Regular);
             pdfTextElement = new PdfTextElement(purpose, font);
-            pdfTextElement.Draw(page, new RectangleF(0, logodim.Y + 30 + sizeF.Height + 30 + 215, page.GetClientSize().Width, page.GetClientSize().Height));
+            pdfTextElement.Draw(page, new RectangleF(0, logodim.Y + 30 + sizeF.Height + 30 + 220, page.GetClientSize().Width, page.GetClientSize().Height));
 
             // Process Description
             string processHeader = "Process compliance";
@@ -242,7 +234,7 @@ namespace Cobit_19.Business.Reports
                     tableRow.Cells[1].Value = question.questionDescription;
                     tableRow.Cells[2].Value = question.questionAnswer.ToString();
                     tableRow.Cells[3].Value = GetAnswerAchievement(question.questionScore);
-                    tableRow.Cells[4].Value = question.questionComment.ToString();
+                    tableRow.Cells[4].Value = question.questionComment.IsNullOrEmpty() ? "-" : question.questionComment.ToString();
                 }
             }
 
