@@ -30,11 +30,17 @@
     public AuditDto deletedAudit;
     public IList<UserDto> allUsers;
     public bool createAuditNotificationVisible = false;
+    private string userRole;
+    private UserDto user;
 
-    protected override void OnInitialized()
+    protected async override Task OnInitializedAsync()
+
     {
         audits = focusAreaProvider.GetAuditsForFocusAreaByUserID(userID, focusAreaID);
         allUsers = userManagementProvider.GetAllUsers();
+        user = await userManagementProvider.GetUserDtoByIdAsync(userID);
+
+        userRole = await userManagementProvider.getUserRoleAsync(user);
 
         RefreshData();
     }
@@ -66,7 +72,7 @@
                 Status = AuditStatus.NotStarted
             };
 
-        await auditProvider.createAsync(newAudit);
+        await auditProvider.createAsync(newAudit, userRole, user);
         toastService.ShowSuccess("Audit Created");
 
         RefreshData();
