@@ -71,12 +71,13 @@
     <div class="border-bottom text-center mb-2">
         <h6 class="text-secondary">Maturity Assesments for @objective.Description (@auditObject.objectiveName)</h6>
     </div>
-    <AuthorizeView Roles="Administrator, Head Auditor">
+    
         <div class="mb-5 row">
             <ComponentSelectBar objectiveAuditId="@objectiveAuditId" selectedPage="Dashboard"/>
-            <button class="btn btn-primary float-end" @onclick="() => ExportComplete(objectiveAuditId)">Download Report</button>
+            <AuthorizeView Roles="Administrator, Head Auditor">
+                <button class="btn btn-primary float-end" @onclick="() => ExportComplete(objectiveAuditId)">Download Report</button>
+            </AuthorizeView>
         </div>
-    </AuthorizeView>
 
     <div class="row">
         <div class="col border col-md-5 mx-4 text-center bg-dark rounded-3">
