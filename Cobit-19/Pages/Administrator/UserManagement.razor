@@ -64,6 +64,9 @@
         await userManagementProvider.DeleteUserAsync(deleteUserID);
 
         toastService.ShowSuccess("User Deleted!");
+
+        RefreshUserData();
+        StateHasChanged();
     }
 }
 
