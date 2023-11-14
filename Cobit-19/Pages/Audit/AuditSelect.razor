@@ -10,12 +10,11 @@
     [Parameter]
     [SupplyParameterFromQuery]
     public int focusAreaID { get; set; }
+
     public string userID;
 
-    protected override async Task OnAfterRenderAsync(bool firstRender)
+    protected override async Task OnInitializedAsync()
     {
-        if (firstRender)
-        {
             var uri = new Uri(navigationManager.Uri);
             var authState = await authStateProvider.GetAuthenticationStateAsync();
             var user = authState.User;
@@ -34,9 +33,7 @@
                 var currentUser = await _userManager.GetUserAsync(user);
                 userID = currentUser.Id;
 
-                StateHasChanged();
             }
-        }
     }
 
     private void OnManageAuditClick()

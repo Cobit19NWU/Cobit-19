@@ -3,13 +3,18 @@
 @using Cobit_19.Business.Admin;
 @using Cobit_19.Business.Audits;
 @using Cobit_19.Business.ObjectiveAudits;
+@using Cobit_19.Data.Models;
 @using Cobit_19.Shared.Dtos;
 @using Cobit_19.Shared.Enums;
 @using Microsoft.AspNetCore.Components.Web
+@using Microsoft.AspNetCore.Identity;
 @using Microsoft.AspNetCore.WebUtilities
 @inject ObjectiveAuditProvider objectiveAuditProvider
 @inject AuditProvider auditProvider
 @inject NavigationManager navigationManager
+@inject AuthenticationStateProvider authStateProvider
+@inject UserManager<ApplicationUser> userManager
+@inject UserManagementProvider userManagementProvider
 
 @code {
     private IList<ObjectiveAuditDto>? _objectiveAuditDto { get; set; }
@@ -23,11 +28,39 @@
     private bool tabSignificantOpened = false;
     private bool tabLowOpened = false;
 
+    public string userID;
+    public UserDto userDto;
+    public string userRole;
+
     protected override async Task OnInitializedAsync()
     {
         _objectiveAuditDto = objectiveAuditProvider.getAll(AuditId);
         await CalculateScores();
 
+        var authState = await authStateProvider.GetAuthenticationStateAsync();
+        var user = authState.User;
+
+        if (user.Identity.IsAuthenticated)
+        {
+            var currentUser = await userManager.GetUserAsync(user);
+            userID = currentUser.Id;
+        }
+
+        userDto = await userManagementProvider.GetUserDtoByIdAsync(userID);
+
+        userRole = await userManagementProvider.getUserRoleAsync(userDto);
+    }
+
+    private bool readOnlyUserCheck()
+    {
+        if (userRole == "Client")
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
     }
 
     private async Task CalculateScores()
@@ -148,7 +181,7 @@
                                         </td>
                                         <td>
                                             <input type="checkbox" id="@objectiveAudit.ID" checked="@objectiveAudit.Selected"
-                                            @onchange="((e) => Update(objectiveAudit.ID, e))" />
+                                            @onchange="((e) => Update(objectiveAudit.ID, e))" disabled="@readOnlyUserCheck()"/>
                                         </td>
                                         <td>
                                             @if (objectiveAudit.Selected)
@@ -190,7 +223,7 @@
                                         </td>
                                         <td>
                                             <input type="checkbox" id="@objectiveAudit.ID" checked="@objectiveAudit.Selected"
-                                            @onchange="((e) => Update(objectiveAudit.ID, e))" />
+                                            @onchange="((e) => Update(objectiveAudit.ID, e))" disabled="@readOnlyUserCheck()" />
                                         </td>
                                         <td>
                                             @if (objectiveAudit.Selected)
@@ -230,7 +263,7 @@
                                         </td>
                                         <td>
                                             <input type="checkbox" id="@objectiveAudit.ID" checked="@objectiveAudit.Selected"
-                                            @onchange="((e) => Update(objectiveAudit.ID, e))" />
+                                            @onchange="((e) => Update(objectiveAudit.ID, e))" disabled="@readOnlyUserCheck()" />
                                         </td>
                                         <td>
                                             @if (objectiveAudit.Selected)

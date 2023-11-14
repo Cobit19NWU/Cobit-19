@@ -1,8 +1,13 @@
-﻿@using Cobit_19.Business.FocusAreas;
+﻿@using Cobit_19.Business.Admin;
+@using Cobit_19.Business.FocusAreas;
+@using Cobit_19.Data.Models;
 @using Cobit_19.Shared.Dtos;
 @using Cobit_19.Shared.Enums;
+@using Microsoft.AspNetCore.Identity;
 @inject FocusAreaProvider focusAreaProvider
 @inject NavigationManager navigationManager
+@inject UserManagementProvider userManagementProvider
+
 
 @code {
     [Parameter]
@@ -12,40 +17,52 @@
     protected IEnumerable<AuditDto> audits;
     protected int rowCounter = 1;
 
-    protected override void OnParametersSet()
+    public UserDto userDto;
+    public string userRole;
+
+    protected async override Task OnInitializedAsync()
     {
         LoadAudits();
+
+        userDto = await userManagementProvider.GetUserDtoByIdAsync(userID);
+        userRole = await userManagementProvider.getUserRoleAsync(userDto);
     }
 
     private void LoadAudits()
     {
         audits = focusAreaProvider.GetAuditsForFocusAreaByUserID(userID, focusAreaID);
-        StateHasChanged();
     }
 
     private string FormatAuditStatus(AuditStatus status)
-     {
-         if (status == AuditStatus.NotStarted)
-         {
-             return "Inactive";
-         }
-         else if (status == AuditStatus.InProgress)
-         {
-             return "Active";
-         }
-         else if (status == AuditStatus.Completed)
-         {
-             return "Active";
-         }
-         else
-         {
-             return null;
-         }
-     }
+    {
+        if (status == AuditStatus.NotStarted)
+        {
+            return "Inactive";
+        }
+        else if (status == AuditStatus.InProgress)
+        {
+            return "Active";
+        }
+        else if (status == AuditStatus.Completed)
+        {
+            return "Active";
+        }
+        else
+        {
+            return null;
+        }
+    }
 
     private void AuditSelectionClick(int auditID)
     {
-        navigationManager.NavigateTo($"/Audit?AuditId={auditID}");
+        if (userRole != "Governance Auditor" && userRole != "Management Auditor")
+        {
+            navigationManager.NavigateTo($"/Audit?AuditId={auditID}");
+        }
+        else
+        {
+            navigationManager.NavigateTo($"/objectiveAuditSelect?AuditId={auditID}");
+        }
     }
 }
 

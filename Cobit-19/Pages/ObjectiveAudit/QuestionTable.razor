@@ -1,6 +1,13 @@
-﻿@using Cobit_19.Shared.Dtos
+﻿@using Cobit_19.Business.Admin;
+@using Cobit_19.Data.Models;
+@using Cobit_19.Shared.Dtos
 @using Cobit_19.Business.ObjectiveAudits
+@using Microsoft.AspNetCore.Identity;
+@inject IServiceProvider serviceProvider
 @inject ObjectiveAuditProvider objectiveAuditProvider
+@inject UserManager<ApplicationUser> userManager
+@inject AuthenticationStateProvider authStateProvider
+@inject UserManagementProvider userManagementProvider
 
 @code {
     [Parameter]
@@ -25,10 +32,15 @@
     public List<SubComponentQuestionDto> inputQuestions;
     public List<SubComponentQuestionDto> outputQuestions;
     public string auditJsonString;
+    public string userID;
+    public UserDto userDto;
+    public string userRole;
 
-
-    protected override void OnInitialized()
+    protected async override Task OnInitializedAsync()
     {
+        var scope = serviceProvider.CreateScope();
+        var userManagementProvider = scope.ServiceProvider.GetRequiredService<UserManagementProvider>();
+
         if (subComponentID != -1)
         {
             subComponent = auditJSON.components[componentID].subComponents[subComponentID];
@@ -46,6 +58,31 @@
         }
 
         structureImageLink = auditJSON.structuresImage;
+
+        var authState = await authStateProvider.GetAuthenticationStateAsync();
+        var user = authState.User;
+
+        if (user.Identity.IsAuthenticated)
+        {
+            var currentUser = await userManager.GetUserAsync(user);
+            userID = currentUser.Id;
+        }
+
+        userDto = await userManagementProvider.GetUserDtoByIdAsync(userID);
+
+        userRole = await userManagementProvider.getUserRoleAsync(userDto);
+    }
+
+    private bool readOnlyUserCheck()
+    {
+        if (userRole == "Head Auditor" || userRole == "Client")
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
     }
 
     private void updateComponent(ChangeEventArgs e, ComponentQuestionDto compQuestion = null, SubComponentQuestionDto subCompQuestion = null)
@@ -198,7 +235,7 @@
                     <tr>
                         <td>@subCompQuestion.questionDescription</td>
                         <td>
-                            <select name="answer" value="@subCompQuestion.questionAnswer" @onchange="@((e) => updateComponent(e, subCompQuestion: subCompQuestion))">
+                            <select name="answer" value="@subCompQuestion.questionAnswer" @onchange="@((e) => updateComponent(e, subCompQuestion: subCompQuestion))" disabled="@readOnlyUserCheck()">
                                 @for (int j = 0; j <= 10; j++)
                                 {
                                     <option value="@j">@j</option>
@@ -211,7 +248,7 @@
                         <td><div class="bg-primary rounded-3 text-center" style="width: 60px; height: 50px;">@(objectiveAuditProvider.GetAnswerAchievement(subCompQuestion.questionAnswer) == 3 ? "X" : " ")</div></td>
                         <td>@subCompQuestion.questionScore</td>
                         <td>
-                            <input type="text" @onchange="@((e) => updateQuestionComment(e, subCompQuestion: subCompQuestion))" value="@subCompQuestion.questionComment" />
+                            <input type="text" @onchange="@((e) => updateQuestionComment(e, subCompQuestion: subCompQuestion))" value="@subCompQuestion.questionComment" readonly="@readOnlyUserCheck()" />
                         </td>
                     </tr>
                 }
@@ -264,7 +301,7 @@
                     <tr>
                         <td>@subCompQuestion.questionDescription</td>
                         <td>
-                            <select name="answer" value="@subCompQuestion.questionAnswer" @onchange="@((e) => updateComponent(e, subCompQuestion: subCompQuestion))">
+                            <select name="answer" value="@subCompQuestion.questionAnswer" @onchange="@((e) => updateComponent(e, subCompQuestion: subCompQuestion))" disabled="@readOnlyUserCheck()">
                                 @for (int j = 0; j <= 10; j++)
                                 {
                                     <option value="@j">@j</option>
@@ -277,7 +314,7 @@
                         <td><div class="bg-primary rounded-3 text-center" style="width: 60px; height: 50px;">@(objectiveAuditProvider.GetAnswerAchievement(subCompQuestion.questionAnswer) == 3 ? "X" : " ")</div></td>
                         <td>@objectiveAuditProvider.calculateAnswerScore(subCompQuestion.questionAnswer)</td>
                         <td>
-                            <input type="text" @onchange="@((e) => updateQuestionComment(e, subCompQuestion: subCompQuestion))" value="@subCompQuestion.questionComment" />
+                            <input type="text" @onchange="@((e) => updateQuestionComment(e, subCompQuestion: subCompQuestion))" value="@subCompQuestion.questionComment" readonly="@readOnlyUserCheck()" />
                         </td>
                     </tr>
                 }
@@ -332,7 +369,7 @@
                         <td>@MLevelQuestion.questionType</td>
                         <td>@MLevelQuestion.questionDescription</td>
                         <td>
-                            <select name="answer" value="@MLevelQuestion.questionAnswer" @onchange="@((e) => updateComponent(e, subCompQuestion: MLevelQuestion))">
+                            <select name="answer" value="@MLevelQuestion.questionAnswer" @onchange="@((e) => updateComponent(e, subCompQuestion: MLevelQuestion))" disabled="@readOnlyUserCheck()">
                                 @for (int j = 0; j <= 10; j++)
                                 {
                                     <option value="@j">@j</option>
@@ -345,7 +382,7 @@
                         <td><div class="bg-primary rounded-3 text-center" style="width: 60px; height: 50px;">@(objectiveAuditProvider.GetAnswerAchievement(MLevelQuestion.questionAnswer) == 3 ? "X" : " ")</div></td>
                         <td>@objectiveAuditProvider.calculateAnswerScore(MLevelQuestion.questionAnswer)</td>
                         <td>
-                            <input type="text" @onchange="@((e) => updateQuestionComment(e, subCompQuestion: MLevelQuestion))" value="@MLevelQuestion.questionComment" />
+                            <input type="text" @onchange="@((e) => updateQuestionComment(e, subCompQuestion: MLevelQuestion))" value="@MLevelQuestion.questionComment" readonly="@readOnlyUserCheck()" />
                         </td>
                     </tr>
                 }
@@ -392,7 +429,7 @@
                             <td>@relatedGuidanceQuestion.relatedGuidance</td>
                             <td>@relatedGuidanceQuestion.detailedReference</td>
                             <td>
-                                <select name="answer" value="@relatedGuidanceQuestion.questionAnswer" @onchange="@((e) => updateComponent(e, subCompQuestion: relatedGuidanceQuestion))">
+                                <select name="answer" value="@relatedGuidanceQuestion.questionAnswer" @onchange="@((e) => updateComponent(e, subCompQuestion: relatedGuidanceQuestion))" disabled="@readOnlyUserCheck()">
                                     @for (int j = 0; j <= 10; j++)
                                     {
                                         <option value="@j">@j</option>
@@ -429,7 +466,7 @@
                             </td>
                             <td>@objectiveAuditProvider.calculateAnswerScore(relatedGuidanceQuestion.questionAnswer)</td>
                             <td>
-                                <input type="text" @onchange="@((e) => updateQuestionComment(e, subCompQuestion: relatedGuidanceQuestion))" value="@relatedGuidanceQuestion.questionComment" />
+                                <input type="text" @onchange="@((e) => updateQuestionComment(e, subCompQuestion: relatedGuidanceQuestion))" value="@relatedGuidanceQuestion.questionComment" readonly="@readOnlyUserCheck()" />
                             </td>
                         </tr>
                     }
@@ -493,7 +530,7 @@
                         <td>@compQuestion.questionType</td>
                         <td>@compQuestion.questionDescription</td>
                         <td>
-                            <select name="answer" value="@compQuestion.questionAnswer" @onchange="@((e) => updateComponent(e, compQuestion: compQuestion))">
+                            <select name="answer" value="@compQuestion.questionAnswer" @onchange="@((e) => updateComponent(e, compQuestion: compQuestion))" disabled="@readOnlyUserCheck()">
                                 @for (int j = 0; j <= 10; j++)
                                 {
                                     <option value="@j">@j</option>
@@ -506,7 +543,7 @@
                         <td><div class="bg-primary rounded-3 text-center" style="width: 60px; height: 50px;">@(objectiveAuditProvider.GetAnswerAchievement(compQuestion.questionAnswer) == 3 ? "X" : " ")</div></td>
                         <td>@objectiveAuditProvider.calculateAnswerScore(compQuestion.questionAnswer)</td>
                         <td>
-                            <input type="text" @onchange="@((e) => updateQuestionComment(e, compQuestion: compQuestion))" value="@compQuestion.questionComment" />
+                            <input type="text" @onchange="@((e) => updateQuestionComment(e, compQuestion: compQuestion))" value="@compQuestion.questionComment" readonly="@readOnlyUserCheck()" />
                         </td>
                     </tr>
                 }
@@ -566,7 +603,7 @@
                             <td>@inputQuestion.questionDescription</td>
                             <td>@inputQuestion.inputFrom</td>
                             <td>
-                                <select name="answer" value="@inputQuestion.questionAnswer" @onchange="@((e) => updateComponent(e, subCompQuestion: inputQuestion))">
+                                <select name="answer" value="@inputQuestion.questionAnswer" @onchange="@((e) => updateComponent(e, subCompQuestion: inputQuestion))" disabled="@readOnlyUserCheck()">
                                     @for (int j = 0; j <= 10; j++)
                                     {
                                         <option value="@j">@j</option>
@@ -603,7 +640,7 @@
                             </td>
                             <td>@objectiveAuditProvider.calculateAnswerScore(inputQuestion.questionAnswer)</td>
                             <td>
-                                <input type="text" @onchange="@((e) => updateQuestionComment(e, subCompQuestion: inputQuestion))" value="@inputQuestion.questionComment" />
+                                <input type="text" @onchange="@((e) => updateQuestionComment(e, subCompQuestion: inputQuestion))" value="@inputQuestion.questionComment" readonly="@readOnlyUserCheck()" />
                             </td>
                         </tr>
                     }
@@ -652,7 +689,7 @@
                             <td>@outputQuestion.questionDescription</td>
                             <td>@outputQuestion.outputTo</td>
                             <td>
-                                <select name="answer" value="@outputQuestion.questionAnswer" @onchange="@((e) => updateComponent(e, subCompQuestion: outputQuestion))">
+                                <select name="answer" value="@outputQuestion.questionAnswer" @onchange="@((e) => updateComponent(e, subCompQuestion: outputQuestion))" disabled="@readOnlyUserCheck()">
                                     @for (int j = 0; j <= 10; j++)
                                     {
                                         <option value="@j">@j</option>
@@ -689,7 +726,7 @@
                             </td>
                             <td>@objectiveAuditProvider.calculateAnswerScore(outputQuestion.questionAnswer)</td>
                             <td>
-                                <input type="text" @onchange="@((e) => updateQuestionComment(e, subCompQuestion: outputQuestion))" value="@outputQuestion.questionComment" />
+                                <input type="text" @onchange="@((e) => updateQuestionComment(e, subCompQuestion: outputQuestion))" value="@outputQuestion.questionComment" readonly="@readOnlyUserCheck()" />
                             </td>
                         </tr>
                     }
@@ -749,7 +786,7 @@
                         <td>@compQuestion.questionSkill</td>
                         <td>@compQuestion.relatedGuidance</td>
                         <td>
-                            <select name="answer" value="@compQuestion.questionAnswer" @onchange="@((e) => updateComponent(e, compQuestion: compQuestion))">
+                            <select name="answer" value="@compQuestion.questionAnswer" @onchange="@((e) => updateComponent(e, compQuestion: compQuestion))" disabled="@readOnlyUserCheck()">
                                 @for (int j = 0; j <= 10; j++)
                                 {
                                     <option value="@j">@j</option>
@@ -762,7 +799,7 @@
                         <td><div class="bg-primary rounded-3 text-center" style="width: 60px; height: 50px;">@(objectiveAuditProvider.GetAnswerAchievement(compQuestion.questionAnswer) == 3 ? "X" : " ")</div></td>
                         <td>@objectiveAuditProvider.calculateAnswerScore(compQuestion.questionAnswer)</td>
                         <td>
-                            <input type="text" @onchange="@((e) => updateQuestionComment(e, compQuestion: compQuestion))" value="@compQuestion.questionComment" />
+                            <input type="text" @onchange="@((e) => updateQuestionComment(e, compQuestion: compQuestion))" value="@compQuestion.questionComment" readonly="@readOnlyUserCheck()" />
                         </td>
                     </tr>
                 }
@@ -823,7 +860,7 @@
                         <td>@compQuestion.policyDescription</td>
                         <td>@compQuestion.detailedReference</td>
                         <td>
-                            <select name="answer" value="@compQuestion.questionAnswer" @onchange="@((e) => updateComponent(e, compQuestion: compQuestion))">
+                            <select name="answer" value="@compQuestion.questionAnswer" @onchange="@((e) => updateComponent(e, compQuestion: compQuestion))" disabled="@readOnlyUserCheck()">
                                 @for (int j = 0; j <= 10; j++)
                                 {
                                     <option value="@j">@j</option>
@@ -836,7 +873,7 @@
                         <td><div class="bg-primary rounded-3 text-center" style="width: 60px; height: 50px;">@(objectiveAuditProvider.GetAnswerAchievement(compQuestion.questionAnswer) == 3 ? "X" : " ")</div></td>
                         <td>@objectiveAuditProvider.calculateAnswerScore(compQuestion.questionAnswer)</td>
                         <td>
-                            <input type="text" @onchange="@((e) => updateQuestionComment(e, compQuestion: compQuestion))" value="@compQuestion.questionComment" />
+                            <input type="text" @onchange="@((e) => updateQuestionComment(e, compQuestion: compQuestion))" value="@compQuestion.questionComment" readonly="@readOnlyUserCheck()" />
                         </td>
                     </tr>
                 }
@@ -895,7 +932,7 @@
                         <td>@compQuestion.keyCultureElement</td>
                         <td>@compQuestion.detailedReference</td>
                         <td>
-                            <select name="answer" value="@compQuestion.questionAnswer" @onchange="@((e) => updateComponent(e, compQuestion: compQuestion))">
+                            <select name="answer" value="@compQuestion.questionAnswer" @onchange="@((e) => updateComponent(e, compQuestion: compQuestion))" disabled="@readOnlyUserCheck()">
                                 @for (int j = 0; j <= 10; j++)
                                 {
                                     <option value="@j">@j</option>
@@ -908,7 +945,7 @@
                         <td><div class="bg-primary rounded-3 text-center" style="width: 60px; height: 50px;">@(objectiveAuditProvider.GetAnswerAchievement(compQuestion.questionAnswer) == 3 ? "X" : " ")</div></td>
                         <td>@objectiveAuditProvider.calculateAnswerScore(compQuestion.questionAnswer)</td>
                         <td>
-                            <input type="text" @onchange="@((e) => updateQuestionComment(e, compQuestion: compQuestion))" value="@compQuestion.questionComment" />
+                            <input type="text" @onchange="@((e) => updateQuestionComment(e, compQuestion: compQuestion))" value="@compQuestion.questionComment" readonly="@readOnlyUserCheck()" />
                         </td>
                     </tr>
                 }
@@ -965,7 +1002,7 @@
                     <tr>
                         <td>@compQuestion.questionDescription</td>
                         <td>
-                            <select name="answer" value="@compQuestion.questionAnswer" @onchange="@((e) => updateComponent(e, compQuestion: compQuestion))">
+                            <select name="answer" value="@compQuestion.questionAnswer" @onchange="@((e) => updateComponent(e, compQuestion: compQuestion))" disabled="@readOnlyUserCheck()">
                                 @for (int j = 0; j <= 10; j++)
                                 {
                                     <option value="@j">@j</option>
@@ -978,7 +1015,7 @@
                         <td><div class="bg-primary rounded-3 text-center" style="width: 60px; height: 50px;">@(objectiveAuditProvider.GetAnswerAchievement(compQuestion.questionAnswer) == 3 ? "X" : " ")</div></td>
                         <td>@objectiveAuditProvider.calculateAnswerScore(compQuestion.questionAnswer)</td>
                         <td>
-                            <input type="text" @onchange="@((e) => updateQuestionComment(e, compQuestion: compQuestion))" value="@compQuestion.questionComment" />
+                            <input type="text" @onchange="@((e) => updateQuestionComment(e, compQuestion: compQuestion))" value="@compQuestion.questionComment" readonly="@readOnlyUserCheck()" />
                         </td>
                     </tr>
                 }
