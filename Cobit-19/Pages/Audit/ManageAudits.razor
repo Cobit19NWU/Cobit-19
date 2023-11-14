@@ -87,7 +87,7 @@
             AuditID = addUserAuditID
         };
 
-        await auditProvider.addAuditMember(newAuditMember);
+        await auditProvider.addAuditMemberAsync(newAuditMember);
         toastService.ShowSuccess("User added");
 
         RefreshData();

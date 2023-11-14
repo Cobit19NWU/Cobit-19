@@ -2,13 +2,17 @@
 
 @using Cobit_19.Business.Admin;
 @using Cobit_19.Business.ObjectiveAudits;
+@using Cobit_19.Data.Models;
 @using Cobit_19.Shared.Dtos;
 @using Cobit_19.Shared.Enums;
 @using Microsoft.AspNetCore.Components.Web
+@using Microsoft.AspNetCore.Identity;
 @using Microsoft.AspNetCore.WebUtilities
 @inject UserManagementProvider userManagementProvider
 @inject ObjectiveAuditProvider objectiveAuditProvider
 @inject NavigationManager navigationManager
+@inject AuthenticationStateProvider authStateProvider
+@inject UserManager<ApplicationUser> userManager
 
 @code {
     private ObjectiveAuditDto? _objectiveAuditDto { get; set; }
@@ -30,6 +34,9 @@
     [SupplyParameterFromQuery]
     public int ObjectiveAuditID { get; set; }
 
+    public string userID;
+    public UserDto userDto;
+
     protected override async Task OnInitializedAsync()
     {
         _objectiveAuditDto = objectiveAuditProvider.getByID(ObjectiveAuditID);
@@ -42,6 +49,31 @@
 
 
         PopulateMembersList();
+
+        var authState = await authStateProvider.GetAuthenticationStateAsync();
+        var user = authState.User;
+
+        if (user.Identity.IsAuthenticated)
+        {
+            var currentUser = await userManager.GetUserAsync(user);
+            userID = currentUser.Id;
+        }
+
+        userDto = await userManagementProvider.GetUserDtoByIdAsync(userID);
+
+        userRole = await userManagementProvider.getUserRoleAsync(userDto);
+    }
+
+    private bool readOnlyUserCheck()
+    {
+        if (userRole == "Client")
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
     }
 
     private void PopulateMembersList()
@@ -129,7 +161,7 @@
                                 <td>@(_membersDisplayList.IndexOf(user) + 1)</td>
                                 <td>@(user.UserDto.UserName) </td>
                                 <td>
-                                    <input type="checkbox" checked="@user.Selected" @onclick="() => Update(user.ApplicationUserID)" />
+                                    <input type="checkbox" checked="@user.Selected" @onclick="() => Update(user.ApplicationUserID)" disabled="@readOnlyUserCheck()"/>
                                 </td>
                             </tr>
                         }
