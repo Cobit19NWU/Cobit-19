@@ -1,12 +1,18 @@
 ﻿@page "/DesignFactor"
+@using Cobit_19.Business.Admin;
 @using Cobit_19.Business.Audits
 @using Cobit_19.Business.FocusAreas;
+@using Cobit_19.Data.Models;
 @using Cobit_19.Shared.Dtos
+@using Microsoft.AspNetCore.Identity;
 @using Syncfusion.Blazor.Charts
 @using Microsoft.AspNetCore.WebUtilities
 @inject AuditProvider auditProvider
 @inject FocusAreaProvider focusAreaProvider
 @inject NavigationManager navigationManager
+@inject AuthenticationStateProvider authStateProvider
+@inject UserManager<ApplicationUser> userManager
+@inject UserManagementProvider userManagementProvider
 
 @code {
     protected DesignFactorDto? _designFactorDto;
@@ -20,6 +26,10 @@
     [Parameter]
     [SupplyParameterFromQuery]
     public int DFId { get; set; }
+
+    public string userID;
+    public UserDto userDto;
+    public string userRole;
 
     protected List<ObjectiveValueDto>? _mappedObjectives { get; set; }
     private int _isNextButtonDFId { get; set; } = -1;
@@ -40,6 +50,31 @@
         _objectiveDtos = await auditProvider.getObjectivesAsync();
         _mappedObjectives = MappingService.Calculate(_designFactorDto, _objectiveDtos);
         CheckNavButtons();
+
+        var authState = await authStateProvider.GetAuthenticationStateAsync();
+        var user = authState.User;
+
+        if (user.Identity.IsAuthenticated)
+        {
+            var currentUser = await userManager.GetUserAsync(user);
+            userID = currentUser.Id;
+        }
+
+        userDto = await userManagementProvider.GetUserDtoByIdAsync(userID);
+
+        userRole = await userManagementProvider.getUserRoleAsync(userDto);
+    }
+
+    private bool readOnlyUserCheck()
+    {
+        if (userRole == "Client")
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
     }
     // Update values 
     private async Task Update(int questionId, UpdateType updateType, ChangeEventArgs args)
@@ -244,7 +279,7 @@
                                                             <input type="radio" name="@q.ID" id="@q.ID" value="@i"
                                                             class="form-check-input"
                                                             @onchange="((e) => Update(q.ID, UpdateType.answer, e))"
-                                                            checked="@IsAnswerSelected(q.Answers.First().Answer, i)" />
+                                                            checked="@IsAnswerSelected(q.Answers.First().Answer, i)" disabled="@readOnlyUserCheck()" />
                                                         </td>
                                                     }
                                                     <td>
@@ -286,7 +321,7 @@
                                                             @if (q.Answers.First().Answer == 1)
                                                             {
                                                                 <span class="badge bg-success">
-                                                                    <b>No Risk</b>
+                                                                    <b>No Issue</b>
                                                                 </span>
                                                             }
                                                             else if (q.Answers.First().Answer == 2)
@@ -309,7 +344,7 @@
                                                     <td>
                                                         <input type="number" name="@q.ID" id="@q.ID" min="0" max="@q.Answers.First().AnswerRange" value="@q.Answers.First().Answer"
                                                         class="form-control"
-                                                        @onchange="((e) => Update(q.ID, UpdateType.answer, e))" />
+                                                        @onchange="((e) => Update(q.ID, UpdateType.answer, e))" readonly="@readOnlyUserCheck()" />
                                                     </td>
                                                 }
                                             }
@@ -318,12 +353,12 @@
                                                 <td>
                                                     <input type="number" name="@q.ID" id="@q.ID" min="0" max="@q.Answers.First().AnswerRange" value="@q.Answers.First().Answer"
                                                     class="form-control"
-                                                    @onchange="((e) => Update(q.ID, UpdateType.answer, e))" />
+                                                    @onchange="((e) => Update(q.ID, UpdateType.answer, e))" readonly="@readOnlyUserCheck()" />
                                                 </td> 
                                                 <td>
                                                     <input type="number" name="@q.ID" id="@q.ID" min="0" max="@q.Answers.First().AnswerRange" value="@q.Answers.First().Odds"
                                                     class="form-control"
-                                                    @onchange="((e) => Update(q.ID, UpdateType.odds, e))" />
+                                                    @onchange="((e) => Update(q.ID, UpdateType.odds, e))" readonly="@readOnlyUserCheck()" />
                                                 </td>
                                                 <td>
                                                     @if(q.Answers.First().Answer * q.Answers.First().Odds < 10)

@@ -87,7 +87,7 @@
             AuditID = addUserAuditID
         };
 
-        await auditProvider.addAuditMember(newAuditMember);
+        await auditProvider.addAuditMemberAsync(newAuditMember);
         toastService.ShowSuccess("User added");
 
         RefreshData();
@@ -162,6 +162,24 @@
                 }
             </select><br /><br />
             <button class="btn btn-primary"  @onclick="deleteAudit">Delete Audit</button>
+        </div>
+        <div class="col-sm border m-3">
+            <table class="table table-hover table-striped modal-dialog-scrollable">
+                <thead style="">
+                    <tr>                        
+                        <th class="panel-heading p-1" style="background-color: purple; color: white;">Audits</th>
+                    </tr>
+
+                </thead>
+                <tbody>
+                    @foreach (var audit in audits)
+                    {
+                        <tr>                           
+                            <td>@audit.Name</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
         </div>
     </div>
     <div>

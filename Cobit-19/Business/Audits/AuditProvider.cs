@@ -292,11 +292,31 @@ namespace Cobit_19.Business.Audits
             return isUserInAudit;
         }
 
-        public async Task addAuditMember(AuditMemberDto auditMemberDto)
+        public async Task addAuditMemberAsync(AuditMemberDto auditMemberDto)
         {
             var auditMember = _mapper.Map<AuditMemberModel>(auditMemberDto);
 
+            var user = await _userManagementProvider.GetUserDtoByIdAsync(auditMemberDto.ApplicationUserID);
+
+            var userRole = await _userManagementProvider.getUserRoleAsync(user);
+
             _dbContext.AuditMembers.Add(auditMember);
+
+            if (userRole == "Head Auditor" || userRole == "Client")
+            {
+                var objAudits = _objectiveAuditProvider.getAll(auditMemberDto.AuditID);
+                foreach (var objAudit in objAudits)
+                {
+                    var objAuditMemberModel = new ObjectiveAuditMembersModel
+                    {
+                        ObjectiveAuditID = objAudit.ID,
+                        ApplicationUserID = auditMemberDto.ApplicationUserID,
+                        DateAdded = DateTime.Now
+                    };
+
+                    _dbContext.ObjectiveAuditMembers.Add(objAuditMemberModel);
+                }
+            }
 
             await _dbContext.SaveChangesAsync();
         }
