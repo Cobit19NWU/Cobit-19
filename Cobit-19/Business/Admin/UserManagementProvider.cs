@@ -110,9 +110,15 @@ namespace Cobit_19.Business.Admin
         public async Task<bool> DeleteUserAsync(string id)
         {
             var user = await _userManager.FindByIdAsync(id);
-
-            var result = await _userManager.DeleteAsync(user);
-            return result.Succeeded;
+            try
+            {
+                var result = await _userManager.DeleteAsync(user);
+                return result.Succeeded;
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
         }
 
         public async Task<string> getUserRoleAsync(UserDto user)

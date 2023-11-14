@@ -6,6 +6,7 @@
 @using Cobit_19.Shared.Dtos
 @using Blazored.Toast
 @using Blazored.Toast.Services
+@using System.ComponentModel.DataAnnotations;
 @inject UserManagementProvider userManagementProvider
 @inject FocusAreaProvider focusAreaProvider
 @inject AuditProvider auditProvider
@@ -14,13 +15,9 @@
 @code {
     public IList<UserDto>? allUsers;
     public List<String>? allRoles;
-    public string? deleteUserID;
-    public string? addPassword;
-    public string? addFirstName;
-    public string? addLastName;
-    public string? addEmail;
-    public string? userRole = "Administrator";
+    public string? deleteUserID { get; set; }
 
+    private UserModel userModel = new UserModel();
 
     protected override void OnInitialized()
     {
@@ -33,24 +30,30 @@
         allRoles = userManagementProvider.getAllRoles();
     }
 
-    private async Task addUserOnClickAsync()
+    private async Task AddUser()
     {
         UserEditorDto newUser = new UserEditorDto
-            {
-                UserName = addEmail,
-                Password = addPassword,
-                FirstName = addFirstName,
-                LastName = addLastName,
-                Email = addEmail
-            };
-
-        await userManagementProvider.CreateUserAsync(newUser);
-        await userManagementProvider.addUserToRoleAsync(addEmail, userRole);
-        await focusAreaProvider.AddUserToFocusAreaAsync(1, addEmail);
-
-        if (userRole == "Administrator")
         {
-            await auditProvider.addMemberToAllAudits(addEmail);
+            UserName = userModel.Email,
+            Password = userModel.Password,
+            FirstName = userModel.FirstName,
+            LastName = userModel.LastName,
+            Email = userModel.Email
+        };
+
+        var res = await userManagementProvider.CreateUserAsync(newUser);
+        if (!res)
+        {
+            toastService.ShowError("User NOT created! User may already exist.");
+            return;
+        }
+
+        await userManagementProvider.addUserToRoleAsync(userModel.Email, userModel.Role);
+        await focusAreaProvider.AddUserToFocusAreaAsync(1, userModel.Email);
+
+        if (userModel.Role == "Administrator")
+        {
+            await auditProvider.addMemberToAllAudits(userModel.Email);
         }
 
         toastService.ShowSuccess("User Successfully Created!");
@@ -59,14 +62,39 @@
         StateHasChanged();
     }
 
-    private async Task deleteUserOnClickAsync()
+    private async Task deleteUserOnClickAsync(string userID)
     {
-        await userManagementProvider.DeleteUserAsync(deleteUserID);
+        var res = await userManagementProvider.DeleteUserAsync(userID);
 
-        toastService.ShowSuccess("User Deleted!");
+        if (res)
+        {
+            toastService.ShowSuccess("User Deleted!");
+            RefreshUserData();
+            StateHasChanged();
+        }
+        else
+        {
+            toastService.ShowError("User NOT deleted! User is assigned to an audit. Remove User to delete");
+        }
+    }
 
-        RefreshUserData();
-        StateHasChanged();
+    private class UserModel
+    {
+        [Required(ErrorMessage = "Email is required.")]
+        [EmailAddress(ErrorMessage = "Invalid email address.")]
+        public string Email { get; set; }
+
+        [Required(ErrorMessage = "First Name is required.")]
+        public string FirstName { get; set; }
+
+        [Required(ErrorMessage = "Last Name is required.")]
+        public string LastName { get; set; }
+
+        [Required(ErrorMessage = "Password is required.")]
+        public string Password { get; set; }
+
+        [Required(ErrorMessage = "User Role is required.")]
+        public string Role { get; set; }
     }
 }
 
@@ -74,81 +102,93 @@
     <BlazoredToasts Position="ToastPosition.TopLeft"
                     Timeout="4"
                     IconType="IconType.Material" />
-    <div class="row">
-        <div class="panel panel-primary">
+    
+                    <div class="container">
+        <div class="row">
+            <div class="panel panel-primary">
 
-            <div class="panel-heading p-2 mb-2" style="color: white; background-color : purple; position:relative; right:7px">
-                <b>
-                    Manage Users
-                </b>
+                <div class="panel-heading p-2 mb-2" style="color: white; background-color : purple;">
+                    <b>
+                        Manage Users
+                    </b>
+                </div>
             </div>
         </div>
-    </div>
-
-    <div class="row">
-        <div class="col border">
-            <table class="table table-hover table-striped modal-dialog-scrollable">
-                <thead style="">
-                    <tr>
-                        <th style="background-color: purple; color: white;">#</th>
-                        <th style="background-color: purple; color: white;">User</th>
-                    </tr>
-
-                </thead>
-                <tbody>
-                    @foreach (var user in allUsers)
-                    {
+        <div class="row justify-content-center">
+            <div class="col border col-8">
+                <table class="table table-hover table-striped modal-dialog-scrollable">
+                    <thead style="">
                         <tr>
-                            <td>@(allUsers.IndexOf(user) + 1)</td>
-                            <td>@user.UserName</td>
+                            <th style="background-color: purple; color: white;">#</th>
+                            <th style="background-color: purple; color: white;">User</th>
+                            <th style="background-color: purple; color: white;">Delete</th>
                         </tr>
-                    }
-                </tbody>
-            </table>
-        </div>
-        <div class="col border">
-            <div class="panel-heading p-1" style="color: white; background-color : purple">
-                Add user
+
+                    </thead>
+                    <tbody>
+                        @foreach (var user in allUsers)
+                        {
+                            <tr>
+                                <td>@(allUsers.IndexOf(user) + 1)</td>
+                                <td>@user.UserName</td>
+                                <td>
+                                    <button class="btn btn-danger" @onclick="() => deleteUserOnClickAsync(user.ID)">Delete</button>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
             </div>
+            <div class="col border col-4">
+                <div class="panel-heading p-2" style="color: white; font-weight: bold; background-color: purple">
+                    Add user
+                </div>
+                <div class="">
+                    <EditForm Model="@userModel" OnValidSubmit="AddUser">
+                        <DataAnnotationsValidator />
+                        <div class="form-group">
+                            <label for="emailField"><b>Email:</b></label>
+                            <InputText id="emailField" @bind-Value="@userModel.Email" class="form-control" />
+                            <ValidationMessage For="@(() => userModel.Email)" />
+                        </div>
 
-            <label for="emailField"><b>Email:</b></label><br />
-            <input type="text" id="emailField" @bind="@addEmail" /><br />
+                        <div class="form-group">
+                            <label for="firstNameField"><b>First Name:</b></label>
+                            <InputText id="firstNameField" @bind-Value="@userModel.FirstName" class="form-control" />
+                            <ValidationMessage For="@(() => userModel.FirstName)" />
+                        </div>
 
-            <label for="firstNameField"><b>First Name:</b></label><br />
-            <input type="text" id="firstNameField" @bind="@addFirstName" /><br />
+                        <div class="form-group">
+                            <label for="lastNameField"><b>Last Name:</b></label>
+                            <InputText id="lastNameField" @bind-Value="@userModel.LastName" class="form-control" />
+                            <ValidationMessage For="@(() => userModel.LastName)" />
+                        </div>
 
-            <label for="lastNameField"><b>Last Name:</b></label><br />
-            <input type="text" id="lastNameField" @bind="@addLastName" /><br />
+                        <div class="form-group">
+                            <label for="passwordField"><b>Password:</b></label>
+                            <InputText id="passwordField" @bind-Value="@userModel.Password" class="form-control" />
+                            <ValidationMessage For="@(() => userModel.Password)" />
+                        </div>
 
-            <label for="passwordField"><b>Password:</b></label><br />
-            <input type="text" id="passwordField" @bind="@addPassword" /><br />
+                        <div class="form-group">
+                            <label for="userRoleField"><b>Select User Role:</b></label>
+                            <InputSelect id="userRoleField" @bind-Value="@userModel.Role" class="form-control">
+                                <option value="">-- Select User Role --</option>
+                                @foreach (var roleName in allRoles)
+                                {
+                                    <option value="@roleName">@roleName</option>
+                                }
+                            </InputSelect>
+                            <ValidationMessage For="@(() => userModel.Role)" />
+                        </div>
 
-            <label for="userRoleField"><b>Select User Role:</b></label><br />
-            <select id="userRoleField" @bind="@userRole">
-                @foreach(var roleName in allRoles)
-                {
-                    <option value="@roleName">@roleName</option>
-                }
-            </select><br /><br />
-
-            <button class="btn btn-primary" @onclick="addUserOnClickAsync">Add User</button>
-
-        </div>
-
-        <div class="col border mx-3">
-            <div class="panel-heading p-1" style="color: white; background-color : purple">
-                Delete user
+                        <div class="form-group align-content-center p-2">
+                            <button type="submit" class="btn btn-primary">Add User</button>
+                        </div>
+                    </EditForm>
+                </div>
             </div>
-
-            <label for="userDelete"><b>Select User:</b></label><br />
-            <select id="userDelete" @bind="@deleteUserID">
-                @foreach(var user in allUsers)
-                {
-                    <option value="@user.ID">@user.UserName</option>
-                }
-            </select><br /><br />
-
-            <button class="btn btn-primary" @onclick="deleteUserOnClickAsync">Delete User</button>
         </div>
     </div>
+    
 </div>

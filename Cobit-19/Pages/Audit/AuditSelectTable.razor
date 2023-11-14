@@ -14,8 +14,7 @@
     public string userID { get; set; }
     [Parameter]
     public int focusAreaID { get; set; }
-    protected IEnumerable<AuditDto> audits;
-    protected int rowCounter = 1;
+    protected List<AuditDto> audits;
 
     public UserDto userDto;
     public string userRole;
@@ -30,7 +29,7 @@
 
     private void LoadAudits()
     {
-        audits = focusAreaProvider.GetAuditsForFocusAreaByUserID(userID, focusAreaID);
+        audits = focusAreaProvider.GetAuditsForFocusAreaByUserID(userID, focusAreaID).ToList();
     }
 
     private string FormatAuditStatus(AuditStatus status)
@@ -90,7 +89,7 @@
         @foreach (var audit in audits)
         {
             <tr>
-                <td>@(rowCounter++)</td>
+                <td>@(audits.IndexOf(audit) + 1)</td>
                 <td>
                     @if (FormatAuditStatus(audit.Status) == "Active")
                     {
@@ -102,7 +101,7 @@
                     }
                 </td>
                 <td>@audit.Name</td>
-                <td>@audit.DateCreated</td>
+                <td>@audit.DateCreated.ToShortDateString()</td>
                 <td><button type="button" class="btn btn-primary btn-sm" @onclick='() => AuditSelectionClick(audit.ID)'>Select</button></td>
             </tr>
         }
