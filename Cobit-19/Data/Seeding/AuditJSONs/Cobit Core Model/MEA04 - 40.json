@@ -131,10 +131,10 @@
             {
               "questionType": "Maturity Level 2",
               "questionDescription": "Establish adherence to applicable codes of ethics and standards (e.g., Code of Professional Ethics of ISACA) and (industry and geography-specific) assurance standards (e.g., IT Audit and Assurance Standards of ISACA and the International Auditing and Assurance Standards Board’s [IAASB’s] International Framework for Assurance Engagements [IAASB Assurance Framework]).",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -142,10 +142,10 @@
             {
               "questionType": "Maturity Level 2",
               "questionDescription": "Establish independence of assurance providers.",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -153,21 +153,21 @@
             {
               "questionType": "Maturity Level 2",
               "questionDescription": "Establish competency and qualification of assurance providers.",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
             },
             {
               "questionType": "Related Guidance",
-              "questionDescription": "string",
+              "questionDescription": "No data provided.",
               "relatedGuidance": "HITRUST CSF version 9, September 2017",
               "detailedReference": "06.03 Information System Audit Considerations",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -182,10 +182,10 @@
             {
               "questionType": "Maturity Level 2",
               "questionDescription": "Understand the enterprise strategy and priorities.",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -193,10 +193,10 @@
             {
               "questionType": "Maturity Level 2",
               "questionDescription": "Understand the internal context of the enterprise. This understanding will help the assurance professional to better assess the enterprise goals and the relative importance of enterprise and alignment goals, as well as the most important threats to these goals. In turn, this will assist in defining a better and more relevant scope for the assurance engagement.",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -204,10 +204,10 @@
             {
               "questionType": "Maturity Level 2",
               "questionDescription": "Understand the external context of the enterprise. This understanding will help the assurance professional to better understand the enterprise goals and the relative importance of enterprise and alignment goals, as well as the most important threats to these goals. In turn, this will assist in defining a better and more relevant scope for the assurance engagement.",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -215,21 +215,21 @@
             {
               "questionType": "Maturity Level 3",
               "questionDescription": "Develop an overall yearly plan for assurance initiatives containing the consolidated assurance objectives",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
             },
             {
               "questionType": "Related Guidance",
-              "questionDescription": "string",
+              "questionDescription": "No data provided.",
               "relatedGuidance": "King IV Report on Corporate Governance for South Africa, 2016",
               "detailedReference": "Part 5.4: Governance functional areas—Principle 15",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -244,10 +244,10 @@
             {
               "questionType": "Maturity Level 2",
               "questionDescription": "Define the assurance objective of the assurance initiative by identifying the stakeholders of the assurance initiative and their interests.",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -255,10 +255,10 @@
             {
               "questionType": "Maturity Level 2",
               "questionDescription": "Agree on the high-level objectives and the organizational boundaries of the assurance engagement.",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -266,10 +266,10 @@
             {
               "questionType": "Maturity Level 3",
               "questionDescription": "Consider the use of the COBIT Goals Cascade and its different levels to express the assurance objective.",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -277,21 +277,21 @@
             {
               "questionType": "Maturity Level 3",
               "questionDescription": "Ensure that the objectives of the assurance engagement consider all three value objective components: delivering benefits that support strategic objectives, optimizing the risk that strategic objectives are not achieved and optimizing resource levels required to achieve the strategic objectives.",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
             },
             {
               "questionType": "Related Guidance",
-              "questionDescription": "string",
+              "questionDescription": "No data provided.",
               "relatedGuidance": "CMMI Data Management Maturity Model, 2014",
               "detailedReference": "Supporting Processes - Process Quality Assurance",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -306,10 +306,10 @@
             {
               "questionType": "Maturity Level 2",
               "questionDescription": "Define all governance components in scope of the review, that is, the principles, policies and frameworks; processes; organizational structures; culture, ethics and behavior; information; services, infrastructure and applications; people, skills and competences",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -317,10 +317,10 @@
             {
               "questionType": "Maturity Level 3",
               "questionDescription": "Based on the scope definition, define an engagement plan, considering information to be collected and stakeholders to be interviewed.",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -328,10 +328,10 @@
             {
               "questionType": "Maturity Level 3",
               "questionDescription": "Confirm and refine the scope based on an understanding of the enterprise architecture",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -339,21 +339,21 @@
             {
               "questionType": "Maturity Level 3",
               "questionDescription": "Refine the scope of the assurance engagement, based on available resources.",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
             },
             {
               "questionType": "Related Guidance",
-              "questionDescription": "string",
+              "questionDescription": "No data provided.",
               "relatedGuidance": "CMMI Cybermaturity Platform, 2018",
               "detailedReference": "TP.LA Apply Logging and Audit Processes",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -368,10 +368,10 @@
             {
               "questionType": "Maturity Level 2",
               "questionDescription": "Define detailed steps for collecting and evaluating information from management controls within scope. Focus on assessing the definition and application of good practices, related to control design, and achievement of control objectives, related to control effectiveness.",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -379,10 +379,10 @@
             {
               "questionType": "Maturity Level 2",
               "questionDescription": "Understand the context of the management objectives and the supporting management controls that are put in place. Understand how these management controls contribute to the achievement of the alignment goals and enterprise goals.",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -390,10 +390,10 @@
             {
               "questionType": "Maturity Level 2",
               "questionDescription": "Understand all stakeholders and their interests.",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -401,10 +401,10 @@
             {
               "questionType": "Maturity Level 3",
               "questionDescription": "Agree on the expected good practices for the management controls.",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -412,10 +412,10 @@
             {
               "questionType": "Maturity Level 3",
               "questionDescription": "Should a management control be weak, define practices to identify residual risk (in preparation for reporting).",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -423,10 +423,10 @@
             {
               "questionType": "Maturity Level 3",
               "questionDescription": "Understand the life cycle stage of the management controls and agree on expected values.",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -441,10 +441,10 @@
             {
               "questionType": "Maturity Level 2",
               "questionDescription": "Refine the understanding of the IT assurance subject.",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -452,10 +452,10 @@
             {
               "questionType": "Maturity Level 2",
               "questionDescription": "Refine the scope of the IT assurance subject.",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -463,10 +463,10 @@
             {
               "questionType": "Maturity Level 3",
               "questionDescription": "Observe/inspect and review the management control approach. Validate the design with the control owner for completeness, relevancy, timeliness and measurability.",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -474,10 +474,10 @@
             {
               "questionType": "Maturity Level 3",
               "questionDescription": "Ask the control owner whether the responsibilities for the governance component and overall accountability have been assigned. Confirm the response. Test whether accountability and responsibilities are understood and accepted. Verify that the right skills and the necessary resources are available.",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -485,10 +485,10 @@
             {
               "questionType": "Maturity Level 3",
               "questionDescription": "Reconsider the balance of prevention vs. detection and correction types of management control activities.",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -496,32 +496,32 @@
             {
               "questionType": "Maturity Level 3",
               "questionDescription": "Consider the effort spent in maintaining the management controls and the associated cost/effectiveness.",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
             },
             {
               "questionType": "Related Guidance",
-              "questionDescription": "string",
+              "questionDescription": "No data provided.",
               "relatedGuidance": "ISF, The Standard of Good Practice for Information Security 2016",
               "detailedReference": "SI1 Security Audit",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
             },
             {
               "questionType": "Related Guidance",
-              "questionDescription": "string",
+              "questionDescription": "No data provided.",
               "relatedGuidance": "ISO/IEC 27001:2013/Cor.2:2015(E)",
               "detailedReference": "9.2 Internal audit",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -536,10 +536,10 @@
             {
               "questionType": "Maturity Level 3",
               "questionDescription": "Assess whether the expected outcomes for each of the management controls in scope are achieved. That is, assess the effectiveness of the management control (control effectiveness).",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -547,10 +547,10 @@
             {
               "questionType": "Maturity Level 3",
               "questionDescription": "Ensure that the assurance professional tests the outcome or effectiveness of the management control by looking for direct and indirect evidence of the impact on the management controls goals. This implies the direct and indirect substantiation of measurable contribution of the management goals to the alignment goals, thereby recording direct and indirect evidence of actually achieving the expected outcomes.",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -558,10 +558,10 @@
             {
               "questionType": "Maturity Level 3",
               "questionDescription": "Determine whether the assurance professional obtains direct or indirect evidence for selected items/periods by applying a selection of testing techniques to ensure that the management control under review is working effectively. Ensure that the assurance professional also performs a limited review of the adequacy of the management control results and determines the level of substantive testing and additional work needed to provide assurance that the management control performance is adequate",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -569,32 +569,32 @@
             {
               "questionType": "Maturity Level 3",
               "questionDescription": "Investigate whether a management control can be made more efficient and if its design can be more effective by optimizing steps or looking for synergies with other management controls.",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
             },
             {
               "questionType": "Related Guidance",
-              "questionDescription": "string",
+              "questionDescription": "No data provided.",
               "relatedGuidance": "ISF, The Standard of Good Practice for Information Security 2016",
               "detailedReference": "SI1 Security Audit",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
             },
             {
               "questionType": "Related Guidance",
-              "questionDescription": "string",
+              "questionDescription": "No data provided.",
               "relatedGuidance": "SO/IEC 27001:2013/Cor.2:2015(E)",
               "detailedReference": "9.2 Internal audit",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -609,10 +609,10 @@
             {
               "questionType": "Maturity Level 2",
               "questionDescription": "Document the impact of control weaknesses.",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -620,10 +620,10 @@
             {
               "questionType": "Maturity Level 2",
               "questionDescription": "Communicate with management during execution of the initiative so there is a clear understanding of the work performed and agreement on and acceptance of the preliminary findings and recommendations.",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -631,10 +631,10 @@
             {
               "questionType": "Maturity Level 3",
               "questionDescription": "Provide management with a report (aligned with the terms of reference, scope and agreed reporting standards) that supports the results of the initiative and enables a clear focus on key issues and important actions.",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -642,10 +642,10 @@
             {
               "questionType": "Maturity Level 4",
               "questionDescription": "Provide management with a report (aligned with the terms of reference, scope and agreed reporting standards) that supports the results of the initiative and enables a clear focus on key issues and important actions.",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -660,10 +660,10 @@
             {
               "questionType": "Maturity Level 2",
               "questionDescription": "Agree on and implement internally, within the organization, the necessary actions that need to be taken to resolve identified weaknesses and gaps.",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -671,10 +671,10 @@
             {
               "questionType": "Maturity Level 2",
               "questionDescription": "Follow up, within the organization, to determine whether corrective actions were taken and internal control weaknesses were resolved.",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -767,7 +767,7 @@
               "questionType": "Output",
               "questionDescription": "Results of assurance provider evaluations",
               "inputFrom": "Internal",
-              "outputTo": "string,",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -783,7 +783,7 @@
               "questionType": "Input",
               "questionDescription": "Program audit plans",
               "inputFrom": "BAI01.05",
-              "outputTo": "string,",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -792,7 +792,7 @@
               "questionType": "Input",
               "questionDescription": "Independent assurance plans",
               "inputFrom": "DSS01.02",
-              "outputTo": "string,",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -800,7 +800,7 @@
             {
               "questionType": "Output",
               "questionDescription": "Assurance plans",
-              "inputFrom": "string",
+              "inputFrom": "No data provided.",
               "outputTo": "All APO; All BAI; All DSS; All MEA; EDM01.03",
               "questionAnswer": 0,
               "questionScore": 0,
@@ -809,7 +809,7 @@
             {
               "questionType": "Output",
               "questionDescription": "Assessment criteria",
-              "inputFrom": "string",
+              "inputFrom": "No data provided.",
               "outputTo": "internal",
               "questionAnswer": 0,
               "questionScore": 0,
@@ -818,7 +818,7 @@
             {
               "questionType": "Output",
               "questionDescription": "High-level assessments",
-              "inputFrom": "string",
+              "inputFrom": "No data provided.",
               "outputTo": "Internal",
               "questionAnswer": 0,
               "questionScore": 0,
@@ -835,7 +835,7 @@
               "questionType": "Input",
               "questionDescription": "Assurance plans",
               "inputFrom": "MEA04.02",
-              "outputTo": "string",
+              "outputTo": "No data provided.",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -843,7 +843,7 @@
             {
               "questionType": "Output",
               "questionDescription": "Assurance objectives and expected benefits",
-              "inputFrom": "string",
+              "inputFrom": "No data provided.",
               "outputTo": "Internal",
               "questionAnswer": 0,
               "questionScore": 0,
@@ -860,7 +860,7 @@
               "questionType": "Input",
               "questionDescription": "Root causes of failure to deliver quality",
               "inputFrom": "APO11.03",
-              "outputTo": "string",
+              "outputTo": "No data provided.",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -869,7 +869,7 @@
               "questionType": "Input",
               "questionDescription": "Risk-related root causes",
               "inputFrom": "APO12.06",
-              "outputTo": "string",
+              "outputTo": "No data provided.",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -878,7 +878,7 @@
               "questionType": "Input",
               "questionDescription": "Root cause analyses and recommendations",
               "inputFrom": "DSS06.01",
-              "outputTo": "string",
+              "outputTo": "No data provided.",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -887,7 +887,7 @@
               "questionType": "Input",
               "questionDescription": "Reports of noncompliance issues and root causes",
               "inputFrom": "MEA03.04",
-              "outputTo": "string",
+              "outputTo": "No data provided.",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -895,7 +895,7 @@
             {
               "questionType": "Output",
               "questionDescription": "Assurance review practices",
-              "inputFrom": "string",
+              "inputFrom": "No data provided.",
               "outputTo": "Internal",
               "questionAnswer": 0,
               "questionScore": 0,
@@ -904,7 +904,7 @@
             {
               "questionType": "Output",
               "questionDescription": "Engagement plan",
-              "inputFrom": "string",
+              "inputFrom": "No data provided.",
               "outputTo": "Internal",
               "questionAnswer": 0,
               "questionScore": 0,
@@ -913,7 +913,7 @@
             {
               "questionType": "Output",
               "questionDescription": "Assurance review scope",
-              "inputFrom": "string",
+              "inputFrom": "No data provided.",
               "outputTo": "Internal",
               "questionAnswer": 0,
               "questionScore": 0,
@@ -930,7 +930,7 @@
               "questionType": "Input",
               "questionDescription": "Risk analysis and risk profile reports for stakeholders",
               "inputFrom": "APO12.04",
-              "outputTo": "string",
+              "outputTo": "No data provided.",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -938,7 +938,7 @@
             {
               "questionType": "Output",
               "questionDescription": "Refined scope",
-              "inputFrom": "string",
+              "inputFrom": "No data provided.",
               "outputTo": "Internal",
               "questionAnswer": 0,
               "questionScore": 0,
@@ -949,7 +949,7 @@
               "questionDescription": "Detailed assurance work program",
 
               "inputFrom": "MEA04.06",
-              "outputTo": "string",
+              "outputTo": "No data provided.",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -965,7 +965,7 @@
               "questionType": "Input",
               "questionDescription": "Risk-related root causes",
               "inputFrom": "APO12.06",
-              "outputTo": "string",
+              "outputTo": "No data provided.",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -974,7 +974,7 @@
               "questionType": "Input",
               "questionDescription": "Root cause analyses and recommendations",
               "inputFrom": "DSS06.01",
-              "outputTo": "string",
+              "outputTo": "No data provided.",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -983,7 +983,7 @@
               "questionType": "Input",
               "questionDescription": "Detailed assurance work program",
               "inputFrom": "MEA04.05",
-              "outputTo": "string",
+              "outputTo": "No data provided.",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -991,7 +991,7 @@
             {
               "questionType": "Output",
               "questionDescription": "Documented design of internal controls",
-              "inputFrom": "string",
+              "inputFrom": "No data provided.",
               "outputTo": "MEA04.07",
               "questionAnswer": 0,
               "questionScore": 0,
@@ -1008,7 +1008,7 @@
               "questionType": "Input",
               "questionDescription": "Incident and service request log",
               "inputFrom": "DSS02.02",
-              "outputTo": "string",
+              "outputTo": "No data provided.",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -1017,7 +1017,7 @@
               "questionType": "Input",
               "questionDescription": "Incident resolutions",
               "inputFrom": "DSS02.05",
-              "outputTo": "string",
+              "outputTo": "No data provided.",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -1026,7 +1026,7 @@
               "questionType": "Input",
               "questionDescription": "Problem resolution monitoring reports",
               "inputFrom": "DSS03.05",
-              "outputTo": "string",
+              "outputTo": "No data provided.",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -1035,7 +1035,7 @@
               "questionType": "Input",
               "questionDescription": "Results of penetration tests",
               "inputFrom": "DSS05.02",
-              "outputTo": "string",
+              "outputTo": "No data provided.",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -1044,7 +1044,7 @@
               "questionType": "Input",
               "questionDescription": "Access logs",
               "inputFrom": "DSS05.05",
-              "outputTo": "string",
+              "outputTo": "No data provided.",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -1053,7 +1053,7 @@
               "questionType": "Input",
               "questionDescription": "Root cause analyses and recommendations",
               "inputFrom": "DSS06.01",
-              "outputTo": "string",
+              "outputTo": "No data provided.",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -1062,7 +1062,7 @@
               "questionType": "Input",
               "questionDescription": "Documented design of internal controls",
               "inputFrom": "MEA04.06",
-              "outputTo": "string",
+              "outputTo": "No data provided.",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -1070,7 +1070,7 @@
             {
               "questionType": "Output",
               "questionDescription": "Control effectiveness testing",
-              "inputFrom": "string",
+              "inputFrom": "No data provided.",
               "outputTo": "MEA04.08; MEA04.09",
               "questionAnswer": 0,
               "questionScore": 0,
@@ -1087,7 +1087,7 @@
               "questionType": "Input",
               "questionDescription": "Identified compliance gaps",
               "inputFrom": "MEA03.03",
-              "outputTo": "string",
+              "outputTo": "No data provided.",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -1096,7 +1096,7 @@
               "questionType": "Input",
               "questionDescription": "Control effectiveness testing",
               "inputFrom": "MEA04.07",
-              "outputTo": "string",
+              "outputTo": "No data provided.",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -1104,7 +1104,7 @@
             {
               "questionType": "Output",
               "questionDescription": "Assurance review report",
-              "inputFrom": "string",
+              "inputFrom": "No data provided.",
               "outputTo": "All APO; All BAI; All DSS;  All MEA; EDM05.03",
               "questionAnswer": 0,
               "questionScore": 0,
@@ -1113,7 +1113,7 @@
             {
               "questionType": "Output",
               "questionDescription": "Assurance review results",
-              "inputFrom": "string",
+              "inputFrom": "No data provided.",
               "outputTo": "All APO; All BAI; All DSS;  All MEA; EDM05.03; MEA04.09",
               "questionAnswer": 0,
               "questionScore": 0,
@@ -1130,7 +1130,7 @@
               "questionType": "Input",
               "questionDescription": "Control effectiveness testing",
               "inputFrom": "MEA04.07",
-              "outputTo": "string",
+              "outputTo": "No data provided.",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -1139,7 +1139,7 @@
               "questionType": "Input",
               "questionDescription": "Assurance review results",
               "inputFrom": "MEA04.08",
-              "outputTo": "string",
+              "outputTo": "No data provided.",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -1147,7 +1147,7 @@
             {
               "questionType": "Output",
               "questionDescription": "Remedial actions",
-              "inputFrom": "string",
+              "inputFrom": "No data provided.",
               "outputTo": "All APO; All BAI; All DSS;  All MEA",
               "questionAnswer": 0,
               "questionScore": 0,
@@ -1191,8 +1191,8 @@
           "questionType": "Component question",
           "relevantPolicy": "Assurance guide",
           "policyDescription": "Provides guidance on performing assurance activities. Enables efficient and effective development of I&T assurance initiatives, including planning, scoping and executing assurance reviews, based on well-accepted assurance approaches. Provides assurance steps to test the control design, test the outcome of the operational effectiveness of the control, and document control weaknesses and their impact.",
-          "detailedGuidance": "string",
-          "detailedReference": "string",
+          "detailedGuidance": "No data provided.",
+          "detailedReference": "No data provided.",
           "questionAnswer": 0,
           "questionScore": 0,
           "questionComment": ""
@@ -1201,8 +1201,8 @@
           "questionType": "Component question",
           "relevantPolicy": "Internal audit charter",
           "policyDescription": "Provides independence to undertake audit reviews and report findings and recommendations directly to top management. The internal audit function should be a separate entity reporting either to the chief executive officer or chief operating officer. With respect to I&T, the charter should stipulate that the function is responsible for reviewing both general and application controls to determine whether the controls have been designed in accordance with management direction, established standards and procedures, and known legal requirements, and whether the controls are operating effectively to provide reliability and security over the data being processed (i.e., confidentiality, integrity and availability). The charter should stipulate that the internal audit function is responsible for reviewing the design, development and implementation of new systems or major modifications of existing systems.",
-          "detailedGuidance": "string",
-          "detailedReference": "string",
+          "detailedGuidance": "No data provided.",
+          "detailedReference": "No data provided.",
           "questionAnswer": 0,
           "questionScore": 0,
           "questionComment": ""

@@ -161,10 +161,10 @@
             {
               "questionType": "Maturity Level 2",
               "questionDescription": "Understand the organization and its context related to I&T risk",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -172,10 +172,10 @@
             {
               "questionType": "Maturity Level 2",
               "questionDescription": "Determine the risk appetite of the organization, i.e., the level of I&T-related risk that the enterprise is willing to take in its pursuit of enterprise objectives.",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -183,10 +183,10 @@
             {
               "questionType": "Maturity Level 2",
               "questionDescription": "Determine risk tolerance levels against the risk appetite, i.e., temporarily acceptable deviations from the risk appetite.",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -194,10 +194,10 @@
             {
               "questionType": "Maturity Level 2",
               "questionDescription": "Determine the extent of alignment of the I&T risk strategy to the enterprise risk strategy and ensure the risk appetite is below the organization’s risk capacity.",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -205,10 +205,10 @@
             {
               "questionType": "Maturity Level 3",
               "questionDescription": "Proactively evaluate I&T risk factors in advance of pending strategic enterprise decisions and ensure that risk considerations are part of the strategic enterprise decision process.",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -216,10 +216,10 @@
             {
               "questionType": "Maturity Level 3",
               "questionDescription": "Evaluate risk management activities to ensure alignment with the enterprise’s capacity for I&T-related loss and leadership’s tolerance of it.",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -227,10 +227,10 @@
             {
               "questionType": "Maturity Level 3",
               "questionDescription": "Attract and maintain necessary skills and personnel for I&T Risk Management",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -240,8 +240,8 @@
               "questionDescription": "",
               "relatedGuidance": "COSO Enterprise Risk Management, June 2017",
               "detailedReference": "Strategy and Objective-Setting—Principles 6 and 7; 9. Review and Revision—Principle 16",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -256,10 +256,10 @@
             {
               "questionType": "Maturity Level 2",
               "questionDescription": ". Direct the translation and integration of the I&T risk strategy into risk management practices and operational activities. ",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -267,10 +267,10 @@
             {
               "questionType": "Maturity Level 2",
               "questionDescription": "Direct the development of risk communication plans (covering all levels of the enterprise).",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -278,10 +278,10 @@
             {
               "questionType": "Maturity Level 2",
               "questionDescription": "Direct implementation of the appropriate mechanisms to respond quickly to changing risk and report immediately to appropriate levels of management, supported by agreed principles of escalation (what to report, when, where and how).",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -289,10 +289,10 @@
             {
               "questionType": "Maturity Level 2",
               "questionDescription": "Direct that risk, opportunities, issues and concerns may be identified and reported by anyone to the appropriate party at any time. Risk should be managed in accordance with published policies and procedures and escalated to the relevant decision makers.",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -300,10 +300,10 @@
             {
               "questionType": "Maturity Level 3",
               "questionDescription": "Identify key goals and metrics of the risk governance and management processes to be monitored, and approve the approaches, methods, techniques and processes for capturing and reporting the measurement information.",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -313,8 +313,8 @@
               "questionDescription": "",
               "relatedGuidance": "CMMI Cybermaturity Platform, 2018",
               "detailedReference": "RS.AS Apply Risk Management Strategy; BC.RO Determine Strategic Risk Objectives",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -324,8 +324,8 @@
               "questionDescription": "",
               "relatedGuidance": "ISF, The Standard of Good Practice for Information Security 2016",
               "detailedReference": "IR1.1 Information Risk Assessment—Management Approach",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -335,8 +335,8 @@
               "questionDescription": "",
               "relatedGuidance": "King IV Report on Corporate Governance for South Africa, 2016",
               "detailedReference": "Part 5.4: Governance functional areas—Principle 11",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -346,8 +346,8 @@
               "questionDescription": "",
               "relatedGuidance": "National Institute of Standards and Technology Special Publication 800-37, Revision 2 (Draft), May 2018",
               "detailedReference": "3.5 Assessment (Task 2)",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -362,10 +362,10 @@
             {
               "questionType": "Maturity Level 2",
               "questionDescription": "Report any risk management issues to the board or executive committee.",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -373,10 +373,10 @@
             {
               "questionType": "Maturity Level 3",
               "questionDescription": " Monitor the extent to which the risk profile is managed within the enterprise’s risk appetite and tolerance thresholds ",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -384,10 +384,10 @@
             {
               "questionType": "Maturity Level 4",
               "questionDescription": " Monitor key goals and metrics of risk governance and management processes against targets, analyze the cause of any deviations, and initiate remedial actions to address the underlying causes.",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -395,10 +395,10 @@
             {
               "questionType": "Maturity Level 4",
               "questionDescription": " Enable key stakeholders’ review of the enterprise’s progress toward identified goals. ",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -408,8 +408,8 @@
               "questionDescription": "",
               "relatedGuidance": "COSO Enterprise Risk Management, June 2017",
               "detailedReference": "9. Review and Revision—Principle 17",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -419,8 +419,8 @@
               "questionDescription": "",
               "relatedGuidance": "National Institute of Standards and Technology Special Publication 800-37, Revision 2 (Draft), May 2018",
               "detailedReference": "3.1 Preparation (Task 7); 3.5 Assessment (Task 1); 3.6 Authorization (Task 1)",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -430,8 +430,8 @@
               "questionDescription": "",
               "relatedGuidance": "The Open Group IT4IT Reference Architecture, Version 2.0",
               "detailedReference": "6. Requirement to Deploy (R2D) Value Stream; 7. Request to Fulfill (R2F) Value Stream",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -484,7 +484,7 @@
               "questionType": "Input",
               "questionDescription": "Emerging risk issues and factors",
               "inputFrom": "APO12.01",
-              "outputTo": "string,",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -493,7 +493,7 @@
               "questionType": "Input",
               "questionDescription": "Enterprise risk management (ERM) principles",
               "inputFrom": "Outside COBIT ",
-              "outputTo": "string,",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -501,7 +501,7 @@
             {
               "questionType": "Output",
               "questionDescription": "Risk appetite guidance",
-              "inputFrom": "string",
+              "inputFrom": "No data provided.",
               "outputTo": "APO04.01, APO12.03",
               "questionAnswer": 0,
               "questionScore": 0,
@@ -510,7 +510,7 @@
             {
               "questionType": "Output",
               "questionDescription": "Evaluation of risk management activities",
-              "inputFrom": "string",
+              "inputFrom": "No data provided.",
               "outputTo": "APO12.01",
               "questionAnswer": 0,
               "questionScore": 0,
@@ -519,7 +519,7 @@
             {
               "questionType": "Output",
               "questionDescription": "Approved risk tolerance levels",
-              "inputFrom": "string",
+              "inputFrom": "No data provided.",
               "outputTo": "APO12.03",
               "questionAnswer": 0,
               "questionScore": 0,
@@ -537,7 +537,7 @@
               "questionType": "Input",
               "questionDescription": "Aggregated risk profile,including status of risk management actions",
               "inputFrom": "APO12.03",
-              "outputTo": "string,",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -546,7 +546,7 @@
               "questionType": "Input",
               "questionDescription": "Enterprise risk profiles and mitigation plans",
               "inputFrom": "Outside COBIT ",
-              "outputTo": "string,",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -554,7 +554,7 @@
             {
               "questionType": "Output",
               "questionDescription": "Risk management policies",
-              "inputFrom": "string",
+              "inputFrom": "No data provided.",
               "outputTo": "APO12.01",
               "questionAnswer": 0,
               "questionScore": 0,
@@ -563,7 +563,7 @@
             {
               "questionType": "Output",
               "questionDescription": "Approved process for measuring risk management",
-              "inputFrom": "string",
+              "inputFrom": "No data provided.",
               "outputTo": "APO12.01",
               "questionAnswer": 0,
               "questionScore": 0,
@@ -572,7 +572,7 @@
             {
               "questionType": "Output",
               "questionDescription": "Key objectives to be monitored for risk management",
-              "inputFrom": "string",
+              "inputFrom": "No data provided.",
               "outputTo": "APO12.01",
               "questionAnswer": 0,
               "questionScore": 0,
@@ -589,7 +589,7 @@
               "questionType": "Input",
               "questionDescription": "• Risk analysis and risk profile reports for stakeholders • Results of third-party risk assessments • Opportunities for acceptance of greater risk",
               "inputFrom": "APO12.04",
-              "outputTo": "string,",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -598,7 +598,7 @@
               "questionType": "Input",
               "questionDescription": "Risk analysis results",
               "inputFrom": "APO12.02",
-              "outputTo": "string,",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -606,7 +606,7 @@
             {
               "questionType": "Output",
               "questionDescription": "Remedial actions to address risk management deviations",
-              "inputFrom": "string",
+              "inputFrom": "No data provided.",
               "outputTo": "APO12.06",
               "questionAnswer": 0,
               "questionScore": 0,
@@ -615,7 +615,7 @@
             {
               "questionType": "Output",
               "questionDescription": "Risk management issues for the board",
-              "inputFrom": "string",
+              "inputFrom": "No data provided.",
               "outputTo": "EDM05.01",
               "questionAnswer": 0,
               "questionScore": 0,

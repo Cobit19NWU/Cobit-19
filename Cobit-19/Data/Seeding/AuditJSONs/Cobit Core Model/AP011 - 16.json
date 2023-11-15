@@ -250,10 +250,10 @@
             {
               "questionType": "Maturity Level 3",
               "questionDescription": "Ensure that the I&T control framework and the business and IT processes include a standard, formal and continuous approach to quality management that is aligned with enterprise requirements. Within the I&T control framework and the business and IT processes identify quality requirements and criteria (e.g. based on legal requirements and requirements from customers).",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -261,10 +261,10 @@
             {
               "questionType": "Maturity Level 3",
               "questionDescription": "Define roles, tasks, decision rights and responsibilities for quality management in the organizational structure.",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -273,10 +273,10 @@
             {
               "questionType": "Maturity Level 3",
               "questionDescription": "Obtain input from management and external and internal stakeholders on the definition of quality requirements and quality management criteria.",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -284,10 +284,10 @@
             {
               "questionType": "Maturity Level 4",
               "questionDescription": "Regularly monitor and review the QMS against agreed acceptance criteria. Include feedback from customers, users and management.",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -295,21 +295,21 @@
             {
               "questionType": "Maturity Level 5",
               "questionDescription": "Respond to discrepancies in review results to continuously improve the QMS.",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
             },
             {
               "questionType": "Related Guidance",
-              "questionDescription": "string",
+              "questionDescription": "No data provided.",
               "relatedGuidance": "PMBOK Guide Sixth Edition, 2017",
               "detailedReference": "Part 1: 8.1 Plan quality management",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -325,10 +325,10 @@
             {
               "questionType": "Maturity Level 3",
               "questionDescription": " Focus quality management on customers by determining internal and external customer requirements and ensuring alignment of the I&T standards and practices. Define and communicate roles and responsibilities concerning conflict resolution between the user/customer and the IT organization",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -336,10 +336,10 @@
             {
               "questionType": "Maturity Level 3",
               "questionDescription": "Manage the business needs and expectations for each business process, IT operational service and new solutions. Maintain their quality acceptance criteria.",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -347,10 +347,10 @@
             {
               "questionType": "Maturity Level 3",
               "questionDescription": "Communicate customer requirements and expectations throughout the business and IT organization.",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -358,10 +358,10 @@
             {
               "questionType": "Maturity Level 4",
               "questionDescription": "Periodically obtain customer views on business process and service provisioning and IT solution delivery. Determine the impact on I&T standards and practices and ensure that customer expectations are met and actioned.",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -369,10 +369,10 @@
             {
               "questionType": "Maturity Level 4",
               "questionDescription": "Capture quality acceptance criteria for inclusion in SLAs",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -380,10 +380,10 @@
             {
               "questionType": "Input",
               "questionDescription": "Business and customer quality requirements",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
               "inputFrom": "Outside COBIT",
-              "outputTo": "string,",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -392,10 +392,10 @@
             {
               "questionType": "Output",
               "questionDescription": "Customer requirements for quality management",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
               "outputTo": "APO08.05;APO09.03;BAI01.07;BAI11.06",
-              "inputFrom": "string",
+              "inputFrom": "No data provided.",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -403,10 +403,10 @@
             {
               "questionType": "Output",
               "questionDescription": "Results of quality of service including customer feedback",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
               "outputTo": "APO08.05;APO09.05;BAI05.01;BAI07.07",
-              "inputFrom": "string",
+              "inputFrom": "No data provided.",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -414,10 +414,10 @@
             {
               "questionType": "Output",
               "questionDescription": "Acceptance criteria",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
               "outputTo": "BAI02.01;BAI02.02",
-              "inputFrom": "string",
+              "inputFrom": "No data provided.",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -433,10 +433,10 @@
             {
               "questionType": "Maturity Level 2",
               "questionDescription": "Define the quality management standards, practices and procedures in line with the I&T control framework’s requirements and enterprise quality management criteria and policies.",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -444,10 +444,10 @@
             {
               "questionType": "Maturity Level 3",
               "questionDescription": "Integrate the required quality management practices in key processes and solutions across the organization.",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -455,10 +455,10 @@
             {
               "questionType": "Maturity Level 3",
               "questionDescription": "Consider the benefits and costs of quality certifications.",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -466,10 +466,10 @@
             {
               "questionType": "Maturity Level 3",
               "questionDescription": " Effectively communicate the quality management approach (e.g., through regular, formal quality training programs).",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -477,10 +477,10 @@
             {
               "questionType": "Maturity Level 4",
               "questionDescription": "Record and monitor quality data. Use industry good practices for reference when improving and tailoring the enterprise’s quality practices.",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -488,10 +488,10 @@
             {
               "questionType": "Maturity Level 4",
               "questionDescription": "Regularly review the continued relevance, efficiency and effectiveness of specific quality management processes. Monitor the achievement of quality objectives.",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -499,11 +499,11 @@
 
             {
               "questionType": "Related Guidance",
-              "questionDescription": "string",
+              "questionDescription": "No data provided.",
               "relatedGuidance": "PMBOK Guide Sixth Edition, 2017",
               "detailedReference": "Part 1: 8.2 Manage quality",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -521,10 +521,10 @@
             {
               "questionType": "Maturity Level 3",
               "questionDescription": ". Prepare and conduct quality reviews for key organizational processes and solutions.",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -532,10 +532,10 @@
             {
               "questionType": "Maturity Level 4",
               "questionDescription": "For these key organizational processes and solutions, monitor goal-driven quality metrics aligned to overall quality objectives.",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -543,10 +543,10 @@
             {
               "questionType": "Maturity Level 4",
               "questionDescription": " Evaluate performance and provide regular and formal reporting of service agreement performance, including deviations from the agreed values. Distribute this report to business relationship management.",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -554,10 +554,10 @@
             {
               "questionType": "Maturity Level 4",
               "questionDescription": " Ensure that management and process owners regularly review quality management performance against defined quality metrics.",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -565,10 +565,10 @@
             {
               "questionType": "Maturity Level 4",
               "questionDescription": " Analyze overall quality management performance results.",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -576,10 +576,10 @@
             {
               "questionType": "Maturity Level 5",
               "questionDescription": "Report the quality management performance review results and initiate improvements where appropriate.",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -588,11 +588,11 @@
 
             {
               "questionType": "Related Guidance",
-              "questionDescription": "string",
+              "questionDescription": "No data provided.",
               "relatedGuidance": "PMBOK Guide Sixth Edition, 2017",
               "detailedReference": "Part 1: 8.3 Control quality",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -608,10 +608,10 @@
             {
               "questionType": "Maturity Level 2",
               "questionDescription": "Establish a platform to share good practices and capture information on defects and mistakes to enable learning from them",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -619,10 +619,10 @@
             {
               "questionType": "Maturity Level 3",
               "questionDescription": "Identify examples of excellent quality delivery processes that can benefit other services or projects. Share these with the service and project deliver teams to encourage improvement.",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -630,10 +630,10 @@
             {
               "questionType": "Maturity Level 3",
               "questionDescription": "Identify recurring examples of quality defects. Determine their root cause, evaluate their impact and result, and agree on improvement actions with the service and/or project delivery teams.",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -641,10 +641,10 @@
             {
               "questionType": "Maturity Level 3",
               "questionDescription": "Provide employees with training in the methods and tools of continual improvement",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -652,21 +652,21 @@
             {
               "questionType": "Maturity Level 4",
               "questionDescription": "Benchmark the results of the quality reviews against internal historical data, industry guidelines, standards and data from similar types  enterprises.",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
-              "inputFrom": "string",
-              "outputTo": "string, ",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided., ",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
             },
             {
               "questionType": "Related Guidance",
-              "questionDescription": "string",
+              "questionDescription": "No data provided.",
               "relatedGuidance": "National Institute of Standards and Technology Framework for Improving Critical Infrastructure Cybersecurity v1.1 April 2018",
               "detailedReference": "DE.DP Detection Processes",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -675,10 +675,10 @@
             {
               "questionType": "Output",
               "questionDescription": "Quality review benchmark results",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
               "outputTo": "All APO;All BAI; All DSS;All MEA",
-              "inputFrom": "string",
+              "inputFrom": "No data provided.",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -686,10 +686,10 @@
             {
               "questionType": "Output",
               "questionDescription": "Examples of good practice to be shared",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
               "outputTo": "All APO;All BAI; All DSS;All MEA",
-              "inputFrom": "string",
+              "inputFrom": "No data provided.",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -697,10 +697,10 @@
             {
               "questionType": "Output",
               "questionDescription": "Communications on continual improvement and best practices",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
               "outputTo": "All APO;All BAI; All DSS;All MEA",
-              "inputFrom": "string",
+              "inputFrom": "No data provided.",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -765,10 +765,10 @@
             {
               "questionType": "Input",
               "questionDescription": "Enterprisewide quality system",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
               "inputFrom": "Outside COBIT",
-              "outputTo": "string,",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -776,10 +776,10 @@
             {
               "questionType": "Output",
               "questionDescription": "Results of QMS effectiveness reviews",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
               "outputTo": "BAI03.06",
-              "inputFrom": "string",
+              "inputFrom": "No data provided.",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -787,10 +787,10 @@
             {
               "questionType": "Output",
               "questionDescription": "Quality management plans",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
               "outputTo": "APO14.04;APO14.06;BAI01.07;BAI11.05",
-              "inputFrom": "string",
+              "inputFrom": "No data provided.",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -798,10 +798,10 @@
             {
               "questionType": "Output",
               "questionDescription": "Quality management system (QMS) roles responsibilities and decision rights",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
               "outputTo": "APO01.05;DSS06.03",
-              "inputFrom": "string",
+              "inputFrom": "No data provided.",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -814,10 +814,10 @@
                 {
                   "questionType": "Input",
                   "questionDescription": "Business and customer quality requirements",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
+                  "relatedGuidance": "No data provided.",
+                  "detailedReference": "No data provided.",
                   "inputFrom": "Outside COBIT",
-                  "outputTo": "string,",
+                  "outputTo": "No data provided.,",
                   "questionAnswer": 0,
                   "questionScore": 0,
                   "questionComment": ""
@@ -826,10 +826,10 @@
                 {
                   "questionType": "Output",
                   "questionDescription": "Customer requirements for quality management",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
+                  "relatedGuidance": "No data provided.",
+                  "detailedReference": "No data provided.",
                   "outputTo": "APO08.05;APO09.03;BAI01.07;BAI11.06",
-                  "inputFrom": "string",
+                  "inputFrom": "No data provided.",
                   "questionAnswer": 0,
                   "questionScore": 0,
                   "questionComment": ""
@@ -837,10 +837,10 @@
                 {
                   "questionType": "Output",
                   "questionDescription": "Results of quality of service including customer feedback",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
+                  "relatedGuidance": "No data provided.",
+                  "detailedReference": "No data provided.",
                   "outputTo": "APO08.05;APO09.05;BAI05.01;BAI07.07",
-                  "inputFrom": "string",
+                  "inputFrom": "No data provided.",
                   "questionAnswer": 0,
                   "questionScore": 0,
                   "questionComment": ""
@@ -848,10 +848,10 @@
                 {
                   "questionType": "Output",
                   "questionDescription": "Acceptance criteria",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
+                  "relatedGuidance": "No data provided.",
+                  "detailedReference": "No data provided.",
                   "outputTo": "BAI02.01;BAI02.02",
-                  "inputFrom": "string",
+                  "inputFrom": "No data provided.",
                   "questionAnswer": 0,
                   "questionScore": 0,
                   "questionComment": ""
@@ -867,10 +867,10 @@
                 {
                   "questionType": "Input",
                   "questionDescription": "Approved quality reviews",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
+                  "relatedGuidance": "No data provided.",
+                  "detailedReference": "No data provided.",
                   "inputFrom": "BAI02.04",
-                  "outputTo": "string,",
+                  "outputTo": "No data provided.,",
                   "questionAnswer": 0,
                   "questionScore": 0,
                   "questionComment": ""
@@ -878,8 +878,8 @@
                 {
                   "questionType": "Input",
                   "questionDescription": "• Available quality certifications • Industry good practices",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
+                  "relatedGuidance": "No data provided.",
+                  "detailedReference": "No data provided.",
                   "inputFrom": "Outside COBIT",
                   "questionAnswer": 0,
                   "questionScore": 0,
@@ -888,10 +888,10 @@
                 {
                   "questionType": "Output",
                   "questionDescription": "Quality management standards",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
+                  "relatedGuidance": "No data provided.",
+                  "detailedReference": "No data provided.",
                   "outputTo": "All APO;All BAI; All DSS;All MEA",
-                  "inputFrom": "string",
+                  "inputFrom": "No data provided.",
                   "questionAnswer": 0,
                   "questionScore": 0,
                   "questionComment": ""
@@ -899,10 +899,10 @@
                 {
                   "questionType": "Output",
                   "questionDescription": "Root causes of quality delivery failures",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
+                  "relatedGuidance": "No data provided.",
+                  "detailedReference": "No data provided.",
                   "outputTo": "APO08.02;APO09.04;BAI07.08;MEA02.04; MEA04.04",
-                  "inputFrom": "string",
+                  "inputFrom": "No data provided.",
                   "questionAnswer": 0,
                   "questionScore": 0,
                   "questionComment": ""
@@ -910,10 +910,10 @@
                 {
                   "questionType": "Output",
                   "questionDescription": "Results of quality monitoring",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
+                  "relatedGuidance": "No data provided.",
+                  "detailedReference": "No data provided.",
                   "outputTo": "APO08.05;APO09.04;BAI07.08",
-                  "inputFrom": "string",
+                  "inputFrom": "No data provided.",
                   "questionAnswer": 0,
                   "questionScore": 0,
                   "questionComment": ""
@@ -928,8 +928,8 @@
                 {
                   "questionType": "Input",
                   "questionDescription": "• Quality assurance plan •Quality review results exceptions and corrections",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
+                  "relatedGuidance": "No data provided.",
+                  "detailedReference": "No data provided.",
                   "outputFrom": "sring,",
                   "inputFrom": "BAI03.06",
                   "questionAnswer": 0,
@@ -939,8 +939,8 @@
                 {
                   "questionType": "Input",
                   "questionDescription": "• Incident status and trends report • Status of request fulfilment and trends report",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
+                  "relatedGuidance": "No data provided.",
+                  "detailedReference": "No data provided.",
                   "inputFrom": "DSS02.07",
                   "questionAnswer": 0,
                   "questionScore": 0,
@@ -949,10 +949,10 @@
                 {
                   "questionType": "Output",
                   "questionDescription": "Process quality of service goals and metrics",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
+                  "relatedGuidance": "No data provided.",
+                  "detailedReference": "No data provided.",
                   "outputTo": "All APO;All BAI; All DSS;All MEA",
-                  "inputFrom": "string",
+                  "inputFrom": "No data provided.",
                   "questionAnswer": 0,
                   "questionScore": 0,
                   "questionComment": ""
@@ -960,10 +960,10 @@
                 {
                   "questionType": "Output",
                   "questionDescription": "Results of quality reviews and audits",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
+                  "relatedGuidance": "No data provided.",
+                  "detailedReference": "No data provided.",
                   "outputTo": "APO08.05;APO09.04; APO09.05;BAI07.08",
-                  "inputFrom": "string",
+                  "inputFrom": "No data provided.",
                   "questionAnswer": 0,
                   "questionScore": 0,
                   "questionComment": ""
@@ -982,10 +982,10 @@
                 {
                   "questionType": "Output",
                   "questionDescription": "Quality review benchmark results",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
+                  "relatedGuidance": "No data provided.",
+                  "detailedReference": "No data provided.",
                   "outputTo": "All APO;All BAI; All DSS;All MEA",
-                  "inputFrom": "string",
+                  "inputFrom": "No data provided.",
                   "questionAnswer": 0,
                   "questionScore": 0,
                   "questionComment": ""
@@ -993,10 +993,10 @@
                 {
                   "questionType": "Output",
                   "questionDescription": "Examples of good practice to be shared",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
+                  "relatedGuidance": "No data provided.",
+                  "detailedReference": "No data provided.",
                   "outputTo": "All APO;All BAI; All DSS;All MEA",
-                  "inputFrom": "string",
+                  "inputFrom": "No data provided.",
                   "questionAnswer": 0,
                   "questionScore": 0,
                   "questionComment": ""
@@ -1004,10 +1004,10 @@
                 {
                   "questionType": "Output",
                   "questionDescription": "Communications on continual improvement and best practices",
-                  "relatedGuidance": "string",
-                  "detailedReference": "string",
+                  "relatedGuidance": "No data provided.",
+                  "detailedReference": "No data provided.",
                   "outputTo": "All APO;All BAI; All DSS;All MEA",
-                  "inputFrom": "string",
+                  "inputFrom": "No data provided.",
                   "questionAnswer": 0,
                   "questionScore": 0,
                   "questionComment": ""
@@ -1070,8 +1070,8 @@
           "questionType": "Component question",
           "relevantPolicy": "Quality management policy",
           "policyDescription": "Captures management’s vision of enterprise quality objectives acceptable level of quality and duties of specific teams and entities to ensure quality.",
-          "detailedGuidance": "string",
-          "detailedReference": "string",
+          "detailedGuidance": "No data provided.",
+          "detailedReference": "No data provided.",
           "questionAnswer": 0,
           "questionScore": 0,
           "questionComment": ""
@@ -1087,8 +1087,8 @@
         {
           "questionType": "Component question",
           "keyCultureElement": "Promote a culture of quality and continual improvement. Maintain, and regularly communicate the need for and benefits of quality and continuous improvement.",
-          "relatedGuidance": "string",
-          "detailedReference": "string",
+          "relatedGuidance": "No data provided.",
+          "detailedReference": "No data provided.",
           "questionAnswer": 0,
           "questionScore": 0,
           "questionComment": ""
