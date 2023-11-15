@@ -56,11 +56,11 @@ namespace Cobit_19.Business.FocusAreas
             return _mapper.Map<IEnumerable<FocusAreaDto>>(query);
         }
 
-        public IEnumerable<AuditDto> GetAllAuditsForFocusArea(int focusAreaID)
+        public async Task<List<AuditDto>> GetAllAuditsForFocusArea(int focusAreaID)
         {
-            var query = _dbContext.Audits.Where(audit => audit.FocusAreaID == focusAreaID).ToList();
+            var query = await _dbContext.Audits.Where(audit => audit.FocusAreaID == focusAreaID).ToListAsync();
 
-            return _mapper.Map<IEnumerable<AuditDto>>(query);
+            return _mapper.Map<List<AuditDto>>(query);
         }
 
         public string GetFocusAreaCompletionStatus(string userID, int focusAreaID)

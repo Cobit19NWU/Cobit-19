@@ -1,188 +1,216 @@
 ﻿@page "/ManageAudit"
+
 @using Blazored.Toast.Configuration;
+@using Cobit_19.Business.Audits;
+@using Cobit_19.Data.Models;
 @using Cobit_19.Shared.Dtos
 @using Cobit_19.Business.FocusAreas
-@using Cobit_19.Business.Audits
 @using Cobit_19.Business.Admin
 @using Cobit_19.Shared.Enums
+
 @inject FocusAreaProvider focusAreaProvider
 @inject AuditProvider auditProvider
-@inject UserManagementProvider userManagementProvider
+@inject AuthenticationStateProvider authStateProvider
+@inject UserManager<ApplicationUser> userManager
+@inject NavigationManager navigationManager
+@inject IToastService toastService
+
 @using Blazored.Toast
 @using Blazored.Toast.Services
-@inject IToastService toastService
-@inject NavigationManager navigationManager
+@using System.ComponentModel.DataAnnotations;
+@using Microsoft.AspNetCore.Identity;
+@using Microsoft.AspNetCore.WebUtilities;
 
 @code{
     [Parameter]
     [SupplyParameterFromQuery]
     public int focusAreaID { get; set; }
 
-    [Parameter]
-    [SupplyParameterFromQuery]
-    public string userID { get; set; }
+    public string _userId { get; set; }
+    public List<AuditDto> _audits { get; set; }
 
-    public IEnumerable<AuditDto> audits;
-    public string? newAuditName;
-    public int selectDeleteAuditID;
-    public int addUserAuditID;
-    public string? addUserID;
-    public AuditDto deletedAudit;
-    public IList<UserDto> allUsers;
-    public bool createAuditNotificationVisible = false;
-    private string userRole;
-    private UserDto user;
+    private AuditModel _auditModel = new AuditModel();
 
     protected async override Task OnInitializedAsync()
-
     {
-        audits = focusAreaProvider.GetAuditsForFocusAreaByUserID(userID, focusAreaID);
-        allUsers = userManagementProvider.GetAllUsers();
-        user = await userManagementProvider.GetUserDtoByIdAsync(userID);
+        // Get current user
+        var authState = await authStateProvider.GetAuthenticationStateAsync();
+        var user = authState.User;
+        if (user.Identity.IsAuthenticated)
+        {
+            var currentUser = await userManager.GetUserAsync(user);
+            _userId = currentUser.Id;
+        }
 
-        userRole = await userManagementProvider.getUserRoleAsync(user);
-
-        RefreshData();
+        await RefreshData();
     }
 
-    private void RefreshData()
+    private async Task RefreshData()
     {
-        audits = focusAreaProvider.GetAuditsForFocusAreaByUserID(userID, focusAreaID);
-        allUsers = userManagementProvider.GetAllUsers();
+        _audits = await focusAreaProvider.GetAllAuditsForFocusArea(focusAreaID);
     }
 
-    private async Task deleteAudit()
+    private async Task deleteAudit(int AuditId)
     {
-        await auditProvider.deleteAsync(selectDeleteAuditID);
-        toastService.ShowSuccess("Audit Deleted");
-
-        RefreshData();
-        StateHasChanged();
+        try
+        {
+            var res = await auditProvider.deleteAsync(AuditId);
+            if(res != null)
+            {
+                _audits.Remove(_audits.Find(a => a.ID == AuditId));
+                StateHasChanged();
+                toastService.ShowSuccess("Audit deleted !");
+                return;
+            }
+            else
+            {
+                toastService.ShowError("Audit NOT deleted!");
+            }
+        }
+        catch
+        {
+            toastService.ShowError("Audit NOT deleted !");
+        }
     }
 
-    private async Task createAudit()
+    private async Task AddAudit()
     {
+
         var newAudit = new AuditEditorDto
             {
                 FocusAreaID = focusAreaID,
-                Name = newAuditName,
-                UserID = userID,
+                Name = _auditModel.AuditName,
+                UserID = _userId,
                 DateCreated = DateTime.Now,
                 DateCompleted = null,
                 Status = AuditStatus.NotStarted
             };
 
-        await auditProvider.createAsync(newAudit, userRole, user);
-        toastService.ShowSuccess("Audit Created");
-
-        RefreshData();
-        StateHasChanged();
-    }
-
-    private async Task addUsertoAudit()
-    {
-        var newAuditMember = new AuditMemberDto
+        var res = await auditProvider.createAsync(newAudit);
+        if(res != null)
         {
-            ApplicationUserID = addUserID,
-            AuditID = addUserAuditID
-        };
-
-        await auditProvider.addAuditMemberAsync(newAuditMember);
-        toastService.ShowSuccess("User added");
-
-        RefreshData();
-        StateHasChanged();
+            toastService.ShowSuccess("Audit Created");
+            _audits.Add(res);
+            StateHasChanged();
+            await RefreshData();
+        }
+        else
+        {
+            toastService.ShowError("Audit NOT created! Unknown Issue");
+        }
     }
 
-    private void handleBackClick()
+    
+
+    private void NavAuditMember(int auditId)
     {
-        navigationManager.NavigateTo($"/AuditSelect?focusAreaID={focusAreaID}");
+        var queryStrDict = new Dictionary<string, string>
+            {
+                ["AuditId"] = (auditId).ToString(),
+            };
+        navigationManager.NavigateTo(
+            QueryHelpers.AddQueryString("/ManageAuditUsers", queryStrDict)
+        );
+    }
+
+    private void BackButtonPress()
+    {
+        var queryStrDict = new Dictionary<string, string>
+            {
+                ["focusAreaID"] = (focusAreaID).ToString(),
+            };
+        navigationManager.NavigateTo(
+            QueryHelpers.AddQueryString("/AuditSelect", queryStrDict)
+        );
+    }
+
+    private class AuditModel
+    {
+        [Required(ErrorMessage = "Audit is required.")]
+        public string AuditName { get; set; }
     }
 }
 
-<BlazoredToasts Position="ToastPosition.TopLeft"
-                Timeout="4"
-                IconType="IconType.Material"
-                 />
-<div class="row">
+<div>
+    <button class="btn btn-primary" @onclick="BackButtonPress">Back</button>
+</div>
 
-    <div class="container-fluid ">
-        <div class="col">
-            <div class="panel panel-primary">
+<div class="container-fluid">
+    <BlazoredToasts Position="ToastPosition.TopLeft"
+                    Timeout="4"
+                    IconType="IconType.Material" />
+    <div class="container">
+        <div class="row border">
+            @if (_audits is null)
+            {
+                <p><em>Loading...</em></p>
+            }
+            else
+            {
+                <div class="container-fluid">
+                    <div class="col">
+                        <div class="panel panel-primary">
 
-                <div class="panel-heading p-2" style="color: white; background-color : purple"><b>
-                    Manage Audits
-                    </b>
+                            <div class="panel-heading p-2 mb-2" style="color: white; background-color : purple">
+                                <b>
+                                    Manage audits
+                                </b>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </div>
 
-    <div class="row">
-        <div class="col-sm border m-3"  >
-            <div class="panel-heading p-1" style="color: white; background-color : purple">
-                Create new audit
-            </div>
-            <label for="newAuditName"><b>Audit Name: </b></label><br>
-            <input type="text" id="newAuditName" @bind="newAuditName"/><br /><br />
-            <button class="btn btn-primary"  @onclick="createAudit">Create New Audit</button>
-        </div>
+                <div class="row">
+                    <div class="col border m-2">
+                        <table class="table table-hover table-striped modal-dialog-scrollable">
+                            <thead style="">
+                                <tr>
+                                    <th class="panel-heading p-1" style="background-color: purple; color: white;">#</th>
+                                    <th class="panel-heading p-1" style="background-color: purple; color: white;">Audits</th>
+                                    <th class="panel-heading p-1" style="background-color: purple; color: white;">Delete</th>
+                                    <th class="panel-heading p-1" style="background-color: purple; color: white;">Members</th>
+                                </tr>
 
-        <div class="col-sm border m-3">
-            <div class="panel-heading p-1" style="color: white; background-color : purple">
-                Assign user to an audit
-            </div> 
-            <label for="selectAuditName"><b>Select Audit:</b></label><br />
-            <select id="selectAuditName" @bind="addUserAuditID">
-                @foreach (var audit in audits)
-                {
-                    <option value="@audit.ID">@audit.Name</option>
-                }
-            </select><br /><br />
+                            </thead>
+                            <tbody>
+                                @foreach (var audit in _audits)
+                                {
+                                    <tr>
+                                        <td>@(_audits.IndexOf(audit) + 1)</td>
 
-            <label for="selectAuditUser"><b>Audit User:</b></label><br />
-            <select id="selectAuditUser" @bind="addUserID">
-                @foreach (var user in allUsers)
-                {
-                    <option value="@user.ID">@user.UserName</option>
-                }
-            </select><br /><br />
-            <button class="btn btn-primary" @onclick="addUsertoAudit">Add User</button>
-        </div>
+                                        <td>@audit.Name</td>
+                                        <td>
+                                            <button class="btn btn-danger" @onclick="() => deleteAudit(audit.ID)">Delete</button>
+                                        </td>
+                                        <td>
+                                            <button class="btn btn-primary" @onclick="() => NavAuditMember(audit.ID)">Manage Users</button>
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
 
-        <div class="col-sm border m-3">
-            <div class="panel-heading p-1" style="color: white; background-color : purple">
-                Delete an audit
-            </div>
-            <label for="deleteAuditName"><b>Select Audit:</b></label><br />
-            <select id="deleteAuditName" @bind="selectDeleteAuditID">
-                @foreach(var audit in audits)
-                {
-                    <option value="@audit.ID">@audit.Name</option>
-                }
-            </select><br /><br />
-            <button class="btn btn-primary"  @onclick="deleteAudit">Delete Audit</button>
+                    <div class="col border m-2">
+                        <div class="panel-heading p-1" style="color: white; font-weight: bold;background-color : purple">
+                            Create new audit
+                        </div>
+                        <div class="">
+                            <EditForm Model="@_auditModel" OnValidSubmit="AddAudit">
+                                <DataAnnotationsValidator />
+                                <div class="form-group">
+                                    <label class="m-1" for="nameField"><b>Enter Audit Name:</b></label>
+                                    <InputText id="nameField" @bind-Value="@_auditModel.AuditName" class="form-control" />
+                                    <ValidationMessage For="@(() => _auditModel.AuditName)" />
+                                </div>
+                                <div class="form-group align-content-center p-2">
+                                    <button type="submit" class="btn btn-primary">Add Audit</button>
+                                </div>
+                            </EditForm>
+                        </div>
+                    </div>
+                </div>
+            }
         </div>
-        <div class="col-sm border m-3">
-            <table class="table table-hover table-striped modal-dialog-scrollable">
-                <thead style="">
-                    <tr>                        
-                        <th class="panel-heading p-1" style="background-color: purple; color: white;">Audits</th>
-                    </tr>
-
-                </thead>
-                <tbody>
-                    @foreach (var audit in audits)
-                    {
-                        <tr>                           
-                            <td>@audit.Name</td>
-                        </tr>
-                    }
-                </tbody>
-            </table>
-        </div>
-    </div>
-    <div>
-        <button class="btn btn-primary" @onclick="handleBackClick">Back</button>
     </div>
 </div>

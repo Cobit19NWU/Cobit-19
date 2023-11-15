@@ -98,11 +98,16 @@ namespace Cobit_19.Business.Audits
             return _mapper.Map<List<ObjectiveDto>>(objectives);
         }
 
-        public async Task<AuditDto> createAsync(AuditEditorDto auditEditorDto, string userRole, UserDto user)
+        public async Task<AuditDto> createAsync(AuditEditorDto auditEditorDto)
         {
             // Create Audit
             var audit = _mapper.Map<AuditModel>(auditEditorDto);
             var adminUsers = await _userManagementProvider.GetAdminUsersAsync();
+            var user = new UserDto()
+            {
+                ID = auditEditorDto.UserID
+            };
+            var userRole = await _userManagementProvider.getUserRoleAsync(user);
 
             await _dbContext.Audits.AddAsync(audit);
             await _dbContext.SaveChangesAsync();
@@ -126,7 +131,6 @@ namespace Cobit_19.Business.Audits
             }
 
             //Create ObjectiveAudits
-            var objectives = await getObjectivesAsync();
             var objectiveTemplates = await _objectiveAuditProvider.getAllObjectiveTemplatesAsync();
             foreach (var objTemplate in objectiveTemplates)
             {
@@ -193,8 +197,6 @@ namespace Cobit_19.Business.Audits
 
                 _dbContext.AuditMembers.Add(auditMember);
             }
-
-
 
             await _dbContext.SaveChangesAsync();
 
@@ -292,6 +294,12 @@ namespace Cobit_19.Business.Audits
             return isUserInAudit;
         }
 
+        public List<AuditMemberDto> getAuditMembers(int AuditID)
+        {
+            var users = _dbContext.AuditMembers.Where(a => a.AuditID == AuditID).ToList();
+            return _mapper.Map<List<AuditMemberDto>>(users);
+        }
+
         public async Task addAuditMemberAsync(AuditMemberDto auditMemberDto)
         {
             var auditMember = _mapper.Map<AuditMemberModel>(auditMemberDto);
@@ -317,8 +325,35 @@ namespace Cobit_19.Business.Audits
                     _dbContext.ObjectiveAuditMembers.Add(objAuditMemberModel);
                 }
             }
-
             await _dbContext.SaveChangesAsync();
+        }
+
+        public async Task<UserDto> deleteAuditMemberAsync(int auditId, string userId)
+        {
+            if (!await IsUserInAuditAsync(auditId, userId))
+            {
+                return null;
+            }
+
+            var objAudits = _objectiveAuditProvider.getObjectiveAuditsForUser(userId ,auditId);
+            foreach (var objAudit in objAudits)
+            {
+                var objAuditMemberModel = new ObjectiveAuditMembersModel
+                {
+                    ObjectiveAuditID = objAudit.ID,
+                    ApplicationUserID = userId,
+                    DateAdded = DateTime.Now
+                };
+
+                _dbContext.ObjectiveAuditMembers.Remove(objAuditMemberModel);
+            }
+
+            var member = _dbContext.AuditMembers.Where(a => a.AuditID == auditId && a.ApplicationUserID == userId).FirstOrDefault();
+
+            var res = _dbContext.AuditMembers.Remove(member);
+            await _dbContext.SaveChangesAsync();
+
+            return _mapper.Map<UserDto>(res);
         }
 
         public async Task addMemberToAllAudits(string userName)
