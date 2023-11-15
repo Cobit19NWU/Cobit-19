@@ -173,7 +173,7 @@
               "relatedGuidance": "No data provided.",
               "detailedReference": "No data provided.",
               "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -181,10 +181,10 @@
             {
               "questionType": "Maturity Level 2",
               "questionDescription": ". Define the key principles for resource allocation and management of resources and capabilities so I&T can meet the needs of the enterprise according to the agreed priorities and budgetary constraints. For example, define preferred sourcing options for certain services and financial boundaries per sourcing option.",
-              "relatedGuidance": "No data provided.",
-              "detailedReference": "No data provided.",
-              "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -192,10 +192,10 @@
             {
               "questionType": "Maturity Level 2",
               "questionDescription": "Review and approve the resource plan and enterprise architecture strategies for delivering value and mitigating risk with the allocated resources.",
-              "relatedGuidance": "No data provided.",
-              "detailedReference": "No data provided.",
-              "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -203,10 +203,10 @@
             {
               "questionType": "Maturity Level 2",
               "questionDescription": ". Understand requirements for aligning I&T resource management with enterprise financial and human resources (HR) planning",
-              "relatedGuidance": "No data provided.",
-              "detailedReference": "No data provided.",
-              "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -214,10 +214,10 @@
             {
               "questionType": "Maturity Level 3",
               "questionDescription": "Define principles for the management and control of the enterprise architecture.",
-              "relatedGuidance": "No data provided.",
-              "detailedReference": "No data provided.",
-              "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -227,8 +227,8 @@
               "questionDescription": "No data provided.",
               "relatedGuidance": "CMMI Cybermaturity Platform, 2018 ",
               "detailedReference": "GR.DR Direct Resource Management Needs",
-              "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -238,8 +238,8 @@
               "questionDescription": "No data provided.",
               "relatedGuidance": "ISO/IEC 38500:2015(E)",
               "detailedReference": "5.4 Principle 3: Acquisition (Evaluate)",
-              "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -250,7 +250,7 @@
               "relatedGuidance": "No data provided.",
               "detailedReference": "No data provided.",
               "inputFrom": "APO02.04",
-              "outputTo": "No data provided.",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -261,7 +261,7 @@
               "relatedGuidance": "No data provided.",
               "detailedReference": "No data provided.",
               "inputFrom": "APO07.03",
-              "outputTo": "No data provided.",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -272,7 +272,7 @@
               "relatedGuidance": "No data provided.",
               "detailedReference": "No data provided.",
               "inputFrom": "APO10.02",
-              "outputTo": "No data provided.",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -321,10 +321,10 @@
             {
               "questionType": "Maturity Level 2",
               "questionDescription": "Assign responsibilities for executing resource management.",
-              "relatedGuidance": "No data provided.",
-              "detailedReference": "No data provided.",
-              "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -332,10 +332,10 @@
             {
               "questionType": "Maturity Level 2",
               "questionDescription": "Establish principles related to safeguarding resources.",
-              "relatedGuidance": "No data provided.",
-              "detailedReference": "No data provided.",
-              "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -343,10 +343,10 @@
             {
               "questionType": "Maturity Level 3",
               "questionDescription": " Communicate and drive the adoption of the resource management strategies, principles, and agreed resource plan and enterprise architecture strategies.",
-              "relatedGuidance": "No data provided.",
-              "detailedReference": "No data provided.",
-              "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -354,10 +354,10 @@
             {
               "questionType": "Maturity Level 3",
               "questionDescription": "Align resource management with enterprise financial and HR planning.",
-              "relatedGuidance": "No data provided.",
-              "detailedReference": "No data provided.",
-              "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -365,10 +365,10 @@
             {
               "questionType": "Maturity Level 4",
               "questionDescription": "Define key goals, measures and metrics for resource management",
-              "relatedGuidance": "No data provided.",
-              "detailedReference": "No data provided.",
-              "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -378,8 +378,8 @@
               "questionDescription": "No data provided.",
               "relatedGuidance": "CMMI Cybermaturity Platform, 2018",
               "detailedReference": "GR.ER Evaluate Resource Management Needs",
-              "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -389,8 +389,8 @@
               "questionDescription": "No data provided.",
               "relatedGuidance": "ISO/IEC 38500:2015(E) ",
               "detailedReference": "5.4 Principle 3: Acquisition (Direct)",
-              "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -400,8 +400,8 @@
               "questionDescription": "No data provided.",
               "relatedGuidance": "COSO Enterprise Risk Management, June 2017",
               "detailedReference": "Governance and Culture—Principle 5",
-              "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -411,8 +411,8 @@
               "questionDescription": "No data provided.",
               "relatedGuidance": "National Institute of Standards and Technology Special Publication 800-53, Revision 5 (Draft), August 2017",
               "detailedReference": "3.14 Planning (PL-4) ",
-              "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -461,10 +461,10 @@
             {
               "questionType": "Maturity Level 4",
               "questionDescription": "Monitor the allocation and optimization of resources in accordance with enterprise objectives and priorities using agreed goals and metrics.",
-              "relatedGuidance": "No data provided.",
-              "detailedReference": "No data provided.",
-              "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -472,10 +472,10 @@
             {
               "questionType": "Maturity Level 4",
               "questionDescription": "Monitor I&T-related sourcing strategies, enterprise architecture strategies, and business- and IT-related capabilities and resources to ensure that current and future needs and objectives of the enterprise can be met.",
-              "relatedGuidance": "No data provided.",
-              "detailedReference": "No data provided.",
-              "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -483,10 +483,10 @@
             {
               "questionType": "Maturity Level 4",
               "questionDescription": "Monitor resource performance against targets, analyze the cause of deviations, and initiate remedial action to address the underlying causes",
-              "relatedGuidance": "No data provided.",
-              "detailedReference": "No data provided.",
-              "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -496,8 +496,8 @@
               "questionDescription": "No data provided.",
               "relatedGuidance": "CMMI Cybermaturity Platform, 2018",
               "detailedReference": "GR.MR Monitor Resource Management Needs",
-              "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -507,8 +507,8 @@
               "questionDescription": "No data provided.",
               "relatedGuidance": "ISO/IEC 38500:2015(E)",
               "detailedReference": "5.4 Principle 3: Acquisition (Evaluate)",
-              "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -584,7 +584,7 @@
               "questionType": "Input",
               "questionDescription": "Gaps and changes required to realize target capability",
               "inputFrom": "APO02.04",
-              "outputTo": "No data provided.",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -593,7 +593,7 @@
               "questionType": "Input",
               "questionDescription": "Skill development plans",
               "inputFrom": "APO07.03",
-              "outputTo": "No data provided.",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -602,7 +602,7 @@
               "questionType": "Input",
               "questionDescription": "Decision results of vendor evaluations",
               "inputFrom": "APO10.02",
-              "outputTo": "No data provided.",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""

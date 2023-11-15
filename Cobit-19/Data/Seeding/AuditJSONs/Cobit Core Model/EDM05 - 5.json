@@ -128,7 +128,7 @@
               "relatedGuidance": "No data provided.",
               "detailedReference": "No data provided.",
               "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -136,10 +136,10 @@
             {
               "questionType": "Maturity Level 2",
               "questionDescription": "Examine and make judgment on the current and future mandatory reporting requirements relating to the use of I&T within the enterprise (regulation, legislation, common law, contractual), including extent and frequency.",
-              "relatedGuidance": "No data provided.",
-              "detailedReference": "No data provided.",
-              "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -147,10 +147,10 @@
             {
               "questionType": "Maturity Level 2",
               "questionDescription": "Examine and make judgment on the current and future communication and reporting requirements for other stakeholders relating to the use of I&T within the enterprise, including required level of involvement/consultation and extent of communication/level of detail and conditions.",
-              "relatedGuidance": "No data provided.",
-              "detailedReference": "No data provided.",
-              "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -158,10 +158,10 @@
             {
               "questionType": "Maturity Level 2",
               "questionDescription": "Maintain principles for communication with external and internal stakeholders, including communication formats and channels, and for stakeholder acceptance and sign-off of reporting.",
-              "relatedGuidance": "No data provided.",
-              "detailedReference": "No data provided.",
-              "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -171,8 +171,8 @@
               "questionDescription": "No data provided.",
               "relatedGuidance": "CMMI Cybermaturity Platform, 2018",
               "detailedReference": "SR.DR Direct Stakeholder Communication and Reporting",
-              "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -188,10 +188,10 @@
             {
               "questionType": "Maturity Level 2",
               "questionDescription": "Direct the establishment of the consultation and communication strategy for external and internal stakeholders",
-              "relatedGuidance": "No data provided.",
-              "detailedReference": "No data provided.",
-              "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -199,10 +199,10 @@
             {
               "questionType": "Maturity Level 2",
               "questionDescription": "Direct the implementation of mechanisms to ensure that information meets all criteria for mandatory I&T reporting requirements for the enterprise.",
-              "relatedGuidance": "No data provided.",
-              "detailedReference": "No data provided.",
-              "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -210,10 +210,10 @@
             {
               "questionType": "Maturity Level 2",
               "questionDescription": "Establish mechanisms for validation and approval of mandatory reporting.",
-              "relatedGuidance": "No data provided.",
-              "detailedReference": "No data provided.",
-              "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -221,10 +221,10 @@
             {
               "questionType": "Maturity Level 2",
               "questionDescription": " Establish reporting escalation mechanisms.",
-              "relatedGuidance": "No data provided.",
-              "detailedReference": "No data provided.",
-              "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -234,8 +234,8 @@
               "questionDescription": "No data provided.",
               "relatedGuidance": "CMMI Cybermaturity Platform, 2018",
               "detailedReference": "SR.AR Apply Stakeholder Reporting Requirements",
-              "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -245,8 +245,8 @@
               "questionDescription": "No data provided.",
               "relatedGuidance": "King IV Report on Corporate Governance for South Africa, 2016 ",
               "detailedReference": "Part 5.5: Stakeholder relationships—Principle 16",
-              "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -256,8 +256,8 @@
               "questionDescription": "No data provided.",
               "relatedGuidance": "King IV Report on Corporate Governance for South Africa, 2016 ",
               "detailedReference": "Part 5.2: Strategy, performance and reporting—Principle 5",
-              "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -267,8 +267,8 @@
               "questionDescription": "No data provided.",
               "relatedGuidance": "National Institute of Standards and Technology Framework for Improving Critical Infrastructure Cybersecurity V1.1, April 2018",
               "detailedReference": "3.3 Communicating Cybersecurity Requirements with Stakeholders",
-              "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -283,10 +283,10 @@
             {
               "questionType": "Maturity Level 4",
               "questionDescription": "Periodically assess the effectiveness of the mechanisms for ensuring the accuracy and reliability of mandatory reporting",
-              "relatedGuidance": "No data provided.",
-              "detailedReference": "No data provided.",
-              "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -294,10 +294,10 @@
             {
               "questionType": "Maturity Level 4",
               "questionDescription": ". Periodically assess the effectiveness of the mechanisms for, and outcomes from, involvement of and communication with external and internal stakeholders.",
-              "relatedGuidance": "No data provided.",
-              "detailedReference": "No data provided.",
-              "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -305,10 +305,10 @@
             {
               "questionType": "Maturity Level 4",
               "questionDescription": "Determine whether the requirements of different stakeholders are met and assess stakeholder engagement levels.",
-              "relatedGuidance": "No data provided.",
-              "detailedReference": "No data provided.",
-              "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -318,8 +318,8 @@
               "questionDescription": "No data provided.",
               "relatedGuidance": "CMMI Cybermaturity Platform, 2018",
               "detailedReference": "SR.MC Monitor Stakeholder Communication",
-              "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -371,7 +371,7 @@
               "questionType": "Input",
               "questionDescription": "Actions to improve value delivery",
               "inputFrom": "EDM02.04",
-              "outputTo": "No data provided.",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -380,7 +380,7 @@
               "questionType": "Input",
               "questionDescription": "Risk management issues for the board",
               "inputFrom": "EDM03.03",
-              "outputTo": "No data provided.",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -389,7 +389,7 @@
               "questionType": "Input",
               "questionDescription": "Feedback on allocation and effectiveness of resources and capabilities",
               "inputFrom": "EDM04.03",
-              "outputTo": "No data provided.",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -423,7 +423,7 @@
               "questionType": "Input",
               "questionDescription": "Risk analysis and risk profile reports for stakeholders",
               "inputFrom": "APO12.04",
-              "outputTo": "No data provided.",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -457,7 +457,7 @@
               "questionType": "Input",
               "questionDescription": "Assurance review results • Assurance review report",
               "inputFrom": "MEA04.08 ",
-              "outputTo": "No data provided.",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""

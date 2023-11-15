@@ -219,7 +219,7 @@
               "relatedGuidance": "No data provided.",
               "detailedReference": "No data provided.",
               "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -227,10 +227,10 @@
             {
               "questionType": "Maturity Level 2",
               "questionDescription": "Consider the enterprise’s internal environment, including management culture and philosophy, risk tolerance, security and privacy policy, ethical values, code of conduct, accountability, and requirements for management integrity.",
-              "relatedGuidance": "No data provided.",
-              "detailedReference": "No data provided.",
-              "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -238,10 +238,10 @@
             {
               "questionType": "Maturity Level 2",
               "questionDescription": "Apply the COBIT goals cascade and design factors to the enterprise strategy and context to decide on priorities for the management system and, thus, for implementation of management objective priorities.",
-              "relatedGuidance": "No data provided.",
-              "detailedReference": "No data provided.",
-              "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -249,10 +249,10 @@
             {
               "questionType": "Maturity Level 3",
               "questionDescription": ". Validate selected priorities for implementation of management objectives with industry-specific good practices or requirements (e.g., industry-specific regulations) and with appropriate governance structures.",
-              "relatedGuidance": "No data provided.",
-              "detailedReference": "No data provided.",
-              "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -262,7 +262,7 @@
               "questionDescription": "No data provided.",
               "relatedGuidance": "COSO Enterprise Risk Management, June 2017",
               "detailedReference": "7. Strategy and Objective-Setting—Principle 9",
-              "outputTo": "string,",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -272,7 +272,7 @@
               "questionDescription": "No data provided.",
               "relatedGuidance": "ISO/IEC 27001:2013/Cor.2:2015(E)",
               "detailedReference": "nternational standard for establishing, implementing and maintaining a management system (all chapters)",
-              "outputTo": "No data provided.",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -282,7 +282,7 @@
               "questionDescription": "No data provided.",
               "relatedGuidance": "ITIL V3, 2011 ",
               "detailedReference": "Service Strategy, 2.3 Governance and management systems",
-              "outputTo": "No data provided.",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -298,10 +298,10 @@
             {
               "questionType": "Maturity Level 2",
               "questionDescription": ". Provide sufficient and skilled resources to support the communication process.",
-              "relatedGuidance": "No data provided.",
-              "detailedReference": "No data provided.",
-              "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -309,10 +309,10 @@
             {
               "questionType": "Maturity Level 3",
               "questionDescription": "Define ground rules for communication by identifying communication needs and implementing plans based on those needs, considering top-down, bottom-up and horizontal communication.",
-              "relatedGuidance": "No data provided.",
-              "detailedReference": "No data provided.",
-              "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -320,10 +320,10 @@
             {
               "questionType": "Maturity Level 3",
               "questionDescription": "Continuously communicate I&T objectives and direction. Ensure that communication is supported by executive management in actions and words, using all available channels.",
-              "relatedGuidance": "No data provided.",
-              "detailedReference": "No data provided.",
-              "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -331,10 +331,10 @@
             {
               "questionType": "Maturity Level 3",
               "questionDescription": ". Ensure the information communicated encompasses a clearly articulated mission, service objectives, internal controls, quality, code of ethics/conduct, policies and procedures, roles and responsibilities, etc. Communicate the information at the appropriate level of detail for respective audiences within the enterprise.",
-              "relatedGuidance": "No data provided.",
-              "detailedReference": "No data provided.",
-              "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -349,6 +349,17 @@
             {
               "questionType": "Maturity Level 2",
               "questionDescription": "Develop the I&T governance target process model specific to the organization, based on the selection of priority management objectives (output of goals cascade and design factors exercise).",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Analyze the gap between the target process model for the organization and current practices and activities.",
               "relatedGuidance": "string",
               "detailedReference": "string",
               "inputFrom": "string",
@@ -358,23 +369,12 @@
               "questionComment": ""
             },
             {
-              "questionType": "Maturity Level 3",
-              "questionDescription": "Analyze the gap between the target process model for the organization and current practices and activities.",
-              "relatedGuidance": "No data provided.",
-              "detailedReference": "No data provided.",
-              "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
-              "questionAnswer": 0,
-              "questionScore": 0,
-              "questionComment": ""
-            },
-            {
               "questionType": "Maturity Level 4",
               "questionDescription": "Draft a road map for implementation of missing process practices and activities. Use practice metrics to follow up on successful implementation.",
-              "relatedGuidance": "No data provided.",
-              "detailedReference": "No data provided.",
-              "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -389,10 +389,10 @@
             {
               "questionType": "Maturity Level 2",
               "questionDescription": "dentify decisions required for the achievement of enterprise outcomes and the I&T strategy and for the management and execution of I&T services.",
-              "relatedGuidance": "No data provided.",
-              "detailedReference": "No data provided.",
-              "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -400,10 +400,10 @@
             {
               "questionType": "Maturity Level 2",
               "questionDescription": "Involve stakeholders who are critical to decision making (accountable, responsible, consulted or informed).",
-              "relatedGuidance": "No data provided.",
-              "detailedReference": "No data provided.",
-              "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -411,10 +411,10 @@
             {
               "questionType": "Maturity Level 2",
               "questionDescription": "Define the scope, focus, mandate and responsibilities of each function within the I&T-related organization, in line with governance direction.",
-              "relatedGuidance": "No data provided.",
-              "detailedReference": "No data provided.",
-              "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -422,10 +422,10 @@
             {
               "questionType": "Maturity Level 3",
               "questionDescription": "Define the scope of internal and external functions, internal and external roles, and capabilities and decision rights required to cover all practices, including those performed by third parties.",
-              "relatedGuidance": "No data provided.",
-              "detailedReference": "No data provided.",
-              "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -433,10 +433,10 @@
             {
               "questionType": "Maturity Level 3",
               "questionDescription": "Align the I&T-related organization with enterprise architecture organizational models.",
-              "relatedGuidance": "No data provided.",
-              "detailedReference": "No data provided.",
-              "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -444,10 +444,10 @@
             {
               "questionType": "Maturity Level 3",
               "questionDescription": " Establish an I&T steering committee (or equivalent) composed of executive, business and I&T management to track status of projects, resolve resource conflicts, and monitor service levels and service improvements.",
-              "relatedGuidance": "No data provided.",
-              "detailedReference": "No data provided.",
-              "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -455,10 +455,10 @@
             {
               "questionType": "Maturity Level 3",
               "questionDescription": "Provide guidelines for each management structure (including mandate, objectives, meeting attendees, timing, tracking, supervision and oversight) as well as required inputs for and expected outcomes of meetings.",
-              "relatedGuidance": "No data provided.",
-              "detailedReference": "No data provided.",
-              "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -466,10 +466,10 @@
             {
               "questionType": "Maturity Level 4",
               "questionDescription": ". Regularly verify the adequacy and effectiveness of the organizational structures",
-              "relatedGuidance": "No data provided.",
-              "detailedReference": "No data provided.",
-              "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -485,10 +485,10 @@
             {
               "questionType": "Maturity Level 2",
               "questionDescription": "Establish, agree on and communicate I&T-related roles and responsibilities for all personnel in the enterprise, in alignment with business needs and objectives. Clearly delineate responsibilities and accountabilities, especially for decision making and approvals.",
-              "relatedGuidance": "No data provided.",
-              "detailedReference": "No data provided.",
-              "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -496,10 +496,10 @@
             {
               "questionType": "Maturity Level 2",
               "questionDescription": "Consider requirements from enterprise and I&T service continuity when defining roles, including staff back-up and crosstraining requirements.",
-              "relatedGuidance": "No data provided.",
-              "detailedReference": "No data provided.",
-              "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -507,10 +507,10 @@
             {
               "questionType": "Maturity Level 2",
               "questionDescription": "Provide input to the I&T service continuity process by maintaining up-to-date contact information and role descriptions in the enterprise.",
-              "relatedGuidance": "No data provided.",
-              "detailedReference": "No data provided.",
-              "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -518,10 +518,10 @@
             {
               "questionType": "Maturity Level 2",
               "questionDescription": ". Include specific requirements in role and responsibility descriptions regarding adherence to management policies and procedures, the code of ethics, and professional practices.",
-              "relatedGuidance": "No data provided.",
-              "detailedReference": "No data provided.",
-              "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -529,10 +529,10 @@
             {
               "questionType": "Maturity Level 2",
               "questionDescription": "Ensure that accountability is defined through roles and responsibilities.",
-              "relatedGuidance": "No data provided.",
-              "detailedReference": "No data provided.",
-              "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -540,10 +540,10 @@
             {
               "questionType": "Maturity Level 2",
               "questionDescription": "Structure roles and responsibilities to reduce the possibility for a single role to compromise a critical process",
-              "relatedGuidance": "No data provided.",
-              "detailedReference": "No data provided.",
-              "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -551,10 +551,10 @@
             {
               "questionType": "Maturity Level 3",
               "questionDescription": "Implement adequate supervisory practices to ensure that roles and responsibilities are properly exercised, to assess whether all personnel have sufficient authority and resources to execute their roles and responsibilities, and generally to review performance. The level of supervision should be aligned with the sensitivity of the position and extent of assigned responsibilities.",
-              "relatedGuidance": "No data provided.",
-              "detailedReference": "No data provided.",
-              "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -569,10 +569,10 @@
             {
               "questionType": "Maturity Level 3",
               "questionDescription": "Understand context for the placement of the IT function, including assessment of enterprise strategy and operating model (centralized, federated, decentralized, hybrid), importance of I&T, and sourcing situation and options.",
-              "relatedGuidance": "No data provided.",
-              "detailedReference": "No data provided.",
-              "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -580,10 +580,10 @@
             {
               "questionType": "Maturity Level 3",
               "questionDescription": ". Identify, evaluate and prioritize options for organizational placement, sourcing and operating models.",
-              "relatedGuidance": "No data provided.",
-              "detailedReference": "No data provided.",
-              "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -591,10 +591,10 @@
             {
               "questionType": "Maturity Level 3",
               "questionDescription": " Define placement of the IT function and obtain agreement",
-              "relatedGuidance": "No data provided.",
-              "detailedReference": "No data provided.",
-              "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -604,8 +604,8 @@
               "questionDescription": "No data provided.",
               "relatedGuidance": "ISO/IEC 27002:2013/Cor.2:2015(E)",
               "detailedReference": "8.2 Information classification",
-              "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -621,10 +621,10 @@
             {
               "questionType": "Maturity Level 3",
               "questionDescription": "Assess and distinguish between critical (high value) and noncritical data, information and systems. Ensure appropriate protection for each category.",
-              "relatedGuidance": "No data provided.",
-              "detailedReference": "No data provided.",
-              "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -632,10 +632,10 @@
             {
               "questionType": "Maturity Level 3",
               "questionDescription": "Provide guidelines to ensure appropriate and consistent enterprisewide classification of information items",
-              "relatedGuidance": "No data provided.",
-              "detailedReference": "No data provided.",
-              "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -643,10 +643,10 @@
             {
               "questionType": "Maturity Level 3",
               "questionDescription": ". Create and maintain an inventory of information (systems and data) that includes a listing of owners, custodians and classifications. Include systems that are outsourced and those for which ownership should stay within the enterprise",
-              "relatedGuidance": "No data provided.",
-              "detailedReference": "No data provided.",
-              "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -661,10 +661,10 @@
             {
               "questionType": "Maturity Level 2",
               "questionDescription": ". Identify the required skills and competencies to achieve selected management objectives",
-              "relatedGuidance": "No data provided.",
-              "detailedReference": "No data provided.",
-              "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -672,10 +672,10 @@
             {
               "questionType": "Maturity Level 2",
               "questionDescription": ". Analyze the gap between target skills and capabilities for the enterprise and current skills of the workforce. Refer to APO07—Managed Human Resources for skills development and management practices.",
-              "relatedGuidance": "No data provided.",
-              "detailedReference": "No data provided.",
-              "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -690,10 +690,10 @@
             {
               "questionType": "Maturity Level 3",
               "questionDescription": "Create a set of policies to drive IT control expectations on relevant key topics such as quality, security, privacy, internal controls, usage of I&T assets, ethics and intellectual property (IP) rights.",
-              "relatedGuidance": "No data provided.",
-              "detailedReference": "No data provided.",
-              "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -701,10 +701,10 @@
             {
               "questionType": "Maturity Level 3",
               "questionDescription": "Roll out and enforce I&T policies uniformly for all relevant staff so they are built into, and become integral parts of, enterprise operations.",
-              "relatedGuidance": "No data provided.",
-              "detailedReference": "No data provided.",
-              "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -712,10 +712,10 @@
             {
               "questionType": "Maturity Level 3",
               "questionDescription": "Evaluate and update the policies at least yearly to accommodate changing operating or business environments",
-              "relatedGuidance": "No data provided.",
-              "detailedReference": "No data provided.",
-              "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -730,10 +730,10 @@
             {
               "questionType": "Maturity Level 2",
               "questionDescription": "Identify priority management objectives that may be achieved by automating services, applications or infrastructure.",
-              "relatedGuidance": "No data provided.",
-              "detailedReference": "No data provided.",
-              "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -741,10 +741,10 @@
             {
               "questionType": "Maturity Level 2",
               "questionDescription": "Select and implement the most appropriate tools and communicate to stakeholders.",
-              "relatedGuidance": "No data provided.",
-              "detailedReference": "No data provided.",
-              "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -752,10 +752,10 @@
             {
               "questionType": "Maturity Level 2",
               "questionDescription": "Provide training on selected tools, as required.",
-              "relatedGuidance": "No data provided.",
-              "detailedReference": "No data provided.",
-              "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -770,10 +770,10 @@
             {
               "questionType": "Maturity Level 4",
               "questionDescription": "Regularly assess performance of framework components and take appropriate action",
-              "relatedGuidance": "No data provided.",
-              "detailedReference": "No data provided.",
-              "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -781,10 +781,10 @@
             {
               "questionType": "Maturity Level 4",
               "questionDescription": ". Identify business-critical processes based on performance and conformance drivers and related risk. Assess capability and identify improvement targets. Analyze gaps in capability and control. Identify options for improving or redesigning the process",
-              "relatedGuidance": "No data provided.",
-              "detailedReference": "No data provided.",
-              "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -792,10 +792,10 @@
             {
               "questionType": "Maturity Level 5",
               "questionDescription": ". Apply quality management practices to update the process",
-              "relatedGuidance": "No data provided.",
-              "detailedReference": "No data provided.",
-              "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -803,10 +803,10 @@
             {
               "questionType": "Maturity Level 5",
               "questionDescription": ". Prioritize initiatives for improvement based on potential benefits and costs. Implement agreed improvements, operate as normal business practice, and set performance goals and metrics to enable monitoring of improvements.",
-              "relatedGuidance": "No data provided.",
-              "detailedReference": "No data provided.",
-              "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -814,10 +814,10 @@
             {
               "questionType": "Maturity Level 5",
               "questionDescription": ". Consider ways to improve efficiency and effectiveness (e.g., through training, documentation, standardization and/or process automation).",
-              "relatedGuidance": "No data provided.",
-              "detailedReference": "No data provided.",
-              "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -825,10 +825,10 @@
             {
               "questionType": "Maturity Level 5",
               "questionDescription": "Retire outdated governance components (processes, information items, policies, etc.).",
-              "relatedGuidance": "No data provided.",
-              "detailedReference": "No data provided.",
-              "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -838,8 +838,8 @@
               "questionDescription": "No data provided.",
               "relatedGuidance": "ITIL V3, 2011",
               "detailedReference": "Continual Service Improvement, 4.1 The 7-Step Improvement Process",
-              "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -957,7 +957,7 @@
               "relatedGuidance": "No data provided.",
               "detailedReference": "No data provided.",
               "inputFrom": "APO02.05",
-              "outputTo": "No data provided.",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -968,7 +968,7 @@
               "relatedGuidance": "No data provided.",
               "detailedReference": "No data provided.",
               "inputFrom": "APO12.01",
-              "outputTo": "No data provided.",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -979,7 +979,7 @@
               "relatedGuidance": "No data provided.",
               "detailedReference": "No data provided.",
               "inputFrom": "APO12.02",
-              "outputTo": "No data provided.",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -990,7 +990,7 @@
               "relatedGuidance": "No data provided.",
               "detailedReference": "No data provided.",
               "inputFrom": "EDM01.01",
-              "outputTo": "No data provided.",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -1031,7 +1031,7 @@
               "relatedGuidance": "No data provided.",
               "detailedReference": "No data provided.",
               "inputFrom": "APO12.06 ",
-              "outputTo": "No data provided.",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -1042,7 +1042,7 @@
               "relatedGuidance": "No data provided.",
               "detailedReference": "No data provided.",
               "inputFrom": "DSS04.01 ",
-              "outputTo": "No data provided.",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -1053,7 +1053,7 @@
               "relatedGuidance": "No data provided.",
               "detailedReference": "No data provided.",
               "inputFrom": "DSS05.01 ",
-              "outputTo": "No data provided.",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -1064,7 +1064,7 @@
               "relatedGuidance": "No data provided.",
               "detailedReference": "No data provided.",
               "inputFrom": "DSS05.02 ",
-              "outputTo": "No data provided.",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -1075,7 +1075,7 @@
               "relatedGuidance": "No data provided.",
               "detailedReference": "No data provided.",
               "inputFrom": "DSS05.03 ",
-              "outputTo": "No data provided.",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -1086,7 +1086,7 @@
               "relatedGuidance": "No data provided.",
               "detailedReference": "No data provided.",
               "inputFrom": "EDM01.02",
-              "outputTo": "No data provided.",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -1097,7 +1097,7 @@
               "relatedGuidance": "No data provided.",
               "detailedReference": "No data provided.",
               "inputFrom": " EDM04.02",
-              "outputTo": "No data provided.",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -1138,7 +1138,7 @@
               "relatedGuidance": "No data provided.",
               "detailedReference": "No data provided.",
               "inputFrom": "APO02.04 ",
-              "outputTo": "No data provided.",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -1149,7 +1149,7 @@
               "relatedGuidance": "No data provided.",
               "detailedReference": "No data provided.",
               "inputFrom": "EDM01.01 ",
-              "outputTo": "No data provided.",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -1157,8 +1157,8 @@
             {
               "questionType": "Output",
               "questionDescription": "Target model gap analysis",
-              "relatedGuidance": "No data provided.",
-              "detailedReference": "No data provided.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
               "inputFrom": "string",
               "outputTo": "All APO, All BAI, All DSS, All MEA",
               "questionAnswer": 0,
@@ -1190,7 +1190,7 @@
               "relatedGuidance": "No data provided.",
               "detailedReference": "No data provided.",
               "inputFrom": "APO03.02",
-              "outputTo": "No data provided.",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -1201,7 +1201,7 @@
               "relatedGuidance": "No data provided.",
               "detailedReference": "No data provided.",
               "inputFrom": "EDM01.01",
-              "outputTo": "No data provided.",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -1243,7 +1243,7 @@
               "relatedGuidance": "No data provided.",
               "detailedReference": "No data provided.",
               "inputFrom": "APO07.03",
-              "outputTo": "No data provided.",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -1254,7 +1254,7 @@
               "relatedGuidance": "No data provided.",
               "detailedReference": "No data provided.",
               "inputFrom": "APO11.01",
-              "outputTo": "No data provided.",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -1265,7 +1265,7 @@
               "relatedGuidance": "No data provided.",
               "detailedReference": "No data provided.",
               "inputFrom": "Information security management system (ISMS) scope statement",
-              "outputTo": "No data provided.",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -1276,7 +1276,7 @@
               "relatedGuidance": "No data provided.",
               "detailedReference": "No data provided.",
               "inputFrom": "DSS06.03",
-              "outputTo": "No data provided.",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -1287,7 +1287,7 @@
               "relatedGuidance": "No data provided.",
               "detailedReference": "No data provided.",
               "inputFrom": "EDM01.01",
-              "outputTo": "No data provided.",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -1298,7 +1298,7 @@
               "relatedGuidance": "No data provided.",
               "detailedReference": "No data provided.",
               "inputFrom": "EDM04.02",
-              "outputTo": "No data provided.",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -1317,10 +1317,10 @@
             {
               "questionType": "Output",
               "questionDescription": "Definition of I&T-related roles and responsibilitie",
-              "relatedGuidance": "No data provided.",
-              "detailedReference": "No data provided.",
-              "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "DSS05.04",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -1339,7 +1339,7 @@
               "relatedGuidance": "No data provided.",
               "detailedReference": "No data provided.",
               "inputFrom": "Outside COBIT",
-              "outputTo": "No data provided.",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -1441,7 +1441,7 @@
               "relatedGuidance": "No data provided.",
               "detailedReference": "No data provided.",
               "inputFrom": "DSS01.04",
-              "outputTo": "No data provided.",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -1452,7 +1452,7 @@
               "relatedGuidance": "No data provided.",
               "detailedReference": "No data provided.",
               "inputFrom": "MEA03.02",
-              "outputTo": "No data provided.",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -1482,7 +1482,7 @@
               "relatedGuidance": "No data provided.",
               "detailedReference": "No data provided.",
               "inputFrom": "Outside COBIT ",
-              "outputTo": "No data provided.",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -1493,7 +1493,7 @@
               "relatedGuidance": "No data provided.",
               "detailedReference": "No data provided.",
               "inputFrom": "APO09.01",
-              "outputTo": "No data provided.",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -1523,7 +1523,7 @@
               "relatedGuidance": "No data provided.",
               "detailedReference": "No data provided.",
               "inputFrom": "APO01.03",
-              "outputTo": "No data provided.",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -1534,7 +1534,7 @@
               "relatedGuidance": "No data provided.",
               "detailedReference": "No data provided.",
               "inputFrom": "EDM01.03",
-              "outputTo": "No data provided.",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -1545,7 +1545,7 @@
               "relatedGuidance": "No data provided.",
               "detailedReference": "No data provided.",
               "inputFrom": "MEA03.02",
-              "outputTo": "No data provided.",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""

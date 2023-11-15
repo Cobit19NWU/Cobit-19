@@ -107,7 +107,7 @@
               "relatedGuidance": "No data provided.",
               "detailedReference": "No data provided.",
               "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -115,10 +115,10 @@
             {
               "questionType": "Maturity Level 2",
               "questionDescription": "Identify and assess all potential compliance requirements and the impact on I&T activities in areas such as data flow, privacy, internal controls, financial reporting, industry-specific regulations, intellectual property, health and safety.",
-              "relatedGuidance": "No data provided.",
-              "detailedReference": "No data provided.",
-              "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -126,10 +126,10 @@
             {
               "questionType": "Maturity Level 2",
               "questionDescription": "Assess the impact of I&T-related legal and regulatory requirements on third-party contracts related to IT operations, service providers and business trading partners.",
-              "relatedGuidance": "No data provided.",
-              "detailedReference": "No data provided.",
-              "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -137,10 +137,10 @@
             {
               "questionType": "Maturity Level 2",
               "questionDescription": "Define the consequences of noncompliance.",
-              "relatedGuidance": "No data provided.",
-              "detailedReference": "No data provided.",
-              "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -148,10 +148,10 @@
             {
               "questionType": "Maturity Level 3",
               "questionDescription": "Obtain independent counsel, where appropriate, on changes to applicable laws, regulations and standards.",
-              "relatedGuidance": "No data provided.",
-              "detailedReference": "No data provided.",
-              "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -159,10 +159,10 @@
             {
               "questionType": "Maturity Level 3",
               "questionDescription": "Maintain an up-to-date log of all relevant legal, regulatory and contractual requirements; their impact and required actions",
-              "relatedGuidance": "No data provided.",
-              "detailedReference": "No data provided.",
-              "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -170,10 +170,10 @@
             {
               "questionType": "Maturity Level 3",
               "questionDescription": "Maintain a harmonized and integrated overall register of external compliance requirements for the enterprise.",
-              "relatedGuidance": "No data provided.",
-              "detailedReference": "No data provided.",
-              "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -183,8 +183,8 @@
               "questionDescription": "No data provided.",
               "relatedGuidance": "CMMI Cybermaturity Platform, 2018",
               "detailedReference": "BC.RR Determine Legal / Regulatory Requirements",
-              "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -194,8 +194,8 @@
               "questionDescription": "No data provided.",
               "relatedGuidance": "HITRUST CSF version 9, September 2017",
               "detailedReference": "06.01 Compliance with Legal Requirements",
-              "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -205,8 +205,8 @@
               "questionDescription": "No data provided.",
               "relatedGuidance": "ISF, The Standard of Good Practice for Information Security 2016",
               "detailedReference": "SM2.3 Legal and Regulatory Compliance",
-              "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -221,10 +221,10 @@
             {
               "questionType": "Maturity Level 3",
               "questionDescription": "Regularly review and adjust policies, principles, standards, procedures and methodologies for their effectiveness in ensuring necessary compliance and addressing enterprise risk. Use internal and external experts, as required.",
-              "relatedGuidance": "No data provided.",
-              "detailedReference": "No data provided.",
-              "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -232,10 +232,10 @@
             {
               "questionType": "Maturity Level 3",
               "questionDescription": "Communicate new and changed requirements to all relevant personnel.",
-              "relatedGuidance": "No data provided.",
-              "detailedReference": "No data provided.",
-              "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -245,8 +245,8 @@
               "questionDescription": "No data provided.",
               "relatedGuidance": "King IV Report on Corporate Governance for South Africa, 2016",
               "detailedReference": "Part 5.4: Governance functional areas - Principle 13",
-              "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -261,10 +261,10 @@
             {
               "questionType": "Maturity Level 3",
               "questionDescription": "Regularly evaluate organizational policies, standards, procedures and methodologies in all functions of the enterprise to ensure compliance with relevant legal and regulatory requirements in relation to the processing of information.",
-              "relatedGuidance": "No data provided.",
-              "detailedReference": "No data provided.",
-              "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -272,10 +272,10 @@
             {
               "questionType": "Maturity Level 3",
               "questionDescription": "Address compliance gaps in policies, standards and procedures on a timely basis.",
-              "relatedGuidance": "No data provided.",
-              "detailedReference": "No data provided.",
-              "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -283,10 +283,10 @@
             {
               "questionType": "Maturity Level 3",
               "questionDescription": "Periodically evaluate business and IT processes and activities to ensure adherence to applicable legal, regulatory and contractual requirements.",
-              "relatedGuidance": "No data provided.",
-              "detailedReference": "No data provided.",
-              "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -294,10 +294,10 @@
             {
               "questionType": "Maturity Level 4",
               "questionDescription": "Regularly review for recurring patterns of compliance failures and assess lessons learned.",
-              "relatedGuidance": "No data provided.",
-              "detailedReference": "No data provided.",
-              "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -305,10 +305,10 @@
             {
               "questionType": "Maturity Level 5",
               "questionDescription": "Based on review and lessons learned, improve policies, standards, procedures, methodologies, and associated processes and activities.",
-              "relatedGuidance": "No data provided.",
-              "detailedReference": "No data provided.",
-              "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -323,10 +323,10 @@
             {
               "questionType": "Maturity Level 2",
               "questionDescription": "Obtain regular confirmation of compliance with internal policies from business and IT process owners and unit heads.",
-              "relatedGuidance": "No data provided.",
-              "detailedReference": "No data provided.",
-              "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -334,10 +334,10 @@
             {
               "questionType": "Maturity Level 2",
               "questionDescription": "Perform regular (and, where appropriate, independent) internal and external reviews to assess levels of compliance.",
-              "relatedGuidance": "No data provided.",
-              "detailedReference": "No data provided.",
-              "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -345,10 +345,10 @@
             {
               "questionType": "Maturity Level 2",
               "questionDescription": "If required, obtain assertions from third-party I&T service providers on levels of their compliance with applicable laws and regulations.",
-              "relatedGuidance": "No data provided.",
-              "detailedReference": "No data provided.",
-              "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -356,10 +356,10 @@
             {
               "questionType": "Maturity Level 2",
               "questionDescription": "If required, obtain assertions from business partners on levels of their compliance with applicable laws and regulations as they relate to intercompany electronic transactions.",
-              "relatedGuidance": "No data provided.",
-              "detailedReference": "No data provided.",
-              "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -367,10 +367,10 @@
             {
               "questionType": "Maturity Level 3",
               "questionDescription": "Integrate reporting on legal, regulatory and contractual requirements at an enterprisewide level, involving all business units.",
-              "relatedGuidance": "No data provided.",
-              "detailedReference": "No data provided.",
-              "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -378,10 +378,10 @@
             {
               "questionType": "Maturity Level 4",
               "questionDescription": "Monitor and report on noncompliance issues and, where necessary, investigate the root cause.",
-              "relatedGuidance": "No data provided.",
-              "detailedReference": "No data provided.",
-              "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "relatedGuidance": "string",
+              "detailedReference": "string",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -391,19 +391,19 @@
               "questionDescription": "No data provided.",
               "relatedGuidance": "CMMI Data Management Maturity Model, 2014",
               "detailedReference": "Supporting Processes - Process Quality Assurance",
-              "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
             },
             {
               "questionType": "Related Guidance",
-              "questionDescription": "string",
+              "questionDescription": "No data provided.",
               "relatedGuidance": "ISO/IEC 27002:2013/Cor.2:2015(E) ",
               "detailedReference": "18. Compliance",
-              "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "inputFrom": "string",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -461,7 +461,7 @@
               "questionType": "Input",
               "questionDescription": "Legal and regulatory compliance requirements",
               "inputFrom": "Outside COBIT",
-              "outputTo": "No data provided.",
+              "outputTo": "string,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -564,7 +564,8 @@
             {
               "questionType": "Output",
               "questionDescription": "Identified compliance gaps",
-              "inputFrom": "No data provided.",
+
+              "inputFrom": "string",
               "outputTo": "MEA04.08",
               "questionAnswer": 0,
               "questionScore": 0,
