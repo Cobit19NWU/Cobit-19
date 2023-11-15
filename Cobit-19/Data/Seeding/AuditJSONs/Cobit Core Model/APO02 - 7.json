@@ -219,10 +219,10 @@
             {
               "questionType": "Maturity Level 2",
               "questionDescription": "Develop and maintain an understanding of the current way of working, including the operational environment, enterprise architecture (business, information, data, applications and technology domains), enterprise culture and current challenges",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -230,10 +230,10 @@
             {
               "questionType": "Maturity Level 2",
               "questionDescription": "Develop and maintain an understanding of future enterprise direction, including enterprise strategy, goals and objectives. Understand the ambition level of the enterprise in terms of digitization, which may include a range of increasingly aspirational goals, from cutting costs, increasing customer centricity, or getting to market faster by digitizing internal operations, to creating entirely new revenue streams from new business models (e.g., platform business).",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -241,10 +241,10 @@
             {
               "questionType": "Maturity Level 2",
               "questionDescription": "Identify key stakeholders and obtain insight on their requirements",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -254,8 +254,8 @@
               "questionDescription": "No data provided.",
               "relatedGuidance": "COSO Enterprise Risk Management, June 2017",
               "detailedReference": "7. Strategy and Objective-Setting—Principle 6",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -270,10 +270,10 @@
             {
               "questionType": "Maturity Level 2",
               "questionDescription": "",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -281,10 +281,10 @@
             {
               "questionType": "Maturity Level 3",
               "questionDescription": "Assess digital maturity across different dimensions (e.g., ability of leadership to leverage technology, level of accepted technology risk, approach to innovation, culture and knowledge level of users). Assess appetite for change.",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -294,8 +294,8 @@
               "questionDescription": "No data provided.",
               "relatedGuidance": "COSO Enterprise Risk Management, June 2017 ",
               "detailedReference": "7. Strategy and Objective-Setting—Principle 6; 9. Review and Revision—Principle 15",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -310,10 +310,10 @@
             {
               "questionType": "Maturity Level 2",
               "questionDescription": "Summarize enterprise context and direction and identify specific I&T aspects of enterprise strategy (e.g., digitizing processes, implementing new technology, supporting legacy architecture, applying new digital business models, developing digital product portfolio, etc.).",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -321,10 +321,10 @@
             {
               "questionType": "Maturity Level 2",
               "questionDescription": "Define high-level I&T objectives and goals and specify their contribution to enterprise objectives",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -332,10 +332,10 @@
             {
               "questionType": "Maturity Level 3",
               "questionDescription": ". Detail required I&T services and products to realize enterprise objectives. Consider validated emerging technology or innovation ideas, reference standards, competitor business and I&T capabilities, comparative benchmarks of good practice, and emerging I&T service provision.",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -343,10 +343,10 @@
             {
               "questionType": "Maturity Level 3",
               "questionDescription": ". Determine I&T capabilities, methodologies and organizational approaches required to realize the defined I&T product and service portfolio. Consider different development methodologies (Agile, scrum, waterfall, bimodal IT), depending on business requirements. Consider how each could help realize I&T objectives. ",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -361,10 +361,10 @@
             {
               "questionType": "Maturity Level 3",
               "questionDescription": "Identify all gaps and changes required to realize the target environment",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -372,10 +372,10 @@
             {
               "questionType": "Maturity Level 3",
               "questionDescription": "Describe high-level changes in enterprise architecture (business, information, data, applications and technology domains).",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -383,10 +383,10 @@
             {
               "questionType": "Maturity Level 3",
               "questionDescription": "Consider the high-level implications of all gaps. Assess the impact of potential changes on business and I&T operating models, I&T research and development capabilities, and I&T investment programs.",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -394,10 +394,10 @@
             {
               "questionType": "Maturity Level 4",
               "questionDescription": " Consider the value of potential changes to business and IT capabilities, I&T services and enterprise architecture, and the implications if no changes are realized.",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -405,10 +405,10 @@
             {
               "questionType": "Maturity Level 4",
               "questionDescription": "Refine the target environment definition and prepare a value statement outlining benefits of the target environment.",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -423,10 +423,10 @@
             {
               "questionType": "Maturity Level 3",
               "questionDescription": " Define initiatives required to close gaps between current and target environments. Integrate initiatives into a coherent I&T strategy that aligns I&T with all aspects of the business.",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -434,10 +434,10 @@
             {
               "questionType": "Maturity Level 3",
               "questionDescription": "Detail a road map that defines the incremental steps required to achieve the goals and objectives of the I&T strategy. Ensure actions are included to train people with new skills, support adoption of new technology, sustain change throughout the organization, etc.",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -445,10 +445,10 @@
             {
               "questionType": "Maturity Level 3",
               "questionDescription": "Consider the external ecosystem (enterprise partners, suppliers, start-ups, etc.) to help support execution of the road map.",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -456,10 +456,10 @@
             {
               "questionType": "Maturity Level 3",
               "questionDescription": "Group actions into programs and/or projects with a clear goal or deliverable. For each project, identify high-level resource requirements, schedule, investment/operational budget, risk, change impact, etc.",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -467,10 +467,10 @@
             {
               "questionType": "Maturity Level 3",
               "questionDescription": "Determine dependencies, overlaps, synergies and impacts among projects, and prioritize.",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -478,10 +478,10 @@
             {
               "questionType": "Maturity Level 3",
               "questionDescription": "Finalize road map, indicating relative scheduling and interdependencies of projects.",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -489,10 +489,10 @@
             {
               "questionType": "Maturity Level 3",
               "questionDescription": "Ensure focus on the transformation journey. Appoint a champion of digital transformation and alignment between business and I&T (chief digital officer [CDO] or other traditional C-suite role).",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -500,10 +500,10 @@
             {
               "questionType": "Maturity Level 3",
               "questionDescription": "Obtain support and formal approval of plan from stakeholders.",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -511,10 +511,10 @@
             {
               "questionType": "Maturity Level 3",
               "questionDescription": " Translate objectives into measurable outcomes represented by metrics (what) and targets (how much). Ensure that outcomes and measures correlate to enterprise benefits.",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -524,8 +524,8 @@
               "questionDescription": "No data provided.",
               "relatedGuidance": "ISF, The Standard of Good Practice for Information Security 2016",
               "detailedReference": "SG2.1 Information Security Strategy",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -535,8 +535,8 @@
               "questionDescription": "No data provided.",
               "relatedGuidance": "ITIL V3, 2011",
               "detailedReference": "Service Strategy, 4.1 Strategy management for IT services",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -551,10 +551,10 @@
             {
               "questionType": "Maturity Level 3",
               "questionDescription": "Develop a communication plan covering the required messages, target audiences, communication mechanisms/channels and schedules.",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -562,10 +562,10 @@
             {
               "questionType": "Maturity Level 3",
               "questionDescription": "Prepare a communication package that delivers the plan effectively, using available media and technologies.",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -573,10 +573,10 @@
             {
               "questionType": "Maturity Level 3",
               "questionDescription": "Develop and maintain a network for endorsing, supporting and driving the I&T strategy",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -584,10 +584,10 @@
             {
               "questionType": "Maturity Level 3",
               "questionDescription": "Obtain feedback and update the communication plan and delivery as required",
-              "relatedGuidance": "string",
-              "detailedReference": "string",
-              "inputFrom": "string",
-              "outputTo": "string,",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
