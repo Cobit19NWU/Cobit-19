@@ -128,7 +128,11 @@
         </section>
     </div>
 </div>
-
+<script>
+    if (window.location.pathname.toLowerCase().includes("/login")) {
+        document.title = "Assessment Center";
+    }
+</script>
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />
 }

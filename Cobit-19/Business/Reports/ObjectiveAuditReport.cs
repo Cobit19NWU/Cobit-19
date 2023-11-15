@@ -101,7 +101,7 @@ namespace Cobit_19.Business.Reports
             gridRow.Height = 25;
             gridRow.Cells[0].Value = "Maturity Level:" + assesmentData.Maturity.ToString();
             gridRow.Cells[0].Style = cellStyle;
-            gridRow.Cells[1].Value = "Year:    " + assesmentData.Date.Year;
+            gridRow.Cells[1].Value = "Date:    " + DateTime.Now;
             gridRow.Cells[1].Style = cellStyle;
             gridRow.Style = cellStyle;
 

@@ -128,7 +128,7 @@
               "relatedGuidance": "No data provided.",
               "detailedReference": "No data provided.",
               "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -139,7 +139,7 @@
               "relatedGuidance": "No data provided.",
               "detailedReference": "No data provided.",
               "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -151,7 +151,7 @@
               "relatedGuidance": "No data provided.",
               "detailedReference": "No data provided.",
               "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -162,7 +162,7 @@
               "relatedGuidance": "No data provided.",
               "detailedReference": "No data provided.",
               "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -173,7 +173,7 @@
               "relatedGuidance": "No data provided.",
               "detailedReference": "No data provided.",
               "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -184,7 +184,7 @@
               "relatedGuidance": "No data provided.",
               "detailedReference": "No data provided.",
               "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -195,7 +195,7 @@
               "relatedGuidance": "No data provided.",
               "detailedReference": "No data provided.",
               "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -206,7 +206,7 @@
               "relatedGuidance": "No data provided.",
               "detailedReference": "No data provided.",
               "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -217,7 +217,7 @@
               "relatedGuidance": "No data provided.",
               "detailedReference": "No data provided.",
               "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -229,7 +229,7 @@
               "relatedGuidance": "CMMI Data Management Maturity Model, 2014",
               "detailedReference": "Data Management Strategy - Data Management Strategy; Data Governance—Governance Managementm",
               "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -241,7 +241,7 @@
               "relatedGuidance": "ITIL V3, 2011",
               "detailedReference": "Service Design, 5.2 Management of Data and Information",
               "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -252,7 +252,7 @@
               "relatedGuidance": "The CIS Critical Security Controls for Effective Cyber Defense Version 6.1, August 2016",
               "detailedReference": "CSC 13: Data Protection",
               "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -271,7 +271,7 @@
               "relatedGuidance": "No data provided.",
               "detailedReference": "No data provided.",
               "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -282,7 +282,7 @@
               "relatedGuidance": "No data provided.",
               "detailedReference": "No data provided.",
               "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -293,7 +293,7 @@
               "relatedGuidance": "No data provided.",
               "detailedReference": "No data provided.",
               "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -304,7 +304,7 @@
               "relatedGuidance": "No data provided.",
               "detailedReference": "No data provided.",
               "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -315,7 +315,7 @@
               "relatedGuidance": "No data provided.",
               "detailedReference": "No data provided.",
               "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -326,7 +326,7 @@
               "relatedGuidance": "No data provided.",
               "detailedReference": "No data provided.",
               "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -337,7 +337,7 @@
               "relatedGuidance": "CMMI Data Management Maturity Model, 2014",
               "detailedReference": "Data Governance - Business Glossary",
               "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -348,7 +348,7 @@
               "relatedGuidance": "ISF, The Standard of Good Practice for Information Security 2016",
               "detailedReference": "IM1.1 Information Classification and Handling",
               "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -379,7 +379,7 @@
               "relatedGuidance": "No data provided.",
               "detailedReference": "No data provided.",
               "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -390,7 +390,7 @@
               "relatedGuidance": "No data provided.",
               "detailedReference": "No data provided.",
               "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "outputTo": "No data provided., ",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -401,7 +401,7 @@
               "relatedGuidance": "No data provided.",
               "detailedReference": "No data provided.",
               "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "outputTo": "No data provided., ",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -412,7 +412,7 @@
               "relatedGuidance": "No data provided.",
               "detailedReference": "No data provided.",
               "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "outputTo": "No data provided., ",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -423,7 +423,7 @@
               "relatedGuidance": "No data provided.",
               "detailedReference": "No data provided.",
               "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "outputTo": "No data provided., ",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -434,7 +434,7 @@
               "relatedGuidance": "No data provided.",
               "detailedReference": "No data provided.",
               "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "outputTo": "No data provided., ",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -445,7 +445,7 @@
               "relatedGuidance": "No data provided.",
               "detailedReference": "No data provided.",
               "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "outputTo": "No data provided., ",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -456,7 +456,7 @@
               "relatedGuidance": "No data provided.",
               "detailedReference": "No data provided.",
               "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "outputTo": "No data provided., ",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -467,7 +467,7 @@
               "relatedGuidance": "No data provided.",
               "detailedReference": "No data provided.",
               "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "outputTo": "No data provided., ",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -478,7 +478,7 @@
               "relatedGuidance": "No data provided.",
               "detailedReference": "No data provided.",
               "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "outputTo": "No data provided., ",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -489,7 +489,7 @@
               "relatedGuidance": "CMMI Data Management Maturity Model, 2014",
               "detailedReference": "Data Governance—Metadata Management",
               "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -500,7 +500,7 @@
               "relatedGuidance": "ISO/IEC 27002:2013/Cor.2:2015(E)",
               "detailedReference": "8.2 Information classification",
               "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -520,7 +520,7 @@
               "relatedGuidance": "No data provided.",
               "detailedReference": "No data provided.",
               "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -531,7 +531,7 @@
               "relatedGuidance": "No data provided.",
               "detailedReference": "No data provided.",
               "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "outputTo": "No data provided., ",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -542,7 +542,7 @@
               "relatedGuidance": "No data provided.",
               "detailedReference": "No data provided.",
               "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "outputTo": "No data provided., ",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -553,7 +553,7 @@
               "relatedGuidance": "No data provided.",
               "detailedReference": "No data provided.",
               "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "outputTo": "No data provided., ",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -564,7 +564,7 @@
               "relatedGuidance": "No data provided.",
               "detailedReference": "No data provided.",
               "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "outputTo": "No data provided., ",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -575,7 +575,7 @@
               "relatedGuidance": "No data provided.",
               "detailedReference": "No data provided.",
               "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "outputTo": "No data provided., ",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -586,7 +586,7 @@
               "relatedGuidance": "No data provided.",
               "detailedReference": "No data provided.",
               "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "outputTo": "No data provided., ",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -597,7 +597,7 @@
               "relatedGuidance": "CMMI Cybermaturity Platform, 2018",
               "detailedReference": "DP.DR Safeguard Data at Rest; DP.DT Safeguard Data in Transit; DP.IP Integrity and Data Leak Prevention",
               "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -608,7 +608,7 @@
               "relatedGuidance": "CMMI Data Management Maturity Model, 2014",
               "detailedReference": "Data Quality - Data Quality Strategy",
               "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -629,7 +629,7 @@
               "relatedGuidance": "No data provided.",
               "detailedReference": "No data provided.",
               "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -640,7 +640,7 @@
               "relatedGuidance": "No data provided.",
               "detailedReference": "No data provided.",
               "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "outputTo": "No data provided., ",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -651,7 +651,7 @@
               "relatedGuidance": "No data provided.",
               "detailedReference": "No data provided.",
               "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "outputTo": "No data provided., ",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -662,7 +662,7 @@
               "relatedGuidance": "No data provided.",
               "detailedReference": "No data provided.",
               "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "outputTo": "No data provided., ",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -673,7 +673,7 @@
               "relatedGuidance": "No data provided.",
               "detailedReference": "No data provided.",
               "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "outputTo": "No data provided., ",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -684,7 +684,7 @@
               "relatedGuidance": "No data provided.",
               "detailedReference": "No data provided.",
               "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "outputTo": "No data provided., ",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -695,7 +695,7 @@
               "relatedGuidance": "CMMI Data Management Maturity Model, 2014",
               "detailedReference": "Data Quality—Data Profiling",
               "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -706,7 +706,7 @@
               "relatedGuidance": "National Institute of Standards and Technology Special Publication 800-53, Revision 5, August 2017",
               "detailedReference": "3.20 System and information integrity (SI-1)",
               "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -725,7 +725,7 @@
               "relatedGuidance": "No data provided.",
               "detailedReference": "No data provided.",
               "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -736,7 +736,7 @@
               "relatedGuidance": "No data provided.",
               "detailedReference": "No data provided.",
               "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "outputTo": "No data provided., ",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -747,7 +747,7 @@
               "relatedGuidance": "No data provided.",
               "detailedReference": "No data provided.",
               "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "outputTo": "No data provided., ",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -758,7 +758,7 @@
               "relatedGuidance": "No data provided.",
               "detailedReference": "No data provided.",
               "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "outputTo": "No data provided., ",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -769,7 +769,7 @@
               "relatedGuidance": "No data provided.",
               "detailedReference": "No data provided.",
               "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "outputTo": "No data provided., ",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -780,7 +780,7 @@
               "relatedGuidance": "CMMI Data Management Maturity Model, 2014",
               "detailedReference": "Data Quality—Data Quality Assessment",
               "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -800,7 +800,7 @@
               "relatedGuidance": "No data provided.",
               "detailedReference": "No data provided.",
               "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -811,7 +811,7 @@
               "relatedGuidance": "No data provided.",
               "detailedReference": "No data provided.",
               "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "outputTo": "No data provided., ",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -822,7 +822,7 @@
               "relatedGuidance": "No data provided.",
               "detailedReference": "No data provided.",
               "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "outputTo": "No data provided., ",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -833,7 +833,7 @@
               "relatedGuidance": "No data provided.",
               "detailedReference": "No data provided.",
               "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "outputTo": "No data provided., ",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -845,7 +845,7 @@
               "relatedGuidance": "CMMI Data Management Maturity Model, 2014",
               "detailedReference": "Data Quality—Data Cleansing",
               "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -864,7 +864,7 @@
               "relatedGuidance": "No data provided.",
               "detailedReference": "No data provided.",
               "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -875,7 +875,7 @@
               "relatedGuidance": "No data provided.",
               "detailedReference": "No data provided.",
               "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "outputTo": "No data provided., ",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -886,7 +886,7 @@
               "relatedGuidance": "No data provided.",
               "detailedReference": "No data provided.",
               "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "outputTo": "No data provided., ",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -897,7 +897,7 @@
               "relatedGuidance": "No data provided.",
               "detailedReference": "No data provided.",
               "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "outputTo": "No data provided., ",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -908,7 +908,7 @@
               "relatedGuidance": "No data provided.",
               "detailedReference": "No data provided.",
               "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "outputTo": "No data provided., ",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -919,7 +919,7 @@
               "relatedGuidance": "No data provided.",
               "detailedReference": "No data provided.",
               "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "outputTo": "No data provided., ",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -932,7 +932,7 @@
               "relatedGuidance": "CMMI Data Management Maturity Model, 2014",
               "detailedReference": "Data Operations—Data Lifecycle Management",
               "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -952,7 +952,7 @@
               "relatedGuidance": "No data provided.",
               "detailedReference": "No data provided.",
               "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -963,7 +963,7 @@
               "relatedGuidance": "No data provided.",
               "detailedReference": "No data provided.",
               "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "outputTo": "No data provided., ",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -974,7 +974,7 @@
               "relatedGuidance": "No data provided.",
               "detailedReference": "No data provided.",
               "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "outputTo": "No data provided., ",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -985,7 +985,7 @@
               "relatedGuidance": "No data provided.",
               "detailedReference": "No data provided.",
               "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "outputTo": "No data provided., ",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -998,7 +998,7 @@
               "relatedGuidance": "CMMI Data Management Maturity Model, 2014",
               "detailedReference": "Platform and Architecture—Historical Data, Retention and Archiving",
               "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -1018,7 +1018,7 @@
               "relatedGuidance": "No data provided.",
               "detailedReference": "No data provided.",
               "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "outputTo": "No data provided., ",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -1029,7 +1029,7 @@
               "relatedGuidance": "No data provided.",
               "detailedReference": "No data provided.",
               "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "outputTo": "No data provided., ",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -1040,7 +1040,7 @@
               "relatedGuidance": "No data provided.",
               "detailedReference": "No data provided.",
               "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "outputTo": "No data provided., ",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -1051,7 +1051,7 @@
               "relatedGuidance": "The CIS Critical Security Controls for Effective Cyber Defense Version 6.1, August 2016",
               "detailedReference": "CSC 10: Data Recovery Capability",
               "inputFrom": "No data provided.",
-              "outputTo": "No data provided.",
+              "outputTo": "No data provided.,",
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
@@ -1083,7 +1083,7 @@
               "questionDescription": "Data security and control guidelines",
               "relatedGuidance": "No data provided.",
               "detailedReference": "No data provided.",
-              "inputFrom": "No data provided.",
+              "inputFrom": "APO01.07",
               "outputTo": "No data provided.",
               "questionAnswer": 0,
               "questionScore": 0,
@@ -1720,7 +1720,7 @@
           "questionType": "Component question",
           "relevantPolicy": "Data management policy",
           "policyDescription": "Describes the organization’s commitment to manage data assets across the data life cycle, from creation through delivery, maintenance and archiving.",
-          "detailedGuidance": "No data provided.",
+          "detailedGuidance": "No data provided. ",
           "detailedReference": "No data provided.",
           "questionAnswer": 0,
           "questionScore": 0,
@@ -1730,7 +1730,7 @@
           "questionType": "Component question",
           "relevantPolicy": "Privacy policy",
           "policyDescription": "Documents the collection, use, disclosure and management of personal data. Personal data can be any data that may be used to identify an individual, including, but not limited to, name, address, date of birth, marital status, contact information, ID issue and expiry date, financial records, credit information, medical history, travel destination, and intent to acquire goods or services. The privacy policy defines how an enterprise collects, stores and releases personal information; how and when the client is informed of specific information that is collected and whether it is kept confidential, shared with partners, or sold to other firms or enterprises. The policy mandates compliance with relevant legislation related to data protection.",
-          "detailedGuidance": "No data provided.",
+          "detailedGuidance": "No data provided. ",
           "detailedReference": "No data provided.",
           "questionAnswer": 0,
           "questionScore": 0,
