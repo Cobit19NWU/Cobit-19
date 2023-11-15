@@ -26,16 +26,16 @@ namespace Cobit_19.Business.Reports
             _pdfDocument.PageSettings.Orientation = PdfPageOrientation.Landscape;
         }
 
-        public MemoryStream create(List<DesignFactorDto> designFactors, string chartBase64)
+        public MemoryStream create(List<DesignFactorDto> designFactors, string chartBase64, AuditDto audit)
         {
             AssesmentData data = new AssesmentData()
             {
                 Organization = "NWU",
                 Assessment = "COBIT 2019",
                 Lead = "Gerni Visser",
-                FocusArea = "Core Model",
+                FocusArea = audit.FocusArea.Name,
                 Maturity = 1,
-                Date = DateTime.Now,
+                Date = audit.DateCreated
             };
 
 

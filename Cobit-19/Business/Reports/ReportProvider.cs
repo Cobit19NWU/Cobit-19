@@ -69,8 +69,10 @@ namespace Cobit_19.Business.Reports
         {
             var designfactors = await _auditProvider.getDesignFactorsAsync(auditId);
 
+            var audit = await _auditProvider.getAsync(auditId);
+
             GoalsCascadeReport goalsCascadeReport = new GoalsCascadeReport();
-            var memoryStream = goalsCascadeReport.create(designfactors, chartImage);
+            var memoryStream = goalsCascadeReport.create(designfactors, chartImage, audit);
 
             return memoryStream;
         }
