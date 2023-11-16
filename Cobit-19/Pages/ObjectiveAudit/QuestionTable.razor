@@ -3,6 +3,7 @@
 @using Cobit_19.Shared.Dtos
 @using Cobit_19.Business.ObjectiveAudits
 @using Microsoft.AspNetCore.Identity;
+@using Cobit_19.Shared.Enums;
 @inject IServiceProvider serviceProvider
 @inject ObjectiveAuditProvider objectiveAuditProvider
 @inject UserManager<ApplicationUser> userManager
@@ -35,6 +36,8 @@
     public string userID;
     public UserDto userDto;
     public string userRole;
+    public ObjectiveAuditDto objectiveAudit;
+    public AuditStatus status;
 
     protected async override Task OnInitializedAsync()
     {
@@ -71,6 +74,8 @@
         userDto = await userManagementProvider.GetUserDtoByIdAsync(userID);
 
         userRole = await userManagementProvider.getUserRoleAsync(userDto);
+
+        objectiveAudit = objectiveAuditProvider.getByID(objectiveAuditId);
     }
 
     private bool readOnlyUserCheck()
@@ -85,7 +90,7 @@
         }
     }
 
-    private void updateComponent(ChangeEventArgs e, ComponentQuestionDto compQuestion = null, SubComponentQuestionDto subCompQuestion = null)
+    private async Task updateComponent(ChangeEventArgs e, ComponentQuestionDto compQuestion = null, SubComponentQuestionDto subCompQuestion = null)
     {
 
         if (subCompQuestion != null)
@@ -141,6 +146,27 @@
                 auditJSON.maturityLevel5PercFinal = finalMaturityLevelPerc;
             }
         }
+
+        status = AuditStatus.NotStarted;
+
+        foreach (var component in auditJSON.components)
+        {
+            if (component.componentPercFinal != 0)
+            {
+                status = AuditStatus.InProgress;
+            }
+        }
+
+        var editedObjectiveAudit = new ObjectiveAuditEditorDto
+            {
+                ID = objectiveAudit.ID,
+                ApplicationUserID = objectiveAudit.ApplicationUserID,
+                Selected = objectiveAudit.Selected,
+                Status = status,
+                DateCompleted = objectiveAudit.DateCompleted
+            };
+
+        await objectiveAuditProvider.updateAsync(editedObjectiveAudit);
 
         auditJSON.maturityLevel = objectiveAuditProvider.CalculateFinalMaturityLevel(auditJSON);
 
