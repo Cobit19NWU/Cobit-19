@@ -10,6 +10,8 @@ using Cobit_19.Business.Audits;
 using NuGet.DependencyResolver;
 using static Cobit_19.Business.Reports.ObjectiveAuditData;
 using Cobit_19.Business.Admin;
+using Microsoft.AspNetCore.Identity;
+using Cobit_19.Data.Models;
 
 namespace Cobit_19.Business.Reports
 {
@@ -19,13 +21,15 @@ namespace Cobit_19.Business.Reports
         private readonly AuditProvider _auditProvider;
         private readonly ObjectiveAuditProvider _objectiveAuditProvider;
         private readonly UserManagementProvider _userManagementProvider;
+        private readonly UserManager<ApplicationUser> _userManager;
 
-        public ReportProvider(AppDbContext dbContext, AuditProvider auditProvider, ObjectiveAuditProvider objectiveAuditProvider, UserManagementProvider userManagementProvider)
+        public ReportProvider(AppDbContext dbContext, AuditProvider auditProvider, ObjectiveAuditProvider objectiveAuditProvider, UserManagementProvider userManagementProvider, UserManager<ApplicationUser> userManager)
         {
             _dbContext = dbContext;
             _auditProvider = auditProvider;
             _objectiveAuditProvider = objectiveAuditProvider;
             _userManagementProvider = userManagementProvider;
+            _userManager = userManager;
         }
 
         public async Task<MemoryStream> createObjectiveAuditReport(int objectiveAuditId)
@@ -71,8 +75,10 @@ namespace Cobit_19.Business.Reports
 
             var audit = await _auditProvider.getAsync(auditId);
 
+            var auditCreatedUser = await _userManager.FindByIdAsync(audit.User.ID);
+
             GoalsCascadeReport goalsCascadeReport = new GoalsCascadeReport();
-            var memoryStream = goalsCascadeReport.create(designfactors, chartImage, audit);
+            var memoryStream = goalsCascadeReport.create(designfactors, chartImage, audit, auditCreatedUser);
 
             return memoryStream;
         }

@@ -1,4 +1,5 @@
 ﻿using Cobit_19.Business.Audits;
+using Cobit_19.Data.Models;
 using Cobit_19.Pages.Audit;
 using Cobit_19.Shared.Dtos;
 using Microsoft.AspNetCore.Razor.Language;
@@ -26,13 +27,13 @@ namespace Cobit_19.Business.Reports
             _pdfDocument.PageSettings.Orientation = PdfPageOrientation.Landscape;
         }
 
-        public MemoryStream create(List<DesignFactorDto> designFactors, string chartBase64, AuditDto audit)
+        public MemoryStream create(List<DesignFactorDto> designFactors, string chartBase64, AuditDto audit, ApplicationUser auditCreator)
         {
             AssesmentData data = new AssesmentData()
             {
                 Organization = "NWU",
                 Assessment = "COBIT 2019",
-                Lead = "Gerni Visser",
+                Lead = auditCreator.FirstName +  " " + auditCreator.LastName,
                 FocusArea = audit.FocusArea.Name,
                 Maturity = 1,
                 Date = audit.DateCreated
