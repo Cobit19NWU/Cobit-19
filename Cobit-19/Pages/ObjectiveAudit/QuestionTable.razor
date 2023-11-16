@@ -90,7 +90,7 @@
         }
     }
 
-    private async Task updateComponent(ChangeEventArgs e, ComponentQuestionDto compQuestion = null, SubComponentQuestionDto subCompQuestion = null)
+    private void updateComponent(ChangeEventArgs e, ComponentQuestionDto compQuestion = null, SubComponentQuestionDto subCompQuestion = null)
     {
 
         if (subCompQuestion != null)
@@ -166,7 +166,7 @@
                 DateCompleted = objectiveAudit.DateCompleted
             };
 
-        await objectiveAuditProvider.updateAsync(editedObjectiveAudit);
+        objectiveAuditProvider.update(editedObjectiveAudit);
 
         auditJSON.maturityLevel = objectiveAuditProvider.CalculateFinalMaturityLevel(auditJSON);
 

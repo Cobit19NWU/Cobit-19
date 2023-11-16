@@ -85,7 +85,7 @@ namespace Cobit_19.Business.ObjectiveAudits
 
         // Set selected objectiveAudits
         // TODO Implement status functionality
-        public async Task<ObjectiveAuditDto> updateAsync(ObjectiveAuditEditorDto objectiveAuditEditor)
+        public ObjectiveAuditDto update(ObjectiveAuditEditorDto objectiveAuditEditor)
         {
             var objectiveAudit = _dbContext.ObjectiveAudits.Find(objectiveAuditEditor.ID);
 
@@ -106,7 +106,7 @@ namespace Cobit_19.Business.ObjectiveAudits
             }
 
             _dbContext.ObjectiveAudits.Update(objectiveAudit);
-            await _dbContext.SaveChangesAsync();
+            _dbContext.SaveChanges();
 
             return _mapper.Map<ObjectiveAuditDto>(objectiveAudit);
         }
