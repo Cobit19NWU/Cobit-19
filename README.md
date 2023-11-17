@@ -46,9 +46,9 @@ The COBIT-19 solution as developed by the honors class of 2022 can be found [her
 
  Use the following credentials to login:
  
- ```Username: Admin@COBIT19.com ```
+ ```Username:  ```
 
- ```Password: Modisane12#```
+ ```Password: ```
 
 
 ### Tests
