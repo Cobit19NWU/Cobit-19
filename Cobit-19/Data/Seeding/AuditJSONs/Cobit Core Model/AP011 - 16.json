@@ -761,7 +761,6 @@
           "subComponentName": "Establish a quality management system (QMS).",
           "subComponentDescription": "Establish and maintain a quality management system (QMS) that provides a standard formal and continuous approach to quality management of information. The QMS should enable technology and business processes to align with business requirements and enterprise quality management.",
           "subComponentQuestions": [
-
             {
               "questionType": "Input",
               "questionDescription": "Enterprisewide quality system",
@@ -805,7 +804,9 @@
               "questionAnswer": 0,
               "questionScore": 0,
               "questionComment": ""
-            },
+            }
+          ]
+        },
             {
               "subComponentCode": "APO11.02  ",
               "subComponentName": "Focus quality management on customers.",
@@ -1015,9 +1016,7 @@
               ]
             }
           ]
-        }
-      ]
-    },
+        },
     {
       "componentName": "D",
       "componentDescription": "Peoples, Skills and Competencies",

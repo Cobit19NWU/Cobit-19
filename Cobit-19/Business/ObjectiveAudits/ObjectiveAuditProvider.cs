@@ -310,11 +310,11 @@ namespace Cobit_19.Business.ObjectiveAudits
             var query = subCompQuestions.Where(question =>
                 question.questionType.Equals("Input"));
 
-            var outputQuestions = query.ToList();
+            var inputQuestions = query.ToList();
 
-            if (outputQuestions.Count > 0)
+            if (inputQuestions.Count > 0)
             {
-                return outputQuestions;
+                return inputQuestions;
             }
             else
             {
@@ -491,8 +491,8 @@ namespace Cobit_19.Business.ObjectiveAudits
 
                     if (MLevelAnswerVals != 0)
                     {
-                        int finalAnswerValues = MLevelAnswerVals + inputAnswerVals + outputAnswerVals + RGAnswerVals;
-                        double finalWeightedValues = MLevelWeightedVals + inputWeightedVals + outputWeightedVals + RGWeightedVals;
+                        int finalAnswerValues = MLevelAnswerVals;
+                        double finalWeightedValues = MLevelWeightedVals;
                         double finalMLevelPerc = Math.Round((finalWeightedValues / finalAnswerValues) * 100, 2);
                         MLevelPercs[Mlevel] = finalMLevelPerc;
                     }
@@ -502,6 +502,8 @@ namespace Cobit_19.Business.ObjectiveAudits
                     }
                 }
             }
+
+            MLevelPercs["Maturity Level 1"] = MLevelPercs["Maturity Level 2"];
 
             return MLevelPercs;
         }
@@ -546,16 +548,8 @@ namespace Cobit_19.Business.ObjectiveAudits
                     if (kvp.Key == MLevel)
                     {
                         maturityLevelSum += kvp.Value;
+                        valueCount++;
                     }
-                }
-            }
-            
-            foreach (ComponentDto component in fullAudit.components)
-            {
-                if (component.componentName != "A")
-                {
-                    maturityLevelSum += component.componentPercFinal;
-                    valueCount++;
                 }
             }
 
@@ -572,36 +566,45 @@ namespace Cobit_19.Business.ObjectiveAudits
             double level4Perc = fullAudit.maturityLevel4PercFinal;
             double level5Perc = fullAudit.maturityLevel5PercFinal;
 
-            if (level1Perc > 0.93 &&
-                level2Perc > 0.93 &&
-                level3Perc > 0.93 &&
-                level4Perc > 0.93 &&
-                level5Perc > 0.5)
+            if (level1Perc == 0 &&
+                level2Perc == 0 &&
+                level3Perc == 0 &&
+                level4Perc == 0 &&
+                level5Perc == 0)
+            {
+                return 0;
+            }
+
+            if (level1Perc > 93 &&
+                level2Perc > 93 &&
+                level3Perc > 93 &&
+                level4Perc > 93 &&
+                level5Perc > 50)
             {
                 return 5; // Maturity Level 5
             }
-            else if (level1Perc > 0.93 &&
-                     level2Perc > 0.93 &&
-                     level3Perc > 0.93 &&
-                     level4Perc > 0.5)
+            else if (level1Perc > 93 &&
+                     level2Perc > 93 &&
+                     level3Perc > 93 &&
+                     level4Perc > 50)
             {
                 return 4; // Maturity Level 4
             }
-            else if (level1Perc > 0.93 &&
-                     level2Perc > 0.93 &&
-                     level3Perc > 0.5)
+            else if (level1Perc > 93 &&
+                     level2Perc > 93 &&
+                     level3Perc > 50)
             {
                 return 3; // Maturity Level 3
             }
-            else if (level1Perc > 0.5 &&
-                     level2Perc > 0.5 &&
-                     level3Perc > 0.5 &&
-                     level4Perc > 0.5)
+            else if (level1Perc > 50 &&
+                     level2Perc > 50 &&
+                     level3Perc > 50 &&
+                     level4Perc > 50)
             {
                 return 2; // Maturity Level 2
             }
-            else if (level1Perc <= 0.5 ||
-                     level2Perc <= 0.5)
+            else if (level1Perc <= 50 ||
+                     level2Perc <= 50)
             {
                 return 1; // Maturity Level 1
             }
