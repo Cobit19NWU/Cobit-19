@@ -1,0 +1,138 @@
+﻿@page 
+@model LoginModel
+
+<style>
+    header{
+    display:none;
+    }
+    .login-header {
+        text-align: center;
+        color: purple;
+        font-size: 2em;
+        margin-bottom: 30px;
+    }
+
+    .form-floating {
+        margin-bottom: 20px;
+    }
+
+    .checkbox {
+        margin-top: 10px;
+    }
+
+    .btn-primary {
+        background-color: purple;
+        border-color: purple;
+    }
+
+        .btn-primary:hover {
+            background-color: #6b38a6;
+            border-color: #6b38a6;
+        }
+
+    .login-links a {
+        color: purple;
+        text-decoration: none;
+        margin-right: 20px;
+    }
+
+        .login-links a:hover {
+            text-decoration: underline;
+        }
+
+    .custom-login-heading {
+        text-align: center;
+    }
+
+    .login-section {
+        background: none;
+        border: none;
+        padding: 0;
+    }
+    .footer{
+    visibility:hidden;
+    }
+
+    .form-group {
+        margin-bottom:50px; 
+    }
+
+    .rectangular-input {
+        width: 100%;
+        border: 1px solid #ccc; 
+        border-radius: 0; 
+        padding: 10px; 
+        transition: border-color 0.2s;
+    }
+
+    input.rectangular-input:focus {
+      border-color: #800080;
+      outline: none;
+   }
+
+    .text-purple {
+        color: purple;
+    }
+
+</style>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-white mb-3">
+  
+    <div class="container-fluid">
+        <a class="navbar-brand">Assessment Center</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse" id="navbarSupportedContent">
+    
+        </div>
+    </div>
+</nav>
+
+<h1 class="login-header"></h1>
+<div class="row justify-content-center">
+    <div class="col-md-4">
+        <section class="login-section">
+            <form id="account" method="post">
+        
+                <h2 class="custom-login-heading text-purple">Login</h2>
+                <hr />
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-floating mb-4">
+                    <input asp-for="Input.Email" class="rectangular-input form-control" autocomplete="username" aria-required="true" />
+                    <label asp-for="Input.Email" class="form-label"></label>
+                    <span asp-validation-for="Input.Email" class="text-danger"></span>
+                </div>
+                <div class="form-floating mb-4">
+                    <input asp-for="Input.Password" class="rectangular-input form-control" autocomplete="current-password" aria-required="true" />
+                    <label asp-for="Input.Password" class="form-label"></label>
+                    <span asp-validation-for="Input.Password" class="text-danger"></span>
+                </div>
+                <div>
+                    <div class="checkbox">
+                        <label asp-for="Input.RememberMe" class="form-label">
+                            <input class="form-check-input" asp-for="Input.RememberMe" />
+                            @Html.DisplayNameFor(m => m.Input.RememberMe)
+                        </label>
+                    </div>
+                </div>
+                <div>
+                    <button id="login-submit" type="submit" class="w-100 btn btn-lg btn-primary mb-2">Login</button>
+                </div>
+                <div class="login-links form-group text-center mb-3">
+                    
+                    <p class="style2">© <script>document.write(new Date().getFullYear())</script> crafted for Assessment-Center <i class="fa fa-heart text-danger"></i> </p>
+                    
+                </div>
+            </form>
+        </section>
+    </div>
+</div>
+<script>
+    if (window.location.pathname.toLowerCase().includes("/login")) {
+        document.title = "Assessment Center";
+    }
+</script>
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

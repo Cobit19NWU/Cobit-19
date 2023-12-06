@@ -1,0 +1,586 @@
+﻿@page "/DesignFactorReport"
+@using Cobit_19.Business.Audits;
+@using Cobit_19.Business.Reports;
+@using Cobit_19.Pages.LearnMore;
+@using Cobit_19.Shared.Dtos;
+@using Microsoft.AspNetCore.WebUtilities;
+@using Syncfusion.Blazor.Charts
+@using System.Text.RegularExpressions;
+
+@inject NavigationManager navigationManager
+@inject ReportProvider reportProvider
+@inject AuditProvider auditProvider
+@inject IJSRuntime JSRuntime
+
+@inject IModalService modal
+
+@code {
+    protected SfChart? sfChart;
+    protected List<ObjectiveValueDto>? _objectiveValueDtos;
+    protected List<ChartSeries> _seriesCollection = new List<ChartSeries>();
+
+    private bool tabEDMOpened = false;
+    private bool tabAPOOpened = false;
+    private bool tabBAIOpened = false;
+    private bool tabDSSOpened = false;
+    private bool tabMEAOpened = false;
+
+    [Parameter]
+    [SupplyParameterFromQuery]
+    public int AuditId { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        if (_objectiveValueDtos == null)
+        {   var designFactors = new List<DesignFactorDto>();
+
+            // This is a temporary solution to get the design factors
+            var dfSummary = await auditProvider.getDesignFactorsAsync(AuditId);
+
+            foreach (var df in dfSummary)
+            {
+                designFactors.Add(await auditProvider.getDesignFactorFullAsync(AuditId, df.ID));
+            }
+
+            var _objectiveDtos = await auditProvider.getObjectivesAsync();
+
+            _objectiveValueDtos = MappingService.CalculateSummary(designFactors, _objectiveDtos);
+            changeChartType(ChartSeriesType.Column);
+        }
+    }
+
+    private void changeChartType(ChartSeriesType chartSeriesType)
+    {
+        if (_seriesCollection is not null)
+        {
+            _seriesCollection.Clear();
+
+            _seriesCollection.Add( new ChartSeries
+            {
+                DataSource = _objectiveValueDtos,
+                XName = "Objective",
+                YName = "RelativeInportance",
+                Fill = "#4A26D9",
+                Type = chartSeriesType,
+            });
+        }
+    }
+
+    private async Task Export(MouseEventArgs args)
+    {
+        await sfChart.ExportAsync(ExportType.PNG, "Goals Cascade Report", Syncfusion.PdfExport.PdfPageOrientation.Portrait, false);
+    }
+
+    public async void ExportComplete(ExportEventArgs exportEventArgs)
+    {
+        var dataURL = exportEventArgs.DataUrl;
+        var base64Data = Regex.Match(dataURL, @"data:image/(?<type>.+?),(?<data>.+)").Groups["data"].Value;
+
+        var pdfStream = await reportProvider.createGoalsCascadeReport(AuditId, base64Data);
+
+        if (pdfStream != null)
+        {
+            byte[] pdfBytes = pdfStream.ToArray();
+
+            await JSRuntime.InvokeVoidAsync("downloadFile", pdfBytes, "Design factor report.pdf");
+        }
+    }
+
+    private void BackButtonPress()
+    {
+        var queryStrDict = new Dictionary<string, string>
+            {
+                ["AuditId"] = (AuditId).ToString(),
+            };
+        navigationManager.NavigateTo(
+            QueryHelpers.AddQueryString("/Audit", queryStrDict)
+        );
+    }
+
+
+   
+
+ 
+
+}
+
+
+
+
+<div class="container-fluid">
+   
+     <div class="row">
+            <div>
+                <button type="button" onclick="@(() => BackButtonPress())" class="mb-2 btn btn-primary">Back</button>
+            </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+<AuthorizeView>
+    <div class="container-fluid bg-white border-1 border-dark">
+        <div class="row border-2">
+            <div>
+                <div class="row text-center p-3 text-white h3" style="background-color : purple;">
+                    Summary - View of all Design Factors
+                </div>
+                <div class="container-lg-fluid">
+                    <SfChart @ref="@sfChart" Title="Governance and Management Objectives Importance">
+                        <ChartPrimaryXAxis Interval="1" LabelRotation="90" ValueType="Syncfusion.Blazor.Charts.ValueType.Category" />
+                        <ChartPrimaryYAxis Title="Relative Importance" ValueType="Syncfusion.Blazor.Charts.ValueType.Double" />
+                        <ChartTooltipSettings Enable="true"></ChartTooltipSettings>
+                        @if (_objectiveValueDtos is not null)
+                        {
+                            <ChartSeriesCollection>
+                                @foreach (var series in _seriesCollection)
+                                {
+                                    <ChartSeries DataSource="@series.DataSource" XName="@series.XName" YName="@series.YName" Fill="@series.Fill"
+                                                 Type="@series.Type">
+                                    </ChartSeries>
+                                }
+                            </ChartSeriesCollection>
+                        }
+                        <ChartEvents OnExportComplete="@ExportComplete"></ChartEvents>
+                    </SfChart>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-1 btn-group rounded-3">
+                    </div>
+                    <div class="col">
+                        <button class="btn btn-outline-light float-xl-end" style="background-color:purple;" @onclick="Export"><i class="fa fa-download"></i> Download Design Factor Report</button>
+                    </div>
+                </div>
+
+
+
+
+
+
+              
+
+
+  
+
+
+
+
+<!-- x style -->
+
+        <div class="row">
+                        <div class="container-fluid">
+                            <div class="col">
+                                <div class="panel panel-primary">
+
+                                    <div class="panel-heading p-2 mb-2" style="color: white; background-color : purple">
+                                        <b>
+                                            Info Panel
+                                        </b>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                <div class="col-1"> 
+                </div>
+
+                    
+
+                <div class="col-10"> 
+                        <table class="table">
+                            <thead>
+                                <tr style="background-color: purple; color: white;">
+                                    <th>Domain</th>
+                                    <th></th>
+                                    <th></th>
+                                    <th>Objective ID</th>
+                                    <th>Objective</th>
+                                    <th></th> 
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="bg-light" style="cursor:pointer" @onclick="() => tabEDMOpened = !tabEDMOpened">
+                                    <td colspan="6"><h5><i class="fa-regular fa-square-caret-down"></i> Evaluate, Direct and Monitor (EDM)</h5> </td> 
+                                </tr>
+
+                                @if (tabEDMOpened)
+                                {
+                                          <tr>
+                                                <td></td> 
+                                                <td></td> 
+                                                <td></td> 
+                                                <td>EDM01 </td> 
+                                                <td>Ensured  Governance Framework Setting & Maintenance</td> 
+                                                <td><button @onclick="@(()=>modal.Show<EDM01>(""))" class="btn btn-danger btn-sm"><i class="fa fa-info"></i> Learn more</button></td>
+                                            </tr>
+                                             <tr>
+                                                <td></td> 
+                                                <td></td> 
+                                                <td></td> 
+                                                <td>EDM02 </td> 
+                                                <td>Ensured Benefits Delivery</td> 
+                                                <td><button @onclick="@(()=>modal.Show<EDM02>(""))" class="btn btn-danger btn-sm"><i class="fa fa-info"></i> Learn more</button></td>
+                                            </tr>
+                                             <tr>
+                                                <td></td> 
+                                                <td></td> 
+                                                <td></td> 
+                                                <td>EDM03 </td> 
+                                                <td>Ensured Risk Optimization</td> 
+                                                <td><button @onclick="@(()=>modal.Show<EDM03>(""))" class="btn btn-danger btn-sm"><i class="fa fa-info"></i> Learn more</button></td>
+                                            </tr>
+                                             <tr>
+                                                <td></td> 
+                                                <td></td> 
+                                                <td></td> 
+                                                <td>EDM04 </td> 
+                                                <td>Ensured Resource Optimization</td> 
+                                                <td><button @onclick="@(()=>modal.Show<EDM04>(""))" class="btn btn-danger btn-sm"><i class="fa fa-info"></i> Learn more</button></td>
+                                            </tr>
+                                             <tr>
+                                                <td></td> 
+                                                <td></td> 
+                                                <td></td> 
+                                                <td>EDM05 </td> 
+                                                <td>Ensured Stakeholder Engagement</td> 
+                                                <td><button @onclick="@(()=>modal.Show<EDM05>(""))" class="btn btn-danger btn-sm"><i class="fa fa-info"></i> Learn more</button></td>
+                                            </tr>
+                                }
+
+
+                                <tr class="bg-light" style="cursor:pointer" @onclick="() => tabAPOOpened = !tabAPOOpened">
+                                    <td colspan="6"><h5><i class="fa-regular fa-square-caret-down"></i> Align, Plan and Organise (APO)</h5></td> 
+                                </tr>
+
+                                @if (tabAPOOpened)
+                                {
+                                          <tr>
+                                                <td></td> 
+                                                <td></td> 
+                                                <td></td> 
+                                                <td>APO01 </td> 
+                                                <td>Managed I&T Management Framework</td>
+                                                <td><button @onclick="@(()=>modal.Show<APO01>(""))" class="btn btn-warning btn-sm"><i class="fa fa-info"></i> Learn more</button></td>
+                                    </tr>
+                                             <tr>
+                                                <td></td> 
+                                                <td></td> 
+                                                <td></td> 
+                                                <td>APO02 </td> 
+                                                <td>Managed Strategy</td>
+                                                <td><button @onclick="@(()=>modal.Show<APO02>(""))" class="btn btn-warning btn-sm"><i class="fa fa-info"></i> Learn more</button></td>
+                                            </tr>
+                                             <tr>
+                                                <td></td> 
+                                                <td></td> 
+                                                <td></td> 
+                                                <td>APO03 </td> 
+                                                <td>Managed Enterprise Architecture</td>
+                                        <td><button @onclick="@(()=>modal.Show<APO03>(""))" class="btn btn-warning btn-sm"><i class="fa fa-info"></i> Learn more</button></td>
+                                            </tr>
+                                             <tr>
+                                                <td></td> 
+                                                <td></td> 
+                                                <td></td> 
+                                                <td>APO04 </td> 
+                                                <td>Managed Innovation</td>
+                                        <td><button @onclick="@(()=>modal.Show<APO04>(""))" class="btn btn-warning btn-sm"><i class="fa fa-info"></i> Learn more</button></td>
+                                    </tr>
+                                             <tr>
+                                                <td></td> 
+                                                <td></td> 
+                                                <td></td> 
+                                                <td>APO05 </td> 
+                                                <td>Managed Portfolio</td>
+                                        <td><button @onclick="@(()=>modal.Show<APO05>(""))" class="btn btn-warning btn-sm"><i class="fa fa-info"></i> Learn more</button></td>
+                                            </tr>
+                                            <tr>
+                                                <td></td> 
+                                                <td></td> 
+                                                <td></td> 
+                                                <td>APO06 </td> 
+                                                <td>Managed Budget & Costs</td>
+                                        <td><button @onclick="@(()=>modal.Show<APO06>(""))" class="btn btn-warning btn-sm"><i class="fa fa-info"></i> Learn more</button></td>
+                                            </tr>
+                                             <tr>
+                                                <td></td> 
+                                                <td></td> 
+                                                <td></td> 
+                                                <td>APO07 </td> 
+                                                <td>Managed Human Resources</td>
+                                        <td><button @onclick="@(()=>modal.Show<APO07>(""))" class="btn btn-warning btn-sm"><i class="fa fa-info"></i> Learn more</button></td>
+                                            </tr>
+                                             <tr>
+                                                <td></td> 
+                                                <td></td> 
+                                                <td></td> 
+                                                <td>APO08 </td> 
+                                                <td>Managed Relationships</td>
+                                        <td><button @onclick="@(()=>modal.Show<APO08>(""))" class="btn btn-warning btn-sm"><i class="fa fa-info"></i> Learn more</button></td>
+                                            </tr>
+                                             <tr>
+                                                <td></td> 
+                                                <td></td> 
+                                                <td></td> 
+                                                <td>APO09 </td> 
+                                                <td>Managed Service Agreements</td>
+                                        <td><button @onclick="@(()=>modal.Show<APO09>(""))" class="btn btn-warning btn-sm"><i class="fa fa-info"></i> Learn more</button></td>
+                                    </tr>
+                                             <tr>
+                                                <td></td> 
+                                                <td></td> 
+                                                <td></td> 
+                                                <td>APO10 </td> 
+                                                <td>Managed Vendors</td>
+                                        <td><button @onclick="@(()=>modal.Show<APO10>(""))" class="btn btn-warning btn-sm"><i class="fa fa-info"></i> Learn more</button></td>
+                                            </tr>
+                                              <tr>
+                                                <td></td> 
+                                                <td></td> 
+                                                <td></td> 
+                                                <td>APO11 </td> 
+                                                <td>Managed Quality</td>
+                                        <td><button @onclick="@(()=>modal.Show<APO11>(""))" class="btn btn-warning btn-sm"><i class="fa fa-info"></i> Learn more</button></td>
+                                            </tr>
+                                             <tr>
+                                                <td></td> 
+                                                <td></td> 
+                                                <td></td> 
+                                                <td>APO12 </td> 
+                                                <td>Managed Risk</td>
+                                        <td><button @onclick="@(()=>modal.Show<APO12>(""))" class="btn btn-warning btn-sm"><i class="fa fa-info"></i> Learn more</button></td>
+                                            </tr>
+                                             <tr>
+                                                <td></td> 
+                                                <td></td> 
+                                                <td></td> 
+                                                <td>APO13 </td> 
+                                                <td>Managed Security</td>
+                                        <td><button @onclick="@(()=>modal.Show<APO13>(""))" class="btn btn-warning btn-sm"><i class="fa fa-info"></i> Learn more</button></td>
+                                            </tr>
+                                             <tr>
+                                                <td></td> 
+                                                <td></td> 
+                                                <td></td> 
+                                                <td>APO14 </td> 
+                                                <td>Managed Data</td>
+                                        <td><button @onclick="@(()=>modal.Show<APO14>(""))" class="btn btn-warning btn-sm"><i class="fa fa-info"></i> Learn more</button></td>
+                                            </tr>
+                                }
+                                <tr class="bg-light" style="cursor:pointer" @onclick="() => tabBAIOpened = !tabBAIOpened">
+                                    <td colspan="6"><h5><i class="fa-regular fa-square-caret-down"></i> Build, Acquire and Implement (BAI)</h5></td> 
+                                </tr>
+
+                                @if (tabBAIOpened)
+                                {
+                                           <tr>
+                                                <td></td> 
+                                                <td></td> 
+                                                <td></td> 
+                                                <td>BAI01 </td> 
+                                                <td>Managed Programs</td> 
+                                                <td><button @onclick="@(()=>modal.Show<BAI01>(""))" class="btn btn-primary btn-sm"><i class="fa fa-info"></i> Learn more</button></td>
+                                            </tr>
+                                             <tr>
+                                                <td></td> 
+                                                <td></td> 
+                                                <td></td> 
+                                                <td>BAI02 </td> 
+                                                <td>Managed Requirements Definition</td> 
+                                                <td><button @onclick="@(()=>modal.Show<BAI02>(""))" class="btn btn-primary btn-sm"><i class="fa fa-info"></i> Learn more</button></td>
+                                            </tr>
+                                             <tr>
+                                                <td></td> 
+                                                <td></td> 
+                                                <td></td> 
+                                                <td>BAI03 </td> 
+                                                <td>Managed Solutions Identification & Build</td> 
+                                               <td><button @onclick="@(()=>modal.Show<BAI03>(""))" class="btn btn-primary btn-sm"><i class="fa fa-info"></i> Learn more</button></td>
+                                            </tr>
+                                             <tr>
+                                                <td></td> 
+                                                <td></td> 
+                                                <td></td> 
+                                                <td>BAI04 </td> 
+                                                <td>Managed Availability & Capacity</td> 
+                                                <td><button @onclick="@(()=>modal.Show<BAI04>(""))" class="btn btn-primary btn-sm"><i class="fa fa-info"></i> Learn more</button></td>
+                                            </tr>
+                                             <tr>
+                                                <td></td> 
+                                                <td></td> 
+                                                <td></td> 
+                                                <td>BAI05 </td> 
+                                                <td>Managed Organizational Change</td> 
+                                                <td><button @onclick="@(()=>modal.Show<BAI05>(""))" class="btn btn-primary btn-sm"><i class="fa fa-info"></i> Learn more</button></td>
+                                            </tr>
+                                            <tr>
+                                                <td></td> 
+                                                <td></td> 
+                                                <td></td> 
+                                                <td>BAI06 </td> 
+                                                <td>Managed IT Changes</td> 
+                                                <td><button @onclick="@(()=>modal.Show<BAI06>(""))" class="btn btn-primary btn-sm"><i class="fa fa-info"></i> Learn more</button></td>
+                                            </tr>
+                                             <tr>
+                                                <td></td> 
+                                                <td></td> 
+                                                <td></td> 
+                                                <td>BAI07 </td> 
+                                                <td>Managed IT Change Acceptance and Transitioning</td> 
+                                                <td><button @onclick="@(()=>modal.Show<BAI07>(""))" class="btn btn-primary btn-sm"><i class="fa fa-info"></i> Learn more</button></td>
+                                            </tr>
+                                             <tr>
+                                                <td></td> 
+                                                <td></td> 
+                                                <td></td> 
+                                                <td>BAI08 </td> 
+                                                <td>Managed Knowledge</td> 
+                                                <td><button @onclick="@(()=>modal.Show<BAI08>(""))" class="btn btn-primary btn-sm"><i class="fa fa-info"></i> Learn more</button></td>
+                                            </tr>
+                                             <tr>
+                                                <td></td> 
+                                                <td></td> 
+                                                <td></td> 
+                                                <td>BAI09 </td> 
+                                                <td>Managed Assets</td> 
+                                                <td><button @onclick="@(()=>modal.Show<BAI09>(""))" class="btn btn-primary btn-sm"><i class="fa fa-info"></i> Learn more</button></td>
+                                            </tr>
+                                             <tr>
+                                                <td></td> 
+                                                <td></td> 
+                                                <td></td> 
+                                                <td>BAI10 </td> 
+                                                <td>Managed Configuration</td> 
+                                                <td><button @onclick="@(()=>modal.Show<BAI10>(""))" class="btn btn-primary btn-sm"><i class="fa fa-info"></i> Learn more</button></td>
+                                            </tr>
+                                              <tr>
+                                                <td></td> 
+                                                <td></td> 
+                                                <td></td> 
+                                                <td>BAI11 </td> 
+                                                <td>Managed Projects</td> 
+                                                <td><button @onclick="@(()=>modal.Show<BAI11>(""))" class="btn btn-primary btn-sm"><i class="fa fa-info"></i> Learn more</button></td>
+                                            </tr> 
+                                }
+                                    <tr class="bg-light" style="cursor:pointer" @onclick="() => tabDSSOpened = !tabDSSOpened">
+                                    <td colspan="6"><h5><i class="fa-regular fa-square-caret-down"></i> Deliver, Service and Support (DSS)</h5></td> 
+                                </tr>
+
+                                @if (tabDSSOpened)
+                                {
+                                           <tr>
+                                                <td></td> 
+                                                <td></td> 
+                                                <td></td> 
+                                                <td>DSS01 </td> 
+                                                <td>Managed Operations</td> 
+                                                <td><button @onclick="@(()=>modal.Show<DSS01>(""))" class="btn btn-success btn-sm"><i class="fa fa-info"></i> Learn more</button></td>
+                                            </tr>
+                                             <tr>
+                                                <td></td> 
+                                                <td></td> 
+                                                <td></td> 
+                                                <td>DSS02 </td> 
+                                                <td>Managed Service Requests & Incidents</td> 
+                                                <td><button @onclick="@(()=>modal.Show<DSS02>(""))" class="btn btn-success btn-sm"><i class="fa fa-info"></i> Learn more</button></td>
+                                            </tr>
+                                             <tr>
+                                                <td></td> 
+                                                <td></td> 
+                                                <td></td> 
+                                                <td>DSS03 </td> 
+                                                <td>Managed Problems</td> 
+                                               <td><button @onclick="@(()=>modal.Show<DSS03>(""))" class="btn btn-success btn-sm"><i class="fa fa-info"></i> Learn more</button></td>
+                                            </tr>
+                                             <tr>
+                                                <td></td> 
+                                                <td></td> 
+                                                <td></td> 
+                                                <td>DSS04 </td> 
+                                                <td>Managed Continuity</td> 
+                                                <td><button @onclick="@(()=>modal.Show<DSS04>(""))" class="btn btn-success btn-sm"><i class="fa fa-info"></i> Learn more</button></td>
+                                            </tr>
+                                             <tr>
+                                                <td></td> 
+                                                <td></td> 
+                                                <td></td> 
+                                                <td>DSS05 </td> 
+                                                <td>Managed Security Services</td> 
+                                                <td><button @onclick="@(()=>modal.Show<DSS05>(""))" class="btn btn-success btn-sm"><i class="fa fa-info"></i> Learn more</button></td>
+                                            </tr>
+                                            <tr>
+                                                <td></td> 
+                                                <td></td> 
+                                                <td></td> 
+                                                <td>DSS06 </td> 
+                                                <td>Managed Business Process Controls</td> 
+                                                <td><button @onclick="@(()=>modal.Show<DSS06>(""))" class="btn btn-success btn-sm"><i class="fa fa-info"></i> Learn more</button></td>
+                                            </tr> 
+                                }
+                            <tr class="bg-light" style="cursor:pointer" @onclick="() => tabMEAOpened = !tabMEAOpened">
+                                                                <td colspan="6"><h5><i class="fa-regular fa-square-caret-down"></i> Monitor, Evaluate and Assess (MEA)</h5></td> 
+                                                            </tr>
+
+                                                            @if (tabMEAOpened)
+                                                            {
+                                                                    <tr>
+                                                                            <td></td> 
+                                                                            <td></td> 
+                                                                            <td></td> 
+                                                                            <td>MEA01 </td> 
+                                                                            <td>Managed Performance and Conformance Monitoring</td> 
+                                                                            <td><button @onclick="@(()=>modal.Show<MEA01>(""))" class="btn btn-info btn-sm"><i class="fa fa-info"></i> Learn more</button></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td></td> 
+                                                                            <td></td> 
+                                                                            <td></td> 
+                                                                            <td>MEA02 </td> 
+                                                                            <td>Managed System of Internal Control</td> 
+                                                                            <td><button @onclick="@(()=>modal.Show<MEA02>(""))" class="btn btn-info btn-sm"><i class="fa fa-info"></i> Learn more</button></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td></td> 
+                                                                            <td></td> 
+                                                                            <td></td> 
+                                                                            <td>MEA03 </td> 
+                                                                            <td>Managed Compliance with External Requirements</td> 
+                                                                            <td><button @onclick="@(()=>modal.Show<MEA03>(""))" class="btn btn-info btn-sm"><i class="fa fa-info"></i> Learn more</button></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td></td> 
+                                                                            <td></td> 
+                                                                            <td></td> 
+                                                                            <td>MEA04 </td> 
+                                                                            <td>Managed Assurance</td> 
+                                                                            <td><button @onclick="@(()=>modal.Show<MEA04>(""))" class="btn btn-info btn-sm"><i class="fa fa-info"></i> Learn more</button></td>
+                                                                        </tr> 
+                                                            }
+
+                            </tbody>
+                        </table> 
+                </div>
+
+                <div class="col-1"> 
+                </div>
+
+
+            </div>
+
+
+ 
+ 
+<!-- x style -->
+
+
+
+            </div>
+        </div>
+    </div>
+</AuthorizeView>

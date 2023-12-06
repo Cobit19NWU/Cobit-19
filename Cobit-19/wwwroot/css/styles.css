@@ -1,0 +1,17 @@
+h1.puy-head {
+  letter-spacing: 3px;
+  word-spacing: 5px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 48px;
+  margin: 0.4rem 0;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+}
+
+p.puy-head {
+  font-weight: 300;
+  font-size: 21px;
+  margin: 1rem 0;
+  line-height: 2;
+}

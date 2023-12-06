@@ -1,0 +1,353 @@
+﻿@page "/objectiveAuditSelect"
+@using Cobit_19.Business.Admin;
+@using Cobit_19.Business.Reports;
+@using Cobit_19.Data.Models;
+@using Cobit_19.Shared.Dtos
+@using Cobit_19.Shared.Enums
+@using Microsoft.AspNetCore.Identity
+@using Cobit_19.Business.ObjectiveAudits
+@using Cobit_19.Business.Audits
+@using Microsoft.AspNetCore.WebUtilities;
+@inject ObjectiveAuditProvider objectiveAuditProvider
+@inject NavigationManager navigationManager
+@inject AuditProvider auditProvider
+@inject UserManager<ApplicationUser> userManager
+@inject AuthenticationStateProvider authStateProvider
+@inject ReportProvider reportProvider
+@inject UserManagementProvider userManagementProvider
+@inject IServiceProvider serviceProvider
+@inject IJSRuntime JSRuntime
+
+
+ 
+  
+
+
+@code {
+    IList<ObjectiveAuditDto> objectiveAudits;
+    [Parameter]
+    [SupplyParameterFromQuery]
+    public int AuditId { get; set; }
+
+    private AuditDto? _auditDto { get; set; }
+    private List<DesignFactorDto>? _designFactorDtos { get; set; }
+
+    public AuditDto audit;
+    public string auditName;
+    public string userID;
+    public UserDto userDto;
+    public string userRole;
+    public bool isUserInAudit;
+
+    ApplicationUser auditCreatedUser;
+
+
+     
+     
+ 
+
+    protected async override Task OnInitializedAsync()
+    {
+
+        if (_auditDto == null)
+        {
+            _auditDto = await auditProvider.getAsync(AuditId);
+            _designFactorDtos = await auditProvider.getDesignFactorsAsync(AuditId);
+            auditCreatedUser = await userManager.FindByIdAsync(_auditDto.User.ID);
+        }
+
+
+        var authState = await authStateProvider.GetAuthenticationStateAsync();
+        var user = authState.User;
+
+        if (user.Identity.IsAuthenticated)
+        {
+            var currentUser = await userManager.GetUserAsync(user);
+            userID = currentUser.Id;
+        }
+
+        isUserInAudit = await auditProvider.IsUserInAuditAsync(AuditId, userID);
+        userDto = await userManagementProvider.GetUserDtoByIdAsync(userID);
+
+        userRole = await userManagementProvider.getUserRoleAsync(userDto);
+
+        audit = await auditProvider.getAsync(AuditId);
+        auditName = audit.Name;
+    }
+
+    private bool auditorUserCheck()
+    {
+        if (userRole == "Governance Auditor" || userRole == "Management Auditor")
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+    private void auditButtonClick(int objectiveAuditId)
+    {
+        navigationManager.NavigateTo("/auditDashboard?objectiveAuditId=" + objectiveAuditId);
+    }
+
+    private string statusFormatter(AuditStatus status)
+    {
+        if (status == AuditStatus.NotStarted)
+        {
+            return "Not Started";
+        }
+        else if (status == AuditStatus.InProgress)
+        {
+            return "In Progress";
+        }
+        else
+        {
+            return "Completed";
+        }
+    }
+
+    private string statusBadge (AuditStatus status)
+    {
+        if (status == AuditStatus.NotStarted)
+        {
+            return "badge bg-danger";
+        }
+        else if (status == AuditStatus.InProgress)
+        {
+            return "badge bg-warning";
+        }
+        else
+        {
+            return "badge bg-success";
+        }
+    }
+
+    private void BackButtonPress()
+    {
+        var queryStrDict = new Dictionary<string, string>
+            {
+                ["AuditId"] = (AuditId).ToString(),
+            };
+        navigationManager.NavigateTo(
+            QueryHelpers.AddQueryString("/Audit", queryStrDict)
+        );
+    }
+
+    private void BackButtonPressC()
+    {
+        var queryStrDict = new Dictionary<string, string>
+            {
+                ["FocusAreaID"] = (_auditDto.FocusArea.ID).ToString(),
+            };
+        navigationManager.NavigateTo(
+            QueryHelpers.AddQueryString("/AuditSelect", queryStrDict)
+        );
+    }
+
+    public async void ExportComplete(int objectiveAuditId)
+    {
+        var pdfStream = await reportProvider.createObjectiveAuditReport(objectiveAuditId);
+
+        if (pdfStream != null)
+        {
+            byte[] pdfBytes = pdfStream.ToArray();
+
+            await JSRuntime.InvokeVoidAsync("downloadFile", pdfBytes, "Maturity assessment report.pdf");
+        }
+    }
+
+}
+
+
+
+
+<div class="container-fluid">
+   
+     <div class="row">
+            <div>
+                 <AuthorizeView Roles="Administrator, Head Auditor, Client">
+                <button type="button" onclick="@(() => BackButtonPress())" class="mb-2 btn btn-primary">Back</button>
+            </AuthorizeView>
+
+            <AuthorizeView Roles="Governance Auditor, Management Auditor" Context="buttonCtxC">
+            <button type="button" onclick="@(() => BackButtonPressC())" class="mb-2 btn btn-primary">Back</button>
+            </AuthorizeView>
+            </div>
+    </div>
+</div>
+
+
+@if (audit != null)
+{
+    <div class="container">
+        @if (auditorUserCheck())
+        {
+            <div class="container bg-light mb-4 border-4 border p-4">
+                <h1>
+                    @audit.FocusArea.Description
+                </h1>
+                <table class="table table-borderless">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <b>
+                                    Status:
+                                </b>
+                            </td>
+                            <td>
+                                @if (audit.DateCompleted != null)
+                                {
+                                    <span class="badge bg-success">Completed</span>
+                                }
+                                else
+                                {
+                                    <span class="badge bg-primary">In Progress</span>
+                                }
+                            </td>
+                        <td>
+                            <b>
+                                Audit Name:
+                            </b>
+                        </td>
+                        <td>
+                            <p>@audit.Name</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <b>
+                                Created By:
+                            </b>
+                        </td>
+                        <td>
+                               <p>@auditCreatedUser.FirstName @auditCreatedUser.LastName</p>
+                        </td>
+                        <td>
+                            <b>
+                                Version
+                            </b>
+                        </td>
+                        <td>
+                            <p>COBIT 2019 Framework</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <b>
+                                Role:
+                            </b>
+                        </td>
+                        <td>
+                            Administrators
+                        </td>
+                        <td>
+                            <b>
+                                Created
+                            </b>
+                        </td>
+                        <td>
+                            <p>@audit.DateCreated.Date.ToShortDateString()</p>
+                        </td>
+                    </tr> 
+                </tbody>
+            </table>
+            </div>
+        }
+    </div>
+    <div class="container">
+        <div>
+            <h2>Maturity Assessments</h2>
+        </div>
+
+        <div>
+            <table class="table">
+                <AuthorizeView Roles="Administrator, Head Auditor, Client">
+                    <thead>
+                        <tr style="background-color: purple; color: white;">
+                            <th>Audit Name</th>
+                            <th>Objective ID</th>
+                            <th>Assigned to audit</th>
+                            <th>Maturity Level</th>
+                            <th>Status</th>
+                            <th></th>
+                            <th>Report</th>
+                        </tr>
+                    </thead>
+                </AuthorizeView>
+                <AuthorizeView Roles="Governance Auditor, Management Auditor">
+                    <thead>
+                        <tr style="background-color: purple; color: white;">
+                            <th>Audit Name</th>
+                            <th>Description</th> 
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                </AuthorizeView>
+
+                <AuthorizeView Roles="Administrator, Head Auditor, Client">
+                    <tbody>
+                        @{
+                            var scope = serviceProvider.CreateScope();
+                            var objectiveAuditGetAllProvider = scope.ServiceProvider.GetRequiredService<ObjectiveAuditProvider>();
+                            objectiveAudits = objectiveAuditGetAllProvider.getObjectiveAuditsForUser(userID, AuditId);
+                        }
+
+                        @foreach (var objectiveAudit in objectiveAudits)
+                        {
+                            var fullAudit = AuditJSONParsingService.parseAuditTemplate(objectiveAudit.UserAuditObject);
+                            var auditMembers = objectiveAuditProvider.getMembersByObjectiveAuditID(objectiveAudit.ID);
+                            <tr>
+                                <td>@auditName</td>
+                                <td>@objectiveAudit.Objective.Code - @objectiveAudit.Objective.Description</td>
+                                <td>
+                                    @foreach (var auditMember in auditMembers)
+                                    {
+                                        var user = userManagementProvider.GetUserDtoByIdAsync(auditMember.ApplicationUserID).Result;
+                                        @user.UserName
+                                        <br />
+                                    }
+                                </td>
+                                <td>@fullAudit.maturityLevel</td>
+                                @if (statusFormatter(objectiveAudit.Status) == "Not Started")
+                                {
+                                    <td><span class="badge bg-danger">@statusFormatter(objectiveAudit.Status)</span></td>
+                                }
+                                else if (statusFormatter(objectiveAudit.Status) == "In Progress")
+                                {
+                                    <td><span class="badge bg-warning">@statusFormatter(objectiveAudit.Status)</span></td>
+                                }
+                                <td><button class="btn btn-primary" @onclick="() => auditButtonClick(objectiveAudit.ID)">Modify</button></td>
+                                <td><button class="btn btn-outline-primary" @onclick="() => ExportComplete(objectiveAudit.ID)">Report</button></td>
+                            </tr>
+                        }
+                    </tbody>
+                </AuthorizeView>
+
+                <AuthorizeView Roles="Governance Auditor, Management Auditor">
+                    <tbody>
+                        @{
+                            var scope = serviceProvider.CreateScope();
+                            var objectiveAuditGetAllProvider = scope.ServiceProvider.GetRequiredService<ObjectiveAuditProvider>();
+                            objectiveAudits = objectiveAuditGetAllProvider.getObjectiveAuditsForUser(userID, AuditId);
+                        }
+
+                        @foreach (var objectiveAudit in objectiveAudits)
+                        {
+                            var fullAudit = AuditJSONParsingService.parseAuditTemplate(objectiveAudit.UserAuditObject);
+                            var auditMembers = objectiveAuditProvider.getMembersByObjectiveAuditID(objectiveAudit.ID);
+                            <tr>
+                                <td>@auditName</td>
+                                <td>@objectiveAudit.Objective.Code - @objectiveAudit.Objective.Description</td> 
+                                <td><span class="@statusBadge(audit.Status)">@statusFormatter(objectiveAudit.Status)</span></td>
+                                <td><button class="btn btn-primary" @onclick="() => auditButtonClick(objectiveAudit.ID)">Modify</button></td>
+                            </tr>
+                        }
+                    </tbody>
+                </AuthorizeView>
+            </table>
+        </div>
+    </div>
+}

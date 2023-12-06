@@ -1,0 +1,163 @@
+﻿@page "/ManageAuditUsers"
+@using Cobit_19.Business.Admin;
+@using Cobit_19.Business.Audits;
+@using Cobit_19.Shared.Dtos;
+@using Microsoft.AspNetCore.WebUtilities;
+@inject UserManagementProvider userManagementProvider
+@inject AuditProvider auditProvider
+@inject NavigationManager navigationManager
+
+@code {
+    [Parameter]
+    [SupplyParameterFromQuery]
+    public int auditID { get; set; }
+
+    private IList<UserDto> _userDtos { get; set; }
+    private IList<ObjectiveAuditMemberDto> _membersDisplayList { get; set; }
+    private IList<AuditMemberDto> _auditMemberDtos { get; set; }
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        refresh();
+    }
+
+    private void refresh()
+    {
+        _userDtos = userManagementProvider.GetAllUsers();
+        _auditMemberDtos = auditProvider.getAuditMembers(auditID);
+    }
+
+    private async void Update(string userID)
+    {
+        var member = new AuditMemberDto
+            {
+                ApplicationUserID = userID,
+                AuditID = auditID
+            };
+
+        if (await auditProvider.IsUserInAuditAsync(auditID, userID))
+        {
+            await auditProvider.deleteAuditMemberAsync(auditID, userID);
+        }
+        else
+        {
+            await auditProvider.addAuditMemberAsync(member);
+        }
+
+        refresh();
+    }
+
+    private bool check(UserDto user)
+    {
+        return _auditMemberDtos.Any(a => a.ApplicationUserID == user.ID);
+    }
+
+    private async void BackButtonPress()
+    {
+        var audit = await auditProvider.getAsync(auditID);
+        var queryStrDict = new Dictionary<string, string>
+            {
+                ["focusAreaID"] = (audit.FocusArea.ID).ToString(),
+            };
+        navigationManager.NavigateTo(
+            QueryHelpers.AddQueryString("/ManageAudit", queryStrDict)
+        );
+    }
+}
+
+ 
+
+<div class="container-fluid">
+   
+     <div class="row">
+            <div>
+                <button type="button" onclick="@(() => BackButtonPress())" class="btn btn-primary">Done</button>
+            </div>
+    </div>
+</div>
+
+
+
+
+
+<div class="container">
+    <div class="row">
+       <div class="container-fluid">
+                            <div class="col">
+                                <div class="panel panel-primary">
+
+                                    <div class="panel-heading p-2 mb-2" style="color: white; background-color : purple">
+                                        <b>
+                                            User management
+                                        </b>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+        <div class="col-8">
+            @if (_userDtos is null)
+            {
+                <p><em>Loading...</em></p>
+            }
+            else
+            {
+                <table class="table table-hover table-striped">
+                    <thead style="">
+                         
+                        <tr>
+                            <th style="background-color: purple; color: white;">#</th>
+                            <th style="background-color: purple; color: white;">Name</th>
+                            <th style="background-color: purple; color: white;">Email</th>
+                            <th style="background-color: purple; color: white;">Selected</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var user in _userDtos)
+                        {
+                            <tr>
+                                <td>@(_userDtos.IndexOf(user) + 1)</td>
+                                <td>@(user.FirstName) @(user.LastName)</td>
+                                <td>@(user.UserName)</td>
+                                <td>
+                                    <input type="checkbox" checked="@check(user)" @onclick="() => Update(user.ID)" />
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            }
+            
+        </div>
+        <div class="col">
+            <InfoPannel Header="Info Panel">
+                <Body>
+                    <div>
+                        <p style="text-align: justify;">This interface showcases all the users within your organization:</p>
+                        <table class="table table-stripped small m-t-md">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <i class="fa fa-circle fa-2xs"></i>
+                                    </td>
+                                    <td style="text-align: justify;">
+                                        Choose the users to be assigned to this audit by marking the checkbox next to their names.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: justify;">
+                                        <i class="fa fa-circle fa-2xs"></i>
+                                    </td>
+                                    <td>
+                                        The users chosen here will have the option to be assigned responsibilities across various components of the audit process.
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </Body>
+            </InfoPannel>
+        </div>
+    </div>
+</div>

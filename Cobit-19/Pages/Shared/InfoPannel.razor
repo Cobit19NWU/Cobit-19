@@ -1,0 +1,18 @@
+﻿@code {
+    [Parameter] public string Header { get; set; }
+    [Parameter] public RenderFragment Body { get; set; }
+}
+
+<div class="card">
+    <div class="card-header" style="background-color: darkblue; color: white;">
+        <span class="card-title">
+            <h4 style="display: inline-block;">
+            <i class="fa-solid fa-circle-info" style="display: inline-block;" />
+                @Header
+            </h4>
+        </span>
+    </div>
+    <div class="card-body">
+        @Body
+    </div>
+</div>

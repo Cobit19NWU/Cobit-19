@@ -1,0 +1,685 @@
+{
+  "objectiveName": "MEA03",
+  "objectiveDescription": "Evaluate that I&T processes and I&T-supported business processes are compliant with laws, regulations and contractual requirements. Obtain assurance that the requirements have been identified and complied with; integrate IT compliance with overall enterprise compliance.",
+  "objectivePurpose": "Ensure that the enterprise is compliant with all applicable external requirements.",
+  "typeOfObjective": "Governance",
+  "maturityLevel": 0,
+  "maturityLevel0PercFinal": 0,
+  "maturityLevel1PercFinal": 0,
+  "maturityLevel2PercFinal": 0,
+  "maturityLevel3PercFinal": 0,
+  "maturityLevel4PercFinal": 0,
+  "maturityLevel5PercFinal": 0,
+  "structuresImage": "https://i.imgur.com/Eh2v2JT.png",
+  "components": [
+    {
+      "componentCode": "EG",
+      "componentDescription": "Enterprise Goals",
+      "componentPercFinal": 0,
+      "subComponents": [
+        {
+          "subComponentCode": "EG03",
+          "subComponentName": "Compliance with external laws and regulations",
+          "subComponentQuestions": [
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Cost of regulatory noncompliance, including settlements and fines",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Number of regulatory noncompliance issues causing public  or negative publicity",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Number of noncompliance matters noted by regulators",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Number of regulatory noncompliance issues relating to contractual agreements with business partners",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            }
+
+          ]
+        }
+      ]
+    },
+
+    {
+      "componentCode": "AG",
+      "componentDescription": "Alignment Goals",
+      "componentPercFinal": 0,
+      "subComponents": [
+
+        {
+          "subComponentCode": "AG01",
+          "subComponentName": "I&T compliance and support for business compliance with external laws and regulations",
+          "subComponentQuestions": [
+            {
+              "questionType": "Alignment goal",
+              "questionDescription": "Cost of IT noncompliance, including settlements and fines, and the impact of reputational loss",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Alignment goal",
+              "questionDescription": "Number of IT-related noncompliance issues reported to the board, or causing public  or embarrassment",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Alignment goal",
+              "questionDescription": "Number of noncompliance issues relating to contractual agreements with IT service providers",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            }
+          ]
+        }
+
+      ]
+    },
+    {
+      "componentName": "A",
+      "componentDescription": "Processes",
+      "componentPercFinal": 0,
+      "subComponents": [
+        {
+          "subComponentCode": "MEA03.01",
+          "subComponentName": "Monitor internal controls.",
+          "subComponentDescription": "On a continuous basis, monitor changes in local and international laws, regulations and other external requirements and identify mandates for compliance from an I&T perspective.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Assign responsibility for identifying and monitoring any changes of legal, regulatory and other external contractual requirements relevant to the use of IT resources and the processing of information within the business and IT operations of the enterprise.",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Identify and assess all potential compliance requirements and the impact on I&T activities in areas such as data flow, privacy, internal controls, financial reporting, industry-specific regulations, intellectual property, health and safety.",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Assess the impact of I&T-related legal and regulatory requirements on third-party contracts related to IT operations, service providers and business trading partners.",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Define the consequences of noncompliance.",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Obtain independent counsel, where appropriate, on changes to applicable laws, regulations and standards.",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Maintain an up-to-date log of all relevant legal, regulatory and contractual requirements; their impact and required actions",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Maintain a harmonized and integrated overall register of external compliance requirements for the enterprise.",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "No data provided.",
+              "relatedGuidance": "CMMI Cybermaturity Platform, 2018",
+              "detailedReference": "BC.RR Determine Legal / Regulatory Requirements",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "No data provided.",
+              "relatedGuidance": "HITRUST CSF version 9, September 2017",
+              "detailedReference": "06.01 Compliance with Legal Requirements",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "No data provided.",
+              "relatedGuidance": "ISF, The Standard of Good Practice for Information Security 2016",
+              "detailedReference": "SM2.3 Legal and Regulatory Compliance",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            }
+          ]
+        },
+        {
+          "subComponentCode": "MEA03.02",
+          "subComponentName": "Optimize response to external requirements.",
+          "subComponentDescription": "Review and adjust policies, principles, standards, procedures and methodologies to ensure that legal, regulatory and contractual requirements are addressed and communicated. Consider adopting and adapting industry standards, codes of good practice, and good practice guidance",
+          "subComponentQuestions": [
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Regularly review and adjust policies, principles, standards, procedures and methodologies for their effectiveness in ensuring necessary compliance and addressing enterprise risk. Use internal and external experts, as required.",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Communicate new and changed requirements to all relevant personnel.",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "No data provided.",
+              "relatedGuidance": "King IV Report on Corporate Governance for South Africa, 2016",
+              "detailedReference": "Part 5.4: Governance functional areas - Principle 13",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            }
+          ]
+        },
+        {
+          "subComponentCode": "MEA03.03",
+          "subComponentName": "Confirm external compliance.",
+          "subComponentDescription": "Confirm compliance of policies, principles, standards, procedures and methodologies with legal, regulatory and contractual requirements.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Regularly evaluate organizational policies, standards, procedures and methodologies in all functions of the enterprise to ensure compliance with relevant legal and regulatory requirements in relation to the processing of information.",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Address compliance gaps in policies, standards and procedures on a timely basis.",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Periodically evaluate business and IT processes and activities to ensure adherence to applicable legal, regulatory and contractual requirements.",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": "Regularly review for recurring patterns of compliance failures and assess lessons learned.",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Maturity Level 5",
+              "questionDescription": "Based on review and lessons learned, improve policies, standards, procedures, methodologies, and associated processes and activities.",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            }
+          ]
+        },
+        {
+          "subComponentCode": "MEA03.04",
+          "subComponentName": "Obtain assurance of external compliance.",
+          "subComponentDescription": "Obtain and report assurance of compliance and adherence with policies, principles, standards, procedures and methodologies. Confirm that corrective actions to address compliance gaps are closed in a timely manner.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Obtain regular confirmation of compliance with internal policies from business and IT process owners and unit heads.",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Perform regular (and, where appropriate, independent) internal and external reviews to assess levels of compliance.",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "If required, obtain assertions from third-party I&T service providers on levels of their compliance with applicable laws and regulations.",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "If required, obtain assertions from business partners on levels of their compliance with applicable laws and regulations as they relate to intercompany electronic transactions.",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Integrate reporting on legal, regulatory and contractual requirements at an enterprisewide level, involving all business units.",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": "Monitor and report on noncompliance issues and, where necessary, investigate the root cause.",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "No data provided.",
+              "relatedGuidance": "CMMI Data Management Maturity Model, 2014",
+              "detailedReference": "Supporting Processes - Process Quality Assurance",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "No data provided.",
+              "relatedGuidance": "ISO/IEC 27002:2013/Cor.2:2015(E) ",
+              "detailedReference": "18. Compliance",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "componentName": "B",
+      "componentDescription": "Organizational Structures",
+      "componentPercFinal": 0,
+      "componentQuestions": [
+        {
+          "questionType": "MEA03.01",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": ""
+        },
+        {
+          "questionType": "MEA03.02",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": ""
+        },
+        {
+          "questionType": "MEA3.03",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": ""
+        },
+        {
+          "questionType": "MEA03.04",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": ""
+        }
+      ]
+    },
+    {
+      "componentCode": "C",
+      "componentDescription": "Information Flows and Items",
+      "componentPercFinal": 0,
+      "subComponents": [
+        {
+          "subComponentCode": "MEA03.01",
+          "subComponentName": "Identify external compliance requirements.",
+          "subComponentDescription": "On a continuous basis, monitor changes in local and international laws, regulations and other external requirements and identify mandates for compliance from an I&T perspective.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Input",
+              "questionDescription": "Legal and regulatory compliance requirements",
+              "inputFrom": "Outside COBIT",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Log of required compliance actions",
+              "inputFrom": "No data provided.",
+              "outputTo": "Internal",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Compliance requirements register",
+              "inputFrom": "No data provided.",
+              "outputTo": "Internal",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            }
+          ]
+        },
+        {
+          "subComponentCode": "MEA03.02",
+          "subComponentName": "Optimize response to external requirements.",
+          "subComponentDescription": "Description",
+          "subComponentQuestions": [
+            {
+              "questionType": "Output",
+              "questionDescription": "Communications of changed compliance requirements",
+              "inputFrom": "No data provided.",
+              "outputTo": "All APO; All BAI; All DSS; All MEA; EDM01.01",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Updated policies, principles, procedures and standards",
+              "inputFrom": "No data provided.",
+              "outputTo": "APO01.09; APO01.11",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            }
+          ]
+        },
+        {
+          "subComponentCode": "MEA03.03",
+          "subComponentName": "Confirm external compliance.",
+          "subComponentDescription": "Confirm compliance of policies, principles, standards, procedures and methodologies with legal, regulatory and contractual requirements.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Input",
+              "questionDescription": "Compliance audit results",
+              "inputFrom": "BAI05.06",
+              "outputTo": "No data provided.",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Results of installed license audits",
+              "inputFrom": "BAI09.05",
+              "outputTo": "No data provided.",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "License deviations",
+              "inputFrom": "BAI10.05",
+              "outputTo": "No data provided.",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Insurance policy reports",
+              "inputFrom": "DSS01.04",
+              "outputTo": "No data provided.",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Compliance confirmations",
+              "inputFrom": "No data provided.",
+              "outputTo": "EDM01.03",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Identified compliance gaps",
+
+              "inputFrom": "No data provided.",
+              "outputTo": "MEA04.08",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            }
+          ]
+        },
+        {
+          "subComponentCode": "MEA03.04",
+          "subComponentName": "Obtain assurance of external compliance.",
+          "subComponentDescription": "Obtain and report assurance of compliance and adherence with policies, principles, standards, procedures and methodologies. Confirm that corrective actions to address compliance gaps are closed in a timely manner.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Input",
+              "questionDescription": "Rules for validating and approving mandatory reports",
+              "inputFrom": "No data provided.",
+              "outputTo": "EDM05.02",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Assessment of reporting effectiveness",
+              "inputFrom": "No data provided.",
+              "outputTo": "EDM05.03",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Compliance assurance reports",
+              "inputFrom": "No data provided.",
+              "outputTo": "EDM01.03",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Reports of noncompliance issues and root causes",
+              "inputFrom": "No data provided.",
+              "outputTo": "EDM01.03;MEA04.04",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "componentName": "D",
+      "componentDescription": "Peoples, Skills and Competencies",
+      "componentPercFinal": 0,
+      "componentQuestions": [
+        {
+          "questionType": "Component question",
+          "questionSkill": "Information security",
+          "relatedGuidance": "Skills Framework for the Information Age V6, 2015",
+          "detailedReference": "SCTY",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": ""
+        }
+      ]
+    },
+    {
+      "componentName": "E",
+      "componentDescription": "Principles Policies and Procedures",
+      "componentPercFinal": 0,
+      "componentQuestions": [
+        {
+          "questionType": "Component question",
+          "relevantPolicy": "Compliance policy",
+          "policyDescription": "Identifies regulatory, contractual and internal compliance requirements. Explains the process to assess compliance with regulatory, contractual and internal requirements. Lists roles and responsibilities for different activities in the process and provides guidance on metrics to measure compliance. Obtains compliance reports and confirms compliance or corrective actions to address remediation of compliance gaps in a timely manner.",
+          "detailedGuidance": "No data provided.",
+          "detailedReference": "No data provided.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": ""
+        }
+      ]
+    },
+    {
+      "componentName": "F",
+      "componentDescription": "Culture, Ethics and Behavior",
+      "componentPercFinal": 0,
+      "componentQuestions": [
+        {
+          "questionType": "Component question",
+          "keyCultureElement": "Promote a compliance-aware culture, including zero tolerance of noncompliance with legal and regulatory requirements.",
+          "relatedGuidance": "No related guidance provided.",
+          "detailedReference": "No detailed reference provided.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": ""
+        }
+      ]
+    },
+    {
+      "componentName": "G",
+      "componentDescription": "Services, Infrastructure and Applications",
+      "componentPercFinal": 0,
+      "componentQuestions": [
+        {
+          "questionType": "Component question",
+          "questionDescription": "Regulatory Watch services, Third-party compliance assessment services",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": ""
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1419 @@
+{
+  "objectiveName": "DSS04",
+  "objectiveDescription": "Establish and maintain a plan to enable the business and IT organizations to respond to incidents and quickly adapt to disruptions. This will enable continued operations of critical business processes and required I&T services and maintain availability of resources, assets and information at a level acceptable to the enterprise.",
+  "objectivePurpose": "Adapt rapidly, continue business operations and maintain availability of resources and information at a level acceptable to the enterprise in the event of a significant disruption (e.g., threats, opportunities, demands).",
+  "typeOfObjective": "Management",
+  "maturityLevel": 0,
+  "maturityLevel0PercFinal": 0,
+  "maturityLevel1PercFinal": 0,
+  "maturityLevel2PercFinal": 0,
+  "maturityLevel3PercFinal": 0,
+  "maturityLevel4PercFinal": 0,
+  "maturityLevel5PercFinal": 0,
+  "structuresImage": "https://i.imgur.com/ghWSJdH.png",
+  "components": [
+    {
+      "componentCode": "EG",
+      "componentDescription": "Enterprise Goals",
+      "componentPercFinal": 0,
+      "subComponents": [
+        {
+          "subComponentCode": "EG01",
+          "subComponentName": "Portfolio of competitive products and services",
+          "subComponentQuestions": [
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Percent of products and services that meet or exceed targets in revenues and/or market share",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Percent of products and services that meet or exceed customer satisfaction targets",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Percent of products and services that provide competitive advantage",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Time to market for new products and services",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            }
+          ]
+        },
+        {
+          "subComponentCode": "EG02",
+          "subComponentName": "Managed business risk",
+          "subComponentQuestions": [
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Percent of critical business objectives and services covered by risk assessment",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Ratio of significant incidents that were not identified in risk assessments vs. total incidents",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Frequency of updating risk profile",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            }
+          ]
+        },
+
+
+
+        {
+          "subComponentCode": "EG06",
+          "subComponentName": "Business service continuity and availability",
+          "subComponentQuestions": [
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Number of customer service or business process interruptions causing significant incidents",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Business cost of incidents",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Number of business processing hours lost due to unplanned service interruptions",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Percent of complaints as a function of committed service availability targets",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            }
+
+          ]
+        },
+        {
+          "subComponentCode": "EG08",
+          "subComponentName": "Optimization of internal business process functionality",
+          "subComponentQuestions": [
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Satisfaction levels of board and executive management with business process capabilities",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Satisfaction levels of customers with service delivery capabilities",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Satisfaction levels of suppliers with supply chain capabilities",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            }
+
+          ]
+        }
+      ]
+    },
+
+    {
+      "componentCode": "AG",
+      "componentDescription": "Alignment Goals",
+      "componentPercFinal": 0,
+      "subComponents": [
+        {
+          "subComponentCode": "AG05",
+          "subComponentName": "Delivery of I&T services in line with business requirements",
+          "subComponentQuestions": [
+            {
+              "questionType": "Alignment goal",
+              "questionDescription": "Percent of business stakeholders satisfied that I&T service delivery meets agreed service levels",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Alignment goal",
+              "questionDescription": "Number of business disruptions due to I&T service incidents",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Alignment goal",
+              "questionDescription": "Percent of users satisfied with the quality of I&T service delivery",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            }
+
+
+          ]
+        },
+          {
+            "subComponentCode": "AG07",
+            "subComponentName": "Security of information, processing infrastructure and applications, and privacy",
+            "subComponentQuestions": [
+              {
+                "questionType": "Alignment goal",
+                "questionDescription": "Number of confidentiality incidents causing financial loss, business disruption or public embarrassment",
+                "questionAnswer": 0,
+                "questionScore": 0,
+                "questionComment": ""
+              },
+              {
+                "questionType": "Alignment goal",
+                "questionDescription": "Number of availability incidents causing financial loss, business disruption or public embarrassment",
+                "questionAnswer": 0,
+                "questionScore": 0,
+                "questionComment": ""
+              },
+              {
+                "questionType": "Alignment goal",
+                "questionDescription": "Number of integrity incidents causing financial loss, business disruption or public embarrassment",
+                "questionAnswer": 0,
+                "questionScore": 0,
+                "questionComment": ""
+              }
+            ]
+          }
+      ]
+    },
+    {
+      "componentName": "A",
+      "componentDescription": "Processes",
+      "componentPercFinal": 0,
+      "subComponents": [
+        {
+          "subComponentCode": "DSS04.01",
+          "subComponentName": "Define the business continuity policy, objectives and scope.",
+          "subComponentDescription": "Define business continuity policy and scope, aligned with enterprise and stakeholder objectives, to improve business resilience.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Identify internal and outsourced business processes and service activities that are critical to the enterprise operations or necessary to meet legal and/or contractual obligations.",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Identify key stakeholders and roles and responsibilities for defining and agreeing on continuity policy and scope.",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Define and document the agreed minimum policy objectives and scope for business resilience.",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Identify essential supporting business processes and related I&T services.",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "No data provided.",
+              "relatedGuidance": "HITRUST CSF version 9, September 2017",
+              "detailedReference": "12.01 Information Security Aspects of Business Continuity Management",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "No data provided.",
+              "relatedGuidance": "ISF, The Standard of Good Practice for Information Security 2016",
+              "detailedReference": "BC1.1 Business Continuity Strategy; BC1.2 Business Continuity Programme",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "No data provided.",
+              "relatedGuidance": "ISO/IEC 27002:2013/Cor.2:2015(E)",
+              "detailedReference": "17. Information security aspects of business continuity management",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "No data provided.",
+              "relatedGuidance": "National Institute of Standards and Technology Special Publication 800-53, Revision 5 (Draft), August 2017",
+              "detailedReference": "3.6 Contingency planning (CP-1)",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            }
+          ]
+        },
+        {
+          "subComponentCode": "DSS04.02",
+          "subComponentName": "Maintain business resilience.",
+          "subComponentDescription": "Evaluate business resilience options and choose a cost-effective and viable strategy that will ensure enterprise continuity, disaster recovery and incident response in the face of a disaster or other major incident or disruption.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Identify potential scenarios likely to give rise to events that could cause significant disruptive incidents.",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Conduct a business impact analysis to evaluate the impact over time of a disruption to critical business functions and the effect that a disruption would have on them.",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Establish the minimum time required to recover a business process and supporting I&T, based on an acceptable length of business interruption and maximum tolerable outage.",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Determine the conditions and owners of key decisions that will cause the continuity plans to be invoked.",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Assess the likelihood of threats that could cause loss of business continuity. Identify measures that will reduce the likelihood and impact through improved prevention and increased resilience.",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Analyze continuity requirements to identify possible strategic business and technical options.",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Identify resource requirements and costs for each strategic technical option and make strategic recommendations.",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Obtain executive business approval for selected strategic options.",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Risk-related root causes",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "APO12.06",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "No data provided.",
+              "relatedGuidance": "ISF, The Standard of Good Practice for Information Security 2016",
+              "detailedReference": "BC1.3 Resilient Technical Environments",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "No data provided.",
+              "relatedGuidance": "ITIL V3, 2011",
+              "detailedReference": "Service Design, 4.6 IT Continuity Management",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "No data provided.",
+              "relatedGuidance": "National Institute of Standards and Technology Special Publication 800-53, Revision 5 (Draft), August 2017",
+              "detailedReference": "3.6 Contingency planning (CP-2)",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            }
+          ]
+        },
+        {
+          "subComponentCode": "DSS04.03",
+          "subComponentName": "Develop and implement a business continuity response.",
+          "subComponentDescription": "Develop a business continuity plan (BCP) and disaster recovery plan (DRP) based on the strategy. Document all procedures necessary for the enterprise to continue critical activities in the event of an incident.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Define the incident response actions and communications to be taken in the event of disruption. Define related roles and responsibilities, including accountability for policy and implementation.",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Ensure that key suppliers and outsource partners have effective continuity plans in place. Obtain audited evidence as required.",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Define the conditions and recovery procedures that would enable resumption of business processing. Include updating and reconciliation of information databases to preserve information integrity.",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Develop and maintain operational BCPs and DRPs that contain the procedures to be followed to enable continued operation of critical business processes and/or temporary processing arrangements. Include links to plans of outsourced service providers.",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Define and document the resources required to support the continuity and recovery procedures, considering people, facilities and IT infrastructure.",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Define and document the information backup requirements required to support the plans. Include plans and paper documents as well as data files. Consider the need for security and off-site storage.",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Determine required skills for individuals involved in executing the plan and procedures.",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Distribute the plans and supporting documentation securely to appropriately authorized interested parties. Make sure the plans and documentation are accessible under all disaster scenarios.",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "No data provided.",
+              "relatedGuidance": "ISF, The Standard of Good Practice for Information Security 2016",
+              "detailedReference": "BC1.4 Crisis Management; BC2.1 Business Continuity Planning",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "No data provided.",
+              "relatedGuidance": "National Institute of Standards and Technology Special Publication 800-53, Revision 5 (Draft), August 2017",
+              "detailedReference": "3.6 Contingency planning (CP-6, CP-9, CP-10)",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            }
+          ]
+        },
+        {
+          "subComponentCode": "DSS04.04",
+          "subComponentName": "Exercise, test and review the business continuity plan (BCP) and disaster response plan (DRP).",
+          "subComponentDescription": "Test continuity on a regular basis to exercise plans against predetermined outcomes, uphold business resilience and allow innovative solutions to be developed.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Define objectives for exercising and testing the business, technical, logistical, administrative, procedural and operational systems of the plan to verify completeness of the BCP and DRP in meeting business risk.",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Define and agree on stakeholder exercises that are realistic and validate continuity procedures. Include roles and responsibilities and data retention arrangements that cause minimum disruption to business processes.",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Assign roles and responsibilities for performing continuity plan exercises and tests.",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Schedule exercises and test activities as defined in the continuity plans.",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": "Conduct a post-exercise debriefing and analysis to consider the achievement.",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Maturity Level 5",
+              "questionDescription": "Based on the results of the review, develop recommendations for improving the current continuity plans.",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "No data provided.",
+              "relatedGuidance": "CMMI Cybermaturity Platform, 2018",
+              "detailedReference": "PP.RS Develop and Maintain Response Plans; PP.RP Develop and Maintain Recovery Plans",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "No data provided.",
+              "relatedGuidance": "ISF, The Standard of Good Practice for Information Security 2016",
+              "detailedReference": "BC2.3 Business Continuity Testing",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "No data provided.",
+              "relatedGuidance": "The CIS Critical Security Controls for Effective Cyber Defense Version 6.1, August 2016",
+              "detailedReference": "CSC 20: Penetration Tests and Red Team Exercises",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            }
+          ]
+        },
+        {
+          "subComponentCode": "DSS04.05",
+          "subComponentName": "Review, maintain and improve the continuity plans.",
+          "subComponentDescription": "Conduct a management review of the continuity capability at regular intervals to ensure its continued suitability, adequacy and effectiveness. Manage changes to the plans in accordance with the change control process to ensure that continuity plans are kept up to date and continually reflect actual business requirements.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "On a regular basis, review the continuity plans and capability against any assumptions made and current business operational and strategic objectives",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "On a regular basis, review the continuity plans to consider the impact of new or major changes to enterprise organization, business processes, outsourcing arrangements, technologies, infrastructure, operating systems and application systems.",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Consider whether a revised business impact assessment may be required, depending on the nature of the change.",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Recommend changes in policy, plans, procedures, infrastructure, and roles and responsibilities. Communicate them as appropriate for management approval and processing via the IT change management process.",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            }
+          ]
+        },
+        {
+          "subComponentCode": "DSS04.06",
+          "subComponentName": "Conduct continuity plan training.",
+          "subComponentDescription": "Provide all concerned internal and external parties with regular training sessions regarding procedures and their roles and responsibilities in case of disruption.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Roll out BCP and DRP awareness and training.",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Define and maintain training requirements and plans for those performing continuity planning, impact assessments, risk assessments, media communication and incident response. Ensure that the training plans consider frequency of training and training delivery mechanisms.",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Develop competencies based on practical training, including participation in exercises and tests.",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": "Based on the exercise and test results, monitor skills and competencies.",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "No data provided.",
+              "relatedGuidance": "National Institute of Standards and Technology Special Publication 800-53, Revision 5 (Draft), August 2017",
+              "detailedReference": "3.6 Contingency planning (CP-4)",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            }
+          ]
+        },
+        {
+          "subComponentCode": "DSS04.07",
+          "subComponentName": "Manage backup arrangements.",
+          "subComponentDescription": "Maintain availability of business-critical information.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Back up systems, applications, data and documentation according to a defined schedule. Consider frequency (monthly, weekly, daily, etc.), mode of backup (e.g., disk mirroring for real-time backups vs. DVD-ROM for long-term retention), type of backup (e.g., full vs. incremental), and type of media. Consider also automated online backups, data types (e.g., voice, optical), creation of logs, critical end-user computing data (e.g., spreadsheets), physical and logical location of data sources, security and access rights, and encryption.",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Define requirements for on-site and off-site storage of backup data that meet the business requirements. Consider the accessibility required to back up data.",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Periodically test and refresh archived and backup data.",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Ensure that systems, applications, data and documentation maintained or processed by third parties are adequately backed up or otherwise secured. Consider requiring return of backups from third parties. Consider escrow or deposit arrangements.",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "No data provided.",
+              "relatedGuidance": "CMMI Cybermaturity Platform, 2018",
+              "detailedReference": "IP.BP Apply Backup Processes",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "No data provided.",
+              "relatedGuidance": "HITRUST CSF version 9, September 2017",
+              "detailedReference": "09.05 Information Back-Up",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "No data provided.",
+              "relatedGuidance": "ISF, The Standard of Good Practice for Information Security 2016",
+              "detailedReference": "SY2.3 Backup",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "No data provided.",
+              "relatedGuidance": "ISO/IEC 27002:2013/Cor.2:2015(E)",
+              "detailedReference": "12.3 Backup",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "No data provided.",
+              "relatedGuidance": "National Institute of Standards and Technology Special Publication 800-53, Revision 5 (Draft), August 2017",
+              "detailedReference": "3.6 Contingency planning (CP-3)",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "No data provided.",
+              "relatedGuidance": "The CIS Critical Security Controls for Effective Cyber Defense Version 6.1, August 2016",
+              "detailedReference": "CSC 10: Data Recovery Capability",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            }
+          ]
+        },
+        {
+          "subComponentCode": "DSS04.08",
+          "subComponentName": "Conduct post-resumption review.",
+          "subComponentDescription": "Assess the adequacy of the business continuity plan (BCP) and disaster response plan (DRP) following successful resumption of business processes and services after a disruption.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": "Assess adherence to the documented BCP and DRP.",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": "Determine the effectiveness of the plans, continuity capabilities, roles and responsibilities, skills and competencies, resilience to the incident, technical infrastructure, and organizational structures and relationships.",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Maturity Level 5",
+              "questionDescription": "Identify weaknesses or omissions in the plans and capabilities and make recommendations for improvement. Obtain management approval for any changes to the plans and apply via the enterprise change control process.",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "componentName": "B",
+      "componentDescription": "Organizational Structures",
+      "componentPercFinal": 0,
+      "componentQuestions": [
+        {
+          "questionType": "DSS04.01",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": ""
+        },
+        {
+          "questionType": "DSS04.02",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": ""
+        },
+        {
+          "questionType": "DSS04.03",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": ""
+        },
+        {
+          "questionType": "DSS04.04",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": ""
+        },
+        {
+          "questionType": "DSS04.05",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": ""
+        },
+        {
+          "questionType": "DSS04.06",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": ""
+        },
+        {
+          "questionType": "DSS04.07",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": ""
+        },
+        {
+          "questionType": "DSS04.08",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": ""
+        }
+      ]
+    },
+    {
+      "componentCode": "C",
+      "componentDescription": "Information Flows and Items",
+      "componentPercFinal": 0,
+      "subComponents": [
+        {
+          "subComponentCode": "DSS04.01",
+          "subComponentName": "Define the business continuity policy, objectives and scope.",
+          "subComponentDescription": "Define business continuity policy and scope, aligned with enterprise and stakeholder objectives, to improve business resilience.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Input",
+              "questionDescription": "SLAs",
+              "inputFrom": "APO09.03",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Configuration repository",
+              "inputFrom": "BAI10.02",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Updated repository with configuration items",
+              "inputFrom": "BAI10.03",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Configuration status reports",
+              "inputFrom": "BAI10.04",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Asset monitoring rules and event conditions",
+              "inputFrom": "DSS01.03",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Problem classification scheme",
+              "inputFrom": "DSS03.01",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Incident response actions and communications",
+              "inputFrom": "DSS04.03",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Criteria for problem registration",
+              "inputFrom": "No data provided.",
+              "outputTo": "DSS03.01",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Rules for incident escalation",
+              "inputFrom": "No data provided.",
+              "outputTo": "Internal",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Incident and service request classification schemes and models",
+              "inputFrom": "No data provided.",
+              "outputTo": "Internal",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            }
+          ]
+        },
+        {
+          "subComponentCode": "DSS04.02",
+          "subComponentName": "Maintain business resilience.",
+          "subComponentDescription": "Evaluate business resilience options and choose a cost-effective and viable strategy that will ensure enterprise continuity, disaster recovery and incident response in the face of a disaster or other major incident or disruption.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Input",
+              "questionDescription": "� Risk impact communication, Risk-related root causes",
+              "inputFrom": "APO12.06",
+              "outputTo": "No data provided.",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Approved strategic options",
+              "inputFrom": "No data provided.",
+              "outputTo": "APO02.05",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "BIAs",
+              "inputFrom": "No data provided.",
+              "outputTo": "APO12.02",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Continuity requirements",
+              "inputFrom": "No data provided.",
+              "outputTo": "Internal",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            }
+          ]
+        },
+        {
+          "subComponentCode": "DSS04.03",
+          "subComponentName": "Develop and implement a business continuity response.",
+          "subComponentDescription": "Develop a business continuity plan (BCP) and disaster recovery plan (DRP) based on the strategy. Document all procedures necessary for the enterprise to continue critical activities in the event of an incident.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Input",
+              "questionDescription": "OLAs",
+              "inputFrom": "APO09.03",
+              "outputTo": "No data provided.",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Incident response actions and communications",
+              "inputFrom": "DSS02.01",
+              "outputTo": "No data provided.",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "BCP",
+              "inputFrom": "No data provided.",
+              "outputTo": "Internal",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            }
+          ]
+        },
+        {
+          "subComponentCode": "DSS04.04",
+          "subComponentName": "Exercise, test and review the business continuity plan (BCP) and disaster response plan (DRP).",
+          "subComponentDescription": "Test continuity on a regular basis to exercise plans against predetermined outcomes, uphold business resilience and allow innovative solutions to be developed.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Output",
+              "questionDescription": "Test results and recommendations",
+              "inputFrom": "No data provided.",
+              "outputTo": "Internal",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Test exercises",
+              "inputFrom": "No data provided.",
+              "outputTo": "Internal",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Test objectives",
+              "inputFrom": "No data provided.",
+              "outputTo": "Internal",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            }
+          ]
+        },
+        {
+          "subComponentCode": "DSS04.05",
+          "subComponentName": "Review, maintain and improve the continuity plans.",
+          "subComponentDescription": "Conduct a management review of the continuity capability at regular intervals to ensure its continued suitability, adequacy and effectiveness. Manage changes to the plans in accordance with the change control process to ensure that continuity plans are kept up to date and continually reflect actual business requirements.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Output",
+              "questionDescription": "Recommended changes to plans",
+              "inputFrom": "No data provided.",
+              "outputTo": "Internal",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Results of reviews of plans",
+              "inputFrom": "No data provided.",
+              "outputTo": "Internal",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            }
+          ]
+        },
+        {
+          "subComponentCode": "DSS04.06",
+          "subComponentName": "Conduct continuity plan training.",
+          "subComponentDescription": "Provide all concerned internal and external parties with regular training sessions regarding procedures and their roles and responsibilities in case of disruption.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Input",
+              "questionDescription": "List of personnel requiring training",
+              "inputFrom": "HR",
+              "outputTo": "No data provided.",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Monitoring results of skills and competencies",
+              "inputFrom": "No data provided.",
+              "outputTo": "APO07.03",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Training requirements",
+              "inputFrom": "No data provided.",
+              "outputTo": "APO07.03",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            }
+          ]
+        },
+        {
+          "subComponentCode": "DSS04.07",
+          "subComponentName": "Manage backup arrangements.",
+          "subComponentDescription": "Maintain availability of business-critical information.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Input",
+              "questionDescription": "Backup plan, Backup test plan",
+              "inputFrom": "APO14.10",
+              "outputTo": "No data provided.",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Test results of backup data",
+              "inputFrom": "No data provided.",
+              "outputTo": "Internal",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Backup data",
+              "inputFrom": "No data provided.",
+              "outputTo": "Internal;APO14.08",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            }
+          ]
+        },
+        {
+          "subComponentCode": "DSS04.08",
+          "subComponentName": "Conduct post-resumption review.",
+          "subComponentDescription": "Assess the adequacy of the business continuity plan (BCP) and disaster response plan (DRP) following successful resumption of business processes and services after a disruption.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Output",
+              "questionDescription": "Approved changes to the plans",
+              "inputFrom": "No data provided.",
+              "outputTo": "BAI06.01",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Post-resumption review report",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "Internal",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "componentName": "D",
+      "componentDescription": "Peoples, Skills and Competencies",
+      "componentPercFinal": 0,
+      "componentQuestions": [
+        {
+          "questionType": "Component question",
+          "questionSkill": "Continuity management",
+          "relatedGuidance": "Skills Framework for the Information Age V6, 2015",
+          "detailedReference": "COPL",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": ""
+        }
+      ]
+    },
+    {
+      "componentName": "E",
+      "componentDescription": "Principles Policies and Procedures",
+      "componentPercFinal": 0,
+      "componentQuestions": [
+        {
+          "questionType": "Component question",
+          "relevantPolicy": "Business continuity policy",
+          "policyDescription": "Outlines management�s commitment to the business impact assessment (BIA), business contingency plan (including trusted recovery), recovery requirements for critical systems, defined thresholds and triggers for contingencies, escalation plan, data recovery plan, training and testing.",
+          "detailedGuidance": "No data provided.",
+          "detailedReference": "No data provided.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": ""
+        },
+        {
+          "questionType": "Component question",
+          "relevantPolicy": "Crisis management policy",
+          "policyDescription": "Sets guidelines and sequence of crisis response in key areas of risk. Along with I&T security, network management, and data security and privacy, crisis management is one of the operational-level policies that should be considered for complete I&T risk management.",
+          "detailedGuidance": "No data provided.",
+          "detailedReference": "No data provided.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": ""
+        }
+      ]
+    },
+    {
+      "componentName": "F",
+      "componentDescription": "Culture, Ethics and Behavior",
+      "componentPercFinal": 0,
+      "componentQuestions": [
+        {
+          "questionType": "Component question",
+          "keyCultureElement": "Embed the need for business resilience in the enterprise culture. Regularly and frequently update employees about core values, desired behaviors and strategic objectives to maintain the enterprise�s composure and image in every situation. Regularly test business continuity procedures and disaster recovery.",
+          "relatedGuidance": "No related guidance provided.",
+          "detailedReference": "No detailed reference provided.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": ""
+        }
+      ]
+    },
+    {
+      "componentName": "G",
+      "componentDescription": "Services, Infrastructure and Applications",
+      "componentPercFinal": 0,
+      "componentQuestions": [
+        {
+          "questionType": "Component question",
+          "questionDescription": "External hosting services, Incident monitoring tools, Remote storage facility services",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": ""
+        }
+      ]
+    }
+  ]
+}

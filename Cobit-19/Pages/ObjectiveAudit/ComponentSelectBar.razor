@@ -1,0 +1,65 @@
+﻿@inject NavigationManager navigationManager
+@using Cobit_19.Business.ObjectiveAudits
+@using Cobit_19.Shared.Dtos
+@inject ObjectiveAuditProvider objectiveAuditProvider
+
+@code{
+    [Parameter]
+    public int objectiveAuditId { get; set; }
+    [Parameter]
+    public string selectedPage { get; set; }
+
+    public string jsonAuditString;
+    public FullObjectiveAuditDto auditJSON;
+    public string navBarDefaultStyle = "nav-link link-dark border";
+
+    protected override void OnInitialized()
+    {
+        jsonAuditString = objectiveAuditProvider.getAuditJSON(objectiveAuditId);
+        auditJSON = AuditJSONParsingService.parseAuditTemplate(jsonAuditString);
+    }
+
+    private void dashBoardClick (int objectiveID)
+    {
+        navigationManager.NavigateTo("/auditDashboard?objectiveAuditId=" + objectiveAuditId);
+    }
+
+    private void componentClick (int objectiveID, int componentID)
+    {
+        navigationManager.NavigateTo($"/component?objectiveAuditId={objectiveID}&compId={componentID}");
+    }
+
+}
+
+<ul class="nav nav-fill nav-pills pb-3">
+    <li class="nav-item m-1">
+        <a class="@(selectedPage == "Dashboard" ? navBarDefaultStyle + " active" : navBarDefaultStyle)" role='button' @onclick="() => dashBoardClick(objectiveAuditId)">Dashboard</a>
+    </li>
+    <li class="nav-item m-1">
+        <a class="@(selectedPage == "Enterprise Goals" ? navBarDefaultStyle + " active" : navBarDefaultStyle)" role='button' @onclick="() => componentClick(objectiveAuditId, 0)">Enterprise Goals</a>
+    </li>
+    <li class="nav-item m-1">
+        <a class="@(selectedPage == "Alignment Goals" ? navBarDefaultStyle + " active" : navBarDefaultStyle)" role='button' @onclick="() => componentClick(objectiveAuditId, 1)">Alignment Goals</a>
+    </li>
+    <li class="nav-item m-1">
+        <a class="@(selectedPage == "Processes" ? navBarDefaultStyle + " active" : navBarDefaultStyle)" role='button' @onclick="() => componentClick(objectiveAuditId, 2)">Processes</a>
+    </li>
+    <li class="nav-item m-1">
+        <a class="@(selectedPage == "Organizational Structures" ? navBarDefaultStyle + " active" : navBarDefaultStyle)" role='button' @onclick="() => componentClick(objectiveAuditId, 3)">Structures</a>
+    </li>
+    <li class="nav-item m-1">
+        <a class="@(selectedPage == "Information Flows and Items" ? navBarDefaultStyle + " active" : navBarDefaultStyle)" role='button' @onclick="() => componentClick(objectiveAuditId, 4)">Information</a>
+    </li>
+    <li class="nav-item m-1">
+        <a class="@(selectedPage == "Peoples, Skills and Competencies" ? navBarDefaultStyle + " active" : navBarDefaultStyle)" role='button' @onclick="() => componentClick(objectiveAuditId, 5)">People</a>
+    </li>
+    <li class="nav-item m-1">
+        <a class="@(selectedPage == "Principles Policies and Procedures" ? navBarDefaultStyle + " active" : navBarDefaultStyle)" role='button' @onclick="() => componentClick(objectiveAuditId, 6)">Policies</a>
+    </li>
+    <li class="nav-item m-1">
+        <a class="@(selectedPage == "Culture, Ethics and Behavior" ? navBarDefaultStyle + " active" : navBarDefaultStyle)" role='button' @onclick="() => componentClick(objectiveAuditId, 7)">Culture</a>
+    </li >
+    <li class="nav-item m-1">
+        <a class="@(selectedPage == "Services, Infrastructure and Applications" ? navBarDefaultStyle + " active" : navBarDefaultStyle)" role='button' @onclick="() => componentClick(objectiveAuditId, 8)">Technology</a>
+    </li>
+</ul>

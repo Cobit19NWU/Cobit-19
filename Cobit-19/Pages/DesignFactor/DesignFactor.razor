@@ -1,0 +1,484 @@
+﻿@page "/DesignFactor"
+@using Cobit_19.Business.Admin;
+@using Cobit_19.Business.Audits
+@using Cobit_19.Business.FocusAreas;
+@using Cobit_19.Data.Models;
+@using Cobit_19.Shared.Dtos
+@using Microsoft.AspNetCore.Identity;
+@using Syncfusion.Blazor.Charts
+@using Microsoft.AspNetCore.WebUtilities
+@inject AuditProvider auditProvider
+@inject FocusAreaProvider focusAreaProvider
+@inject NavigationManager navigationManager
+@inject AuthenticationStateProvider authStateProvider
+@inject UserManager<ApplicationUser> userManager
+@inject UserManagementProvider userManagementProvider
+
+@code {
+    protected DesignFactorDto? _designFactorDto;
+    protected List<ObjectiveDto>? _objectiveDtos;
+
+    private string error;
+
+    [Parameter]
+    [SupplyParameterFromQuery]
+    public int AuditId { get; set; }
+    [Parameter]
+    [SupplyParameterFromQuery]
+    public int DFId { get; set; }
+
+    public string userID;
+    public UserDto userDto;
+    public string userRole;
+
+    protected List<ObjectiveValueDto>? _mappedObjectives { get; set; }
+    private int _isNextButtonDFId { get; set; } = -1;
+    private int _isPreviousButtonDFId { get; set; } = -1;
+
+
+    private enum UpdateType
+    {
+        answer,
+        odds
+    }
+
+    //Constructor
+    protected override async Task OnInitializedAsync()
+    {
+        error = "";
+        _designFactorDto = await auditProvider.getDesignFactorFullAsync(AuditId, DFId);
+        _objectiveDtos = await auditProvider.getObjectivesAsync();
+        _mappedObjectives = MappingService.Calculate(_designFactorDto, _objectiveDtos);
+        CheckNavButtons();
+
+        var authState = await authStateProvider.GetAuthenticationStateAsync();
+        var user = authState.User;
+
+        if (user.Identity.IsAuthenticated)
+        {
+            var currentUser = await userManager.GetUserAsync(user);
+            userID = currentUser.Id;
+        }
+
+        userDto = await userManagementProvider.GetUserDtoByIdAsync(userID);
+
+        userRole = await userManagementProvider.getUserRoleAsync(userDto);
+    }
+
+    private bool readOnlyUserCheck()
+    {
+        if (userRole == "Client")
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+    // Update values 
+    private async Task Update(int questionId, UpdateType updateType, ChangeEventArgs args)
+    {
+        int value;
+        if (int.TryParse(args.Value.ToString(), out value))
+        {
+            var old = _designFactorDto.Questions.First(x => x.ID == questionId).Answers.First();
+
+            AnswerEditorDto answerEditorDto = new AnswerEditorDto()
+            {
+                AuditID = AuditId,
+                QuestionID = questionId
+            };
+
+            if (updateType == UpdateType.answer)
+            {
+                answerEditorDto.Answer = value;
+                answerEditorDto.Odds = old.Odds;
+            }
+            else
+            {
+                answerEditorDto.Answer = old.Answer;
+                answerEditorDto.Odds = value;
+            }
+
+            await auditProvider.updateAnswerAsync(answerEditorDto);
+
+            // I feel this is such a bad way to do this but i cant think of a better way
+            _designFactorDto.Questions.First(x => x.ID == questionId).Answers.First().Answer = answerEditorDto.Answer;
+            _designFactorDto.Questions.First(x => x.ID == questionId).Answers.First().Odds = answerEditorDto.Odds;
+
+            _mappedObjectives = MappingService.Calculate(_designFactorDto, _objectiveDtos);
+        }
+
+        checkTotal();
+    }
+
+    // Used to check if the answer is selected
+    private bool IsAnswerSelected(int answer, int option)
+    {
+        return answer == option;
+    }
+
+    // Nav buttons logic
+    private void CheckNavButtons()
+    {
+        // Check if there is a next design factor
+        var next = focusAreaProvider.GetNextDesignFactor(1, DFId);
+
+        if (next != null)
+        {
+            _isNextButtonDFId = next.ID;
+        }
+        else
+        {
+            _isNextButtonDFId = -1;
+        }
+
+        // Check if there is a previous design factor
+        var prev = focusAreaProvider.GetPrevDesignFactor(1, DFId);
+
+        if (prev != null)
+        {
+            _isPreviousButtonDFId = prev.ID;
+        }
+        else
+        {
+            _isPreviousButtonDFId = -1;
+        }
+    }
+
+    private void NavButtonPress(int navDFId)
+    {
+        var queryStrDict = new Dictionary<string, string>
+            {
+                ["AuditId"] = (AuditId).ToString(),
+                ["DFId"] = (navDFId).ToString(),
+            };
+        navigationManager.NavigateTo(
+            QueryHelpers.AddQueryString("/DesignFactor", queryStrDict)
+        );
+    }
+
+    private void BackButtonPress()
+    {
+        var queryStrDict = new Dictionary<string, string>
+            {
+                ["AuditId"] = (AuditId).ToString(),
+            };
+        navigationManager.NavigateTo(
+            QueryHelpers.AddQueryString("/Audit", queryStrDict)
+        );
+    }
+
+    private AnswerDto getFirstAnswer()
+    {
+        return _designFactorDto.Questions.FirstOrDefault().Answers.FirstOrDefault();
+    }
+
+    private bool checkTotal()
+    {
+        if (getFirstAnswer().Odds == 0 && getFirstAnswer().AnswerRange == 100)
+        {
+            error = "";
+            int total = 0;
+            foreach (var q in _designFactorDto.Questions)
+            {
+                total += q.Answers.FirstOrDefault().Answer;
+            }
+
+            if (total != 100)
+            {
+                error = "The total must add up to 100 current total is" + total.ToString();
+                return false;
+            }
+        }
+        return true;
+    }
+}
+
+
+
+<div class="container-fluid">
+   
+     <div class="row">
+            <div>
+                <button type="button" onclick="@(() => BackButtonPress())" class="btn btn-primary">Back</button>
+            </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+<AuthorizeView>
+    <div class="container">
+        <div class="row">
+            <div class="col-9">
+                @if (_designFactorDto is null)
+                {
+                    <p><em>Loading...</em></p>
+                }
+                else
+                {
+                    <div class="border border-dark bg-light p-3">
+                        <div>
+                            <h3> Design Factor : @_designFactorDto.Description</h3>
+                            @if(error != "")
+                            {
+                                <div class="row bg-danger bg-opacity-25 m-3 p-2 text-center">
+                                    <strong>@error</strong>
+                                </div>
+                            }
+                        </div>
+                        @if (_designFactorDto.Questions.Count == 0)
+                        {
+                            <tr>
+                                <td colspan="4">No questions found.</td>
+                            </tr>
+                        }
+                        else
+                        {
+                            <table class="table border-3 table-bordered" >
+                                <thead>
+                                    <tr style="background-color: purple; color: white;">
+                                        <th>Description</th>
+                                        @if (getFirstAnswer().Odds == 0)
+                                        {
+                                            @if (getFirstAnswer().AnswerRange <= 8)
+                                            {
+                                                @for (int i = 1; i <= getFirstAnswer().AnswerRange; i++)
+                                                {
+                                                    <th>@i</th>
+                                                }
+                                                <th>Rating</th>
+                                            }
+                                            else if (getFirstAnswer().AnswerRange == 100)
+                                            {
+                                                <th>Value(%)</th>
+                                            }
+                                            else
+                                            {
+                                                <th>Value(1 - @getFirstAnswer().AnswerRange)</th>
+                                            }
+                                        }
+                                        else
+                                        {
+                                            <th>Impact (1 - @getFirstAnswer().AnswerRange)</th>
+                                            <th>Likelihood (1 - @getFirstAnswer().AnswerRange)</th>
+                                            <th>Risk Rating</th>
+                                        }
+                                         
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var q in _designFactorDto.Questions)
+                                    {
+                                        <tr>
+                                            <td style="text-align: justify;">
+                                                @q.Question
+                                            </td>
+                                            @if (getFirstAnswer().Odds == 0)
+                                            {
+
+                                                @if (q.Answers.First().AnswerRange <= 8)
+                                                {
+                                                    @for (int i = 1; i <= q.Answers.First().AnswerRange; i++)
+                                                    {
+                                                        <td>
+                                                            <input type="radio" name="@q.ID" id="@q.ID" value="@i"
+                                                            class="form-check-input"
+                                                            @onchange="((e) => Update(q.ID, UpdateType.answer, e))"
+                                                            checked="@IsAnswerSelected(q.Answers.First().Answer, i)" disabled="@readOnlyUserCheck()" />
+                                                        </td>
+                                                    }
+                                                    <td>
+                                                        @if (q.AnswerRange == 5)
+                                                        {
+                                                            @if (q.Answers.First().Answer == 1)
+                                                            {
+                                                                <span class="badge bg-danger">
+                                                                    <b>Not important</b>
+                                                                </span>
+                                                            }
+                                                            else if (q.Answers.First().Answer == 2)
+                                                            {
+                                                                <span class="badge bg-warning flex-fill">
+                                                                    <b>Somewhat important</b>
+                                                                </span>
+                                                            }
+                                                            else if (q.Answers.First().Answer == 3)
+                                                            {
+                                                                <span class="badge bg-warning flex-fill">
+                                                                    <b>Moderately important</b>
+                                                                </span>
+                                                            }
+                                                            else if (q.Answers.First().Answer == 4)
+                                                            {
+                                                                <span class="badge bg-primary flex-fill">
+                                                                    <b>Important</b>
+                                                                </span>
+                                                            }
+                                                            else
+                                                            {
+                                                                <span class="badge bg-success flex-fill">
+                                                                    <b>Most Important</b>
+                                                                </span>
+                                                            }
+                                                        }
+                                                        else
+                                                        {
+                                                            @if (q.Answers.First().Answer == 1)
+                                                            {
+                                                                <span class="badge bg-success">
+                                                                    <b>No Issue</b>
+                                                                </span>
+                                                            }
+                                                            else if (q.Answers.First().Answer == 2)
+                                                            {
+                                                                <span class="badge bg-warning flex-fill">
+                                                                    <b>Issue</b>
+                                                                </span>
+                                                            }
+                                                            else if (q.Answers.First().Answer == 3)
+                                                            {
+                                                                <span class="badge bg-danger flex-fill">
+                                                                    <b>Serious Issue</b>
+                                                                </span>
+                                                            }
+                                                        }
+                                                    </td>
+                                                }
+                                                else
+                                                {
+                                                    <td>
+                                                        <input type="number" name="@q.ID" id="@q.ID" min="0" max="@q.Answers.First().AnswerRange" value="@q.Answers.First().Answer"
+                                                        class="form-control"
+                                                        @onchange="((e) => Update(q.ID, UpdateType.answer, e))" readonly="@readOnlyUserCheck()" />
+                                                    </td>
+                                                }
+                                            }
+                                            else
+                                            {
+                                                <td>
+                                                    <input type="number" name="@q.ID" id="@q.ID" min="0" max="@q.Answers.First().AnswerRange" value="@q.Answers.First().Answer"
+                                                    class="form-control"
+                                                    @onchange="((e) => Update(q.ID, UpdateType.answer, e))" readonly="@readOnlyUserCheck()" />
+                                                </td> 
+                                                <td>
+                                                    <input type="number" name="@q.ID" id="@q.ID" min="0" max="@q.Answers.First().AnswerRange" value="@q.Answers.First().Odds"
+                                                    class="form-control"
+                                                    @onchange="((e) => Update(q.ID, UpdateType.odds, e))" readonly="@readOnlyUserCheck()" />
+                                                </td>
+                                                <td>
+                                                    @if(q.Answers.First().Answer * q.Answers.First().Odds < 10)
+                                                    {
+                                                        <span class="badge bg-success">
+                                                            <b>Low Risk</b>
+                                                        </span>
+                                                    }
+                                                    else if (q.Answers.First().Answer * q.Answers.First().Odds < 15)
+                                                    {
+                                                        <span class="badge bg-warning flex-fill">
+                                                            <b>Moderate Risk</b>
+                                                        </span>
+                                                    }
+                                                    else
+                                                    {
+                                                        <span class="badge bg-danger flex-fill">
+                                                            <b>High Risk</b>
+                                                        </span>
+                                                    }
+                                                </td>
+                                            }
+                                            
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        }
+                    </div>
+                }
+
+                @if (_designFactorDto is not null)
+                {
+                    <div class="container-fluid border-dark border mt-3 p-3 bg-light">
+                        <div class="col">
+                            <div class="panel panel-primary">
+
+                                <div class="panel-heading p-2" style="color: white; background-color : purple">
+                                    Output Section - @_designFactorDto.Description
+                                </div>
+
+                                <div class="panel-body">
+                                    <p>
+                                        The tab's output section visually represents the assigned significance to each of the forty COBIT 2019 governance and management objectives. A clear bar chart provides a concise overview of the prioritization and importance of each objective, in relation to the design factor.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <DesignFactorChart Values="@_mappedObjectives"></DesignFactorChart>
+                        
+                    </div>
+
+                    <div class="row lg-4 border-2 p-4">
+                        @if (_isPreviousButtonDFId != -1)
+                        {
+                            <div class="col">
+                                <button class="btn btn-primary" onclick="@(() => NavButtonPress(_isPreviousButtonDFId))">Back</button>
+                            </div>
+                        }
+                        <!--This is not implemented correctly. It should check how many pages exist and then populate the buttons this will only work for 10 DF-->
+                        @for (int i = 1; i <= 10; i++)
+                        {
+                            int x = i;
+                            <div class="col">
+                                @if ((i - 1) == _isPreviousButtonDFId )
+                                {
+                                    <button id="DFnav" class="btn btn-primary" onclick="@(() => NavButtonPress(x))">@i</button>                                    
+                                }
+                                else
+                                {
+                                    <button id="DFnav" class="btn btn-outline-light text-primary" onclick="@(() => NavButtonPress(x))">@i</button>
+                                }
+                                
+                                
+                            </div>
+                        }
+                        @if (_isNextButtonDFId != -1)
+                        {
+                            <div class="col">
+                                <button class="btn btn-primary" onclick="@(() => NavButtonPress(_isNextButtonDFId))">Next</button>
+                            </div>
+                        }
+                         @if (_isNextButtonDFId == -1)
+                        {
+                            <div class="col">
+                                <button type="button" onclick="@(() => BackButtonPress())" class="btn btn-primary">Done</button>
+                            </div>
+                        }
+                    </div>
+                }
+            </div>
+            <div class="col">
+                @if (_designFactorDto is not null)
+                {
+                ;
+                    <InfoPannel Header="Info Panel">
+                        <Body>
+                            <div>
+                                <p style="text-align: justify;">@_designFactorDto.Information</p>
+                            </div>
+                        </Body>
+                    </InfoPannel>
+                }
+            </div>
+        </div>
+    </div>
+</AuthorizeView>
+

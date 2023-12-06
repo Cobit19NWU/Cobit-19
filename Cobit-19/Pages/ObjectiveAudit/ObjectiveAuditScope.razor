@@ -1,0 +1,369 @@
+﻿@page "/ObjectiveAuditScope"
+
+@using Cobit_19.Business.Admin;
+@using Cobit_19.Business.Audits;
+@using Cobit_19.Business.ObjectiveAudits;
+@using Cobit_19.Data.Models;
+@using Cobit_19.Shared.Dtos;
+@using Cobit_19.Shared.Enums;
+@using Microsoft.AspNetCore.Components.Web
+@using Microsoft.AspNetCore.Identity;
+@using Microsoft.AspNetCore.WebUtilities
+@inject ObjectiveAuditProvider objectiveAuditProvider
+@inject AuditProvider auditProvider
+@inject NavigationManager navigationManager
+@inject AuthenticationStateProvider authStateProvider
+@inject UserManager<ApplicationUser> userManager
+@inject UserManagementProvider userManagementProvider
+
+@code {
+    private IList<ObjectiveAuditDto>? _objectiveAuditDto { get; set; }
+    private IList<UserDto>? _userDtos { get; set; }
+
+    [Parameter]
+    [SupplyParameterFromQuery]
+    public int AuditId { get; set; }
+
+    private bool tabHighOpened = false;
+    private bool tabSignificantOpened = false;
+    private bool tabLowOpened = false;
+
+    public string userID;
+    public UserDto userDto;
+    public string userRole;
+
+    protected override async Task OnInitializedAsync()
+    {
+        _objectiveAuditDto = objectiveAuditProvider.getAll(AuditId);
+        await CalculateScores();
+
+        var authState = await authStateProvider.GetAuthenticationStateAsync();
+        var user = authState.User;
+
+        if (user.Identity.IsAuthenticated)
+        {
+            var currentUser = await userManager.GetUserAsync(user);
+            userID = currentUser.Id;
+        }
+
+        userDto = await userManagementProvider.GetUserDtoByIdAsync(userID);
+
+        userRole = await userManagementProvider.getUserRoleAsync(userDto);
+    }
+
+    private bool readOnlyUserCheck()
+    {
+        if (userRole == "Client")
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+    private async Task CalculateScores()
+    {
+        var designFactors = new List<DesignFactorDto>();
+
+        // This is a temporary solution to get the design factors
+        var dfSummary = await auditProvider.getDesignFactorsAsync(AuditId);
+
+        foreach (var df in dfSummary)
+        {
+            designFactors.Add(await auditProvider.getDesignFactorFullAsync(AuditId, df.ID));
+        }
+
+        var objectiveDtos = await auditProvider.getObjectivesAsync();
+
+        var objectiveValueDto = MappingService.CalculateSummary(designFactors, objectiveDtos);
+
+        foreach (var obj in _objectiveAuditDto)
+        {
+            obj.ObjectiveScore = (int)objectiveValueDto[_objectiveAuditDto.IndexOf(obj)].RelativeInportance;
+        }
+
+        _objectiveAuditDto = _objectiveAuditDto.OrderByDescending(x => x.ObjectiveScore).ToList();
+    }
+
+    private async Task Update(int id, ChangeEventArgs e)
+    {
+        var objectiveAudit = _objectiveAuditDto.FirstOrDefault(q => q.ID == id);
+
+        if (objectiveAudit != null)
+        {
+            objectiveAudit.Selected = (bool)e.Value;
+
+            ObjectiveAuditEditorDto objectiveAuditEditorDto = new ObjectiveAuditEditorDto
+            {
+                ID = objectiveAudit.ID,
+                ApplicationUserID = objectiveAudit.ApplicationUserID,
+                Selected = objectiveAudit.Selected,
+                Status = objectiveAudit.Status
+            };
+
+            objectiveAuditProvider.update(objectiveAuditEditorDto);
+        }
+    }
+
+    private void AuditSelectionClick(int objectiveAuditID)
+    {
+        var queryStrDict = new Dictionary<string, string>
+            {
+                ["AuditId"] = (AuditId).ToString(),
+                ["ObjectiveAuditID"] = (objectiveAuditID).ToString(),
+            };
+        navigationManager.NavigateTo(
+            QueryHelpers.AddQueryString("/ObjectiveAuditMembers", queryStrDict)
+        );
+    }
+
+    private void NavButtonPress()
+    {
+        var queryStrDict = new Dictionary<string, string>
+            {
+                ["AuditId"] = (AuditId).ToString(),
+            };
+        navigationManager.NavigateTo(
+            QueryHelpers.AddQueryString("/Audit", queryStrDict)
+        );
+    }
+
+
+      private void BackButtonPress()
+    {
+        var queryStrDict = new Dictionary<string, string>
+            {
+                ["AuditId"] = (AuditId).ToString(),
+            };
+        navigationManager.NavigateTo(
+            QueryHelpers.AddQueryString("/Audit", queryStrDict)
+        );
+    }
+
+}
+
+
+
+<div class="container-fluid">
+   
+     <div class="row">
+            <div>
+                <button type="button" onclick="@(() => BackButtonPress())" class="mb-2 btn btn-primary">Back</button>
+            </div>
+    </div>
+</div>
+
+
+
+
+
+
+<div class="container-md">
+    <div class="row">
+        <div class="col-9">
+            @if (_objectiveAuditDto is null)
+            {
+                <p><em>Loading...</em></p>
+            }
+            else
+            {
+                <table class="table">
+                    <thead>
+                        <tr style="background-color: purple; color: white;">
+                            <th>Description</th>
+                            <th></th>
+                            <th>Importance</th>
+                            <th>Score</th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="bg-light" style="cursor:pointer" @onclick="() => tabHighOpened = !tabHighOpened">
+                            <td>
+                                <h3>                                   
+                                    High Importance
+                                </h3>
+                            </td>
+                            <th> <div class="indicate_large"></div></th>
+                            <th>High</th>
+                            <th>Score more than 75</th>
+                            <th>Selected</th>
+                            <th>Members</th>
+                        </tr>
+
+                        @if (tabHighOpened)
+                        {
+                            @foreach (var objectiveAudit in _objectiveAuditDto)
+                            {
+                                @if (objectiveAudit.ObjectiveScore > 75)
+                                {
+                                    <tr>
+                                        <td>@objectiveAudit.Objective.Name - @objectiveAudit.Objective.Description</td>
+                                        <th> <div class="indicate_large"></div></th>
+                                        <th>High</th>
+                                        <td>
+                                            @objectiveAudit.ObjectiveScore
+                                        </td>
+                                        <td>
+                                            <input type="checkbox" id="@objectiveAudit.ID" checked="@objectiveAudit.Selected"
+                                            @onchange="((e) => Update(objectiveAudit.ID, e))" disabled="@readOnlyUserCheck()"/>
+                                        </td>
+                                        <td>
+                                            @if (objectiveAudit.Selected)
+                                            {
+                                                <button type="button" class="btn btn-primary btn-sm" @onclick='() => AuditSelectionClick(objectiveAudit.ID)'>Members</button>
+                                            }
+                                        </td>
+                                    </tr>
+                                }
+                            }
+                        }
+
+
+                        <tr class="bg-light" style="cursor:pointer" @onclick="() => tabSignificantOpened = !tabSignificantOpened">
+                            <td>
+                                <h3 >
+                                    Moderate Importance
+                                </h3>
+                            </td>
+                            <th> <div class="indicate_large"></div></th>
+                            <th>Moderate</th>
+                            <th>Score between 50 and 75</th>
+                            <th>Selected</th>
+                            <th>Members</th>
+                        </tr>
+
+                        @if (tabSignificantOpened)
+                        {
+                            @foreach (var objectiveAudit in _objectiveAuditDto)
+                            {
+                                @if (objectiveAudit.ObjectiveScore > 50 && objectiveAudit.ObjectiveScore <= 75)
+                                {
+                                    <tr>
+                                        <td>@objectiveAudit.Objective.Name - @objectiveAudit.Objective.Description</td>
+                                        <th> <div class="indicate_large"></div></th>
+                                        <th>Moderate</th>
+                                        <td>
+                                            @objectiveAudit.ObjectiveScore
+                                        </td>
+                                        <td>
+                                            <input type="checkbox" id="@objectiveAudit.ID" checked="@objectiveAudit.Selected"
+                                            @onchange="((e) => Update(objectiveAudit.ID, e))" disabled="@readOnlyUserCheck()" />
+                                        </td>
+                                        <td>
+                                            @if (objectiveAudit.Selected)
+                                            {
+                                                <button type="button" class="btn btn-primary btn-sm" @onclick='() => AuditSelectionClick(objectiveAudit.ID)'>Members</button>
+                                            }
+                                        </td>
+                                    </tr>
+                                }
+                            }
+                        }
+                        <tr class="bg-light" style="cursor:pointer" @onclick="() => tabLowOpened = !tabLowOpened">
+                            <td>
+                                <h3> 
+                                    Low Importance
+                                </h3>
+                            </td>
+                            <th> <div class="indicate_large"></div></th>
+                            <th>Low</th>
+                            <th>Score below 50</th>
+                            <th>Selected</th>
+                            <th>Members</th>
+                        </tr>
+
+                        @if (tabLowOpened)
+                        {
+                            @foreach (var objectiveAudit in _objectiveAuditDto)
+                            {
+                                @if (objectiveAudit.ObjectiveScore <= 50)
+                                {
+                                    <tr>
+                                        <td>@objectiveAudit.Objective.Name - @objectiveAudit.Objective.Description</td>
+                                        <th> <div class="indicate_large"></div></th>
+                                        <th>Low</th>
+                                        <td>
+                                            @objectiveAudit.ObjectiveScore
+                                        </td>
+                                        <td>
+                                            <input type="checkbox" id="@objectiveAudit.ID" checked="@objectiveAudit.Selected"
+                                            @onchange="((e) => Update(objectiveAudit.ID, e))" disabled="@readOnlyUserCheck()" />
+                                        </td>
+                                        <td>
+                                            @if (objectiveAudit.Selected)
+                                            {
+                                                <button type="button" class="btn btn-primary btn-sm" @onclick='() => AuditSelectionClick(objectiveAudit.ID)'>Members</button>
+                                            }
+                                        </td>
+                                    </tr>
+                                }
+                            }
+                        }
+
+                    </tbody>
+                </table>
+            }
+
+            <div class="row">
+                <div class="col">
+                    <button type="button" onclick="@(() => NavButtonPress())" class="btn btn-primary">Done</button>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <InfoPannel Header="Info Panel">
+                <Body>
+                    <div>
+                        <p style="text-align: justify;">In this phase, enteprises can select governance and management objectives ranked into three categories as outlined below: </p>
+                        <table class="table table-stripped small m-t-md">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <i class="fa fa-circle fa-2xs"></i>
+                                    </td>
+                                    <td style="text-align: justify;">
+                                        <strong>High Importance</strong> - Applicable to governance and management objectives with a score exceeding 75%. It is recommended that organizations prioritize the assessment of these primary objectives.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <i class="fa fa-circle fa-2xs"></i>
+                                    </td>
+                                    <td style="text-align: justify;">
+                                        <strong>Moderate Importance</strong> - Pertains to governance and management objectives with a score ranging from 50% to 75%. These objectives should be considered for assessment on a secondary basis.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <i class="fa fa-circle fa-2xs"></i>
+                                    </td>
+                                    <td style="text-align: justify;">
+                                        <strong>Low Importance</strong> - Pertains to governance and management objectives with a score less than 50%. These objectives are not prioritized for assessment.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <i class="fa fa-circle fa-2xs"></i>
+                                    </td>
+                                    <td style="text-align: justify;">
+                                        Organizations have the flexibility to choose governance or management objectives based on their specific needs. This phase provides guidance for facilitating that selection process.
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </Body>
+            </InfoPannel>
+        </div>
+    </div>
+</div>
+
+
+
+
+

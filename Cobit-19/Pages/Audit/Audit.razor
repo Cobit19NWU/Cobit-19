@@ -1,0 +1,335 @@
+﻿@page "/Audit"
+
+@using Cobit_19.Business.Audits;
+@using Cobit_19.Shared.Dtos;
+@using Microsoft.AspNetCore.Components.Web
+@using Microsoft.AspNetCore.WebUtilities
+@using Microsoft.AspNetCore.Identity
+@using Cobit_19.Data.Models
+@inject AuditProvider auditProvider
+@inject NavigationManager navigationManager
+@inject UserManager<ApplicationUser> userManager
+@inject AuthenticationStateProvider authStateProvider
+
+
+@code {
+    private AuditDto? _auditDto { get; set; }
+    private List<DesignFactorDto>? _designFactorDtos { get; set; }
+
+    [Parameter]
+    [SupplyParameterFromQuery]
+    public int AuditId { get; set; }
+
+    public string userID;
+    public bool isUserInAudit;
+    ApplicationUser auditCreatedUser;
+
+    protected override async Task OnInitializedAsync()
+    {
+        if (_auditDto == null)
+        {
+            _auditDto = await auditProvider.getAsync(AuditId);
+            _designFactorDtos = await auditProvider.getDesignFactorsAsync(AuditId);
+            auditCreatedUser = await userManager.FindByIdAsync(_auditDto.User.ID);
+        }
+
+        var authState = await authStateProvider.GetAuthenticationStateAsync();
+        var user = authState.User;
+
+        if (user.Identity.IsAuthenticated)
+        {
+            var currentUser = await userManager.GetUserAsync(user);
+            userID = currentUser.Id;
+        }
+
+        isUserInAudit = await auditProvider.IsUserInAuditAsync(AuditId, userID);
+    }
+
+    private List<int> expandedRows = new List<int>();
+
+    private void ToggleSubRows(int rowIndex)
+    {
+        if (expandedRows.Contains(rowIndex))
+        {
+            expandedRows.Remove(rowIndex);
+        }
+        else
+        {
+            expandedRows.Add(rowIndex);
+        }
+    }
+
+    private void DFButtonPress(DesignFactorDto designFactorDto)
+    {
+        var queryStrDict = new Dictionary<string, string>
+            {
+                ["AuditId"] = (AuditId).ToString(),
+                ["DFId"] = (designFactorDto.ID).ToString(),
+            };
+        navigationManager.NavigateTo(
+            QueryHelpers.AddQueryString("/DesignFactor", queryStrDict)
+        );
+    }
+
+    private void BackButtonPress()
+    {
+        var queryStrDict = new Dictionary<string, string>
+            {
+                ["FocusAreaID"] = (_auditDto.FocusArea.ID).ToString(),
+            };
+        navigationManager.NavigateTo(
+            QueryHelpers.AddQueryString("/AuditSelect", queryStrDict)
+        );
+    }
+
+    private void viewAuditButtonPress()
+    {
+        navigationManager.NavigateTo("/objectiveAuditSelect?AuditId=" + AuditId);
+    }
+
+    private void ReportButtonPress()
+    {
+        navigationManager.NavigateTo("/DesignFactorReport?AuditId=" + AuditId);
+    }
+
+    private void AuditScopeButtonPress()
+    {
+        navigationManager.NavigateTo("/ObjectiveAuditScope?AuditId=" + AuditId);
+    }
+
+    private void generateReportsButtonsPress()
+    {
+        navigationManager.NavigateTo("/Reports?AuditId=" + AuditId);
+    }
+
+    private bool checkLoading()
+    {
+        bool isLoading = false;
+
+        if (_auditDto is null || _designFactorDtos is null || auditCreatedUser is null)
+        {
+            isLoading = true;
+        }
+
+        return isLoading;
+    }
+}
+
+ 
+
+<div class="container-fluid">
+   
+     <div class="row">
+            <div>
+                <button type="button" onclick="@(() => BackButtonPress())" class="mb-2 btn btn-primary">Back</button>
+            </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+@if (isUserInAudit)
+{
+    <div class="container-sm">
+        <div class="row">
+            <div class="col-md-12">
+                @if (checkLoading() == true)
+                {
+                    <p><em>Loading...</em></p>
+                }
+                else
+                {
+                    <div class="container bg-light mb-4 border-4 border p-4">
+                        <h1>
+                           @_auditDto.FocusArea.Description
+                        </h1>
+                        <table class="table table-borderless">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <b>
+                                            Status: 
+                                        </b>
+                                    </td>
+                                    <td>
+                                        @if (_auditDto.DateCompleted != null)
+                                        {
+                                            <span class="badge bg-success">Completed</span>
+                                        }
+                                        else
+                                        {
+                                            <span class="badge bg-primary">In Progress</span>
+                                        }
+                                    </td>
+                                    <td>
+                                        <b>
+                                            Audit Name: 
+                                        </b>
+                                    </td>
+                                    <td>
+                                        <p>@_auditDto.Name</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>
+                                            Created by:
+                                        </b>
+                                    </td>
+                                    <td>
+                                        <p>@auditCreatedUser.FirstName @auditCreatedUser.LastName</p>
+                                    </td>
+                                    <td>
+                                        <b>
+                                            Version:
+                                        </b>
+                                    </td>
+                                    <td>
+                                        <p>COBIT 2019 Framework</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>
+                                            Role:
+                                        </b>
+                                    </td>
+                                    <td>
+                                        Administrators
+                                    </td>
+                                    <td>      
+                                        <b>
+                                            Created:
+                                        </b>
+                                    </td>
+                                    <td>
+                                        <p>@_auditDto.DateCreated.Date.ToShortDateString()</p>
+                                    </td>
+                                </tr> 
+                            </tbody>
+                        </table>
+                    </div>
+                    <table class="table table-striped">
+                        <thead>
+                            <tr style="background-color: purple; color: white;">
+                                <th> </th>
+                                <th>Description</th>
+                                <th>Go To</th>
+                            </tr>
+
+                        </thead>
+                        <tbody>
+                            <AuthorizeView Roles="Administrator, Head Auditor, Client">
+                                <tr style="cursor:pointer" @onclick="() => ToggleSubRows(0)">
+                                    <td>
+                                        <span class="badge bg-success">Step 1</span>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <i class="fa-regular fa-square-caret-down" style="display: inline-block;"></i>
+                                            <h5 style="display: inline-block;">Goals Cascade</h5>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <button class="btn btn-primary btn-sm" @onclick="() => DFButtonPress(_designFactorDtos.First())">
+                                            <i class="fa fa-sliders"></i>
+                                            Begin Assessment
+                                        </button>
+                                    </td>
+                                </tr>
+                                @if (expandedRows.Contains(0))
+                                {
+                                    <tr class="border-2 table-hover">
+                                        <td colspan="3">
+                                            <table class="table table-light">
+                                                <tbody>
+                                                    @foreach (var item in _designFactorDtos.ToList())
+                                                    {
+                                                        <tr>
+                                                            <td>@item.Name</td>
+                                                            <td>@item.Description</td>
+                                                            <td>
+                                                                <button class="btn-sm btn-primary" @onclick="() => DFButtonPress(item)">
+                                                                    Select
+                                                                </button>
+                                                            </td>
+                                                        </tr>
+                                                    }
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                }
+                            </AuthorizeView>
+                            <AuthorizeView Roles="Administrator, Head Auditor, Client">
+                                <tr>
+                                    <td>
+                                        <span class="badge bg-success">Step 2</span>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <h5>Canvas Report</h5>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <button class="btn btn-primary btn-sm" @onclick="() => ReportButtonPress()">
+                                            <i class="fa fa-display"></i>
+                                            View Canvas
+                                        </button>
+                                    </td>
+                                </tr>
+                            </AuthorizeView>
+                            <AuthorizeView Roles="Administrator, Head Auditor, Client">
+                                <tr>
+                                    <td>
+                                        <span class="badge bg-success">Step 3</span>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <h5>Scope Selection</h5>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <button class="btn btn-primary btn-sm" @onclick="() => AuditScopeButtonPress()">
+                                            <i class="fa fa-magnifying-glass"></i>
+                                            Modify Scope
+                                        </button>
+                                    </td>
+                                </tr>
+                            </AuthorizeView>
+                            <AuthorizeView>
+                                <tr>
+                                    <td>
+                                        <span class="badge bg-success">Step 4</span>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <h5>Audit</h5>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <button class="btn btn-primary btn-sm" @onclick="() => viewAuditButtonPress()">
+                                            <i class="fa-regular fa-clipboard"></i>
+                                            View Audits
+                                        </button>
+                                    </td>
+                                </tr>
+                            </AuthorizeView>
+                        </tbody>
+                    </table>
+                }
+            </div>
+        </div>
+    </div>
+}
+ 
+else
+{
+   <p><em>Loading...</em></p>
+}

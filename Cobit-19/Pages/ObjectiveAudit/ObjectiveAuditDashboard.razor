@@ -1,0 +1,224 @@
+﻿@page "/auditDashBoard"
+@using Cobit_19.Business.ObjectiveAudits
+@using Cobit_19.Business.Reports;
+@using Microsoft.AspNetCore.Identity
+@using Cobit_19.Shared.Dtos
+@using Microsoft.AspNetCore.WebUtilities;
+@using Syncfusion.Blazor.CircularGauge
+@using Syncfusion.Blazor.ProgressBar
+@using Syncfusion.Blazor.LinearGauge
+@inject ObjectiveAuditProvider objectiveAuditProvider
+@inject NavigationManager navigationManager
+@inject ReportProvider reportProvider
+@inject IJSRuntime JSRuntime
+
+@code {
+    [Parameter]
+    [SupplyParameterFromQuery]
+    public int objectiveAuditId { get; set; }
+    private int _auditId;
+
+    public FullObjectiveAuditDto auditObject;
+    private ObjectiveDto objective;
+    public string auditJSON;
+    public int maturityLevel;
+    public List<ComponentDto> components;
+    public List<string> gaugeLabels = new List<string> {"Enterprise Goals", "Alignment Goals", "Processes", "Structure", "Information",
+                                                        "People", "Policies", "Culture", "Technology"};
+
+
+    protected override void OnInitialized()
+    {
+        auditJSON = objectiveAuditProvider.getAuditJSON(objectiveAuditId);
+        auditObject = AuditJSONParsingService.parseAuditTemplate(auditJSON);
+        _auditId = objectiveAuditProvider.getAuditIdFromObjectiveAuditID(objectiveAuditId);
+        components = auditObject.components;
+        maturityLevel = auditObject.maturityLevel;
+
+        objective = objectiveAuditProvider.getObjective(objectiveAuditId);
+    }
+
+    public async void ExportComplete(int objectiveAuditId)
+    {
+        var pdfStream = await reportProvider.createObjectiveAuditReport(objectiveAuditId);
+
+        if (pdfStream != null)
+        {
+            byte[] pdfBytes = pdfStream.ToArray();
+
+            await JSRuntime.InvokeVoidAsync("downloadFile", pdfBytes, "Maturity assessment report.pdf");
+        }
+    }
+
+    private void BackButtonPress()
+    {
+        var queryStrDict = new Dictionary<string, string>
+            {
+                ["AuditId"] = (_auditId).ToString(),
+            };
+        navigationManager.NavigateTo(
+            QueryHelpers.AddQueryString("/ObjectiveAuditSelect", queryStrDict)
+        );
+    }
+}
+
+ 
+
+
+<div class="container-fluid">
+   
+     <div class="row">
+            <div>
+                <button type="button" onclick="@(() => BackButtonPress())" class="btn btn-primary">Back</button>
+            </div>
+    </div>
+</div>
+
+
+
+
+
+
+<div class="container">
+    <div class="border-bottom text-center mb-2">
+        <h5 class="text-secondary"><strong>Maturity Assesments for @objective.Description (@auditObject.objectiveName)</strong></h5>
+    </div>
+    
+        <div class="mb-5 row">
+            <ComponentSelectBar objectiveAuditId="@objectiveAuditId" selectedPage="Dashboard"/>
+            <AuthorizeView Roles="Administrator, Head Auditor">
+                <button class="btn btn-primary float-end" @onclick="() => ExportComplete(objectiveAuditId)">Download Report</button>
+            </AuthorizeView>
+        </div>
+
+ 
+
+
+    <div class="row mt-4">
+
+        <div class="col bg-dark rounded-3 m-2 text-center">
+            <h4 class="text-white">Description</h4>
+            <p class="text-white" style="text-align: justify;">@auditObject.objectiveDescription</p>
+        </div>
+        <div class="col bg-dark rounded-3 m-2 text-center">
+            <h4 class="text-white">Purpose</h4>
+            <p class="text-white" style="text-align: justify;">@auditObject.objectivePurpose</p>
+        </div>
+
+
+    </div>
+     
+
+
+
+    <AuthorizeView Roles="Administrator, Head Auditor, Client">
+    <div class="row mt-4">
+
+        <div class="col bg-dark rounded-3 m-2 text-center">
+            <h5 class="text-white">Maturity Compliance</h5>
+                <p class="text-white" style="text-align: center;">Level 2: <strong>@auditObject.maturityLevel2PercFinal</strong></p>
+        </div>
+         <div class="col bg-dark rounded-3 m-2 text-center">
+                <h5 class="text-white">Maturity Compliance</h5>
+                <p class="text-white" style="text-align: center;">Level 3: <strong>@auditObject.maturityLevel3PercFinal</strong></p>
+        </div>
+         <div class="col bg-dark rounded-3 m-2 text-center">
+                <h5 class="text-white">Maturity Compliance</h5>
+                <p class="text-white" style="text-align: center;">Level 4: <strong>@auditObject.maturityLevel4PercFinal</strong></p>
+        </div>
+        <div class="col bg-dark rounded-3 m-2 text-center">
+                <h5 class="text-white">Maturity Compliance</h5>
+                <p class="text-white" style="text-align: center;">Level 5: <strong>@auditObject.maturityLevel5PercFinal</strong></p>
+        </div>
+         
+    </div>
+
+
+
+
+
+     
+
+     
+
+    <div class="border mt-3">
+        <div class="mt-2">
+            <SfLinearGauge Title="Maturity Level" Orientation="Orientation.Horizontal" AllowMargin="false" Width="100%" Height="100%">
+                <LinearGaugeTitleStyle FontWeight="bold" Color="blue" Size="23px"></LinearGaugeTitleStyle>
+                <LinearGaugeMargin Left="0" Right="0" Top="0" Bottom="0"></LinearGaugeMargin>
+                <LinearGaugeAxes>
+                    <LinearGaugeAxis Minimum="0" Maximum="5">
+                        <LinearGaugeMajorTicks Interval="1" Color="Red"></LinearGaugeMajorTicks>
+                        <LinearGaugePointers>
+                            <LinearGaugePointer PointerValue="@maturityLevel" Type="Point.Bar" Color="red"></LinearGaugePointer>
+                        </LinearGaugePointers>
+                    </LinearGaugeAxis>
+                </LinearGaugeAxes>
+            </SfLinearGauge>
+        </div>
+    </div>
+    </AuthorizeView>
+
+
+
+    <div class="border row mt-4">
+
+        <div class="col bg-danger rounded-3 m-2" style="text-align: center; display: flex; justify-content: center; align-items: center;">
+            <h6 class="text-white"><strong>Not Achieved</strong> </h6> <br /> <p class="text-white"> <strong>(0% - 15%)</strong></p>
+        </div>
+        <div class="col bg-warning rounded-3 m-2" style="text-align: center; display: flex; justify-content: center; align-items: center;">
+            <h6><strong>Partially Achieved</strong> </h6> <br /> <p> <strong>(15% - 50%)</strong></p>
+        </div>
+        <div class="col bg-success rounded-3 m-2" style="text-align: center; display: flex; justify-content: center; align-items: center;">
+            <h6 class="text-white"><strong>Largely Achieved</strong> </h6> <br /> <p class="text-white"> <strong>(50% - 85%)</strong></p>
+        </div>
+        <div class="col bg-primary rounded-3 m-2" style="text-align: center; display: flex; justify-content: center; align-items: center;">
+            <h6 class="text-white"><strong>Fully Achieved</strong> </h6> <br /> <p class="text-white"> <strong>(85% - 100%)</strong></p>
+        </div>
+
+
+
+
+        <div class="row">
+            @foreach (ComponentDto component in components)
+            {
+                <div class="col-md-4" style="text-align: center; display: flex; justify-content: center; align-items: center;">
+                    <SfCircularGauge Title="@gaugeLabels[components.IndexOf(component)]" Width="250px" Height="250px">
+                        <CircularGaugeTitleStyle Color="blue" FontWeight="bold" Size="10"></CircularGaugeTitleStyle>
+                        <CircularGaugeAxes>
+                            <CircularGaugeAxis>
+                                <CircularGaugeRanges>
+                                    <CircularGaugeRange  Start="0" End="15" Color="red" />
+                                    <CircularGaugeRange Start="15" End="50" Color="orange"/>
+                                    <CircularGaugeRange Start="50" End="85" Color="yellow"/>
+                                    <CircularGaugeRange Start="85" End="100" Color="green"/>
+                                </CircularGaugeRanges>
+                                <CircularGaugePointers>
+                                    <CircularGaugePointer Value="@component.componentPercFinal"></CircularGaugePointer>
+                                </CircularGaugePointers>
+                                <CircularGaugeAnnotations>
+                                    <CircularGaugeAnnotation Angle="195" ZIndex="1">
+                                        <ContentTemplate>
+                                            <div class="custom-annotation">@component.componentPercFinal</div>
+                                        </ContentTemplate>
+                                    </CircularGaugeAnnotation>
+                                </CircularGaugeAnnotations>
+                            </CircularGaugeAxis>
+                        </CircularGaugeAxes>
+                    </SfCircularGauge>
+                    <style type="text/css">
+                        .custom-annotation {
+                            color: white;
+                            background-color: blue;
+                            height: 30px;
+                            width: 30px;
+                            border-radius: 15px;
+                            padding: 4px 0 0 6px;
+                            font-weight: bold;
+                        }
+                    </style>
+                </div>
+            } 
+        </div>
+    </div>
+</div>

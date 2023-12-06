@@ -1,0 +1,115 @@
+﻿@using Cobit_19.Business.Admin;
+@using Cobit_19.Business.FocusAreas;
+@using Cobit_19.Data.Models;
+@using Cobit_19.Shared.Dtos;
+@using Cobit_19.Shared.Enums;
+@using Microsoft.AspNetCore.Identity;
+@inject FocusAreaProvider focusAreaProvider
+@inject NavigationManager navigationManager
+@inject UserManagementProvider userManagementProvider
+
+
+@code {
+    [Parameter]
+    public string userID { get; set; }
+    [Parameter]
+    public int focusAreaID { get; set; }
+    protected List<AuditDto> audits;
+
+    public UserDto userDto;
+    public string userRole;
+
+    protected async override Task OnInitializedAsync()
+    {
+        LoadAudits();
+
+        userDto = await userManagementProvider.GetUserDtoByIdAsync(userID);
+        userRole = await userManagementProvider.getUserRoleAsync(userDto);
+    }
+
+    private void LoadAudits()
+    {
+        audits = focusAreaProvider.GetAuditsForFocusAreaByUserID(userID, focusAreaID).ToList();
+    }
+
+    private string FormatAuditStatus(AuditStatus status)
+    {
+        if (status == AuditStatus.NotStarted)
+        {
+            return "Inactive";
+        }
+        else if (status == AuditStatus.InProgress)
+        {
+            return "Active";
+        }
+        else if (status == AuditStatus.Completed)
+        {
+            return "Active";
+        }
+        else
+        {
+            return null;
+        }
+    }
+
+    private void AuditSelectionClick(int auditID)
+    {
+        if (userRole != "Governance Auditor" && userRole != "Management Auditor")
+        {
+            navigationManager.NavigateTo($"/Audit?AuditId={auditID}");
+        }
+        else
+        {
+            navigationManager.NavigateTo($"/objectiveAuditSelect?AuditId={auditID}");
+        }
+    }
+}
+
+<table class="table table-hover table-striped">
+    <thead style="">
+        <tr>
+            <th colspan="5">
+                <div class="ibox-title">
+                    <h5>
+                        <strong>Select Audit</strong>
+                    </h5>
+                </div>
+            </th>
+        </tr>
+        <tr>
+            <th style="background-color: purple; color: white;">#</th>
+            <th style="background-color: purple; color: white;">Active/Inactive</th>
+            <th style="background-color: purple; color: white;">Audit Name</th>
+            <th style="background-color: purple; color: white;">Date Created</th>
+            <th style="background-color: purple; color: white;"></th>
+        </tr>
+
+    </thead>
+    <tbody>
+        @foreach (var audit in audits)
+        {
+            <tr>
+                <td>@(audits.IndexOf(audit) + 1)</td>
+                <td>
+                    @if (FormatAuditStatus(audit.Status) == "Active")
+                    {
+                        <span class="badge bg-success">@FormatAuditStatus(audit.Status)</span>
+                    }
+                    else if (FormatAuditStatus(audit.Status) == "Inactive")
+                    {
+                        <span class="badge bg-danger">@FormatAuditStatus(audit.Status)</span>
+                    }
+                </td>
+                <td>@audit.Name</td>
+                <td>@audit.DateCreated.ToShortDateString()</td>
+                <td><button type="button" class="btn btn-primary btn-sm" @onclick='() => AuditSelectionClick(audit.ID)'>Select</button></td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+
+
+
+
+

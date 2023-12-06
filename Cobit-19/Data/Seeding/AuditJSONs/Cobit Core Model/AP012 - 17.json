@@ -1,0 +1,1516 @@
+{
+  "objectiveName": "APO12",
+  "objectiveDescription": "Continually identify, assess and reduce I&T-related risk within tolerance levels set by enterprise executive management",
+  "objectivePurpose": "Integrate the management of I&T-related enterprise risk with overall enterprise risk management (ERM) and balance the costs and benefits of managing I&T-related enterprise risk.",
+  "typeOfObjective": "Management",
+  "maturityLevel": 0,
+  "maturityLevel0PercFinal": 0,
+  "maturityLevel1PercFinal": 0,
+  "maturityLevel2PercFinal": 0,
+  "maturityLevel3PercFinal": 0,
+  "maturityLevel4PercFinal": 0,
+  "maturityLevel5PercFinal": 0,
+  "structuresImage": "https://i.imgur.com/UveueE0.png",
+  "components": [
+    {
+      "componentCode": "EG",
+      "componentDescription": "Enterprise Goals",
+      "componentPercFinal": 0,
+      "subComponents": [
+        {
+          "subComponentCode": "EG02",
+          "subComponentName": "Managed business risk",
+          "subComponentQuestions": [
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Percent of critical business objectives and services covered by risk assessment",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Ratio of significant incidents that were not identified in risk assessments vs. total incidents",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Frequency of updating risk profile",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            }
+          ]
+        },
+
+
+
+        {
+          "subComponentCode": "EG06",
+          "subComponentName": "Business service continuity and availability",
+          "subComponentQuestions": [
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Number of customer service or business process interruptions causing significant incidents",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Business cost of incidents",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Number of business processing hours lost due to unplanned service interruptions",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Enterprise goal",
+              "questionDescription": "Percent of complaints as a function of committed service availability targets",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            }
+
+          ]
+        }
+      ]
+    },
+
+    {
+      "componentCode": "AG",
+      "componentDescription": "Alignment Goals",
+      "componentPercFinal": 0,
+      "subComponents": [
+        {
+          "subComponentCode": "AG02",
+          "subComponentName": "Managed I&T-related risk",
+          "subComponentQuestions": [
+            {
+              "questionType": "Alignment goal",
+              "questionDescription": "Frequency of updating risk profile",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Alignment goal",
+              "questionDescription": "Percent of enterprise risk assessments including I&T-related risk",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Alignment goal",
+              "questionDescription": "Number of significant I&T-related incidents that were not identified in a risk assessment",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            }
+          ]
+
+        },
+
+        {
+          "subComponentCode": "AG07",
+          "subComponentName": "Security of information, processing infrastructure and applications, and privacy",
+          "subComponentQuestions": [
+            {
+              "questionType": "Alignment goal",
+              "questionDescription": "Number of confidentiality incidents causing financial loss, business disruption or public embarrassment",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Alignment goal",
+              "questionDescription": "Number of availability incidents causing financial loss, business disruption or public embarrassment",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Alignment goal",
+              "questionDescription": "Number of integrity incidents causing financial loss, business disruption or public embarrassment",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            }
+          ]
+        }
+      ]
+
+    },
+    {
+      "componentName": "A",
+      "componentDescription": "Processes",
+      "componentPercFinal": 0,
+      "subComponents": [
+        {
+          "subComponentCode": "APO12.01",
+          "subComponentName": "Collect Data.",
+          "subComponentDescription": "Identify and collect relevant data to enable effective I&T-related risk identification analysis and reporting.",
+          "subComponentQuestions": [
+
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Establish and maintain a method for the collection, classification and analysis of I&T risk-related data.",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": " Record relevant and significant I&T risk-related data on the enterprise’s internal and external operating environment.",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Adopt or define a risk taxonomy for consistent definitions of risk scenarios and impact and likelihood categories.",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Record data on risk events that have caused or may cause business impacts as per the impact categories defined in the risk taxonomy. Capture relevant data from related issues incidents problems and investigations",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": "Survey and analyze the historical I&T risk data and loss experience from externally available data and trends, industry peers through industry-based event logs databases and industry agreements for common event disclosure.",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": "For similar classes of events, organize the collected data and highlight contributing factors. Determine common contributing factors across multiple events.",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": "Determine the specific conditions that existed or were absent when risk events occurred and the way the conditions affected event frequency and loss magnitude.",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": "Perform periodic event and risk factor analysis to identify new or emerging risk issues and to gain an understanding of the associated internal and external risk factors.",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "No data provided.",
+              "relatedGuidance": "CMMI Data Management Maturity Model, 2014",
+              "detailedReference": "Supporting Processes - Risk Management",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "No data provided.",
+              "relatedGuidance": "COSO Enterprise Risk Management, June 2017",
+              "detailedReference": "8. Performance—Principle 10",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "No data provided.",
+              "relatedGuidance": "ISO/IEC 27005:2011(E) ",
+              "detailedReference": "8.2 Risk identification; 12. Information security risk monitoring and review",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "No data provided.",
+              "relatedGuidance": "National Institute of Standards and Technology Special Publication 800-37, Revision 2, (Draft) May 2018",
+              "detailedReference": "3.1 Preparation (Task 7)",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            }
+          ]
+        },
+        {
+          "subComponentCode": "APO12.02 ",
+          "subComponentName": "Analyze risk",
+          "subComponentDescription": "Develop a substantiated view on actual I&T risk, in support of risk decisions.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": ". Define the appropriate scope of risk analysis efforts, considering all risk factors and/or the business criticality of assets.",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Build and regularly update I&T risk scenarios; I&T-related loss exposures; and scenarios regarding reputational risk, including compound scenarios of cascading and/or coincidental threat types and events.Develop expectations for specific control activities and capabilities to detect.",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Estimate the frequency (or likelihood) and magnitude of loss or gain associated with I&T risk scenarios. Take into account all applicable risk factors and evaluate known operational controls.",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Compare current risk (I&T-related loss exposure) to risk appetite and acceptable risk tolerance. Identify unacceptable or elevated risk.",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Propose risk responses for risk exceeding risk appetite and tolerance levels.",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Specify high-level requirements for projects or programs that will implement the selected risk responses. Identify requirements and expectations for appropriate key controls for risk mitigation responses.",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": "Validate the risk analysis and business impact analysis (BIA) results before using them in decision making. Confirm that the analysis aligns with enterprise requirements and verify that estimations were properly calibrated and scrutinized for bias.",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Maturity Level 5",
+              "questionDescription": "Analyze cost/benefit of potential risk response options such as avoid, reduce/mitigate, transfer/share, and accept and exploit/seize. Confirm the optimal risk response.",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "No data provided.",
+              "relatedGuidance": "CMMI Data Management Maturity Model, 2014",
+              "detailedReference": "Supporting Processes—Risk Management",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "No data provided.",
+              "relatedGuidance": "COSO Enterprise Risk Management, June 2017",
+              "detailedReference": "8. Performance—Principle 11",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "No data provided.",
+              "relatedGuidance": "ISF, The Standard of Good Practice for Information Security 2016",
+              "detailedReference": "IR2.1 Risk Assessment Scope; IR2.2 Business Impact Assessment",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "No data provided.",
+              "relatedGuidance": "ISO/IEC 27001:2013/Cor.2:2015(E)",
+              "detailedReference": "8.2 Information security risk assessment",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "No data provided.",
+              "relatedGuidance": "ISO/IEC 27005:2011(E) ",
+              "detailedReference": "8.3 Risk analysis",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "No data provided.",
+              "relatedGuidance": "National Institute of Standards and Technology Framework for Improving Critical Infrastructure Cybersecurity v1.1 April 2018 ",
+              "detailedReference": "ID.RA Risk Assessment",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "No data provided.",
+              "relatedGuidance": "National Institute of Standards and Technology Special Publication 800-37 Revision 2 (Draft) May 2018",
+              "detailedReference": "3.6 Authorization (Task 3)",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "No data provided.",
+              "relatedGuidance": "National Institute of Standards and Technology Special Publication 800-53 Revision 5 (Draft) August 2017",
+              "detailedReference": "3.17 Risk assessment (RA-3)",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            }
+          ]
+        },
+        {
+          "subComponentCode": "APO12.03 ",
+          "subComponentName": "Maintain a risk profile",
+          "subComponentDescription": "Maintain an inventory of known risk and risk attributes, including expected frequency potential impact and responses. Document related resources capabilities and current control activities related to risk items.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Inventory business processes and document their dependency on I&T service management processes and IT infrastructure resources. Identify supporting personnel applications infrastructure facilities critical manual records vendors suppliers and outsourcers.",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": ". Determine and agree on which I&T services and IT infrastructure resources are essential to sustain the operation of business processes. Analyze dependencies and identify weak links.",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Aggregate current risk scenarios by category, business line and functional area.",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Regularly capture all risk profile information and consolidate it into an aggregated risk profile.",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Regularly capture all risk profile information and consolidate it into an aggregated risk profile.",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": "Based on all risk profile data, define a set of risk indicators that allow the quick identification and monitoring of current risk and risk rends.",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": "Capture information on I&T risk events that have materialized for inclusion in the IT risk profile of the enterprise",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "No data provided.",
+              "relatedGuidance": "CMMI Cybermaturity Platform, 2018",
+              "detailedReference": "RS.DT Define Organizational Risk Tolerance",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "No data provided.",
+              "relatedGuidance": "COSO Enterprise Risk Management, June 2017",
+              "detailedReference": "8. Performance—Principle 12",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "No data provided.",
+              "relatedGuidance": "National Institute of Standards and Technology Special Publication 800-53 Revision 5 (Draft) August 2017",
+              "detailedReference": "3.17 Risk assessment (RA-7)",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            }
+
+
+
+          ]
+        },
+        {
+          "subComponentCode": "APO12.04",
+          "subComponentName": "  Articulate risk.",
+          "subComponentDescription": "Communicate information on the current state of I&T-related exposures and opportunities in a timely manner to all required stakeholders for appropriate response.",
+          "subComponentQuestions": [
+
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Report the results of risk analysis to all affected stakeholders in terms and formats useful to support enterprise decisions.Whenever possible include probabilities and ranges of loss or gain along with confidence levels to enable management to balance risk-return.",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Provide decision makers with an understanding of worst-case and most-probable scenarios, I&T-related loss exposures and significant reputation legal and regulatory considerations or any other impact category as per the risk taxonomy",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Report the current risk profile to all stakeholders. Include information on the effectiveness of the risk management process control effectiveness gaps inconsistencies redundancies remediation status and their impacts on the risk profile.",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "On a periodic basis, for areas with relative risk and risk capacity parity, identify I&T-related opportunities that would allow the acceptance of greater risk and enhanced growth and return.",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": ". Review the results of objective third-party assessments and internal audit and quality assurance reviews. Include them in the risk profile. Review identified gaps and I&T-related loss exposures to determine the need for additional risk analysis.",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+
+
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "No data provided.",
+              "relatedGuidance": "CMMI Cybermaturity Platform, 2018",
+              "detailedReference": "RS.CR Determine Critical Infrastructure Requirements",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "No data provided.",
+              "relatedGuidance": "COSO Enterprise Risk Management, June 2017",
+              "detailedReference": "10. Information, Communication, and Reporting—Principle 19",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "No data provided.",
+              "relatedGuidance": "ISO/IEC 27005:2011(E)",
+              "detailedReference": "11. Information security risk communication and consultation",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "No data provided.",
+              "relatedGuidance": "National Institute of Standards and Technology Framework for Improving Critical Infrastructure Cybersecurity v1.1 April 2018 ",
+              "detailedReference": "ID.RM Risk Management Strategy",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "No data provided.",
+              "relatedGuidance": "National Institute of Standards and Technology Special Publication 800-53 Revision 5 (Draft) August 2017",
+              "detailedReference": "3.15 Program management (PM-32)",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            }
+
+          ]
+        },
+        {
+          "subComponentCode": "APO12.05",
+          "subComponentName": "Define a risk management action portfolio.",
+          "subComponentDescription": "Manage opportunities to reduce risk to an acceptable level as a portfolio.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Maturity Level 2",
+              "questionDescription": "Maintain an inventory of control activities that are in place to mitigate risk and that enable risk to be taken in line with the risk appetite and tolerance. Classify control activities and map them to specific I&T risk scenarios and aggregations of I&T risk scenarios.",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Determine whether each organizational entity monitors risk and accepts accountability for operating within its individual and portfolio tolerance levels.",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided., ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Define a balanced set of project proposals designed to reduce risk and/or projects that enable strategic enterprise opportunities considering costs benefitseffect on current risk profile and regulations.",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided., ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "No data provided.",
+              "relatedGuidance": "CMMI Data Management Maturity Model, 2014",
+              "detailedReference": "Supporting Processes—Risk Management",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "No data provided.",
+              "relatedGuidance": "COSO Enterprise Risk Management, June 2017",
+              "detailedReference": "8. Performance—Principle 14",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "No data provided.",
+              "relatedGuidance": "HITRUST CSF version 9, September 2017",
+              "detailedReference": "03.01 Risk Management Program",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            }
+          ]
+        },
+
+        {
+          "subComponentCode": "APO12.06",
+          "subComponentName": "Respond to risk.",
+          "subComponentDescription": "Respond in a timely manner to materialized risk events with effective measures to limit the magnitude of loss.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Prepare, maintain and test plans that document the specific steps to take when a risk event may cause a significant operational or development incident with serious business impact. Ensure that plans include pathways of escalation across the enterprise.",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Maturity Level 3",
+              "questionDescription": "Apply the appropriate response plan to minimize the impact when risk incidents occur.",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided., ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": "Categorize incidents and compare I&T-related loss exposures against risk tolerance thresholds. Communicate business impacts to decision makers as part of reporting and update the risk profile.",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided., ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Maturity Level 4",
+              "questionDescription": "Examine past adverse events/losses and missed opportunities and determine root causes.",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided., ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Maturity Level 5",
+              "questionDescription": "Communicate root cause, additional risk response requirements and process improvements to appropriate decision makers.Ensure that the cause response requirements and process improvement are included in risk governance processes.",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided., ",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "No data provided.",
+              "relatedGuidance": "COSO Enterprise Risk Management, June 2017",
+              "detailedReference": "8. Performance—Principle 13",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "No data provided.",
+              "relatedGuidance": "ISF, The Standard of Good Practice for Information Security 2016",
+              "detailedReference": "IR2.9 Risk Treatment",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "No data provided.",
+              "relatedGuidance": "ISO/IEC 27001:2013/Cor.2:2015(E)",
+              "detailedReference": "6.1 Action to address risk and opportunities",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "No data provided.",
+              "relatedGuidance": "ISO/IEC 27005:2011(E)",
+              "detailedReference": "9. Information security risk treatment",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "No data provided.",
+              "relatedGuidance": "National Institute of Standards and Technology Special Publication 800-37 Revision 2 (Draft) May 2018 ",
+              "detailedReference": "3.6 Authorization (Task 4)",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "No data provided.",
+              "relatedGuidance": "National Institute of Standards and Technology Special Publication 800-37 Revision 2 (Draft) May 2018 ",
+              "detailedReference": "3.6 Authorization (Task 4)",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Related Guidance",
+              "questionDescription": "No data provided.",
+              "relatedGuidance": "National Institute of Standards and Technology Special Publication 800-53, Revision 5 (Draft), August 2017 ",
+              "detailedReference": "3.15 Program management (PM-9, PM-31)",
+              "inputFrom": "No data provided.",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Remedial actions to address risk management deviations",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "EDM03.03",
+              "outputTo": "No data provided.",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Risk impact communication",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "APO01.02;APO08.04; DSS04.02",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Risk-related root causes",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "DSS02.03;DSS03.01; DSS03.02;DSS03.03; DSS03.05; DSS04.02; MEA02.04; MEA04.04; MEA04.06",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Risk-related incident response plans",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "DSS02.05",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            }
+
+          ]
+        }
+      ]
+    },
+    {
+      "componentName": "B",
+      "componentDescription": "Organizational Structures",
+      "componentPercFinal": 0,
+      "componentQuestions": [
+        {
+          "questionType": "APO12.01",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": ""
+        },
+        {
+          "questionType": "APO12.02",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": ""
+        },
+        {
+          "questionType": "APO12.03",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": ""
+        },
+        {
+          "questionType": "APO12.04  ",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": ""
+        },
+        {
+          "questionType": "APO12.05",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": ""
+        },
+        {
+          "questionType": "APO12.06",
+          "questionDescription": "Roles, responsibilities and authorities are defined, assigned and accepted by appropriate Business Management, IT Management and the Board.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": ""
+        }
+      ]
+    },
+    {
+      "componentCode": "C",
+      "componentDescription": "Information Flows and Items",
+      "componentPercFinal": 0,
+      "subComponents": [
+        {
+          "subComponentCode": "APO12.01",
+          "subComponentName": "Collect Data.",
+          "subComponentDescription": "Identify and collect relevant data to enable effective I&T-related risk identification analysis and reporting.",
+          "subComponentQuestions": [
+
+
+            {
+              "questionType": "Input",
+              "questionDescription": "Gaps and risk related to current capabilities",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "APO02.02",
+              "outputTo": "No data provided.",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Risk assessment initiatives",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "APO02.05",
+              "outputTo": "No data provided.",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Identified vendor delivery risks",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "APO10.045",
+              "outputTo": "No data provided.",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Incident status and trends report",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "DSS02.07",
+              "outputTo": "No data provided.",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Evaluation of risk management activities",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "EDM03.01",
+              "outputTo": "No data provided.",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "• Risk management policies • Key objectives to be monitored for risk management • Approved process for measuring risk management",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "EDM03.02",
+              "outputTo": "No data provided.",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Emerging risk issues and factors",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "APO01.01;APO02.02;EDM03.01",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+
+            {
+              "questionType": "Output",
+              "questionDescription": "Data on risk events and contributing factors",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "Internal",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Data on the operating environment relating to risk",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "Internal",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            }
+          ]
+        },
+        {
+          "subComponentCode": "APO12.02 ",
+          "subComponentName": "Analyze risk",
+          "subComponentDescription": "Develop a substantiated view on actual I&T risk, in support of risk decisions.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Input",
+              "questionDescription": "Business impact analyses (BIAs)",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "DSS04.02",
+              "outputTo": "No data provided.",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Evaluations of potential threats",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "DSS05.01",
+              "outputTo": "No data provided.",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Threat advisories",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "Outside COBIT",
+              "outputTo": "No data provided.",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Risk analysis results",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.,",
+              "outputTo": "APO01.01;APO02.02;EDM03.03;BAI01.08;BAI11.06",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "I&T risk scenarios",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.,",
+              "outputTo": "Internal",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Scope of risk analysis efforts",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.,",
+              "outputTo": "Internal",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            }
+
+          ]
+        },
+        {
+          "subComponentCode": "APO12.03 ",
+          "subComponentName": "Maintain a risk profile",
+          "subComponentDescription": "Maintain an inventory of known risk and risk attributes, including expected frequency potential impact and responses. Document related resources capabilities and current control activities related to risk items.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Input",
+              "questionDescription": "Identified vendor delivery risk",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "APO10.04",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "Evaluations of potential threats",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "DSS05.01",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Input",
+              "questionDescription": "• Risk appetite guidance, • Approved risk tolerance levels ",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "EDM03.01",
+              "outputTo": "No data provided.,",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Aggregated risk profile including status of risk management actions",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "outputTo": "APO02.02;EDM03.02",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Documented risk scenarios by line of business and function",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "sring,",
+              "outputTo": "Internal",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            }
+          ]
+        },
+        {
+          "subComponentCode": "APO12.04",
+          "subComponentName": "  Articulate risk.",
+          "subComponentDescription": "Communicate information on the current state of I&T-related exposures and opportunities in a timely manner to all required stakeholders for appropriate response.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Output",
+              "questionDescription": "Risk analysis and risk profile reports for stakeholders",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "outputTo": "APO10.04;EDM03.03;EDM05.02;MEA04.05",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Results of third-party risk assessments",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "outputTo": "APO10.04;EDM03.03;MEA02.01",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Opportunities for acceptance of greater risk",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "outputTo": "EDM03.03",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            }
+
+          ]
+
+
+
+        },
+        {
+          "subComponentCode": "APO12.05",
+          "subComponentName": "Define a risk management action portfolio.",
+          "subComponentDescription": "Manage opportunities to reduce risk to an acceptable level as a portfolio.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Output",
+              "questionDescription": "Project proposals for reducing risk",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "APO02.02;APO13.02",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            }
+          ]
+        },
+        {
+          "subComponentCode": "APO12.06",
+          "subComponentName": "Respond to risk.",
+          "subComponentDescription": "Respond in a timely manner to materialized risk events with effective measures to limit the magnitude of loss.",
+          "subComponentQuestions": [
+            {
+              "questionType": "Input",
+              "questionDescription": "Remedial actions to address risk management deviations",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "EDM03.03",
+              "outputTo": "No data provided.",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Risk impact communication",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "APO01.02;APO08.04; DSS04.02",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Risk-related root causes",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "DSS02.03;DSS03.01; DSS03.02;DSS03.03; DSS03.05; DSS04.02; MEA02.04; MEA04.04; MEA04.06",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            },
+            {
+              "questionType": "Output",
+              "questionDescription": "Risk-related incident response plans",
+              "relatedGuidance": "No data provided.",
+              "detailedReference": "No data provided.",
+              "inputFrom": "No data provided.",
+              "outputTo": "DSS02.05",
+              "questionAnswer": 0,
+              "questionScore": 0,
+              "questionComment": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "componentName": "D",
+      "componentDescription": "Peoples, Skills and Competencies",
+      "componentPercFinal": 0,
+      "componentQuestions": [
+
+        {
+          "questionType": "Component question",
+          "questionSkill": "Information assurance",
+          "relatedGuidance": "Skills Framework for the Information Age V6, 2015 ",
+          "detailedReference": "INAS",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": ""
+        },
+        {
+          "questionType": "Component question",
+          "questionSkill": "Business risk management",
+          "relatedGuidance": "Skills Framework for the Information Age V6, 2015 ",
+          "detailedReference": "BURM",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": ""
+        },
+        {
+          "questionType": "Component question",
+          "questionSkill": "Risk management",
+          "relatedGuidance": "e-Competence Framework (e-CF)—A common European Framework for ICT, Professionals in all industry sectors-Part 1: Framework 2016 ",
+          "detailedReference": "E. Manage—E.3. Risk Management",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": ""
+        }
+      ]
+    },
+    {
+      "componentName": "E",
+      "componentDescription": "Principles Policies and Procedures",
+      "componentPercFinal": 0,
+      "componentQuestions": [
+        {
+          "questionType": "Component question",
+          "relevantPolicy": "Enterprise risk policy",
+          "policyDescription": "Defines governance and management of enterprise risk at strategic tactical and operational levels pursuant to business objectives. Translates enterprise governance into risk governance principles and policy and elaborates risk management activities",
+          "detailedGuidance": "National Institute of Standards and Technology Special Publication 800-53 Revision 5 (Draft)August 2017",
+          "detailedReference": "3.17 Risk assessment (RA-1)",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": ""
+        },
+        {
+          "questionType": "Component question",
+          "relevantPolicy": "Fraud risk policy",
+          "policyDescription": "Informs protection of enterprise brand reputation and assets in the event of loss or damage resulting from fraud or misconduct.Guides employees in reporting suspicious activity and handling sensitive information and evidence. Encourages antifraud culture and cultivates awareness of risk.",
+          "detailedGuidance": "National Institute of Standards and Technology Special Publication 800-37 Revision 2 (Draft)August 2018",
+          "detailedReference": "No data provided.",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": ""
+        }
+
+      ]
+    },
+    {
+      "componentName": "F",
+      "componentDescription": "Culture, Ethics and Behavior",
+      "componentPercFinal": 0,
+      "componentQuestions": [
+        {
+          "questionType": "Component question",
+          "keyCultureElement": "To support a transparent and participatory risk culture, senior management should set direction and demonstrate visible and genuine support for incorporation of risk practices throughout the enterprise. Management should encourage open communication and business ownership for I&T-related business risk. Desirable behaviors include aligning policies to the defined risk appetite reporting risk trends to senior management and risk governing bodies rewarding effective risk management and proactively monitoring risk and progress on the risk action plan.",
+          "relatedGuidance": "ISF, The Standard of Good Practice for Information Security 2016",
+          "detailedReference": "IR1.2 Information Risk Assessment",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": ""
+        }
+
+      ]
+    },
+    {
+      "componentName": "G",
+      "componentDescription": "Services, Infrastructure and Applications",
+      "componentPercFinal": 0,
+      "componentQuestions": [
+        {
+          "questionType": "Component question",
+          "questionDescription": "Crisis management services",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": ""
+        },
+        {
+          "questionType": "Component question",
+          "questionDescription": "Governance, risk and compliance (GRC) tools",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": ""
+        },
+        {
+          "questionType": "Component question",
+          "questionDescription": "Risk analysis tools",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": ""
+        },
+        {
+          "questionType": "Component question",
+          "questionDescription": "Risk intelligence services",
+          "questionAnswer": 0,
+          "questionScore": 0,
+          "questionComment": ""
+        }
+      ]
+    }
+  ]
+}
+  
+
+        
+     
